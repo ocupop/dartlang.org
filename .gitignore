@@ -64,3 +64,22 @@ _asset_bundler_cache
 
 !src/site/tools/download-archive/out/web/packages/
 src/site/events/2015/summit/node_modules
+
+# ============= OCUPOP =============
+# RVM users
+.ruby-gemset
+.ruby-version
+
+# Cache files
+.sass-cache
+src/.asset-cache
+.jekyll-metadata
+
+# Deployment Files
+_deploy
+credentials.tar.gz
+client-secret.json
+tmp
+
+
+
