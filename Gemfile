@@ -1,6 +1,16 @@
 source "http://rubygems.org"
-gem "jekyll", '2.3.0'
-gem "kramdown", '1.3.0'
-gem "yui-compressor", "0.12.0"
-gem "selenium-webdriver", "~> 2"
-gem "jekyll-sitemap"
+gem "jekyll"
+gem "kramdown"
+
+gem "html-proofer"
+gem 'jekyll-assets'
+# gem 'sass'
+# gem 'uglifier'
+gem 'autoprefixer-rails'
+gem 'font-awesome-sass'
+
+group :old_plugins do
+  # gem "yui-compressor", "0.12.0"
+  # gem "selenium-webdriver", "~> 2"
+  gem "jekyll-sitemap"
+end
