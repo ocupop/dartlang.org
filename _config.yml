@@ -1,0 +1,50 @@
+# Site settings
+title: Dartlang.org
+custom:
+  dartpad:
+    embed-dart-prefix: "https://dartpad.dartlang.org/embed-dart.html"
+    embed-html-prefix: "https://dartpad.dartlang.org/embed-html.html"
+    embed-inline-prefix: "https://dartpad.dartlang.org/embed-inline.html"
+    direct-link: "https://dartpad.dartlang.org"
+  downloads:
+    dartarchive-be-url-prefix: "https://storage.googleapis.com/dart-archive/channels/be/raw"
+    dartarchive-dev-url-prefix: "https://storage.googleapis.com/dart-archive/channels/dev/release"
+    dartarchive-stable-url-prefix: "https://storage.googleapis.com/dart-archive/channels/stable/release"
+    binaries:
+      - os: windows
+        name: Windows
+        ext: zip
+        editor-ext: zip
+      - os: macos
+        name: Mac
+        ext: zip
+        editor-ext: zip
+      - os: linux
+        name: Linux
+        ext: zip
+        editor-ext: zip
+
+
+
+# Build settings
+safe: false
+source: src
+destination: _deploy
+incremental: true
+bundler_args: --without production
+markdown: kramdown
+permalink: /news/:year/:month/:day/:title
+highlighter: null
+url: https://stage.dartlang.org
+baseurl: "" # the subpath of your site, e.g. /blog/
+
+kramdown:
+  toc_levels: "2,3,4"
+# asset_bundler:
+#   compress:
+#     js: yui
+#     css: yui
+# gems:
+#   - jekyll-sitemap
+
+exclude: [diagrams, appengine, tests, site]
