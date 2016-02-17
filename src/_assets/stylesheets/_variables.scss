@@ -1,0 +1,60 @@
+/* -----------------------------------------
+   Variables
+----------------------------------------- */
+
+// Color Palette
+$cream-light:               #F7F5F0;
+$cream:                     #DED8C6;
+$cream-dark:                #C4BA98;
+
+$gray-dark:                 #36383A;
+$gray:                      #555759;
+$gray-light:                #959697;
+$gray-lighter:              #F0ECE4;
+
+$placeholder-color:         #BFB9A1;
+$mainnav-background-color:  #F4F1E9;
+$section-alt-color:         #F1EDE4;
+$button-color:              #69B2A9;
+
+$recycle-color:             #88A65B;
+$prevention-color:          #225577;
+$recovery-color:            #2A8175;
+$red:                       #990000;
+
+$body-bg:                   $cream-light;
+$text-color:                $gray;
+$brand-primary:             $red;
+
+$link-color:                #228E93;
+$link-hover-color:          darken($link-color, 15%);
+$link-hover-decoration:     none;
+
+$well-bg:                   $section-alt-color;
+$well-border:               $section-alt-color;
+
+$hr-border:                 $gray;
+
+
+// Typeography
+$font-family-base:          'Proxima Nova W01', sans-serif;
+$font-family-condensed:     'Trade Gothic W01', sans-serif;
+$font-family-extended:      'Trade Gothic W01', sans-serif;
+$font-family-serif:         'Trade Gothic W01', sans-serif;
+
+// Baseline
+$font-size-base:          16px;
+
+// Headings
+$font-size-h1:            floor(($font-size-base * 2.6)); // ~36px
+$font-size-h2:            floor(($font-size-base * 2.15)); // ~30px
+$font-size-h3:            ceil(($font-size-base * 1.5)); // ~24px
+$font-size-h4:            ceil(($font-size-base * 1.25)); // ~18px
+$font-size-h5:            $font-size-base;
+$font-size-h6:            ceil(($font-size-base * 0.85)); // ~12px
+
+// Spacing
+$live-content-width:      960px;
+$line-height-base:        1.618;
+$content-padding:         floor(($font-size-base * $line-height-base));
+

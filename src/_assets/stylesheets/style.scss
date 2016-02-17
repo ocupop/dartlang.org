@@ -1,0 +1,41 @@
+@import '_variables';
+@import '_mixins';
+@import '_icons';
+@import '_animations';
+
+/* -----------------------------------------
+   Global
+----------------------------------------- */
+body {}
+
+
+/* -----------------------------------------
+   DOM Specific
+----------------------------------------- */
+// Structure
+#page-header {}
+#page-content {}
+#page-footer {}
+
+// Navigation
+#mainnav {}
+#footernav {}
+#copyright {}
+
+
+/* -----------------------------------------
+   Utility Classes
+----------------------------------------- */
+
+// Content
+.content {
+  position: relative;
+  padding: $content-padding;
+}
+
+
+/* -----------------------------------------
+   Media Queries
+----------------------------------------- */
+
+

@@ -1,5 +1,6 @@
 # Site settings
 title: Dartlang.org
+description: ""
 custom:
   dartpad:
     embed-dart-prefix: "https://dartpad.dartlang.org/embed-dart.html"
@@ -30,10 +31,10 @@ custom:
 safe: false
 source: src
 destination: _deploy
-incremental: true
+# incremental: true
 bundler_args: --without production
 markdown: kramdown
-permalink: /news/:year/:month/:day/:title
+# permalink: /news/:year/:month/:day/:title
 highlighter: null
 url: https://stage.dartlang.org
 baseurl: "" # the subpath of your site, e.g. /blog/
@@ -48,3 +49,33 @@ kramdown:
 #   - jekyll-sitemap
 
 exclude: [diagrams, appengine, tests, site]
+
+gems:
+- jekyll-assets
+
+
+assets:
+  compress:
+    css: true # default - development: false, production: true
+    js: true # default - development: false, production: true
+  cache: .asset-cache # default: .asset-cache
+  # cdn: https://cdn.example.com
+  # skip_baseurl_with_cdn: false
+  # skip_prefix_with_cdn: false
+  prefix: "/assets"
+  assets:
+    - "*.png"
+    - "*.jpg"
+    - "*.eot"
+    - "*.ttf"
+    - "*.woff"
+    - "*.svg"
+  digest: true
+  sources:
+    - _assets/media
+    - _assets/javascripts
+    - _assets/stylesheets
+  features:
+    liquid: true # default: false
+    automatic_img_size: true # default: true
+    automatic_img_alt : true # default: true
