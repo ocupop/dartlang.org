@@ -1,6 +1,10 @@
 # Site settings
 title: Dartlang.org
 description: ""
+url: https://stage.dartlang.org
+baseurl: "" # the subpath of your site, e.g. /blog/
+permalink: /:title/
+
 custom:
   dartpad:
     embed-dart-prefix: "https://dartpad.dartlang.org/embed-dart.html"
@@ -31,23 +35,16 @@ custom:
 safe: false
 source: src
 destination: _deploy
-# incremental: true
+incremental: true
 bundler_args: --without production
 markdown: kramdown
-# permalink: /news/:year/:month/:day/:title
 highlighter: null
-url: https://stage.dartlang.org
-baseurl: "" # the subpath of your site, e.g. /blog/
 
 kramdown:
   toc_levels: "2,3,4"
-# asset_bundler:
-#   compress:
-#     js: yui
-#     css: yui
-# gems:
-#   - jekyll-sitemap
 
+
+include: ["_pages"]
 exclude: [diagrams, appengine, tests, site]
 
 gems:
