@@ -1,3 +1,4 @@
+@import 'https://code.getmdl.io/1.1.1/material.blue-teal.min.css';
 @import '_variables';
 @import '_mixins';
 @import '_icons';
@@ -7,25 +8,63 @@
    Global
 ----------------------------------------- */
 body {}
-
+section {
+  position: relative;
+  padding: $content-padding;
+}
 
 /* -----------------------------------------
    DOM Specific
 ----------------------------------------- */
 // Structure
-#page-header {}
-#page-content {}
-#page-footer {}
+#page-header {
+  background-color: $grey-light;
+  .mdl-layout__header-row {
+    // @extend .container;
+  }
+}
+#page-content {
+  @extend .container;
+}
+#page-footer {
+  .mdl-mega-footer__middle-section {}
+  .mdl-mega-footer__bottom-section {
+    ul {
+      padding-left: 16px;
+    }
+  }
+}
 
 // Navigation
-#mainnav {}
+#mainnav {
+  a {
+    // text-transform: uppercase;
+    color: $grey-dark;
+    &:hover {
+
+    }
+  }
+}
 #footernav {}
 #copyright {}
 
+#dartpad {
+  position: fixed;
+  width: 100%;
+  height: 30px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+}
 
 /* -----------------------------------------
    Utility Classes
 ----------------------------------------- */
+.container {
+  position: relative;
+  max-width: $live-content-width;
+  margin: 0 auto;
+}
 
 // Content
 .content {
@@ -33,9 +72,19 @@ body {}
   padding: $content-padding;
 }
 
+.brand {
+  text-indent: -999em;
+  background-color: transparent;
+  background-image: url();
+  background-position: center center;
+  background-size: 100%;
+}
+
 
 /* -----------------------------------------
-   Media Queries
+   MDL Overwrites
 ----------------------------------------- */
-
+.mdl-layout__drawer-button {
+  color: $grey-dark;
+}
 

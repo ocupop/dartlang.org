@@ -4,10 +4,11 @@
   <body class="{{ page.slug }}">
     <div class="mdl-layout mdl-js-layout">
       {% include page-header.html %}
-      <main class="mdl-layout__content">
+      <main id="page-content" class="mdl-layout__content">
         <div class="page-content">{{ content }}</div>
       </main>
       {% include page-footer.html %}
     </div>
+    {% include dartpad.html %}
   </body>
 </html>
