@@ -1,7 +1,7 @@
 ---
 layout: article
 type: libraries
-reference: https://www.dartlang.org/articles/converters-and-codecs/
+reference: /articles/converters-and-codecs/
 title: "Converters and Codecs"
 description: "Learn how to write efficient conversions."
 rel:

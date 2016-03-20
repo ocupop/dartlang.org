@@ -45,7 +45,7 @@ kramdown:
 
 
 include: ["_pages"]
-exclude: [diagrams, appengine, tests, site]
+exclude: ["diagrams", "appengine", "tests", "site"]
 
 gems:
 - jekyll-assets

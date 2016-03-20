@@ -1,7 +1,7 @@
 ---
 layout: article
 type: language
-reference: https://www.dartlang.org/articles/await-async/
+reference: /articles/await-async/
 title: "Dart Language Asynchrony Support: Phase 1"
 description: "Async and await, two language features that support asynchronous programming, are now available in Dart."
 rel:

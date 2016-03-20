@@ -1,7 +1,7 @@
 ---
 layout: article
 type: libraries
-reference: https://www.dartlang.org/articles/zones/
+reference: /articles/zones/
 title: "Zones"
 description: "Manage your asynchronous code: handle uncaught errors, override behavior (such as printing and scheduling tasks), and more."
 rel:

@@ -1,7 +1,7 @@
 ---
 layout: article
 type: libraries
-reference: https://www.dartlang.org/articles/broadcast-streams/
+reference: /articles/broadcast-streams/
 title: "Single-Subscription vs. Broadcast Streams"
 description: "Choose the kind of stream that's best for your application: single-subscription or broadcast."
 rel:

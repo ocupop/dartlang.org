@@ -1,7 +1,7 @@
 ---
 layout: article
 type: libraries
-reference: https://www.dartlang.org/articles/serialization/
+reference: /articles/serialization/
 title: "Serialization in Dart"
 description: "Choose the serialization strategy that's right for your project."
 rel:

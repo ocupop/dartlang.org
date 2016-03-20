@@ -1,7 +1,7 @@
 ---
 layout: article
 type: libraries
-reference: https://www.dartlang.org/articles/reflection-with-mirrors/
+reference: /articles/reflection-with-mirrors/
 title: "Reflection in Dart with Mirrors: An Introduction"
 rel:
   author: gilad-bracha

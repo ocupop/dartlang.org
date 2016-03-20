@@ -1,7 +1,7 @@
 ---
 layout: article
 type: libraries
-reference: https://www.dartlang.org/articles/json-web-service/
+reference: /articles/json-web-service/
 title: "Using Dart with JSON Web Services"
 description: "Learn how to consume JSON-based web services with Dart."
 rel:

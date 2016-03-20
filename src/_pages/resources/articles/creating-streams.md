@@ -1,6 +1,6 @@
 ---
 layout: article
-reference: https://www.dartlang.org/articles/creating-streams/
+reference: /articles/creating-streams/
 type: libraries
 title: "Creating Streams in Dart"
 rel:

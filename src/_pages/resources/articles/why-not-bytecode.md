@@ -1,7 +1,7 @@
 ---
 layout: article
 type: language
-reference: https://www.dartlang.org/articles/why-not-bytecode/
+reference: /articles/why-not-bytecode/
 title: "Why Not a Bytecode VM?"
 description: "This article discusses the trade-offs VMs have to make,
        and explains why we think that a language VM makes more sense for Dart."

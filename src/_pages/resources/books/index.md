@@ -1,6 +1,6 @@
 ---
 layout: page
-reference: https://www.dartlang.org/books/
+reference: /books/
 title: Books about Dart
 description: Read all about it! Here's a collection of books about Dart.
 ---

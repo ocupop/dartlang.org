@@ -1,7 +1,7 @@
 ---
 layout: article
 type: libraries
-reference: https://www.dartlang.org/articles/futures-and-error-handling/
+reference: /articles/futures-and-error-handling/
 title: "Futures and Error Handling"
 description: "Everything you wanted to know about handling errors and
 exceptions when working with Futures (but were afraid to ask)."

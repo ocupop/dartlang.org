@@ -1,7 +1,7 @@
 ---
 layout: article
 type: language
-reference: https://www.dartlang.org/articles/why-dart-types/
+reference: /articles/why-dart-types/
 title: "Why Dart Types Are Optional and Unsound"
 description: A review of why Dart has optional static type annotations.
 rel:

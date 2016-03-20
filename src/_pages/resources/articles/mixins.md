@@ -1,7 +1,7 @@
 ---
 layout: article
-type: language:
-reference: https://www.dartlang.org/articles/mixins/
+type: language
+reference: /articles/mixins/
 title: "Mixins in Dart"
 description: "Mixins let you implement functionality once and use it in multiple classes."
 rel:

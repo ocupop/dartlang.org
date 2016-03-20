@@ -1,7 +1,7 @@
 ---
 layout: article
 type: language
-reference: https://www.dartlang.org/articles/beyond-async/
+reference: /articles/beyond-async/
 title: "Dart Language Asynchrony Support: Phase 2"
 description: "Async*, sync*, yield, and yield* are now available as part of Dart's asynchrony support."
 rel:
