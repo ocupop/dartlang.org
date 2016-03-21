@@ -1,8 +1,11 @@
 ---
+reference: "https://www.dartlang.org/community/who-uses-dart.html"
+
 layout: page
-reference: https://www.dartlang.org/community/who-uses-dart.html
+permalink: /community/who-uses-dart
 title: 'Who Uses Dart'
 description: 'Companies and business that use Dart.'
+
 snippet_img: images/who-uses-dart.png
 ---
 

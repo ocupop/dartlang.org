@@ -1,6 +1,8 @@
 ---
+reference: "https://www.dartlang.org/src/site/support/"
+
 layout: page
-reference: https://www.dartlang.org/src/site/support/
+permalink: /community/
 title: "Support and Community"
 description: "Communities, mailing lists, and bug databases for the Dart project."
 ---
