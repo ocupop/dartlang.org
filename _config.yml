@@ -3,7 +3,8 @@ title: Dartlang.org
 description: ""
 url: https://stage.dartlang.org
 baseurl: "" # the subpath of your site, e.g. /blog/
-permalink: /:title/
+permalink: /:path/:basename
+
 
 custom:
   dartpad:
@@ -34,14 +35,14 @@ custom:
 # Build settings
 safe: false
 source: src
-destination: _deploy
+destination: publish
 incremental: true
 bundler_args: --without production
 markdown: kramdown
-highlighter: null
+# highlighter: null
 
-kramdown:
-  toc_levels: "2,3,4"
+# kramdown:
+#   toc_levels: "2,3,4"
 
 
 include: ["_pages"]

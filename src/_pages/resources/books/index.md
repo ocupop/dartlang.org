@@ -11,7 +11,7 @@ Here's a collection of books about Dart.
 [Let us know](https://github.com/dart-lang/www.dartlang.org/issues)
 if you find another book that we should add.
 
-{% injectdata books books/books.yaml %}
+{% injectdata books resources/books/books.yaml %}
 
 {% for book in page.books %}
 <div class="book row">

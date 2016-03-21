@@ -1,0 +1,7 @@
+This is a temporary file!
+
+- How to check links so I can fix?
+
+- We need to move/re-implement the supporting files for downloads.
+  This is largely in src/site/_includes, but also some in
+  src/site/js.
