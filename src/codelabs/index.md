@@ -1,5 +1,10 @@
 ---
+reference: 
+
 layout: page
+permalink: /codelabs/
+title:
+description:
 ---
 
 waiting on codelab content
