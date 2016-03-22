@@ -1,8 +1,10 @@
 ---
+reference: "https://www.dartlang.org/docs/tutorials/get-started"
+
 layout: page
-reference: https://www.dartlang.org/docs/tutorials/get-started
 title: "Get Started"
 description: "Get Dart and run two Dart applications"
+
 has-permalinks: true
 tutorial:
   id: get-started
