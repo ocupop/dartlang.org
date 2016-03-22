@@ -1,9 +1,11 @@
 ---
+reference: "https://www.dartlang.org/docs/dart-up-and-running/ch03.html"
+
 layout: page
-reference: https://www.dartlang.org/docs/dart-up-and-running/ch03.html
 title: "A Tour of the Dart Libraries"
-subsite: "Dart Up and Running"
 description: "Read Chapter 3, A Tour of the Dart Libraries (from Dart: Up and Running, published by O'Reilly)."
+
+subsite: "Dart Up and Running"
 prev-chapter: ch02.html
 prev-chapter-title: "Language Tour"
 next-chapter: ch04.html
