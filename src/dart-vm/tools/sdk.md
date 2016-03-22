@@ -1,8 +1,10 @@
 ---
+reference: "https://www.dartlang.org/tools/sdk/"
+
 layout: page
-reference: https://www.dartlang.org/tools/sdk/
 title: "Dart SDK"
 description: "Dart libraries and command-line tools."
+
 has-permalinks: false
 ---
 

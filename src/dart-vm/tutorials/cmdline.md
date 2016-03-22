@@ -1,8 +1,10 @@
 ---
+reference: "https://www.dartlang.org/docs/tutorials/cmdline/"
+
 layout: page
-reference: https://www.dartlang.org/docs/tutorials/cmdline/
 title: "Write Command-Line Apps"
 description: "Basics for command-line apps"
+
 has-permalinks: true
 tutorial:
   id: dart-io

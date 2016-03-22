@@ -1,8 +1,9 @@
 ---
-layout: page
 reference: https://www.dartlang.org/downloads/
+layout: page
 title: "Download Dart"
 description: "The download bundles that support the Dart language."
+
 has-permalinks: false
 js:
 - url: /js/download-info.js

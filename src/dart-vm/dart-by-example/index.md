@@ -1,6 +1,8 @@
 ---
+reference: "https://www.dartlang.org/dart-by-example/"
+
 layout: page
-reference: https://www.dartlang.org/dart-by-example/
+
 header:
   css: ["index.css"]
 has-permalinks: true

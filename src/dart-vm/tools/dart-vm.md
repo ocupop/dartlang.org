@@ -1,6 +1,7 @@
 ---
+reference: "https://www.dartlang.org/tools/dart-vm/"
+
 layout: page
-reference: https://www.dartlang.org/tools/dart-vm/
 title: "dart: The Standalone VM"
 short-title: "dart"
 ---

@@ -1,8 +1,10 @@
 ---
+reference: "https://www.dartlang.org/docs/tutorials/httpserver/"
+
 layout: page
-reference: https://www.dartlang.org/docs/tutorials/httpserver/
 title: "Write HTTP Clients & Servers"
 description: "Communicate over the internet"
+
 has-permalinks: true
 tutorial:
   id: httpserver

@@ -1,7 +1,10 @@
 ---
-layout: default
+reference: "https://www.dartlang.org/downloads/linux.html"
+
+layout: page
 title: "Installing Dart on Linux"
 description: "Installing and updating the Dart SDK on Linux with apt-get, a Debian package, and compiling from source."
+
 js:
 - url: /js/download-info.js
   defer: true

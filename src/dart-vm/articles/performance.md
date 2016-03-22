@@ -1,8 +1,8 @@
 ---
+reference: "https://www.dartlang.org/performance/"
+
 layout: article
-reference: https://www.dartlang.org/performance/
 title: Performance
-layout: default
 description: Track the performance of your Dart code using benchmarks.
 ---
 

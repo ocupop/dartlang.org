@@ -1,7 +1,10 @@
 ---
-layout: default
+reference: "https://www.dartlang.org/downloads/windows.html"
+
+layout: page
 title: "Installing Dart on Windows"
 description: "Installing and updating the Dart SDK on Windows with Chocolatey or an installer."
+
 js:
 - url: /js/download-info.js
   defer: true
