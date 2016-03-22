@@ -1,7 +1,10 @@
 ---
+reference: "https://www.dartlang.org/effective-dart/design/"
+
 layout: article
 title: "Effective Dart: Design"
 description: "Design consistent, usable libraries."
+
 has-permalinks: true
 prev-guide: /effective-dart/usage/
 prev-guide-title: "Usage"

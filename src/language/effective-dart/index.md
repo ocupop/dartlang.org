@@ -1,7 +1,10 @@
 ---
+reference: "https://www.dartlang.org/effective-dart/"
+
 layout: article
 title: "Effective Dart"
 description: "Best practices for building consistent, maintainable, efficient Dart libraries."
+
 has-permalinks: true
 next-guide: /effective-dart/style/
 next-guide-title: "Style"

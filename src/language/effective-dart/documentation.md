@@ -1,7 +1,10 @@
 ---
+reference: "https://www.dartlang.org/effective-dart/documentation/"
+
 layout: article
 title: "Effective Dart: Documentation"
 description: "Clear, helpful comments and documentation."
+
 has-permalinks: true
 prev-guide: /effective-dart/style/
 prev-guide-title: "Style"

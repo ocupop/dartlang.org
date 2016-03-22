@@ -1,9 +1,11 @@
 ---
+reference: "https://www.dartlang.org/docs/dart-up-and-running/ch02.html"
+
 layout: page
-reference: https://www.dartlang.org/docs/dart-up-and-running/ch02.html
 title: "A Tour of the Dart Language"
-subsite: "Dart Up and Running"
 description: "Read Chapter 2, A Tour of the Dart Language of Dart (from Dart: Up and Running, published by O'Reilly)."
+
+subsite: "Dart Up and Running"
 prev-chapter: ch01.html
 prev-chapter-title: "Quick Start"
 next-chapter: ch03.html
