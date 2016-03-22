@@ -1,6 +1,10 @@
 ---
+reference: 
+
 layout: page
-reference: doesn't exist yet
+permalink: /events/
+title: Dart Events
+description:
 ---
 
 This is a placeholder for a
