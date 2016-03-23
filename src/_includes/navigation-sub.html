@@ -1,0 +1,12 @@
+{% if page.previous || page.next %}
+<nav>
+  <ul>
+    {% if page.previous.url %}
+    <li><a href="{{ page.previous.url }}">{{ page.previous.title }}</a></li>
+    {% endif %}
+    {% if page.next.url %}
+    <li><a href="{{ page.next.url }}">{{ page.next.title }}</a></li>
+    {% endif %}
+  </ul>
+</nav>
+{% endif %}

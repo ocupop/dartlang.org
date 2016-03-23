@@ -7,10 +7,61 @@
 /* -----------------------------------------
    Global
 ----------------------------------------- */
-body {}
+body {
+  font-family: $font-family-base;
+}
 section {
   position: relative;
   padding: $content-padding;
+}
+input {
+  border: none;
+  padding: 3px 5px;
+  color: $grey-dark;
+  border-radius: 2px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-base;
+  font-weight: 700;
+  color: $grey-dark;
+}
+h1, .h1 { font-size: $font-size-h1;}
+h2, .h2 { font-size: $font-size-h2;}
+h3, .h3 { font-size: $font-size-h3;}
+h4, .h4 { font-size: $font-size-h4;}
+h5, .h5 { font-size: $font-size-h5;}
+h6, .h6 { font-size: $font-size-h6;}
+
+p {
+  // font-size: $font-size-base;
+}
+
+a {
+  color: $blue;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+::-webkit-input-placeholder {
+   color: $grey-dark;
+   font-family: $font-family-base;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: $grey-dark;
+   font-family: $font-family-base; 
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $grey-dark;
+   font-family: $font-family-base;
+}
+:-ms-input-placeholder {  
+   color: $grey-dark;
+   font-family: $font-family-base;
 }
 
 /* -----------------------------------------
@@ -27,6 +78,21 @@ section {
   @extend .container;
 }
 #page-footer {
+  color: #fff;
+  font-weight: 300;
+  .mdl-logo {
+    text-indent: -999em;
+    background-color: transparent;
+    background-image: url('{% asset_path "images/logo.svg" %}');
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 68px;
+  }
+  h5, p, a {
+    font-weight: 300;
+    color: #fff;
+  }
   .mdl-mega-footer__middle-section {}
   .mdl-mega-footer__bottom-section {
     ul {
@@ -38,8 +104,9 @@ section {
 // Navigation
 #mainnav {
   a {
-    // text-transform: uppercase;
     color: $grey-dark;
+    font-weight: 700;
+    text-transform: uppercase;
     &:hover {
 
     }
@@ -56,6 +123,12 @@ section {
   left: 0;
   background-color: red;
 }
+#search {
+  position: absolute;
+  right: 0;
+  top: 22px;
+  width: 175px;
+}
 
 /* -----------------------------------------
    Utility Classes
@@ -63,6 +136,7 @@ section {
 .container {
   position: relative;
   max-width: $live-content-width;
+  width: $live-content-width;
   margin: 0 auto;
 }
 
@@ -75,9 +149,24 @@ section {
 .brand {
   text-indent: -999em;
   background-color: transparent;
-  background-image: url();
+  background-image: url('{% asset_path "images/logo.svg" %}');
   background-position: center center;
   background-size: 100%;
+  width: 190px;
+  height: 45px;
+}
+
+.hide {
+  display: none !important;
+  visibility: hidden;
+}
+.well {
+  h1, h2, h3, h4, h5, h6 {
+    color: $blue;
+  }
+  color: $blue;
+  background: $grey-light;
+  padding:20px 16px;
 }
 
 
@@ -86,5 +175,44 @@ section {
 ----------------------------------------- */
 .mdl-layout__drawer-button {
   color: $grey-dark;
+}
+
+.mdl-layout__header-row {
+  padding: 0;
+}
+
+.mdl-layout__drawer>.mdl-layout-title {
+  margin-left:16px;
+  margin-top:16px;
+}
+
+.mdl-layout__header-row {
+  .mdl-navigation__link {
+    padding: 0 20px;
+  }
+}
+
+.mdl-mega-footer__heading {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.mdl-mega-footer {
+  padding: 30px 0;
+}
+// .mdl-mega-footer__link-list {
+//   a {
+//     font-weight: 300;
+//     color: #fff;
+//   }
+// } 
+
+/* -----------------------------------------
+   Media Queries
+----------------------------------------- */
+@media(min-width: 1024px) {
+  .mdl-layout__drawer-button {
+    display: none;
+  }
 }
 

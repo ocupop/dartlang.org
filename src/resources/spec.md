@@ -1,5 +1,5 @@
 ---
-reference: "https://www.dartlang.org/spec/"
+reference: "https://www.dartlang.org/docs/spec/"
 
 layout: page
 title: "Dart Language Specification"

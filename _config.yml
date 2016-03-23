@@ -31,6 +31,41 @@ custom:
         editor-ext: zip
 
 
+# defaults:
+# - scope:
+#     path: solutions
+#   values:
+#     nextpage:
+#       url: /stakeholder
+#       title: Stakeholders
+#     prevpage:
+#       url: /solution
+#       title: Solutions
+# - scope:
+#     path: stakeholders
+#   values:
+#     nextpage:
+#       url: /action
+#       title: Action
+#     prevpage:
+#       url: /stakeholder
+#       title: Stakeholders
+
+collections:
+  articles:
+    output: true
+    layout: article
+    permalink: /articles/:path
+  tutorials:
+    output: true
+    layout: tutorial
+    permalink: /tutorials/:path
+  # samples:
+  #   output: true
+  #   layout: page
+  #   permalink: /samples/:path
+
+
 
 # Build settings
 safe: false
@@ -39,6 +74,7 @@ destination: publish
 incremental: true
 bundler_args: --without production
 markdown: kramdown
+excerpt_separator: "~~~"
 # highlighter: null
 
 # kramdown:

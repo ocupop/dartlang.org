@@ -8,6 +8,7 @@ description: "Get Dart and run two Dart applications"
 has-permalinks: true
 tutorial:
   id: get-started
+
 next: connect-dart-html/
 next-title: "Connect Dart & HTML"
 prev:
@@ -513,4 +514,4 @@ with words separated by underscores (`_`).
 
 {% endcapture %}
 
-{% include tutorial.html %}
+{% include tutorial_content.html %}

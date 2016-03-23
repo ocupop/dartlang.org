@@ -1139,4 +1139,4 @@ for further details about the classes and libraries discussed in this tutorial.
 
 {% endcapture %}
 
-{% include tutorial.html %}
+{% include tutorial_content.html %}

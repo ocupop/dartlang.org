@@ -1,0 +1,81 @@
+
+<!-- NAVI LINKS -->
+<div id="tutorial-navigation-links-top" class="row">
+  <div class="col-md-12">
+    <div class="row">
+      <div class="col-md-3">
+        <a href="/docs/tutorials/"><img src="/docs/tutorials/images/tute-home.png" width="36"></a>
+      </div>
+      <div class="col-md-3">
+        <a href="/docs/tutorials/{{page.prev}}"><i class="glyphicon glyphicon-chevron-left"> </i> {{page.prev-title}}</a>
+      </div>
+      <div class="col-md-3">
+      </div>
+      <div class="col-md-3">
+        <a href="/docs/tutorials/{{page.next}}" class="pull-right">{{page.next-title}} <i class="glyphicon glyphicon-chevron-right"> </i> </a>
+      </div>
+    </div> 
+    <hr>
+  </div> 
+</div> 
+
+<!-- PAGE -->
+<div class="row">
+
+  <!-- LEFT SIDE BAR -->
+  <div class="col-md-3">
+
+    <div id="tutorial-side">
+      <div id="whats-the-point">
+        <h4 id="page-highlights">What's the point?</h4>
+        {{ whats_the_point | markdownify }}
+      </div> <!-- whats-the-point -->
+
+{% if sample_links %}
+      <div id="code-links">
+        <h4 id="examples">Examples</h4>
+
+        {{ sample_links | markdownify }}
+
+      </div> <!-- end code-links -->
+{% endif %}
+
+      <div id="tutorial-toc">
+        <a href="https://github.com/dart-lang/dartlang.org/issues"
+         target="_blank">
+        <i class="glyphicon glyphicon-comment"> </i>
+        Send feedback
+        </a>
+      </div> <!-- tutorial-toc -->
+      
+    </div> <!-- tutorial-side -->
+
+  </div> <!-- end div col-md-3 -->
+
+  <!-- CONTENT-->
+  <article class="col-md-9 tutorial-content">
+
+    {{ content | markdownify }}
+
+  </article>
+</div>
+
+<!-- NAVI LINKS -->
+<div id="tutorial-navigation-links-bottom" class="row">
+  <div class="col-md-12">
+    <hr>
+    <div class="row">
+      <div class="col-md-3">
+        <a href="/docs/tutorials/"><img src="/docs/tutorials/images/tute-home.png" width="36"></a>
+      </div>
+      <div class="col-md-3">
+        <a href="/docs/tutorials/{{page.prev}}"><i class="glyphicon glyphicon-chevron-left"> </i> {{page.prev-title}}</a>
+      </div>
+      <div class="col-md-3">
+      </div>
+      <div class="col-md-3">
+        <a href="/docs/tutorials/{{page.next}}" class="pull-right">{{page.next-title}} <i class="glyphicon glyphicon-chevron-right"> </i> </a>
+      </div>
+    </div> 
+  </div> 
+</div> 

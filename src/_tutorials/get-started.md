@@ -12,6 +12,7 @@ next: connect-dart-html/
 next-title: "Connect Dart & HTML"
 prev:
 prev-title: "Home"
+
 ---
 
 {% capture whats_the_point %}
@@ -507,4 +508,4 @@ with words separated by underscores (`_`).
 
 {% endcapture %}
 
-{% include tutorial.html %}
+{% include tutorial_content.html %}

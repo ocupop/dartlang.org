@@ -1,6 +1,19 @@
 ---
 layout: default
 ---
-<section>
-  {{ content }}
+<section class="mdl-grid">
+  <div class="mdl-cell mdl-cell--4-col">
+    <nav>
+      <ul>
+        <li><a href="#">Link Title</a></li>
+        <li><a href="#">Link Title</a></li>
+        <li><a href="#">Link Title</a></li>
+        <li><a href="#">Link Title</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="mdl-cell mdl-cell--8-col">
+    {% include navigation-sub.html %}
+    {{ content }}
+  </div>
 </section>

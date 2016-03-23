@@ -634,4 +634,4 @@ POST requests, is explained in detail.
 
 {% endcapture %}
 
-{% include tutorial.html %}
+{% include tutorial_content.html %}

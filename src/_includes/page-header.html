@@ -1,8 +1,14 @@
 <header id="page-header" class="mdl-layout__header mdl-layout__header--scroll">
-  <div class="mdl-layout__header-row">
-    <span class="mdl-layout-title brand">{{ site.title }}</span>
-    <div class="mdl-layout-spacer"></div>
-    {% include navigation-main.html %}
+  <div class="container">
+    <div class="mdl-layout__header-row">
+      <div class="mdl-cell mdl-cell--4-col">
+        <span class="mdl-layout-title brand">{{ site.title }}</span>
+      </div>
+      <div class="mdl-cell mdl-cell--8-col">
+        {% include navigation-main.html %}
+        <input id="search" type="text" placeholder="Search" class="hide">
+      </div>
+    </div>
   </div>
 </header>
 <div class="mdl-layout__drawer">

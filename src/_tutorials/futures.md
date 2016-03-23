@@ -1,7 +1,6 @@
 ---
 reference: "https://www.dartlang.org/docs/tutorials/futures"
 
-layout: tutorial
 title: "Asynchronous Programming: Futures"
 description: "A first look at Futures and how to use them to make your asynchronous code better."
 
@@ -12,6 +11,7 @@ next: streams/
 next-title: "Asynchronous Programming: Streams"
 prev: using-polymer/
 prev-title: "Use Polymer Elements"
+
 ---
 
 {% capture whats_the_point %}
@@ -463,5 +463,5 @@ uses a Future when doing an HTTP request.
 
 {% endcapture %}
 
-{% include tutorial.html %}
+{% include tutorial_content.html %}
 
