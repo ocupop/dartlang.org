@@ -6,7 +6,7 @@ title: "Dart Tips: Short Video Tutorials about Dart"
 description: "Super short video intros to Dart language and library features."
 ---
 
-{% injectdata tips dart-tips/episodes.yaml %}
+{% injectdata tips /resources/dart-tips/episodes.yaml %}
 
 # Dart Tips: Short Video Tutorials
 
