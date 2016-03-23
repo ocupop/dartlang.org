@@ -4,30 +4,30 @@ reference: "https://www.dartlang.org/docs/tutorials/streams/"
 title: "Asynchronous Programming: Streams"
 description: "Learn how to consume single-subscriber and broadcast streams."
 
+next:
+  url: /tutorials/
+  title:
+previous:
+  url: /tutorials/futures
+  title: "Asynchronous Programming: Futures"
+
+points:
+  - "Streams provide an asynchronous sequence of data."
+  - "Data sequences include user-generated events and data read from files."
+  - "You can process a stream using either **await for** or listen() from the Stream API."
+  - "Streams provide a way to respond to errors."
+  - "There are two kinds of streams: single subscription or broadcast."
+
+examples:
+
 tutorial:
   id: streams
-next: fetchdata/
-next-title: "Fetch Data Dynamically"
-prev: futures/
-prev-title: "Asynchronous Programming: Futures"
+
+# next: fetchdata/
+# next-title: "Fetch Data Dynamically"
+# prev: futures/
+# prev-title: "Asynchronous Programming: Futures"
 ---
-
-{% capture whats_the_point %}
-
-* Streams provide an asynchronous sequence of data.
-* Data sequences include user-generated events and data read from files.
-* You can process a stream using either **await for** or listen() from
-  the Stream API.
-* Streams provide a way to respond to errors.
-* There are two kinds of streams: single subscription or broadcast.
-
-{% endcapture %}
-
-{% comment %}
-The sample_links space is intentionally left blank.
-{% endcomment %}
-
-{% capture content %}
 
 <div class="tute-target-title">
 <h1>{{page.title}}</h1>
@@ -491,6 +491,3 @@ The [Write HTTP Clients & Servers](/docs/tutorials/httpserver/) and
 [Write Command-Line Apps](/docs/tutorials/cmdline/) tutorials include
 examples that use streams.
 
-{% endcapture %}
-
-{% include tutorial_content.html %}

@@ -1,38 +1,39 @@
 ---
 reference: "https://www.dartlang.org/docs/tutorials/futures"
 
+layout: tutorial
 title: "Asynchronous Programming: Futures"
 description: "A first look at Futures and how to use them to make your asynchronous code better."
+
+next:
+  url: /tutorials/streams
+  title: "Asynchronous Programming: Streams"
+previous:
+  url:
+  title:
+
+points:
+  - "Dart is single-threaded."
+  - "Synchronous code can make your program freeze."
+  - "Use Futures to perform asynchronous operations."
+  - "Use `await` in an async function to pause execution until a Future completes."
+  - "Or use Future's `then()` method."
+  - "Use try-catch expressions in async functions to catch errors."
+  - "Or use Future's `catchError()` method."
+  - "You can chain Futures to run asynchronous functions in order."
+examples:
 
 has-permalinks: true
 tutorial:
   id: futures
-next: streams/
-next-title: "Asynchronous Programming: Streams"
-prev: using-polymer/
-prev-title: "Use Polymer Elements"
+
+# next: streams/
+# next-title: "Asynchronous Programming: Streams"
+# prev: using-polymer/
+# prev-title: "Use Polymer Elements"
 
 ---
 
-{% capture whats_the_point %}
-
-* Dart is single-threaded.
-* Synchronous code can make your program freeze.
-* Use Futures to perform asynchronous operations.
-* Use `await` in an async function to pause execution until
-  a Future completes.
-* Or use Future's `then()` method.
-* Use try-catch expressions in async functions to catch errors.
-* Or use Future's `catchError()` method.
-* You can chain Futures to run asynchronous functions in order.
-
-{% endcapture %}
-
-{% comment %}
-The sample_links space is intentionally left blank.
-{% endcomment %}
-
-{% capture content %}
 
 <div class="tute-target-title">
 <h1>{{page.title}}</h1>
@@ -460,8 +461,4 @@ and asynchronous programming in Dart:
 * The next tutorial,
 [Fetch Data Dynamically](/docs/tutorials/fetchdata/),
 uses a Future when doing an HTTP request.
-
-{% endcapture %}
-
-{% include tutorial_content.html %}
 

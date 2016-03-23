@@ -1,5 +1,5 @@
-{% if page.previous || page.next %}
-<nav>
+{% if page.next.url or page.previous.url %}
+<nav id="subnav">
   <ul>
     {% if page.previous.url %}
     <li><a href="{{ page.previous.url }}">{{ page.previous.title }}</a></li>
