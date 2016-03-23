@@ -3,16 +3,9 @@ layout: default
 ---
 <section class="mdl-grid">
   <div class="mdl-cell mdl-cell--4-col">
-    <nav>
-      <ul>
-        <li><a href="#">Link Title</a></li>
-        <li><a href="#">Link Title</a></li>
-        <li><a href="#">Link Title</a></li>
-        <li><a href="#">Link Title</a></li>
-      </ul>
-    </nav>
+    {% include navigation-page.html %}
   </div>
   <div class="mdl-cell mdl-cell--8-col">
-    {{ content }}
+    {{ content  | inject_anchors }}
   </div>
 </section>
