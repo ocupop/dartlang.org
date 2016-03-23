@@ -1,12 +1,14 @@
 {% if page.next.url or page.previous.url %}
 <nav id="subnav">
-  <ul>
-    {% if page.previous.url %}
-    <li><a href="{{ page.previous.url }}">{{ page.previous.title }}</a></li>
-    {% endif %}
-    {% if page.next.url %}
-    <li><a href="{{ page.next.url }}">{{ page.next.title }}</a></li>
-    {% endif %}
-  </ul>
+  <div class="container">
+    <ul>
+      {% if page.previous.url %}
+      <li><a href="{{ page.previous.url }}">{{ page.previous.title }}</a></li>
+      {% endif %}
+      {% if page.next.url %}
+      <li><a href="{{ page.next.url }}">{{ page.next.title }}</a></li>
+      {% endif %}
+    </ul>
+  </div>
 </nav>
 {% endif %}
