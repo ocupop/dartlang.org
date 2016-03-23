@@ -4,40 +4,34 @@ reference: "https://www.dartlang.org/docs/tutorials/shared-pkgs/"
 title: "Install Shared Packages"
 description: "Packages are bundles of source code, tools, and resources that help you to organize and share code"
 
+next:
+  url:
+  title:
+previous:
+  url:
+  title:
+
+points:
+  - "Following a few conventions, such as having a valid pubspec.yaml file, makes your app a package."
+  - "Use Stagehand to generate starting files for your app."
+  - "Use `pub get` to download packages."
+  - "pub.dartlang.org is the primary public repository for Dart packages."
+
+examples:
+  - title: pub.dartlang.org
+    url: "https://pub.dartlang.org/"
+    description: "Get the vector_math package and many others from:"
+
 has-permalinks: true
 tutorial:
   id: packages
-next: using-polymer/
-next-title: "Use Polymer Elements"
-prev: remove-elements/
-prev-title: "Remove DOM Elements"
+
+# next: using-polymer/
+# next-title: "Use Polymer Elements"
+# prev: remove-elements/
+# prev-title: "Remove DOM Elements"
 ---
 
-{% capture whats_the_point %}
-
-* Following a few conventions, such as having a valid pubspec.yaml file,
-  makes your app a package.
-* Use Stagehand to generate starting files for your app.
-* Use `pub get` to download packages.
-* pub.dartlang.org is the primary public repository for Dart packages.
-
-{% endcapture %}
-
-{% capture sample_links %}
-
-<p>
-Get the vector_math package and many others from:</p>
-
-<ul>
-  <li>
-    <a href="https://pub.dartlang.org/"
-       target="_blank">pub.dartlang.org</a>
-  </li>
-</ul>
-
-{% endcapture %}
-
-{% capture content %}
 
 <div class="tute-target-title">
 <h1>{{page.title}}</h1>
@@ -373,7 +367,3 @@ Check out the next tutorial,
 [Use Polymer Elements](/docs/tutorials/using-polymer),
 for an introduction to polymer.dart.
 
-
-{% endcapture %}
-
-{% include tutorial_content.html %}

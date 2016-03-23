@@ -5,6 +5,17 @@ layout: tutorial
 title: "Dart Tutorials"
 description: "The Dart Tutorials&mdash;Your guide to building great web apps."
 
+next:
+  url:
+  title:
+previous:
+  url:
+  title:
+
+points:
+examples:
+
+
 has-permalinks: true
 rel:
   author:
@@ -17,7 +28,6 @@ header:
   css: ["/docs/tutorials/tute_main_page.css"]
 ---
 
-{% capture content %}
 
 <img class="scale-img-max" src="images/banner.png">
 
@@ -309,6 +319,3 @@ from left to right...or choose just the ones you need.
 
 </aside>
 
-{% endcapture %}
-
-{% include tutorial_main_page.html %}

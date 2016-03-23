@@ -1,16 +1,24 @@
 ---
 layout: default
 ---
-<div>{{ page.excerpt }}</div>
 <section class="mdl-grid">
-  <nav class="mdl-cell mdl-cell--4-col">
-    <ul>
-      <li><a href="#">Link Title</a></li>
-      <li><a href="#">Link Title</a></li>
-      <li><a href="#">Link Title</a></li>
-      <li><a href="#">Link Title</a></li>
-    </ul>
-  </nav>
+  <div class="mdl-cell mdl-cell--4-col">
+    {% if page.points %}
+      <ul>
+        {% for point in page.points %}
+        <li>{{ point }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    {% if page.examples %}
+      <ul>
+        {% for example in page.examples %}
+        <li>{{ example }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
   <div class="mdl-cell mdl-cell--8-col">
     {{ content }}
   </div>

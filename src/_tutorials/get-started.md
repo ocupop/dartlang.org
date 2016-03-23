@@ -5,38 +5,44 @@ layout: tutorial
 title: "Get Started"
 description: "Get Dart and run two Dart applications"
 
+next:
+  url:
+  title:
+previous:
+  url:
+  title:
+
+points:
+  - "The Dart SDK has development tools and libraries."
+  - "You can use Dart for web apps and command-line apps."
+  - "Run Dart web apps directly in Dartium."
+  - "Use an IDE (such as WebStorm) or code editor to create your app."
+  - "Compile Dart apps to JavaScript for other browsers."
+  - "All Dart apps have a main() function."
+  - "Dart supports top-level functions."
+
+examples:
+  - title: hello_world
+    url:
+    description:
+  - title: simple
+    url:
+    description:
+
+
 has-permalinks: true
 tutorial:
   id: get-started
-next: connect-dart-html/
-next-title: "Connect Dart & HTML"
-prev:
-prev-title: "Home"
+
+# next: connect-dart-html/
+# next-title: "Connect Dart & HTML"
+# prev:
+# prev-title: "Home"
 
 ---
 
-{% capture whats_the_point %}
 
-* The Dart SDK has development tools and libraries.
-* You can use Dart for web apps and command-line apps.
-* Run Dart web apps directly in Dartium.
-* Use an IDE (such as WebStorm) or code editor to create your app.
-* Compile Dart apps to JavaScript for other browsers.
-* All Dart apps have a main() function.
-* Dart supports top-level functions.
 
-{% endcapture %}
-
-{% capture sample_links %}
-
-This tutorial features two examples:
-
-* hello_world
-* simple
-
-{% endcapture %}
-
-{% capture content %}
 
 <div class="tute-target-title">
 <h1>{{page.title}}</h1>
@@ -506,6 +512,3 @@ with words separated by underscores (`_`).
   [Connect Dart & HTML](/docs/tutorials/connect-dart-html/),
   which steps you through writing a tiny web app from scratch.
 
-{% endcapture %}
-
-{% include tutorial_content.html %}
