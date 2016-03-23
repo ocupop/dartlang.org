@@ -4,14 +4,18 @@ reference: "https://www.dartlang.org/effective-dart/design/"
 layout: article
 title: "Effective Dart: Design"
 description: "Design consistent, usable libraries."
+toc: true
+
+next:
+  url:
+  title:
+previous:
+  url: /language/effective-dart/usage
+  title: "Usage"
 
 has-permalinks: true
-prev-guide: /effective-dart/usage/
-prev-guide-title: "Usage"
----
 
-{% include toc.html %}
-{% include effective-dart-nav.html %}
+---
 
 # {{ page.title }}
 
@@ -1067,6 +1071,3 @@ class Person {
 {% endprettify %}
 </div>
 
-<hr>
-
-{% include effective-dart-nav.html %}

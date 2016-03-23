@@ -4,9 +4,7 @@ reference: "https://www.dartlang.org/docs/tutorials/streams/"
 title: "Asynchronous Programming: Streams"
 description: "Learn how to consume single-subscriber and broadcast streams."
 
-next:
-  url: /tutorials/
-  title:
+
 previous:
   url: /tutorials/futures
   title: "Asynchronous Programming: Futures"
@@ -18,15 +16,9 @@ points:
   - "Streams provide a way to respond to errors."
   - "There are two kinds of streams: single subscription or broadcast."
 
-examples:
-
 tutorial:
   id: streams
 
-# next: fetchdata/
-# next-title: "Fetch Data Dynamically"
-# prev: futures/
-# prev-title: "Asynchronous Programming: Futures"
 ---
 
 <div class="tute-target-title">

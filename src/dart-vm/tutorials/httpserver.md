@@ -4,6 +4,22 @@ reference: "https://www.dartlang.org/docs/tutorials/httpserver/"
 layout: page
 title: "Write HTTP Clients & Servers"
 description: "Communicate over the internet"
+toc: true
+
+next:
+  url: /dart-vm/tutorials/foo
+  title: "Dart-VM: "
+previous:
+  url: /dart-vm/tutorials/foo
+  title: "Dart-VM: "
+
+points:
+  - "Knowledge of Futures and Streams is a prerequisite."
+  - "The HTTP protocol allows clients and servers to communicate."
+  - "The dart:io package has classes for writing HTTP programs."
+  - "Servers listen for requests on a host and port."
+  - "Clients send requests using an HTTP method request."
+  - "The http_server package provides higher-level building blocks."
 
 has-permalinks: true
 tutorial:
@@ -16,39 +32,29 @@ header:
   css: ["/docs/tutorials/httpserver/httpserver.css"]
 ---
 
-{% capture whats_the_point %}
+{% comment %}
+  === Figure out if this needs to be refactored? Or if this is a single occurrence of this type of example content ====
+  {% capture sample_links %}
 
-* Knowledge of Futures and Streams is a prerequisite.
-* The HTTP protocol allows clients and servers to communicate.
-* The dart:io package has classes for writing HTTP programs.
-* Servers listen for requests on a host and port.
-* Clients send requests using an HTTP method request.
-* The http_server package provides higher-level building blocks.
+  This tutorial features these examples,
+  which live under the **httpserver** directory:
 
-{% endcapture %}
+  * hello_world_server.dart
+  * number_thinker.dart
+  * basic_writer_server.dart
+  * basic_writer_client.dart
+  * mini_file_server.dart
+  * basic_file_server.dart
+  * hello_world_server_secure.dart
 
-{% capture sample_links %}
+  <p>
+  Don't have the source code?
+  <a href="https://github.com/dart-lang/dart-tutorials-samples/archive/master.zip">
+    Download it.
+  </a>
 
-This tutorial features these examples,
-which live under the **httpserver** directory:
-
-* hello_world_server.dart
-* number_thinker.dart
-* basic_writer_server.dart
-* basic_writer_client.dart
-* mini_file_server.dart
-* basic_file_server.dart
-* hello_world_server_secure.dart
-
-<p>
-Don't have the source code?
-<a href="https://github.com/dart-lang/dart-tutorials-samples/archive/master.zip">
-  Download it.
-</a>
-
-{% endcapture %}
-
-{% capture content %}
+  {% endcapture %}
+{% endcomment %}
 
 <div class="tute-target-title">
 <h1>{{page.title}}</h1>
@@ -1137,6 +1143,3 @@ for further details about the classes and libraries discussed in this tutorial.
   request from a browser-based client using an HTML form.
   It also discusses the related server.
 
-{% endcapture %}
-
-{% include tutorial_content.html %}

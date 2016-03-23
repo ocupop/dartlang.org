@@ -4,6 +4,7 @@ reference: "https://www.dartlang.org/articles/snapshots/"
 layout: article
 title: "Snapshots in Dart"
 description: "Learn how snapshots can help your apps start up faster."
+toc: true
 
 rel:
   author: siva-annamalai
@@ -13,7 +14,6 @@ article:
   collection: language-details
 ---
 
-{% include toc.html %}
 {% include breadcrumbs.html %}
 
 # {{ page.title }}

@@ -4,6 +4,7 @@ reference: "https://www.dartlang.org/articles/benchmarking/"
 layout: article
 title: "Benchmarking the Dart VM"
 description: "Learn how to benchmark your applications"
+toc: true
 
 rel:
     author: john-mccutchan
@@ -14,7 +15,6 @@ article:
   collection: performance
 ---
 
-{% include toc.html %}
 {% include breadcrumbs.html %}
 
 # {{ page.title }}

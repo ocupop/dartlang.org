@@ -3,9 +3,10 @@ reference: "https://www.dartlang.org/tools/pub/publishing.html"
 
 layout: page
 title: "Publishing a Package"
+toc: true
+
 ---
 
-{% include toc.html %}
 {% include breadcrumbs.html %}
 
 # {{ page.title }}

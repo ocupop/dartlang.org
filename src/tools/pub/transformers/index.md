@@ -3,13 +3,13 @@ reference: "https://www.dartlang.org/tools/pub/transformers/"
 
 layout: page
 title: "Writing a Pub Transformer"
-description: How to write a Pub transformer that processes a single input asset.
+description: "How to write a Pub transformer that processes a single input asset."
+toc: true
 
 header:
   css: ["transformers.css"]
 ---
 
-{% include toc.html %}
 {% include breadcrumbs.html %}
 
 # {{ page.title }}

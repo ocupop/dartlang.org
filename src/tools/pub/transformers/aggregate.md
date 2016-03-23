@@ -9,7 +9,6 @@ header:
   css: ["transformers.css"]
 ---
 
-{% include toc.html %}
 {% include breadcrumbs.html %}
 
 # {{ page.title }}

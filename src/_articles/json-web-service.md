@@ -15,7 +15,6 @@ article:
   collection: libraries-and-apis
 ---
 
-{% include toc.html %}
 {% include breadcrumbs.html %}
 
 # {{ page.title }}

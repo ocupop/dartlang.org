@@ -4,6 +4,7 @@ reference: "https://www.dartlang.org/tools/webstorm/"
 layout: page
 title: "WebStorm"
 description: "Try WebStorm for developing Dart web apps."
+toc: true
 
 has-permalinks: false
 ---
@@ -13,7 +14,6 @@ xxx: WebStorm can also be used for non-web development.
  But maybe we should consider hosting this page on dart4web..
 {% endcomment %}
 
-{% include toc.html %}
 {% include breadcrumbs.html %}
 
 # {{ page.title }}

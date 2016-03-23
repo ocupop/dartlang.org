@@ -3,9 +3,10 @@ reference: "https://www.dartlang.org/tools/pub/create-library-packages.html"
 
 layout: page
 title: "Creating Library Packages"
+toc: true
+
 ---
 
-{% include toc.html %}
 {% include breadcrumbs.html %}
 
 # {{ page.title }}

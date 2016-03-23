@@ -9,8 +9,8 @@ next:
   url: /tutorials/streams
   title: "Asynchronous Programming: Streams"
 previous:
-  url:
-  title:
+  url: /tutorials/shared-pkgs
+  title: Install Shared Packages
 
 points:
   - "Dart is single-threaded."
@@ -21,7 +21,6 @@ points:
   - "Use try-catch expressions in async functions to catch errors."
   - "Or use Future's `catchError()` method."
   - "You can chain Futures to run asynchronous functions in order."
-examples:
 
 has-permalinks: true
 tutorial:

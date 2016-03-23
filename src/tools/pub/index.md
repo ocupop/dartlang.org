@@ -3,11 +3,11 @@ reference: "https://www.dartlang.org/tools/pub/"
 
 layout: page
 title: "Pub Package and Asset Manager"
+toc: true
 
 short-title: "Pub"
 ---
 
-{% include toc.html %}
 {% include breadcrumbs.html %}
 
 {% comment %}

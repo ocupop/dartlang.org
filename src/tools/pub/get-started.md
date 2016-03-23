@@ -3,9 +3,10 @@ reference: "https://www.dartlang.org/tools/pub/get-started.html"
 
 layout: page
 title: "Getting Started with Pub"
+toc: true
+
 ---
 
-{% include toc.html %}
 {% include breadcrumbs.html %}
 
 # {{ page.title }}

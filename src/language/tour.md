@@ -6,14 +6,8 @@ title: "A Tour of the Dart Language"
 description: "Read Chapter 2, A Tour of the Dart Language of Dart (from Dart: Up and Running, published by O'Reilly)."
 
 subsite: "Dart Up and Running"
-prev-chapter: ch01.html
-prev-chapter-title: "Quick Start"
-next-chapter: ch03.html
-next-chapter-title: "Library Tour"
----
 
-{% include toc.html %}
-{% include book-nav.html %}
+---
 
 # {{ page.title }}
 
@@ -3958,6 +3952,3 @@ Specification](/docs/spec/) and
 [articles](/articles/) such as [Idiomatic
 Dart.](/articles/idiomatic-dart/)
 
-
-<hr>
-{% include book-nav.html %}

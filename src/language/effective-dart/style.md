@@ -4,14 +4,18 @@ reference: "https://www.dartlang.org/effective-dart/style/"
 layout: article
 title: "Effective Dart: Style"
 description: "Formatting and naming rules for consistent, readable code."
+toc: true
+
+next:
+  url: /language/effective-dart/documentation
+  title: "Documentation"
+previous:
+  url: /language/effective-dart/
+  title: "Overview"
 
 has-permalinks: true
-next-guide: /effective-dart/documentation/
-next-guide-title: "Documentation"
----
 
-{% include toc.html %}
-{% include effective-dart-nav.html %}
+---
 
 # {{ page.title }}
 
@@ -751,6 +755,3 @@ args.addAll([
 Your goal is to balance using indentation to show expression structure while
 not wanting to indent large swathes of code unecessarily.
 
-<hr>
-
-{% include effective-dart-nav.html %}

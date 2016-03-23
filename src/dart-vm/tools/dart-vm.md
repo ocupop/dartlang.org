@@ -3,11 +3,11 @@ reference: "https://www.dartlang.org/tools/dart-vm/"
 
 layout: page
 title: "dart: The Standalone VM"
+toc: true
 
 short-title: "dart"
 ---
 
-{% include toc.html %}
 {% include breadcrumbs.html %}
 
 # {{ page.title }}

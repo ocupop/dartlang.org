@@ -6,15 +6,8 @@ title: "Dart Tutorials"
 description: "The Dart Tutorials&mdash;Your guide to building great web apps."
 
 next:
-  url:
-  title:
-previous:
-  url:
-  title:
-
-points:
-examples:
-
+  url: /tutorials/get-started
+  title: Get Started
 
 has-permalinks: true
 rel:
@@ -22,8 +15,6 @@ rel:
     - mary-campione
 tutorial:
   id: tut-home
-next: get-started/
-next-title: "Get Started"
 header:
   css: ["/docs/tutorials/tute_main_page.css"]
 ---

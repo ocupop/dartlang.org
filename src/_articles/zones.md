@@ -16,7 +16,6 @@ header:
   css: ["styles.css"]
 ---
 
-{% include toc.html %}
 {% include breadcrumbs.html %}
 
 # {{ page.title }}

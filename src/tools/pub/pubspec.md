@@ -3,9 +3,10 @@ reference: "https://www.dartlang.org/tools/pub/pubspec.html"
 
 layout: page
 title: "Pubspec Format"
+toc: true
+
 ---
 
-{% include toc.html %}
 {% include breadcrumbs.html %}
 
 # {{ page.title }}

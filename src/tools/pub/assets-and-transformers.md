@@ -3,11 +3,10 @@ reference: "https://www.dartlang.org/tools/pub/assets-and-transformers.html"
 
 layout: page
 title: "Assets and Transformers"
-description: How pub transforms and generates assets and files during
-             development and build time.
+description: "How pub transforms and generates assets and files during development and build time."
+toc: true
 ---
 
-{% include toc.html %}
 {% include breadcrumbs.html %}
 
 # {{ page.title }}

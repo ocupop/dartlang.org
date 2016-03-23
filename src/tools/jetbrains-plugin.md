@@ -4,11 +4,11 @@ reference: "https://www.dartlang.org/tools/jetbrains-plugin/"
 layout: page
 title: "Dart Plugin from JetBrains"
 description: "Use Dart with a variety of IDEs and editors from JetBrains."
+toc: true
 
 has-permalinks: false
 ---
 
-{% include toc.html %}
 {% include breadcrumbs.html %}
 
 # {{ page.title }}

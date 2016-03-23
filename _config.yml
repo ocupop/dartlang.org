@@ -31,25 +31,15 @@ custom:
         editor-ext: zip
 
 
-# defaults:
-# - scope:
-#     path: solutions
-#   values:
-#     nextpage:
-#       url: /stakeholder
-#       title: Stakeholders
-#     prevpage:
-#       url: /solution
-#       title: Solutions
-# - scope:
-#     path: stakeholders
-#   values:
-#     nextpage:
-#       url: /action
-#       title: Action
-#     prevpage:
-#       url: /stakeholder
-#       title: Stakeholders
+defaults:
+- scope:
+    path: articles
+  values:
+    toc: true
+- scope:
+    path: tutorials
+  values:
+    toc: true
 
 collections:
   articles:

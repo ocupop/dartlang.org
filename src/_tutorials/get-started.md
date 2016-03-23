@@ -6,11 +6,11 @@ title: "Get Started"
 description: "Get Dart and run two Dart applications"
 
 next:
-  url:
-  title:
+  url: /tutorials/shared-pkgs
+  title: Install Shared Packages
 previous:
-  url:
-  title:
+  url: /tutorials/
+  title: Dart Tutorials
 
 points:
   - "The Dart SDK has development tools and libraries."
@@ -33,11 +33,6 @@ examples:
 has-permalinks: true
 tutorial:
   id: get-started
-
-# next: connect-dart-html/
-# next-title: "Connect Dart & HTML"
-# prev:
-# prev-title: "Home"
 
 ---
 

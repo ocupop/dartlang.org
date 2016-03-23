@@ -4,43 +4,51 @@ reference: "https://www.dartlang.org/docs/tutorials/cmdline/"
 layout: page
 title: "Write Command-Line Apps"
 description: "Basics for command-line apps"
+toc: true
+
+next:
+  url: /dart-vm/tutorials/foo
+  title: "Dart-VM: "
+previous:
+  url: /dart-vm/tutorials/foo
+  title: "Dart-VM: "
+
+points:
+  - "Command-line applications need to do input and output."
+  - "The dart:io library provides I/O functionality."
+  - "The args package helps define and parse command-line arguments."
+  - "Most input and output requires the use of Streams."
+  - "Streams provide a series of asynchronous data events."
+  - "To handle asynchronous data, you need to use Futures."
+
+examples:
+  - title:
+    url:
+    description:
 
 has-permalinks: true
 tutorial:
   id: dart-io
-next: httpserver
-next-title: "Write HTTP Clients & Servers"
-prev: forms/
-prev-title: "Get Input from a Form"
+
 ---
+{% comment %}
+  === Figure out if this needs to be refactored? Or if this is a single occurrence of this type of example content ====
+  {% capture sample_links %}
 
-{% capture whats_the_point %}
+  This tutorial features the following example
+  under the **cmdline/bin** directory:
 
-* Command-line applications need to do input and output.
-* The dart:io library provides I/O functionality.
-* The args package helps define and parse command-line arguments.
-* Most input and output requires the use of Streams.
-* Streams provide a series of asynchronous data events.
-* To handle asynchronous data, you need to use Futures.
+  * dcat.dart
 
-{% endcapture %}
+  <p>
+  Don't have the source code?
+  <a href="https://github.com/dart-lang/dart-tutorials-samples/archive/master.zip">
+    Download it.
+  </a>
 
-{% capture sample_links %}
+  {% endcapture %}
+{% endcomment %}
 
-This tutorial features the following example
-under the **cmdline/bin** directory:
-
-* dcat.dart
-
-<p>
-Don't have the source code?
-<a href="https://github.com/dart-lang/dart-tutorials-samples/archive/master.zip">
-  Download it.
-</a>
-
-{% endcapture %}
-
-{% capture content %}
 
 <div class="tute-target-title">
 <h1>{{page.title}}</h1>
@@ -631,7 +639,3 @@ check out the next tutorial,
 features a client-server.
 The code for the server, which uses CORS headers and handles
 POST requests, is explained in detail.
-
-{% endcapture %}
-
-{% include tutorial_content.html %}

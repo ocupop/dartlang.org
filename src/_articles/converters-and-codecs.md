@@ -17,7 +17,6 @@ header:
   css: ["/articles/converters-and-codecs/styles.css"]
 ---
 
-{% include toc.html %}
 {% include breadcrumbs.html %}
 
 # {{ page.title }}

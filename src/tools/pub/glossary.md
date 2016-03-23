@@ -3,9 +3,10 @@ reference: "https://www.dartlang.org/tools/pub/glossary.html"
 
 layout: page
 title: "Glossary of Pub Terms"
+toc: true
+
 ---
 
-{% include toc.html %}
 {% include breadcrumbs.html %}
 
 # {{ page.title }}

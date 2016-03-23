@@ -4,16 +4,18 @@ reference: "https://www.dartlang.org/effective-dart/usage/"
 layout: article
 title: "Effective Dart: Usage"
 description: "Guidelines for using language features to write maintainable code."
+toc: true
+
+next:
+  url: /language/effective-dart/documentation
+  title: "Documentation"
+previous:
+  url: /language/effective-dart/design
+  title: "Design"
 
 has-permalinks: true
-prev-guide: /effective-dart/documentation/
-prev-guide-title: "Documentation"
-next-guide: /effective-dart/design/
-next-guide-title: "Design"
----
 
-{% include toc.html %}
-{% include effective-dart-nav.html %}
+---
 
 # {{ page.title }}
 
@@ -990,6 +992,3 @@ Future<bool> fileContainsBear(String path) async {
 {% endprettify %}
 </div>
 
-<hr>
-
-{% include effective-dart-nav.html %}

@@ -4,6 +4,7 @@ reference: "https://www.dartlang.org/articles/io/"
 layout: article
 title: "An Introduction to the dart:io Library"
 description: "An introduction to the Dart I/O library, which is aimed at server-side code that runs on the standalone Dart VM."
+toc: true
 
 rel:
   author: mads-ager
@@ -14,7 +15,6 @@ article:
   collection: libraries-and-apis
 ---
 
-{% include toc.html %}
 {% include breadcrumbs.html %}
 
 # {{ page.title }}

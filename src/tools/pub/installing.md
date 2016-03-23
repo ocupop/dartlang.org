@@ -3,9 +3,10 @@ reference: "https://www.dartlang.org/tools/pub/installing.html"
 
 layout: page
 title: "Installing and Configuring Pub"
+toc: true
+
 ---
 
-{% include toc.html %}
 {% include breadcrumbs.html %}
 
 # {{ page.title }}

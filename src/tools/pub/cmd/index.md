@@ -4,9 +4,9 @@ reference: "https://www.dartlang.org/tools/pub/cmd/"
 layout: page
 title: "Pub Commands"
 description: "Pub, a package and asset management tool for Dart, supports a variety of commands."
+toc: true
 ---
 
-{% include toc.html %}
 {% include breadcrumbs.html %}
 
 # {{ page.title }}
