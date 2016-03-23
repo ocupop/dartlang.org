@@ -3,11 +3,13 @@
 ----------------------------------------- */
 
 // Color Palette
+$black:                     #000000;
+$white:                     #ffffff;
 $grey:                      #D3D3D3;
-$grey-light:                #f5f5f5;
+$grey-light:                #eeeeee;
 $grey-dark:                 #434343;
-$blue:                      #1a85cb;
-
+$blue:                      #1b87c9;
+$blue-light:                #e2f4fd;
 
 // Typeography
 $font-family-base:          'Source Sans Pro', sans-serif;
@@ -16,17 +18,23 @@ $font-family-extended:      'Trade Gothic W01', sans-serif;
 $font-family-serif:         'Trade Gothic W01', sans-serif;
 
 // Baseline
-$font-size-base:          17px;
+$font-size-base:          16px;
 
 // Headings
-$font-size-h1:            floor(($font-size-base * 2.6)); // ~44px
-$font-size-h2:            floor(($font-size-base * 2.15)); // ~37px
-$font-size-h3:            ceil(($font-size-base * 1.8)); // ~30px
-$font-size-h4:            ceil(($font-size-base * 1.25)); // ~21px
-$font-size-h5:            $font-size-base;
-$font-size-h6:            ceil(($font-size-base * 0.85)); // ~14px
+$font-size-h1:            44px;
+$font-size-h2:            37px;
+$font-size-h3:            30px;
+$font-size-h4:            21px;
+$font-size-h5:            16px;
+$font-size-h6:            14px;
 
 // Spacing
 $live-content-width:      960px;
-$line-height-base:        1.618;
-$content-padding:         floor(($font-size-base * $line-height-base));
+$content-padding:         20px;
+
+// Alerts
+$alert-success-bg:        #dff0d8;
+$alert-info-bg:           $blue-light;
+$alert-warning-bg:        #fcf8e3;
+$alert-danger-bg:         #f2dede;
+

@@ -12,13 +12,6 @@ body {
 }
 section {
   position: relative;
-  padding: $content-padding;
-}
-input {
-  border: none;
-  padding: 3px 5px;
-  color: $grey-dark;
-  border-radius: 2px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -26,6 +19,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   color: $grey-dark;
 }
+
 h1, .h1 { font-size: $font-size-h1;}
 h2, .h2 { font-size: $font-size-h2;}
 h3, .h3 { font-size: $font-size-h3;}
@@ -33,35 +27,22 @@ h4, .h4 { font-size: $font-size-h4;}
 h5, .h5 { font-size: $font-size-h5;}
 h6, .h6 { font-size: $font-size-h6;}
 
-p {
-  // font-size: $font-size-base;
-}
+p {}
 
 a {
   color: $blue;
   text-decoration: none;
+  &:hover, &:focus, &:active {
+    outline: none;
+  }
 }
 
-ul {
-  list-style-type: none;
-  padding-left: 0;
-}
+ul {}
 
-::-webkit-input-placeholder {
-   color: $grey-dark;
-   font-family: $font-family-base;
-}
-:-moz-placeholder { /* Firefox 18- */
-   color: $grey-dark;
-   font-family: $font-family-base; 
-}
-::-moz-placeholder {  /* Firefox 19+ */
-   color: $grey-dark;
-   font-family: $font-family-base;
-}
-:-ms-input-placeholder {  
-   color: $grey-dark;
-   font-family: $font-family-base;
+pre {
+  padding: $content-padding;
+  background-color: $grey-light;
+  color: $grey-dark;
 }
 
 /* -----------------------------------------
@@ -70,16 +51,18 @@ ul {
 // Structure
 #page-header {
   background-color: $grey-light;
-  .mdl-layout__header-row {
-    // @extend .container;
-  }
 }
 #page-content {
   @extend .container;
 }
+#pagenav {
+  padding: $content-padding;
+  background: $grey-light;
+}
 #page-footer {
-  color: #fff;
+  color: $white;
   font-weight: 300;
+  background-color: $grey-dark;
   .mdl-logo {
     text-indent: -999em;
     background-color: transparent;
@@ -106,10 +89,7 @@ ul {
   a {
     color: $grey-dark;
     font-weight: 700;
-    text-transform: uppercase;
-    &:hover {
-
-    }
+    &:hover {}
   }
 }
 #footernav {}
@@ -160,13 +140,38 @@ ul {
   display: none !important;
   visibility: hidden;
 }
-.well {
-  h1, h2, h3, h4, h5, h6 {
-    color: $blue;
+
+.alert {
+  padding: $content-padding;
+  &.alert-success {
+    background-color: $alert-success-bg;
   }
-  color: $blue;
-  background: $grey-light;
-  padding:20px 16px;
+  &.alert-info {
+    background-color: $alert-info-bg;
+  }
+  &.alert-warning {
+    background-color: $alert-warning-bg;
+  }
+  &.alert-danger {
+    background-color: $alert-danger-bg;
+  }
+}
+
+::-webkit-input-placeholder {
+   color: $grey-dark;
+   font-family: $font-family-base;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: $grey-dark;
+   font-family: $font-family-base; 
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $grey-dark;
+   font-family: $font-family-base;
+}
+:-ms-input-placeholder {  
+   color: $grey-dark;
+   font-family: $font-family-base;
 }
 
 
@@ -215,4 +220,3 @@ ul {
     display: none;
   }
 }
-
