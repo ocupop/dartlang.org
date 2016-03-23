@@ -1,17 +1,14 @@
 ---
 reference: "https://www.dartlang.org/docs/tutorials/cmdline/"
 
-layout: page
+layout: tutorial
 title: "Write Command-Line Apps"
 description: "Basics for command-line apps"
 toc: true
 
 next:
-  url: /dart-vm/tutorials/foo
-  title: "Dart-VM: "
-previous:
-  url: /dart-vm/tutorials/foo
-  title: "Dart-VM: "
+  url: /dart-vm/tutorials/httpserver
+  title: "Dart-VM: Write HTTP Clients & Servers"
 
 points:
   - "Command-line applications need to do input and output."

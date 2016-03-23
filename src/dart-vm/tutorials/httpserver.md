@@ -1,17 +1,14 @@
 ---
 reference: "https://www.dartlang.org/docs/tutorials/httpserver/"
 
-layout: page
+layout: tutorial
 title: "Write HTTP Clients & Servers"
 description: "Communicate over the internet"
 toc: true
 
-next:
-  url: /dart-vm/tutorials/foo
-  title: "Dart-VM: "
 previous:
-  url: /dart-vm/tutorials/foo
-  title: "Dart-VM: "
+  url: /dart-vm/tutorials/cmdline
+  title: "Dart-VM: Write Command-Line Apps"
 
 points:
   - "Knowledge of Futures and Streams is a prerequisite."
@@ -24,12 +21,9 @@ points:
 has-permalinks: true
 tutorial:
   id: httpserver
-next:
-next-title: "Home"
-prev: cmdline/
-prev-title: "Write Command-Line Apps"
 header:
   css: ["/docs/tutorials/httpserver/httpserver.css"]
+  
 ---
 
 {% comment %}

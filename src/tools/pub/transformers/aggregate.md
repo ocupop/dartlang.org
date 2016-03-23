@@ -4,6 +4,7 @@ reference: "https://www.dartlang.org/tools/pub/transformers/aggregate.html"
 layout: page
 title: "Writing an Aggregate Transformer"
 description: How to write a Pub transformer to processes multiple input assets.
+toc: true
 
 header:
   css: ["transformers.css"]
