@@ -5,6 +5,43 @@ url: https://stage.dartlang.org
 baseurl: "" # the subpath of your site, e.g. /blog/
 # permalink: /:path/:basename
 
+collections:
+  articles:
+    output: true
+    permalink: /articles/:path
+  tutorials:
+    output: true
+    permalink: /tutorials/:path
+  samples:
+    output: true
+    permalink: /samples/:path
+  guides:
+    output: true
+    permalink: /guides/:path
+
+defaults:
+- scope:
+    path: articles
+  values:
+    layout: article
+    toc: true
+- scope:
+    path: tutorials
+  values:
+    layout: tutorial
+    toc: true
+- scope:
+    path: guides
+  values:
+    layout: guide
+    toc: true
+- scope:
+    path: samples
+  values:
+    layout: sample
+    toc: true
+
+
 
 custom:
   dartpad:
@@ -29,31 +66,6 @@ custom:
         name: Linux
         ext: zip
         editor-ext: zip
-
-
-defaults:
-- scope:
-    path: articles
-  values:
-    toc: true
-- scope:
-    path: tutorials
-  values:
-    toc: true
-
-collections:
-  articles:
-    output: true
-    layout: article
-    permalink: /articles/:path
-  tutorials:
-    output: true
-    layout: tutorial
-    permalink: /tutorials/:path
-  # samples:
-  #   output: true
-  #   layout: page
-  #   permalink: /samples/:path
 
 
 
