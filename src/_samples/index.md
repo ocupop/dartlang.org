@@ -10,7 +10,7 @@ header:
 has_permalinks: true
 ---
 
-{% comment %]
+{% comment %}
 Note: Some of these samples need to be removed from here,
 particularly all web samples. But, for now, I'm leaving them.
 {% endcomment %}
