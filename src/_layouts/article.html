@@ -4,10 +4,10 @@ layout: default
 <article>
   {% if page.toc %}
     <aside>
-      {% include navigation-page.html %}
+      {% include navigation-toc.html %}
     </aside>
   {% endif %}
   <section>
-    {{ content }}
+    {{ content | inject_anchors }}
   </section>
 </article>
