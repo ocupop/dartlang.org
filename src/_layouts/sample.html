@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<article>
+  {% if page.toc %}
+    <aside>
+      {% include navigation-toc.html %}
+    </aside>
+  {% endif %}
+  <section>
+    {{ content | inject_anchors }}
+  </section>
+</article>

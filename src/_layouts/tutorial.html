@@ -3,6 +3,10 @@ layout: default
 ---
 <article>
   <aside>
+    {% if page.toc %}
+      {% include navigation-toc.html %}
+    {% endif %}
+
     {% if page.points %}
       <div class="panel">
         <h4>What's the point?</h4>
