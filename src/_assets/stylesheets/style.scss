@@ -1,4 +1,5 @@
-@import 'https://code.getmdl.io/1.1.1/material.blue-teal.min.css';
+// @import 'https://code.getmdl.io/1.1.1/material.blue-teal.min.css';
+@import "vendor/material.scss";
 @import '_variables';
 @import '_mixins';
 @import '_icons';
@@ -9,6 +10,17 @@
 ----------------------------------------- */
 body {
   font-family: $font-family-base;
+}
+article {
+  @extend .mdl-grid;
+  section {
+    @extend .mdl-cell;
+    @extend .mdl-cell--8-col;
+  }
+  aside {
+    @extend .mdl-cell;
+    @extend .mdl-cell--4-col;
+  }
 }
 section {
   position: relative;
@@ -44,6 +56,7 @@ pre {
   background-color: $grey-light;
   color: $grey-dark;
 }
+
 
 /* -----------------------------------------
    DOM Specific

@@ -1,13 +1,13 @@
 ---
 layout: default
 ---
-<section class="mdl-grid">
+<article>
   {% if page.toc %}
-    <div class="mdl-cell mdl-cell--4-col">
+    <aside>
       {% include navigation-page.html %}
-    </div>
+    </aside>
   {% endif %}
-  <div class="mdl-cell mdl-cell--8-col">
+  <section>
     {{ content }}
-  </div>
-</section>
+  </section>
+</article>

@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-<section class="mdl-grid">
-  <div class="mdl-cell mdl-cell--4-col">
+<article>
+  <aside>
     {% if page.points %}
       <div class="panel">
         <h4>What's the point?</h4>
@@ -32,8 +32,8 @@ layout: default
     {% endif %}
     <hr>
     <a href="https://github.com/dart-lang/dartlang.org/issues" target="_blank">Send feedback</a>
-  </div>
-  <div class="mdl-cell mdl-cell--8-col">
+  </aside>
+  <section>
     {{ content }}
-  </div>
-</section>
+  </section>
+</article>
