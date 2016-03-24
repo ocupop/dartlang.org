@@ -6,7 +6,7 @@ title: "Asynchronous Programming: Streams"
 description: "Learn how to consume single-subscriber and broadcast streams."
 
 
-previous:
+prevpage:
   url: /tutorials/futures
   title: "Asynchronous Programming: Futures"
 

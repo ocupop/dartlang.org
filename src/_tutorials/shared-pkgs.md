@@ -5,10 +5,10 @@ layout: tutorial
 title: "Install Shared Packages"
 description: "Packages are bundles of source code, tools, and resources that help you to organize and share code"
 
-next:
+nextpage:
   url: /tutorials/futures
   title: "Asynchronous Programming: Futures"
-previous:
+prevpage:
   url: /tutorials/get-started
   title: Get Started
 

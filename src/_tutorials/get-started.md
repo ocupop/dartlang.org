@@ -5,12 +5,12 @@ layout: tutorial
 title: "Get Started"
 description: "Get Dart and run two Dart applications"
 
-next:
+nextpage:
   url: /tutorials/shared-pkgs
   title: Install Shared Packages
-previous:
+prevpage:
   url: /tutorials/
-  title: Dart Tutorials
+  title: Tutorials Overview
 
 points:
   - "The Dart SDK has development tools and libraries."

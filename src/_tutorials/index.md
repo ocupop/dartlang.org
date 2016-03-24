@@ -5,7 +5,7 @@ layout: tutorial
 title: "Dart Tutorials"
 description: "The Dart Tutorials&mdash;Your guide to building great web apps."
 
-next:
+nextpage:
   url: /tutorials/get-started
   title: Get Started
 

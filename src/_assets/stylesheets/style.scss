@@ -107,6 +107,9 @@ pre {
         padding-right: 5px;
         font-weight: 700;
       }
+      &.next {
+        float: right;
+      }
     }
   }
 }
