@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body class="{{ page.slug }}">
+  <body class="{{ page.layout }}{% if page.toc %} show_toc{% endif %}">
     <div class="mdl-layout mdl-js-layout">
       {% include page-header.html %}
       {% include navigation-sub.html %}

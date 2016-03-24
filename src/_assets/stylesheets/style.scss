@@ -15,11 +15,11 @@ article {
   @extend .mdl-grid;
   section {
     @extend .mdl-cell;
-    @extend .mdl-cell--8-col;
+    @extend .mdl-cell--12-col;
   }
   aside {
     @extend .mdl-cell;
-    @extend .mdl-cell--4-col;
+    @extend .mdl-cell--12-col;
   }
 }
 section {
@@ -59,7 +59,7 @@ pre {
 
 
 /* -----------------------------------------
-   DOM Specific
+   DOM
 ----------------------------------------- */
 // Structure
 #page-header {
@@ -129,6 +129,11 @@ pre {
 #footernav {}
 #copyright {}
 
+
+/* -----------------------------------------
+  Dartpad
+----------------------------------------- */
+
 #dartpad {
   position: fixed;
   width: 100%;
@@ -137,6 +142,10 @@ pre {
   left: 0;
   background-color: red;
 }
+
+/* -----------------------------------------
+  Search
+----------------------------------------- */
 #search {
   position: absolute;
   right: 0;
@@ -155,10 +164,35 @@ pre {
   font-size: 14px;
 }
 
+/* -----------------------------------------
+  Table of Contents
+----------------------------------------- */
+.toc-entry.toc-h2,
+.toc-entry.toc-h3,
+.toc-entry.toc-h4
+{}
+.toc-entry.toc-h1,
+.toc-entry.toc-h5,
+.toc-entry.toc-h6
+{
+  display: none;
+}
 
 /* -----------------------------------------
    Utility Classes
 ----------------------------------------- */
+body.show_toc {
+  article {
+    section {
+      @extend .mdl-cell;
+      @extend .mdl-cell--8-col;
+    }
+    aside {
+      @extend .mdl-cell;
+      @extend .mdl-cell--4-col;
+    }
+  }
+}
 .container {
   position: relative;
   max-width: $live-content-width;
@@ -166,10 +200,39 @@ pre {
   margin: 0 auto;
 }
 
-// Content
 .content {
   position: relative;
   padding: $content-padding;
+}
+
+.panel {
+  background-color: $grey-dark;
+  color: $white;
+  padding: $content-padding;
+  margin-bottom: 20px;
+  h1, h2, h3, h4, h5, h6 {
+    color: $white;
+    margin: 0;
+  }
+  ul {
+    padding-left: 15px;
+  }
+}
+
+// Columns
+.col2 {
+  column-count: 2;
+  column-gap: 0;
+  li {
+    page-break-inside: avoid;
+  }
+}
+.col3 {
+  column-count: 3;
+  column-gap: 0;
+  li {
+    page-break-inside: avoid;
+  }
 }
 
 .brand {
@@ -187,6 +250,10 @@ pre {
   visibility: hidden;
 }
 
+
+/* -----------------------------------------
+   Message / Notifications
+----------------------------------------- */
 .alert {
   padding: $content-padding;
   &.alert-success {
@@ -203,19 +270,6 @@ pre {
   }
 }
 
-.panel {
-  background-color: $grey-dark;
-  color: $white;
-  padding: $content-padding;
-  margin-bottom: 20px;
-  h1, h2, h3, h4, h5, h6 {
-    color: $white;
-    margin: 0;
-  }
-  ul {
-    padding-left: 15px;
-  }
-}
 
 ::-webkit-input-placeholder {
    color: $grey-dark;
@@ -234,14 +288,6 @@ pre {
    font-family: $font-family-base;
 }
 
-.col2 {
-  -webkit-column-count: 2;
-  -webkit-column-gap: 0;
-  li {
-    -webkit-column-break-inside: avoid;
-    page-break-inside: avoid;
-  }
-}
 
 
 /* -----------------------------------------
@@ -275,12 +321,6 @@ pre {
 .mdl-mega-footer {
   padding: 30px 0;
 }
-// .mdl-mega-footer__link-list {
-//   a {
-//     font-weight: 300;
-//     color: #fff;
-//   }
-// } 
 
 /* -----------------------------------------
    Media Queries
@@ -299,6 +339,6 @@ pre {
 }
 @media (max-width: 650px) {
   .col2 {
-    -webkit-column-count: 1;
+    column-count: 1;
   }
 }

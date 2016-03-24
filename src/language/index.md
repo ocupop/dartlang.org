@@ -8,4 +8,4 @@ description:
 
 ---
 
-<h1>Placeholder for a new "Language" intro page.</h1>
+<h3>Placeholder for a new "Language" intro page.</h3>

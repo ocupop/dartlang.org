@@ -7,5 +7,6 @@ title:
 description:
 ---
 
-<h1>Placeholder for a new "Libraries and Packages" intro page.</h1>
+<h3>Placeholder for a new "Libraries and Packages" intro page.</h3>
+
 
