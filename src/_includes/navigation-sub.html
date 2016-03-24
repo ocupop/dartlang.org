@@ -3,10 +3,10 @@
   <div class="container">
     <ul>
       {% if page.previous.url %}
-      <li><a href="{{ page.previous.url }}">{{ page.previous.title }}</a></li>
+      <li class="previous"><a href="{{ page.previous.url }}">&gt;&nbsp;{{ page.previous.title }}</a></li>
       {% endif %}
       {% if page.next.url %}
-      <li><a href="{{ page.next.url }}">{{ page.next.title }}</a></li>
+      <li class="next"><a href="{{ page.next.url }}">{{ page.next.title }}&nbsp;&gt;</a></li>
       {% endif %}
     </ul>
   </div>
