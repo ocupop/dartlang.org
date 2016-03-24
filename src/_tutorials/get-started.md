@@ -1,7 +1,6 @@
 ---
 reference: "https://www.dartlang.org/docs/tutorials/get-started"
 
-layout: tutorial
 title: "Get Started"
 description: "Get Dart and run two Dart applications"
 
@@ -30,7 +29,6 @@ examples:
     description:
 
 
-has-permalinks: true
 tutorial:
   id: get-started
 

@@ -1,16 +1,13 @@
 ---
 reference: "https://www.dartlang.org/docs/tutorials/"
 
-layout: tutorial
 title: "Dart Tutorials"
 description: "The Dart Tutorials&mdash;Your guide to building great web apps."
-toc: true
 
 nextpage:
   url: /tutorials/get-started
   title: Get Started
 
-has-permalinks: true
 rel:
   author:
     - mary-campione

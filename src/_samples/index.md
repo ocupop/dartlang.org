@@ -5,17 +5,14 @@ layout: page
 title: "Dart Code Samples"
 description: Sample Dart code for animation, HTML5, and more.
 
-header:
-  css: ["/samples/samples.css"]
-has_permalinks: true
 ---
 
 {% comment %}
 Note: Some of these samples need to be removed from here,
 particularly all web samples. But, for now, I'm leaving them.
-{% endcomment %}
 
-{% injectdata samples samples/samples.yaml %}
+{% injectdata samples /samples/samples.yaml %}
+{% endcomment %}
 
 # {{ page.title }}
 
