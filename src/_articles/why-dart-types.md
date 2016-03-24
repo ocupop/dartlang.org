@@ -13,7 +13,6 @@ article:
   collection: design-decisions
 ---
 
-{% include toc.html %}
 {% include breadcrumbs.html %}
 
 # {{ page.title }}

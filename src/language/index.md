@@ -5,6 +5,7 @@ layout: page
 permalink: /language/
 title:
 description:
+
 ---
 
-xxx: Placeholder for a new "Language" intro page.
+<h1>Placeholder for a new "Language" intro page.</h1>

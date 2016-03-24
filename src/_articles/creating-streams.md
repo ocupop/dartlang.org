@@ -18,7 +18,6 @@ article:
 .comment {color:red;}
 </style>
 
-{% include toc.html %}
 {% include breadcrumbs.html %}
 
 # {{ page.title }}

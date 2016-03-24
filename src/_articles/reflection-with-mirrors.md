@@ -17,6 +17,7 @@ article:
 ---
 
 {% include breadcrumbs.html %}
+
 # {{ page.title }}
 
 _Written by Gilad Bracha <br />

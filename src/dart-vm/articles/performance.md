@@ -4,6 +4,8 @@ reference: "https://www.dartlang.org/performance/"
 layout: article
 title: Performance
 description: Track the performance of your Dart code using benchmarks.
+toc: false
+
 ---
 
 # {{ page.title }}

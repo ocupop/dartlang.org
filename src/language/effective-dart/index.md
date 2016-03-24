@@ -4,14 +4,15 @@ reference: "https://www.dartlang.org/effective-dart/"
 layout: article
 title: "Effective Dart"
 description: "Best practices for building consistent, maintainable, efficient Dart libraries."
+toc: true
+
+next:
+  url: /language/effective-dart/style
+  title: "Style"
 
 has-permalinks: true
-next-guide: /effective-dart/style/
-next-guide-title: "Style"
----
 
-{% include toc.html %}
-{% include effective-dart-nav.html %}
+---
 
 # {{ page.title }}
 
@@ -129,7 +130,3 @@ Please [file an issue][issue] or add to an [existing one][].
 [existing one]: https://github.com/dart-lang/www.dartlang.org/issues?q=is%3Aopen+is%3Aissue+label%3AEffectiveDart
 
 </aside>
-
-<hr>
-
-{% include effective-dart-nav.html %}

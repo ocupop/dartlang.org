@@ -4,16 +4,18 @@ reference: "https://www.dartlang.org/effective-dart/documentation/"
 layout: article
 title: "Effective Dart: Documentation"
 description: "Clear, helpful comments and documentation."
+toc: true
+
+next:
+  url: /language/effective-dart/usage
+  title: "Usage"
+previous:
+  url: /language/effective-dart/style
+  title: "Style"
 
 has-permalinks: true
-prev-guide: /effective-dart/style/
-prev-guide-title: "Style"
-next-guide: /effective-dart/usage/
-next-guide-title: "Usage"
----
 
-{% include toc.html %}
-{% include effective-dart-nav.html %}
+---
 
 # {{ page.title }}
 
@@ -407,6 +409,3 @@ class Box {
 {% endprettify %}
 </div>
 
-<hr>
-
-{% include effective-dart-nav.html %}

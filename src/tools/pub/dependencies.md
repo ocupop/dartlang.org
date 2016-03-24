@@ -3,11 +3,11 @@ reference: "https://www.dartlang.org/tools/pub/dependencies.html"
 
 layout: page
 title: "Pub Dependencies"
-description: Add other packages to your app. Specify package locations,
-             version constraints, and more.
+description: "Add other packages to your app. Specify package locations, version constraints, and more."
+toc: true
+
 ---
 
-{% include toc.html %}
 {% include breadcrumbs.html %}
 
 # {{ page.title }}

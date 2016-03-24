@@ -3,9 +3,10 @@ reference: "https://www.dartlang.org/tools/pub/package-layout.html"
 
 layout: page
 title: "Pub Package Layout Conventions"
+toc: true
+
 ---
 
-{% include toc.html %}
 {% include breadcrumbs.html %}
 
 # {{ page.title }}

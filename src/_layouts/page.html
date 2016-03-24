@@ -2,17 +2,12 @@
 layout: default
 ---
 <section class="mdl-grid">
-  <div class="mdl-cell mdl-cell--4-col">
-    <nav>
-      <ul>
-        <li><a href="#">Link Title</a></li>
-        <li><a href="#">Link Title</a></li>
-        <li><a href="#">Link Title</a></li>
-        <li><a href="#">Link Title</a></li>
-      </ul>
-    </nav>
-  </div>
+  {% if page.toc %}
+    <div class="mdl-cell mdl-cell--4-col">
+      {% include navigation-page.html %}
+    </div>
+  {% endif %}
   <div class="mdl-cell mdl-cell--8-col">
-    {{ content }}
+    {{ content  | inject_anchors }}
   </div>
 </section>

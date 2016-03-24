@@ -4,16 +4,11 @@ reference: "https://www.dartlang.org/docs/dart-up-and-running/ch03.html"
 layout: page
 title: "A Tour of the Dart Libraries"
 description: "Read Chapter 3, A Tour of the Dart Libraries (from Dart: Up and Running, published by O'Reilly)."
+toc: true
 
 subsite: "Dart Up and Running"
-prev-chapter: ch02.html
-prev-chapter-title: "Language Tour"
-next-chapter: ch04.html
-next-chapter-title: "Tools"
----
 
-{% include toc.html %}
-{% include book-nav.html %}
+---
 
 # {{ page.title }}
 
@@ -2798,6 +2793,3 @@ chapter. The [args,](https://pub.dartlang.org/packages/args)
 [test](https://pub.dartlang.org/packages/test) libraries are just a
 sampling of what you can install using pub.
 
-
-<hr>
-{% include book-nav.html %}

@@ -4,6 +4,7 @@ reference: "https://www.dartlang.org/tools/sdk/"
 layout: page
 title: "Dart SDK"
 description: "Dart libraries and command-line tools."
+toc: true
 
 has-permalinks: false
 ---
@@ -14,7 +15,6 @@ tools. Later, when Dartium is no longer being offered, and
 dart2js will (presumably) be downloaded elsewhere, clean this up.
 {% endcomment %}
 
-{% include toc.html %}
 {% include breadcrumbs.html %}
 
 # {{ page.title }}

@@ -3,7 +3,7 @@ title: Dartlang.org
 description: ""
 url: https://stage.dartlang.org
 baseurl: "" # the subpath of your site, e.g. /blog/
-permalink: /:path/:basename
+# permalink: /:path/:basename
 
 
 custom:
@@ -31,25 +31,15 @@ custom:
         editor-ext: zip
 
 
-# defaults:
-# - scope:
-#     path: solutions
-#   values:
-#     nextpage:
-#       url: /stakeholder
-#       title: Stakeholders
-#     prevpage:
-#       url: /solution
-#       title: Solutions
-# - scope:
-#     path: stakeholders
-#   values:
-#     nextpage:
-#       url: /action
-#       title: Action
-#     prevpage:
-#       url: /stakeholder
-#       title: Stakeholders
+defaults:
+- scope:
+    path: articles
+  values:
+    toc: true
+- scope:
+    path: tutorials
+  values:
+    toc: true
 
 collections:
   articles:
@@ -77,15 +67,13 @@ markdown: kramdown
 excerpt_separator: "~~~"
 # highlighter: null
 
-# kramdown:
-#   toc_levels: "2,3,4"
-
 
 include: ["_pages"]
 exclude: ["diagrams", "appengine", "tests", "site"]
 
 gems:
 - jekyll-assets
+- jekyll-toc
 
 
 assets:
@@ -113,3 +101,4 @@ assets:
     liquid: true # default: false
     automatic_img_size: true # default: true
     automatic_img_alt : true # default: true
+

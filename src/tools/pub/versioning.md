@@ -3,9 +3,10 @@ reference: "https://www.dartlang.org/tools/pub/versioning.html"
 
 layout: page
 title: "Pub Versioning Philosophy"
+toc: true
+
 ---
 
-{% include toc.html %}
 {% include breadcrumbs.html %}
 
 # {{ page.title }}

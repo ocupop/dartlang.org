@@ -3,9 +3,10 @@ reference: "https://www.dartlang.org/tools/pub/faq.html"
 
 layout: page
 title: "Frequently Asked Questions about Pub"
+toc: true
+
 ---
 
-{% include toc.html %}
 {% include breadcrumbs.html %}
 
 # {{ page.title }}

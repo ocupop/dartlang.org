@@ -15,7 +15,6 @@ article:
   collection: language-details
 ---
 
-{% include toc.html %}
 {% include breadcrumbs.html %}
 
 # {{ page.title }}

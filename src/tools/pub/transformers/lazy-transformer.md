@@ -3,12 +3,13 @@ reference: "https://www.dartlang.org/tools/pub/transformers/lazy-transformer.htm
 
 layout: page
 title: "Writing a Lazy Transformer"
-description: How to write a Pub transformer that runs lazily to improve your app's startup time.
+description: "How to write a Pub transformer that runs lazily to improve your app's startup time."
+toc: true
+
 header:
   css: ["transformers.css"]
 ---
 
-{% include toc.html %}
 {% include breadcrumbs.html %}
 
 # {{ page.title }}

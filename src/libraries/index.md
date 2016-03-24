@@ -7,5 +7,5 @@ title:
 description:
 ---
 
-xxx: Placeholder for a new "Libraries and Packages" intro page.
+<h1>Placeholder for a new "Libraries and Packages" intro page.</h1>
 

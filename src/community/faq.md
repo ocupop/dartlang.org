@@ -5,11 +5,10 @@ layout: default
 permalink: /community/faq
 title: Frequently Asked Questions (FAQ)
 description: You have questions about Dart, we have answers.
+toc: true
 
 has-permalinks: true
 ---
-
-{% include toc.html %}
 
 # {{ page.title }}
 

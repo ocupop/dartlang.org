@@ -9,8 +9,8 @@ next:
   url: /tutorials/streams
   title: "Asynchronous Programming: Streams"
 previous:
-  url:
-  title:
+  url: /tutorials/shared-pkgs
+  title: Install Shared Packages
 
 points:
   - "Dart is single-threaded."
@@ -21,7 +21,6 @@ points:
   - "Use try-catch expressions in async functions to catch errors."
   - "Or use Future's `catchError()` method."
   - "You can chain Futures to run asynchronous functions in order."
-examples:
 
 has-permalinks: true
 tutorial:
@@ -123,7 +122,7 @@ code and doesn't use the Future API.
 
 The following app simulates reading the news by using async and await
 to read the contents of a file on www.dartlang.org.
-Click run ( <img src="/imgs/run.png" /> ) to start the app.
+Click run ( <img src="images/run.png" /> ) to start the app.
 
 {% comment %}
 https://gist.github.com/Sfshaza/c0e8f5c38489ddeccb5a
@@ -264,7 +263,7 @@ This callback fires when the Future completes.
 
 The following app simulates reading the news by using the Future API
 to read the contents of a file on www.dartlang.org.
-Click run ( <img src="/imgs/run.png" /> ) to start the app.
+Click run ( <img src="images/run.png" /> ) to start the app.
 
 {% comment %}
 https://gist.github.com/Sfshaza/ba1b258f810e34231a62

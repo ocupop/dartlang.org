@@ -4,6 +4,8 @@ reference: "https://www.dartlang.org/tools/pub/troubleshoot.html"
 layout: page
 title: "Troubleshooting Pub"
 description: "Common gotchas you might run into when using Pub."
+toc: false
+
 ---
 
 {% include breadcrumbs.html %}

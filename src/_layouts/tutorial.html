@@ -19,11 +19,19 @@ layout: default
         <h4>Examples</h4>
         <ul>
           {% for example in page.examples %}
-          <li>{{ example }}</li>
+          <li>
+            {% if example.url %}
+              <a href="{{ exampl.url }}" target="_blank">{{ example.title }}</a>
+            {% else %}
+              {{ example.title }}
+            {% endif %}
+          </li>
           {% endfor %}
         </ul>
       </div>
     {% endif %}
+    <hr>
+    <a href="https://github.com/dart-lang/dartlang.org/issues" target="_blank">Send feedback</a>
   </div>
   <div class="mdl-cell mdl-cell--8-col">
     {{ content }}
