@@ -10,9 +10,6 @@ nextpage:
   url: /tutorials/get-started
   title: Get Started
 
-rel:
-  author:
-    - mary-campione
 tutorial:
   id: tut-home
 header:
@@ -40,13 +37,8 @@ from left to right...or choose just the ones you need.
 <div class="tabbable">
   <ul class="nav nav-tabs">
     <li class="active"><a href="#basics" data-toggle="tab">Get started</a></li>
-    <li><a href="#dom" data-toggle="tab">Browser</a></li>
     <li><a href="#packages" data-toggle="tab">Packages</a></li>
-    <li><a href="#polymer" data-toggle="tab">Polymer</a></li>
     <li><a href="#futures" data-toggle="tab">Async</a></li>
-    <li><a href="#forms" data-toggle="tab">Forms & data</a></li>
-    <li><a href="#commandline" data-toggle="tab">Servers</a></li>
-    <!--<li><a href="#mobile" data-toggle="tab">Mobile</a></li>-->
   </ul>
 
   <div class="tab-content">
@@ -62,7 +54,7 @@ from left to right...or choose just the ones you need.
 
       <div class="row">
 
-        <!-- Getting Started -->
+        <!-- Get Started -->
         <div class="col-md-6">
           <section>
           <h4 class="no-permalink"><a href="get-started/"><img src="images/target.png" height="20" width="20">&nbsp;Get started</a></h4>
@@ -74,61 +66,7 @@ from left to right...or choose just the ones you need.
         </div>
 
       </div> <!-- end row -->
-    </div> <!-- end Getting Started tab -->
-
-  <!-- DOM TAB -->
-    <div class="tab-pane" id="dom">
-
-      <div class="intro-para">
-        Web pages are programmed in HTML and represented
-        within the browser as a tree structure
-        called the DOM (Document Object Model).
-        Dart apps can modify the DOM programmatically,
-        thus dynamically changing the web page.
-        First, learn how to connect Dart and HTML.
-        Then learn how to add, move, and remove DOM elements.
-      </div>
-
-      <div class="row">
-        <!-- Connect Dart & HTML -->
-        <div class="col-md-6">
-          <section>
-          <h4 class="no-permalink"><a href="connect-dart-html/"><img src="images/target.png" height="20" width="20">&nbsp;Connect Dart &amp; HTML</a></h4>
-            <p>Include a Dart script in an HTML page.
-            </p>
-          <img style="border:1px solid black"
-               src="images/miniapp-screenshot.png" width="300">
-          </section>
-        </div>
-
-        <!-- Add Elements -->
-        <div class="col-md-6">
-          <section>
-          <h4 class="no-permalink"><a href="add-elements/"><img src="images/target.png" height="20" width="20">&nbsp;Add Elements to the DOM</a></h4>
-          <p>Add elements to the web page and move them.</p>
-          <img style="border:1px solid black"
-               src="images/todo-screenshot.png" width="300">
-          </section>
-        </div>
-
-      </div>
-
-
-      <div class="row">
-        <!-- Remove Elements -->
-        <div class="col-md-6">
-          <section>
-          <h4 class="no-permalink"><a href="remove-elements/"><img src="images/target.png" height="20" width="20">&nbsp;Remove DOM Elements</a></h4>
-          <p>Delete elements from the web page.</p>
-          <img style="border:1px solid black"
-               src="images/todo-with-delete-screenshot.png" width="300">
-          </section>
-        </div>
-        <div class="col-md-6">
-        </div>
-
-      </div> <!-- end row -->
-    </div> <!-- end DOM tab -->
+    </div> <!-- end Get Started tab -->
 
   <!-- PACKAGES TAB -->
     <div class="tab-pane" id="packages">
@@ -154,31 +92,6 @@ from left to right...or choose just the ones you need.
         </div>
       </div>
     </div> <!-- end Packages tab -->
-
-  <!-- POLYMER TAB -->
-    <div class="tab-pane" id="polymer">
-
-      <div class="intro-para">
-        Polymer helps you build structured, encapsulated,
-        client-side web apps with web components.
-      </div>
-
-      <div class="row">
-
-        <div class="col-md-6">
-          <section>
-          <h4 class="no-permalink"><a href="using-polymer/"><img src="images/target.png" height="20" width="20">&nbsp;Use Polymer Elements</a></h4>
-          <p>Create a custom HTML element using Polymer.</p>
-          <img style="border:1px solid black"
-               src="images/stopwatch-screenshot.png" width="200">
-          </section>
-        </div>
-
-        <div class="col-md-6">
-        </div>
-
-      </div>
-    </div>
 
   <!-- FUTURES & STREAMS TAB -->
     <div class="tab-pane" id="futures">
@@ -210,41 +123,6 @@ from left to right...or choose just the ones you need.
       </div>
     </div>
 
-  <!-- FORMS TAB -->
-    <div class="tab-pane" id="forms">
-
-      <div class="intro-para">
-        Various classes in the Dart libraries help you get, send, receive,
-        and save user data.
-        You can use input elements within forms to get data from users.
-        You can use JSON to format data and HttpRequest to send requests and receive responses.
-        And, finally, you can save data on the client with IndexedDB.
-      </div>
-
-      <div class="row">
-
-        <!-- Fetch Data -->
-        <div class="col-md-6">
-          <section>
-          <h4 class="no-permalink"><a href="fetchdata/"><img src="images/target.png" height="20" width="20">&nbsp;Fetch Data Dynamically</a></h4>
-          <p>Load data from a static file or from a server.</p>
-          <img style="border:1px solid black"
-               src="images/allaboutyou-screenshot.png" width="300">
-          </section>
-        </div>
-
-        <!-- Forms -->
-        <div class="col-md-6">
-          <section>
-          <h4 class="no-permalink"><a href="forms/"><img src="images/target.png" height="20" width="20">&nbsp;Get Input from a Form</a></h4>
-          <p>Use forms and input elements to get data.</p>
-          <img style="border:1px solid black"
-               src="images/slambook-screenshot.png" width="300">
-          </section>
-        </div>
-      </div> <!-- end row -->
-    </div> <!-- end FORMS tab -->
-
     <!-- COMMAND-LINE APPS TAB -->
     <div class="tab-pane" id="commandline">
 
@@ -252,61 +130,8 @@ from left to right...or choose just the ones you need.
         Dart isn't just for browser-based applications.
         You can write standalone programs, such as servers and scripts, in Dart.
       </div>
-
-      <div class="row">
-
-        <div class="col-md-6">
-          <section>
-          <h4 class="no-permalink"><a href="cmdline/"><img src="images/target.png" height="20" width="20">&nbsp;Write Command-line Apps</a></h4>
-          <p>Learn about features that command-line apps need.</p>
-          <img src="images/cmdline-code.png" width="100%">
-          </section>
-        </div>
-
-        <div class="col-md-6">
-          <section>
-          <h4 class="no-permalink"><a href="/docs/tutorials/httpserver/"><img src="images/target.png" height="20" width="20">&nbsp;Write HTTP Clients & Servers</a></h4>
-          <p>Communicate over the internet.</p>
-          <img src="images/httpserver-code.png" width="100%">
-          </section>
-        </div>
-
-      </div>
-
-
     </div>
-
-  <!-- MOBILE TAB -->
-  <!--
-    <div class="tab-pane" id="mobile">
-      <div class="row">
-
-        <div class="col-md-6" style="border-right:1px solid Lavender">
-          <section>
-          <h4 class="no-permalink"><a href="mobile/"><img src="images/target.png" height="20" width="20">&nbsp;Write for Mobile Devices</a></h4>
-          <p>Mobile devices are taking over the world!</p>
-          <img src="images/xyz.png" width="300">
-          </section>
-        </div>
-
-        <div class="col-md-6">
-        </div>
-
-      </div>
-    </div>
-  -->
 
   </div> <!-- end tab content-->
 </div> <!--end tabbable -->
 </div> <!-- end of tute-tabs -->
-
-<hr style="border:solid;border-color:Gainsboro">
-
-<aside class="alert alert-info" markdown="1">
-<strong>Do you like to learn by doing?</strong> Try our code labs:
-
-* [Avast, Ye Pirates: Write a Web App](/codelabs/darrrt/)
-* [More code labs](/codelabs/)
-
-</aside>
-
