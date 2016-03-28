@@ -33,18 +33,17 @@ defaults:
     layout: tutorial
     toc: true
 - scope:
-    path: "guides"
-    type: guides
-  values:
-    layout: guide
-    toc: true
-- scope:
     path: "samples"
     type: samples
   values:
     layout: sample
     toc: true
-
+- scope:
+    path: "guides"
+    type: guides
+  values:
+    layout: guide
+    toc: true
 
 
 custom:

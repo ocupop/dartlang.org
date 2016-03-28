@@ -25,11 +25,6 @@ has-permalinks: true
 tutorial:
   id: futures
 
-# next: streams/
-# next-title: "Asynchronous Programming: Streams"
-# prev: using-polymer/
-# prev-title: "Use Polymer Elements"
-
 ---
 
 

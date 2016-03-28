@@ -2,27 +2,36 @@
 layout: page
 title: "Articles"
 description: "Read about the Dart language and tools with this collection of articles, style guides, and more."
+toc: false
 
 ---
 
-<h3>Placeholder: Articles Index / Overview</h3>
+<h1>Articles</h1>
 
 <p>
 Read these articles for insight into Dart programming topics.
 </p>
 
 <p>
-See also: <a href="/docs/tutorials/">Dart Tutorials</a> and
-<a href="/effective-dart/">Effective Dart</a>.
+See also: <a href="/tutorials/">Dart Tutorials</a> and
+<a href="/guides/effective-dart/">Effective Dart</a>.
 </p>
 <h2>Libraries and APIs</h2>
-{% articles libraries-and-apis %}
+{% comment %}
+  {% articles libraries-and-apis %}
+{% endcomment %}
     
 <h2>Language Details</h2>
-{% articles language-details %}
+{% comment %}
+  {% articles language-details %}
+{% endcomment %}
     
 <h2>Design Decisions</h2>
-{% articles design-decisions %}
+{% comment %}
+  {% articles design-decisions %}
+{% endcomment %}
 
 <h2>Performance</h2>
-{% articles performance %}
+{% comment %}
+  {% articles performance %}
+{% endcomment %}

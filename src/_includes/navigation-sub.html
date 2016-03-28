@@ -2,12 +2,16 @@
 <nav id="subnav">
   <div class="container">
     <ul>
-      {% if page.prevpage.url %}
-      <li class="previous"><a href="{{ page.prevpage.url }}">&lt;&nbsp;{{ page.prevpage.title }}</a></li>
-      {% endif %}
-      {% if page.nextpage.url %}
-      <li class="next"><a href="{{ page.nextpage.url }}">{{ page.nextpage.title }}&nbsp;&gt;</a></li>
-      {% endif %}
+      <li class="previous">
+        {% if page.prevpage.url %}
+          <a href="{{ page.prevpage.url }}">&lt;&nbsp;{{ page.prevpage.title }}</a>
+        {% endif %}
+      </li>
+      <li class="next">
+        {% if page.nextpage.url %}
+          <a href="{{ page.nextpage.url }}">{{ page.nextpage.title }}&nbsp;&gt;</a>
+        {% endif %}
+      </li>
     </ul>
   </div>
 </nav>
