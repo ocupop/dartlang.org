@@ -1,10 +1,15 @@
 ---
+reference: "https://www.dartlang.org/articles/"
+
 layout: page
 title: "Articles"
 description: "Read about the Dart language and tools with this collection of articles, style guides, and more."
 toc: false
 
 ---
+<p class="alert alert-danger">
+  The plugin used to generate article lists will need to be refactored to account for new configuration. 
+</p>
 
 <h1>Articles</h1>
 
