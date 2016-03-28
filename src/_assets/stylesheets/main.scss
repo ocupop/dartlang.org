@@ -75,6 +75,7 @@ pre {
       background-repeat: no-repeat;
       padding: 5px 10px 5px 30px;
       border-radius: 8px;
+      font-family: $font-family-base;
     }
   }
   .highlight {
@@ -367,6 +368,13 @@ body.show_toc {
    color: $white;
  }
 }
+.grey-light {
+ background-color: $grey-light;
+ color: $grey-dark;
+ h1, h2, h3, h4, h5, h6 {
+   color: $grey-dark;
+ }
+}
 
 .custom-counter {
  margin: 0;
@@ -486,6 +494,8 @@ body.show_toc {
 .homepage {
  pre {
    margin-top: 0;
+   height: 185px;
+   overflow: auto;
  }
 }
 
