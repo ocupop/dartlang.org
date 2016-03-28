@@ -2,11 +2,13 @@
 reference: "https://www.dartlang.org/community/who-uses-dart.html"
 
 layout: page
-permalink: /community/who-uses-dart
 title: 'Who Uses Dart'
+permalink: /community/who-uses-dart
 description: 'Companies and business that use Dart.'
 
+
 snippet_img: images/who-uses-dart.png
+
 ---
 
 # {{ page.title }}

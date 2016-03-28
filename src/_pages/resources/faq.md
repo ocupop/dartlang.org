@@ -3,6 +3,8 @@ reference: "https://www.dartlang.org/tools/faq.html"
 
 layout: page
 title: "Tools FAQ"
+permalink: /resources/faq
+
 description: "FAQ and other tips for using Dart Tools."
 
 short-title: "FAQ"
