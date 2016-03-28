@@ -479,7 +479,5 @@ and asynchronous programming in Dart.
 
 ## What next? {#what-next}
 
-The [Write HTTP Clients & Servers](/docs/tutorials/httpserver/) and
-[Write Command-Line Apps](/docs/tutorials/cmdline/) tutorials include
-examples that use streams.
+xxx
 

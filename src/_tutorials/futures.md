@@ -452,6 +452,5 @@ and asynchronous programming in Dart:
 ## What next? {#what-next}
 
 * The next tutorial,
-[Fetch Data Dynamically](/docs/tutorials/fetchdata/),
-uses a Future when doing an HTTP request.
-
+[Asynchronous Programming: Streams](streams),
+shows you how to work with an event stream.

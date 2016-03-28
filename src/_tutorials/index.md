@@ -3,7 +3,7 @@ reference: "https://www.dartlang.org/docs/tutorials/"
 
 layout: page
 title: "Dart Tutorials"
-description: "The Dart Tutorials&mdash;Your guide to building great web apps."
+description: "The Dart Tutorials&mdash;Your guide to building great apps."
 toc: false
 
 nextpage:
@@ -19,7 +19,7 @@ header:
 
 <img class="scale-img-max" src="images/banner.png">
 
-**The Dart Tutorials** teach you how to build web applications
+**The Dart Tutorials** teach you how to build applications
 using the Dart language, tools, and APIs.
 
 <strong>Who are you?</strong>
