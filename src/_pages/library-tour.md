@@ -175,11 +175,11 @@ assert('STRUCTURED WEB APPS'.toLowerCase() ==
     'structured web apps');
 {% endprettify %}
 
-<aside class="alert alert-info" markdown="1">
+<div class="alert alert-info" markdown="1">
 **Note:**
 These methods don't work for every language. For example, the Turkish
 alphabet's dotless *I* is converted incorrectly.
-</aside>
+</div>
 
 
 #### Trimming and empty strings {#trimming-and-empty-strings}
@@ -544,11 +544,11 @@ List, Set, and Map share common functionality found in many collections.
 Some of this common functionality is defined by the Iterable class,
 which List and Set implement.
 
-<aside class="alert alert-info" markdown="1">
+<div class="alert alert-info" markdown="1">
 **Note:**
 Although Map doesn’t implement Iterable, you can get Iterables from it
 using the Map `keys` and `values` properties.
-</aside>
+</div>
 
 Use `isEmpty` to check whether a list, set, or map has no items:
 
@@ -591,12 +591,12 @@ var loudTeas = teas.map((tea) => tea.toUpperCase());
 loudTeas.forEach(print);
 {% endprettify %}
 
-<aside class="alert alert-info" markdown="1">
+<div class="alert alert-info" markdown="1">
 **Note:**
 The object returned by `map()` is an Iterable that’s *lazily
 evaluated*: your function isn’t called until you ask for an item from
 the returned object.
-</aside>
+</div>
 
 To force your function to be called immediately on each item, use
 `map().toList()` or `map().toSet()`:
@@ -805,12 +805,12 @@ var duration = y2001.difference(y2k);
 assert(duration.inDays == 366); // y2k was a leap year.
 {% endprettify %}
 
-<aside class="alert alert-warning" markdown="1">
+<div class="alert alert-warning" markdown="1">
 **Warning:**
 Using a Duration to shift a DateTime by days can be problematic, due
 to clock shifts (to daylight saving time, for example). Use UTC dates
 if you must shift days.
-</aside>
+</div>
 
 Refer to the API docs for
 [DateTime](https://api.dartlang.org/dart_core/DateTime.html) and
@@ -985,14 +985,14 @@ future. A Stream is a way to get a sequence of values, such as events.
 Future, Stream, and more are in the
 [dart:async](https://api.dartlang.org/dart_async.html) library.
 
-<aside class="alert alert-info" markdown="1">
+<div class="alert alert-info" markdown="1">
 **Note:**
 You don't always need to use the Future or Stream APIs directly.
 In 1.9, Dart added language support for asynchronous coding,
 using keywords such as `async` and `await`.
 See [Asynchrony support](ch02.html#asynchrony) in the language tour
 for details.
-</aside>
+</div>
 
 The dart:async library works in both web apps and command-line apps. To
 use it, import dart:async:
@@ -1062,13 +1062,13 @@ attached() async {
 }
 {% endprettify %}
 
-<aside class="alert alert-warning" markdown="1">
+<div class="alert alert-warning" markdown="1">
 **Important:**
 Async functions return Futures.
 If you don't want your function to return a future,
 then use a different solution.
 For example, you might call an async function from your function.
-</aside>
+</div>
 
 For more information on using `await` and related
 Dart language features, see
@@ -1110,13 +1110,13 @@ HttpRequest.getString(url).then((String result) {
 The `then().catchError()` pattern is the asynchronous version of
 `try`-`catch`.
 
-<aside class="alert alert-warning" markdown="1">
+<div class="alert alert-warning" markdown="1">
 **Important:**
 Be sure to invoke `catchError()` on the result of `then()`—not on the
 result of the original Future. Otherwise, the `catchError()` can
 handle errors only from the original Future's computation, but not
 from the handler registered by `then()`.
-</aside>
+</div>
 
 #### Chaining multiple asynchronous methods {#chaining-multiple-asynchronous-methods}
 {:.no_toc}
@@ -1230,7 +1230,7 @@ main(List<String> arguments) async {
 }
 {% endprettify %}
 
-<aside class="alert alert-warning" markdown="1">
+<div class="alert alert-warning" markdown="1">
 **Important:**
 Before using `await for`, make sure that it makes the code clearer
 and that you really do want to wait for all of the stream's results.
@@ -1238,7 +1238,7 @@ For example, you usually should **not** use `await for` for DOM event listeners,
 because the DOM sends endless streams of events.
 If you use `await for` to register two DOM event listeners in a row,
 then the second kind of event is never handled.
-</aside>
+</div>
 
 For more information on using `await` and related
 Dart language features, see
@@ -1408,10 +1408,10 @@ var sinOf30degrees = math.sin(radians);
 assert((sinOf30degrees - 0.5).abs() < 0.01);
 {% endprettify %}
 
-<aside class="alert alert-info" markdown="1">
+<div class="alert alert-info" markdown="1">
 **Note:**
 These functions use radians, not degrees!
-</aside>
+</div>
 
 
 ### Maximum and minimum {#maximum-and-minimum}
@@ -1488,12 +1488,12 @@ HTML5 (and dart:html) has many
 additional APIs that this section doesn’t cover. Only web apps can use
 dart:html, not command-line apps.
 
-<aside class="alert alert-info" markdown="1">
+<div class="alert alert-info" markdown="1">
 **Note:**
 For higher level approaches to web app UIs, see
 [Polymer.dart](/polymer/) and
 [AngularDart](https://angulardart.org).
-</aside>
+</div>
 
 To use the HTML library in your web app, import dart:html:
 
@@ -1502,11 +1502,11 @@ To use the HTML library in your web app, import dart:html:
 import 'dart:html';
 {% endprettify %}
 
-<aside class="alert alert-info" markdown="1">
+<div class="alert alert-info" markdown="1">
 **Note:**
 Parts of the dart:html library are experimental, as noted in the API
 documentation.
-</aside>
+</div>
 
 
 ### Manipulating the DOM {#manipulating-the-dom}
@@ -2122,10 +2122,10 @@ Node.js.
 The few synchronous methods in the dart:io library are clearly marked
 with a Sync suffix on the method name. We don’t cover them here.
 
-<aside class="alert alert-info" markdown="1">
+<div class="alert alert-info" markdown="1">
 **Note:**
 Only command-line apps can import and use `dart:io`.
-</aside>
+</div>
 
 
 ### Files and directories {#files-and-directories}
@@ -2558,7 +2558,7 @@ invoke functions or methods at runtime.
 The dart:mirrors library works in both web apps and command-line apps.
 To use it, import dart:mirrors.
 
-<aside class="alert alert-warning" markdown="1">
+<div class="alert alert-warning" markdown="1">
 **Warning:**
 Using dart:mirrors can cause dart2js to generate very large JavaScript
 files.
@@ -2568,7 +2568,7 @@ the import of dart:mirrors. For details, see the
 [MirrorsUsed](https://api.dartlang.org/dart_mirrors/MirrorsUsed.html)
 API documentation. This workaround is very likely to change, as the
 dart:mirrors library is still under development.
-</aside>
+</div>
 
 
 ### Symbols {#symbols}

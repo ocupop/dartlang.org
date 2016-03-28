@@ -1,0 +1,126 @@
+/* ***** Code ***** */
+
+aside pre {
+  background-color: transparent;
+  border: 0;
+  margin-bottom: 0;
+}
+
+aside code {
+  background-color: transparent;
+}
+
+pre.prettyprint {
+  background-color: #f8f8f8;
+}
+
+.allow-scroll {
+  word-wrap: normal;
+}
+
+.code-hldr {
+  text-align: center;
+  min-height: 450px;
+  height: 450px;
+}
+
+.lang-dart, .lang-html, .lang-js, .lang-bash, .lang-cpp, .lang-csharp,
+.lang-none, .lang-python, .lang-javascript, .lang-yaml {
+  max-width: 800px;
+  text-align: left;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 5px !important;
+}
+
+@media (max-width: 500px) {
+  .lang-dart, .lang-html {
+    font-size: 12px;
+  }
+}
+
+.lang-dart a, .lang-html a {
+  text-decoration: none;
+  background: #2fbcb2;
+  padding:2px 3px;
+}
+
+.lang-dart .com, .lang-html .com, .lang-java .com {
+  color: #757575;
+}
+
+.lang-none * {
+  color: #4D4D4D !important; /* color of .pln */
+}
+
+/* Prevent invisibility of popover-emphasized text */
+@media print {
+  .dart-popover .kwd, .dart-popover .pln, .dart-popover .str, .dart-popover .pun {
+    background: black !important;
+  }
+}
+
+.lang-dart a span, .lang-html a span {
+  color:#fff !important;
+}
+
+.lang-huge {
+  display: table;
+  font-size: 17px;   /* font-size of btn-lg */
+  line-height: 24px; /* line-height of btn-lg */
+  margin: 12px auto;
+  max-width: 800px;
+  padding: 12px !important;
+  white-space: pre-wrap;
+}
+
+.lang-huge span.kwd {
+  color: #4d4d4d !important /* avoid kwd colors in huge blocks */;
+}
+
+.linenums li {
+  list-style-type: decimal !important;
+}
+
+
+
+// code {
+//   padding: 0;
+//   font-size: 90%;
+//   color: #0084c5;
+//   white-space: nowrap;
+//   border-radius: 4px;
+// }
+
+// /* Highlighting code annotated with [[highlight]] */
+// code.highlight {
+//   border: 1px solid yellow;
+//   color: #0084c5;
+//   background-color: lemonchiffon;
+//   border-radius: 4px;
+// }
+
+// /* Strike through code annotated with [[strike]] */
+// code.strike {
+//   text-decoration: line-through;
+// }
+
+// /* Numbered notes code annotated with [[note]] */
+// code.note {
+//   color: Black;
+//   background-color: White;
+//   border: 2px solid LightSteelBlue;
+//   border-radius: 9px;
+//   padding-left: 7px;
+//   padding-right: 7px;
+//   font-family: "Roboto", sans-serif;
+//   font-size: 11px;
+// }
+
+// /* Red code annotated with [[red]] */
+// code.red {
+//   color: red;
+// }
+
+
+

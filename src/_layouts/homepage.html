@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body class="{{ page.layout }}{% if page.toc %} show_toc{% endif %}">
+  <body class="{{ page.layout }}">
     <div class="mdl-layout mdl-js-layout">
       {% include page-header.html %}
-      {% include navigation-sub.html %}
-      <main id="page-content" class="mdl-layout__content">
+      <main class="mdl-layout__content">
         {{ content }}
       </main>
+      {% include dartpad.html %}
       {% include page-footer.html %}
     </div>
   </body>

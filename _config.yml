@@ -113,6 +113,7 @@ assets:
     - _assets/media
     - _assets/javascripts
     - _assets/stylesheets
+    - _assets/pages
   features:
     liquid: true # default: false
     automatic_img_size: true # default: true

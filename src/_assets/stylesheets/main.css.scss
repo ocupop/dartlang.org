@@ -1,0 +1,497 @@
+@import "vendor/material.scss";
+@import '_variables';
+@import '_mixins';
+@import '_icons';
+@import '_code';
+@import '_animations';
+
+/* -----------------------------------------
+  Global
+----------------------------------------- */
+body {
+ font-family: $font-family-base;
+}
+article {
+ @extend .mdl-grid;
+ section {
+   @extend .mdl-cell;
+   @extend .mdl-cell--12-col;
+ }
+ aside {
+   @extend .mdl-cell;
+   @extend .mdl-cell--12-col;
+ }
+}
+section {
+ position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-family: $font-family-base;
+ font-weight: 700;
+ color: $grey-dark;
+}
+
+h1, .h1 { font-size: $font-size-h1;}
+h2, .h2 { font-size: $font-size-h2;}
+h3, .h3 { font-size: $font-size-h3;}
+h4, .h4 { font-size: $font-size-h4;}
+h5, .h5 { font-size: $font-size-h5;}
+h6, .h6 { font-size: $font-size-h6;}
+
+p {}
+
+a {
+ color: $blue;
+ text-decoration: none;
+ &:hover, &:focus, &:active {
+   outline: none;
+ }
+}
+
+ul {}
+
+pre {
+  padding: $content-padding;
+  background-color: $grey-light;
+  color: $blue;
+  position: relative;
+  &.prettyprint {
+    border: none;
+    padding: 15px 5px;
+  }
+  &.dartpad {
+    &:after {
+      content: 'Run';
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      display: block;
+      z-index: 10;
+      background-color: $white;
+      background-image: url('{% asset_path "images/logo-no-wordmark.svg" %}');
+      background-size: 18px;
+      background-position: 7px center;
+      background-repeat: no-repeat;
+      padding: 5px 10px 5px 30px;
+      border-radius: 8px;
+    }
+  }
+  .highlight {
+    background: #fffde7;
+    padding: 2px;
+  }
+}
+img {
+  max-width: 100%;
+}
+
+/* -----------------------------------------
+  DOM
+----------------------------------------- */
+// Structure
+#page-header {
+ background-color: $grey-light;
+}
+#page-content {
+  @extend .container;
+}
+#page-footer {
+ color: $white;
+ font-weight: 300;
+ background-color: $grey-dark;
+ .mdl-logo {
+   text-indent: -999em;
+   background-color: transparent;
+   background-image: url('{% asset_path "images/logo-white.svg" %}');
+   background-position: left center;
+   background-repeat: no-repeat;
+   background-size: contain;
+   height: 30px;
+   width: 120px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+ }
+ small {
+   display: block;
+   padding-right: 25px;
+ }
+ h5, p, a {
+   font-weight: 300;
+   color: #fff;
+ }
+ .mdl-mega-footer__middle-section {}
+ .mdl-mega-footer__bottom-section {
+   ul {
+     padding-left: 16px;
+   }
+ }
+}
+
+// Navigation
+#mainnav {
+ a {
+   color: $grey-dark;
+   font-weight: 700;
+   &:hover {}
+ }
+}
+#subnav {
+ background: $grey-dark;
+ color: $white;
+ ul {
+   list-style-type: none;
+   li {
+     display: inline-block;
+     a {
+       color: $white;
+       padding-left: 5px;
+       padding-right: 5px;
+       font-weight: 700;
+     }
+     &.next {
+       float: right;
+     }
+   }
+ }
+}
+#pagenav {
+ padding: $content-padding;
+ background: $grey-light;
+ margin-bottom: 20px;
+}
+#footernav {}
+
+#breadcrumbs {
+ padding: 15px 0;
+}
+#copyright {}
+
+
+/* -----------------------------------------
+ Dartpad
+----------------------------------------- */
+
+#run-dartpad {
+ padding: 15px 0;
+ background: $grey-light;
+ border-top: 1px solid $grey;
+}
+
+#dartpad {
+ position: fixed;
+ width: 100%;
+ height: 30px;
+ bottom: 0;
+ left: 0;
+ background-color: red;
+}
+/* -----------------------------------------
+ Search
+----------------------------------------- */
+#search {
+ position: absolute;
+ right: 0;
+ top: 22px;
+ width: 165px;
+ border: none;
+ padding: 5px;
+ border-radius: 3px;
+}
+
+#search-icon {
+ position: absolute;
+ right: 5px;
+ top: 26px;
+ color: $grey-dark;
+ font-size: 14px;
+}
+
+/* -----------------------------------------
+ Table of Contents
+----------------------------------------- */
+.toc-entry.toc-h2
+{}
+.toc-entry.toc-h1,
+.toc-entry.toc-h3,
+.toc-entry.toc-h4,
+.toc-entry.toc-h5,
+.toc-entry.toc-h6,
+.no_toc
+{
+ display: none;
+}
+
+/* -----------------------------------------
+  Utility Classes
+----------------------------------------- */
+body.show_toc {
+ article {
+   section {
+     @extend .mdl-cell;
+     @extend .mdl-cell--8-col;
+   }
+   aside {
+     @extend .mdl-cell;
+     @extend .mdl-cell--4-col;
+   }
+ }
+}
+.container {
+ position: relative;
+ max-width: 100%;
+ width: $live-content-width;
+ margin: 0 auto;
+}
+
+.content {
+ position: relative;
+ padding: $content-padding;
+}
+
+.button {
+ padding: 5px 10px;
+ color: $blue;
+ border-radius: 8px;
+ &.dart-button {
+   background-color: $white;
+   padding: 5px 10px 5px 30px;
+   &:after {
+     content: '';
+     display: block;
+     position: absolute;
+     top: 2px;
+     left: 10px;
+     width: 15px;
+     height: 15px;
+     background-image: url('{% asset_path "images/logo-no-wordmark.svg" %}');
+     background-size: cover;
+     background-position: center center;
+     background-repeat: no-repeat;
+   }
+ }
+}
+
+.panel {
+ background-color: $grey-dark;
+ color: $white;
+ padding: $content-padding;
+ margin-bottom: 20px;
+ h1, h2, h3, h4, h5, h6 {
+   color: $white;
+   margin: 0;
+ }
+ ul {
+   padding-left: 15px;
+ }
+}
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+// Columns
+.col2 {
+ column-count: 2;
+ column-gap: 0;
+ li {
+   page-break-inside: avoid;
+ }
+}
+.col3 {
+ column-count: 3;
+ column-gap: 0;
+ li {
+   page-break-inside: avoid;
+ }
+}
+
+.brand {
+ text-indent: -999em;
+ background-color: transparent;
+ background-image: url('{% asset_path "images/logo.svg" %}');
+ background-position: center center;
+ background-size: 100%;
+ background-repeat: no-repeat;
+ width: 140px;
+ height: 40px;
+}
+
+.hide {
+ display: none !important;
+ visibility: hidden;
+}
+
+.banner {
+ width:100%;
+ text-align: center;
+ padding: 30px 0;
+ h1, h2, h3, h4, h5, h6 {
+   margin-top: 0;
+   sup {
+     font-size: 24px;
+   }
+ }
+ p {
+   font-size: 20px;
+   font-weight: 300;
+   sup {
+     font-size: 14px;
+   }
+ }
+ sup {
+   color: $blue;
+ }
+}
+
+.grey-dark {
+ background-color: $grey-dark;
+ color: $white;
+ h1, h2, h3, h4, h5, h6 {
+   color: $white;
+ }
+}
+
+.custom-counter {
+ margin: 0;
+ padding: 0;
+ list-style-type: none;
+}
+
+.custom-counter li {
+ counter-increment: step-counter;
+ margin-bottom: 10px;
+ position: relative;
+}
+
+.custom-counter li::before {
+ content: counter(step-counter);
+ position: absolute;
+ left: -25px;
+ top: -3px;
+ font-size: 20px;
+ font-weight: bold;
+ padding: 3px 8px;
+}
+
+/* -----------------------------------------
+  Message / Notifications
+----------------------------------------- */
+.alert {
+ padding: $content-padding;
+ &.alert-success {
+   background-color: $alert-success-bg;
+ }
+ &.alert-info {
+   background-color: $alert-info-bg;
+ }
+ &.alert-warning {
+   background-color: $alert-warning-bg;
+ }
+ &.alert-danger {
+   background-color: $alert-danger-bg;
+ }
+ &.alert-obsolete {
+   background-color: $grey-dark;
+   color: $white;
+ }
+}
+
+
+::-webkit-input-placeholder {
+  color: $grey-dark;
+  font-family: $font-family-base;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: $grey-dark;
+  font-family: $font-family-base; 
+}
+::-moz-placeholder {  /* Firefox 19+ */
+  color: $grey-dark;
+  font-family: $font-family-base;
+}
+:-ms-input-placeholder {  
+  color: $grey-dark;
+  font-family: $font-family-base;
+}
+
+
+
+/* -----------------------------------------
+  MDL Overwrites
+----------------------------------------- */
+.mdl-layout__drawer-button {
+ color: $white;
+}
+
+.mdl-layout__header-row {
+ padding: 0;
+}
+
+.mdl-layout__drawer>.mdl-layout-title {
+ margin-left:16px;
+ margin-top:16px;
+}
+
+.mdl-layout__header-row {
+ .mdl-navigation__link {
+   padding: 0 20px;
+ }
+}
+
+.mdl-mega-footer__heading {
+ font-weight: 300;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ margin-top: 0;
+}
+// .mdl-mega-footer {
+//   padding: 30px 0;
+// }
+
+/* -----------------------------------------
+  Prettyprint overwrites
+----------------------------------------- */
+
+.str, .kwd, .com, .typ, .lit, .pun, .pln, .tag, .atn, .atv, .dec {
+ color: $blue;
+}
+
+
+/* -----------------------------------------
+  Homepage
+----------------------------------------- */
+
+.homepage {
+ pre {
+   margin-top: 0;
+ }
+}
+
+#code-display {
+ padding: $content-padding;
+ border: 1px solid $grey;
+ height: 100%;
+ min-height: 105px;
+}
+
+/* -----------------------------------------
+  Media Queries
+----------------------------------------- */
+@media(min-width: 1024px) {
+ .mdl-layout__drawer {
+   .mdl-navigation {
+     .mdl-navigation__link {
+       padding: 5px 16px;
+     }
+   }
+ }  
+ .mdl-layout__drawer-button {
+   display: none;
+ }
+}

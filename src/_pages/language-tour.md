@@ -17,13 +17,13 @@ This chapter shows you how to use each major Dart feature, from
 variables and operators to classes and libraries, with the assumption
 that you already know how to program in another language.
 
-<aside class="alert alert-info" markdown="1">
+<div class="alert alert-info" markdown="1">
 **Note:**
 You can play with most of these features using
 [DartPad]({{site.custom.dartpad.direct-link}}),
 as described in
 [Up and running](ch01.html#up-and-running).
-</aside>
+</div>
 
 Consult the [Dart Language
 Specification](/docs/spec/) whenever you want
@@ -89,12 +89,12 @@ apps:
 
 :   A way to declare a variable without specifying its type.
 
-<aside class="alert alert-info" markdown="1">
+<div class="alert alert-info" markdown="1">
 **Note:**
 Our code follows the conventions in the [Dart Style
 Guide.](/articles/style-guide/) For example, we
 use two-space indentation.
-</aside>
+</div>
 
 
 ## Important concepts {#important-concepts}
@@ -225,13 +225,13 @@ assert(lineCount == null);
 // Variables (even if they will be numbers) are initially null.
 {% endprettify %}
 
-<aside class="alert alert-info" markdown="1">
+<div class="alert alert-info" markdown="1">
 **Note:**
 The `assert()` call is ignored in production mode. In checked mode,
 <code>assert(<em>condition</em>)</code>
 throws an exception unless *condition* is true. For details,
 see the [Assert](#assert) section.
-</aside>
+</div>
 
 
 ### Optional types {#optional-types}
@@ -249,12 +249,12 @@ Adding types is a way to clearly express your intent. Tools such as
 compilers and editors can use these types to help you, by providing code
 completion and early warnings for bugs and code completion.
 
-<aside class="alert alert-info" markdown="1">
+<div class="alert alert-info" markdown="1">
 **Note:**
 This chapter follows the [style guide
 recommendation](/articles/style-guide/#type-annotations)
 of using `var`, rather than type annotations, for local variables.
-</aside>
+</div>
 
 
 ### Final and const {#final-and-const}
@@ -266,10 +266,10 @@ only once; a const variable is a compile-time constant. (Const variables
 are implicitly final.) A final top-level or class variable is initialized
 the first time it's used.
 
-<aside class="alert alert-info" markdown="1">
+<div class="alert alert-info" markdown="1">
 **Note:**
 Instance variables can be `final` but not `const`.
-</aside>
+</div>
 
 Here's an example of creating and setting a final variable:
 
@@ -363,7 +363,7 @@ operators such as \>\>. The num type is also where you’ll find
 subtypes don’t have what you’re looking for, the
 [dart:math](https://api.dartlang.org/stable/dart-math/dart-math-library.html) library might.
 
-<aside class="alert alert-warning" markdown="1">
+<div class="alert alert-warning" markdown="1">
 **Warning:**
 Integers outside of the
 -2<sup>53</sup> to 2<sup>53</sup> range currently behave
@@ -371,7 +371,7 @@ differently in JavaScript produced from Dart code than they do when
 the same Dart code runs in the Dart VM. The reason is that Dart is
 specified to have arbitrary-precision integers, but JavaScript isn't.
 See [issue 1533](http://dartbug.com/1533) for details.
-</aside>
+</div>
 
 Integers are numbers without a decimal point. Here are some examples of
 defining integer literals:
@@ -468,12 +468,12 @@ assert('That deserves all caps. ' +
        'STRING INTERPOLATION is very handy!');
 {% endprettify %}
 
-<aside class="alert alert-info" markdown="1">
+<div class="alert alert-info" markdown="1">
 **Note:**
 The `==` operator tests whether two objects are equivalent. Two
 strings are equivalent if they contain the same sequence of code
 units.
-</aside>
+</div>
 
 You can concatenate strings using adjacent string literals or the `+`
 operator:
@@ -584,12 +584,12 @@ if (1) {
 }
 {% endprettify %}
 
-<aside class="alert alert-info" markdown="1">
+<div class="alert alert-info" markdown="1">
 **Note:**
 The previous two samples work only in production mode, not checked
 mode. In checked mode, an exception is thrown if a non-boolean is used
 when a boolean value is expected.
-</aside>
+</div>
 
 Dart’s treatment of booleans is designed to avoid the strange behaviors
 that can arise when many values can be treated as true. What this means
@@ -782,7 +782,7 @@ units. Use the `runes` property to get the runes of a string.
 
 The following example illustrates the relationship between runes,
 16-bit code units, and 32-bit code points.
-Click the run button ( <img src="/imgs/run.png" /> )
+Click the run button ( {% img 'run.png' %} )
 to see runes in action.
 
 <!-- ch02/runes.dart -->
@@ -810,14 +810,14 @@ src="{{site.custom.dartpad.embed-dart-prefix}}?id=589bc5c95318696cefe5&horizonta
     style="border: 1px solid #ccc;">
 </iframe>
 
-<aside class="alert alert-warning" markdown="1">
+<div class="alert alert-warning" markdown="1">
 **Note:**
 Be careful when manipulating runes using list operations.
 This approach can easily break down,
 depending on the particular language, character set, and operation.
 For more information, see
 [How do I reverse a String in Dart?](http://stackoverflow.com/questions/21521729/how-do-i-reverse-a-string-in-dart) on Stack Overflow.
-</aside>
+</div>
 
 ### Symbols {#symbols}
 {:.no_toc}
@@ -883,13 +883,13 @@ bool isNoble(int atomicNumber) => _nobleGases[atomicNumber] != null;
 The <code>=> <em>expr</em>;</code> syntax is a shorthand for
 <code>{ return <em>expr</em>;}</code>.
 
-<aside class="alert alert-info" markdown="1">
+<div class="alert alert-info" markdown="1">
 **Note:**
 Only an *expression*—not a *statement*—can appear between the arrow
 (=\>) and the semicolon (;). For example, you can’t put an [if
 statement](#if-and-else) there, but you can use a [conditional
 expression](#conditional-expressions).
-</aside>
+</div>
 
 A function can have two types of parameters: required and optional. The
 required parameters are listed first, followed by any optional
@@ -1004,7 +1004,7 @@ The following example defines a function, `doStuff()`,
 that specifies a default list for the `list`
 parameter and a default map for the `gifts` parameter.
 The function is called three times with different values.
-Click the run button ( <img src="/imgs/run.png" /> )
+Click the run button ( {% img run.png %} )
 to see list and map default values in action.
 
 <!-- ch02/list_map_default_function_parameters.dart -->
@@ -1059,12 +1059,12 @@ void main() {
 }
 {% endprettify %}
 
-<aside class="alert alert-info" markdown="1">
+<div class="alert alert-info" markdown="1">
 **Note:**
 The `..` syntax in the preceding code is called a [cascade](#cascade).
 With cascades,
 you can perform multiple operations on the members of a single object.
-</aside>
+</div>
 
 Here's an example of the `main()` function for a command-line app that
 takes arguments:
@@ -1286,13 +1286,13 @@ if ((n % i == 0) && (d % i == 0))
 if (n % i == 0 && d % i == 0)
 {% endprettify %}
 
-<aside class="alert alert-warning" markdown="1">
+<div class="alert alert-warning" markdown="1">
 **Warning:**
 For operators that work on two operands, the leftmost operand
 determines which version of the operator is used. For example, if you
 have a Vector object and a Point object, `aVector + aPoint` uses the
 Vector version of +.
-</aside>
+</div>
 
 
 ### Arithmetic operators {#arithmetic-operators}
@@ -1444,12 +1444,12 @@ You can make the code shorter using the `as` operator:
 (emp as Person).firstName = 'Bob';
 {% endprettify %}
 
-<aside class="alert alert-info" markdown="1">
+<div class="alert alert-info" markdown="1">
 **Note:**
 The code isn’t equivalent. If `emp` is null or not a Person, the
 first example (with `is`) does nothing; the second (with `as`) throws
 an exception.
-</aside>
+</div>
 
 
 ### Assignment operators {#assignment-operators}
@@ -1665,12 +1665,12 @@ sb.write('foo')..write('bar');
 The `sb.write()` call returns void,
 and you can't construct a cascade on `void`.
 
-<aside class="alert alert-info" markdown="1">
+<div class="alert alert-info" markdown="1">
 **Note:**
 Strictly speaking,
 the "double dot" notation for cascades is not an operator.
 It's just part of the Dart syntax.
-</aside>
+</div>
 
 ### Other operators {#other-operators}
 {:.no_toc}
@@ -1849,11 +1849,11 @@ same class (and not of any of its subtypes), and the class must not
 override `==`.
 [Enumerated types](#enums) work well in `switch` statements.
 
-<aside class="alert alert-info" markdown="1">
+<div class="alert alert-info" markdown="1">
 **Note:**
 Switch statements in Dart are intended for limited circumstances,
 such as in interpreters or scanners.
-</aside>
+</div>
 
 Each non-empty `case` clause ends with a `break` statement, as a rule.
 Other valid ways to end a non-empty `case` clause are a `continue`,
@@ -1960,11 +1960,11 @@ assert(number < 100);
 assert(urlString.startsWith('https'));
 {% endprettify %}
 
-<aside class="alert alert-info" markdown="1">
+<div class="alert alert-info" markdown="1">
 **Note:**
 Assert statements work only in checked mode. They have no effect in
 production mode.
-</aside>
+</div>
 
 Inside the parentheses after `assert`, you can put any expression that
 resolves to a boolean value or to a function. If the expression’s value
@@ -2292,11 +2292,11 @@ class Point {
 
 The `this` keyword refers to the current instance.
 
-<aside class="alert alert-info" markdown="1">
+<div class="alert alert-info" markdown="1">
 **Note:**
 Use `this` only when there is a name conflict. Otherwise, Dart style
 omits the `this`.
-</aside>
+</div>
 
 The pattern of assigning a constructor argument to an instance variable
 is so common, Dart has syntactic sugar to make it easy:
@@ -2377,7 +2377,7 @@ before the constructor body (if any).
 
 In the following example, the constructor for the Employee class
 calls the named constructor for its superclass, Person.
-Click the run button ( <img src="/imgs/run.png" /> ) to execute the code.
+Click the run button ( {% img 'run.png' %} ) to execute the code.
 
 <!-- ch02/op_as.dart -->
 {% comment %}
@@ -2422,18 +2422,18 @@ class Employee extends Person {
 }
 {% endprettify %}
 
-<aside class="alert alert-info" markdown="1">
+<div class="alert alert-info" markdown="1">
 **Note:**
 When using `super()` in a constructor's initialization list, put it last.
 For more information, see the
 [Dart usage guide](/effective-dart/usage/#do-place-the-super-call-last-in-a-constructor-initialization-list).
-</aside>
+</div>
 
-<aside class="alert alert-warning" markdown="1">
+<div class="alert alert-warning" markdown="1">
 **Warning:**
 Arguments to the superclass constructor do not have access to `this`.
 For example, arguments can call static methods but not instance methods.
-</aside>
+</div>
 
 #### Initializer list {#initializer-list}
 {:.no_toc}
@@ -2460,14 +2460,14 @@ class Point {
 }
 {% endprettify %}
 
-<aside class="alert alert-warning" markdown="1">
+<div class="alert alert-warning" markdown="1">
 **Warning:**
 The right-hand side of an initializer does not have access to `this`.
-</aside>
+</div>
 
 Initializer lists are handy when setting up final fields.
 The following example initializes three final fields in an initializer list.
-Click the run button ( <img src="/imgs/run.png" /> ) to execute the code.
+Click the run button ( {% img 'run.png' %} ) to execute the code.
 
 <!-- ch02/initializer_list_final.dart -->
 {% comment %}
@@ -2581,10 +2581,10 @@ class Logger {
 }
 {% endprettify %}
 
-<aside class="alert alert-info" markdown="1">
+<div class="alert alert-info" markdown="1">
 **Note:**
 Factory constructors have no access to `this`.
-</aside>
+</div>
 
 To invoke a factory constructor, you use the `new` keyword:
 
@@ -2661,13 +2661,13 @@ main() {
 With getters and setters, you can start with instance variables, later
 wrapping them with methods, all without changing client code.
 
-<aside class="alert alert-info" markdown="1">
+<div class="alert alert-info" markdown="1">
 **Note:**
 Operators such as increment (++) work in the expected way, whether or
 not a getter is explicitly defined. To avoid any unexpected side
 effects, the operator calls the getter exactly once, saving its value
 in a temporary variable.
-</aside>
+</div>
 
 #### Abstract methods {#abstract-methods}
 {:.no_toc}
@@ -3059,7 +3059,7 @@ abstract class Musical {
 }
 {% endprettify %}
 
-<aside class="alert alert-info" markdown="1">
+<div class="alert alert-info" markdown="1">
 **Note:**
 As of 1.13, two restrictions on mixins have been lifted
 from the Dart VM:
@@ -3070,7 +3070,7 @@ from the Dart VM:
 These "super mixins" are
 [not yet supported in dart2js](https://github.com/dart-lang/sdk/issues/23773)
 and require the `--supermixin` flag in dartanalyzer.
-</aside>
+</div>
 
 For more information, see the article [Mixins in
 Dart.](/articles/mixins/)
@@ -3103,12 +3103,12 @@ main() {
 
 Static variables aren’t initialized until they’re used.
 
-<aside class="alert alert-info" markdown="1">
+<div class="alert alert-info" markdown="1">
 **Note:**
 This chapter follows the [style guide
 recommendation](/articles/style-guide/#prefer-using-lowercamelcase-for-constant-names)
 of preferring `lowerCamelCase` for constant names.
-</aside>
+</div>
 
 #### Static methods {#static-methods}
 {:.no_toc}
@@ -3140,11 +3140,11 @@ main() {
 }
 {% endprettify %}
 
-<aside class="alert alert-info" markdown="1">
+<div class="alert alert-info" markdown="1">
 **Note:**
 Consider using top-level functions, instead of static methods, for
 common or widely used utilities and functionality.
-</aside>
+</div>
 
 You can use static methods as compile-time constants. For example, you
 can pass a static method as a parameter to a constant constructor.
@@ -3290,12 +3290,12 @@ might have some non-string items in it. The solution is to either check
 each item’s type or wrap item-manipulation code in an exception handler
 (see [Exceptions](#exceptions)).
 
-<aside class="alert alert-info" markdown="1">
+<div class="alert alert-info" markdown="1">
 **Note:**
 In contrast, generics in Java use *erasure*, which means that generic
 type parameters are removed at runtime. In Java, you can test whether
 an object is a List, but you can’t test whether it’s a `List<String>`.
-</aside>
+</div>
 
 
 ### Restricting the parameterized type
@@ -3373,11 +3373,11 @@ import 'package:mylib/mylib.dart';
 import 'package:utils/utils.dart';
 {% endprettify %}
 
-<aside class="alert alert-info" markdown="1">
+<div class="alert alert-info" markdown="1">
 **Note:**
 *URI* stands for uniform resource identifier.
 *URLs* (uniform resource locators) are a common kind of URI.
-</aside>
+</div>
 
 
 #### Specifying a library prefix {#specifying-a-library-prefix}
@@ -3670,7 +3670,7 @@ implement the `call()` method.
 In the following example, the `WannabeFunction` class defines
 a call() function that takes three strings and concatenates them,
 separating each with a space, and appending an exclamation.
-Click the run button ( <img src="/imgs/run.png" /> ) to execute the code.
+Click the run button ( {% img 'run.png' %} ) to execute the code.
 
 <!-- ch02/callable_function.dart -->
 {% comment %}
@@ -3767,11 +3767,11 @@ main() {
 }
 {% endprettify %}
 
-<aside class="alert alert-info" markdown="1">
+<div class="alert alert-info" markdown="1">
 **Note:**
 Currently, typedefs are restricted to function types. We expect this
 to change.
-</aside>
+</div>
 
 Because typedefs are simply aliases, they offer a way to check the type
 of any function. For example:

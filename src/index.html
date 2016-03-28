@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: homepage
 title: Home of Dart
 description: Here is a short description for the homepage
 
@@ -10,4 +10,54 @@ previous:
   url: /
   title: Previous Page
 ---
-<h1>Homepage</h1>
+<div class="container">
+  <div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--6-col">
+      <pre class="prettyprint dartpad">
+    <span class="highlight" data-text="Hey">import</span> 'dart:<span class="highlight" data-text="Coooode!">async'</span>;
+    import 'dart:math' show Random, pow;
+    <span class="highlight" data-text="Other Cooode">main()</span> async {
+    var count = 10000000;
+    print('Compute π using the Monte Carlo method 
+    with ' '$count samples.');
+    var pi = await computePi(count);
+    print("π ≅ $pi");
+      </pre>
+    </div>
+    <div class="mdl-cell mdl-cell--6-col">
+      <p class="h4">Dart is a scalable scripting language with robust libraries. Here are some examples.</p>
+      <div id="code-display">
+        <p>Hover over code snippet on the left to learn more.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="banner grey-dark">
+  <h1>Dart is Battle-Tested<sup>1</sup></h1>
+  <p>An all-in-one solution for large software projects. <br/>It's designed at Google to be easy to learn<sup>2</sup>, easy to use<sup>3</sup>, fast<sup>4</sup>, and universal<sup>5</sup>.</p>
+</div>
+<div class="container">
+  <div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--8-col mdl-cell--2-offset-desktop">
+      <div class="content">
+        <ol class="custom-counter">
+          <li>
+            As of March 2016, there are over 2 million lines of production Dart code at Google. There are hundreds of Google SWEs writing Dart code. Here’s a list of other companies and projects using Dart. The language itself is actively developed and maintained, with XYZ commits to the open source repo, and tens of SWEs working on it full time.
+          </li>
+          <li>
+             Our preliminary developer UX research shows that Dart beginners take ~4 days to feel productive in the language (as opposed to ~13 days with JavaScript or ~9 days with C#).
+          </li>
+          <li>
+             Our research shows that developers using Dart spend, on average, 12% less than average time on debugging.
+          </li>
+          <li>
+            See our up-to-date <a href="#">perfomance benchmarks</a>.
+          </li>
+          <li>
+            Dart can run on the web, on the server, on micro-controllers, on Android and on iOS.
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
