@@ -51,4 +51,3 @@ You can write standalone programs, such as servers and scripts, in Dart.
 
 {% endcapture %}
 
-{% include tutorial_main_page.html %}

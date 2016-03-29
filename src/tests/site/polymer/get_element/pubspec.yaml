@@ -1,9 +1,0 @@
-name: my_app
-description: An application that uses core and paper elements
-dependencies:
-  polymer: ">=0.15.1 <0.17.0"
-  core_elements: ">=0.6.0 <0.7.0"
-  paper_elements: ">=0.6.0 <0.7.0"
-transformers:
-- polymer:
-    entry_points: web/index.html
