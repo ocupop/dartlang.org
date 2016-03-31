@@ -27,7 +27,7 @@ Track the Dart project and join the conversation in a variety of ways.
       <li><a href="http://stackoverflow.com/tags/dart">StackOverflow</a></li>
     </ul>
 
-    <h4> Polymer.dart, dart:html </h4>
+    <h4> Angular Dart, Polymer.dart, dart:html </h4>
     <ul>
       <li><a href="https://groups.google.com/a/dartlang.org/forum/#!forum/web">Discussion</a></li>
       <li><a href="http://stackoverflow.com/tags/dart-polymer">How-to questions</a></li>
@@ -122,7 +122,6 @@ Track the Dart project and join the conversation in a variety of ways.
     <ul>
       <li> <a href="http://www.dartlang.cc/support/for-chinese.html">Resources for Chinese developers</a></li>
       <li> <a href="http://www.dartdocs.org">dartdocs.org documentation for Pub packages</a></li>
-      <li> <a href="http://connecting.dartisans.net">Connecting Dartisans</a></li>
     </ul>
   </div>
 </div>

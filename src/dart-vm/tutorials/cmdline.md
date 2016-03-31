@@ -6,9 +6,12 @@ title: "Write Command-Line Apps"
 description: "Basics for command-line apps"
 toc: true
 
-next:
+nextpage:
   url: /dart-vm/tutorials/httpserver
   title: "Dart-VM: Write HTTP Clients & Servers"
+prevpage:
+  url: /dart-vm/tutorials/get-started
+  title: "Get Started"
 
 points:
   - "Command-line applications need to do input and output."
@@ -17,11 +20,6 @@ points:
   - "Most input and output requires the use of Streams."
   - "Streams provide a series of asynchronous data events."
   - "To handle asynchronous data, you need to use Futures."
-
-examples:
-  - title:
-    url:
-    description:
 
 has-permalinks: true
 tutorial:
@@ -631,8 +629,3 @@ package for more classes, functions, and properties.
 * If you are interested in server-side programming,
 check out the next tutorial,
 [Write HTTP Clients & Servers](/docs/tutorials/httpserver/).
-
-* The [Get Input from a Form](/docs/tutorials/forms/) tutorial
-features a client-server.
-The code for the server, which uses CORS headers and handles
-POST requests, is explained in detail.

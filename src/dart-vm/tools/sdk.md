@@ -9,12 +9,6 @@ toc: true
 has-permalinks: false
 ---
 
-{% comment %}
-Note: keep this for now but it does co-mingle HTML and dart-vm
-tools. Later, when Dartium is no longer being offered, and
-dart2js will (presumably) be downloaded elsewhere, clean this up.
-{% endcomment %}
-
 {% include breadcrumbs.html %}
 
 # {{ page.title }}
@@ -83,7 +77,6 @@ go to [dartbug.com](http://dartbug.com).
 Here are some handy searches:
 
 * [dart (VM) issues](https://github.com/dart-lang/sdk/labels/Area-VM)
-* [dart2js issues](https://github.com/dart-lang/sdk/labels/Area-Dart2JS)
 * [dartanalyzer issues](https://github.com/dart-lang/sdk/labels/Area-Analyzer)
 * [dartdoc issues](https://github.com/dart-lang/dartdoc/issues)
 * [pub issues](https://github.com/dart-lang/sdk/labels/Area-Pub)

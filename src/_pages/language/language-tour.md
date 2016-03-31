@@ -3,7 +3,7 @@ reference: "https://www.dartlang.org/docs/dart-up-and-running/ch02.html"
 
 layout: page
 title: "A Tour of the Dart Language"
-permalink: /language-tour
+permalink: /language/language-tour
 description: "Read Chapter 2, A Tour of the Dart Language of Dart (from Dart: Up and Running, published by O'Reilly)."
 toc: true
 

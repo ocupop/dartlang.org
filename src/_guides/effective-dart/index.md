@@ -117,13 +117,10 @@ Dart constructs.
   inside classes, as well as getters and setters. This also includes top level
   variables, getters, and setters.
 
-<aside class="alert alert-info">
+<aside class="alert alert-info" markdown="1">
+  **Have feedback on the guides?** <br>
+  Please [file an issue][issue] or add to an [existing one][].
 
-**Have feedback on the guides?**
-
-Please [file an issue][issue] or add to an [existing one][].
-
-[issue]: https://github.com/dart-lang/www.dartlang.org/issues/new
-[existing one]: https://github.com/dart-lang/www.dartlang.org/issues?q=is%3Aopen+is%3Aissue+label%3AEffectiveDart
-
+  [issue]: https://github.com/dart-lang/www.dartlang.org/issues/new
+  [existing one]: https://github.com/dart-lang/www.dartlang.org/issues?q=is%3Aopen+is%3Aissue+label%3AEffectiveDart
 </aside>

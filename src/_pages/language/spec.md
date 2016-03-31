@@ -3,7 +3,7 @@ reference: "https://www.dartlang.org/docs/spec/"
 
 layout: page
 title: "Dart Language Specification"
-permalink: /resources/spec
+permalink: /language/spec
 
 description: "The Dart language specification and proposed changes."
 ---

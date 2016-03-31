@@ -3,6 +3,7 @@ reference: "https://www.dartlang.org/tools/pub/create-library-packages.html"
 
 layout: page
 title: "Creating Library Packages"
+permalink: /libraries/create-library-packages
 toc: true
 
 ---

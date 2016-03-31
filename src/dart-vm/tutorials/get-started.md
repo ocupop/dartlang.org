@@ -1,27 +1,23 @@
 ---
 reference: "https://www.dartlang.org/docs/tutorials/get-started"
 
+layout: tutorial
 title: "Get Started"
-description: "Get Dart and run two Dart applications"
+description: "Get Dart and run a Dart application"
+toc: true
 
 nextpage:
-  url: /tutorials/shared-pkgs
-  title: Install Shared Packages
+  url: /dart-vm/tutorials/cmdline
+  title: "Write Command-Line Apps"
 prevpage:
-  url: /tutorials/
+  url: /dart-vm/tutorials/
   title: Tutorials Overview
 
 points:
   - "The Dart SDK has development tools and libraries."
   - "Use an IDE (such as WebStorm) or code editor to create your app."
-  - "Compile Dart apps to JavaScript for other browsers."
   - "All Dart apps have a main() function."
   - "Dart supports top-level functions."
-
-examples:
-  - title: hello_world
-    url:
-    description:
 
 tutorial:
   id: get-started
@@ -30,27 +26,25 @@ tutorial:
 
 <div class="tute-target-title">
 <h1>{{page.title}}</h1>
-<h3>Get Dart. Run two apps.</h3>
+<h3>Get Dart. Run an app.</h3>
 </div>
 
 This tutorial gets you ready
 to begin writing Dart apps in an editor or IDE.
 Here you will download the Dart software and
-create and run two small applications.
+create and run a small application.
 
 * [Download Dart and an IDE](#download-dart)
 * [What did you get?](#what-did-you-get)
 * [About Dart applications](#what-is-app)
 * [Create a command-line app](#create-cmd-line)
 * [Run a command-line app](#run-cmd-line)
-* [Create a web app](#create-web-app)
-* [Run a web app](#run-web-app)
 * [About main() and other top-level functions](#top-level-functions)
 * [About file naming conventions](#file-names)
 * [Other resources](#other-resources)
 * [What next?](#what-next)
 
-##Download Dart and an IDE {#download-dart}
+## Download Dart and an IDE {#download-dart}
 
 Once you are ready to move beyond DartPad and create Dart apps in
 a real world environment, you need to download some software.
@@ -63,7 +57,7 @@ You may also want an IDE or code editor; this tutorial uses WebStorm.
 * Recommended: [Get WebStorm](/tools/webstorm/)
 
 
-##What did you get? {#what-did-you-get}
+## What did you get? {#what-did-you-get}
 
 When you download the **Dart SDK**, you get a directory
 that contains tools (under `bin`) and libraries (under `lib`),
@@ -86,8 +80,7 @@ you might want to download and install a Dart plugin,
 if available.
 See the [tools page](/tools/) for a list of plugins.
 
-
-##About Dart applications {#what-is-app}
+## About Dart applications {#what-is-app}
 
 There are two kinds of Dart applications:
 command-line applications and web applications.
@@ -124,7 +117,7 @@ name: hello_world
 description: A sample command-line application.
 {% endprettify %}
 
-###Pub package manager
+### Pub package manager
 
 The [`pub`](/tools/pub) tool allows you to manage Dart packages.
 Pub also includes commands for creating, developing, running, and deploying
@@ -146,7 +139,7 @@ and the pubspec file">
   files must include a top-level main() function.
 
 `lib`
-: Additional code to be used by your command-line or web application.
+: Additional code to be used by your application.
 
 `pubspec.yaml`
 : The app's metadata, including information about which
@@ -155,7 +148,7 @@ and the pubspec file">
 
 You can invoke pub commands from the command line or from the WebStorm UI.
 
-###Command-line applications
+### Command-line applications
 
 Dart command-line applications
 run standalone from the command line.
@@ -168,7 +161,7 @@ The Dart VM runs Dart code directly without intermediate compilation.
 <img class="scale-img-max" src="images/dartvm-cmd-line.png"
      alt="Run a command-line application without compilation">
 
-##Create a command-line app {#create-cmd-line}
+## Create a command-line app {#create-cmd-line}
 
 <ol>
 <li markdown="1">
@@ -263,7 +256,7 @@ using the print() function provided by the dart:core library.
 The functions and objects defined in the dart:core library
 are automatically available to all Dart applications.
 
-##Run a command-line app {#run-cmd-line}
+## Run a command-line app {#run-cmd-line}
 
 In WebStorm, you can run the app in any of the following ways:
 
@@ -283,7 +276,7 @@ You can run the app from the command line using
 `pub run bin/main.dart`.
 </aside>
 
-##About main() and other top-level functions {#top-level-functions}
+## About main() and other top-level functions {#top-level-functions}
 
 Dart lets you define _top-level_ functions,
 that is, functions that are not encapsulated within a class or object.
@@ -323,7 +316,7 @@ This function takes a single argument.
 Functions can take multiple arguments,
 in which case the arguments are set apart by commas.
 
-##About file naming conventions {#file-names}
+## About file naming conventions {#file-names}
 
 When creating an application with WebStorm,
 you are asked to provide an application name.
@@ -331,7 +324,7 @@ By convention, application names
 (and thus, the related files and directories) are lowercase,
 with words separated by underscores (`_`).
 
-##Other resources
+## Other resources
 
 <ul>
   <li>
@@ -350,14 +343,14 @@ with words separated by underscores (`_`).
   </li>
 </ul>
 
-##What next?
+## What next?
 
 * Get the code for all of the Dart tutorials samples.
   <a href="https://github.com/dart-lang/dart-tutorials-samples/archive/master.zip">
   Download the ZIP file</a>, unzip it,
   and open `dart-tutorials-samples-master` in WebStorm.
 
-* Go to the next tutorial,
-  [Install Shared Packages](/tutorials/shared-pkgs/),
-  shows you how to use code written and shared by others.
+* The next tutorial,
+  [Write Command-Line Apps](/dart-vm/tutorials/shared-pkgs/),
+  describes how to build command-line applications.
 

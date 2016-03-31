@@ -7,16 +7,14 @@ description: "The Dart VM Tutorials&mdash;Your guide to building great apps."
 toc: false
 
 nextpage:
-  url: cmdline
-  title: Write Command-Line Apps
+  url: get-started
+  title: Get Started
 
 tutorial:
   id: tut-home
 header:
   css: ["/docs/tutorials/tute_main_page.css"]
 ---
-
-{% capture content %}
 
 <img class="scale-img-max" src="images/banner.png">
 
@@ -27,27 +25,21 @@ server applications using the Dart language, tools, and APIs.
 <ul>
 <li> You already know how to program in a structured language like C or Java.</li>
 <li> You are familiar with object-oriented programming.</li>
-<li> You might not know how to program the browser
-     through the DOM (Document Object Model).</li>
 </ul>
+
+<h4 class="no-permalink"><a href="get-started/"><img src="images/target.png" height="20" width="20">&nbsp;Get Started</a></h4>
+<p>Get Dart. Run two apps.
+</p>
+<img style="border:1px solid black" src="images/simple.png" width="300">
+
+---
 
 You can write standalone programs, such as servers and scripts, in Dart.
 
-<div class="row">
+<h4 class="no-permalink"><a href="cmdline/"><img src="images/target.png" height="20" width="20">&nbsp;Write Command-line Apps</a></h4>
+<p>Learn about features that command-line apps need.</p>
+<img src="images/cmdline-code.png" width="400">
 
-<section>
-  <h4 class="no-permalink"><a href="cmdline/"><img src="images/target.png" height="20" width="20">&nbsp;Write Command-line Apps</a></h4>
-  <p>Learn about features that command-line apps need.</p>
-  <img src="images/cmdline-code.png" width="100%">
-</section>
-
-<section>
-  <h4 class="no-permalink"><a href="/docs/tutorials/httpserver/"><img src="images/target.png" height="20" width="20">&nbsp;Write HTTP Clients & Servers</a></h4>
-  <p>Communicate over the internet.</p>
-  <img src="images/httpserver-code.png" width="100%">
-</section>
-
-<hr style="border:solid;border-color:Gainsboro">
-
-{% endcapture %}
-
+<h4 class="no-permalink"><a href="/docs/tutorials/httpserver/"><img src="images/target.png" height="20" width="20">&nbsp;Write HTTP Clients & Servers</a></h4>
+<p>Communicate over the internet.</p>
+<img src="images/httpserver-code.png" width="400">

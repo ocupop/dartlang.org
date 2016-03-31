@@ -8,7 +8,7 @@ toc: false
 
 ---
 <p class="alert alert-danger">
-  The plugin used to generate article lists will need to be refactored to account for new configuration. 
+  The plugin used to generate article lists will need to be refactored to account for new configuration.
 </p>
 
 <h1>Articles</h1>
@@ -21,22 +21,14 @@ Read these articles for insight into Dart programming topics.
 See also: <a href="/tutorials/">Dart Tutorials</a> and
 <a href="/guides/effective-dart/">Effective Dart</a>.
 </p>
-<h2>Libraries and APIs</h2>
-{% comment %}
-  {% articles libraries-and-apis %}
-{% endcomment %}
-    
+
 <h2>Language Details</h2>
 {% comment %}
   {% articles language-details %}
 {% endcomment %}
-    
-<h2>Design Decisions</h2>
+
+<h2>Libraries and APIs</h2>
 {% comment %}
-  {% articles design-decisions %}
+  {% articles libraries-and-apis %}
 {% endcomment %}
 
-<h2>Performance</h2>
-{% comment %}
-  {% articles performance %}
-{% endcomment %}

@@ -3,8 +3,8 @@ reference: "https://www.dartlang.org/docs/dart-up-and-running/ch03.html"
 
 layout: page
 title: "A Tour of the Dart Libraries"
-permalink: /library-tour
-description: "Read Chapter 3, A Tour of the Dart Libraries (from Dart: Up and Running, published by O'Reilly)."
+permalink: /libraries/library-tour
+description: "Learn about the major features in Dart's libraries"
 toc: true
 
 subsite: "Dart Up and Running"

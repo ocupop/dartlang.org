@@ -6,7 +6,7 @@ title: "Write HTTP Clients & Servers"
 description: "Communicate over the internet"
 toc: true
 
-previous:
+prevpage:
   url: /dart-vm/tutorials/cmdline
   title: "Dart-VM: Write Command-Line Apps"
 
@@ -23,7 +23,7 @@ tutorial:
   id: httpserver
 header:
   css: ["/docs/tutorials/httpserver/httpserver.css"]
-  
+
 ---
 
 {% comment %}
@@ -1132,8 +1132,3 @@ for further details about the classes and libraries discussed in this tutorial.
 * [Dart on the Server](https://dart-lang.github.io/server/)
   links to resources for writing standalone Dart applications,
   including servers.
-
-* [Get Input from a Form](/docs/tutorials/forms/) shows how to make a POST
-  request from a browser-based client using an HTML form.
-  It also discusses the related server.
-
