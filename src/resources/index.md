@@ -12,7 +12,7 @@ description: ""
   <li><a href="/samples/">Code Samples</a></li>
   <li><a href="/language/tour">Language Tour</a></li>
   <li><a href="/language/effective-dart">Effective Dart</a></li>
-  <li><a href="#">Downloads</a></li>
+  <li><a href="/dart-vm/downloads/">Downloads</a></li>
   <li><a href="/resources/books/">Books</a></li>
   <li><a href="/resources/dart-tips/">Dart-Tips</a></li>
   <li><a href="/resources/synonyms/">Synonyms</a></li>

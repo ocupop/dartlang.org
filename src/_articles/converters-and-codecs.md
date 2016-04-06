@@ -5,6 +5,7 @@ layout: article
 type: libraries
 title: "Converters and Codecs"
 description: "Learn how to write efficient conversions."
+permalink: /articles/converters-and-codecs
 
 rel:
   author: florian-loitsch

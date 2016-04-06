@@ -4,9 +4,8 @@ reference: "https://www.dartlang.org/downloads/mac.html"
 layout: page
 title: "Installing Dart on Mac"
 description: "Installing and updating the Dart SDK on your Mac with homebrew."
+permalink: /dart-vm/downloads/mac
 ---
-
-{% include breadcrumbs.html %}
 
 # {{ page.title }}
 
@@ -15,11 +14,11 @@ With [Homebrew](http://brew.sh/),
 installing and updating Dart is easy.
 
 Don't want to use homebrew?
-Another option is [downloading Dart manually](/downloads/archive/).
+Another option is [downloading Dart manually](archive/).
 
 ## Installing {#homebrew-install-dart}
 
-The Dart SDK contains the VM, analyzer, formatter, dart2js compiler,
+The Dart SDK contains the VM, analyzer, formatter,
 documentation generator, package manager, and the core libraries.
 
 [Install homebrew](http://brew.sh/), and then run:

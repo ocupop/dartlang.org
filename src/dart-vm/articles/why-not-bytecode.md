@@ -6,6 +6,8 @@ type: language
 title: "Why Not a Bytecode VM?"
 description: "This article discusses the trade-offs VMs have to make,
        and explains why we think that a language VM makes more sense for Dart."
+permalink: /dart-vm/articles/why-not-bytecode
+toc: true
 
 rel:
   author: florian-loitsch
@@ -18,10 +20,8 @@ article:
 
 # {{ page.title }}
 
-
-<em>Written by Florian Loitsch and Bob Nystrom<br>
-November 2011</em>
-
+_Written by Florian Loitsch and Bob Nystrom<br>
+November 2011_
 
 When we released an early preview of Dart we were frequently asked why the
 Dart VM is not bytecode based, but instead works on Dart source code directly.

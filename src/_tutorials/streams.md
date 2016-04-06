@@ -1,9 +1,8 @@
 ---
 reference: "https://www.dartlang.org/docs/tutorials/streams/"
-
 title: "Asynchronous Programming: Streams"
 description: "Learn how to consume single-subscriber and broadcast streams."
-
+permalink: /tutorials/streams
 
 prevpage:
   url: /tutorials/futures
@@ -18,12 +17,9 @@ points:
 
 tutorial:
   id: streams
-
 ---
 
-<div class="tute-target-title">
-<h1>{{page.title}}</h1>
-</div>
+# {{page.title}}
 
 Asynchronous programming in Dart is characterized by the
 Future and Stream classes.
@@ -37,20 +33,6 @@ A stream is a sequence of asynchronous events.
 It is like an asynchronous Iterable&mdash;where, instead of getting
 the next event when you ask for it, the stream tells you that
 there is an event when it is ready.
-
-* [Receiving stream events](#receiving-stream-events)
-* [Error events](#error-events)
-* [Working with streams](#working-with-streams)
-* [The two kinds of streams](#two-kinds-of-streams)
-  * [Single subscription streams](#single-subscription-streams)
-  * [Broadcast streams](#broadcast-streams)
-* [Methods that process a stream](#process-stream-methods)
-* [Methods that modify a stream](#modify-stream-methods)
-  * [The transform() function](#transform-function)
-  * [Reading and decoding a file](#reading-decoding-file)
-* [The listen() method](#listen-method)
-* [Other resources](#other-resources)
-* [What next?](#what-next)
 
 ## Receiving stream events {#receiving-stream-events}
 
@@ -116,7 +98,7 @@ src="{{site.custom.dartpad.embed-dart-prefix}}?id=15d5ef986238c97dbc14&horizonta
 
 <aside class="alert alert-info" markdown="1">
 **Note:**
-Click run ( <img src="/imgs/run.png"/> )
+Click run ( <img src="/images/run.png"/> )
 to see the result in the **Console output**.
 </aside>
 
@@ -187,7 +169,7 @@ src="{{site.custom.dartpad.embed-dart-prefix}}?id=38feef09be9b1e7b5136&horizonta
 
 <aside class="alert alert-info" markdown="1">
 **Note:**
-Click run ( <img src="/imgs/run.png"/> )
+Click run ( <img src="/images/run.png"/> )
 to see the result in the **Console output**.
 </aside>
 
@@ -230,7 +212,7 @@ src="{{site.custom.dartpad.embed-dart-prefix}}?id=da80b1e7eed75db53ef3&horizonta
 
 <aside class="alert alert-info" markdown="1">
 **Note:**
-Click run ( <img src="/imgs/run.png"/> )
+Click run ( <img src="/images/run.png"/> )
 to see the result in the **Console output**.
 </aside>
 
@@ -473,11 +455,7 @@ and asynchronous programming in Dart.
   an article about creating your own streams
 * [Futures and Error Handling](/articles/futures-and-error-handling/),
   an article that explains how to handle errors using the Future API
-* [Asynchrony support](/docs/dart-up/and-running/ch02.html#asynchrony),
-  a section in the [language tour](/docs/dart-up-and-running/ch02.html)
+* [Asynchrony support](/language/language-tour#asynchrony),
+  a section in the [language tour](/language/language-tour)
 * [Stream API reference](https://api.dartlang.org/apidocs/channels/stable/dartdoc-viewer/dart:async.Stream)
-
-## What next? {#what-next}
-
-xxx
 

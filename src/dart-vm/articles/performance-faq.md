@@ -2,10 +2,10 @@
 reference: "https://www.dartlang.org/performance/"
 
 layout: article
-title: Performance
+title: Performance FAQ
 description: Track the performance of your Dart code using benchmarks.
+permalink: /dart-vm/articles/performance-faq
 toc: false
-
 ---
 
 # {{ page.title }}

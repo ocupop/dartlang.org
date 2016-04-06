@@ -4,16 +4,12 @@ reference: "https://www.dartlang.org/downloads/linux.html"
 layout: page
 title: "Installing Dart on Linux"
 description: "Installing and updating the Dart SDK on Linux with apt-get, a Debian package, and compiling from source."
+permalink: /dart-vm/downloads/linux
 
 js:
 - url: /js/download-info.js
   defer: true
 ---
-
-{% comment %}
-  NO toc.html include because it breaks the buttons
-{% endcomment %}
-{% include breadcrumbs.html %}
 
 # {{ page.title }}
 
@@ -107,6 +103,3 @@ dev channel release in the `.deb` package format.
 ## Compiling from source {#compiling}
 
 You can [build the SDK](https://github.com/dart-lang/sdk/wiki/Building) yourself.
-If your system uses an older version of Ubuntu,
-you might need to update to GCC 4.6 or later.
-See the [Tools FAQ](/tools/faq.html) for more information.

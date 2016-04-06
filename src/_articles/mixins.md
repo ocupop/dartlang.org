@@ -5,6 +5,7 @@ layout: article
 type: language
 title: "Mixins in Dart"
 description: "Mixins let you implement functionality once and use it in multiple classes."
+permalink: /articles/mixins
 
 rel:
     author: gilad-bracha

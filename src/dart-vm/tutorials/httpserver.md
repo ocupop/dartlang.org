@@ -1,9 +1,9 @@
 ---
 reference: "https://www.dartlang.org/docs/tutorials/httpserver/"
-
 layout: tutorial
 title: "Write HTTP Clients & Servers"
 description: "Communicate over the internet"
+permalink: /dart-vm/tutorials/httpserver
 toc: true
 
 prevpage:
@@ -22,38 +22,12 @@ has-permalinks: true
 tutorial:
   id: httpserver
 header:
-  css: ["/docs/tutorials/httpserver/httpserver.css"]
-
+  css: ["httpserver.css"]
 ---
 
-{% comment %}
-  === Figure out if this needs to be refactored? Or if this is a single occurrence of this type of example content ====
-  {% capture sample_links %}
+# {{page.title}}
 
-  This tutorial features these examples,
-  which live under the **httpserver** directory:
-
-  * hello_world_server.dart
-  * number_thinker.dart
-  * basic_writer_server.dart
-  * basic_writer_client.dart
-  * mini_file_server.dart
-  * basic_file_server.dart
-  * hello_world_server_secure.dart
-
-  <p>
-  Don't have the source code?
-  <a href="https://github.com/dart-lang/dart-tutorials-samples/archive/master.zip">
-    Download it.
-  </a>
-
-  {% endcapture %}
-{% endcomment %}
-
-<div class="tute-target-title">
-<h1>{{page.title}}</h1>
-<h3>Communicate over the internet</h3>
-</div>
+### Communicate over the internet
 
 <aside class="alert alert-info" markdown="1">
 <strong>Prerequisite:</strong>
@@ -65,9 +39,9 @@ and
 <a href="https://api.dartlang.org/dart_async/Stream.html"
    target="_blank">Stream</a>s,
 which are not explained in this tutorial.
-Refer to [Asynchronous Programming: Futures](/docs/tutorials/futures/)
+Refer to [Asynchronous Programming: Futures](/tutorials/futures/)
 and
-[Asynchronous Programming: Streams](/docs/tutorials/streams/)
+[Asynchronous Programming: Streams](/tutorials/streams/)
 for information about using these classes.
 </aside>
 
@@ -128,19 +102,7 @@ You also learn about the client side: making different
 kinds of requests (GET and POST),
 writing browser-based and command-line clients.
 
-* [Get the source code](#get-the-source-code)
-* [Run the hello world server](#run-hello-world)
-* [Binding a server to a host and port](#binding)
-* [Using HTML forms to make GET requests](#using-forms-to-make-get-requests)
-* [Listening for and handling requests](#httprequest-object)
-* [Making a POST request from a standalone client](#making-post)
-* [Handling a POST request in a server](#handling-post)
-* [Using the http_server package](#using-http-server-package)
-* [Using https with bindSecure()](#using-https)
-* [Other resources](#other-resources)
-* [What next?](#what-next)
-
-##Get the source code
+## Get the source code
 
 <ul>
   <li>
@@ -156,7 +118,7 @@ the sources you need for this tutorial.
   </li>
 </ul>
 
-##Run the hello world server {#run-hello-world}
+## Run the hello world server {#run-hello-world}
 
 _Example file for this section:
 <a href="https://github.com/dart-lang/dart-tutorials-samples/blob/master/httpserver/bin/hello_world_server.dart"
@@ -191,7 +153,7 @@ and the client is the browser you used.
 However, you can write client programs in Dart&mdash;either
 a browser-based client script, or a standalone program.
 
-###A quick glance at the code
+### A quick glance at the code
 
 In the code for the hello world server,
 an HTTP server binds to a host and port,
@@ -221,7 +183,7 @@ The next few sections cover server-side binding,
 making a client-side GET request,
 listening, and responding.
 
-##Binding a server to a host and port {#binding}
+## Binding a server to a host and port {#binding}
 
 _Example for this section: hello_world_server.dart._
 
@@ -295,7 +257,7 @@ and how to write the response in the section
 [Listening for and handling requests](#httprequest-object).
 But first, let's look at one way a client generates a request.
 
-##Using HTML forms to make GET requests {#using-forms-to-make-get-requests}
+## Using HTML forms to make GET requests {#using-forms-to-make-get-requests}
 
 _Example files for this section:
 <a href="https://github.com/dart-lang/dart-tutorials-samples/blob/master/httpserver/bin/number_thinker.dart"
@@ -359,8 +321,6 @@ The form contains the pull-down list and the button.
 The form also specifies the URL, which includes the port number,
 and the kind of request (the _request method_).
 It might also include elements that build a query string.
-(To learn more about forms, see
-[Get Input from a Form](/docs/tutorials/forms/).)
 
 Here's the HTML code for the form in make_a_guess.html:
 
@@ -609,8 +569,6 @@ you need to write a client program, of which there are two kinds:
   <a href="https://github.com/dart-lang/dart-tutorials-samples/blob/master/httpserver/web/note_client.dart" target="_blank">note_client.dart</a>,
   <a href="https://github.com/dart-lang/dart-tutorials-samples/blob/master/httpserver/bin/note_server.dart" target="_blank">note_server.dart</a>,
   and <a href="https://github.com/dart-lang/dart-tutorials-samples/blob/master/httpserver/web/note_taker.html" target="_blank">note_taker.html</a>.
-  Also, check out the
-  [Get Input from a Form](/docs/tutorials/forms/) tutorial.
 
   Let's look at a standalone client, `basic_writer_client.dart`,
   and its server `basic_writer_server.dart`.
@@ -833,7 +791,7 @@ The server decodes it using the JSON codec available in the
 <a href="https://api.dartlang.org/dart_convert.html" target="_blank">dart:convert</a>
 library.
 
-####A note about CORS headers
+#### A note about CORS headers
 
 If you want to serve clients that are running on a different origin
 (a different host or port), you need to add CORS headers.
@@ -857,7 +815,7 @@ void addCorsHeaders(HttpResponse response) {
 For more information, refer to Wikipedia's article
 [Cross-origin resource sharing](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing).
 
-##Using the http_server package {#using-http-server-package}
+## Using the http_server package {#using-http-server-package}
 
 _Example files for this section:
 <a href="https://github.com/dart-lang/dart-tutorials-samples/blob/master/httpserver/bin/mini_file_server.dart"
@@ -1049,7 +1007,7 @@ In this example, it serves `index.html` for directory requests.
 The `serveRequest` method provided by the VirtualDirectory
 class handles requests that specify a file.
 
-##Using https with bindSecure() {#using-https}
+## Using https with bindSecure() {#using-https}
 
 _Example for this section:
 <a href="https://github.com/dart-lang/dart-tutorials-samples/blob/master/httpserver/bin/hello_world_server_secure.dart"
@@ -1104,7 +1062,7 @@ A file containing the (encrypted) server certificate private key, in [PEM format
 The context argument is required on servers, optional for clients. If it is omitted, then the default context
 with built-in trusted roots is used.
 
-##Other resources {#other-resources}
+## Other resources {#other-resources}
 
 Visit these API docs
 for further details about the classes and libraries discussed in this tutorial.
@@ -1124,11 +1082,11 @@ for further details about the classes and libraries discussed in this tutorial.
 | <a href="https://pub.dartlang.org/packages/http_server" target="_blank">http_server</a> package | A package with higher-level HTTP classes |
 {: .table}
 
-##What next? {#what-next}
+## What next? {#what-next}
 
 * If you haven't yet tried the server-side code lab,
   try [writing a server app](https://dart-lang.github.io/server/codelab/).
 
-* [Dart on the Server](https://dart-lang.github.io/server/)
+* [Servers with Dart](https://dart-lang.github.io/server/)
   links to resources for writing standalone Dart applications,
   including servers.

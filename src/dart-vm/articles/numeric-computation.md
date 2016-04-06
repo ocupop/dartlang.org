@@ -4,6 +4,7 @@ reference: "https://www.dartlang.org/articles/numeric-computation/"
 layout: article
 title: "Numeric Computation"
 description: "How you store and use numbers can have a big impact on your app's performance. This article focuses on the Dart VM, with additional tips for apps that are compiled to JavaScript."
+permalink: /dart-vm/articles/numeric-computation
 toc: true
 
 rel:
@@ -18,9 +19,8 @@ article:
 
 # {{ page.title }}
 
-<em>Written by John Mccutchan <br />
-<time pubdate date="2013-05-21">May 2013</time>
-</em>
+_Written by John Mccutchan <br>
+May 2013_
 
 Performance matters to everyone.
 It directly impacts your bottom line, conversion rates, and user satisfaction.

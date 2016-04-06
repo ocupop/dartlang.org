@@ -4,6 +4,7 @@ reference: "https://www.dartlang.org/docs/tutorials/"
 layout: page
 title: "Dart VM Tutorials"
 description: "The Dart VM Tutorials&mdash;Your guide to building great apps."
+permalink: /dart-vm/tutorials/
 toc: false
 
 nextpage:
@@ -31,8 +32,6 @@ server applications using the Dart language, tools, and APIs.
 <p>Get Dart. Run two apps.
 </p>
 <img style="border:1px solid black" src="images/simple.png" width="300">
-
----
 
 You can write standalone programs, such as servers and scripts, in Dart.
 

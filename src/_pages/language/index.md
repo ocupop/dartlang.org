@@ -17,6 +17,9 @@ There are guides on Dart style, documentation, usage, and design.
 If you enjoy diving into a formal language specification,
 see the [Dart spec](/language/spec).
 
-When you are ready to learn about Dart's core libraries, creating
-your own libraries, or using libraries developed by other,
+When you are ready to learn about Dart's core libraries,
+how to create your own libraries,
+or how to use libraries developed by others,
 see [Libraries](/libraries).
+
+xxx: List the relevant articles and tutorials

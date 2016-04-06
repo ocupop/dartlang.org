@@ -4,6 +4,7 @@ reference: "https://www.dartlang.org/articles/snapshots/"
 layout: article
 title: "Snapshots in Dart"
 description: "Learn how snapshots can help your apps start up faster."
+permalink: /dart-vm/articles/snapshots
 toc: true
 
 rel:
@@ -18,9 +19,8 @@ article:
 
 # {{ page.title }}
 
-<em>Written by Siva Annamalai <br />
-<time pubdate date="2013-02-13">February 2013</time>
-</em>
+_Written by Siva Annamalai <br>
+February 2013_
 
 This article talks about snapshots in Dart—both
 what they are and how they can make Dart apps start up faster.

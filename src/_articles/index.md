@@ -4,6 +4,7 @@ reference: "https://www.dartlang.org/articles/"
 layout: page
 title: "Articles"
 description: "Read about the Dart language and tools with this collection of articles, style guides, and more."
+permalink: /articles/
 toc: false
 
 ---

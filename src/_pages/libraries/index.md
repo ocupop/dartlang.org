@@ -8,7 +8,7 @@ Dart programs rely on libraries.
 
 Several common libraries are provided for you, such as
 `dart:core` which supports built-in types (such as numbers, strings, booleans),
-collections, date, and time. The `dart:async` library supports
+collections, date, and time, or `dart:async` which supports
 asynchronous programming with classes like Future and Stream.
 
 To learn more about the core libraries, see
@@ -27,3 +27,5 @@ Dart libraries are distributed as _library packages_,
 created with the `pub` tool.
 Learn how to create your own library package with
 [Creating Library Packages](create-library-packages).
+
+xxx: List the relevant articles and tutorials

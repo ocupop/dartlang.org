@@ -4,6 +4,7 @@ reference: /articles/creating-streams/
 layout: article
 type: libraries
 title: "Creating Streams in Dart"
+permalink: /articles/creating-streams
 
 rel:
   author: lasse-nielsen

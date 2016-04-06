@@ -1,10 +1,10 @@
 ---
 reference: /articles/zones/
-
 layout: article
 type: libraries
 title: "Zones"
 description: "Manage your asynchronous code: handle uncaught errors, override behavior (such as printing and scheduling tasks), and more."
+permalink: /articles/zones
 
 rel:
   author: florian-loitsch

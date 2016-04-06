@@ -4,6 +4,7 @@ reference: "https://www.dartlang.org/docs/tutorials/get-started"
 layout: tutorial
 title: "Get Started"
 description: "Get Dart and run a Dart application"
+permalink: /dart-vm/tutorials/get-started
 toc: true
 
 nextpage:
@@ -24,25 +25,19 @@ tutorial:
 
 ---
 
-<div class="tute-target-title">
-<h1>{{page.title}}</h1>
-<h3>Get Dart. Run an app.</h3>
-</div>
+# {{page.title}}
+
+### Get Dart. Run an app.
 
 This tutorial gets you ready
 to begin writing Dart apps in an editor or IDE.
 Here you will download the Dart software and
 create and run a small application.
 
-* [Download Dart and an IDE](#download-dart)
-* [What did you get?](#what-did-you-get)
-* [About Dart applications](#what-is-app)
-* [Create a command-line app](#create-cmd-line)
-* [Run a command-line app](#run-cmd-line)
-* [About main() and other top-level functions](#top-level-functions)
-* [About file naming conventions](#file-names)
-* [Other resources](#other-resources)
-* [What next?](#what-next)
+This tutorial uses the `hello_world` and `simple` examples.
+You can get these by
+[downloading the tutorial examples](https://github.com/dart-lang/dart-tutorials-samples/archive/master.zip)
+from GitHub.
 
 ## Download Dart and an IDE {#download-dart}
 
@@ -55,7 +50,6 @@ You may also want an IDE or code editor; this tutorial uses WebStorm.
 
 * [Get the Dart SDK](/downloads/)
 * Recommended: [Get WebStorm](/tools/webstorm/)
-
 
 ## What did you get? {#what-did-you-get}
 
@@ -351,6 +345,6 @@ with words separated by underscores (`_`).
   and open `dart-tutorials-samples-master` in WebStorm.
 
 * The next tutorial,
-  [Write Command-Line Apps](/dart-vm/tutorials/shared-pkgs/),
+  [Write Command-Line Apps](/dart-vm/tutorials/cmdline),
   describes how to build command-line applications.
 

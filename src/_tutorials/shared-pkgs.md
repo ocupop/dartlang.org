@@ -3,24 +3,17 @@ reference: "https://www.dartlang.org/docs/tutorials/shared-pkgs/"
 
 title: "Install Shared Packages"
 description: "Packages are bundles of source code, tools, and resources that help you to organize and share code"
+permalink: /tutorials/shared-pkgs
 
 nextpage:
   url: /tutorials/futures
   title: "Asynchronous Programming: Futures"
-prevpage:
-  url: /tutorials/get-started
-  title: Get Started
 
 points:
   - "Following a few conventions, such as having a valid pubspec.yaml file, makes your app a package."
   - "Use Stagehand to generate starting files for your app."
   - "Use `pub get` to download packages."
   - "pub.dartlang.org is the primary public repository for Dart packages."
-
-examples:
-  - title: pub.dartlang.org
-    url: "https://pub.dartlang.org/"
-    description: "Get the vector_math package and many others from:"
 
 tutorial:
   id: packages
@@ -51,15 +44,10 @@ just change the package name when you get to that step.
 This tutorial also describes some of the resources you can expect to find
 in a well-built package.
 
-* [About the pubspec.yaml file](#about-pubspec)
-* [Name the package dependencies](#name-dependencies)
-* [Install the package dependencies](#install-dependencies)
-* [What did you get (and not get)?](#about-packages)
-* [Import libraries from a package](#use-package)
-* [Other resources](#other-resources)
-* [What next?](#what-next)
+This tutorial uses the vector_math package. You can get this package,
+and many others, from [pub.dartlang.org](https://pub.dartlang.org/).
 
-##About the pubspec.yaml file {#about-pubspec}
+## About the pubspec.yaml file {#about-pubspec}
 
 To use an external package,
 your application must itself be a package.
@@ -120,7 +108,7 @@ Because all web apps depend on the browser package,
 `browser` is listed under **dependencies**.
 
 
-##Name the package dependencies {#name-dependencies}
+## Name the package dependencies {#name-dependencies}
 
 To use an external library package,
 you need to add the package to your
@@ -181,7 +169,7 @@ To use one of the packages from that site,
 you can specify it by its simple name,
 as we have done here.
 
-##Install the package dependencies {#install-dependencies}
+## Install the package dependencies {#install-dependencies}
 
 If you're using an IDE or Dart-savvy editor to edit `pubspec.yaml`,
 it might automatically install the packages your app depends on.
@@ -219,7 +207,7 @@ This helps to provide a stable development environment.
 Later you can modify the version constraints and use `pub upgrade`
 to update to new versions as needed.
 
-##What did you get (and not get)? {#about-packages}
+## What did you get (and not get)? {#about-packages}
 
 Besides the Dart libraries,
 the vector_math package has other resources that might be useful to you
@@ -285,7 +273,7 @@ only one, `lib`, was installed when you ran pub get.
   <hr>
 </div>
 
-##Import libraries from a package {#use-package}
+## Import libraries from a package {#use-package}
 
 Now that you've installed the package,
 you can import its libraries and use them in your Dart file.
@@ -343,7 +331,7 @@ when you import a library.
 </aside>
 
 
-##Other resources
+## Other resources
 
 * Dart developers share packages at
   [pub.dartlang.org](https://pub.dartlang.org/).
@@ -353,7 +341,7 @@ when you import a library.
   for more information on using and sharing packages.
 
 
-##What next? {#what-next}
+## What next? {#what-next}
 
 The next tutorial, [Asynchronous Programming: Futures](futures),
 shows you how to write non-blocking code using Dart's async/await

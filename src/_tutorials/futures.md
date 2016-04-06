@@ -1,8 +1,8 @@
 ---
 reference: "https://www.dartlang.org/docs/tutorials/futures"
-
 title: "Asynchronous Programming: Futures"
 description: "A first look at Futures and how to use them to make your asynchronous code better."
+permalink: /tutorials/futures
 
 nextpage:
   url: /tutorials/streams
@@ -24,13 +24,10 @@ points:
 has-permalinks: true
 tutorial:
   id: futures
-
 ---
 
 
-<div class="tute-target-title">
-<h1>{{page.title}}</h1>
-</div>
+# {{page.title}}
 
 Dart is a single-threaded programming language.
 If any code blocks the thread of execution
@@ -38,17 +35,6 @@ If any code blocks the thread of execution
 or blocking on I/O) the program effectively freezes.
 Asynchronous operations let your program run without getting blocked.
 Dart uses Future objects to represent asynchronous operations.
-
-* [Introduction](#introduction)
-* [What is a Future?](#what-is-a-future)
-* [Async and await](#async-await)
-  * [Handling errors](#handling-errors-async)
-  * [Sequential processing](#sequential-processing-async)
-* [The Future API](#the-future-api)
-  * [Handling errors](#handling-errors-future-api)
-  * [Calling multiple functions that return Futures](#calling-multiple-funcs)
-* [Other resources](#other-resources)
-* [What next?](#what-next)
 
 ## Introduction {#introduction}
 
@@ -110,7 +96,7 @@ To get the value that the Future represents, you have two options:
 ## Async and await {#async-await}
 
 The `async` and `await` keywords are part of the Dart language's
-[asynchrony support](/docs/dart-up-and-running/ch02.html#asynchrony).
+[asynchrony support](/language/language-tour#asynchrony).
 They allow you to write asynchronous code that looks like synchronous
 code and doesn't use the Future API.
 
@@ -445,8 +431,8 @@ and asynchronous programming in Dart:
   an article that starts where this tutorial ends
 * [The Event Loop and Dart](/articles/event-loop/),
   an article that describes how to schedule tasks using Futures
-* [Asynchrony support](/docs/dart-up-and-running/ch02.html#asynchrony),
-  a section in the [language tour](/docs/dart-up-and-running/)
+* [Asynchrony support](/language/language-tour#asynchrony),
+  a section in the [language tour](/language/languagetour/)
 * [Future API reference](http://api.dartlang.org/dart_async/Future.html)
 
 ## What next? {#what-next}

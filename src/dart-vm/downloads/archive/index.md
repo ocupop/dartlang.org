@@ -2,7 +2,8 @@
 layout: default
 title: "Index of Downloads"
 description: "Download specific stable and dev channel versions of the Dart SDK, Dartium, and the Dart API documentation."
-has-permalinks: false
+permalink: /dart-vm/downloads/archive/
+
 js:
 - url: out/web/download_archive.dart.js
   defer: true

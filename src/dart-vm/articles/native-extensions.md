@@ -4,6 +4,7 @@ reference: "https://www.dartlang.org/articles/native-extensions-for-standalone-d
 layout: article
 title: "Native Extensions for the Standalone Dart VM"
 description: "Learn how to enable command-line Dart apps to call C/C++ functions."
+permalink: /dart-vm/articles/native-extensions
 toc: true
 
 rel:
@@ -33,7 +34,7 @@ library's C API (the Dart Embedding API) directly and runs on the same thread as
 the Dart isolate. An asynchronous function is called by sending a message to a
 Dart port, receiving the response on a reply port.
 
-###Anatomy of a native extension
+## Anatomy of a native extension
 
 A Dart native extension contains two files: a Dart library and a native library.
 The Dart library defines classes and top-level functions as usual, but declares
@@ -41,12 +42,13 @@ that some of these functions are implemented in native code, using the
 **native** keyword. The native library is a shared library, written in C or C++,
 that contains the implementations of those functions.
 
-The Dart library specifies the native library using an `import` statement and the
-**dart-ext**: URI scheme.  As with any other import, the URI specifies a path to
-the shared library, either absolute or relative to the directory containing the
-Dart library.
+The Dart library specifies the native library using an `import` statement
+and the **dart-ext**: URI scheme.
+As with any other import,
+the URI specifies a path to the shared library,
+either absolute or relative to the directory containing the Dart library.
 
-###Example code
+## Example code
 
 The code for the sample extensions featured in this article is in the
 [samples/sample_extension](https://github.com/dart-lang/sdk/tree/master/samples/sample_extension)
@@ -87,7 +89,7 @@ which can be the same for all extensions.  The functions sample_extension_Init()
 and ResolveName() should be almost the same in all extensions, and a version of
 randomArrayServicePort() must be in all asynchronous extensions.
 
-###The synchronous sample extension
+## The synchronous sample extension
 
 Because the asynchronous extension works like a synchronous extension with some
 added functions, we'll show the synchronous extension first. First we'll show
@@ -132,7 +134,7 @@ and on Mac it loads libsample_extension.dylib. We show how to build and link
 these shared libraries in an appendix at the end of the article.
 </aside>
 
-###Using the Dart Embedding API from native code
+## Using the Dart Embedding API from native code
 
 As the sample extensions show, the native shared library contains an
 initialization function, a name resolution function, and the native
@@ -172,7 +174,7 @@ return a Dart_Handle to the argument at a specified index. The native function
 returns a Dart object to the Dart app, as the return value, by storing it in
 the arguments object using the Dart_SetReturnValue() function.
 
-###Dart handles
+## Dart handles
 
 The extension's native implementations of functions use Dart_Handles
 extensively. Calls in the Dart Embedding API return a Dart_Handle and often take
@@ -207,7 +209,7 @@ control flow to where the error should be handled. The sample uses a helper
 function, called HandleError(), to make this convenient.  A call to
 Dart_PropagateError() never returns.
 
-###The native code: sample_extension.cc
+## The native code: sample_extension.cc
 
 Now we'll show the native code for the sample extension, starting with the
 initialization function, then the native function implementations, and ending
@@ -287,7 +289,7 @@ first time.
 On later calls to systemRand(), the result of the function lookup has been cached, so ResolveName() is not called again.
 
 
-##The asynchronous native extension
+## The asynchronous native extension
 
 As we saw above, a synchronous extension uses the Dart Embedding API to work
 with Dart heap objects, and it runs on the main Dart thread for the current
@@ -324,7 +326,7 @@ To create an asynchronous native extension, we do three things:
   message, and calls a callback argument when it receives a reply to that
   message.
 
-###Wrapping the C function
+### Wrapping the C function
 
 Here is an example of a C function (actually, a C++ function, due to the use of
 reinterpret_cast) that creates an array of random bytes,
@@ -397,7 +399,7 @@ because there is no current isolate. No errors or exceptions can be thrown, so
 any error must be encoded in the reply message, to be decoded and thrown by the
 Dart part of the extension.
 
-###Setting up the native port
+### Setting up the native port
 
 Now we set up the mechanism that calls this wrapped C function from Dart code,
 by sending a message. We create a native port that calls this function, and
@@ -416,7 +418,7 @@ void randomArrayServicePort(Dart_NativeArguments arguments) {
 }
 {% endprettify %}
 
-###Calling the native port from Dart
+### Calling the native port from Dart
 
 On the Dart side, we need a class that stores this send port, sending messages
 to it when a Dart asynchronous function with a callback is called. The Dart
@@ -456,7 +458,7 @@ class RandomArray {
 }
 {% endprettify %}
 
-###Conclusion and further resources
+## Conclusion and further resources
 
 You've seen both synchronous and asynchronous native extensions. We hope that
 you'll use these tools to provide access to existing C and C++ libraries,
@@ -468,7 +470,7 @@ to achieve high, non-blocking throughput. Extensions should have the same
 performance goals.
 
 
-##Appendix: Compiling and linking extensions
+## Appendix: Compiling and linking extensions
 
 Building a shared library can be tricky, and the tools to do it are platform
 dependent. Building Dart native extensions is especially tricky because they are
@@ -483,7 +485,7 @@ source repository, the sample code also includes a platform-independent build
 system, called gyp, and a build file sample_extension.gypi that builds the
 sample extension.
 
-###Building on Linux
+### Building on Linux
 
 On Linux, you can compile the code in the samples/sample_extension directory like this:
 
@@ -500,7 +502,7 @@ libsample_extension.so sample_extension.o
 
 Remove the -m32 to build a 64-bit library that runs with the 64-bit Dart standalone VM.
 
-###Building on Mac
+### Building on Mac
 
 1. Using Xcode (tested with Xcode 3.2.6), create a new project with the same name as the native extension, of type Framework & Library/BSD C Library, type dynamic.
 2. Add the source files of your extension to the source section of the project.
@@ -512,7 +514,7 @@ Remove the -m32 to build a 64-bit library that runs with the 64-bit Dart standal
 
 The resulting lib[extension_name].dylib will be in the <b>build/</b> subdirectory of your project location, so copy it to the desired location (probably the location of the Dart library part of the extension).
 
-###Building on Windows
+### Building on Windows
 
 The Windows DLL compilation is complicated by the fact that we need to link with
 library file, dart.lib, that does not contain code itself, but specifies that

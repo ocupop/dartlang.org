@@ -1,10 +1,10 @@
 ---
 reference: /articles/serialization/
-
 layout: article
 type: libraries
 title: "Serialization in Dart"
 description: "Choose the serialization strategy that's right for your project."
+permalink: /articles/serialization
 
 rel:
   author: nicolas-garnier

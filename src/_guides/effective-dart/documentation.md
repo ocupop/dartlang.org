@@ -4,6 +4,7 @@ reference: "https://www.dartlang.org/effective-dart/documentation/"
 layout: guide
 title: "Effective Dart: Documentation"
 description: "Clear, helpful comments and documentation."
+permalink: /guides/effective-dart/documentation
 
 nextpage:
   url: /guides/effective-dart/usage

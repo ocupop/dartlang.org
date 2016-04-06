@@ -1,9 +1,9 @@
 ---
 reference: "https://www.dartlang.org/docs/tutorials/cmdline/"
-
 layout: tutorial
 title: "Write Command-Line Apps"
 description: "Basics for command-line apps"
+permalink: /dart-vm/tutorials/cmdline
 toc: true
 
 nextpage:
@@ -26,29 +26,9 @@ tutorial:
   id: dart-io
 
 ---
-{% comment %}
-  === Figure out if this needs to be refactored? Or if this is a single occurrence of this type of example content ====
-  {% capture sample_links %}
+# {{page.title}}
 
-  This tutorial features the following example
-  under the **cmdline/bin** directory:
-
-  * dcat.dart
-
-  <p>
-  Don't have the source code?
-  <a href="https://github.com/dart-lang/dart-tutorials-samples/archive/master.zip">
-    Download it.
-  </a>
-
-  {% endcapture %}
-{% endcomment %}
-
-
-<div class="tute-target-title">
-<h1>{{page.title}}</h1>
-<h3>An introduction to standalone apps</h3>
-</div>
+### An introduction to standalone apps
 
 This tutorial teaches you how to build command-line apps
 and shows you a few small command-line applications.
@@ -56,23 +36,15 @@ These programs use resources that most command-line applications need,
 including the standard output, error, and input streams,
 command-line arguments, files and directories, and more.
 
-* [Running an app with the standalone Dart VM](#run-the-first-app)
-* [Review briefly the dcat example code](#dcat-code)
-* [Parsing command-line arguments](#cmd-line-args)
-* [Reading and writing with stdin, stdout, and stderr](#std-in-out-err)
-* [Getting info about a file](#filesystementity)
-* [Reading a file](#reading-a-file)
-* [Writing a file](#writing-a-file)
-* [Getting environment information](#env-var)
-* [Setting exit codes](#exit-codes)
-* [Summary](#summary)
-* [Other resources](#other-resources)
-* [What next?](#what-next)
+This tutorial uses the `dcat` example.
+You can get it by
+[downloading the tutorial examples](https://github.com/dart-lang/dart-tutorials-samples/archive/master.zip)
+from GitHub.
 
 ## Running an app with the standalone Dart VM {#run-the-first-app}
 
 To run a command-line app, you need the Dart VM (`dart`),
-which comes in the [Dart SDK download](/downloads/).
+which comes in the [Dart SDK download](/dart-vm/downloads/).
 
 The location of the SDK installation directory
 (we'll call it _&lt;sdk-install-dir&gt;_) depends on your platform
@@ -614,7 +586,7 @@ In addition, this tutorial covers two classes that help with command-line argume
 
 ## Other resources {#other-resources}
 
-Check out the [Dart for Server](https://dart-lang.github.io/server/)
+Check out the [Servers with Dart](https://dart-lang.github.io/server/)
 to find more resources related to writing command-line apps.
 
 Refer to the API docs for <a href="https://api.dartlang.org/dart_io.html" target="_blank">dart:io</a>,
@@ -628,4 +600,4 @@ package for more classes, functions, and properties.
 
 * If you are interested in server-side programming,
 check out the next tutorial,
-[Write HTTP Clients & Servers](/docs/tutorials/httpserver/).
+[Write HTTP Clients & Servers](/dart-vm/tutorials/httpserver).

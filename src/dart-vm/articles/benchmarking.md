@@ -5,6 +5,7 @@ layout: article
 title: "Benchmarking the Dart VM"
 description: "Learn how to benchmark your applications"
 toc: true
+permalink: /dart-vm/articles/benchmarking
 
 rel:
     author: john-mccutchan

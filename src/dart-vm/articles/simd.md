@@ -4,6 +4,7 @@ reference: "https://www.dartlang.org/articles/simd/"
 layout: article
 title: "Using SIMD in Dart"
 description: "Get more out of your CPU: operate on four numbers in parallel, using the Float32x4 class from the dart:typed_data library."
+permalink: /dart-vm/articles/simd
 toc: true
 
 rel:

@@ -1,9 +1,9 @@
 ---
 reference: "https://www.dartlang.org/articles/io/"
-
 layout: article
 title: "An Introduction to the dart:io Library"
 description: "An introduction to the Dart I/O library, which is aimed at server-side code that runs on the standalone Dart VM."
+permalink: /dart-vm/articles/io
 toc: true
 
 rel:
@@ -198,7 +198,7 @@ Similarly, [IOSink](http://api.dartlang.org/dart_io/IOSink.html)s
 are used to stream data to
 stdout, files, sockets, HTTP connections, and so on.
 
-##Interacting with processes
+## Interacting with processes
 
 For the simple case, use
 [Process.run()](http://api.dartlang.org/dart_io/Process.html#run)
@@ -278,7 +278,7 @@ main() async {
 {% endprettify %}<!--- END(io_process_stdio) -->
 
 
-##Writing web servers
+## Writing web servers
 
 dart:io makes it easy to write HTTP servers and clients.
 To write a simple web server,

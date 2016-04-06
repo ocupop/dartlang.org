@@ -4,6 +4,7 @@ reference: "https://www.dartlang.org/effective-dart/style/"
 layout: guide
 title: "Effective Dart: Style"
 description: "Formatting and naming rules for consistent, readable code."
+permalink: /guides/effective-dart/style
 
 nextpage:
   url: /guides/effective-dart/documentation

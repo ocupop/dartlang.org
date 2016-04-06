@@ -1,9 +1,9 @@
 ---
 reference: "https://www.dartlang.org/tools/"
-
 layout: page
 title: "Dart Tools"
 description: "The tools that support the Dart language."
+permalink: /tools/
 
 has-permalinks: false
 ---

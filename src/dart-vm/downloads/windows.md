@@ -4,13 +4,13 @@ reference: "https://www.dartlang.org/downloads/windows.html"
 layout: page
 title: "Installing Dart on Windows"
 description: "Installing and updating the Dart SDK on Windows with Chocolatey or an installer."
+permalink: /dart-vm/downloads/windows
+
 
 js:
 - url: /js/download-info.js
   defer: true
 ---
-
-{% include breadcrumbs.html %}
 
 # {{ page.title }}
 
@@ -27,8 +27,8 @@ installing Dart is easy.
 
 The **dart** package contains the [Dart SDK](/tools/sdk/),
 which includes the Dart VM, libraries, and command-line Dart tools such as
-[dart](/tools/dart-vm/), [dart2js](/tools/dart2js/),
-[dartanalyzer](/docs/dart-up-and-running/contents/ch04-tools-dart_analyzer.html),
+[dart](/tools/dart-vm/),
+[dartanalyzer](https://github.com/dart-lang/sdk/tree/master/pkg/analyzer_cli),
 [pub](/tools/pub/),
 and [dartdoc](https://github.com/dart-lang/dartdoc#dartdoc).
 Optionally, you can add one more tool:

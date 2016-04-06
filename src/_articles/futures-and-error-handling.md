@@ -4,8 +4,8 @@ reference: /articles/futures-and-error-handling/
 layout: article
 type: libraries
 title: "Futures and Error Handling"
-description: "Everything you wanted to know about handling errors and
-exceptions when working with Futures (but were afraid to ask)."
+description: "Everything you wanted to know about handling errors and exceptions when working with Futures (but were afraid to ask)."
+permalink: /articles/futures-and-error-handling
 
 rel:
     author: shailen-tuli
