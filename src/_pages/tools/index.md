@@ -43,7 +43,7 @@ and available as open source.
 <img src="images/emacs.png" alt="Emacs logo">
 <a href="https://github.com/nex3/dart-mode"><b>Emacs</b></a>
 
-<img src="images/vim.png alt="Vim logo">
+<img src="images/vim.png" alt="Vim logo">
 <a href="https://github.com/dart-lang/dart-vim-plugin"><b>Vim</b></a>
 
 <img src="images/atom-logo.png" alt="Atom logo">
@@ -63,7 +63,7 @@ technology for information on what tools are included and how to use them.
 
 ## Command-line tools
 
-One tool that you'll likely use for Dart development is the `pub` tool.
+One tool that you'll use for Dart development is the `pub` tool.
 Pub, Dart's package manager, provides a number of commands for
 creating, installing, updating, and publishing Dart packages.
 

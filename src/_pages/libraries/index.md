@@ -14,10 +14,6 @@ asynchronous programming with classes like Future and Stream.
 
 To learn more about the core libraries, see
 [A Tour of the Dart Libraries](library-tour).
-
-For more information on installing packages, see
-[Install Shared Packages](/tutorials/shared-pkgs).
-
 If you are developing for the desktop or with the standalone Dart VM,
 you might want to bookmark the API reference docs on
 [api.dartlang.org](https://api.dartlang.org).
@@ -26,6 +22,8 @@ If you are developing for Flutter, bookmark the
 
 Dart libraries are distributed as _library packages_,
 created with the `pub` tool.
+For information on installing packages, see
+[Install Shared Packages](/tutorials/shared-pkgs).
 Learn how to create your own library package with
 [Creating Library Packages](create-library-packages).
 
