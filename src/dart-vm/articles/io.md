@@ -5,23 +5,14 @@ title: "An Introduction to the dart:io Library"
 description: "An introduction to the Dart I/O library, which is aimed at server-side code that runs on the standalone Dart VM."
 permalink: /dart-vm/articles/io
 toc: true
-
-rel:
-  author: mads-ager
-has-permalinks: true
-article:
-  written_on: 2012-03-01
-  updated_on: 2013-02-28
-  collection: libraries-and-apis
 ---
 
 {% include breadcrumbs.html %}
 
 # {{ page.title }}
 
-_Written by Mads Ager <br />
-March 2012 (updated October 2012, February 2013, January 2014,
-and March 2015)_
+_Written by Mads Ager <br>
+March 2012 (updated October 2012, February 2013, January 2014, and March 2015)_
 
 The [dart:io](http://api.dartlang.org/io.html) library
 is aimed at server-side code

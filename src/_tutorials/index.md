@@ -1,5 +1,6 @@
 ---
 reference: "https://www.dartlang.org/docs/tutorials/"
+
 layout: page
 title: "Dart Tutorials"
 description: "The Dart Tutorials&mdash;Your guide to building great apps."
@@ -10,8 +11,6 @@ nextpage:
   url:
   title:
 
-tutorial:
-  id: tut-home
 header:
   css: ["/docs/tutorials/tute_main_page.css"]
 ---
@@ -29,7 +28,7 @@ using the Dart language, tools, and APIs.
 </ul>
 
 
-<h4 class="no-permalink"><a href="shared-pkgs/"><img src="images/target.png" height="20" width="20">&nbsp;Install Shared Packages</a></h4>
+<h4 class="no-permalink"><a href="shared-pkgs"><img src="images/target.png" height="20" width="20">&nbsp;Install Shared Packages</a></h4>
 <p>Dart developers have been busy creating code libraries that can help you
 be more productive.
 Leverage that code or put your code out in the world to share with others.
@@ -45,10 +44,10 @@ such as input/output, asynchronously, so as to avoid blocking your
 program.
 Futures and Streams are fundamental to most Dart programs.
 
-<h4 class="no-permalink"><a href="futures/"><img src="images/target.png" height="20" width="20">&nbsp;Asynchronous Programming: Futures</a></h4>
+<h4 class="no-permalink"><a href="futures"><img src="images/target.png" height="20" width="20">&nbsp;Asynchronous Programming: Futures</a></h4>
 <p>A first look at using Futures for asynchronous tasks.</p>
 <img src="images/futures-code.png">
 
-<h4 class="no-permalink"><a href="streams/"><img src="images/target.png" height="20" width="20">&nbsp;Asynchronous Programming: Streams</a></h4>
+<h4 class="no-permalink"><a href="streams"><img src="images/target.png" height="20" width="20">&nbsp;Asynchronous Programming: Streams</a></h4>
 <p>Use streams to manage sequences of data.</p>
 <img src="images/streams-code.png">

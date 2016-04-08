@@ -5,6 +5,15 @@ url: https://stage.dartlang.org
 baseurl: "" # the subpath of your site, e.g. /blog/
 # permalink: /:path/:basename
 
+# Global variables
+# use case:
+#   {{site.dart4web}}/downloads
+
+dart4web: "https://webdev.dartlang.org"
+dart-vm:  "/dart-vm"
+flutter:  "https://flutter.io/"
+dartino:  "https://github.com/dartino"
+
 collections:
   articles:
     output: true

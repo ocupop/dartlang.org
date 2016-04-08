@@ -1,10 +1,8 @@
 ---
 reference: "https://www.dartlang.org/docs/tutorials/get-started"
-
 layout: tutorial
 title: "Get Started"
 description: "Get Dart and run a Dart application"
-permalink: /dart-vm/tutorials/get-started
 toc: true
 
 nextpage:
@@ -48,8 +46,8 @@ At the very least, you need the Dart SDK, which contains all of
 the tools and libraries that you need for basic Dart development.
 You may also want an IDE or code editor; this tutorial uses WebStorm.
 
-* [Get the Dart SDK](/downloads/)
-* Recommended: [Get WebStorm](/tools/webstorm/)
+* [Get the Dart SDK](/dart-vm/downloads/)
+* Recommended: [Get WebStorm](dart4web.org/tools/webstorm/)
 
 ## What did you get? {#what-did-you-get}
 
@@ -125,8 +123,10 @@ laid out in a particular way. The following diagram shows some of the
 conventions used by pub. Not all of these directories are required.
 
 <img class="scale-img-max" src="images/pub-directory-structure.png"
-alt="Pub's directory structure including bin, lib, and build directories,
-and the pubspec file">
+alt="Pub's directory structure including bin, lib, build directories, and pubspec">
+
+![ArgsParser parses command-line arguments](images/commandlineargs.png)
+
 
 `bin`
 : The main files for a command-line application. One of the

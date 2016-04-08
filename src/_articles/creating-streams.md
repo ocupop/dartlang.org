@@ -4,15 +4,6 @@ reference: /articles/creating-streams/
 layout: article
 type: libraries
 title: "Creating Streams in Dart"
-permalink: /articles/creating-streams
-
-rel:
-  author: lasse-nielsen
-description: "A stream is a sequence of results; learn how to create your own."
-has-permalinks: true
-article:
-  written_on: 2013-04-08
-  collection: libraries-and-apis
 ---
 
 <style>
@@ -23,9 +14,8 @@ article:
 
 # {{ page.title }}
 
-<em>Written by Lasse Nielsen <br />
-<time pubdate date="2013-04-08">April 2013</time>
-</em>
+_Written by Lasse Nielsen <br>
+April 2013_
 
 The dart:async library contains two types
 that are important for many Dart APIs:
@@ -56,7 +46,7 @@ For details on how stream transformers have changed, see the
 </aside>
 
 For help on using streams, see
-[Asynchronous Programming: Streams](/docs/tutorials/streams/).
+[Asynchronous Programming: Streams](/tutorials/streams).
 
 ## Transforming an existing stream
 

@@ -28,7 +28,7 @@ server applications using the Dart language, tools, and APIs.
 <li> You are familiar with object-oriented programming.</li>
 </ul>
 
-<h4 class="no-permalink"><a href="get-started/"><img src="images/target.png" height="20" width="20">&nbsp;Get Started</a></h4>
+<h4 class="no-permalink"><a href="get-started"><img src="images/target.png" height="20" width="20">&nbsp;Get Started</a></h4>
 <p>Get Dart. Run two apps.
 </p>
 <img style="border:1px solid black" src="images/simple.png" width="300">

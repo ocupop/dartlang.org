@@ -2,10 +2,9 @@
 layout: page
 title: "Guides"
 description: "Read about the Dart language and tools with this collection of articles, style guides, and more."
-permalink: /guides/
 toc: false
-
 ---
+
 <h1>Placeholder: Guides</h1>
 
 <ul>

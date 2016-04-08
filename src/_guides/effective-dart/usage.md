@@ -4,7 +4,6 @@ reference: "https://www.dartlang.org/effective-dart/usage/"
 layout: guide
 title: "Effective Dart: Usage"
 description: "Guidelines for using language features to write maintainable code."
-permalink: /guides/effective-dart/usage
 
 nextpage:
   url: /guides/effective-dart/documentation
@@ -12,7 +11,6 @@ nextpage:
 prevpage:
   url: /guides/effective-dart/design
   title: "Design"
-
 ---
 
 # {{ page.title }}

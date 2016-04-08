@@ -1,27 +1,17 @@
 ---
 reference: "https://www.dartlang.org/articles/event-loop/"
-
 layout: article
 title: "The Event Loop and Dart"
 description: "Learn how Dart handles the event queue and microtask queue, so you can write better asynchronous code with fewer surprises."
 permalink: /dart-vm/articles/event-loop
 toc: true
-
-rel:
-    author: kathy-walrath
-has-permalinks: true
-article:
-  written_on: 2013-09-30
-  updated_on: 2013-10-22
-  collection: performance
 ---
 
 {% include breadcrumbs.html %}
 
 # {{ page.title }}
 
-_Written by Kathy Walrath
-<br>
+_Written by Kathy Walrath <br>
 September 2013 (updated October 2013)_
 
 Asynchronous code is everywhere in Dart.

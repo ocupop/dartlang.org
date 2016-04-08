@@ -5,29 +5,19 @@ layout: article
 type: libraries
 title: "Futures and Error Handling"
 description: "Everything you wanted to know about handling errors and exceptions when working with Futures (but were afraid to ask)."
-permalink: /articles/futures-and-error-handling
-
-rel:
-    author: shailen-tuli
-has-permalinks: true
-article:
-  written_on: 2013-03-07
-  updated_on: 2013-05-30
-  collection: libraries-and-apis
 ---
 
 {% include breadcrumbs.html %}
 
 # {{ page.title }}
 
-_Written by Shailen Tuli
-<br>
+_Written by Shailen Tuli <br>
 March 2013 (updated May 2013)_
 
 This article covers the subject of error handling when dealing with Futures.
 If you are unfamiliar with the general concepts behind Futures, we
 recommend you first read
-[Using Future Based APIs](/articles/using-future-based-apis/).
+[Asynchronous Programming: Futures](/tutorials/futures).
 
 ## Introduction
 
@@ -395,7 +385,7 @@ also prevents errors from *accidentally* leaking out of your function.
 
 Read the following documentation for more details on using Futures:
 
-* [The Event Loop and Dart](/articles/event-loop/),
+* [The Event Loop and Dart]({{site.dart-vm}}/articles/event-loop/),
   an article that describes how to schedule tasks using Futures
 * [Future API reference](http://api.dartlang.org/dart_async/Future.html)
 

@@ -5,14 +5,6 @@ layout: article
 type: language
 title: "Dart Language Asynchrony Support: Phase 1"
 description: "Async and await, two language features that support asynchronous programming, are now available in Dart."
-permalink: /articles/await-async
-
-rel:
-    author: gilad-bracha
-has-permalinks: true
-article:
-  written_on: 2014-10-24
-  collection: language-details
 ---
 
 {% include breadcrumbs.html %}
@@ -124,7 +116,7 @@ the completion of the Future.
 **Note:**
 After suspension, execution resumes in a later cycle of the event loop.
 For a description of the Dart event loop, see
-[The Event Loop and Dart](https://www.dartlang.org/articles/event-loop/).
+[The Event Loop and Dart]({{site.dart-vm}}/articles/event-loop).
 </aside>
 
 If the Future completed with an error rather than with a value,

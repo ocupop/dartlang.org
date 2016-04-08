@@ -21,11 +21,10 @@ points:
   - "Streams provide a series of asynchronous data events."
   - "To handle asynchronous data, you need to use Futures."
 
-has-permalinks: true
 tutorial:
   id: dart-io
-
 ---
+
 # {{page.title}}
 
 ### An introduction to standalone apps

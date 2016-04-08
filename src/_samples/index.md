@@ -13,4 +13,4 @@ permalink: /samples
 {{ sample.title }}
 {% endfor %}
 
-xxx: What are we doing with samples?
+xxx: We need a samples strategy.

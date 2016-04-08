@@ -1,8 +1,8 @@
 ---
 reference: "https://www.dartlang.org/docs/tutorials/futures"
+
 title: "Asynchronous Programming: Futures"
 description: "A first look at Futures and how to use them to make your asynchronous code better."
-permalink: /tutorials/futures
 
 nextpage:
   url: /tutorials/streams
@@ -20,10 +20,6 @@ points:
   - "Use try-catch expressions in async functions to catch errors."
   - "Or use Future's `catchError()` method."
   - "You can chain Futures to run asynchronous functions in order."
-
-has-permalinks: true
-tutorial:
-  id: futures
 ---
 
 

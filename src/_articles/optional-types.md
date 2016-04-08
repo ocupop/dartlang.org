@@ -5,22 +5,14 @@ layout: article
 type: language
 title: "Optional Types in Dart"
 description: "One of the Dart programming language's most innovative features is the use of optional types. This document seeks to explain how optional types work."
-permalink: /articles/optional-types
-
-rel:
-  author: gilad-bracha
-article:
-  written_on: 2011-10-01
-  updated_on: 2012-09-01
-  collection: language-details
 ---
 
 {% include breadcrumbs.html %}
 
 # {{ page.title }}
 
-<em>Written by Gilad Bracha<br />
-October 2011 (updated September 2012)</em>
+_Written by Gilad Bracha<br>
+October 2011 (updated September 2012)_
 
 
 One of the Dart programming language's most innovative features

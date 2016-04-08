@@ -2,10 +2,9 @@
 reference: "https://www.dartlang.org/tools/pub/create-library-packages.html"
 
 layout: page
-title: "Creating Library Packages"
 permalink: /libraries/create-library-packages
+title: "Creating Library Packages"
 toc: true
-
 ---
 
 {% include breadcrumbs.html %}
@@ -236,12 +235,12 @@ dartdocs.org. For example:
 
 Use the following resources to learn more about library packages:
 
-* [Libraries and visibility](/docs/dart-up-and-running/ch02.html#libraries-and-visibility)
-  in the [language tour](/docs/dart-up-and-running/ch02.html) covers
+* [Libraries and visibility](/language/language-tour#libraries-and-visibility)
+  in the [language tour](/language/language-tour.html) covers
   using library files.
 * The [pub](/tools/pub) documentation is useful, particularly
   [Pub Package Layout Conventions](/tools/pub/package-layout.html).
-* [What Not to Commit]()
+* [What Not to Commit](resources/private-files)
   covers what should not be checked into a source code repository.
 * The newer library packages under the
   [dart-lang](https://github.com/dart-lang) organization tend

@@ -6,9 +6,6 @@ title: "A Tour of the Dart Language"
 permalink: /language/language-tour
 description: "Read Chapter 2, A Tour of the Dart Language of Dart (from Dart: Up and Running, published by O'Reilly)."
 toc: true
-
-subsite: "Dart Up and Running"
-
 ---
 
 # {{ page.title }}
@@ -20,13 +17,11 @@ that you already know how to program in another language.
 <div class="alert alert-info" markdown="1">
 **Note:**
 You can play with most of these features using
-[DartPad]({{site.custom.dartpad.direct-link}}),
-as described in
-[Up and running](ch01.html#up-and-running).
+[DartPad](/tools/dartpad).
 </div>
 
-Consult the [Dart Language
-Specification](/docs/spec/) whenever you want
+Consult the
+[Dart Language Specification](spec) whenever you want
 more details about a language feature.
 
 
@@ -91,9 +86,9 @@ apps:
 
 <div class="alert alert-info" markdown="1">
 **Note:**
-Our code follows the conventions in the [Dart Style
-Guide.](/articles/style-guide/) For example, we
-use two-space indentation.
+Our code follows the conventions in the
+[Dart Style Guide.](/guides/effective-dart/style).
+For example, we use two-space indentation.
 </div>
 
 
@@ -251,8 +246,8 @@ completion and early warnings for bugs and code completion.
 
 <div class="alert alert-info" markdown="1">
 **Note:**
-This chapter follows the [style guide
-recommendation](/articles/style-guide/#type-annotations)
+This chapter follows the
+[style guide recommendation](/guides/effective-dart/style#type-annotations)
 of using `var`, rather than type annotations, for local variables.
 </div>
 
@@ -862,7 +857,7 @@ bool isNoble(int atomicNumber) {
 {% endprettify %}
 
 Although Effective Dart recommends
-[type annotations for public APIs](/effective-dart/design/#do-type-annotate-public-apis),
+[type annotations for public APIs](/guides/effective-dart/design#do-type-annotate-public-apis),
 the function still works if you omit the types:
 
 <!-- ch02/function_omitting_types.dart -->
@@ -2426,7 +2421,7 @@ class Employee extends Person {
 **Note:**
 When using `super()` in a constructor's initialization list, put it last.
 For more information, see the
-[Dart usage guide](/effective-dart/usage/#do-place-the-super-call-last-in-a-constructor-initialization-list).
+[Dart usage guide](/guides/effective-dart/usage#do-place-the-super-call-last-in-a-constructor-initialization-list).
 </div>
 
 <div class="alert alert-warning" markdown="1">

@@ -6,20 +6,13 @@ title: "Native Extensions for the Standalone Dart VM"
 description: "Learn how to enable command-line Dart apps to call C/C++ functions."
 permalink: /dart-vm/articles/native-extensions
 toc: true
-
-rel:
-  author: william-hesse
-has-permalinks: true
-article:
-  written_on: 2012-05-01
-  collection: libraries-and-apis
 ---
 
 {% include breadcrumbs.html %}
 
 # {{ page.title }}
 
-_Written by William Hesse <br />
+_Written by William Hesse <br>
 May 2012_
 
 Dart programs running on the standalone Dart VM (_command-line apps_) can call C

@@ -5,15 +5,6 @@ layout: article
 type: language
 title: "Emulating Functions in Dart"
 description: Learn how to define Dart classes that behave like functions.
-permalink: /articles/emulating-functions
-
-rel:
-  author: gilad-bracha
-has-permalinks: true
-article:
-  written_on: 2012-01-01
-  updated_on: 2014-02-20
-  collection: language-details
 ---
 
 {% include breadcrumbs.html %}
@@ -21,8 +12,7 @@ article:
 # {{ page.title }}
 
 <em>Written by Gilad Bracha <br>
-January 2012
-(updated February 2014)</em>
+January 2012 (updated February 2014)</em>
 
 This document describes how to define Dart classes
 that behave like functions.

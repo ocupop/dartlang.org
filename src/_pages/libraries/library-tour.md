@@ -2,13 +2,10 @@
 reference: "https://www.dartlang.org/docs/dart-up-and-running/ch03.html"
 
 layout: page
-title: "A Tour of the Dart Libraries"
 permalink: /libraries/library-tour
+title: "A Tour of the Dart Libraries"
 description: "Learn about the major features in Dart's libraries"
 toc: true
-
-subsite: "Dart Up and Running"
-
 ---
 
 # {{ page.title }}

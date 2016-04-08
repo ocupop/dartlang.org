@@ -5,14 +5,6 @@ layout: article
 type: libraries
 title: "Single-Subscription vs. Broadcast Streams"
 description: "Choose the kind of stream that's best for your application: single-subscription or broadcast."
-permalink: /articles/broadcast-streams
-
-rel:
-  author: florian-loitsch
-has-permalinks: true
-article:
-  written_on: 2014-01-08
-  collection: libraries-and-apis
 ---
 
 {% include breadcrumbs.html %}

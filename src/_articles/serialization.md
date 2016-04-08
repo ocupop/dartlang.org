@@ -1,26 +1,18 @@
 ---
 reference: /articles/serialization/
+
 layout: article
 type: libraries
 title: "Serialization in Dart"
 description: "Choose the serialization strategy that's right for your project."
-permalink: /articles/serialization
-
-rel:
-  author: nicolas-garnier
-has-permalinks: true
-article:
-  written_on: 2015-02-09
-  collection: libraries-and-apis
 ---
 
 {% include breadcrumbs.html %}
 
 # {{ page.title }}
 
-<em>Written by Nicolas Garnier<br />
-<time pubdate date="2015-02-09">February 2015</time>
-</em>
+_Written by Nicolas Garnier<br>
+February 2015_
 
 Being able to serialize and deserialize objects is a common task in web apps.
 Here are a few typical cases of using serialization:

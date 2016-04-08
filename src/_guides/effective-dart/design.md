@@ -4,7 +4,6 @@ reference: "https://www.dartlang.org/effective-dart/design/"
 layout: guide
 title: "Effective Dart: Design"
 description: "Design consistent, usable libraries."
-permalink: /guides/effective-dart/design
 
 nextpage:
   url:
@@ -12,7 +11,6 @@ nextpage:
 prevpage:
   url: /guides/effective-dart/usage
   title: "Usage"
-
 ---
 
 # {{ page.title }}

@@ -5,15 +5,6 @@ layout: article
 type: libraries
 title: "Converters and Codecs"
 description: "Learn how to write efficient conversions."
-permalink: /articles/converters-and-codecs
-
-rel:
-  author: florian-loitsch
-has-permalinks: true
-article:
-  written_on: 2014-02-06
-  updated_on: 2015-03-17
-  collection: libraries-and-apis
 header:
   css: ["/articles/converters-and-codecs/styles.css"]
 ---
@@ -21,7 +12,8 @@ header:
 {% include breadcrumbs.html %}
 
 # {{ page.title }}
-<p class="subtitle">**_How to write efficient conversions_**</p>
+
+### **_How to write efficient conversions_**
 
 <em>Written by Florian Loitsch <br />
 <time pubdate date="2014-02-06">February 2014</time>

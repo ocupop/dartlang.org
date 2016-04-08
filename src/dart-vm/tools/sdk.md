@@ -5,8 +5,6 @@ title: "Dart SDK"
 description: "Dart libraries and command-line tools."
 permalink: /dart-vm/tools/sdk
 toc: true
-
-has-permalinks: false
 ---
 
 {% include breadcrumbs.html %}

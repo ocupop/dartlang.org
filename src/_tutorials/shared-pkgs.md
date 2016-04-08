@@ -14,17 +14,12 @@ points:
   - "Use Stagehand to generate starting files for your app."
   - "Use `pub get` to download packages."
   - "pub.dartlang.org is the primary public repository for Dart packages."
-
-tutorial:
-  id: packages
-
 ---
 
 
-<div class="tute-target-title">
-<h1>{{page.title}}</h1>
-<h3>Borrow and share code.</h3>
-</div>
+# {{page.title}}
+
+### Borrow and share code.
 
 Now that you're able to create and run a Dart application
 and have a basic understanding of DOM programming,

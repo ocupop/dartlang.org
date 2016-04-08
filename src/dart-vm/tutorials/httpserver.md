@@ -18,9 +18,6 @@ points:
   - "Clients send requests using an HTTP method request."
   - "The http_server package provides higher-level building blocks."
 
-has-permalinks: true
-tutorial:
-  id: httpserver
 header:
   css: ["httpserver.css"]
 ---

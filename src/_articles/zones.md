@@ -1,17 +1,10 @@
 ---
 reference: /articles/zones/
+
 layout: article
 type: libraries
 title: "Zones"
 description: "Manage your asynchronous code: handle uncaught errors, override behavior (such as printing and scheduling tasks), and more."
-permalink: /articles/zones
-
-rel:
-  author: florian-loitsch
-has-permalinks: true
-article:
-  written_on: 2014-03-03
-  collection: libraries-and-apis
 header:
   css: ["styles.css"]
 ---
@@ -19,16 +12,17 @@ header:
 {% include breadcrumbs.html %}
 
 # {{ page.title }}
-<p class="subtitle">Asynchronous dynamic extents</p>
 
-_Written by Florian Loitsch and Kathy Walrath<br />
+### Asynchronous dynamic extents
+
+_Written by Florian Loitsch and Kathy Walrath<br>
 March 2014_
 
 This article discusses zone-related APIs in the dart:async library,
 with a focus on the top-level `runZoned()` function.
 Before reading this article,
 you should be familiar with the techniques covered in
-[Futures and Error Handling](/articles/futures-and-error-handling/).
+[Futures and Error Handling](futures-and-error-handling).
 
 Currently, the most common use of zones is
 to handle errors raised in asynchronously executed code.
@@ -200,7 +194,10 @@ A simple rule determines where
 errors are handled in a sequence of future transformations
 (using `then()` or `catchError()`):
 
-> Errors on Future chains never cross the boundaries of error zones.
+<aside class="alert alert-info" markdown="1">
+**Note:**
+Errors on Future chains never cross the boundaries of error zones.
+</aside>
 
 If an error reaches an error zone boundary,
 it is treated as unhandled error at that point.
@@ -290,8 +287,11 @@ with a value, nor with an error.
 The rule for zones and streams
 is simpler than for futures:
 
-> Transformations and other callbacks execute in the zone
-> where the stream is listened to.
+<aside class="alert alert-info" markdown="1">
+**Note:**
+Transformations and other callbacks execute in the zone
+where the stream is listened to.
+</aside>
 
 This rule follows from the guideline that
 streams should have no side effect until listened to.

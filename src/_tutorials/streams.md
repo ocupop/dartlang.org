@@ -1,5 +1,6 @@
 ---
 reference: "https://www.dartlang.org/docs/tutorials/streams/"
+
 title: "Asynchronous Programming: Streams"
 description: "Learn how to consume single-subscriber and broadcast streams."
 permalink: /tutorials/streams
@@ -14,9 +15,6 @@ points:
   - "You can process a stream using either **await for** or listen() from the Stream API."
   - "Streams provide a way to respond to errors."
   - "There are two kinds of streams: single subscription or broadcast."
-
-tutorial:
-  id: streams
 ---
 
 # {{page.title}}
