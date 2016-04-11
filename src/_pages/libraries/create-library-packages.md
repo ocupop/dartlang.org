@@ -15,16 +15,16 @@ Libraries are a great way to create modular code that can
 be easily shared. In the Dart ecosystem,
 libraries are created and distributed as packages.
 Dart has two kinds of packages:
-[_application_ packages](/tools/pub/glossary.html#application-package),
+[_application_ packages](/tools/pub/glossary#application-package),
 which may include local libraries, and
-[_library_ packages](/tools/pub/glossary.html#library-package).
+[_library_ packages](/tools/pub/glossary#library-package).
 
 This document explains how to create a library package
 and points you to further resources.
 For information on _using_ libraries, see
-[Install Shared Packages](/docs/tutorials/shared-pkgs/) or the
+[Install Shared Packages](/tutorials/shared-pkgs) or the
 language tour's
-[Libraries and visibility](/docs/dart-up-and-running/ch02.html#libraries-and-visibility) section.
+[Libraries and visibility](/language/language-tour#libraries-and-visibility) section.
 
 ## What makes a library package
 
@@ -157,11 +157,11 @@ top of the package.
 If you create any command-line tools intended for public consumption,
 place those in the `bin` directory, which is public.
 Enable running a tool from the command line, using
-[`pub global activate`](/pub/cmd/pub-global.html#activating-a-package).
+[`pub global activate`](/pub/cmd/pub-global#activating-a-package).
 Listing the tool in the
-[`executables` section](pubspec.html#executables)
+[`executables` section](/tools/pub/pubspec#executables)
 of the pubspec allows a user to run it directly without calling
-[`pub global run`](/tools/pub/cmd/pub-global.html#running-a-script-using-pub-global-run).
+[`pub global run`](/tools/pub/cmd/pub-global#running-a-script-using-pub-global-run).
 
 It's helpful if you include an example of how to use your library.
 This goes into the `example` directory at the top of the package.
@@ -171,9 +171,9 @@ public use go into the `tool` directory.
 
 Other files that are required if you publish your library to
 pub.dartlang.com, such as a README and a CHANGELOG, are
-described in [Publishing a Package](/tools/pub/publishing.html).
+described in [Publishing a Package](/tools/pub/publishing).
 Also see
-[Pub Package Layout Conventions](/tools/pub/package-layout.html)
+[Pub Package Layout Conventions](/tools/pub/package-layout)
 for further information on how to organize a package directory
 structure.
 
@@ -208,12 +208,12 @@ When checking your library into source code control, be aware
 that there are some files you should not commit. For library
 packages, don't commit `.packages`, the `pubspec.lock` file,
 or any `packages` directories. For more information, see
-[What Not to Commit](/tools/private-files.html).
+[What Not to Commit](private-files).
 
 You can share your open source libraries with other developers on
 [pub.dartlang.org](https://pub.dartlang.org/) using
-[pub publish](/tools/pub/cmd/pub-lish.html).
-[Publishing a Package](/tools/pub/publishing.html)
+[pub publish](/tools/pub/cmd/pub-lish).
+[Publishing a Package](/tools/pub/publishing)
 describes all the files that you should include.
 
 The [dartdocs.org generator](https://github.com/astashov/dartdocs.org)
@@ -223,7 +223,7 @@ The service watches the site, generating new docs to
 Before publishing your package, run the dartdoc tool manually to
 make sure that your docs generate successfully and look as expected.
 If your docs don't appear on dartdocs.org, check
-[dartdocs.org/failed](https://www.dartdocs.org/failed/index.html)
+[dartdocs.org/failed](https://www.dartdocs.org/failed/index)
 to learn what went wrong.
 
 To minimize the possibility of broken links as version numbers change,
@@ -236,11 +236,11 @@ dartdocs.org. For example:
 Use the following resources to learn more about library packages:
 
 * [Libraries and visibility](/language/language-tour#libraries-and-visibility)
-  in the [language tour](/language/language-tour.html) covers
+  in the [language tour](/language/language-tour) covers
   using library files.
 * The [pub](/tools/pub) documentation is useful, particularly
-  [Pub Package Layout Conventions](/tools/pub/package-layout.html).
-* [What Not to Commit](resources/private-files)
+  [Pub Package Layout Conventions](/tools/pub/package-layout).
+* [What Not to Commit](private-files)
   covers what should not be checked into a source code repository.
 * The newer library packages under the
   [dart-lang](https://github.com/dart-lang) organization tend

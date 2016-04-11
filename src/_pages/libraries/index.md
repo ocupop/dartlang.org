@@ -31,6 +31,9 @@ The Dart community has also contributed many libraries to be shared
 with other developers and published on
 [pub.dartlang.org](https://pub.dartlang.org/)
 
+Dart applications are also distributed as packages.
+See [What Not to Commit](private-files).
+
 You might also check out the [articles](/articles) listed under
 "Libraries and APIs".
 

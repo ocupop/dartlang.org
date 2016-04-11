@@ -28,7 +28,7 @@ I am having trouble running the Linux distribution of Dart on my Linux platform.
 
 Can all Dart files be put into a source code repository?
 : Dart tools generate some files that should be local only.
-  The [What Not to Commit](private-files.html) page
+  The [What Not to Commit](/libraries/private-files) page
   has some advice on what not to put into your source repo.
 
 

@@ -84,6 +84,24 @@ In addition to these commands, there are two pub commands specific
 to web development. See [dart4web]({{dart4web}}/tools) for more
 information.
 
+## Writing transformers
+
+When `pub` serves or builds an app, it can run one or more
+transformers&mdash;for example, one transformer converts Dart
+files into a single JavaScript file.
+
+Transformers operate on assets, where an asset is
+a resource, such as a Dart file, a CSS file, or an
+image, that is intended to be part of a deployed package.
+
+The following pages cover how to write a custom transformer:
+
+* [Writing a Pub Transformer](transformers/)
+* [Writing an Aggregate Transformer](transformers/aggregate.html)
+* [Writing a Lazy Transformer](transformers/lazy-transformer.html)
+* [Examples of Transformer Code](transformers/examples/)
+* [Barback - Can We Build It? Yes, We Can!](https://docs.google.com/a/google.com/document/d/1juHkCRg-1YH6LvwhGPHgF2ihX-UQtR1fv-8aknO7t_4/edit?pli=1#)
+
 ## Troubleshooting {#troubleshooting}
 
 [Troubleshooting Pub](troubleshoot) gives solutions to problems that

@@ -63,8 +63,47 @@ technology for information on what tools are included and how to use them.
 
 ## Command-line tools
 
-One tool that you'll use for Dart development is the `pub` tool.
-Pub, Dart's package manager, provides a number of commands for
-creating, installing, updating, and publishing Dart packages.
+This is a brief introduction to the most common Dart tools you might see.
+Some of these tools might have slightly different names depending on
+the Dart technology you are using, or they might not use the full
+functionality described in these docs.
+Consult the tools page for your technology for further details.
 
-See the [pub](pub) documentation for more information.
+* `pub`
+: Every Dart app is also a package and the `pub` tool manages
+  Dart packages. Pub provides a number of commands for creating,
+  installing, updating, and publishing Dart packages.
+  Most IDEs that support Dart allow you to run the pub commands through
+  the IDE. Some Dart technologies, such as Flutter, may not support
+  all of the pub commands.
+  See the [pub](pub) documentation to learn how pub works.
+
+* `dart`
+: To manually run the Dart VM, you'll want to use the
+  [dart]({{site.dart-vm}}/tools/dart-vm) command.
+  IDEs that support Dart,
+  and some of the `pub` commands, use this
+  command behind-the-scenes to execute Dart scripts.
+  Note that you must configure your IDE with the location of
+  the `dart` binary.
+
+* static analyzer
+: Dart's static analyzer evaluates and reports any errors or warnings
+  in your code.
+  The Dart plugin for your IDE should make use of Dart's analysis engine,
+  but you can also run it from the command line. See the
+  [dartanalyzer](https://github.com/dart-lang/sdk/tree/master/pkg/analyzer_cli#dartanalyzer)
+  docs for information on how to manually run the static analyzer for
+  the Dart VM.
+
+* code formatter
+: Format your code according to the
+  [Dart Style Guide](/guides/effective-dart/style).
+  An IDE that supports Dart should allow you to format the code within
+  the IDE. Or you can run the formatter from the command line.
+  See [dartfmt](https://github.com/dart-lang/dart_style#readme)
+  to learn how to manually run the code formatter for the Dart VM.
+
+Also see the Tools documentation for your Dart technology.
+[Dart VM]({{site.dart-vm}}/tools/) |
+[Flutter]({{site.flutter}}/setup/)
