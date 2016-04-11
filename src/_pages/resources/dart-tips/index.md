@@ -6,15 +6,16 @@ permalink: /resources/dart-tips/
 title: "Dart Tips: Short Video Tutorials about Dart"
 description: "Super short video intros to Dart language and library features."
 ---
-
+{% comment %}
 {% injectdata tips resources/dart-tips/episodes.yaml %}
+{% endcomment %}
 
 # Dart Tips: Short Video Tutorials
 
 Sometimes, you only have 5 minutes. Watch super short introductions to
 Dart language and library topics.
 
-{% for episode in page.tips.episodes %}
+{% for episode in site.data.tips.episodes %}
 {% capture link %}dart-tips-ep-{{episode.num}}.html{% endcapture %}
 <a href="{{ link }}">
   <img style="margin-top:25px; box-shadow: 5px 5px 10px #CCC;" src="{{episode.thumbnail}}">

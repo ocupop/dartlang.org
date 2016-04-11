@@ -13,9 +13,11 @@ Here's a collection of books about Dart.
 [Let us know](https://github.com/dart-lang/www.dartlang.org/issues)
 if you find another book that we should add.
 
+{% comment %}
 {% injectdata books resources/books/books.yaml %}
+{% endcomment %}
 
-{% for book in page.books %}
+{% for book in site.data.books %}
 <div class="book row">
   <div class="col-md-3">
     <a href="{{ book.link }}" class="btn"><img src="covers/{{ book.cover }}" class="cover"></a>

@@ -15,7 +15,9 @@ xxx: Note: Some of these samples need to be removed from here,
 particularly all web samples. But, for now, I'm leaving them.
 {% endcomment %}
 
+{% comment %}
 {% injectdata samples resources/samples/samples.yaml %}
+{% endcomment %}
 
 # {{ page.title }}
 
@@ -26,7 +28,7 @@ Check out many other [Dart code examples](/dart-by-example/).
     <div class="bs-sidebar hidden-print" data-spy="affix" data-offset-top="150"
          data-offset-bottom="350" role="complementary">
       <ol class="toc nav bs-sidenav" id="markdown-toc">
-      {% for group in page.samples.col1 %}
+      {% for group in site.data.samples.col1 %}
         <li><a href="#{{group.anchor}}">{{ group.heading }}</a></li>
       {% endfor %}
       </ol>
