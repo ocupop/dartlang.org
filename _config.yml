@@ -93,7 +93,7 @@ excerpt_separator: "~~~"
 # highlighter: null
 
 
-# include: ["_pages"]
+include: ["_pages"]
 exclude: ["diagrams", "appengine", "tests", "site"]
 
 gems:

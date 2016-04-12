@@ -2,6 +2,20 @@
 layout: default
 ---
 <article>
+  <aside id="pagenav">
+    <h4>Tutorials</h4>
+    <ul>
+      {% assign tutorials = (site.tutorials | sort: 'updated') %}
+      {% for tutorial in tutorials %}
+        <li>
+          <a href="{{ tutorial.url }}">{{ tutorial.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </aside>
+  <section>
+    {{ content }}
+  </section>
   <aside>
     {% if page.toc %}
       {% include navigation-toc.html %}
@@ -37,7 +51,4 @@ layout: default
     <hr>
     <a href="https://github.com/dart-lang/dartlang.org/issues" target="_blank">Send feedback</a>
   </aside>
-  <section>
-    {{ content }}
-  </section>
 </article>

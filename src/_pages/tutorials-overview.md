@@ -3,10 +3,9 @@ reference: "https://www.dartlang.org/docs/tutorials/"
 
 layout: page
 title: "Dart Tutorials"
-date: 2012-10-03
 
 description: "The Dart Tutorials&mdash;Your guide to building great apps."
-permalink: /tutorials/
+permalink: /tutorials-overview
 toc: false
 
 nextpage:
