@@ -2,16 +2,25 @@
 layout: default
 ---
 <article>
-  <aside>
-    {% for collection in site.collections %}
-      {{ collection.label }}<br>
-      {{ collection.directory }}<br>
-      {{ collection.relative_directory }}<br>
-      {% for doc in collection.docs %}
-        {{ doc.title }}<br>
+  <aside id="pagenav">
+    <h4>Guides</h4>
+    <ul>
+      {% for link in site.data.guides  %}
+        {% if link.children == empty %}
+          <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+        {% else %}
+          <li class="dropdown">
+            <i></i>
+            <a href="{{ link.url }}">{{ link.label }}</a>
+            <ul class="dropdown-menu">
+              {% for child in link.children %}
+                <li><a href="{{ child.url }}">{{ child.label }}</a></li>
+              {% endfor %}
+            </ul>
+          </li>
+        {% endif %}
       {% endfor %}
-      <hr>
-    {% endfor %}
+    </ul>
   </aside>
   <section>
     {{ content | inject_anchors }}

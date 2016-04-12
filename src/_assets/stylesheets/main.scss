@@ -160,12 +160,44 @@ img {
  }
 }
 #pagenav {
- padding: $content-padding;
- background: $grey-light;
- margin-bottom: 20px;
+  ul {
+    padding: 0;
+    list-style: none;
+    li {
+      position: relative;
+      padding-left: 10px;
+      &.dropdown {
+        ul.dropdown-menu {
+          // display: none;
+        }
+        i {
+          content: '-';
+          position: absolute;
+          display: inline-block;
+          line-height: inherit;
+          top: 0;
+          left: 0;
+        }
+        &.open {
+          ul {
+            display: block;
+          }
+        }
+      }
+    }
+  }
 }
 #footernav {}
 
+#toc {
+  padding: $content-padding;
+  background: $grey-light;
+  margin-bottom: 20px;
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+}
 #breadcrumbs {
  padding: 15px 0;
 }
@@ -233,11 +265,11 @@ body.show_toc {
  article {
    section {
      @extend .mdl-cell;
-     @extend .mdl-cell--8-col;
+     @extend .mdl-cell--6-col;
    }
    aside {
      @extend .mdl-cell;
-     @extend .mdl-cell--4-col;
+     @extend .mdl-cell--3-col;
    }
  }
 }
