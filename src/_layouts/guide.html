@@ -2,12 +2,23 @@
 layout: default
 ---
 <article>
+  <aside>
+    {% for collection in site.collections %}
+      {{ collection.label }}<br>
+      {{ collection.directory }}<br>
+      {{ collection.relative_directory }}<br>
+      {% for doc in collection.docs %}
+        {{ doc.title }}<br>
+      {% endfor %}
+      <hr>
+    {% endfor %}
+  </aside>
+  <section>
+    {{ content | inject_anchors }}
+  </section>
   {% if page.toc %}
     <aside>
       {% include navigation-toc.html %}
     </aside>
   {% endif %}
-  <section>
-    {{ content | inject_anchors }}
-  </section>
 </article>

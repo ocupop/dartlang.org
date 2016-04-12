@@ -85,14 +85,14 @@ custom:
 safe: false
 source: src
 destination: publish
-incremental: true
+# incremental: true
 bundler_args: --without production
 markdown: kramdown
 excerpt_separator: "~~~"
 # highlighter: null
 
 
-include: ["_pages"]
+# include: ["_pages"]
 exclude: ["diagrams", "appengine", "tests", "site"]
 
 gems:
