@@ -5,6 +5,8 @@ layout: article
 type: libraries
 title: "Converters and Codecs"
 description: "Learn how to write efficient conversions."
+date: 2014-02-06
+updated: 2015-03-17
 header:
   css: ["/articles/converters-and-codecs/styles.css"]
 ---

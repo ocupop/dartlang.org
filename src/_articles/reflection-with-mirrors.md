@@ -5,6 +5,8 @@ layout: article
 type: libraries
 title: "Reflection in Dart with Mirrors: An Introduction"
 description: "Use the dart:mirrors library for introspection: discovering and using your program's structure."
+date: 2012-11-30
+updated: 2013-11-07
 ---
 
 {% include breadcrumbs.html %}
@@ -31,13 +33,11 @@ see the references at the end of this document.
 However, you don’t need to delve into all that if you don’t want to;
 what you really need to know about Dart’s mirror API will be covered here.
 
-<aside>
-<div class="alert alert-warning">
+<aside class="alert alert-info" markdown="1">
 <strong>Caveat 1:</strong>
 Dart's mirror API is evolving; while most of the introspection API
 is stable, there will be some additions and
 adjustments going forward, even post 1.0.
-</div>
 </aside>
 
 At this time, only part of the planned API has been realized.
@@ -74,14 +74,12 @@ class MyClass {
 The easiest way to get a mirror is to call the top-level function
 [reflect()](http://api.dartlang.org/dart_mirrors.html#reflect).
 
-<aside>
-<div class="alert alert-warning">
+<aside class="alert alert-info" markdown="1">
 <strong>Caveat 2:</strong>
 Currently, reflection works only if the reflection code
 and the object being reflected are running in the same isolate.
 In the future, we expect to extend the API to support reflection
 across isolates.
-</div>
 </aside>
 
 The reflect() method takes an object and returns an
@@ -280,12 +278,10 @@ MyClass
 At this point we’ve shown you enough to get started.
 Some more things you should be aware of follow.
 
-<aside>
-<div class="alert alert-warning">
+<aside class="alert alert-info" markdown="1">
 <strong>Caveat 3:</strong>
 What you deploy is often less than what you wrote.
 This may interact with reflection in annoying ways.
-</div>
 </aside>
 
 Because the size of web applications needs to be kept down,
@@ -333,12 +329,10 @@ Currently, you may use the
 annotation for this purpose
 but we expect the details to change significantly over time.
 
-<aside>
-<div class="alert alert-warning">
+<aside class="alert alert-info" markdown="1">
 <strong>Caveat 4:</strong>
 One thing we can promise you is that MirrorsUsed will change.
 If you use it, be prepared for breaking changes.
-</div>
 </aside>
 
 The above should be enough to get you started using mirrors.

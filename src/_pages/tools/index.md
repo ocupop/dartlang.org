@@ -14,14 +14,14 @@ A variety of tools are available for Dart development.
 This page discusses tools common to various Dart technologies.
 See the Tools page for your particular technology for detailed information.
 
-<h2>DartPad</h2>
+## DartPad
 
 When first learning the language, [DartPad](dartpad) is
 a great way to learn Dart syntax or experiment with Dart language features.
 Once you are ready to write code that imports other packages,
 you'll need to download an SDK.
 
-## IDE
+## IDEs
 
 You can find a Dart plugin for the most commonly used IDEs.
 If you don't already have a favorite IDE,
@@ -104,6 +104,6 @@ Consult the tools page for your technology for further details.
   See [dartfmt](https://github.com/dart-lang/dart_style#readme)
   to learn how to manually run the code formatter for the Dart VM.
 
-Also see the Tools documentation for your Dart technology.
+Also see the tools documentation for your Dart technology.
 [Dart VM]({{site.dart-vm}}/tools/) |
 [Flutter]({{site.flutter}}/setup/)

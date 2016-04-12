@@ -9,12 +9,12 @@ description:
 # {{ page.title }}
 
 Are you writing standalone Dart scripts or server apps?
-These pages have the information you need for the standalone
-Dart VM.
+These pages have the information you need to develop
+for the standalone Dart VM.
 
 Once you've gone beyond
 [DartPad]({{site.dartlang}}/tools/dartpad),
-you can [Download the SDK](/dart-vm/downloads/).
+you will want to [download the SDK](/dart-vm/downloads/).
 
 You'll also want to [meet your tools](tools/).
 
