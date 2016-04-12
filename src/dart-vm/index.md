@@ -9,14 +9,24 @@ description:
 # {{ page.title }}
 
 Are you writing standalone Dart scripts or server apps?
+These pages have the information you need for the standalone
+Dart VM.
 
-[Download Dart](/dart-vm/downloads/)
+Once you've gone beyond
+[DartPad]({{site.dartlang}}/tools/dartpad),
+you can [Download the SDK](/dart-vm/downloads/).
 
-[Tutorials](/dart-vm/tutorials/)
+You'll also want to [meet your tools](tools/).
 
-[Articles](/dart-vm/articles/)
+We have several tutorials you may find helpful.
+[Get Started](tutorials/get_started) shows you how
+to write a basic Dart script. You may then want to
+try out [Write Command-Line Apps](tutorials/cmdline)
+tutorial or [Write HTTP Clients & Servers](tutorials/httpserver).
 
-[Tools](/dart-vm/tools/)
+We also have a number of
+[articles pertaining to the Dart VM](/dart-vm/articles/).
 
-[Dart by Example](/dart-vm/dart-by-example/)
+Finally, check out our code snippets, also known as
+[Dart by Example](/dart-vm/dart-by-example/).
 

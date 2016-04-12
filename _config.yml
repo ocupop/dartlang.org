@@ -10,6 +10,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 #   {{site.dart4web}}/downloads
 
 dart4web: "https://webdev.dartlang.org"
+dartlang: "https://www.dartlang.org"
 dart-vm:  "/dart-vm"
 flutter:  "https://flutter.io/"
 dartino:  "https://github.com/dartino"

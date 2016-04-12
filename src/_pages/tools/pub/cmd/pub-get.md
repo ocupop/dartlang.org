@@ -24,9 +24,9 @@ $ pub get [--offline] [--no-package-symlinks]
 {% endcomment %}
 
 This command gets all the dependencies listed in the
-[`pubspec.yaml`](/tools/pub/pubspec.html) file in the current working
+[`pubspec.yaml`](/tools/pub/pubspec) file in the current working
 directory, as well as their
-[transitive dependencies](/tools/pub/glossary.html#transitive-dependency).
+[transitive dependencies](/tools/pub/glossary#transitive-dependency).
 For example:
 
 {% prettify sh %}
@@ -34,7 +34,7 @@ $ pub get
 Got dependencies!
 {% endprettify %}
 
-If the [system cache](glossary.html#system-cache)
+If the [system cache](glossary#system-cache)
 doesn't already contain the dependencies, `pub get`
 updates the cache,
 downloading dependencies if necessary.
@@ -72,7 +72,7 @@ import 'package:test/test.dart';
 {% endprettify %}
 
 When `pub get` gets new dependencies, it writes a
-[lockfile](/tools/pub/glossary.html#lockfile) to ensure that future
+[lockfile](/tools/pub/glossary#lockfile) to ensure that future
 gets will use the same versions of those dependencies.
 Application packages should check in the lockfile to source control;
 this ensures the application will use the exact same versions
@@ -83,16 +83,16 @@ expected to work with a range of dependency versions.
 If a lockfile already exists, `pub get` uses the versions of dependencies
 locked in it if possible. If a dependency isn't locked, pub gets the
 latest version of that dependency that satisfies all the [version
-constraints](/tools/pub/glossary.html#version-constraint).
+constraints](/tools/pub/glossary#version-constraint).
 This is the primary difference between `pub get` and
-[`pub upgrade`](pub-upgrade.html), which always tries to
+[`pub upgrade`](pub-upgrade), which always tries to
 get the latest versions of all dependencies.
 
 <aside class="alert alert-info" markdown="1">
 **Note:** Do not check the generated `packages` directories,
 `.package` file, or `.pub` directory (when present) into your repo;
 add them to your repo's `.gitignore` file.
-[What Not to Commit](/tools/private-files.html) has a complete list
+[What Not to Commit](/libraries/private-files) has a complete list
 of files that should not be checked into the repo.
 </aside>
 
@@ -119,7 +119,7 @@ already-acquired dependencies.
 
 Dependencies downloaded over the internet, such as those from Git and
 [pub.dartlang.org](https://pub.dartlang.org), are stored in a
-[system-wide cache](glossary.html#system-cache).
+[system-wide cache](glossary#system-cache).
 This means that if multiple packages use the same version of the
 same dependency, it only needs to be
 downloaded and stored locally once. It also means that it's safe to delete
@@ -130,7 +130,7 @@ By default, the system package cache is located in the `.pub-cache`
 subdirectory of your home directory (on Mac and Linux),
 or in `AppData\Roaming\Pub\Cache` (on Windows).
 However, it may be configured by setting the
-[`PUB_CACHE`](/tools/pub/installing.html)
+[`PUB_CACHE`](/tools/pub/installing)
 environment variable before running pub.
 
 ## Getting while offline
@@ -150,7 +150,7 @@ available.
 Keep in mind that pub generates a lockfile after it does this. If the
 only version of some dependency in your cache happens to be old, this locks
 your app to that version. The next time you are online, you will likely want to
-run [`pub upgrade`](pub-upgrade.html) to upgrade to a later version.
+run [`pub upgrade`](pub-upgrade) to upgrade to a later version.
 
 ## Options {#options}
 
@@ -159,5 +159,5 @@ For options that apply to all pub commands, see
 
 <aside class="alert alert-info" markdown="1">
 *Problems?*
-See [Troubleshooting Pub](../troubleshoot.html).
+See [Troubleshooting Pub](../troubleshoot).
 </aside>
