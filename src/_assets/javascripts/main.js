@@ -43,9 +43,13 @@ $(document).on('ready', function(){
     // scope: StickScope.Parent,
     top: 50
   });
+  $("#toc").stickit({
+    // scope: StickScope.Parent,
+    top: 50
+  });
   $("#pagenav").stickit({
     // scope: StickScope.Parent,
-    top: 70
+    top: 60
   });
   $("#subnav").stickit({
     // scope: StickScope.Parent,

@@ -2,27 +2,31 @@
 layout: default
 ---
 <article>
-  <aside id="pagenav">
-    <h4>Tutorials</h4>
-    <ul>
-      {% assign tutorials = (site.tutorials | sort: 'updated') %}
-      {% for tutorial in tutorials %}
-        <li>
-          <a href="{{ tutorial.url }}">{{ tutorial.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
+  <aside>
+    <nav id="pagenav">
+      <h4><a href="/tutorials">Tutorials</a></h4>
+      <ul>
+        {% assign tutorials = (site.tutorials | sort: 'updated') %}
+        {% for tutorial in tutorials %}
+        {% unless tutorial.layout == 'page' %}
+          <li>
+            <a href="{{ tutorial.url }}">{{ tutorial.title }}</a>
+            {% if page.url == tutorial.url and page.toc %}
+              {{ content | toc_only  }}
+            {% endif %}
+          </li>
+        {% endunless %}
+        {% endfor %}
+      </ul>
+    </nav>
   </aside>
   <section>
-    {{ content }}
-  </section>
-  <aside>
-    {% if page.toc %}
-      {% include navigation-toc.html %}
-    {% endif %}
-
+    <header>
+      <h1>{{ page.title }}</h1>
+      <a href="https://github.com/dart-lang/dartlang.org/issues" target="_blank" class="hide">Send feedback</a>
+    </header>
     {% if page.points %}
-      <div class="panel">
+      <div class="panel pull-right">
         <h4>What's the point?</h4>
         <ul>
           {% for point in page.points %}
@@ -31,24 +35,25 @@ layout: default
         </ul>
       </div>
     {% endif %}
-
-    {% if page.examples %}
-      <div class="panel">
-        <h4>Examples</h4>
-        <ul>
-          {% for example in page.examples %}
-          <li>
-            {% if example.url %}
-              <a href="{{ exampl.url }}" target="_blank">{{ example.title }}</a>
-            {% else %}
-              {{ example.title }}
-            {% endif %}
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-    {% endif %}
-    <hr>
-    <a href="https://github.com/dart-lang/dartlang.org/issues" target="_blank">Send feedback</a>
-  </aside>
+    {{ content | inject_anchors }}
+  </section>
 </article>
+
+{% comment %}
+  {% if page.examples %}
+    <div class="panel pull-right">
+      <h4>Examples</h4>
+      <ul>
+        {% for example in page.examples %}
+        <li>
+          {% if example.url %}
+            <a href="{{ exampl.url }}" target="_blank">{{ example.title }}</a>
+          {% else %}
+            {{ example.title }}
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+{% endcomment %}

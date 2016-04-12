@@ -214,7 +214,7 @@ img {
  border-top: 1px solid $grey;
 }
 
-#dartpad {
+#embedded-dartpad {
  position: fixed;
  width: 100%;
  height: 30px;
@@ -265,11 +265,11 @@ body.show_toc {
  article {
    section {
      @extend .mdl-cell;
-     @extend .mdl-cell--6-col;
+     @extend .mdl-cell--8-col;
    }
    aside {
      @extend .mdl-cell;
-     @extend .mdl-cell--3-col;
+     @extend .mdl-cell--4-col;
    }
  }
 }
