@@ -7,7 +7,7 @@
 
 /* -----------------------------------------
   Global
------------------------------------------ */
+  ----------------------------------------- */
 body {
  font-family: $font-family-base;
 }
@@ -89,7 +89,8 @@ img {
 
 /* -----------------------------------------
   DOM
------------------------------------------ */
+  ----------------------------------------- */
+
 // Structure
 #page-header {
  background-color: $grey-light;
@@ -159,12 +160,44 @@ img {
  }
 }
 #pagenav {
- padding: $content-padding;
- background: $grey-light;
- margin-bottom: 20px;
+  ul {
+    padding: 0;
+    list-style: none;
+    li {
+      position: relative;
+      padding-left: 10px;
+      &.dropdown {
+        ul.dropdown-menu {
+          // display: none;
+        }
+        i {
+          content: '-';
+          position: absolute;
+          display: inline-block;
+          line-height: inherit;
+          top: 0;
+          left: 0;
+        }
+        &.open {
+          ul {
+            display: block;
+          }
+        }
+      }
+    }
+  }
 }
 #footernav {}
 
+#toc {
+  padding: $content-padding;
+  background: $grey-light;
+  margin-bottom: 20px;
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+}
 #breadcrumbs {
  padding: 15px 0;
 }
@@ -173,7 +206,7 @@ img {
 
 /* -----------------------------------------
  Dartpad
------------------------------------------ */
+ ----------------------------------------- */
 
 #run-dartpad {
  padding: 15px 0;
@@ -181,7 +214,7 @@ img {
  border-top: 1px solid $grey;
 }
 
-#dartpad {
+#embedded-dartpad {
  position: fixed;
  width: 100%;
  height: 30px;
@@ -191,7 +224,7 @@ img {
 }
 /* -----------------------------------------
  Search
------------------------------------------ */
+ ----------------------------------------- */
 #search {
  position: absolute;
  right: 0;
@@ -212,7 +245,7 @@ img {
 
 /* -----------------------------------------
  Table of Contents
------------------------------------------ */
+ ----------------------------------------- */
 .toc-entry.toc-h2
 {}
 .toc-entry.toc-h1,
@@ -227,7 +260,7 @@ img {
 
 /* -----------------------------------------
   Utility Classes
------------------------------------------ */
+ ----------------------------------------- */
 body.show_toc {
  article {
    section {
@@ -241,10 +274,10 @@ body.show_toc {
  }
 }
 .container {
- position: relative;
- max-width: 100%;
- width: $live-content-width;
- margin: 0 auto;
+  position: relative;
+  max-width: 100%;
+  width: $live-content-width;
+  margin: 0 auto;
 }
 
 .content {
@@ -400,7 +433,7 @@ body.show_toc {
 
 /* -----------------------------------------
   Message / Notifications
------------------------------------------ */
+ ----------------------------------------- */
 .alert {
   padding: $content-padding;
   &.alert-success {
@@ -448,7 +481,7 @@ body.show_toc {
 
 /* -----------------------------------------
   MDL Overwrites
------------------------------------------ */
+ ----------------------------------------- */
 .mdl-layout__drawer-button {
  color: $white;
 }
@@ -474,13 +507,10 @@ body.show_toc {
  letter-spacing: 2px;
  margin-top: 0;
 }
-// .mdl-mega-footer {
-//   padding: 30px 0;
-// }
 
 /* -----------------------------------------
   Prettyprint overwrites
------------------------------------------ */
+ ----------------------------------------- */
 
 .str, .kwd, .com, .typ, .lit, .pun, .pln, .tag, .atn, .atv, .dec {
  color: $blue;
@@ -489,7 +519,7 @@ body.show_toc {
 
 /* -----------------------------------------
   Homepage
------------------------------------------ */
+ ----------------------------------------- */
 
 .homepage {
  pre {
@@ -508,7 +538,7 @@ body.show_toc {
 
 /* -----------------------------------------
   Media Queries
------------------------------------------ */
+ ----------------------------------------- */
 @media(min-width: 1024px) {
  .mdl-layout__drawer {
    .mdl-navigation {

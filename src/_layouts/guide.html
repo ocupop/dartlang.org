@@ -2,12 +2,32 @@
 layout: default
 ---
 <article>
+  <aside id="pagenav">
+    <h4>Guides</h4>
+    <ul>
+      {% for link in site.data.guides  %}
+        {% if link.children == empty %}
+          <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+        {% else %}
+          <li class="dropdown">
+            <i></i>
+            <a href="{{ link.url }}">{{ link.label }}</a>
+            <ul class="dropdown-menu">
+              {% for child in link.children %}
+                <li><a href="{{ child.url }}">{{ child.label }}</a></li>
+              {% endfor %}
+            </ul>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </aside>
+  <section>
+    {{ content | inject_anchors }}
+  </section>
   {% if page.toc %}
     <aside>
       {% include navigation-toc.html %}
     </aside>
   {% endif %}
-  <section>
-    {{ content | inject_anchors }}
-  </section>
 </article>
