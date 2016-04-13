@@ -282,7 +282,7 @@ Consider the following scenario:
 
 The `bookshelf` package depends on `widgets`.
 The `widgets` package, currently at 1.2.0,
-[exports](/docs/dart-up-and-running/ch02.html#re-exporting-libraries)
+[exports](/language/language-tour#re-exporting-libraries)
 `collection` via `export 'package:collection/collection.dart'`, and is
 at 2.4.0. The pubspec files are as follows:
 

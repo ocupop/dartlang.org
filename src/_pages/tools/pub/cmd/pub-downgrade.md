@@ -21,7 +21,7 @@ $ pub downgrade [dependencies...]
 Without any additional arguments, `pub downgrade` gets the lowest versions of
 all the dependencies listed in the [`pubspec.yaml`](/tools/pub/pubspec.html)
 file in the current working directory, as well as their [transitive
-dependencies](/tools/pub/glossary.html#transitive-dependency), to the `packages`
+dependencies]({{site.dartlang}}/tools/pub/glossary#transitive-dependency), to the `packages`
 directory located next to the pubspec. For example:
 
 {% prettify sh %}

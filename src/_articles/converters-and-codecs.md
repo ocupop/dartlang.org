@@ -17,10 +17,8 @@ header:
 
 ### **_How to write efficient conversions_**
 
-<em>Written by Florian Loitsch <br />
-<time pubdate date="2014-02-06">February 2014</time>
-(updated March 2015)
-</em>
+_Written by Florian Loitsch <br>
+February 2014 (updated March 2015)_
 
 Converting data between different representations is a common task in computer
 engineering. Dart is no exception and comes with

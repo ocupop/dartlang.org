@@ -219,7 +219,7 @@ resolve. Instead, your entrypoints should go in the appropriate
 [entrypoint directory](glossary.html#entrypoint-directory).
 
 For more information on library packages, see
-[Creating Library Packages](create-library-packages.html).
+[Creating Library Packages](/libraries/create-library-packages).
 
 ### Public tools {#public-tools}
 
@@ -300,8 +300,8 @@ styles. In an HTML file in your package, you can add:
 <link href="packages/enchilada/guacamole.css" rel="stylesheet">
 {% endprettify %}
 
-When you run your application using [`pub serve`](cmd/pub-serve.html), or build
-it to something deployable using [`pub build`](cmd/pub-build.html), pub
+When you run your application using [`pub serve`](cmd/pub-serve), or build
+it to something deployable using [`pub build`](cmd/pub-build), pub
 copies over any referenced assets that your package depends on.
 
 For more information about using assets, see

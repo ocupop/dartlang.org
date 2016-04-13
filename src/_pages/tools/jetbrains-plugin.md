@@ -26,7 +26,7 @@ and find more information when you need it.
 **Note:**
 WebStorm comes with the Dart plugin pre-installed.
 For details on using WebStorm,
-read the [WebStorm page](/tools/webstorm/).
+read the [WebStorm page]({{site.dart4web}}/tools/webstorm).
 </aside>
 
 ## Getting started
@@ -63,8 +63,8 @@ you need to download it.
 If you're using Dart to develop web apps,
 we recommend downloading Dartium, as well.
 
-* [Download the Dart SDK](/downloads/)
-* [Download Dartium](/tools/dartium/) (optional)
+* [Download the Dart SDK]({{site.dart-vm}}/downloads/)
+* [Download Dartium]({{site.dart4web}}/tools/dartium) (optional)
 
 
 ### Configuring Dart support

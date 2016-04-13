@@ -21,8 +21,8 @@ $ pub upgrade [dependencies...]
 Without any additional arguments, `pub upgrade` gets the latest versions of
 all the dependencies listed in the [`pubspec.yaml`](/tools/pub/pubspec.html) file in the
 current working directory, as well as their [transitive
-dependencies](/tools/pub/glossary.html#transitive-dependency), to the `packages`
-directory located next to the pubspec. For example:
+dependencies]({{site.dartlang}}/tools/pub/glossary#transitive-dependency),
+to the `packages` directory located next to the pubspec. For example:
 
 {% prettify sh %}
 $ pub upgrade
@@ -30,8 +30,9 @@ Dependencies upgraded!
 {% endprettify %}
 
 When `pub upgrade` upgrades dependency versions, it writes a
-[lockfile](/tools/pub/glossary.html#lockfile) to ensure that future [`pub
-get`s](pub-get.html) will use the same versions of those dependencies.
+[lockfile]({{site.dartlang}}/tools/pub/glossary#lockfile)
+to ensure that future [`pub get`s](pub-get.html)
+will use the same versions of those dependencies.
 Application packages should check in the lockfile to source control; this
 ensures the application will use the exact same versions of all dependencies for
 all developers and when deployed to production. Library packages should not

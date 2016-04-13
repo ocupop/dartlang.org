@@ -33,7 +33,7 @@ see the references at the end of this document.
 However, you don’t need to delve into all that if you don’t want to;
 what you really need to know about Dart’s mirror API will be covered here.
 
-<aside class="alert alert-info" markdown="1">
+<aside class="alert alert-warning" markdown="1">
 <strong>Caveat 1:</strong>
 Dart's mirror API is evolving; while most of the introspection API
 is stable, there will be some additions and
@@ -74,7 +74,7 @@ class MyClass {
 The easiest way to get a mirror is to call the top-level function
 [reflect()](http://api.dartlang.org/dart_mirrors.html#reflect).
 
-<aside class="alert alert-info" markdown="1">
+<aside class="alert alert-warning" markdown="1">
 <strong>Caveat 2:</strong>
 Currently, reflection works only if the reflection code
 and the object being reflected are running in the same isolate.
@@ -278,7 +278,7 @@ MyClass
 At this point we’ve shown you enough to get started.
 Some more things you should be aware of follow.
 
-<aside class="alert alert-info" markdown="1">
+<aside class="alert alert-warning" markdown="1">
 <strong>Caveat 3:</strong>
 What you deploy is often less than what you wrote.
 This may interact with reflection in annoying ways.
@@ -329,7 +329,7 @@ Currently, you may use the
 annotation for this purpose
 but we expect the details to change significantly over time.
 
-<aside class="alert alert-info" markdown="1">
+<aside class="alert alert-warning" markdown="1">
 <strong>Caveat 4:</strong>
 One thing we can promise you is that MirrorsUsed will change.
 If you use it, be prepared for breaking changes.

@@ -9,7 +9,7 @@ nextpage:
   url: /guides/effective-dart/documentation
   title: "Documentation"
 prevpage:
-  url: /language/effective-dart/
+  url: /guides/effective-dart/
   title: "Overview"
 ---
 

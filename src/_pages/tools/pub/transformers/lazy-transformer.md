@@ -4,6 +4,7 @@ reference: "https://www.dartlang.org/tools/pub/transformers/lazy-transformer.htm
 layout: page
 title: "Writing a Lazy Transformer"
 description: "How to write a Pub transformer that runs lazily to improve your app's startup time."
+permalink: /tools/pub/lazy-transformer
 toc: true
 
 header:
@@ -18,7 +19,7 @@ If you have a transformer that runs slowly&mdash;perhaps because the algorithm
 is complex, has many steps, or the data set is large&mdash;you can improve
 your app's startup time during the development cycle by making the
 transformer <em>lazy</em>.
-Pub runs a lazy transformer only when the generated asset is requested, 
+Pub runs a lazy transformer only when the generated asset is requested,
 either by a user or by another transformer.
 
 You can make either a standard transformer or an aggregate transformer run
@@ -33,7 +34,7 @@ If you aren't familiar with how to write a normal Pub tranformer, see
 [Writing a Pub Transformer](/tools/pub/transformers).
 
 This page uses the lazy_transformer example which you can find
-through [Examples of Transformer Code](examples/). 
+through [Examples of Transformer Code](examples/).
 
 Note that this transformer example does not run slowly, but is used
 for purposes of illustration. If the transformer were passed an
@@ -91,5 +92,5 @@ That's all that you need to do!
 : API docs for the barback package.
 * [Barback - Can We Build It? Yes, We Can!](https://docs.google.com/a/google.com/document/d/1juHkCRg-1YH6LvwhGPHgF2ihX-UQtR1fv-8aknO7t_4/edit?pli=1#)
 : A description of the barback asset system, written by a
-member of the Dart engineering team. 
+member of the Dart engineering team.
 

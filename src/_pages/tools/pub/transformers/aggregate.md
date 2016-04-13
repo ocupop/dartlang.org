@@ -4,6 +4,7 @@ reference: "https://www.dartlang.org/tools/pub/transformers/aggregate.html"
 layout: page
 title: "Writing an Aggregate Transformer"
 description: How to write a Pub transformer to processes multiple input assets.
+permalink: /tools/pub/aggregate
 toc: true
 
 header:
@@ -133,5 +134,5 @@ If you wish to request a specific secondary input, you can use the
 : API docs for the barback package.
 * [Barback - Can We Build It? Yes, We Can!](https://docs.google.com/a/google.com/document/d/1juHkCRg-1YH6LvwhGPHgF2ihX-UQtR1fv-8aknO7t_4/edit?pli=1#)
 : A description of the barback asset system, written by a
-member of the Dart engineering team. 
+member of the Dart engineering team.
 

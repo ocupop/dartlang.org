@@ -75,6 +75,6 @@ so that we can easily run the benchmark.
 
 ### How can I write Dart code that compiles to performant JavaScript?
 
-See [Helping dart2js generate better code](/tools/dart2js/#helping-dart2js-generate-efficient-code).
+See [Helping dart2js generate better code]({{site.dart4web}}/tools/dart2js#helping-dart2js-generate-efficient-code).
 Just be aware that this information might change as the implementation of
 dart2js changes.

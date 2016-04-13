@@ -24,12 +24,12 @@ is a great way to learn how to write a simple app in the Dart
 language, once you are ready to start doing real-world development,
 you need the Dart SDK.
 
-[Download the Dart SDK](/downloads/).
+[Download the Dart SDK]({{site.dart-vm}}/downloads/).
 
 ## What's in the SDK
 
 The SDK directory includes a `lib` directory for the
-[Dart libraries](/docs/dart-up-and-running/ch03.html)
+[Dart libraries](/libraries/library-tour)
 and a `bin` directory that has these command-line tools:
 
 <div class="row"> <div class="col-md-6" markdown="1">
@@ -37,7 +37,7 @@ and a `bin` directory that has these command-line tools:
 [dart](/tools/dart-vm/)
 : The standalone VM
 
-[dart2js](/tools/dart2js/)
+[dart2js]({{site.dart4web}}/tools/dart2js)
 : The Dart-to-JavaScript compiler
 
 [dartanalyzer](https://github.com/dart-lang/analyzer_cli#dartanalyzer)

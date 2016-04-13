@@ -135,7 +135,7 @@ When you globally activate a package using any of the `pub global activate`
 options, pub creates a shell script for each
 entry listed in the `executables` section of the pubspec,
 and adds it to the `bin` directory in your
-[pub cache](/tools/pub/glossary.html#system-cache).
+[pub cache]({{site.dartlang}}/tools/pub/glossary#system-cache).
 For Linux and Mac, this file is located in `~/.pub-cache/bin`.
 If you want to activate a subset of the list of executables,
 use `--executable=<name>` (or `-x<name>`, for short).

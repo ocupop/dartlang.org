@@ -19,7 +19,7 @@ you will want to [download the SDK](/dart-vm/downloads/).
 You'll also want to [meet your tools](tools/).
 
 We have several tutorials you may find helpful.
-[Get Started](tutorials/get_started) shows you how
+[Get Started](tutorials/get-started) shows you how
 to write a basic Dart script. You may then want to
 try out [Write Command-Line Apps](tutorials/cmdline)
 tutorial or [Write HTTP Clients & Servers](tutorials/httpserver).

@@ -97,8 +97,8 @@ image, that is intended to be part of a deployed package.
 The following pages cover how to write a custom transformer:
 
 * [Writing a Pub Transformer](transformers/)
-* [Writing an Aggregate Transformer](transformers/aggregate.html)
-* [Writing a Lazy Transformer](transformers/lazy-transformer.html)
+* [Writing an Aggregate Transformer](transformers/aggregate)
+* [Writing a Lazy Transformer](transformers/lazy-transformer)
 * [Examples of Transformer Code](transformers/examples/)
 * [Barback - Can We Build It? Yes, We Can!](https://docs.google.com/a/google.com/document/d/1juHkCRg-1YH6LvwhGPHgF2ihX-UQtR1fv-8aknO7t_4/edit?pli=1#)
 

@@ -12,8 +12,9 @@ toc: true
 
 # {{ page.title }}
 
-The [`pub serve`](cmd/pub-serve.html), [`pub build`](cmd/pub-build.html)
-and [`pub run`](cmd/pub-run.html) commands use [transformers][]
+The [`pub serve`]({{site.dart4web}}/tools/pub-serve),
+[`pub build`]({{site.dart4web}}/tools/pub-build)
+and [`pub run`](cmd/pub-run) commands use [transformers][]
 to prepare a package's [assets][] before serving the app,
 building the app for deployment, or executing the command-line app,
 as the case may be.
@@ -104,9 +105,9 @@ dependencies:
     [[highlight]]entry_points: web/index.html[[/highlight]]
 {% endprettify %}
 
-The following example configures the [dart2js](/tools/dart2js/)
-transformer, which is used by [`pub serve`](cmd/pub-serve.html),
-[`pub build`](cmd/pub-build.html), and [`pub run`](cmd/pub-run.html),
+The following example configures the [dart2js]({{site.dart4web}}/tools/dart2js)
+transformer, which is used by [`pub serve`]({{site.dart4web}}/tools/pub-serve),
+[`pub build`]({{site.dart4web}}/tools/pub-build), and [`pub run`](cmd/pub-run),
 to analyze the code:
 
 {% prettify yaml %}
@@ -116,7 +117,7 @@ transformers:
 {% endprettify %}
 
 For more information, see
-[Configuring the Built-in dart2js Transformer](dart2js-transformer.html).
+[Configuring the Built-in dart2js Transformer]({{site.dart4web}}/tools/dart2js-transformer).
 
 We expect more transformers to be available in the future. You can specify
 multiple transformers, to run either in parallel (if they're independent of
@@ -194,7 +195,7 @@ include a `web` directory, pub produces an error.
 
 You can build a command-line app (where the source files are in `bin`),
 for example, by specifying `pub build bin`.
-For more information, see [pub build](/tools/pub/cmd/pub-build.html).
+For more information, see [pub build](/tools/pub/cmd/pub-build).
 </aside>
 
 The following is an example of a build command for a more complex package
@@ -260,8 +261,8 @@ Transformers might change any part of <em>&lt;path&gt;</em>, especially the
 filename, but they can't change the directory structure above
 <em>&lt;path&gt;</em>.
 
-[assets]: glossary.html#asset
-[transformers]: glossary.html#transformer
+[assets]: glossary#asset
+[transformers]: glossary#transformer
 
 ## How to control which assets are processed {#exclude-assets}
 
@@ -394,4 +395,4 @@ Indent the next line by 4 spaces and use the form:
 ## Writing a transformer {#writing-transformer}
 
 To write a transformer, see
-[Writing a Pub Transformer](transformers/index.html).
+[Writing a Pub Transformer](transformers/).

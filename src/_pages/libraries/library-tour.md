@@ -89,9 +89,11 @@ the [dart:math section](#dartmath---math-and-random).
 ### Strings and regular expressions {#strings-and-regular-expressions}
 {:.no_toc}
 
-A string in Dart is an immutable sequence of UTF-16 code units. The
-language tour has more information about [strings](ch02.html#strings). You can
-use regular expressions (RegExp objects) to search within strings and to
+A string in Dart is an immutable sequence of UTF-16 code units.
+The language tour has more information about
+[strings](/language/language-tour#strings).
+You can use regular expressions (RegExp objects)
+to search within strings and to
 replace parts of strings.
 
 The String class defines such methods as `split()`, `contains()`,
@@ -987,8 +989,8 @@ Future, Stream, and more are in the
 You don't always need to use the Future or Stream APIs directly.
 In 1.9, Dart added language support for asynchronous coding,
 using keywords such as `async` and `await`.
-See [Asynchrony support](ch02.html#asynchrony) in the language tour
-for details.
+See [Asynchrony support](/language/language-tour#asynchrony)
+in the language tour for details.
 </div>
 
 The dart:async library works in both web apps and command-line apps. To
@@ -1069,7 +1071,7 @@ For example, you might call an async function from your function.
 
 For more information on using `await` and related
 Dart language features, see
-[Asynchrony support](ch02.html#asynchrony).
+[Asynchrony support](/language/language-tour#asynchrony).
 
 
 #### Basic usage {#basic-usage}
@@ -1239,7 +1241,7 @@ then the second kind of event is never handled.
 
 For more information on using `await` and related
 Dart language features, see
-[Asynchrony support](ch02.html#asynchrony).
+[Asynchrony support](/language/language-tour#asynchrony).
 
 
 #### Listening for stream data {#listening-for-stream-data}
@@ -1359,15 +1361,15 @@ For some examples of using Future and Stream in command-line apps, see the
 [dart:io section](#dartio---io-for-command-line-apps).
 Also see these articles and tutorials:
 
--   [Asynchronous Programming: Futures](/docs/tutorials/futures/)
+-   [Asynchronous Programming: Futures](/tutorials/futures)
 
--   [Futures and Error Handling](/articles/futures-and-error-handling/)
+-   [Futures and Error Handling](/articles/futures-and-error-handling)
 
--   [The Event Loop and Dart](/articles/event-loop/)
+-   [The Event Loop and Dart]({{site.dart-vm}}/articles/event-loop)
 
--   [Asynchronous Programming: Streams](/docs/tutorials/streams/)
+-   [Asynchronous Programming: Streams](/tutorials/streams)
 
--   [Creating Streams in Dart](/articles/creating-streams/)
+-   [Creating Streams in Dart](/articles/creating-streams)
 
 
 ## dart:math - math and random {#dartmath---math-and-random}
@@ -2210,7 +2212,7 @@ main() async {
 
 Use a Stream to read a file, a little at a time.
 You can use either the [Stream API](#stream) or `await for`,
-part of Dart's [asynchrony support](ch02.html#asynchrony).
+part of Dart's [asynchrony support](/language/language-tour#asynchrony).
 
 <!-- ch03/readFile.dart -->
 {% prettify dart %}

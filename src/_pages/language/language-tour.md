@@ -531,7 +531,7 @@ const validConstString = '$aConstNum $aConstBool $aConstString';
 {% endprettify %}
 
 For more information on using strings, see
-[Strings and regular expressions](ch03.html#strings-and-regular-expressions).
+[Strings and regular expressions](/libraries/library-tour#strings-and-regular-expressions).
 
 
 ### Booleans {#booleans}
@@ -654,7 +654,7 @@ var constantList = const [1, 2, 3];
 
 The List type has many handy methods for manipulating lists. For more
 information about lists, see [Generics](#generics) and
-[Collections](ch03.html#collections).
+[Collections](/libraries/library-tour#collections).
 
 
 ### Maps {#maps}
@@ -750,7 +750,7 @@ final constantMap = const {
 
 For more information about maps, see
 [Generics](#generics) and
-[Maps](ch03.html#maps).
+[Maps](/libraries/library-tour#maps).
 
 ### Runes {#runes}
 {:.no_toc}
@@ -835,7 +835,7 @@ To get the symbol for an identifier, use a symbol literal, which is just
 Symbol literals are compile-time constants.
 
 For more information on symbols, see
-[dart:mirrors - reflection](ch03.html#dartmirrors---reflection).
+[dart:mirrors - reflection](/libraries/library-tour#dartmirrors---reflection).
 
 
 ## Functions {#functions}
@@ -1765,7 +1765,7 @@ candidates.forEach((candidate) => candidate.interview());
 {% endprettify %}
 
 Iterable classes such as List and Set also support the `for-in` form of
-[iteration](ch03.html#iteration):
+[iteration](/libraries/library-tour#iteration):
 
 <!-- ch02/flow_for_loops.dart -->
 {% prettify dart %}
@@ -2128,7 +2128,7 @@ try {
 }
 {% endprettify %}
 
-Learn more by reading the [Exceptions](ch03.html#exceptions) section.
+Learn more by reading the [Exceptions](/libraries/library-tour#exceptions) section.
 
 
 ## Classes {#classes}
@@ -2741,7 +2741,7 @@ main() {
 
 If you override `==`, you should also override Object's `hashCode` getter.
 For an example of overriding `==` and `hashCode`, see
-[Implementing map keys](ch03.html#implementing-map-keys).
+[Implementing map keys](/libraries/library-tour#implementing-map-keys).
 
 For more information on overriding, in general, see
 [Extending a class](#extending-a-class).
@@ -3005,7 +3005,7 @@ Enumerated types have the following limits:
 * You can't explicitly instantiate an enum.
 
 For more information, see the
-[Dart Language Specification](/docs/spec/).
+[Dart Language Specification](spec).
 
 
 ### Adding features to a class: mixins {#adding-features-to-a-class-mixins}
@@ -3101,7 +3101,7 @@ Static variables aren’t initialized until they’re used.
 <div class="alert alert-info" markdown="1">
 **Note:**
 This chapter follows the [style guide
-recommendation](/articles/style-guide/#prefer-using-lowercamelcase-for-constant-names)
+recommendation](/guides/effective-dart#prefer-using-lowercamelcase-for-constant-names)
 of preferring `lowerCamelCase` for constant names.
 </div>
 
@@ -3457,13 +3457,13 @@ Keep in mind the following when you use deferred loading:
   both the deferred library and the importing file.
 * Dart implicitly inserts `loadLibrary()` into the namespace that you define
   using <code>deferred as <em>namespace</em></code>.
-  The `loadLibrary()` function returns a [Future](ch03.html#future).
+  The `loadLibrary()` function returns a [Future](/libraries/library-tour#future).
 
 ### Implementing libraries {#implementing-libraries}
 {:.no_toc}
 
 See
-[Creating Library Packages](/tools/pub/create-library-packages.html)
+[Creating Library Packages](/libraries/create-library-packages)
 for advice on how to implement a library package.
 
 ## Asynchrony support {#asynchrony}
@@ -3485,13 +3485,13 @@ When you need to use a value represented by a Future,
 you have two options:
 
 * Use `async` and `await`
-* Use the [Future API](ch03.html#future)
+* Use the [Future API](/libraries/library-tour#future)
 
 Similarly, when you need to get values from a Stream,
 you have two options:
 
 * Use `async` and an _asynchronous for loop_ (`await for`)
-* Use the [Stream API](ch03.html#stream)
+* Use the [Stream API](/libraries/library-tour#stream)
 
 Code that uses `async` and `await` is asynchronous,
 but it looks a lot like synchronous code.
@@ -3650,12 +3650,12 @@ main() async {
 {% endprettify %}
 
 For more information about asynchronous programming, see the
-[dart:async](ch03.html#dartasync---asynchronous-programming)
+[dart:async](/libraries/library-tour#dartasync---asynchronous-programming)
 section of the library tour.
 Also see the articles
 [Dart Language Asynchrony Support: Phase 1](/articles/await-async/) and
 [Dart Language Asynchrony Support: Phase 2](/articles/beyond-async/),
-and the [Dart language specification](/docs/spec/).
+and the [Dart language specification](spec).
 
 ## Callable classes {#callable-classes}
 
@@ -3936,8 +3936,8 @@ To parse Dart code and generate HTML documentation, you can use the SDK’s
 [documentation generation tool.](https://github.com/dart-lang/dartdoc#dartdoc)
 For an example of generated documentation, see the [Dart API
 documentation.](http://api.dartlang.org) For advice on how to structure
-your comments, see [Guidelines for Dart Doc
-Comments.](/articles/doc-comment-guidelines/)
+your comments, see
+[Guidelines for Dart Doc Comments.](/guides/effective-dart/documentation)
 
 
 ## Summary {#summary}
@@ -3945,7 +3945,6 @@ Comments.](/articles/doc-comment-guidelines/)
 This chapter summarized the commonly used features in the Dart language.
 More features are being implemented, but we expect that they won’t break
 existing code. For more information, see the [Dart Language
-Specification](/docs/spec/) and
-[articles](/articles/) such as [Idiomatic
-Dart.](/articles/idiomatic-dart/)
+Specification](spec) and
+[Effective Dart](/guides/effective-dart/).
 

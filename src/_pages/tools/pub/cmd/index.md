@@ -73,7 +73,7 @@ Pub supports development for web-based apps and command-line apps.
 ### Web-based apps
 
 During the development cycle of an application, the
-[`pub serve`](pub-serve)
+[`pub serve`]({{site.dart4web}}/tools/pub-serve)
 command is used to start up a development server.
 This server can be accessed via the browser on localhost and
 allows you to view your web-based app.
@@ -97,7 +97,7 @@ transformers before invoking the specified script.
 ## Deployment
 
 When you are ready to deploy your app, the
-[`pub build`](pub-build) command
+[`pub build`]({{site.dart4web}}/tools/pub-build) command
 creates the `build` directory, compiles the Dart code, and places
 the assets into the build directory.
 

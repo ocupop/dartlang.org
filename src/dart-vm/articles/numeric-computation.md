@@ -33,7 +33,7 @@ If your primary compile target is JavaScript, see the section
 This article does not cover the SIMD types available in Dart,
 which enable operating on four floating-point numbers in parallel.
 To learn more, read
-[Using SIMD in Dart](/articles/simd/).
+[Using SIMD in Dart](simd).
 </aside>
 
 ## Overview
@@ -360,8 +360,7 @@ and better CPU cache performance:
   using much less memory and making better use of your CPU’s cache.
 
 In general and specifically because of the above caveats,
-it is always a good idea to
-[benchmark](/articles/benchmarking/)
+it is always a good idea to [benchmark](benchmarking)
 your algorithm using both object and typed lists.
 
 **Performance tip:**
@@ -416,7 +415,7 @@ Unlike the case with smis,
 using an object list with doubles is always slower.
 
 **Performance tip:**
-[Benchmark](/articles/benchmarking/)
+[Benchmark](benchmarking)
 your application using both Float32List and Float64List
 to determine which performs best.
 

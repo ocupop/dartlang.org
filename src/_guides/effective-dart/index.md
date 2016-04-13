@@ -62,10 +62,10 @@ We split the guidelines into a few separate pages for easy digestion:
     declaration, this goes over it.
 
 [dartfmt]: https://github.com/dart-lang/dart_style#readme
-[style guide]: /effective-dart/style
-[documentation guide]: /effective-dart/documentation
-[usage guide]: /effective-dart/usage
-[design guide]: /effective-dart/design
+[style guide]: /guides/effective-dart/style
+[documentation guide]: /guides/effective-dart/documentation
+[usage guide]: /guides/effective-dart/usage
+[design guide]: /guides/effective-dart/design
 
 ## How to read the guides
 
