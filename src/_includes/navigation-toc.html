@@ -1,3 +1,9 @@
-<nav id="toc">
-  {{ content | toc_only  }}
-</nav>
+<h4>Guides</h4>
+{% assign linklist = site.data.guides %}
+{% include linklist.html %}
+<h4>Tutorials</h4>
+{% assign linklist = site.data.tutorials %}
+{% include linklist.html %}
+<h4>Articles</h4>
+{% assign linklist = site.data.articles %}
+{% include linklist.html %}
