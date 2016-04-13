@@ -159,7 +159,9 @@ img {
    }
  }
 }
-#pagenav {
+#footernav {}
+
+#toc {
   ul {
     padding: 0;
     list-style: none;
@@ -185,17 +187,6 @@ img {
         }
       }
     }
-  }
-}
-#footernav {}
-
-#toc {
-  padding: $content-padding;
-  background: $grey-light;
-  margin-bottom: 20px;
-  ul {
-    list-style: none;
-    padding: 0;
   }
 }
 #breadcrumbs {
@@ -264,12 +255,10 @@ img {
 body.show_toc {
  article {
    section {
-     @extend .mdl-cell;
-     @extend .mdl-cell--8-col;
+     @extend .mdl-cell--9-col;
    }
    aside {
-     @extend .mdl-cell;
-     @extend .mdl-cell--4-col;
+     @extend .mdl-cell--3-col;
    }
  }
 }
