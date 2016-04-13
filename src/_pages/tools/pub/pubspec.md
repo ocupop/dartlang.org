@@ -96,7 +96,8 @@ and how it appears to the world, should you publish it.
 The name should be all lowercase, with underscores to separate words,
 `just_like_this`. Use only basic Latin letters and Arabic digits:
 `[a-z0-9_]`. Also, make sure the name is a valid Dart identifier—that it
-doesn't start with digits and isn't a [reserved word](/docs/dart-up-and-running/ch02.html#keywords).
+doesn't start with digits and isn't a
+[reserved word](/language/language-tour#keywords).
 
 Try to pick a name that is clear, terse, and not already in use.
 A quick search of packages on

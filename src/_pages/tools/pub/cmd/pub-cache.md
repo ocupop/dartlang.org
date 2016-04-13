@@ -20,7 +20,7 @@ $ pub cache repair
 {% endprettify %}
 
 The `pub cache` command works with the
-[system cache](/tools/pub/glossary.html#system-cache).
+[system cache]({{site.dartlang}}/tools/pub/glossary#system-cache).
 To add new packages to your cache, use `pub cache add`.
 To perform a clean reinstall of the packages in your system cache,
 use `pub cache repair`.

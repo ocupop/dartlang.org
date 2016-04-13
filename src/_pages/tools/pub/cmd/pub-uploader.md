@@ -18,7 +18,8 @@ _Uploader_ is one of the commands of the _pub_ tool.
 $ pub uploader [options] {add/remove} <email>
 {% endprettify %}
 
-This command allows [uploaders](/tools/pub/glossary.html#uploader) of a
+This command allows
+[uploaders]({{site.dartlang}}/tools/pub/glossary#uploader) of a
 package on [pub.dartlang.org](https://pub.dartlang.org) to add or remove
 other uploaders for that package. It has two sub-commands,
 `add` and `remove`, that take the email address of the person to

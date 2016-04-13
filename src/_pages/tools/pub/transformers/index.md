@@ -4,6 +4,7 @@ reference: "https://www.dartlang.org/tools/pub/transformers/"
 layout: page
 title: "Writing a Pub Transformer"
 description: "How to write a Pub transformer that processes a single input asset."
+permalink: /tools/pub/transformers/
 toc: true
 
 header:
@@ -24,7 +25,7 @@ Dart app, you may never need to _write_ a transformer, in which case
 you can stop reading now.
 
 Before reading further, read
-[Pub Assets and Transformers](/tools/pub/assets-and-transformers.html)
+[Pub Assets and Transformers](/tools/pub/assets-and-transformers)
 to familiarize yourself with assets, transformers, and how they
 relate to each other.
 
@@ -34,7 +35,7 @@ a single input asset. If you need to process multiple inputs with no single
 primary input&ndash;you want to combine several images into one image,
 for example&ndash;you can write an _aggregate_ transformer.
 For more information, see
-[Writing an Aggregate Tranformer](aggregate.html).
+[Writing an Aggregate Tranformer](aggregate).
 
 This page uses two examples, SimpleTransformer and
 MarkdownConverter, which you can find through
@@ -139,8 +140,8 @@ class InsertCopyright extends Transformer {
 {% endprettify %}
 
 For more information on the mode option, see
-[pub serve](/tools/cmd/pub-serve.html#options) and
-[pub build](/tools/cmd/pub-build.html#options).
+[pub serve]({{site.dart4web}}/tools/cmd/pub-serve#options) and
+[pub build]({{site.dart4web}}/tools/cmd/pub-build#options).
 
 ### Claim input assets {#claim-input-assets}
 
@@ -313,21 +314,21 @@ asset to be publicly available to another package,
 it must be in the `lib` directory.
 You can organize the assets underneath `lib`
 using any structure that you want. See
-[Where to put assets](/tools/pub/assets-and-transformers.html#where-to-put-assets)
+[Where to put assets](/tools/pub/assets-and-transformers#where-to-put-assets)
 and
-[How to refer to assets](/tools/pub/assets-and-transformers.html#how-to-refer-to-assets)
+[How to refer to assets](/tools/pub/assets-and-transformers#how-to-refer-to-assets)
 for specifics.
 
 The `pub build`, `pub serve`, and `pub run` commands automatically run
 transformers. For more information, see
-[How transformers work](/tools/pub/assets-and-transformers.html#how-transformers-work).
+[How transformers work](/tools/pub/assets-and-transformers#how-transformers-work).
 
 ## More information {#more-info}
 
-* [Writing an Aggregate Transformer](aggregate.html)
+* [Writing an Aggregate Transformer](aggregate)
 : How to write a transformer that combines multiple input assets
   into a single output.
-* [Writing a Lazy Transformer](lazy-transformer.html)
+* [Writing a Lazy Transformer](lazy-transformer)
 : How to write a transformer that processes lazily, in the background.
 * [Examples of Transformer Code](examples/)
 : Examples to get you started.

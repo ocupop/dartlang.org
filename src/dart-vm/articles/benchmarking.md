@@ -1,10 +1,12 @@
 ---
 reference: "https://www.dartlang.org/articles/benchmarking/"
+
 layout: article
+permalink: /dart-vm/articles/benchmarking
 title: "Benchmarking the Dart VM"
 description: "Learn how to benchmark your applications"
-toc: true
-permalink: /dart-vm/articles/benchmarking
+date: 2012-10-01
+updated: 2012-11-01
 ---
 
 {% include breadcrumbs.html %}

@@ -15,7 +15,8 @@ js:
 # {{ page.title }}
 
 Don't want to use Chocolatey or a Windows installer?
-Another option is [downloading Dart manually](/downloads/archive/).
+Another option is
+[downloading Dart manually]({{site.dart-vm}}/downloads/archive/).
 
 * [Installing using Chocolatey](#chocolatey)
 * [Using a third-party installer](#installer)
@@ -25,15 +26,15 @@ Another option is [downloading Dart manually](/downloads/archive/).
 With [Chocolatey](https://chocolatey.org/),
 installing Dart is easy.
 
-The **dart** package contains the [Dart SDK](/tools/sdk/),
+The **dart** package contains the [Dart SDK]({{site.dart-vm}}/tools/sdk),
 which includes the Dart VM, libraries, and command-line Dart tools such as
-[dart](/tools/dart-vm/),
+[dart]({{site.dart-vm}}/tools/dart-vm),
 [dartanalyzer](https://github.com/dart-lang/sdk/tree/master/pkg/analyzer_cli),
 [pub](/tools/pub/),
 and [dartdoc](https://github.com/dart-lang/dartdoc#dartdoc).
 Optionally, you can add one more tool:
 
-* [Dartium](/tools/dartium/):
+* [Dartium]({{site.dart4web}}/tools/dartium):
   A special build of Chromium that includes a Dart VM.
   Use it to interactively test and debug Dart web apps
   without first compiling them to JavaScript.

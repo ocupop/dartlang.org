@@ -423,12 +423,12 @@ the error.
 Read the following documentation for more details on using Futures
 and asynchronous programming in Dart:
 
-* [Futures and Error Handling](/articles/futures-and-error-handling/),
+* [Futures and Error Handling](/articles/futures-and-error-handling),
   an article that starts where this tutorial ends
-* [The Event Loop and Dart](/articles/event-loop/),
+* [The Event Loop and Dart]({{site.dart-vm}}/articles/event-loop),
   an article that describes how to schedule tasks using Futures
 * [Asynchrony support](/language/language-tour#asynchrony),
-  a section in the [language tour](/language/languagetour/)
+  a section in the [language tour](/language/language-tour)
 * [Future API reference](http://api.dartlang.org/dart_async/Future.html)
 
 ## What next? {#what-next}

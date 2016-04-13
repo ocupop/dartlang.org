@@ -1,10 +1,12 @@
 ---
 reference: "https://www.dartlang.org/articles/event-loop/"
+
 layout: article
 title: "The Event Loop and Dart"
 description: "Learn how Dart handles the event queue and microtask queue, so you can write better asynchronous code with fewer surprises."
 permalink: /dart-vm/articles/event-loop
-toc: true
+date: 2013-09-30
+updated: 2013-10-22
 ---
 
 {% include breadcrumbs.html %}
@@ -35,8 +37,8 @@ Dart apps and software written in other languages.
 </aside>
 
 Before reading this article,
-you should be familiar with the basics of using
-[Future-based APIs](/articles/using-future-based-apis/).
+you should be familiar with the basics of
+[Futures and Error Handling]({{site.dartlang}}/articles/futures-and-error-handling).
 
 ## Basic concepts
 
@@ -388,11 +390,6 @@ For example, you might use a separate isolate
 for each piece of functionality,
 or when you need to ensure that data isn't shared.
 
-<!-- Obsolete link. Replace it one day when better isolate doc exists.
-See [dart:isolate - Concurrency with Isolates](/docs/dart-up-and-running/contents/ch03.html#ch03-dartisolate---concurrency-with-isolates)
-for more information and examples of using isolates.
--->
-
 ## Test your understanding
 
 Now that you’ve read all about scheduling tasks,
@@ -604,9 +601,8 @@ create additional isolates or workers.
 
 As you write asynchronous code, you might find these resources helpful:
 
-* [Using Future Based APIs](/articles/using-future-based-apis/)
-* [Futures and Error Handling](/articles/futures-and-error-handling/)
-* [dart:async - Asynchronous Programming](/docs/dart-up-and-running/ch03.html#dartasync---asynchronous-programming) section of the library tour
+* [Futures and Error Handling]({{site.dartlang}}/articles/futures-and-error-handling)
+* [dart:async - Asynchronous Programming](/language/language-tour#dartasync---asynchronous-programming) section of the library tour
 * [dart:async API reference](http://api.dartlang.org/dart_async.html)
 
 {% comment %}

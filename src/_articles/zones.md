@@ -5,6 +5,7 @@ layout: article
 type: libraries
 title: "Zones"
 description: "Manage your asynchronous code: handle uncaught errors, override behavior (such as printing and scheduling tasks), and more."
+date: 2014-03-03
 header:
   css: ["styles.css"]
 ---
@@ -746,7 +747,7 @@ that you can use for functionality such as profiling.
 
 ### More resources
 
-[The Event Loop and Dart](/articles/event-loop/)
+[The Event Loop and Dart]({{site.dart-vm}}/articles/event-loop)
 : Learn more about scheduling tasks
   using Future, Timer, and `scheduleMicrotask()`.
 

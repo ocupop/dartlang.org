@@ -95,7 +95,7 @@ in the GitHub help for more information.
 The `.packages` file contains a list of dependencies used by your application.
 Directories named `packages/` contain symlinks specific to your machine.
 Users of your code should generate their own packages information
-using [pub get](/tools/pub/get-started.html#installing-packages).
+using [pub get](/tools/pub/get-started#installing-packages).
 
 {% include coming-release.html %}
 
@@ -125,4 +125,4 @@ which provide source maps from JavaScript to Dart
 that make debugging easier.
 For more information on generating and debugging
 JavaScript source for Dart apps, see the
-[dart2js documentation](/tools/dart2js/).
+[dart2js documentation]({{site.dart4web}}/tools/dart2js).

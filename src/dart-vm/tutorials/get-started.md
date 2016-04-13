@@ -46,8 +46,8 @@ At the very least, you need the Dart SDK, which contains all of
 the tools and libraries that you need for basic Dart development.
 You may also want an IDE or code editor; this tutorial uses WebStorm.
 
-* [Get the Dart SDK](/dart-vm/downloads/)
-* Recommended: [Get WebStorm](dart4web.org/tools/webstorm/)
+* [Get the Dart SDK]({{site.dart-vm}}/downloads/)
+* Recommended: [Get WebStorm]({{site.dart4web}}/tools/webstorm)
 
 ## What did you get? {#what-did-you-get}
 
@@ -166,7 +166,7 @@ Launch WebStorm. This brings up a "Welcome to Webstorm" dialog.
 If this is the first time you have run WebStorm, you will
 need to set the path to the SDK.
 You can find the instructions at
-[Configuring Dart support](/tools/webstorm/#configuring-dart-support).
+[Configuring Dart support]({{site.dart4web}}/tools/webstorm#configuring-dart-support).
 </li>
 
 <li markdown="1">
@@ -322,7 +322,7 @@ with words separated by underscores (`_`).
 
 <ul>
   <li>
-    The <a href="/tools/webstorm/">WebStorm</a> page
+    The <a href="{{site.dart4web}}/tools/webstorm">WebStorm</a> page
     provides more information about this tool.
   </li>
   <li>
@@ -345,6 +345,6 @@ with words separated by underscores (`_`).
   and open `dart-tutorials-samples-master` in WebStorm.
 
 * The next tutorial,
-  [Write Command-Line Apps](/dart-vm/tutorials/cmdline),
+  [Write Command-Line Apps](cmdline),
   describes how to build command-line applications.
 

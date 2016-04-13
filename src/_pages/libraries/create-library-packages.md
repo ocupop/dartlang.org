@@ -157,7 +157,7 @@ top of the package.
 If you create any command-line tools intended for public consumption,
 place those in the `bin` directory, which is public.
 Enable running a tool from the command line, using
-[`pub global activate`](/pub/cmd/pub-global#activating-a-package).
+[`pub global activate`](/tools/pub/cmd/pub-global#activating-a-package).
 Listing the tool in the
 [`executables` section](/tools/pub/pubspec#executables)
 of the pubspec allows a user to run it directly without calling
@@ -182,7 +182,7 @@ structure.
 You can generate API docs for your library using
 the [dartdoc](https://github.com/dart-lang/dartdoc#dartdoc) tool.
 Dartdoc parses the source looking for
-[documentation comments](/effective-dart/documentation/#doc-comments),
+[documentation comments](/guides/effective-dart/documentation/#doc-comments),
 which use the `///` syntax:
 
 {% prettify dart %}
@@ -223,7 +223,7 @@ The service watches the site, generating new docs to
 Before publishing your package, run the dartdoc tool manually to
 make sure that your docs generate successfully and look as expected.
 If your docs don't appear on dartdocs.org, check
-[dartdocs.org/failed](https://www.dartdocs.org/failed/index)
+[dartdocs.org/failed](https://www.dartdocs.org/failed/index.html)
 to learn what went wrong.
 
 To minimize the possibility of broken links as version numbers change,

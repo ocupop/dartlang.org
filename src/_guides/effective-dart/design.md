@@ -56,7 +56,7 @@ productive.
 Unless the abbreviation is more common than the unabbreviated term, don't
 abbreviate. If you do abbreviate, [capitalize them correctly][caps].
 
-[caps]: /effective-dart/style/#do-capitalize-acronyms-and-abbreviations-longer-than-two-letters-like-words
+[caps]: /guides/effective-dart/style/#do-capitalize-acronyms-and-abbreviations-longer-than-two-letters-like-words
 
 <div class="good">
 {% prettify dart %}
@@ -525,7 +525,7 @@ constructors let you construct instances of subclasses or
 subinterfaces when appropriate.
 
 Still, some methods that technically create a new object don't feel
-"constructor-like". For example, [`Uri.parse()`](uri.parse) is a static method
+"constructor-like". For example, [`Uri.parse()`][uri.parse] is a static method
 even though it creates a new URI from the given arguments. Likewise, classes
 implementing the [Builder pattern][] may read better using static methods.
 
