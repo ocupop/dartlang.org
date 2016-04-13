@@ -9,7 +9,7 @@ toc: false
 
 # {{ page.title }}
 
-When you [download]({{site.dart-vm}}/downloads/) the
+When you [download]({{site.dart_vm}}/downloads/) the
 [Dart SDK](sdk), you get all the command line tools that you
 need to write Dart scripts.
 

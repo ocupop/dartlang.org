@@ -46,7 +46,7 @@ At the very least, you need the Dart SDK, which contains all of
 the tools and libraries that you need for basic Dart development.
 You may also want an IDE or code editor; this tutorial uses WebStorm.
 
-* [Get the Dart SDK]({{site.dart-vm}}/downloads/)
+* [Get the Dart SDK]({{site.dart_vm}}/downloads/)
 * Recommended: [Get WebStorm]({{site.dart4web}}/tools/webstorm)
 
 ## What did you get? {#what-did-you-get}

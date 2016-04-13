@@ -12,7 +12,7 @@ toc: true
 # {{ page.title }}
 
 [Pub](/tools/pub/) is one of the tools in the
-[Dart SDK]({{site.dart-vm}}/tools/sdk).
+[Dart SDK]({{site.dart_vm}}/tools/sdk).
 
 You can use pub through an IDE, such as WebStorm, or through the
 `pub` command-line app, which lives inside the `bin` directory of the Dart SDK.

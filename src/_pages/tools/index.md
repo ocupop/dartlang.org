@@ -53,7 +53,7 @@ and available as open source.
 
 Each Dart technology has its own SDK.
 If you are developing for the web, or writing Dart scripts or servers,
-you'll want to download the [standalone Dart VM]({{site.dart-vm}}/downloads/).
+you'll want to download the [standalone Dart VM]({{site.dart_vm}}/downloads/).
 If you are developing for mobile, see
 [Flutter Setup]({{site.flutter}}/setup).
 
@@ -80,7 +80,7 @@ Consult the tools page for your technology for further details.
 
 * `dart`
 : To manually run the Dart VM, you'll want to use the
-  [dart]({{site.dart-vm}}/tools/dart-vm) command.
+  [dart]({{site.dart_vm}}/tools/dart-vm) command.
   IDEs that support Dart,
   and some of the `pub` commands, use this
   command behind-the-scenes to execute Dart scripts.
@@ -105,5 +105,5 @@ Consult the tools page for your technology for further details.
   to learn how to manually run the code formatter for the Dart VM.
 
 Also see the tools documentation for your Dart technology.
-[Dart VM]({{site.dart-vm}}/tools/) |
+[Dart VM]({{site.dart_vm}}/tools/) |
 [Flutter]({{site.flutter}}/setup/)

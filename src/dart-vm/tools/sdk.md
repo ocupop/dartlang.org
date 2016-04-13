@@ -24,7 +24,7 @@ is a great way to learn how to write a simple app in the Dart
 language, once you are ready to start doing real-world development,
 you need the Dart SDK.
 
-[Download the Dart SDK]({{site.dart-vm}}/downloads/).
+[Download the Dart SDK]({{site.dart_vm}}/downloads/).
 
 ## What's in the SDK
 

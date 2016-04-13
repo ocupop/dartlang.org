@@ -425,7 +425,7 @@ and asynchronous programming in Dart:
 
 * [Futures and Error Handling](/articles/futures-and-error-handling),
   an article that starts where this tutorial ends
-* [The Event Loop and Dart]({{site.dart-vm}}/articles/event-loop),
+* [The Event Loop and Dart]({{site.dart_vm}}/articles/event-loop),
   an article that describes how to schedule tasks using Futures
 * [Asynchrony support](/language/language-tour#asynchrony),
   a section in the [language tour](/language/language-tour)

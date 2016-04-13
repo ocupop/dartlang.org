@@ -1365,7 +1365,7 @@ Also see these articles and tutorials:
 
 -   [Futures and Error Handling](/articles/futures-and-error-handling)
 
--   [The Event Loop and Dart]({{site.dart-vm}}/articles/event-loop)
+-   [The Event Loop and Dart]({{site.dart_vm}}/articles/event-loop)
 
 -   [Asynchronous Programming: Streams](/tutorials/streams)
 

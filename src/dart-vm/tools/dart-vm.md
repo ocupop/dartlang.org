@@ -26,7 +26,7 @@ dart test.dart
 **Note:** You can't use `dart` to run web apps&mdash;apps
 that include `dart:html`, or that depend on libraries
 that use the browser environment. For more information, see
-[About Dart applications]({{site.dart-vm}}/tutorials/get-started#what-is-app).
+[About Dart applications]({{site.dart_vm}}/tutorials/get-started#what-is-app).
 </aside>
 
 ### Options {#options}
@@ -109,7 +109,7 @@ You can also generate snapshots:
 `--snapshot=<filename>`
 : Generates a snapshot in the specified file. For information
   on generating and running snapshots, see the article
-  [Snapshots in Dart]({{site.dart-vm}}/articles/snapshots).
+  [Snapshots in Dart]({{site.dart_vm}}/articles/snapshots).
 
 ## Enabling checked mode {#enabling-checked-mode}
 

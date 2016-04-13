@@ -22,7 +22,7 @@ when new versions are released.
 
 Other options are:
 
-* [Downloading Dart manually]({{site.dart-vm}}/downloads/archive/)
+* [Downloading Dart manually]({{site.dart_vm}}/downloads/archive/)
 * [Compiling Dart from source](#compiling)
 
 

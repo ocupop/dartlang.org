@@ -47,7 +47,7 @@ A mobile app that runs on **both** iOS and Android from a single codebase?
 : Check out [Flutter](https://flutter.io/).
 
 A command line application? A server?
-: Check out the [standalone Dart VM]({{site.dart-vm}}).
+: Check out the [standalone Dart VM]({{site.dart_vm}}).
 
 An app to control a thermostat or some other device from the Internet of Things (IoT)?
 : Check out [Dartino](https://github.com/dartino).
@@ -58,9 +58,9 @@ Once you're ready to go beyond DartPad, you'll need to download
 an SDK and tools for the platform where you want to code.
 
 * For Dart on the web,
-  download the [Dart SDK and Dartium]({{site.dart-vm}}/downloads/).
+  download the [Dart SDK and Dartium]({{site.dart_vm}}/downloads/).
 * For standalone applications, like servers and scripts,
-  download the [Dart SDK]({{site.dart-vm}}/downloads/).
+  download the [Dart SDK]({{site.dart_vm}}/downloads/).
 * For Dart on mobile,
   download [Flutter](https://flutter.io/).
 * For embedded Dart,
