@@ -5,6 +5,7 @@ layout: page
 permalink: /tools/dartpad
 title: "DartPad"
 description: "The tool that lets you interactively play with Dart in a browser."
+toc: true
 ---
 
 # {{ page.title }}
@@ -14,7 +15,7 @@ allows you to play with the Dart language features in any modern browser.
 
 It's easy to get started!
 
-## Step 1: Open DartPad, and run some samples {#step-1-open-and-run}
+## Open DartPad, and run some samples {#step-1-open-and-run}
 
 <ol markdown="1">
   <li markdown="1">
@@ -54,7 +55,7 @@ It's easy to get started!
   </li>
 </ol>
 
-## Step 2: Create a command-line app {#step-2-server}
+## Create a command-line app {#step-2-server}
 
 To create a simple command-line app, use **New Pad**.
 
@@ -102,7 +103,7 @@ for (var char in 'hello'.split('')) {
 </li>
 </ol>
 
-## Step 3: Create a web app {#step-3-web}
+## Create a web app {#step-3-web}
 
 To create a simple web app, start with the Hello World HTML sample.
 
