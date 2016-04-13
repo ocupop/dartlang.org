@@ -1,0 +1,20 @@
+- title:  Category
+  label:
+  permalink: /articles
+  children:
+    - title: An Article
+      label:
+      permalink: /articles/an-article
+    - title: Another Article
+      label:
+      permalink: /articles/another-article
+- title:  Another Category
+  label:
+  permalink: /articles
+  children:
+    - title: An Article
+      label:
+      permalink: /articles/an-article
+    - title: Another Article
+      label:
+      permalink: /articles/another-article

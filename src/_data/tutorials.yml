@@ -1,0 +1,9 @@
+- title: "Asynchronous Programming: Futures"
+  label:
+  permalink: /tutorials/futures
+- title: "Install Shared Packages"
+  label:
+  permalink: /tutorials/shared-pkgs
+- title: "Asynchronous Programming: Streams"
+  label:
+  permalink: /tutorials/streams

@@ -1,11 +1,16 @@
-- label: Effective Dart
-  url: /guides/effective-dart
+- title: Effective Dart
+  label: 
+  permalink: /guides/effective-dart
   children:
-    - label: Design
-      url: /guides/effective-dart/design
-    - label: Usage
-      url: /guides/effective-dart/usage
-    - label: Documentation
-      url: /guides/effective-dart/documentation
-    - label: Style
-      url: /guides/effective-dart/style
+    - title: Design
+      label:
+      permalink: /guides/effective-dart/design
+    - title: Usage
+      label:
+      permalink: /guides/effective-dart/usage
+    - title: Documentation
+      label:
+      permalink: /guides/effective-dart/documentation
+    - title: Style
+      label:
+      permalink: /guides/effective-dart/style
