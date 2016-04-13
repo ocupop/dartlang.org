@@ -1,22 +1,31 @@
 <ul>
   {% for link in linklist  %}
     {% if link.children == empty %}
-      <li>
+      <li {% if page.url == link.permalink %}class="dropdown"{% endif %}>
         <a href="{{ link.permalink }}" title="{{ link.title }}">
           {% if link.label %}{{ link.label }}{% else %}{{ link.title }}{% endif %}
         </a>
+        {% if page.url == link.permalink %}
+          {{ page.content | toc_only  }}
+        {% endif %}
       </li>
     {% else %}
       <li class="dropdown">
         <a href="{{ link.permalink }}" title="{{ link.title }}">
           {% if link.label %}{{ link.label }}{% else %}{{ link.title }}{% endif %}
         </a>
+        {% if page.url == link.permalink %}
+          {{ page.content | toc_only  }}
+        {% endif %}
         <ul class="dropdown-menu">
           {% for child in link.children %}
-            <li>
+            <li {% if page.url == link.permalink %}class="dropdown"{% endif %}>
               <a href="{{ child.permalink }}" title="{{ child.title }}">
                 {% if child.label %}{{ child.label }}{% else %}{{ child.title }}{% endif %}
               </a>
+              {% if page.url == child.permalink %}
+                {{ content | toc_only  }}
+              {% endif %}
             </li>
           {% endfor %}
         </ul>
