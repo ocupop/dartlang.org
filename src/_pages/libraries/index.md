@@ -3,6 +3,7 @@ reference: new page
 
 layout: page
 permalink: /libraries/
+toc: true
 ---
 
 Dart programs rely on libraries.

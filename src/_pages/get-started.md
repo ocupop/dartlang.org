@@ -3,6 +3,7 @@ reference: new page
 
 layout: page
 permalink: /get-started
+toc: true
 ---
 
 # Get Started

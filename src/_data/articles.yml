@@ -1,20 +1,41 @@
-- title:  Category
+- title:  <b>Language Details</b>
   label:
   permalink: /articles
   children:
-    - title: An Article
+    - title: Mixins in Dart
       label:
-      permalink: /articles/an-article
-    - title: Another Article
-      label:
-      permalink: /articles/another-article
-- title:  Another Category
+      permalink: /articles/mixins
+    - title: "Dart Language Asynchrony Support: Phase 1"
+      label: "Asynchrony Support: Async Await"
+      permalink: /articles/await-async
+    - title: "Dart Language Asynchrony Support: Phase 2"
+      label: "Asynchrony Support: Beyond Async"
+      permalink: /articles/beyond-async
+    - title: Emulating Functions in Dart
+      label: Emulating Functions
+      permalink: /articles/emulating-functions
+    - title: Optional Types in Dart
+      label: Optional Types
+      permalink: /articles/optional-types
+- title:  <b>Libraries and APIs</b>
   label:
   permalink: /articles
   children:
-    - title: An Article
+    - title: Converters and Codecs
       label:
-      permalink: /articles/an-article
-    - title: Another Article
+      permalink: /articles/converters-and-codecs
+    - title: Serialization in Dart
+      label: Serialization
+      permalink: /articles/serialization
+    - title: Zones
       label:
-      permalink: /articles/another-article
+      permalink: /articles/zones
+    - title: Broadcast Streams
+      label:
+      permalink: /articles/broadcast-streams
+    - title: Reflection in Dart with Mirrors
+      label: Reflection
+      permalink: /articles/reflection-with-mirrors
+    - title: Futures and Error Handling
+      label: 
+      permalink: /articles/futures-and-error-handling
