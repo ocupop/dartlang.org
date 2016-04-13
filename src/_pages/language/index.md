@@ -3,6 +3,7 @@ reference: new page
 
 layout: page
 permalink: /language/
+toc: true
 ---
 
 For a walk through of all of Dart's major language features, see
