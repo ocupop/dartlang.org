@@ -1,11 +1,9 @@
 ---
 reference: "https://www.dartlang.org/docs/dart-up-and-running/ch02.html"
 
-layout: page
+layout: guide
 title: "A Tour of the Dart Language"
-permalink: /language/language-tour
-description: "Read Chapter 2, A Tour of the Dart Language of Dart (from Dart: Up and Running, published by O'Reilly)."
-toc: true
+description: "A tour of all of the major Dart language features."
 ---
 
 # {{ page.title }}
@@ -531,7 +529,7 @@ const validConstString = '$aConstNum $aConstBool $aConstString';
 {% endprettify %}
 
 For more information on using strings, see
-[Strings and regular expressions](/libraries/library-tour#strings-and-regular-expressions).
+[Strings and regular expressions](library-tour#strings-and-regular-expressions).
 
 
 ### Booleans {#booleans}
@@ -654,7 +652,7 @@ var constantList = const [1, 2, 3];
 
 The List type has many handy methods for manipulating lists. For more
 information about lists, see [Generics](#generics) and
-[Collections](/libraries/library-tour#collections).
+[Collections](library-tour#collections).
 
 
 ### Maps {#maps}
@@ -750,7 +748,7 @@ final constantMap = const {
 
 For more information about maps, see
 [Generics](#generics) and
-[Maps](/libraries/library-tour#maps).
+[Maps](library-tour#maps).
 
 ### Runes {#runes}
 {:.no_toc}
@@ -835,7 +833,7 @@ To get the symbol for an identifier, use a symbol literal, which is just
 Symbol literals are compile-time constants.
 
 For more information on symbols, see
-[dart:mirrors - reflection](/libraries/library-tour#dartmirrors---reflection).
+[dart:mirrors - reflection](library-tour#dartmirrors---reflection).
 
 
 ## Functions {#functions}
@@ -1765,7 +1763,7 @@ candidates.forEach((candidate) => candidate.interview());
 {% endprettify %}
 
 Iterable classes such as List and Set also support the `for-in` form of
-[iteration](/libraries/library-tour#iteration):
+[iteration](library-tour#iteration):
 
 <!-- ch02/flow_for_loops.dart -->
 {% prettify dart %}
@@ -2128,7 +2126,7 @@ try {
 }
 {% endprettify %}
 
-Learn more by reading the [Exceptions](/libraries/library-tour#exceptions) section.
+Learn more by reading the [Exceptions](library-tour#exceptions) section.
 
 
 ## Classes {#classes}
@@ -2741,7 +2739,7 @@ main() {
 
 If you override `==`, you should also override Object's `hashCode` getter.
 For an example of overriding `==` and `hashCode`, see
-[Implementing map keys](/libraries/library-tour#implementing-map-keys).
+[Implementing map keys](library-tour#implementing-map-keys).
 
 For more information on overriding, in general, see
 [Extending a class](#extending-a-class).
@@ -3457,7 +3455,7 @@ Keep in mind the following when you use deferred loading:
   both the deferred library and the importing file.
 * Dart implicitly inserts `loadLibrary()` into the namespace that you define
   using <code>deferred as <em>namespace</em></code>.
-  The `loadLibrary()` function returns a [Future](/libraries/library-tour#future).
+  The `loadLibrary()` function returns a [Future](library-tour#future).
 
 ### Implementing libraries {#implementing-libraries}
 {:.no_toc}
@@ -3485,13 +3483,13 @@ When you need to use a value represented by a Future,
 you have two options:
 
 * Use `async` and `await`
-* Use the [Future API](/libraries/library-tour#future)
+* Use the [Future API](library-tour#future)
 
 Similarly, when you need to get values from a Stream,
 you have two options:
 
 * Use `async` and an _asynchronous for loop_ (`await for`)
-* Use the [Stream API](/libraries/library-tour#stream)
+* Use the [Stream API](library-tour#stream)
 
 Code that uses `async` and `await` is asynchronous,
 but it looks a lot like synchronous code.
@@ -3650,7 +3648,7 @@ main() async {
 {% endprettify %}
 
 For more information about asynchronous programming, see the
-[dart:async](/libraries/library-tour#dartasync---asynchronous-programming)
+[dart:async](library-tour#dartasync---asynchronous-programming)
 section of the library tour.
 Also see the articles
 [Dart Language Asynchrony Support: Phase 1](/articles/await-async/) and

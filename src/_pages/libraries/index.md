@@ -14,7 +14,7 @@ collections, date, and time, and `dart:async` which supports
 asynchronous programming with classes like Future and Stream.
 
 To learn more about the core libraries, see
-[A Tour of the Dart Libraries](library-tour).
+[A Tour of the Dart Libraries](/guides/library-tour).
 If you are developing for the desktop or with the standalone Dart VM,
 you might want to bookmark the API reference docs on
 [api.dartlang.org](https://api.dartlang.org).

@@ -5,10 +5,8 @@ layout: page
 title: 'Who Uses Dart'
 permalink: /community/who-uses-dart
 description: 'Companies and business that use Dart.'
-
-
+toc: true
 snippet_img: images/who-uses-dart.png
-
 ---
 
 # {{ page.title }}
@@ -16,22 +14,40 @@ snippet_img: images/who-uses-dart.png
 In no particular order, here are some companies and businesses that use Dart.
 If you build production software with Dart, and want
 to be included in this list, please open a
-[pull request](https://github.com/dart-lang/www.dartlang.org/blob/master/src/site/community/who-uses-dart.markdown). Thanks!
+[pull request](https://github.com/dart-lang/www.dartlang.org/blob/master/src/site/community/who-uses-dart.markdown).
+Thanks!
+
+[Google AdWords](http://adwords.blogspot.com/2016/03/redesigning-adwords-for-the-mobile-first-marketer.html)
+: xxx.  (Text, Filip?)
+  For more information,
+  see an interview with the lead developer on
+  [news.dartlang.org](http://news.dartlang.org/2016/03/the-new-adwords-ui-uses-dart-we-asked.html).
+
+[Wrike](https://www.wrike.com/)
+: Outcollaborate. Wrike combines real-time collaboration with easy-to-use
+  project management so your team can accomplish more.
+  Built with Dart, <nobr>Angular 2</nobr>.
 
 [Workiva](https://www.workiva.com/)
-: Next generation client applications for our Wdesk productivity suite are built with Dart. Check out our [OSS contributions](https://pub.dartlang.org/search?q=workiva) as well.
+: Next generation client applications for our Wdesk productivity suite are
+  built with Dart. Check out our
+  [OSS contributions](https://pub.dartlang.org/search?q=workiva) as well.
 
 [Pick & School](https://www.picknschool.com)
 : An online catalog of studies in French higher education.
 
 [AdSense performance reports](http://adsense.blogspot.co.uk/2015/04/new-adsense-performance-reports.html)
-: With the redesigned Performance tab, you now have more control and flexibility, allowing you to better understand your AdSense earnings and performance.
+: With the redesigned Performance tab, you now have more control and flexibility,
+  allowing you to better understand your AdSense earnings and performance.
 
 [Security Monkey from Netflix](https://github.com/Netflix/security_monkey)
-: Security Monkey monitors policy changes and alerts on insecure configurations in an AWS account.
+: Security Monkey monitors policy changes and alerts on insecure configurations
+  in an AWS account.
 
 [EasyInsure](https://www.easy.insure)
-: EasyInsure is a Web application that allows searching the database of 190K+ insurance agents, see their ratings and specialities, rate the agents, and get instant insurance quotes online.
+: EasyInsure is a Web application that allows searching the database of 190K+
+  insurance agents, see their ratings and specialities, rate the agents,
+  and get instant insurance quotes online.
 
 [DartVoid](http://www.dartvoid.com)
 : Application hosting platform built and optimized for Dart.
@@ -120,10 +136,12 @@ Google internal customer support tool
 : Built with polymer.dart.
 
 [Quire](https://quire.io/)
-: A simple, collaborative, multi-level task management tool with both the client and server written in Dart.
+: A simple, collaborative, multi-level task management tool with both the
+  client and server written in Dart.
 
 [DGLogik](http://www.dglogik.com/)
-: IOT Application Platform, DGLux5, provides a visual drag and drop rapid application development environment.
+: IOT Application Platform, DGLux5, provides a visual drag and drop rapid
+  application development environment.
 
 Adwords for video
 : The application that advertisers use to promote video ads on YouTube
@@ -135,7 +153,8 @@ Google internal tool for marketing
 : Built with AngularDart.
 
 [Prime APPcatalog](http://www.primeapp.it/en)
-: An interactive product catalog for tablets and smartphones. Built with Dart, Sencha Touch.
+: An interactive product catalog for tablets and smartphones. Built with Dart,
+  Sencha Touch.
 
 [Centryl](http://www.centryl.com)
 : A cloud based ERP/CRM system built both server and client side with Dart.
@@ -144,22 +163,29 @@ Google internal tool for marketing
 : An enterprise tool to manage drivers/couriers, built with AngularDart.
 
 [SonarDesign](http://www.sonardesign.com)
-: A high-performance, HTML5 web app authoring and distribution platform built on and made for the modern web.
+: A high-performance, HTML5 web app authoring and distribution platform built
+  on and made for the modern web.
 
 [Lumo](http://lumo.sonardesign.com)
-: An online presentation service that allows you to create, present, and share presentations on any device.
+: An online presentation service that allows you to create, present,
+  and share presentations on any device.
 
 [Children of Ur](http://www.childrenofur.com/)
-: A community reboot of the closed massively multiplayer game called [Glitch](http://glitchthegame.com).
+: A community reboot of the closed massively multiplayer game called
+  [Glitch](http://glitchthegame.com).
 
 [Issue Mover for GitHub](https://github-issue-mover.appspot.com/)
-: A tool that makes it easy to move issues between GitHub repos. Uses Dart on both the Client and Server side and is hosted on Google App Engine.
+: A tool that makes it easy to move issues between GitHub repos.
+  Uses Dart on both the Client and Server side and is hosted on
+  Google App Engine.
 
 [CreeperHost](http://www.creeperhost.net/)
-: Web based tools for managing virtual servers and the services running on them. As well as some internal tools and processes.
+: Web based tools for managing virtual servers and the services running on them.
+  As well as some internal tools and processes.
 
 [DAVID](https://github.com/ins0m/DAVID)
-: Dynamic Analysis and Visualization of Interconnected Data, a tool for interactive visual exploration of complex linked data.
+: Dynamic Analysis and Visualization of Interconnected Data,
+  a tool for interactive visual exploration of complex linked data.
 
 [Tisíc knih](http://tisicknih.cz/)
 : Czech book recommendation engine based on library data. Built with polymer.dart.
@@ -171,7 +197,8 @@ Google internal tool for marketing
 : Customer service messaging platform using Dart on the server.
 
 [Symmetry Labs](http://app.symmetry-labs.com/)
-: A modular LED lighting fixture that can be configured by software written in Dart.
+: A modular LED lighting fixture that can be configured by software written
+  in Dart.
 
 [Ven Chat](https://www.ven.chat)
 : A chat app for Android powered by a Dart backend.

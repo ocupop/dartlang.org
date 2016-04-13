@@ -17,13 +17,9 @@ points:
   - "Use an IDE (such as WebStorm) or code editor to create your app."
   - "All Dart apps have a main() function."
   - "Dart supports top-level functions."
-
-tutorial:
-  id: get-started
-
 ---
 
-# {{page.title}}
+# {{ page.title }}
 
 ### Get Dart. Run an app.
 

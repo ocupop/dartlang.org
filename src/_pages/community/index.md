@@ -5,123 +5,93 @@ layout: page
 permalink: /community/
 title: "Support and Community"
 description: "Communities, mailing lists, and bug databases for the Dart project."
+toc: true
 ---
 
-<h1> {{ page.title }} </h1>
+# {{ page.title }}
 
-<p>
 Track the Dart project and join the conversation in a variety of ways.
-</p>
 
-<div class="row">
-  <div class="col-md-6">
+## Join the conversation
 
-    <h2> Join the conversation </h2>
+Dart is an open source project, and we look forward to hearing from you.
 
-    <p>
-    Dart is an open source project, and we look forward to hearing from you.
-    </p>
+#### General how-to questions
 
-    <h4> General how-to questions </h4>
-    <ul>
-      <li><a href="http://stackoverflow.com/tags/dart">StackOverflow</a></li>
-    </ul>
+* [StackOverflow](http://stackoverflow.com/tags/dart)
 
-    <h4> Angular Dart, Polymer.dart, dart:html </h4>
-    <ul>
-      <li><a href="https://groups.google.com/a/dartlang.org/forum/#!forum/web">Discussion</a></li>
-      <li><a href="http://stackoverflow.com/tags/dart-polymer">How-to questions</a></li>
-    </ul>
+#### Angular Dart, Polymer.dart, dart:html
 
-    <h4> Server-side Dart </h4>
-    <ul>
-      <li><a href="https://groups.google.com/a/dartlang.org/forum/?fromgroups#!forum/cloud">Discussion</a>
-      </li>
-    </ul>
+* [Discussion](https://groups.google.com/a/dartlang.org/forum/#!forum/web)
+* [How-to questions](http://stackoverflow.com/tags/dart-polymer)
 
-    <h4> Dart plugin for JetBrains (WebStorm, IntelliJ) </h4>
-    <ul>
-      <li><a href="https://groups.google.com/a/dartlang.org/forum/#!forum/jetbrains-dart-plugin-discuss">Questions</a></li>
-    </ul>
+#### Server-side Dart
 
-    <h4> Dart VM </h4>
-    <ul>
-      <li><a href="https://groups.google.com/a/dartlang.org/forum/#!forum/vm-dev">Development</a></li>
-    </ul>
+* [Discussion](https://groups.google.com/a/dartlang.org/forum/?fromgroups#!forum/cloud)
 
-    <h4> dart2js </h4>
-    <ul>
-      <li><a href="https://groups.google.com/a/dartlang.org/forum/#!forum/compiler-dev">Development</a></li>
-    </ul>
+#### Dart plugin for JetBrains (WebStorm, IntelliJ)
 
-    <h4> Dart Analyzer </h4>
-    <ul>
-      <li><a href="https://groups.google.com/a/dartlang.org/forum/#!forum/analyzer-discuss">Discussion</a></li>
-    </ul>
+* [Questions](https://groups.google.com/a/dartlang.org/forum/#!forum/jetbrains-dart-plugin-discuss)
 
-    <h4> General </h4>
-    <ul>
-      <li><a href="https://groups.google.com/a/dartlang.org/forum/?fromgroups#!forum/misc">Discussion</a></li>
-      <li><a href="https://plus.google.com/+dartlang">Google+ page</a></li>
-      <li><a href="https://twitter.com/dart_lang">Twitter</a></li>
-      <li><a href="http://webchat.freenode.net/?channels=dart">IRC</a></li>
-      <li><a href="http://dartbug.com/new">Bugs and feature requests</a></li>
-    </ul>
+#### Dart VM
 
-    <h4> Communities </h4>
-    <ul>
-      <li><a href="http://www.reddit.com/r/dartlang/">Reddit</a></li>
-      <li><a href="https://dartlang.slack.com/">Slack</a>
-          (<a href="https://dartlang-slack.herokuapp.com/">register</a>)</li>
-      <li><a href="https://hn.algolia.com/?q=Dart#!/story/forever/0/Dart">Hacker News</a></li>
-      <li><a href="http://g.co/dartisans">Dartisans on Google+</a></li>
-      <li><a href="http://dartosphere.org">Dartosphere blog aggregator</a></li>
-    </ul>
-  </div>
+* [Development](https://groups.google.com/a/dartlang.org/forum/#!forum/vm-dev)
 
-  <div class="col-md-6">
-    <h2> Track the project </h2>
+#### dart2js
 
-    <p>
-    These lists are read only.
-    </p>
+* [Development](https://groups.google.com/a/dartlang.org/forum/#!forum/compiler-dev)
 
-    <ul>
-      <li><a href="https://groups.google.com/a/dartlang.org/forum/?fromgroups#!forum/announce">announce@dartlang.org</a><br>
-      Low traffic announcements of new releases, breaking changes, and other important news. Recommended!</li>
+#### Dart Analyzer
 
-      <li><a href="https://groups.google.com/a/dartlang.org/forum/?fromgroups#!forum/bugs">bugs@dartlang.org</a><br>
-      High-traffic list of all updates and changes from across the main Dart issue tracker.</li>
+* [Discussion](https://groups.google.com/a/dartlang.org/forum/#!forum/analyzer-discuss)
 
-      <li><a href="https://groups.google.com/a/dartlang.org/forum/?fromgroups#!forum/commits">commits@dartlang.org</a><br>
-      High-traffic list of all commits to the main Dart repository.</li>
+#### General
 
-      <li><a href="http://news.dartlang.org">news.dartlang.org</a><br>
-      Official news feed for the Dart project.</li>
+* [Discussion](https://groups.google.com/a/dartlang.org/forum/?fromgroups#!forum/misc)
+* [Google+ page](https://plus.google.com/+dartlang)
+* [Twitter](https://twitter.com/dart_lang)
+* [IRC](http://webchat.freenode.net/?channels=dart)
+* [Bugs and feature requests](http://dartbug.com/new)
 
-      <li><a href="https://groups.google.com/a/dartlang.org/forum/?fromgroups#!forum/reviews">reviews@dartlang.org</a><br>
-      High-traffic list of all comments and code reviews from the main Dart repo.</li>
-    </ul>
+#### Communities
 
-    <h2> Contribute </h2>
+* [Reddit](http://www.reddit.com/r/dartlang/)
+* [Slack](https://dartlang.slack.com/) ([register](https://dartlang-slack.herokuapp.com/))
+* [Hacker News](https://hn.algolia.com/?q=Dart#!/story/forever/0/Dart)
+* [Dartisans on Google+](http://g.co/dartisans)
+* [Dartosphere blog aggregator](http://dartosphere.org)
 
-    <p>
-      Dart is open source.
-      Learn how to
-      <a href="https://github.com/dart-lang/sdk/wiki/Contributing">contribute
-      to the core SDK</a>.
-    </p>
+## Track the project
 
-    <h2> Additional community resources </h2>
+These lists are read only.
 
-    <p>
-     Our wonderful community has provided these
-     (unofficial, unsupported) resources.
-    </p>
+* [announce@dartlang.org](https://groups.google.com/a/dartlang.org/forum/?fromgroups#!forum/announce)<br>
+  Low traffic announcements of new releases, breaking changes,
+  and other important news. Recommended!
 
-    <ul>
-      <li> <a href="http://www.dartlang.cc/support/for-chinese.html">Resources for Chinese developers</a></li>
-      <li> <a href="http://www.dartdocs.org">dartdocs.org documentation for Pub packages</a></li>
-    </ul>
-  </div>
-</div>
+* [bugs@dartlang.org](https://groups.google.com/a/dartlang.org/forum/?fromgroups#!forum/bugs)<br>
+  High-traffic list of all updates and changes from across the main Dart
+  issue tracker.
+
+* [commits@dartlang.org](https://groups.google.com/a/dartlang.org/forum/?fromgroups#!forum/commits)<br>
+  High-traffic list of all commits to the main Dart repository.
+
+* [news.dartlang.org](http://news.dartlang.org)<br>
+  Official news feed for the Dart project.
+
+* [reviews@dartlang.org](https://groups.google.com/a/dartlang.org/forum/?fromgroups#!forum/reviews)<br>
+  High-traffic list of all comments and code reviews from the main
+  Dart repo.
+
+## Contribute
+
+Dart is open source. Learn how to
+[contribute to the core SDK](https://github.com/dart-lang/sdk/wiki/Contributing)
+
+## Additional community resources
+
+Our wonderful community has provided these
+(unofficial, unsupported) resources.
+
+* [Resources for Chinese developers](http://www.dartlang.cc/support/for-chinese.html)
+* [dartdocs.org documentation for Pub packages](http://www.dartdocs.org)

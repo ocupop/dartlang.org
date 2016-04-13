@@ -1,11 +1,9 @@
 ---
 reference: "https://www.dartlang.org/docs/dart-up-and-running/ch03.html"
 
-layout: page
-permalink: /libraries/library-tour
+layout: guide
 title: "A Tour of the Dart Libraries"
-description: "Learn about the major features in Dart's libraries"
-toc: true
+description: "Learn about the major features in Dart's libraries."
 ---
 
 # {{ page.title }}
@@ -91,7 +89,7 @@ the [dart:math section](#dartmath---math-and-random).
 
 A string in Dart is an immutable sequence of UTF-16 code units.
 The language tour has more information about
-[strings](/language/language-tour#strings).
+[strings](language-tour#strings).
 You can use regular expressions (RegExp objects)
 to search within strings and to
 replace parts of strings.
@@ -989,7 +987,7 @@ Future, Stream, and more are in the
 You don't always need to use the Future or Stream APIs directly.
 In 1.9, Dart added language support for asynchronous coding,
 using keywords such as `async` and `await`.
-See [Asynchrony support](/language/language-tour#asynchrony)
+See [Asynchrony support](language-tour#asynchrony)
 in the language tour for details.
 </div>
 
@@ -1071,7 +1069,7 @@ For example, you might call an async function from your function.
 
 For more information on using `await` and related
 Dart language features, see
-[Asynchrony support](/language/language-tour#asynchrony).
+[Asynchrony support](language-tour#asynchrony).
 
 
 #### Basic usage {#basic-usage}
@@ -1241,7 +1239,7 @@ then the second kind of event is never handled.
 
 For more information on using `await` and related
 Dart language features, see
-[Asynchrony support](/language/language-tour#asynchrony).
+[Asynchrony support](language-tour#asynchrony).
 
 
 #### Listening for stream data {#listening-for-stream-data}
@@ -2212,7 +2210,7 @@ main() async {
 
 Use a Stream to read a file, a little at a time.
 You can use either the [Stream API](#stream) or `await for`,
-part of Dart's [asynchrony support](/language/language-tour#asynchrony).
+part of Dart's [asynchrony support](language-tour#asynchrony).
 
 <!-- ch03/readFile.dart -->
 {% prettify dart %}

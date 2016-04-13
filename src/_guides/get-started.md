@@ -1,12 +1,12 @@
 ---
 reference: new page
 
-layout: page
-permalink: /get-started
-toc: true
+layout: guide
+title: Get Started
+description: "xxx"
 ---
 
-# Get Started
+# {{ page.title }}
 
 How do you learn Dart?
 

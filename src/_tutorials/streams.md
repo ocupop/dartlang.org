@@ -453,7 +453,7 @@ and asynchronous programming in Dart.
   an article about creating your own streams
 * [Futures and Error Handling](/articles/futures-and-error-handling/),
   an article that explains how to handle errors using the Future API
-* [Asynchrony support](/language/language-tour#asynchrony),
-  a section in the [language tour](/language/language-tour)
+* [Asynchrony support](/guides/language-tour#asynchrony),
+  a section in the [language tour](/guides/language-tour)
 * [Stream API reference](https://api.dartlang.org/apidocs/channels/stable/dartdoc-viewer/dart:async.Stream)
 

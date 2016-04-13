@@ -1,9 +1,17 @@
-- title: "Asynchronous Programming: Futures"
+- title: <b>Language Details</b>
   label:
-  permalink: /tutorials/futures
-- title: "Asynchronous Programming: Streams"
+  permalink: /articles
+  children:
+    - title: "Asynchronous Programming: Futures"
+      label: 
+      permalink: /tutorials/futures
+    - title: "Asynchronous Programming: Streams"
+      label: 
+      permalink: /tutorials/streams
+- title: <b>Libraries and APIs</b>
   label:
-  permalink: /tutorials/streams
-- title: "Install Shared Packages"
-  label:
-  permalink: /tutorials/shared-pkgs
+  permalink: /articles
+  children:
+    - title: "Install Shared Packages"
+      label:
+      permalink: /tutorials/shared-pkgs

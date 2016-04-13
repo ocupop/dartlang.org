@@ -24,7 +24,8 @@ and points you to further resources.
 For information on _using_ libraries, see
 [Install Shared Packages](/tutorials/shared-pkgs) or the
 language tour's
-[Libraries and visibility](/language/language-tour#libraries-and-visibility) section.
+[Libraries and visibility](/guides/language-tour#libraries-and-visibility)
+section.
 
 ## What makes a library package
 
@@ -235,8 +236,8 @@ dartdocs.org. For example:
 
 Use the following resources to learn more about library packages:
 
-* [Libraries and visibility](/language/language-tour#libraries-and-visibility)
-  in the [language tour](/language/language-tour) covers
+* [Libraries and visibility](/guides/language-tour#libraries-and-visibility)
+  in the [language tour](/guides/language-tour) covers
   using library files.
 * The [pub](/tools/pub) documentation is useful, particularly
   [Pub Package Layout Conventions](/tools/pub/package-layout).

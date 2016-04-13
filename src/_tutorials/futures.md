@@ -92,7 +92,7 @@ To get the value that the Future represents, you have two options:
 ## Async and await {#async-await}
 
 The `async` and `await` keywords are part of the Dart language's
-[asynchrony support](/language/language-tour#asynchrony).
+[asynchrony support](/guides/language-tour#asynchrony).
 They allow you to write asynchronous code that looks like synchronous
 code and doesn't use the Future API.
 
@@ -427,8 +427,8 @@ and asynchronous programming in Dart:
   an article that starts where this tutorial ends
 * [The Event Loop and Dart]({{site.dart_vm}}/articles/event-loop),
   an article that describes how to schedule tasks using Futures
-* [Asynchrony support](/language/language-tour#asynchrony),
-  a section in the [language tour](/language/language-tour)
+* [Asynchrony support](/guides/language-tour#asynchrony),
+  a section in the [language tour](/guides/language-tour)
 * [Future API reference](http://api.dartlang.org/dart_async/Future.html)
 
 ## What next? {#what-next}

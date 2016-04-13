@@ -7,7 +7,7 @@ toc: true
 ---
 
 For a walk through of all of Dart's major language features, see
-[A Tour of the Dart Language](/language/language-tour),
+[A Tour of the Dart Language](/guides/language-tour),
 also referred to as the "language tour".
 
 [Effective Dart](/guides/effective-dart/) is a set of guides

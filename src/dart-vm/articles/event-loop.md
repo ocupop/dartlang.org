@@ -602,7 +602,7 @@ create additional isolates or workers.
 As you write asynchronous code, you might find these resources helpful:
 
 * [Futures and Error Handling]({{site.dartlang}}/articles/futures-and-error-handling)
-* [dart:async - Asynchronous Programming](/language/language-tour#dartasync---asynchronous-programming) section of the library tour
+* [dart:async - Asynchronous Programming](/guides/language-tour#dartasync---asynchronous-programming) section of the library tour
 * [dart:async API reference](http://api.dartlang.org/dart_async.html)
 
 {% comment %}

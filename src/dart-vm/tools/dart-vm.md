@@ -122,7 +122,7 @@ the type system raise exceptions at runtime. In production mode, static type
 annotations have no effect.
 
 Assert statements are also enabled in checked mode. An
-[assert statement](/language/language-tour#assert)
+[assert statement](/guides/language-tour#assert)
 checks a boolean condition, raising an exception if the condition is false.
 Assertions do not run in production mode.
 
