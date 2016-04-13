@@ -19,7 +19,7 @@ You can play with most of these features using
 </div>
 
 Consult the
-[Dart Language Specification](spec) whenever you want
+[Dart Language Specification](/language/spec) whenever you want
 more details about a language feature.
 
 
@@ -3003,7 +3003,7 @@ Enumerated types have the following limits:
 * You can't explicitly instantiate an enum.
 
 For more information, see the
-[Dart Language Specification](spec).
+[Dart Language Specification](/language/spec).
 
 
 ### Adding features to a class: mixins {#adding-features-to-a-class-mixins}
@@ -3653,7 +3653,7 @@ section of the library tour.
 Also see the articles
 [Dart Language Asynchrony Support: Phase 1](/articles/await-async/) and
 [Dart Language Asynchrony Support: Phase 2](/articles/beyond-async/),
-and the [Dart language specification](spec).
+and the [Dart language specification](/language/spec).
 
 ## Callable classes {#callable-classes}
 
@@ -3943,6 +3943,6 @@ your comments, see
 This chapter summarized the commonly used features in the Dart language.
 More features are being implemented, but we expect that they won’t break
 existing code. For more information, see the [Dart Language
-Specification](spec) and
+Specification](/language/spec) and
 [Effective Dart](/guides/effective-dart/).
 

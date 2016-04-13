@@ -22,7 +22,7 @@ and provides recommendations on when to use which.
 
 If you aren't already familiar with Dart streams,
 you can learn the basics from the tutorial
-[Asynchronous Programming: Streams](/docs/tutorials/streams/).
+[Asynchronous Programming: Streams](/tutorials/streams/).
 
 ## Introduction
 

@@ -73,7 +73,7 @@ enchilada/
 
 \** The `pubspec.lock` file exists after you've run `pub get`.
     Leave it out of source control unless your package is an
-    [application package](glossary.html#application-package).
+    [application package](glossary#application-package).
 
 \*** The `packages` directories exist locally after you've run `pub get`.
      Don't check these into source control.
@@ -106,7 +106,7 @@ Once you've run [`pub get`](cmd/pub-get.html),
 [`pub upgrade`](cmd/pub-upgrade.html), or
 [`pub downgrade`](cmd/pub-downgrade.html) on the package, you will also have a
 **lockfile**, named `pubspec.lock`. If your package is an [application
-package](glossary.html#application-package), this will be checked into source
+package](glossary#application-package), this will be checked into source
 control. Otherwise, it won't be.
 
 {% prettify none %}
@@ -177,7 +177,7 @@ enchilada/
     tortilla.dart
 {% endprettify %}
 
-Many packages are [*library packages*](glossary.html#library-package): they
+Many packages are [*library packages*](glossary#library-package): they
 define Dart libraries that other packages can import and use. These public Dart
 library files go inside a directory called `lib`.
 
@@ -216,7 +216,7 @@ Note that only *libraries* should be in `lib`. *Entrypoints*&mdash;Dart scripts
 with a `main()` function&mdash;cannot go in `lib`. If you place a Dart script
 inside `lib`, you will discover that any `package:` imports it contains don't
 resolve. Instead, your entrypoints should go in the appropriate
-[entrypoint directory](glossary.html#entrypoint-directory).
+[entrypoint directory](glossary#entrypoint-directory).
 
 For more information on library packages, see
 [Creating Library Packages](/libraries/create-library-packages).
@@ -300,8 +300,8 @@ styles. In an HTML file in your package, you can add:
 <link href="packages/enchilada/guacamole.css" rel="stylesheet">
 {% endprettify %}
 
-When you run your application using [`pub serve`](cmd/pub-serve), or build
-it to something deployable using [`pub build`](cmd/pub-build), pub
+When you run your application using [`pub serve`]({{site.dart4web}}/tools/pub/pub-serve), or build
+it to something deployable using [`pub build`]({{site.dart4web}}/tools/pub/pub-build), pub
 copies over any referenced assets that your package depends on.
 
 For more information about using assets, see

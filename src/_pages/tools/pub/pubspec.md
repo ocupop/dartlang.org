@@ -12,7 +12,7 @@ toc: true
 # {{ page.title }}
 
 Every [pub](/tools/pub/) package needs some metadata so it can specify its
-[dependencies](glossary.html#dependency). Pub packages that are shared with
+[dependencies](glossary#dependency). Pub packages that are shared with
 others also need to provide some other information so users can discover them.
 Pub stores this in a file named `pubspec.yaml`, which is written in
 the [YAML](http://www.yaml.org/) language.
@@ -62,7 +62,7 @@ At the top level are a series of fields. The currently supported ones are:
 : Optional. Used to configure dart2js or other transformers.
 For more information, see
 [Pub Assets and Transformers](assets-and-transformers.html) and
-[Configuring the Built-in dart2js Compiler](dart2js-transformer.html).
+[Configuring the Built-in dart2js Compiler]({{site.dart4web}}/tools/pub/dart2js-transformer.html).
 
 All other fields are ignored. A simple but complete pubspec looks something
 like the following:
@@ -174,7 +174,7 @@ documentation is created automatically for you, and is linked to from
 
 ## Dependencies
 
-[Dependencies](glossary.html#dependency) are the pubspec's *raison d'être*.
+[Dependencies](glossary#dependency) are the pubspec's *raison d'être*.
 In this section you list each package that your package needs in order to work.
 
 Dependencies fall into one of two types. _Regular dependencies_ are listed

@@ -34,7 +34,7 @@ and a `bin` directory that has these command-line tools:
 
 <div class="row"> <div class="col-md-6" markdown="1">
 
-[dart](/tools/dart-vm/)
+[dart](dart-vm)
 : The standalone VM
 
 [dart2js]({{site.dart4web}}/tools/dart2js)

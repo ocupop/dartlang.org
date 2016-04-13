@@ -42,7 +42,7 @@ but you'll also want to check out the site that contains information
 specific to your chosen technology.
 
 A web app that runs in any modern browser?
-: Check out [Dart for the Web](https://webdev.dartlang.org).
+: Check out [Dart for the Web]({{site.dart4web}}).
 
 A mobile app that runs on **both** iOS and Android from a single codebase?
 : Check out [Flutter](https://flutter.io/).

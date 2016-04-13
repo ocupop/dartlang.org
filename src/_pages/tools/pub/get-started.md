@@ -84,7 +84,7 @@ pub get
 This process is called _getting the dependencies_.
 
 The `pub get` command determines which packages your app depends on,
-and puts them in a central [system cache](glossary.html#system-cache).
+and puts them in a central [system cache](glossary#system-cache).
 For git dependencies, pub clones the git repository.
 For hosted dependencies, pub downloads the package from
 pub.dartlang.org. Transitive dependencies are included, too.

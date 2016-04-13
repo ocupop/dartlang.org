@@ -12,8 +12,8 @@ toc: true
 
 # {{ page.title }}
 
-The [`pub serve`]({{site.dart4web}}/tools/pub-serve),
-[`pub build`]({{site.dart4web}}/tools/pub-build)
+The [`pub serve`]({{site.dart4web}}/tools/pub/pub-serve),
+[`pub build`]({{site.dart4web}}/tools/pub/pub-build)
 and [`pub run`](cmd/pub-run) commands use [transformers][]
 to prepare a package's [assets][] before serving the app,
 building the app for deployment, or executing the command-line app,
@@ -105,10 +105,11 @@ dependencies:
     [[highlight]]entry_points: web/index.html[[/highlight]]
 {% endprettify %}
 
-The following example configures the [dart2js]({{site.dart4web}}/tools/dart2js)
-transformer, which is used by [`pub serve`]({{site.dart4web}}/tools/pub-serve),
-[`pub build`]({{site.dart4web}}/tools/pub-build), and [`pub run`](cmd/pub-run),
-to analyze the code:
+The following example configures the
+[dart2js]({{site.dart4web}}/tools/dart2js) transformer,
+which is used by [`pub serve`]({{site.dart4web}}/tools/pub/pub-serve),
+[`pub build`]({{site.dart4web}}/tools/pub/pub-build),
+and [`pub run`](cmd/pub-run), to analyze the code:
 
 {% prettify yaml %}
 transformers:
@@ -117,7 +118,8 @@ transformers:
 {% endprettify %}
 
 For more information, see
-[Configuring the Built-in dart2js Transformer]({{site.dart4web}}/tools/dart2js-transformer).
+[Configuring the Built-in dart2js
+Transformer]({{site.dart4web}}/tools/pub/dart2js-transformer).
 
 We expect more transformers to be available in the future. You can specify
 multiple transformers, to run either in parallel (if they're independent of
@@ -195,7 +197,7 @@ include a `web` directory, pub produces an error.
 
 You can build a command-line app (where the source files are in `bin`),
 for example, by specifying `pub build bin`.
-For more information, see [pub build](/tools/pub/cmd/pub-build).
+For more information, see [pub build]({{site.dart4web}}/tools/pub/pub-build).
 </aside>
 
 The following is an example of a build command for a more complex package

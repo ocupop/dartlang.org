@@ -16,9 +16,9 @@ Dependencies are one of [pub](/tools/pub)'s core concepts.
 A dependency is another package that your package needs in order to work.
 Dependencies are specified in your [pubspec](pubspec.html).
 You only list
-[immediate dependencies](glossary.html#immediate-dependency)&mdash;the
+[immediate dependencies](glossary#immediate-dependency)&mdash;the
 software that your package uses directly. Pub handles
-[transitive dependencies](glossary.html#transitive-dependency) for you.
+[transitive dependencies](glossary#transitive-dependency) for you.
 
 <aside class="alert alert-info">
 To see all the dependencies used by a package, use
@@ -26,10 +26,10 @@ To see all the dependencies used by a package, use
 </aside>
 
 For each dependency, you specify the *name* of the package you depend on.
-For [library packages](glossary.html#library-package),
+For [library packages](glossary#library-package),
 you specify the *range of versions* of that package that you allow.
 You may also specify the
-[*source*](glossary.html#source) which tells pub how the package can be located,
+[*source*](glossary#source) which tells pub how the package can be located,
 and any additional *description* that the source needs to find the package.
 
 Based on what data you want to provide, you can specify dependencies in two
@@ -193,14 +193,14 @@ Instead, the typical workflow is:
 ## Version constraints {#version-constraints}
 
 If your package is an application, you don't usually need to specify [version
-constraints](glossary.html#version-constraint) for your dependencies. You
+constraints](glossary#version-constraint) for your dependencies. You
 typically want to use the latest versions of the dependencies when you first
 create your app. Then you'll create and check in a
-[lockfile](glossary.html#lockfile) that pins your dependencies to those specific
+[lockfile](glossary#lockfile) that pins your dependencies to those specific
 versions. Specifying version constraints in your pubspec then is usually
 redundant (though you can do it if you want).
 
-For a [library package](glossary.html#library-package) that you want users to
+For a [library package](glossary#library-package) that you want users to
 reuse, though, it is important to specify version constraints. That lets people
 using your package know which versions of its dependencies they can rely on to
 be compatible with your library. Your goal is to allow a range of versions as

@@ -61,7 +61,7 @@ synchronous. Suppose you have a variable `myFile` that refers to a
 file. (For details on files, see the
 [File](https://api.dartlang.org/apidocs/channels/stable/dartdoc-viewer/dart-io.File)
 class in
-[`dart:io`](https://api.dartlang.org/apidocs/channels/stable/dartdoc-viewer/dart-io).)
+[`dart:io`](https://api.dartlang.org/dart-io/dart-io-library.html).)
 You decide to copy it to a new location `newPath`, declared as
 
 {% prettify dart %}

@@ -23,7 +23,7 @@ use <code class="literal">pub build</code> to generate the final files.
 
 Quick links to the `pub` commands:
 
-* [`pub build`]({{site.dart4web}}/tools/pub-build)
+* [`pub build`]({{site.dart4web}}/tools/pub/pub-build)
 * [`pub cache`](pub-cache)
 * [`pub deps`](pub-deps)
 * [`pub downgrade`](pub-downgrade)
@@ -31,7 +31,7 @@ Quick links to the `pub` commands:
 * [`pub global`](pub-global)
 * [`pub publish`](pub-lish)
 * [`pub run`](pub-run)
-* [`pub serve`]({{site.dart4web}}/tools/pub-serve)
+* [`pub serve`]({{site.dart4web}}/tools/pub/pub-serve)
 * [`pub upgrade`](pub-upgrade)
 * [`pub uploader`](pub-uploader)
 
@@ -73,7 +73,7 @@ Pub supports development for web-based apps and command-line apps.
 ### Web-based apps
 
 During the development cycle of an application, the
-[`pub serve`]({{site.dart4web}}/tools/pub-serve)
+[`pub serve`]({{site.dart4web}}/tools/pub/pub-serve)
 command is used to start up a development server.
 This server can be accessed via the browser on localhost and
 allows you to view your web-based app.
@@ -97,7 +97,7 @@ transformers before invoking the specified script.
 ## Deployment
 
 When you are ready to deploy your app, the
-[`pub build`]({{site.dart4web}}/tools/pub-build) command
+[`pub build`]({{site.dart4web}}/tools/pub/pub-build) command
 creates the `build` directory, compiles the Dart code, and places
 the assets into the build directory.
 

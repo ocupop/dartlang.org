@@ -34,8 +34,8 @@ constraints](#version-constraint).
 A resource&mdash;Dart, HTML, JavaScript, CSS, image, or anything
 else&mdash;intended to be part of a deployed package. The package can be a web
 app, a package used by a web app, or any other package that benefits from a
-build step. Tools such as [`pub serve`]({{site.dart4web}}/tools/pub-serve)
-and [`pub build`]({{site.dart4web}}/pub-build) take _source_ assets
+build step. Tools such as [`pub serve`]({{site.dart4web}}/tools/pub/pub-serve)
+and [`pub build`]({{site.dart4web}}/tools/pub/pub-build) take _source_ assets
 (such as an HTML file, a CSS file, and several Dart files)
 and produce _generated_ assets
 (such as the same HTML and CSS files, plus a single JavaScript file).
@@ -181,9 +181,9 @@ For more information, see
 
 A transformer is a Dart object that converts input [assets](#asset) (such as
 Dart files or Polymer-formatted HTML) into output assets (such as JavaScript
-and HTML). The [`pub build`]({{site.dart4web}}/tools/pub-build)
+and HTML). The [`pub build`]({{site.dart4web}}/tools/pub/pub-build)
 command puts the generated assets into files.
-The [`pub serve`]({{site.dart4web}}/tools/pub-serve) command,
+The [`pub serve`]({{site.dart4web}}/tools/pub/pub-serve) command,
 on the other hand, doesn't produce files;
 its generated assets are served directly by the dev server.
 

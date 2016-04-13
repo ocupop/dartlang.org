@@ -195,11 +195,11 @@ evolution now. Let's see how they play together and what pub does.
 ## Constraint solving
 
 When you define your package, you list its
-[**immediate dependencies**](glossary.html#immediate-dependency)&mdash;the
+[**immediate dependencies**](glossary#immediate-dependency)&mdash;the
 packages it itself uses. For each one, you specify the range of versions it
 allows. Each of those dependent packages may in turn have their own
 dependencies (called
-[**transitive dependencies**](glossary.html#transitive-dependency). Pub
+[**transitive dependencies**](glossary#transitive-dependency). Pub
 traverses these and builds up the entire deep dependency graph for your app.
 
 For each package in the graph, pub looks at everything that depends on it. It

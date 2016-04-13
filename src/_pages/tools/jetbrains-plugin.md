@@ -146,8 +146,8 @@ by removing a directory.
 See the JetBrains website for more information.
 
 * [IntelliJ IDEA](https://www.jetbrains.com/idea/)
-  * [Dart support](https://www.jetbrains.com/idea/help/dart-support.html)
+  * [Dart support](https://www.jetbrains.com/help/idea/2016.1/dart-support.html)
   * [Features](https://www.jetbrains.com/idea/features/)
-  * [Quick start](https://www.jetbrains.com/idea/help/intellij-idea-quick-start-guide.html)
+  * [Quick start](https://www.jetbrains.com/help/idea/2016.1/meet-intellij-idea.html)
 * [Dart Plugin by JetBrains](https://plugins.jetbrains.com/plugin/6351)
 * [FAQ for Eclipse users migrating to WebStorm/IntelliJ](https://www.jetbrains.com/idea/documentation/migration_faq.html)

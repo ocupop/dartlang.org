@@ -39,6 +39,6 @@ You can write standalone programs, such as servers and scripts, in Dart.
 <p>Learn about features that command-line apps need.</p>
 <img src="images/cmdline-code.png" width="400">
 
-<h4 class="no-permalink"><a href="/docs/tutorials/httpserver/"><img src="images/target.png" height="20" width="20">&nbsp;Write HTTP Clients & Servers</a></h4>
+<h4 class="no-permalink"><a href="httpserver"><img src="images/target.png" height="20" width="20">&nbsp;Write HTTP Clients & Servers</a></h4>
 <p>Communicate over the internet.</p>
 <img src="images/httpserver-code.png" width="400">

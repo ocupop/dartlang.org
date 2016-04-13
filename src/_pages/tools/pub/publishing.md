@@ -124,7 +124,7 @@ dependencies:
 the following exceptions:
 
 * Any `packages` directories.
-* Your package's [lockfile](/tools/pub/glossary.html#lockfile).
+* Your package's [lockfile](/tools/pub/glossary#lockfile).
 * If you aren't using Git, all _hidden_ files (that is,
   files whose names begin with `.`).
 * If you're using Git, any files ignored by your `.gitignore` file.

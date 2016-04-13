@@ -1488,8 +1488,8 @@ dart:html, not command-line apps.
 <div class="alert alert-info" markdown="1">
 **Note:**
 For higher level approaches to web app UIs, see
-[Polymer.dart](/polymer/) and
-[AngularDart](https://angulardart.org).
+[Polymer.dart](https://github.com/dart-lang/polymer-dart/wiki) and
+[AngularDart](https://angular.io/dart).
 </div>
 
 To use the HTML library in your web app, import dart:html:

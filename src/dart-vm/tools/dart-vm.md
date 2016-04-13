@@ -48,7 +48,7 @@ Common command-line options for dart include:
 
 `--old_gen_heap_size=<num>`
 : Sets the upper limit of
-  [old space](https://dart-lang.github.io/observatory/glossary.html#old-space) to `<num>` MB.
+  [old space](https://dart-lang.github.io/observatory/glossary#old-space) to `<num>` MB.
 
 `--version`
 : Displays VM version information.

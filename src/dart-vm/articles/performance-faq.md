@@ -34,7 +34,7 @@ The following are answers to commonly asked questions.
 ### How do I benchmark Dart?
 
 Check out the article on
-[benchmarking best practices](/articles/benchmarking/).
+[benchmarking best practices](benchmarking).
 
 ### What benchmarks are the Dart team tracking?
 
@@ -65,7 +65,7 @@ but the charts served their original purpose.
 
 ### I found a case where I think Dart is slower than expected. What do I do?
 
-Please read the [benchmark article](/articles/benchmarking),
+Please read the [benchmark article](benchmarking),
 and then write a simple benchmark using the
 [benchmark](https://github.com/dart-lang/ton80) package.
 If you continue to see a performance delta from expectations,

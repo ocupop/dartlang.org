@@ -41,7 +41,7 @@ When your code has an import with the `package` scheme, a Dart
 implementation like the VM or dart2js translates that to a path or URL using a
 simple rewriting rule:
 
- 1. Take the URI of your application's [entrypoint](glossary.html#entrypoint).
+ 1. Take the URI of your application's [entrypoint](glossary#entrypoint).
  2. Strip off the trailing file name.
  3. Append `/packages/` followed by the rest of the import URL.
 
@@ -69,12 +69,12 @@ of your package. Inside that, it creates symlinks pointing to the `lib`
 directories of each package your app [depends][] on. (The dependencies
 themselves will usually live in your [system cache][].)
 
-[depends]: glossary.html#dependency
-[system cache]: glossary.html#system-cache
+[depends]: glossary#dependency
+[system cache]: glossary#system-cache
 
 After creating the main `packages` directory in your package's root, pub then
 creates secondary ones in every [directory in your package where a Dart
-entrypoint may appear](glossary.html#entrypoint-directory). Currently that's
+entrypoint may appear](glossary#entrypoint-directory). Currently that's
 `benchmark`, `bin`, `example`, `test`, `tool`, and `web`.
 
 Pub also creates `packages` symlinks in *subdirectories* of any of those that

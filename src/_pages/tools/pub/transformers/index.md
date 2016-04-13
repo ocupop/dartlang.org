@@ -17,8 +17,8 @@ header:
 
 Every time you prepare a Dart app for testing or deployment,
 you are using transformers behind the scenes. The [`pub`](/tools/pub/)
-tool uses the [`dart2js`](/tools/dart2js/) compiler to "transform"
-(compile) Dart files to JavaScript.
+tool uses the [`dart2js`]({{site.dart4web}}/tools/dart2js/)
+compiler to "transform" (compile) Dart files to JavaScript.
 
 While you are _using_ at least one transformer every time you run a
 Dart app, you may never need to _write_ a transformer, in which case
@@ -39,7 +39,7 @@ For more information, see
 
 This page uses two examples, SimpleTransformer and
 MarkdownConverter, which you can find through
-[Examples of Transformer Code](examples/).
+[Examples of Transformer Code](examples).
 
 ## Implementing a transformer {#implementing-transformer}
 
@@ -140,8 +140,8 @@ class InsertCopyright extends Transformer {
 {% endprettify %}
 
 For more information on the mode option, see
-[pub serve]({{site.dart4web}}/tools/cmd/pub-serve#options) and
-[pub build]({{site.dart4web}}/tools/cmd/pub-build#options).
+[pub serve]({{site.dart4web}}/tools/pub/pub-serve#options) and
+[pub build]({{site.dart4web}}/tools/pub/pub-build#options).
 
 ### Claim input assets {#claim-input-assets}
 
@@ -150,7 +150,7 @@ do this in one of two ways:
 
 * Implement `allowedExtensions` to return a
   space-separated list of file extensions. The following
-  code, from [markdown_converter](examples/),
+  code, from [markdown_converter](examples),
   limits input assets to those
   files with one of three Markdown file extensions:
 
@@ -330,7 +330,7 @@ transformers. For more information, see
   into a single output.
 * [Writing a Lazy Transformer](lazy-transformer)
 : How to write a transformer that processes lazily, in the background.
-* [Examples of Transformer Code](examples/)
+* [Examples of Transformer Code](examples)
 : Examples to get you started.
 * [barback library](https://api.dartlang.org/apidocs/channels/stable/dartdoc-viewer/barback)
 : API docs for the barback package.
