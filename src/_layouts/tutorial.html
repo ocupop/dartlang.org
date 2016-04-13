@@ -2,24 +2,13 @@
 layout: default
 ---
 <article>
+  {% if page.toc %}
   <aside>
-    <nav id="pagenav">
-      <h4><a href="/tutorials">Tutorials</a></h4>
-      <ul>
-        {% assign tutorials = (site.tutorials | sort: 'updated') %}
-        {% for tutorial in tutorials %}
-        {% unless tutorial.layout == 'page' %}
-          <li>
-            <a href="{{ tutorial.url }}">{{ tutorial.title }}</a>
-            {% if page.url == tutorial.url and page.toc %}
-              {{ content | toc_only  }}
-            {% endif %}
-          </li>
-        {% endunless %}
-        {% endfor %}
-      </ul>
-    </nav>
+    <div id="toc">
+      {% include navigation-toc.html %}
+    </div>
   </aside>
+  {% endif %}
   <section>
     <header>
       <h1>{{ page.title }}</h1>
@@ -41,7 +30,7 @@ layout: default
 
 {% comment %}
   {% if page.examples %}
-    <div class="panel pull-right">
+    <div class="panel">
       <h4>Examples</h4>
       <ul>
         {% for example in page.examples %}

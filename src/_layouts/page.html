@@ -3,9 +3,11 @@ layout: default
 ---
 <article>
   {% if page.toc %}
-    <aside>
+  <aside>
+    <div id="toc">
       {% include navigation-toc.html %}
-    </aside>
+    </div>
+  </aside>
   {% endif %}
   <section>
     {{ content | inject_anchors }}
