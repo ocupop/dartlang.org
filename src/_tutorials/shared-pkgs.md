@@ -2,8 +2,6 @@
 reference: "https://www.dartlang.org/docs/tutorials/shared-pkgs/"
 
 title: "Install Shared Packages"
-date: 2012-09-01
-
 description: "Packages are bundles of source code, tools, and resources that help you to organize and share code"
 permalink: /tutorials/shared-pkgs
 

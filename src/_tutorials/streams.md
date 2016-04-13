@@ -2,8 +2,6 @@
 reference: "https://www.dartlang.org/docs/tutorials/streams/"
 
 title: "Asynchronous Programming: Streams"
-date: 2012-10-01
-
 description: "Learn how to consume single-subscriber and broadcast streams."
 permalink: /tutorials/streams
 
