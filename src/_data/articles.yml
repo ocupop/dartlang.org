@@ -1,4 +1,4 @@
-- title: <b>Language Details</b>
+- title: Language Details
   label:
   permalink: /articles
   children:
@@ -17,7 +17,7 @@
     - title: Optional Types in Dart
       label: Optional Types
       permalink: /articles/optional-types
-- title: <b>Libraries and APIs</b>
+- title: Libraries and APIs
   label:
   permalink: /articles
   children:

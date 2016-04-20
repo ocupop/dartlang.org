@@ -162,27 +162,64 @@ img {
 #footernav {}
 
 #toc {
+  h4 {
+    margin-bottom: 0;
+  }
   ul {
     padding: 0;
+    margin-top: 0;
     list-style: none;
     li {
       position: relative;
-      padding-left: 10px;
+      // padding-left: 10px;
+      font-weight: 700;
+      a {
+        font-weight: 700;
+      }
       &.dropdown {
-        ul.dropdown-menu {
-          // display: none;
+        .dropdown-toggle {
+          &:after {
+            position: relative;
+            content: $icon-caret-up;
+            display: inline-block;
+            transform: rotate(90deg);
+            font-size: 9px;
+            top: -2px;
+            line-height: inherit;
+            font-family: 'dart';
+            opacity: 0.5;
+            @include transition();
+          }
+          &:hover {
+            &:after {
+              opacity: 1;
+            }
+          }
         }
-        i {
-          content: '-';
-          position: absolute;
-          display: inline-block;
-          line-height: inherit;
-          top: 0;
-          left: 0;
+        ul {
+          li {
+            padding-left: 10px;
+            a {
+              font-weight: 300;
+            }
+          }
+          &.dropdown-menu {
+            display: none;
+            height: 0;
+            @include transition();
+          }
         }
         &.open {
-          ul {
+          .dropdown-toggle {
+            &:after {
+              transform: rotate(180deg);
+              top: -3px;
+              opacity: 1;
+            }
+          }
+          ul.dropdown-menu {
             display: block;
+            height: auto;
           }
         }
       }

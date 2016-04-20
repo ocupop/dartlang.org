@@ -40,20 +40,21 @@ $(document).on('ready', function(){
 
   // initiate stick behaviour
   $(".sticky").stickit({
-    // scope: StickScope.Parent,
     top: 50
   });
   $("#toc").stickit({
-    // scope: StickScope.Parent,
     top: 50
   });
   $("#pagenav").stickit({
-    // scope: StickScope.Parent,
     top: 60
   });
   $("#subnav").stickit({
-    // scope: StickScope.Parent,
     top: 0
+  });
+
+  $('.dropdown-toggle').on('click', function(e) {
+    e.preventDefault();
+    $(this).parent().toggleClass('open');
   });
 
 });

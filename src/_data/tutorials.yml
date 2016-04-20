@@ -1,4 +1,4 @@
-- title: <b>Language Details</b>
+- title: Language Details
   label:
   permalink: /articles
   children:
@@ -8,7 +8,7 @@
     - title: "Asynchronous Programming: Streams"
       label: 
       permalink: /tutorials/streams
-- title: <b>Libraries and APIs</b>
+- title: Libraries and APIs
   label:
   permalink: /articles
   children:

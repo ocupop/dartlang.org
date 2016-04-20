@@ -1,25 +1,31 @@
 <ul>
   {% for link in linklist  %}
-    {% if link.children == empty %}
-      <li {% if page.url == link.permalink %}class="dropdown"{% endif %}>
-        <a href="{{ link.permalink }}" title="{{ link.title }}">
+    {% capture dropdown %}{{ link.children | size }}{% endcapture %}
+    {% if dropdown == '0' %}
+      {% if page.url == link.permalink %}
+      <li class="dropdown open">
+        <a href="{{ link.permalink }}" title="{{ link.title }}" class="dropdown-toggle">
           {% if link.label %}{{ link.label }}{% else %}{{ link.title }}{% endif %}
         </a>
         {% if page.url == link.permalink %}
           {{ page.content | toc_only  }}
         {% endif %}
       </li>
-    {% else %}
-      <li class="dropdown">
+      {% else %}
+      <li>
         <a href="{{ link.permalink }}" title="{{ link.title }}">
           {% if link.label %}{{ link.label }}{% else %}{{ link.title }}{% endif %}
         </a>
-        {% if page.url == link.permalink %}
-          {{ page.content | toc_only  }}
-        {% endif %}
+      </li>
+      {% endif %}
+    {% else %}
+      <li class="dropdown{% if page.url == link.permalink %} open{% endif %}">
+        <a href="{{ link.permalink }}" title="{{ link.title }}" class="dropdown-toggle">
+          {% if link.label %}{{ link.label }}{% else %}{{ link.title }}{% endif %}
+        </a>
         <ul class="dropdown-menu">
           {% for child in link.children %}
-            <li {% if page.url == link.permalink %}class="dropdown"{% endif %}>
+            <li {% if page.url == child.permalink %}class="dropdown"{% endif %}>
               <a href="{{ child.permalink }}" title="{{ child.title }}">
                 {% if child.label %}{{ child.label }}{% else %}{{ child.title }}{% endif %}
               </a>

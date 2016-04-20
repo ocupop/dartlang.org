@@ -1,15 +1,15 @@
-- title: <b>Get Started</b>
+- title: Get Started
   label: 
   permalink: /guides/get-started
-- title: <b>Language Tour</b>
+- title: Language Tour
   label: 
   permalink: /guides/language-tour
-- title: <b>Library Tour</b>
+- title: Library Tour
   label: 
   permalink: /guides/library-tour
-- title: <b>Effective Dart</b>
+- title: Effective Dart
   label: 
-  permalink: /guides/effective-dart
+  permalink: /guides/effective-dart/index
   children:
     - title: Style
       label:
