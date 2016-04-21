@@ -16,7 +16,7 @@ dartlang: "http://localhost:4000/"
 dart4web: "http://localhost:4001/"
 dart_vm:  "/dart-vm"
 flutter:  "https://flutter.io"
-dartino:  "https://github.com/dartino"
+dartino:  "https:dartino.org"
 
 collections:
   articles:
