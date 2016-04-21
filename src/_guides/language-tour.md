@@ -28,7 +28,7 @@ more details about a language feature.
 The following code uses many of Dart’s most basic features:
 
 <!-- ch02/basic_dart_program.dart -->
-{% prettify dart %}
+{% highlight dart %}
 // Define a function.
 printNumber(num aNumber) {
   print('The number is $aNumber.'); // Print to console.
@@ -39,7 +39,7 @@ main() {
   var number = 42; // Declare and initialize a variable.
   printNumber(number); // Call a function.
 }
-{% endprettify %}
+{% endhighlight %}
 
 Here’s what this program uses that applies to all (or almost all) Dart
 apps:
@@ -197,26 +197,25 @@ You can't use reserved words as identifiers.
 Here’s an example of creating a variable and assigning a value to it:
 
 <!-- ch02/creating_a_variable.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var name = 'Bob';
-{% endprettify %}
+{% endhighlight %}
 
 Variables are references. The variable called `name` contains a
 reference to a String object with a value of “Bob”.
 
 
 ### Default value {#default-value}
-{:.no_toc}
 
 Uninitialized variables have an initial value of `null`. Even variables
 with numeric types are initially null, because numbers are objects.
 
 <!-- ch02/numbers_are_objects.dart -->
-{% prettify dart %}
+{% highlight dart %}
 int lineCount;
 assert(lineCount == null);
 // Variables (even if they will be numbers) are initially null.
-{% endprettify %}
+{% endhighlight %}
 
 <div class="alert alert-info" markdown="1">
 **Note:**
@@ -228,15 +227,14 @@ see the [Assert](#assert) section.
 
 
 ### Optional types {#optional-types}
-{:.no_toc}
 
 You have the option of adding static types to your variable
 declarations:
 
 <!-- ch02/static_types.dart -->
-{% prettify dart %}
+{% highlight dart %}
 String name = 'Bob';
-{% endprettify %}
+{% endhighlight %}
 
 Adding types is a way to clearly express your intent. Tools such as
 compilers and editors can use these types to help you, by providing code
@@ -251,7 +249,6 @@ of using `var`, rather than type annotations, for local variables.
 
 
 ### Final and const {#final-and-const}
-{:.no_toc}
 
 If you never intend to change a variable, use `final` or `const`, either
 instead of `var` or in addition to a type. A final variable can be set
@@ -267,10 +264,10 @@ Instance variables can be `final` but not `const`.
 Here's an example of creating and setting a final variable:
 
 <!-- ch02/final_initialization.dart -->
-{% prettify dart %}
+{% highlight dart %}
 final name = 'Bob'; // Or: final String name = 'Bob';
 // name = 'Alice';  // Uncommenting this causes an error
-{% endprettify %}
+{% endhighlight %}
 
 Use `const` for variables that you want to be compile-time constants. If
 the const variable is at the class level, mark it `static const`.
@@ -279,10 +276,10 @@ such as a number or string literal, a const
 variable, or the result of an arithmetic operation on constant numbers:
 
 <!-- ch02/const.dart -->
-{% prettify dart %}
+{% highlight dart %}
 const bar = 1000000;       // Unit of pressure (dynes/cm2)
 const atm = 1.01325 * bar; // Standard atmosphere
-{% endprettify %}
+{% endhighlight %}
 
 The `const` keyword isn't just for declaring constant variables.
 You can also use it to create constant _values_,
@@ -290,7 +287,7 @@ as well as to declare constructors that _create_ constant values.
 Any variable can have a constant value.
 
 <!-- ch02/const_vs_const.dart -->
-{% prettify dart %}
+{% highlight dart %}
 // Note: [] creates an empty list.
 // const [] creates an empty, immutable list (EIA).
 var foo = const [];   // foo is currently an EIA.
@@ -304,7 +301,7 @@ foo = [];
 // You can't change the value of a final or const variable.
 // bar = []; // Unhandled exception.
 // baz = []; // Unhandled exception.
-{% endprettify %}
+{% endhighlight %}
 
 For more information on using `const` to create constant values, see
 [Lists](#lists), [Maps](#maps), and [Classes](#classes).
@@ -334,7 +331,6 @@ use the `Map()` constructor to create a map, using code such as
 
 
 ### Numbers {#numbers}
-{:.no_toc}
 
 Dart numbers come in two flavors:
 
@@ -370,25 +366,25 @@ Integers are numbers without a decimal point. Here are some examples of
 defining integer literals:
 
 <!-- ch02/integer_literals.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var x = 1;
 var hex = 0xDEADBEEF;
 var bigInt = 34653465834652437659238476592374958739845729;
-{% endprettify %}
+{% endhighlight %}
 
 If a number includes a decimal, it is a double. Here are some examples
 of defining double literals:
 
 <!-- ch02/double_literals.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var y = 1.1;
 var exponents = 1.42e5;
-{% endprettify %}
+{% endhighlight %}
 
 Here’s how you turn a string into a number, or vice versa:
 
 <!-- ch02/number_conversion.dart -->
-{% prettify dart %}
+{% highlight dart %}
 // String -> int
 var one = int.parse('1');
 assert(one == 1);
@@ -404,17 +400,17 @@ assert(oneAsString == '1');
 // double -> String
 String piAsString = 3.14159.toStringAsFixed(2);
 assert(piAsString == '3.14');
-{% endprettify %}
+{% endhighlight %}
 
 The int type specifies the traditional bitwise shift (\<\<, \>\>), AND
 (&), and OR (|) operators. For example:
 
 <!-- ch02/bit_shifting.dart -->
-{% prettify dart %}
+{% highlight dart %}
 assert((3 << 1) == 6);  // 0011 << 1 == 0110
 assert((3 >> 1) == 1);  // 0011 >> 1 == 0001
 assert((3 | 4)  == 7);  // 0011 | 0100 == 0111
-{% endprettify %}
+{% endhighlight %}
 
 Literal numbers are compile-time constants.
 Many arithmetic expressions are also compile-time constants,
@@ -422,26 +418,25 @@ as long as their operands are
 compile-time constants that evaluate to numbers.
 
 <!-- ch02/number_literals.dart -->
-{% prettify dart %}
+{% highlight dart %}
 const msPerSecond = 1000;
 const secondsUntilRetry = 5;
 const msUntilRetry = secondsUntilRetry * msPerSecond;
-{% endprettify %}
+{% endhighlight %}
 
 
 ### Strings {#strings}
-{:.no_toc}
 
 A Dart string is a sequence of UTF-16 code units. You can use either
 single or double quotes to create a string:
 
 <!-- ch02/quoting.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var s1 = 'Single quotes work well for string literals.';
 var s2 = "Double quotes work just as well.";
 var s3 = 'It\'s easy to escape the string delimiter.';
 var s4 = "It's even easier to use the other delimiter.";
-{% endprettify %}
+{% endhighlight %}
 
 You can put the value of an expression inside a string by using
 `${`*`expression`*`}`. If the expression is an identifier, you can skip
@@ -449,7 +444,7 @@ the {}. To get the string corresponding to an object, Dart calls the
 object’s `toString()` method.
 
 <!-- ch02/string_interpolation.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var s = 'string interpolation';
 
 assert('Dart has $s, which is very handy.' ==
@@ -459,7 +454,7 @@ assert('That deserves all caps. ' +
        '${s.toUpperCase()} is very handy!' ==
        'That deserves all caps. ' +
        'STRING INTERPOLATION is very handy!');
-{% endprettify %}
+{% endhighlight %}
 
 <div class="alert alert-info" markdown="1">
 **Note:**
@@ -472,7 +467,7 @@ You can concatenate strings using adjacent string literals or the `+`
 operator:
 
 <!-- adjacent_string_literals.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var s1 = 'String ' 'concatenation'
          " works even over line breaks.";
 assert(s1 == 'String concatenation works even over '
@@ -481,13 +476,13 @@ assert(s1 == 'String concatenation works even over '
 var s2 = 'The + operator '
          + 'works, as well.';
 assert(s2 == 'The + operator works, as well.');
-{% endprettify %}
+{% endhighlight %}
 
 Another way to create a multi-line string: use a triple quote with
 either single or double quotation marks:
 
 <!-- ch02/triple_quotes.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var s1 = '''
 You can create
 multi-line strings like this one.
@@ -495,14 +490,14 @@ multi-line strings like this one.
 
 var s2 = """This is also a
 multi-line string.""";
-{% endprettify %}
+{% endhighlight %}
 
 You can create a “raw” string by prefixing it with `r`:
 
 <!-- ch02/raw_strings.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var s = r"In a raw string, even \n isn't special.";
-{% endprettify %}
+{% endhighlight %}
 
 See [Runes](#runes) for details on how to express Unicode
 characters in a string.
@@ -512,7 +507,7 @@ as long as any interpolated expression is a compile-time constant
 that evaluates to null or a numeric, string, or boolean value.
 
 <!-- ch02/string_literals.dart -->
-{% prettify dart %}
+{% highlight dart %}
 // These work in a const string.
 const aConstNum = 0;
 const aConstBool = true;
@@ -526,14 +521,13 @@ const aConstList = const [1, 2, 3];
 
 const validConstString = '$aConstNum $aConstBool $aConstString';
 // const invalidConstString = '$aNum $aBool $aString $aConstList';
-{% endprettify %}
+{% endhighlight %}
 
 For more information on using strings, see
 [Strings and regular expressions](library-tour#strings-and-regular-expressions).
 
 
 ### Booleans {#booleans}
-{:.no_toc}
 
 To represent boolean values, Dart has a type named `bool`. Only two
 objects have type bool: the boolean literals `true` and `false`,
@@ -548,13 +542,13 @@ For example, consider the following code, which is valid both as
 JavaScript and as Dart code:
 
 <!-- ch02/strictly_booleans.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var name = 'Bob';
 if (name) {
   // Prints in JavaScript, not in Dart.
   print('You have a name!');
 }
-{% endprettify %}
+{% endhighlight %}
 
 If you run this code as JavaScript, it prints “You have a name!” because
 `name` is a non-null object. However, in Dart running in *production
@@ -567,7 +561,7 @@ Here’s another example of code that behaves differently in JavaScript
 and Dart:
 
 <!-- ch02/if_one.dart -->
-{% prettify dart %}
+{% highlight dart %}
 if (1) {
   print('JS prints this line.');
 } else {
@@ -575,7 +569,7 @@ if (1) {
   // However, in checked mode, if (1) throws an
   // exception because 1 is not boolean.
 }
-{% endprettify %}
+{% endhighlight %}
 
 <div class="alert alert-info" markdown="1">
 **Note:**
@@ -591,7 +585,7 @@ for you is that, instead of using code like
 explicitly check for values. For example:
 
 <!-- ch02/empty_string.dart -->
-{% prettify dart %}
+{% highlight dart %}
 // Check for an empty string.
 var fullName = '';
 assert(fullName.isEmpty);
@@ -607,11 +601,10 @@ assert(unicorn == null);
 // Check for NaN.
 var iMeantToDoThis = 0 / 0;
 assert(iMeantToDoThis.isNaN);
-{% endprettify %}
+{% endhighlight %}
 
 
 ### Lists {#lists}
-{:.no_toc}
 
 Perhaps the most common collection in nearly every programming language
 is the *array*, or ordered group of objects. In Dart, arrays are
@@ -622,9 +615,9 @@ Dart list literals look like JavaScript array literals. Here’s a simple
 Dart list:
 
 <!-- ch02/list_literal.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var list = [1, 2, 3];
-{% endprettify %}
+{% endhighlight %}
 
 Lists use zero-based indexing, where 0 is the index of the first element
 and `list.length - 1` is the index of the last element. You can get a
@@ -632,23 +625,23 @@ list’s length and refer to list elements just as you would in
 JavaScript:
 
 <!-- ch02/list_indexing.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var list = [1, 2, 3];
 assert(list.length == 3);
 assert(list[1] == 2);
 
 list[1] = 1;
 assert(list[1] == 1);
-{% endprettify %}
+{% endhighlight %}
 
 To create a list that's a compile-time constant,
 add `const` before the list literal:
 
 <!-- ch02/list_literal.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var constantList = const [1, 2, 3];
 // constantList[1] = 1; // Uncommenting this causes an error.
-{% endprettify %}
+{% endhighlight %}
 
 The List type has many handy methods for manipulating lists. For more
 information about lists, see [Generics](#generics) and
@@ -656,7 +649,6 @@ information about lists, see [Generics](#generics) and
 
 
 ### Maps {#maps}
-{:.no_toc}
 
 In general, a map is an object that associates keys and values. Both
 keys and values can be any type of object. Each *key* occurs only once,
@@ -667,7 +659,7 @@ is provided by map literals and the
 Here are a couple of simple Dart maps, created using map literals:
 
 <!-- ch02/map_literal.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var gifts = {
 // Keys      Values
   'first' : 'partridge',
@@ -681,12 +673,12 @@ var nobleGases = {
   10:   'neon',
   18:   'argon',
 };
-{% endprettify %}
+{% endhighlight %}
 
 You can create the same objects using a Map constructor:
 
 <!-- ch02/map_constructor.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var gifts = new Map();
 gifts['first'] = 'partridge';
 gifts['second'] = 'turtledoves';
@@ -696,47 +688,47 @@ var nobleGases = new Map();
 nobleGases[2] = 'helium';
 nobleGases[10] = 'neon';
 nobleGases[18] = 'argon';
-{% endprettify %}
+{% endhighlight %}
 
 Add a new key-value pair to an existing map just as you would in
 JavaScript:
 
 <!-- ch02/map_add_item.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var gifts = {'first': 'partridge'};
 gifts['fourth'] = 'calling birds'; // Add a key-value pair
-{% endprettify %}
+{% endhighlight %}
 
 Retrieve a value from a map the same way you would in JavaScript:
 
 <!-- ch02/map_retrieve_item.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var gifts = {'first': 'partridge'};
 assert(gifts['first'] == 'partridge');
-{% endprettify %}
+{% endhighlight %}
 
 If you look for a key that isn’t in a map, you get a null in return:
 
 <!-- ch02/map_missing_key.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var gifts = {'first': 'partridge'};
 assert(gifts['fifth'] == null);
-{% endprettify %}
+{% endhighlight %}
 
 Use `.length` to get the number of key-value pairs in the map:
 
 <!-- ch02/map_length.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var gifts = {'first': 'partridge'};
 gifts['fourth'] = 'calling birds';
 assert(gifts.length == 2);
-{% endprettify %}
+{% endhighlight %}
 
 To create a map that's a compile-time constant,
 add `const` before the map literal:
 
 <!-- ch02/map_literal.dart -->
-{% prettify dart %}
+{% highlight dart %}
 final constantMap = const {
   2: 'helium',
   10: 'neon',
@@ -744,14 +736,13 @@ final constantMap = const {
 };
 
 // constantMap[2] = 'Helium'; // Uncommenting this causes an error.
-{% endprettify %}
+{% endhighlight %}
 
 For more information about maps, see
 [Generics](#generics) and
 [Maps](library-tour#maps).
 
 ### Runes {#runes}
-{:.no_toc}
 
 In Dart, runes are the UTF-32 code points of a string.
 
@@ -813,7 +804,6 @@ For more information, see
 </div>
 
 ### Symbols {#symbols}
-{:.no_toc}
 
 A [Symbol](http://api.dartlang.org/stable/dart-core/Symbol-class.html) object
 represents an operator or identifier declared in a Dart program. You
@@ -825,10 +815,10 @@ To get the symbol for an identifier, use a symbol literal, which is just
 `#` followed by the identifier:
 
 <!-- ch02/symbols.dart -->
-{% prettify dart %}
+{% highlight dart %}
 #radix
 #bar
-{% endprettify %}
+{% endhighlight %}
 
 Symbol literals are compile-time constants.
 
@@ -848,30 +838,30 @@ it were a function. For details, see [Callable classes](#callable-classes).
 Here’s an example of implementing a function:
 
 <!-- ch02/function_example.dart -->
-{% prettify dart %}
+{% highlight dart %}
 bool isNoble(int atomicNumber) {
   return _nobleGases[atomicNumber] != null;
 }
-{% endprettify %}
+{% endhighlight %}
 
 Although Effective Dart recommends
 [type annotations for public APIs](/guides/effective-dart/design#do-type-annotate-public-apis),
 the function still works if you omit the types:
 
 <!-- ch02/function_omitting_types.dart -->
-{% prettify dart %}
+{% highlight dart %}
 isNoble(atomicNumber) {
   return _nobleGases[atomicNumber] != null;
 }
-{% endprettify %}
+{% endhighlight %}
 
 For functions that contain just one expression, you can use a shorthand
 syntax:
 
 <!-- ch02/function_shorthand.dart -->
-{% prettify dart %}
+{% highlight dart %}
 bool isNoble(int atomicNumber) => _nobleGases[atomicNumber] != null;
-{% endprettify %}
+{% endhighlight %}
 
 The <code>=> <em>expr</em>;</code> syntax is a shorthand for
 <code>{ return <em>expr</em>;}</code>.
@@ -890,42 +880,39 @@ parameters.
 
 
 ### Optional parameters {#optional-parameters}
-{:.no_toc}
 
 Optional parameters can be either positional or named, but not both.
 
 #### Optional named parameters {#optional-named-parameters}
-{:.no_toc}
 
 When calling a function, you can specify named parameters using
 <code><em>paramName</em>: <em>value</em></code>. For example:
 
 <!-- ch02/use_named_parameters.dart -->
-{% prettify dart %}
+{% highlight dart %}
 enableFlags(bold: true, hidden: false);
-{% endprettify %}
+{% endhighlight %}
 
 When defining a function, use
 <code>{<em>param1</em>, <em>param2</em>, …}</code>
 to specify named parameters:
 
 <!-- ch02/specify_named_parameters.dart -->
-{% prettify dart %}
+{% highlight dart %}
 /// Sets the [bold] and [hidden] flags to the values
 /// you specify.
 enableFlags({bool bold, bool hidden}) {
   // ...
 }
-{% endprettify %}
+{% endhighlight %}
 
 #### Optional positional parameters {#optional-positional-parameters}
-{:.no_toc}
 
 Wrapping a set of function parameters in `[]` marks them as optional
 positional parameters:
 
 <!-- ch02/optional_positional_parameters.dart -->
-{% prettify dart %}
+{% highlight dart %}
 String say(String from, String msg, [String device]) {
   var result = '$from says $msg';
   if (device != null) {
@@ -933,26 +920,25 @@ String say(String from, String msg, [String device]) {
   }
   return result;
 }
-{% endprettify %}
+{% endhighlight %}
 
 Here’s an example of calling this function without the optional
 parameter:
 
 <!-- ch02/optional_positional_parameters.dart -->
-{% prettify dart %}
+{% highlight dart %}
 assert(say('Bob', 'Howdy') == 'Bob says Howdy');
-{% endprettify %}
+{% endhighlight %}
 
 And here’s an example of calling this function with the third parameter:
 
 <!-- ch02/optional_positional_parameters.dart -->
-{% prettify dart %}
+{% highlight dart %}
 assert(say('Bob', 'Howdy', 'smoke signal') ==
     'Bob says Howdy with a smoke signal');
-{% endprettify %}
+{% endhighlight %}
 
 #### Default parameter values {#default-parameters}
-{:.no_toc}
 
 Your function can define default values for both named and positional
 parameters. The default values must be compile-time constants.
@@ -961,7 +947,7 @@ If no default value is provided, the value is `null`.
 Use a colon (`:`) to specify default values for named parameters:
 
 <!-- ch02/specify_default_values.dart -->
-{% prettify dart %}
+{% highlight dart %}
 /// Sets the [bold] and [hidden] flags to the values you
 /// specify, defaulting to false.
 enableFlags({bool bold: false, bool hidden: false}) {
@@ -970,12 +956,12 @@ enableFlags({bool bold: false, bool hidden: false}) {
 
 // bold will be true; hidden will be false.
 enableFlags(bold: true);
-{% endprettify %}
+{% endhighlight %}
 
 Use `=` to specify default values for positional parameters:
 
 <!-- ch02/optional_positional_parameter_default.dart -->
-{% prettify dart %}
+{% highlight dart %}
 String say(String from, String msg,
     [String device = 'carrier pigeon', String mood]) {
   var result = '$from says $msg';
@@ -990,7 +976,7 @@ String say(String from, String msg,
 
 assert(say('Bob', 'Howdy') ==
     'Bob says Howdy with a carrier pigeon');
-{% endprettify %}
+{% endhighlight %}
 
 You can also pass lists or maps as default values.
 The following example defines a function, `doStuff()`,
@@ -1035,7 +1021,6 @@ src="{{site.custom.dartpad.embed-dart-prefix}}?id=d988cfce0a54c6853799&horizonta
 
 
 ### The main() function {#the-main-function}
-{:.no_toc}
 
 Every app must have a top-level `main()` function, which serves as the
 entrypoint to the app. The `main()` function returns `void` and has an
@@ -1044,13 +1029,13 @@ optional `List<String>` parameter for arguments.
 Here's an example of the `main()` function for a web app:
 
 <!-- from Dart Editor's default web app -->
-{% prettify dart %}
+{% highlight dart %}
 void main() {
   querySelector("#sample_text_id")
     ..text = "Click me!"
     ..onClick.listen(reverseText);
 }
-{% endprettify %}
+{% endhighlight %}
 
 <div class="alert alert-info" markdown="1">
 **Note:**
@@ -1063,7 +1048,7 @@ Here's an example of the `main()` function for a command-line app that
 takes arguments:
 
 <!-- ch02/args.dart -->
-{% prettify dart %}
+{% highlight dart %}
 // Run the app like this: dart args.dart 1 test
 void main(List<String> arguments) {
   print(arguments);
@@ -1072,18 +1057,17 @@ void main(List<String> arguments) {
   assert(int.parse(arguments[0]) == 1);
   assert(arguments[1] == 'test');
 }
-{% endprettify %}
+{% endhighlight %}
 
 You can use the [args library](https://pub.dartlang.org/packages/args) to
 define and parse command-line arguments.
 
 ### Functions as first-class objects {#functions-as-first-class-objects}
-{:.no_toc}
 
 You can pass a function as a parameter to another function. For example:
 
 <!-- from ch02/function_as_parameter.dart -->
-{% prettify dart %}
+{% highlight dart %}
 printElement(element) {
   print(element);
 }
@@ -1092,19 +1076,18 @@ var list = [1, 2, 3];
 
 // Pass printElement as a parameter.
 list.forEach(printElement);
-{% endprettify %}
+{% endhighlight %}
 
 You can also assign a function to a variable, such as:
 
 <!-- from ch02/function_as_variable.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var loudify = (msg) => '!!! ${msg.toUpperCase()} !!!';
 assert(loudify('hello') == '!!! HELLO !!!');
-{% endprettify %}
+{% endhighlight %}
 
 
 ### Lexical scope {#lexical-scope}
-{:.no_toc}
 
 Dart is a lexically scoped language, which means that the scope of
 variables is determined statically, simply by the layout of the code.
@@ -1115,7 +1098,7 @@ Here is an example of nested functions with variables at each scope
 level:
 
 <!-- ch02/nested_functions.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var topLevel = true;
 
 main() {
@@ -1134,14 +1117,13 @@ main() {
     }
   }
 }
-{% endprettify %}
+{% endhighlight %}
 
 Notice how `nestedFunction()` can use variables from every level, all
 the way up to the top level.
 
 
 ### Lexical closures {#lexical-closures}
-{:.no_toc}
 
 A *closure* is a function object that has access to variables in its
 lexical scope, even when the function is used outside of its original
@@ -1152,7 +1134,7 @@ following example, `makeAdder()` captures the variable `addBy`. Wherever the
 returned function goes, it remembers `addBy`.
 
 <!-- ch02/function_closure.dart -->
-{% prettify dart %}
+{% highlight dart %}
 /// Returns a function that adds [addBy] to the
 /// function's argument.
 Function makeAdder(num addBy) {
@@ -1169,17 +1151,16 @@ main() {
   assert(add2(3) == 5);
   assert(add4(3) == 7);
 }
-{% endprettify %}
+{% endhighlight %}
 
 
 ### Testing functions for equality {#testing-functions-for-equality}
-{:.no_toc}
 
 Here's an example of testing top-level functions, static methods, and
 instance methods for equality:
 
 <!-- ch02/function_equality_2.dart -->
-{% prettify dart %}
+{% highlight dart %}
 foo() {}               // A top-level function
 
 class A {
@@ -1212,11 +1193,10 @@ main() {
   // so they're unequal.
   assert(v.baz != w.baz);
 }
-{% endprettify %}
+{% endhighlight %}
 
 
 ### Return values {#return-values}
-{:.no_toc}
 
 All functions return a value. If no return value is specified, the
 statement `return null;` is implicitly appended to the function body.
@@ -1253,14 +1233,14 @@ When you use operators, you create expressions. Here are some examples
 of operator expressions:
 
 <!-- TODO: write test for this -->
-{% prettify dart %}
+{% highlight dart %}
 a++
 a + b
 a = b
 a == b
 a ? b: c
 a is T
-{% endprettify %}
+{% endhighlight %}
 
 In the [operator table](#operators),
 each operator has higher precedence than the operators in the rows
@@ -1271,13 +1251,13 @@ precedence means that the following two lines of code execute the same
 way:
 
 <!-- ch02/precedence.dart -->
-{% prettify dart %}
+{% highlight dart %}
 // 1: Parens improve readability.
 if ((n % i == 0) && (d % i == 0))
 
 // 2: Harder to read, but equivalent.
 if (n % i == 0 && d % i == 0)
-{% endprettify %}
+{% endhighlight %}
 
 <div class="alert alert-warning" markdown="1">
 **Warning:**
@@ -1289,7 +1269,6 @@ Vector version of +.
 
 
 ### Arithmetic operators {#arithmetic-operators}
-{:.no_toc}
 
 Dart supports the usual arithmetic operators, as shown in the following table.
 
@@ -1308,7 +1287,7 @@ Dart supports the usual arithmetic operators, as shown in the following table.
 Example:
 
 <!-- ch02/arithmetic_operators.dart -->
-{% prettify dart %}
+{% highlight dart %}
 assert(2 + 3 == 5);
 assert(2 - 3 == -1);
 assert(2 * 3 == 6);
@@ -1317,7 +1296,7 @@ assert(5 ~/ 2 == 2);    // Result is an integer
 assert(5 % 2 == 1);     // Remainder
 
 print('5/2 = ${5~/2} r ${5%2}'); // 5/2 = 2 r 1
-{% endprettify %}
+{% endhighlight %}
 
 Dart also supports both prefix and postfix increment and decrement
 operators.
@@ -1334,7 +1313,7 @@ operators.
 Example:
 
 <!-- ch02/op_increment_decrement.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var a, b;
 
 a = 0;
@@ -1352,11 +1331,10 @@ assert(a == b); // -1 == -1
 a = 0;
 b = a--;        // Decrement a AFTER b gets its value.
 assert(a != b); // -1 != 0
-{% endprettify %}
+{% endhighlight %}
 
 
 ### Equality and relational operators {#equality-and-relational-operators}
-{:.no_toc}
 
 The following table lists the meanings of equality and relational operators.
 
@@ -1391,18 +1369,17 @@ Here’s an example of using each of the equality and relational
 operators:
 
 <!-- ch02/op_equality.dart -->
-{% prettify dart %}
+{% highlight dart %}
 assert(2 == 2);
 assert(2 != 3);
 assert(3 > 2);
 assert(2 < 3);
 assert(3 >= 3);
 assert(2 <= 3);
-{% endprettify %}
+{% endhighlight %}
 
 
 ### Type test operators {#type-test-operators}
-{:.no_toc}
 
 The `as`, `is`, and `is!` operators are handy for checking types at
 runtime.
@@ -1424,18 +1401,18 @@ following by an expression using that object. For example, consider the
 following code:
 
 <!-- ch02/op_as.dart -->
-{% prettify dart %}
+{% highlight dart %}
 if (emp is Person) { // Type check
   emp.firstName = 'Bob';
 }
-{% endprettify %}
+{% endhighlight %}
 
 You can make the code shorter using the `as` operator:
 
 <!-- ch02/op_as.dart.dart -->
-{% prettify dart %}
+{% highlight dart %}
 (emp as Person).firstName = 'Bob';
-{% endprettify %}
+{% endhighlight %}
 
 <div class="alert alert-info" markdown="1">
 **Note:**
@@ -1446,17 +1423,16 @@ an exception.
 
 
 ### Assignment operators {#assignment-operators}
-{:.no_toc}
 
 As you’ve already seen, you can assign values using the `=` operator.
 To assign only if the assigned-to variable is null,
 use the `??=` operator.
 
-{% prettify dart %}
+{% highlight dart %}
 a = value;   // Assign value to a
 b ??= value; // If b is null, assign value to b;
              // otherwise, b stays the same
-{% endprettify %}
+{% endhighlight %}
 
 {% comment %}
 <!-- embed a dartpad when we can hide code -->
@@ -1484,15 +1460,14 @@ The following example uses assignment and compound assignment
 operators:
 
 <!-- ch02/op_assign.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var a = 2;           // Assign using =
 a *= 3;              // Assign and multiply: a = a * 3
 assert(a == 6);
-{% endprettify %}
+{% endhighlight %}
 
 
 ### Logical operators {#logical-operators}
-{:.no_toc}
 
 You can invert or combine boolean expressions using the logical
 operators.
@@ -1508,15 +1483,14 @@ operators.
 Here’s an example of using the logical operators:
 
 <!-- ch02/op_logical.dart -->
-{% prettify dart %}
+{% highlight dart %}
 if (!done && (col == 0 || col == 3)) {
   // ...Do something...
 }
-{% endprettify %}
+{% endhighlight %}
 
 
 ### Bitwise and shift operators {#bitwise-and-shift-operators}
-{:.no_toc}
 
 You can manipulate the individual bits of numbers in Dart. Usually,
 you’d use these bitwise and shift operators with integers.
@@ -1535,7 +1509,7 @@ you’d use these bitwise and shift operators with integers.
 Here’s an example of using bitwise and shift operators:
 
 <!-- ch02/op_bitwise.dart -->
-{% prettify dart %}
+{% highlight dart %}
 final value = 0x22;
 final bitmask = 0x0f;
 
@@ -1545,11 +1519,10 @@ assert((value | bitmask)  == 0x2f);  // OR
 assert((value ^ bitmask)  == 0x2d);  // XOR
 assert((value << 4)       == 0x220); // Shift left
 assert((value >> 4)       == 0x02);  // Shift right
-{% endprettify %}
+{% endhighlight %}
 
 
 ### Conditional expressions {#conditional-expressions}
-{:.no_toc}
 
 Dart has two operators that let you concisely evaluate expressions
 that might otherwise require [if-else](#if-and-else) statements:
@@ -1567,16 +1540,16 @@ based on a boolean expression,
 consider using `?:`.
 
 <!-- ch03/mirrors.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var finalStatus = m.isFinal ? 'final' : 'not final';
-{% endprettify %}
+{% endhighlight %}
 
 If the boolean expression tests for null,
 consider using `??`.
 
-{% prettify dart %}
+{% highlight dart %}
 String toString() => msg ?? super.toString();
-{% endprettify %}
+{% endhighlight %}
 
 The previous example could have been written at least two other ways,
 but not as succinctly:
@@ -1586,7 +1559,7 @@ https://dartpad.dartlang.org/f2c8d82ce5d0dd533fe2
 https://gist.github.com/f2c8d82ce5d0dd533fe2
 {% endcomment %}
 
-{% prettify dart %}
+{% highlight dart %}
 // Slightly longer version uses ?: operator.
 String toString() => msg == null ? super.toString() : msg;
 
@@ -1598,10 +1571,9 @@ String toString() {
     return msg;
   }
 }
-{% endprettify %}
+{% endhighlight %}
 
 ### Cascade notation (..) {#cascade}
-{:.no_toc}
 
 Cascades (`..`) allow you to make a sequence of operations
 on the same object. In addition to function calls,
@@ -1612,12 +1584,12 @@ allows you to write more fluid code.
 Consider the following code:
 
 <!-- ch02/cascade_operator/web/web_app.dart -->
-{% prettify dart %}
+{% highlight dart %}
 querySelector('#button') // Get an object.
   ..text = 'Confirm'   // Use its members.
   ..classes.add('important')
   ..onClick.listen((e) => window.alert('Confirmed!'));
-{% endprettify %}
+{% endhighlight %}
 
 The first method call, `querySelector()`, returns a selector object.
 The code that follows the cascade notation operates
@@ -1626,16 +1598,16 @@ might be returned.
 
 The previous example is equivalent to:
 
-{% prettify dart %}
+{% highlight dart %}
 var button = querySelector('#button');
 button.text = 'Confirm';
 button.classes.add('important');
 button.onClick.listen((3) => window.alert('Confirmed!'));
-{% endprettify %}
+{% endhighlight %}
 
 You can also nest your cascades. For example:
 
-{% prettify dart %}
+{% highlight dart %}
 final addressBook = (new AddressBookBuilder()
       ..name = 'jenny'
       ..email = 'jenny@example.com'
@@ -1644,16 +1616,16 @@ final addressBook = (new AddressBookBuilder()
             ..label = 'home')
           .build())
     .build();
-{% endprettify %}
+{% endhighlight %}
 
 Be careful to construct your cascade on a function that returns
 an actual object. For example, the following code fails:
 
-{% prettify dart %}
+{% highlight dart %}
 // Does not work
 var sb = new StringBuffer();
 sb.write('foo')..write('bar');
-{% endprettify %}
+{% endhighlight %}
 
 The `sb.write()` call returns void,
 and you can't construct a cascade on `void`.
@@ -1666,7 +1638,6 @@ It's just part of the Dart syntax.
 </div>
 
 ### Other operators {#other-operators}
-{:.no_toc}
 
 You've seen most of the remaining operators in other examples:
 
@@ -1704,13 +1675,12 @@ explained in [Exceptions](#exceptions).
 
 
 ### If and else {#if-and-else}
-{:.no_toc}
 
 Dart supports `if` statements with optional `else` statements, as the
 next sample shows. Also see [conditional expressions](#conditional-expressions).
 
 <!-- ch02/flow_if_else.dart -->
-{% prettify dart %}
+{% highlight dart %}
 if (isRaining()) {
   you.bringRainCoat();
 } else if (isSnowing()) {
@@ -1718,36 +1688,35 @@ if (isRaining()) {
 } else {
   car.putTopDown();
 }
-{% endprettify %}
+{% endhighlight %}
 
 Remember, unlike JavaScript, Dart treats all values other than `true` as
 `false`. See [Booleans](#booleans) for more information.
 
 
 ### For loops {#for-loops}
-{:.no_toc}
 
 You can iterate with the standard `for` loop. For example:
 
 <!-- ch02/flow_for_loops.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var message = new StringBuffer("Dart is fun");
 for (var i = 0; i < 5; i++) {
   message.write('!');
 }
-{% endprettify %}
+{% endhighlight %}
 
 Closures inside of Dart’s `for` loops capture the value of the index,
 avoiding a common pitfall found in JavaScript. For example, consider:
 
 <!-- ch02/flow_for_loops.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var callbacks = [];
 for (var i = 0; i < 2; i++) {
   callbacks.add(() => print(i));
 }
 callbacks.forEach((c) => c());
-{% endprettify %}
+{% endhighlight %}
 
 The output is `0` and then `1`, as expected. In contrast, the example
 would print `2` and then `2` in JavaScript.
@@ -1758,61 +1727,59 @@ method. Using `forEach()` is a good option if you don’t need to
 know the current iteration counter:
 
 <!-- ch02/flow_for_loops.dart -->
-{% prettify dart %}
+{% highlight dart %}
 candidates.forEach((candidate) => candidate.interview());
-{% endprettify %}
+{% endhighlight %}
 
 Iterable classes such as List and Set also support the `for-in` form of
 [iteration](library-tour#iteration):
 
 <!-- ch02/flow_for_loops.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var collection = [0, 1, 2];
 for (var x in collection) {
   print(x);
 }
-{% endprettify %}
+{% endhighlight %}
 
 
 ### While and do-while {#while-and-do-while}
-{:.no_toc}
 
 A `while` loop evaluates the condition before the loop:
 
 <!-- ch02/flow_while.dart -->
-{% prettify dart %}
+{% highlight dart %}
 while (!isDone()) {
   doSomething();
 }
-{% endprettify %}
+{% endhighlight %}
 
 A `do`-`while` loop evaluates the condition *after* the loop:
 
 <!-- ch02/flow_while.dart -->
-{% prettify dart %}
+{% highlight dart %}
 do {
   printLine();
 } while (!atEndOfPage());
-{% endprettify %}
+{% endhighlight %}
 
 
 ### Break and continue {#break-and-continue}
-{:.no_toc}
 
 Use `break` to stop looping:
 
 <!-- ch02/flow_break_continue.dart -->
-{% prettify dart %}
+{% highlight dart %}
 while (true) {
   if (shutDownRequested()) break;
   processIncomingRequests();
 }
-{% endprettify %}
+{% endhighlight %}
 
 Use `continue` to skip to the next loop iteration:
 
 <!-- ch02/flow_break_continue.dart -->
-{% prettify dart %}
+{% highlight dart %}
 for (int i = 0; i < candidates.length; i++) {
   var candidate = candidates[i];
   if (candidate.yearsExperience < 5) {
@@ -1820,21 +1787,20 @@ for (int i = 0; i < candidates.length; i++) {
   }
   candidate.interview();
 }
-{% endprettify %}
+{% endhighlight %}
 
 You might write that example differently if you’re using an
 [Iterable](https://api.dartlang.org/stable/dart-core/Iterable-class.html)
 such as a list or set:
 
 <!-- ch02/flow_break_continue.dart -->
-{% prettify dart %}
+{% highlight dart %}
 candidates.where((c) => c.yearsExperience >= 5)
           .forEach((c) => c.interview());
-{% endprettify %}
+{% endhighlight %}
 
 
 ### Switch and case {#switch-and-case}
-{:.no_toc}
 
 Switch statements in Dart compare integer, string, or compile-time
 constants using `==`. The compared objects must all be instances of the
@@ -1855,7 +1821,7 @@ Other valid ways to end a non-empty `case` clause are a `continue`,
 Use a `default` clause to execute code when no `case` clause matches:
 
 <!-- ch02/flow_switch_case.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var command = 'OPEN';
 switch (command) {
   case 'CLOSED':
@@ -1876,13 +1842,13 @@ switch (command) {
   default:
     executeUnknown();
 }
-{% endprettify %}
+{% endhighlight %}
 
 The following example omits the `break` statement in a `case` clause,
 thus generating an error:
 
 <!-- ch02/flow_switch_case.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var command = 'OPEN';
 switch (command) {
   case 'OPEN':
@@ -1893,13 +1859,13 @@ switch (command) {
     executeClosed();
     break;
 }
-{% endprettify %}
+{% endhighlight %}
 
 However, Dart does support empty `case` clauses, allowing a form of
 fall-through:
 
 <!-- ch02/flow_switch_case.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var command = 'CLOSED';
 switch (command) {
   case 'CLOSED': // Empty case falls through.
@@ -1908,13 +1874,13 @@ switch (command) {
     executeNowClosed();
     break;
 }
-{% endprettify %}
+{% endhighlight %}
 
 If you really want fall-through, you can use a `continue` statement and
 a label:
 
 <!-- ch02/flow_switch_case.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var command = 'CLOSED';
 switch (command) {
   case 'CLOSED':
@@ -1928,21 +1894,20 @@ nowClosed:
     executeNowClosed();
     break;
 }
-{% endprettify %}
+{% endhighlight %}
 
 A `case` clause can have local variables, which are visible only inside
 the scope of that clause.
 
 
 ### Assert {#assert}
-{:.no_toc}
 
 Use an `assert` statement to disrupt normal execution if a boolean
 condition is false. You can find examples of assert statements
 throughout this tour. Here are some more:
 
 <!-- ch02/flow_assert.dart -->
-{% prettify dart %}
+{% highlight dart %}
 // Make sure the variable has a non-null value.
 assert(text != null);
 
@@ -1951,7 +1916,7 @@ assert(number < 100);
 
 // Make sure this is an https URL.
 assert(urlString.startsWith('https'));
-{% endprettify %}
+{% endhighlight %}
 
 <div class="alert alert-info" markdown="1">
 **Note:**
@@ -1986,47 +1951,45 @@ define your own exceptions. However, Dart programs can throw any
 non-null object—not just Exception and Error objects—as an exception.
 
 ### Throw {#throw}
-{:.no_toc}
 
 Here’s an example of throwing, or *raising*, an exception:
 
 <!-- ch02/flow_exceptions.dart -->
-{% prettify dart %}
+{% highlight dart %}
 throw new FormatException('Expected at least 1 section');
-{% endprettify %}
+{% endhighlight %}
 
 You can also throw arbitrary objects:
 
 <!-- ch02/flow_exceptions.dart -->
-{% prettify dart %}
+{% highlight dart %}
 throw 'Out of llamas!';
-{% endprettify %}
+{% endhighlight %}
 
 Because throwing an exception is an expression, you can throw exceptions
 in =\> statements, as well as anywhere else that allows expressions:
 
 <!-- ch02/flow_exceptions.dart -->
-{% prettify dart %}
+{% highlight dart %}
 distanceTo(Point other) =>
     throw new UnimplementedError();
-{% endprettify %}
+{% endhighlight %}
 
 
 ### Catch {#catch}
-{:.no_toc}
 
 Catching, or capturing, an exception stops the exception from
 propagating (unless you rethrow the exception).
 Catching an exception gives you a chance to handle it:
 
 <!-- ch02/flow_exceptions.dart -->
-{% prettify dart %}
+{% highlight dart %}
 try {
   breedMoreLlamas();
 } on OutOfLlamasException {
   buyMoreLlamas();
 }
-{% endprettify %}
+{% endhighlight %}
 
 To handle code that can throw more than one type of exception, you can
 specify multiple catch clauses. The first catch clause that matches the
@@ -2034,7 +1997,7 @@ thrown object’s type handles the exception. If the catch clause does not
 specify a type, that clause can handle any type of thrown object:
 
 <!-- ch02/flow_exceptions.dart -->
-{% prettify dart %}
+{% highlight dart %}
 try {
   breedMoreLlamas();
 } on OutOfLlamasException {
@@ -2047,7 +2010,7 @@ try {
   // No specified type, handles all
   print('Something really unknown: $e');
 }
-{% endprettify %}
+{% endhighlight %}
 
 As the preceding code shows, you can use either `on` or `catch` or both.
 Use `on` when you need to specify the exception type. Use `catch` when
@@ -2059,7 +2022,7 @@ and the second is the stack trace
 (a [StackTrace](https://api.dartlang.org/stable/dart-core/StackTrace-class.html) object).
 
 <!-- ch02/flow_exceptions.dart -->
-{% prettify dart %}
+{% highlight dart %}
   ...
 } on Exception catch [[highlight]](e)[[/highlight]] {
   print('Exception details:\n $e');
@@ -2067,14 +2030,14 @@ and the second is the stack trace
   print('Exception details:\n $e');
   print('Stack trace:\n $s');
 }
-{% endprettify %}
+{% endhighlight %}
 
 To partially handle an exception,
 while allowing it to propagate,
 use the `rethrow` keyword.
 
 <!-- ch02/rethrow.dart -->
-{% prettify dart %}
+{% highlight dart %}
 final foo = '';
 
 void misbehave() {
@@ -2093,30 +2056,29 @@ void main() {
     print('main() finished handling ${e.runtimeType}.');
   }
 }
-{% endprettify %}
+{% endhighlight %}
 
 
 ### Finally {#finally}
-{:.no_toc}
 
 To ensure that some code runs whether or not an exception is thrown, use
 a `finally` clause. If no `catch` clause matches the exception, the
 exception is propagated after the `finally` clause runs:
 
 <!-- ch02/flow_exceptions.dart -->
-{% prettify dart %}
+{% highlight dart %}
 try {
   breedMoreLlamas();
 } finally {
   // Always clean up, even if an exception is thrown.
   cleanLlamaStalls();
 }
-{% endprettify %}
+{% endhighlight %}
 
 The `finally` clause runs after any matching `catch` clauses:
 
 <!-- ch02/flow_exceptions.dart -->
-{% prettify dart %}
+{% highlight dart %}
 try {
   breedMoreLlamas();
 } catch(e) {
@@ -2124,7 +2086,7 @@ try {
 } finally {
   cleanLlamaStalls();  // Then clean up.
 }
-{% endprettify %}
+{% endhighlight %}
 
 Learn more by reading the [Exceptions](library-tour#exceptions) section.
 
@@ -2143,7 +2105,7 @@ for a class. Constructor names can be either <code><em>ClassName</em></code> or
 <code><em>ClassName</em>.<em>identifier</em></code>. For example:
 
 <!-- ch02/object_classes.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var jsonData = JSON.decode('{"x":1, "y":2}');
 
 // Create a Point using Point().
@@ -2151,7 +2113,7 @@ var p1 = new Point(2, 2);
 
 // Create a Point using Point.fromJson().
 var p2 = new Point.fromJson(jsonData);
-{% endprettify %}
+{% endhighlight %}
 
 Objects have *members* consisting of functions and data (*methods* and
 *instance variables*, respectively). When you call a method, you *invoke*
@@ -2161,7 +2123,7 @@ data.
 Use a dot (`.`) to refer to an instance variable or method:
 
 <!-- ch02/object_classes.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var p = new Point(2, 2);
 
 // Set the value of the instance variable y.
@@ -2172,7 +2134,7 @@ assert(p.y == 3);
 
 // Invoke distanceTo() on p.
 num distance = p.distanceTo(new Point(4, 4));
-{% endprettify %}
+{% endhighlight %}
 
 Use `?.` instead of `.` to avoid an exception
 when the leftmost operand is null:
@@ -2182,29 +2144,29 @@ https://dartpad.dartlang.org/0cb25997742ed5382e4a
 https://gist.github.com/0cb25997742ed5382e4a
 {% endcomment %}
 
-{% prettify dart %}
+{% highlight dart %}
 // If p is non-null, set its y value to 4.
 p?.y = 4;
-{% endprettify %}
+{% endhighlight %}
 
 Some classes provide constant constructors. To create a compile-time
 constant using a constant constructor, use `const` instead of `new`:
 
 <!-- ch02/object_classes.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var p = const ImmutablePoint(2, 2);
-{% endprettify %}
+{% endhighlight %}
 
 Constructing two identical compile-time constants results in a single,
 canonical instance:
 
 <!-- ch02/object_classes.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var a = const ImmutablePoint(1, 1);
 var b = const ImmutablePoint(1, 1);
 
 assert(identical(a, b)); // They are the same instance!
-{% endprettify %}
+{% endhighlight %}
 
 To get an object's type at runtime,
 you can use Object's `runtimeType` property,
@@ -2212,26 +2174,25 @@ which returns a
 [Type](https://api.dartlang.org/stable/dart-core/dart-core/Type-class.html) object.
 
 <!-- ch02/object_classes.dart -->
-{% prettify dart %}
+{% highlight dart %}
 print('The type of a is ${a.runtimeType}');
-{% endprettify %}
+{% endhighlight %}
 
 The following sections discuss how to implement classes.
 
 
 ### Instance variables {#instance-variables}
-{:.no_toc}
 
 Here’s how you declare instance variables:
 
 <!-- ch02/instance_variables.dart -->
-{% prettify dart %}
+{% highlight dart %}
 class Point {
   num x; // Declare instance variable x, initially null.
   num y; // Declare y, initially null.
   num z = 0; // Declare z, initially 0.
 }
-{% endprettify %}
+{% endhighlight %}
 
 All uninitialized instance variables have the value `null`.
 
@@ -2240,7 +2201,7 @@ instance variables also generate an implicit *setter* method. For details,
 see [Getters and setters](#getters-and-setters).
 
 <!-- ch02/instance_variables.dart -->
-{% prettify dart %}
+{% highlight dart %}
 class Point {
   num x;
   num y;
@@ -2252,7 +2213,7 @@ main() {
   assert(point.x == 4); // Use the getter method for x.
   assert(point.y == null); // Values default to null.
 }
-{% endprettify %}
+{% endhighlight %}
 
 If you initialize an instance variable where it is declared (instead of
 in a constructor or method), the value is set when the instance is
@@ -2261,7 +2222,6 @@ execute.
 
 
 ### Constructors {#constructors}
-{:.no_toc}
 
 Declare a constructor by creating a function with the same name as its
 class (plus, optionally, an additional identifier as described in
@@ -2270,7 +2230,7 @@ The most common form of constructor, the generative constructor, creates
 a new instance of a class:
 
 <!-- ch02/constructor_long_way.dart -->
-{% prettify dart %}
+{% highlight dart %}
 class Point {
   num x;
   num y;
@@ -2281,7 +2241,7 @@ class Point {
     this.y = y;
   }
 }
-{% endprettify %}
+{% endhighlight %}
 
 The `this` keyword refers to the current instance.
 
@@ -2295,7 +2255,7 @@ The pattern of assigning a constructor argument to an instance variable
 is so common, Dart has syntactic sugar to make it easy:
 
 <!-- ch02/object_classes.dart -->
-{% prettify dart %}
+{% highlight dart %}
 class Point {
   num x;
   num y;
@@ -2304,30 +2264,27 @@ class Point {
   // before the constructor body runs.
   Point(this.x, this.y);
 }
-{% endprettify %}
+{% endhighlight %}
 
 #### Default constructors {#default-constructors}
-{:.no_toc}
 
 If you don’t declare a constructor, a default constructor is provided
 for you. The default constructor has no arguments and invokes the
 no-argument constructor in the superclass.
 
 #### Constructors aren’t inherited {#constructors-arent-inherited}
-{:.no_toc}
 
 Subclasses don’t inherit constructors from their superclass. A subclass
 that declares no constructors has only the default (no argument, no
 name) constructor.
 
 #### Named constructors {#named-constructors}
-{:.no_toc}
 
 Use a named constructor to implement multiple constructors for a class
 or to provide extra clarity:
 
 <!-- ch02/named_constructor.dart -->
-{% prettify dart %}
+{% highlight dart %}
 class Point {
   num x;
   num y;
@@ -2340,7 +2297,7 @@ class Point {
     y = json['y'];
   }
 }
-{% endprettify %}
+{% endhighlight %}
 
 Remember that constructors are not inherited, which means that a
 superclass’s named constructor is not inherited by a subclass. If you
@@ -2348,7 +2305,6 @@ want a subclass to be created with a named constructor defined in the
 superclass, you must implement that constructor in the subclass.
 
 #### Invoking a non-default superclass constructor {#invoking-a-non-default-superclass-constructor}
-{:.no_toc}
 
 By default, a constructor in a subclass calls the superclass’s unnamed,
 no-argument constructor.
@@ -2408,12 +2364,12 @@ invoking the constructor, an argument can be an expression such as a
 function call:
 
 <!-- ch02/method_then_constructor.dart -->
-{% prettify dart %}
+{% highlight dart %}
 class Employee extends Person {
   // ...
   Employee() : super.fromJson(findDefaultData());
 }
-{% endprettify %}
+{% endhighlight %}
 
 <div class="alert alert-info" markdown="1">
 **Note:**
@@ -2429,14 +2385,13 @@ For example, arguments can call static methods but not instance methods.
 </div>
 
 #### Initializer list {#initializer-list}
-{:.no_toc}
 
 Besides invoking a superclass constructor, you can also initialize
 instance variables before the constructor body runs. Separate
 initializers with commas.
 
 <!-- ch02/initializer_list.dart -->
-{% prettify dart %}
+{% highlight dart %}
 class Point {
   num x;
   num y;
@@ -2451,7 +2406,7 @@ class Point {
     print('In Point.fromJson(): ($x, $y)');
   }
 }
-{% endprettify %}
+{% endhighlight %}
 
 <div class="alert alert-warning" markdown="1">
 **Warning:**
@@ -2494,14 +2449,13 @@ src="{{site.custom.dartpad.embed-dart-prefix}}?id=7a9764702c0608711e08&horizonta
 </iframe>
 
 #### Redirecting constructors {#redirecting-constructors}
-{:.no_toc}
 
 Sometimes a constructor’s only purpose is to redirect to another
 constructor in the same class. A redirecting constructor’s body is
 empty, with the constructor call appearing after a colon (:).
 
 <!-- ch02/along_x_axis.dart -->
-{% prettify dart %}
+{% highlight dart %}
 class Point {
   num x;
   num y;
@@ -2512,17 +2466,16 @@ class Point {
   // Delegates to the main constructor.
   Point.alongXAxis(num x) : this(x, 0);
 }
-{% endprettify %}
+{% endhighlight %}
 
 #### Constant constructors {#constant-constructors}
-{:.no_toc}
 
 If your class produces objects that never change, you can make these
 objects compile-time constants. To do this, define a `const` constructor
 and make sure that all instance variables are `final`.
 
 <!-- ch02/immutable_point.dart -->
-{% prettify dart %}
+{% highlight dart %}
 class ImmutablePoint {
   final num x;
   final num y;
@@ -2530,10 +2483,9 @@ class ImmutablePoint {
   static final ImmutablePoint origin =
       const ImmutablePoint(0, 0);
 }
-{% endprettify %}
+{% endhighlight %}
 
 #### Factory constructors {#factory-constructors}
-{:.no_toc}
 
 Use the `factory` keyword when implementing a constructor that doesn’t
 always create a new instance of its class. For example, a factory
@@ -2544,7 +2496,7 @@ The following example demonstrates a factory constructor returning
 objects from a cache:
 
 <!-- ch02/factory_constructor.dart -->
-{% prettify dart %}
+{% highlight dart %}
 class Logger {
   final String name;
   bool mute = false;
@@ -2572,7 +2524,7 @@ class Logger {
     }
   }
 }
-{% endprettify %}
+{% endhighlight %}
 
 <div class="alert alert-info" markdown="1">
 **Note:**
@@ -2582,26 +2534,24 @@ Factory constructors have no access to `this`.
 To invoke a factory constructor, you use the `new` keyword:
 
 <!-- ch02/factory_constructor.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var logger = new Logger('UI');
 logger.log('Button clicked');
-{% endprettify %}
+{% endhighlight %}
 
 
 ### Methods {#methods}
-{:.no_toc}
 
 Methods are functions that provide behavior for an object.
 
 #### Instance methods {#instance-methods}
-{:.no_toc}
 
 Instance methods on objects can access instance variables and `this`.
 The `distanceTo()` method in the following sample is an example of an
 instance method:
 
 <!-- ch02/distance_to.dart -->
-{% prettify dart %}
+{% highlight dart %}
 import 'dart:math';
 
 class Point {
@@ -2615,10 +2565,9 @@ class Point {
     return sqrt(dx * dx + dy * dy);
   }
 }
-{% endprettify %}
+{% endhighlight %}
 
 #### Getters and setters {#getters-and-setters}
-{:.no_toc}
 
 Getters and setters are special methods that provide read and write
 access to an object’s properties. Recall that each instance variable has
@@ -2627,7 +2576,7 @@ additional properties by implementing getters and setters, using the
 `get` and `set` keywords:
 
 <!-- ch02/rectangle.dart -->
-{% prettify dart %}
+{% highlight dart %}
 class Rectangle {
   num left;
   num top;
@@ -2649,7 +2598,7 @@ main() {
   rect.right = 12;
   assert(rect.left == -8);
 }
-{% endprettify %}
+{% endhighlight %}
 
 With getters and setters, you can start with instance variables, later
 wrapping them with methods, all without changing client code.
@@ -2663,14 +2612,13 @@ in a temporary variable.
 </div>
 
 #### Abstract methods {#abstract-methods}
-{:.no_toc}
 
 Instance, getter, and setter methods can be abstract, defining an
 interface but leaving its implementation up to other classes. To make a
 method abstract, use a semicolon (;) instead of a method body:
 
 <!-- ch02/doer.dart -->
-{% prettify dart %}
+{% highlight dart %}
 abstract class Doer {
   // ...Define instance variables and methods...
 
@@ -2682,14 +2630,13 @@ class EffectiveDoer extends Doer {
     // ...Provide an implementation, so the method is not abstract here...
   }
 }
-{% endprettify %}
+{% endhighlight %}
 
 Calling an abstract method results in a runtime error.
 
 Also see [Abstract classes](#abstract-classes).
 
 #### Overridable operators {#overridable-operators}
-{:.no_toc}
 
 You can override the operators shown in the following table.
 For example, if you define a
@@ -2705,7 +2652,7 @@ Vector class, you might define a `+` method to add two vectors.
 Here’s an example of a class that overrides the `+` and `-` operators:
 
 <!-- ch02/vector.dart -->
-{% prettify dart %}
+{% highlight dart %}
 class Vector {
   final int x;
   final int y;
@@ -2735,7 +2682,7 @@ main() {
   // v - w == (0, 1)
   assert((v - w).x == 0 && (v - w).y == 1);
 }
-{% endprettify %}
+{% endhighlight %}
 
 If you override `==`, you should also override Object's `hashCode` getter.
 For an example of overriding `==` and `hashCode`, see
@@ -2746,7 +2693,6 @@ For more information on overriding, in general, see
 
 
 ### Abstract classes {#abstract-classes}
-{:.no_toc}
 
 Use the `abstract` modifier to define an *abstract class*—a class that
 can’t be instantiated. Abstract classes are useful for defining
@@ -2759,7 +2705,7 @@ Here’s an example of declaring an abstract class that has an abstract
 method:
 
 <!-- ch02/abstract.dart -->
-{% prettify dart %}
+{% highlight dart %}
 // This class is declared abstract and thus
 // can't be instantiated.
 abstract class AbstractContainer {
@@ -2767,13 +2713,13 @@ abstract class AbstractContainer {
 
   void updateChildren(); // Abstract method.
 }
-{% endprettify %}
+{% endhighlight %}
 
 The following class isn’t abstract, and thus can be instantiated even
 though it defines an abstract method:
 
 <!-- ch02/abstract.dart -->
-{% prettify dart %}
+{% highlight dart %}
 class SpecializedContainer extends AbstractContainer {
   // ...Define more constructors, fields, methods...
 
@@ -2785,11 +2731,10 @@ class SpecializedContainer extends AbstractContainer {
   // doesn't prevent instantiation.
   void doSomething();
 }
-{% endprettify %}
+{% endhighlight %}
 
 
 ### Implicit interfaces {#implicit-interfaces}
-{:.no_toc}
 
 Every class implicitly defines an interface containing all the instance
 members of the class and of any interfaces it implements. If you want to
@@ -2801,7 +2746,7 @@ A class implements one or more interfaces by declaring them in an
 interfaces. For example:
 
 <!-- ch02/imposter.dart -->
-{% prettify dart %}
+{% highlight dart %}
 // A person. The implicit interface contains greet().
 class Person {
   // In the interface, but visible only in this library.
@@ -2828,27 +2773,26 @@ main() {
   print(greetBob(new Person('kathy')));
   print(greetBob(new Imposter()));
 }
-{% endprettify %}
+{% endhighlight %}
 
 Here’s an example of specifying that a class implements multiple
 interfaces:
 
 <!-- ch02/point_interfaces.dart -->
-{% prettify dart %}
+{% highlight dart %}
 class Point implements Comparable, Location {
   // ...
 }
-{% endprettify %}
+{% endhighlight %}
 
 
 ### Extending a class {#extending-a-class}
-{:.no_toc}
 
 Use `extends` to create a subclass, and `super` to refer to the
 superclass:
 
 <!-- smart_tv.dart -->
-{% prettify dart %}
+{% highlight dart %}
 class Television {
   void turnOn() {
     _illuminateDisplay();
@@ -2866,7 +2810,7 @@ class SmartTelevision extends Television {
   }
   // ...
 }
-{% endprettify %}
+{% endhighlight %}
 
 Subclasses can override instance methods, getters, and setters. Here’s
 an example of overriding the Object class’s `noSuchMethod()` method,
@@ -2874,7 +2818,7 @@ which is called whenever code attempts to use a non-existent method or
 instance variable:
 
 <!-- ch02/no_such_method.dart -->
-{% prettify dart %}
+{% highlight dart %}
 class A {
   // Unless you override noSuchMethod, using a
   // non-existent member results in a NoSuchMethodError.
@@ -2883,46 +2827,46 @@ class A {
           '${mirror.memberName}');
   }
 }
-{% endprettify %}
+{% endhighlight %}
 
 You can use the `@override` annotation to indicate that you are
 intentionally overriding a member:
 
 <!-- ch02/ch02_meta/bin/ch02_override.dart -->
-{% prettify dart %}
+{% highlight dart %}
 class A {
   @override
   void noSuchMethod(Invocation mirror) {
     // ...
   }
 }
-{% endprettify %}
+{% endhighlight %}
 
 If you use `noSuchMethod()` to implement every possible getter, setter,
 and method for one or more types,
 then you can use the `@proxy` annotation to avoid warnings:
 
 <!-- ch02/ch02_meta/bin/ch02_proxy.dart -->
-{% prettify dart %}
+{% highlight dart %}
 @proxy
 class A {
   void noSuchMethod(Invocation mirror) {
     // ...
   }
 }
-{% endprettify %}
+{% endhighlight %}
 
 An alternative to `@proxy`, if you know the types at compile time,
 is to just declare that the class implements those types.
 
 <!-- ch02/ch02_meta/bin/ch02_proxy.dart -->
-{% prettify dart %}
+{% highlight dart %}
 class A implements SomeClass, SomeOtherClass {
   void noSuchMethod(Invocation mirror) {
     // ...
   }
 }
-{% endprettify %}
+{% endhighlight %}
 
 
 For more information on annotations, see
@@ -2930,7 +2874,6 @@ For more information on annotations, see
 
 
 ### Enumerated types {#enums}
-{:.no_toc}
 
 Enumerated types, often called _enumerations_ or _enums_,
 are a special kind of class used to represent
@@ -2938,18 +2881,17 @@ a fixed number of constant values.
 
 
 #### Using enums {#using-enums}
-{:.no_toc}
 
 Declare an enumerated type using the `enum` keyword:
 
 <!-- ch02/enum_switch.dart -->
-{% prettify dart %}
+{% highlight dart %}
 enum Color {
   red,
   green,
   blue
 }
-{% endprettify %}
+{% endhighlight %}
 
 Each value in an enum has an `index` getter,
 which returns the zero-based position of the value in the enum declaration.
@@ -2957,27 +2899,27 @@ For example, the first value has index 0,
 and the second value has index 1.
 
 <!-- ch02/enum_switch.dart -->
-{% prettify dart %}
+{% highlight dart %}
 assert(Color.red.index == 0);
 assert(Color.green.index == 1);
 assert(Color.blue.index == 2);
-{% endprettify %}
+{% endhighlight %}
 
 To get a list of all of the values in the enum,
 use the enum's `values` constant.
 
 <!-- ch02/enum_switch.dart -->
-{% prettify dart %}
+{% highlight dart %}
 List<Color> colors = Color.values;
 assert(colors[2] == Color.blue);
-{% endprettify %}
+{% endhighlight %}
 
 You can use enums in [switch statements](#switch-and-case).
 If the _e_ in <code>switch (<em>e</em>)</code> is explicitly typed as an enum,
 then you're warned if you don't handle all of the enum's values:
 
 <!-- ch02/enum_switch.dart -->
-{% prettify dart %}
+{% highlight dart %}
 enum Color {
   red,
   green,
@@ -2995,7 +2937,7 @@ switch (aColor) {
   default: // Without this, you see a WARNING.
     print(aColor);  // 'Color.blue'
 }
-{% endprettify %}
+{% endhighlight %}
 
 Enumerated types have the following limits:
 
@@ -3007,7 +2949,6 @@ For more information, see the
 
 
 ### Adding features to a class: mixins {#adding-features-to-a-class-mixins}
-{:.no_toc}
 
 Mixins are a way of reusing a class's code in multiple class
 hierarchies.
@@ -3016,7 +2957,7 @@ To use a mixin, use the `with` keyword followed by one or more mixin
 names. The following example shows two classes that use mixins:
 
 <!-- ch02/mixins.dart -->
-{% prettify dart %}
+{% highlight dart %}
 class Musician extends Performer with Musical {
   // ...
 }
@@ -3028,13 +2969,13 @@ class Maestro extends Person
     canConduct = true;
   }
 }
-{% endprettify %}
+{% endhighlight %}
 
 To implement a mixin, create a class that extends Object,
 declares no constructors, and has no calls to `super`. For example:
 
 <!-- ch02/mixins.dart -->
-{% prettify dart %}
+{% highlight dart %}
 abstract class Musical {
   bool canPlayPiano = false;
   bool canCompose = false;
@@ -3050,7 +2991,7 @@ abstract class Musical {
     }
   }
 }
-{% endprettify %}
+{% endhighlight %}
 
 <div class="alert alert-info" markdown="1">
 **Note:**
@@ -3070,18 +3011,16 @@ Dart.](/articles/mixins/)
 
 
 ### Class variables and methods {#class-variables-and-methods}
-{:.no_toc}
 
 Use the `static` keyword to implement class-wide variables and methods.
 
 #### Static variables {#static-variables}
-{:.no_toc}
 
 Static variables (class variables) are useful for class-wide state and
 constants:
 
 <!-- ch02/color.dart -->
-{% prettify dart %}
+{% highlight dart %}
 class Color {
   static const red =
       const Color('red'); // A constant static variable.
@@ -3092,7 +3031,7 @@ class Color {
 main() {
   assert(Color.red.name == 'red');
 }
-{% endprettify %}
+{% endhighlight %}
 
 Static variables aren’t initialized until they’re used.
 
@@ -3104,13 +3043,12 @@ of preferring `lowerCamelCase` for constant names.
 </div>
 
 #### Static methods {#static-methods}
-{:.no_toc}
 
 Static methods (class methods) do not operate on an instance, and thus
 do not have access to `this`. For example:
 
 <!-- ch02/point.dart -->
-{% prettify dart %}
+{% highlight dart %}
 import 'dart:math';
 
 class Point {
@@ -3131,7 +3069,7 @@ main() {
   var distance = Point.distanceBetween(a, b);
   assert(distance < 2.9 && distance > 2.8);
 }
-{% endprettify %}
+{% endhighlight %}
 
 <div class="alert alert-info" markdown="1">
 **Note:**
@@ -3155,7 +3093,6 @@ as E, T, S, K, and V.
 
 
 ### Why use generics? {#why-use-generics}
-{:.no_toc}
 
 Because types are optional in Dart, you never *have* to use generics.
 You might *want* to, though, for the same reason you might want to use
@@ -3169,12 +3106,12 @@ the Dart VM in checked mode) can detect that assigning a non-string to
 the list is probably a mistake. Here’s an example:
 
 <!-- ch02/generics.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var names = new List<String>();
 names.addAll(['Seth', 'Kathy', 'Lars']);
 // ...
 names.add(42); // Fails in checked mode (succeeds in production mode).
-{% endprettify %}
+{% endhighlight %}
 
 Another reason for using generics is to reduce code duplication.
 Generics let you share a single interface and implementation between
@@ -3183,23 +3120,23 @@ analysis early warnings. For example, say you create an interface for
 caching an object:
 
 <!-- ch02/generics.dart -->
-{% prettify dart %}
+{% highlight dart %}
 abstract class ObjectCache {
   Object getByKey(String key);
   setByKey(String key, Object value);
 }
-{% endprettify %}
+{% endhighlight %}
 
 You discover that you want a string-specific version of this interface,
 so you create another interface:
 
 <!-- ch02/generics.dart -->
-{% prettify dart %}
+{% highlight dart %}
 abstract class StringCache {
   String getByKey(String key);
   setByKey(String key, String value);
 }
-{% endprettify %}
+{% endhighlight %}
 
 Later, you decide you want a number-specific version of this
 interface... You get the idea.
@@ -3208,19 +3145,18 @@ Generic types can save you the trouble of creating all these interfaces.
 Instead, you can create a single interface that takes a type parameter:
 
 <!-- ch02/generics.dart -->
-{% prettify dart %}
+{% highlight dart %}
 abstract class Cache<T> {
   T getByKey(String key);
   setByKey(String key, T value);
 }
-{% endprettify %}
+{% endhighlight %}
 
 In this code, T is the stand-in type. It’s a placeholder that you can
 think of as a type that a developer will define later.
 
 
 ### Using collection literals {#using-collection-literals}
-{:.no_toc}
 
 List and map literals can be parameterized. Parameterized literals are
 just like the literals you’ve already seen, except that you add
@@ -3231,51 +3167,49 @@ parameterized literals when you want type warnings in checked mode. Here
 is example of using typed literals:
 
 <!-- ch02/generics.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var names = <String>['Seth', 'Kathy', 'Lars'];
 var pages = <String, String>{
   'index.html': 'Homepage',
   'robots.txt': 'Hints for web robots',
   'humans.txt': 'We are people, not machines'
 };
-{% endprettify %}
+{% endhighlight %}
 
 
 ### Using parameterized types with constructors {#using-parameterized-types-with-constructors}
-{:.no_toc}
 
 To specify one or more types when using a constructor, put the types in
 angle brackets (`<...>`) just after the class name. For example:
 
 <!-- ch02/generics.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var names = new List<String>();
 names.addAll(['Seth', 'Kathy', 'Lars']);
 var nameSet = new Set<String>.from(names);
-{% endprettify %}
+{% endhighlight %}
 
 The following code creates a map that has integer keys and values of
 type View:
 
 <!-- ch02/generics.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var views = new Map<int, View>();
-{% endprettify %}
+{% endhighlight %}
 
 
 ### Generic collections and the types they contain {#generic-collections-and-the-types-they-contain}
-{:.no_toc}
 
 Dart generic types are *reified*, which means that they carry their type
 information around at runtime. For example, you can test the type of a
 collection, even in production mode:
 
 <!-- ch02/generics.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var names = new List<String>();
 names.addAll(['Seth', 'Kathy', 'Lars']);
 print(names is List<String>); // true
-{% endprettify %}
+{% endhighlight %}
 
 However, the `is` expression checks the type of the *collection*
 only—not of the objects inside it. In production mode, a `List<String>`
@@ -3292,14 +3226,13 @@ an object is a List, but you can’t test whether it’s a `List<String>`.
 
 
 ### Restricting the parameterized type
-{:.no_toc}
 
 When implementing a generic type,
 you might want to limit the types of its parameters.
 You can do this using `extends`.
 
 <!-- ch02/generics_base_class.dart -->
-{% prettify dart %}
+{% highlight dart %}
 // T must be SomeBaseClass or one of its descendants.
 class Foo<T [[highlight]]extends SomeBaseClass[[/highlight]]> {...}
 
@@ -3317,7 +3250,7 @@ void main() {
   // checked mode, a runtime error.
   // var objectFoo = new Foo<Object>();
 }
-{% endprettify %}
+{% endhighlight %}
 
 For more information about generics, see [Optional Types in
 Dart.](/articles/optional-types/)
@@ -3338,7 +3271,6 @@ pub, a package manager included in the SDK.
 
 
 ### Using libraries {#using-libraries}
-{:.no_toc}
 
 Use `import` to specify how a namespace from one library is used in the
 scope of another library.
@@ -3348,9 +3280,9 @@ For example, Dart web apps generally use the
 library, which they can import like this:
 
 <!-- ch02/libraries/using_libraries.dart -->
-{% prettify dart %}
+{% highlight dart %}
 import 'dart:html';
-{% endprettify %}
+{% endhighlight %}
 
 The only required argument to `import` is a URI specifying the
 library.
@@ -3360,11 +3292,11 @@ scheme. The `package:` scheme specifies libraries provided by a package
 manager such as the pub tool. For example:
 
 <!-- ch02/libraries/using_schemes.dart, mylib, utils -->
-{% prettify dart %}
+{% highlight dart %}
 import 'dart:io';
 import 'package:mylib/mylib.dart';
 import 'package:utils/utils.dart';
-{% endprettify %}
+{% endhighlight %}
 
 <div class="alert alert-info" markdown="1">
 **Note:**
@@ -3374,7 +3306,6 @@ import 'package:utils/utils.dart';
 
 
 #### Specifying a library prefix {#specifying-a-library-prefix}
-{:.no_toc}
 
 If you import two libraries that have conflicting identifiers, then you
 can specify a prefix for one or both libraries. For example, if library1
@@ -3382,32 +3313,30 @@ and library2 both have an Element class, then you might have code like
 this:
 
 <!-- ch02/libraries/library_prefix.dart -->
-{% prettify dart %}
+{% highlight dart %}
 import 'package:lib1/lib1.dart';
 import 'package:lib2/lib2.dart' as lib2;
 // ...
 var element1 = new Element(); // Uses Element from lib1.
 var element2 =
     new lib2.Element();       // Uses Element from lib2.
-{% endprettify %}
+{% endhighlight %}
 
 #### Importing only part of a library {#importing-only-part-of-a-library}
-{:.no_toc}
 
 If you want to use only part of a library, you can selectively import
 the library. For example:
 
 <!-- ch02/libraries/library_partial.dart, lib1, lib2 -->
-{% prettify dart %}
+{% highlight dart %}
 // Import only foo.
 import 'package:lib1/lib1.dart' show foo;
 
 // Import all names EXCEPT foo.
 import 'package:lib2/lib2.dart' hide foo;
-{% endprettify %}
+{% endhighlight %}
 
 #### Lazily loading a library {#deferred-loading}
-{:.no_toc}
 
 _Deferred loading_ (also called _lazy loading_)
 allows an application to load a library on demand,
@@ -3423,20 +3352,20 @@ To lazily load a library, you must first
 import it using `deferred as`.
 
 <!-- ch02/libraries/ch02/deferred/bin/main.dart -->
-{% prettify dart %}
+{% highlight dart %}
 import 'package:deferred/hello.dart' deferred as hello;
-{% endprettify %}
+{% endhighlight %}
 
 When you need the library, invoke
 `loadLibrary()` using the library's identifier.
 
 <!-- ch02/libraries/ch02/deferred/bin/main.dart -->
-{% prettify dart %}
+{% highlight dart %}
 greet() async {
   await hello.loadLibrary();
   hello.printGreeting();
 }
-{% endprettify %}
+{% endhighlight %}
 
 In the preceding code,
 the `await` keyword pauses execution until the library is loaded.
@@ -3458,7 +3387,6 @@ Keep in mind the following when you use deferred loading:
   The `loadLibrary()` function returns a [Future](library-tour#future).
 
 ### Implementing libraries {#implementing-libraries}
-{:.no_toc}
 
 See
 [Creating Library Packages](/libraries/create-library-packages)
@@ -3497,14 +3425,14 @@ For example, here's some code that uses `await`
 to wait for the result of an asynchronous function:
 
 <!-- ch02/async_await.dart -->
-{% prettify dart %}
+{% highlight dart %}
 await lookUpVersion()
-{% endprettify %}
+{% endhighlight %}
 
 To use `await`, code must be in a function marked as `async`:
 
 <!-- ch02/async_await.dart -->
-{% prettify dart %}
+{% highlight dart %}
 checkVersion() async {
   var version = await lookUpVersion();
   if (version == expectedVersion) {
@@ -3513,23 +3441,22 @@ checkVersion() async {
     // Do something else.
   }
 }
-{% endprettify %}
+{% endhighlight %}
 
 You can use `try`, `catch`, and `finally`
 to handle errors and cleanup in code that uses `await`:
 
 <!-- dart-tutorials-samples/httpserver/bin/mini_file_server.dart -->
-{% prettify dart %}
+{% highlight dart %}
 try {
   server = await HttpServer.bind(InternetAddress.LOOPBACK_IP_V4, 4044);
 } catch (e) {
   // React to inability to bind to the port...
 }
-{% endprettify %}
+{% endhighlight %}
 
 
 ### Declaring async functions {#async}
-{:.no_toc}
 
 An _async function_ is a function whose body is marked with
 the `async` modifier.
@@ -3538,38 +3465,37 @@ it returns immediately—before
 any of its body executes.
 
 <!-- ch02/async_await.dart -->
-{% prettify dart %}
+{% highlight dart %}
 checkVersion() async {
   // ...
 }
 
 lookUpVersion() async => /* ... */;
-{% endprettify %}
+{% endhighlight %}
 
 Adding the `async` keyword to a function makes it return a Future.
 For example, consider this synchronous function,
 which returns a String:
 
 <!-- ch02/async_await.dart -->
-{% prettify dart %}
+{% highlight dart %}
 String lookUpVersionSync() => '1.0.0';
-{% endprettify %}
+{% endhighlight %}
 
 If you change it to be an async function—for example,
 because a future implementation will be time consuming—the
 returned value is a Future:
 
 <!-- ch02/async_await.dart -->
-{% prettify dart %}
+{% highlight dart %}
 Future<String> lookUpVersion() async => '1.0.0';
-{% endprettify %}
+{% endhighlight %}
 
 Note that the function's body doesn't need to use the Future API.
 Dart creates the Future object if necessary.
 
 
 ### Using await expressions with Futures {#await}
-{:.no_toc}
 
 An await expression has the following form:
 
@@ -3582,11 +3508,11 @@ For example, the following code waits three times
 for the results of functions:
 
 <!-- ch03/async_await.dart -->
-{% prettify dart %}
+{% highlight dart %}
 var entrypoint = await findEntrypoint();
 var exitCode = await runExecutable(entrypoint, args);
 await flushThenExit(exitCode);
-{% endprettify %}
+{% endhighlight %}
 
 In <code>await <em>expression</em></code>,
 the value of <code><em>expression</em></code> is usually a Future;
@@ -3600,15 +3526,14 @@ For example, to use `await` in your app's `main()` function,
 the body of `main()` must be marked as `async`:
 
 <!-- ch02/async_await.dart -->
-{% prettify dart %}
+{% highlight dart %}
 main() async {
   checkVersion();
   print('In main: version is ${await lookUpVersion()}');
 }
-{% endprettify %}
+{% endhighlight %}
 
 ### Using asynchronous for loops with Streams {#await-for}
-{:.no_toc}
 
 An asynchronous for loop has the following form:
 
@@ -3637,7 +3562,7 @@ For example, to use an asynchronous for loop in your app's `main()` function,
 the body of `main()` must be marked as `async`:
 
 <!-- dart-tutorials-samples/httpserver/number_thinker.dart -->
-{% prettify dart %}
+{% highlight dart %}
 main() async {
   ...
   await for (var request in requestServer) {
@@ -3645,7 +3570,7 @@ main() async {
   }
   ...
 }
-{% endprettify %}
+{% endhighlight %}
 
 For more information about asynchronous programming, see the
 [dart:async](library-tour#dartasync---asynchronous-programming)
@@ -3713,7 +3638,7 @@ retains type information when a function type is assigned to a variable.
 Consider the following code, which does not use a typedef:
 
 <!-- ch02/sorted_collection_broken.dart -->
-{% prettify dart %}
+{% highlight dart %}
 class SortedCollection {
   Function compare;
 
@@ -3732,7 +3657,7 @@ main() {
   // but what type of function?
   assert(coll.compare is Function);
 }
-{% endprettify %}
+{% endhighlight %}
 
 Type information is lost when assigning `f` to `compare`. The type of
 `f` is `(Object, ``Object)` → `int` (where → means returns), yet the
@@ -3741,7 +3666,7 @@ names and retain type information, both developers and tools can use
 that information.
 
 <!-- ch02/sorted_collection_broken_2.dart -->
-{% prettify dart %}
+{% highlight dart %}
 typedef int Compare(Object a, Object b);
 
 class SortedCollection {
@@ -3758,7 +3683,7 @@ main() {
   assert(coll.compare is Function);
   assert(coll.compare is Compare);
 }
-{% endprettify %}
+{% endhighlight %}
 
 <div class="alert alert-info" markdown="1">
 **Note:**
@@ -3770,7 +3695,7 @@ Because typedefs are simply aliases, they offer a way to check the type
 of any function. For example:
 
 <!-- ch02/sorted_collection.dart -->
-{% prettify dart %}
+{% highlight dart %}
 typedef int Compare(int a, int b);
 
 int sort(int a, int b) => a - b;
@@ -3778,7 +3703,7 @@ int sort(int a, int b) => a - b;
 main() {
   assert(sort is Compare); // True!
 }
-{% endprettify %}
+{% endhighlight %}
 
 
 ## Metadata {#metadata}
@@ -3795,7 +3720,7 @@ Here’s an example of using the `@deprecated`
 annotation:
 
 <!-- ch02/ch02_meta/bin/ch02_meta.dart -->
-{% prettify dart %}
+{% highlight dart %}
 class Television {
   /// _Deprecated: Use [turnOn] instead._
   @deprecated
@@ -3808,13 +3733,13 @@ class Television {
     print('on!');
   }
 }
-{% endprettify %}
+{% endhighlight %}
 
 You can define your own metadata annotations. Here’s an example of
 defining a @todo annotation that takes two arguments:
 
 <!-- ch02/ch02_meta_create/todo.dart -->
-{% prettify dart %}
+{% highlight dart %}
 library todo;
 
 class todo {
@@ -3823,19 +3748,19 @@ class todo {
 
   const todo(this.who, this.what);
 }
-{% endprettify %}
+{% endhighlight %}
 
 And here’s an example of using that @todo annotation:
 
 <!-- ch02/ch02_meta_create/metadata_user.dart -->
-{% prettify dart %}
+{% highlight dart %}
 import 'todo.dart';
 
 @todo('seth', 'make this do something')
 void doSomething() {
   print('do something');
 }
-{% endprettify %}
+{% endhighlight %}
 
 Metadata can appear before a library, class, typedef, type parameter,
 constructor, factory, function, field, parameter, or variable
@@ -3850,22 +3775,20 @@ documentation comments.
 
 
 ### Single-line comments {#single-line-comments}
-{:.no_toc}
 
 A single-line comment begins with `//`. Everything between `//` and the
 end of line is ignored by the Dart compiler.
 
 <!-- ch02/single_line_comments.dart -->
-{% prettify dart %}
+{% highlight dart %}
 main() {
   // TODO: refactor into an AbstractLlamaGreetingFactory?
   print('Welcome to my Llama farm!');
 }
-{% endprettify %}
+{% endhighlight %}
 
 
 ### Multi-line comments {#multi-line-comments}
-{:.no_toc}
 
 A multi-line comment begins with `/*` and ends with `*/`. Everything
 between `/*` and `*/` is ignored by the Dart compiler (unless the
@@ -3873,7 +3796,7 @@ comment is a documentation comment; see the next section). Multi-line
 comments can nest.
 
 <!-- ch02/multi_line_comments.dart -->
-{% prettify dart %}
+{% highlight dart %}
 main() {
   /*
    * This is a lot of work. Consider raising chickens.
@@ -3884,11 +3807,10 @@ main() {
   larry.clean();
    */
 }
-{% endprettify %}
+{% endhighlight %}
 
 
 ### Documentation comments {#documentation-comments}
-{:.no_toc}
 
 Documentation comments are multi-line or single-line comments that begin
 with `///` or `/**`. Using `///` on consecutive lines has the same
@@ -3904,7 +3826,7 @@ Here is an example of documentation comments with references to other
 classes and arguments:
 
 <!-- ch02/doc_comments.dart -->
-{% prettify dart %}
+{% highlight dart %}
 /// A domesticated South American camelid (Lama glama).
 ///
 /// Andean cultures have used llamas as meat and pack
@@ -3925,7 +3847,7 @@ class Llama {
     // ...
   }
 }
-{% endprettify %}
+{% endhighlight %}
 
 In the generated documentation, `[Food]` becomes a link to the API docs
 for the Food class.

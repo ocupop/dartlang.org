@@ -34,25 +34,25 @@ collections:
 
 defaults:
 - scope:
-    path: "articles"
+    path: ""
     type: articles
   values:
     layout: article
     toc: true
 - scope:
-    path: "tutorials"
+    path: ""
     type: tutorials
   values:
     layout: tutorial
     toc: true
 - scope:
-    path: "samples"
+    path: ""
     type: samples
   values:
     layout: sample
     toc: true
 - scope:
-    path: "guides"
+    path: ""
     type: guides
   values:
     layout: guide
