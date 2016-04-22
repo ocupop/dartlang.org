@@ -206,7 +206,6 @@ reference to a String object with a value of “Bob”.
 
 
 ### Default value {#default-value}
-{:.no_toc}
 
 Uninitialized variables have an initial value of `null`. Even variables
 with numeric types are initially null, because numbers are objects.
@@ -228,7 +227,6 @@ see the [Assert](#assert) section.
 
 
 ### Optional types {#optional-types}
-{:.no_toc}
 
 You have the option of adding static types to your variable
 declarations:
@@ -251,7 +249,6 @@ of using `var`, rather than type annotations, for local variables.
 
 
 ### Final and const {#final-and-const}
-{:.no_toc}
 
 If you never intend to change a variable, use `final` or `const`, either
 instead of `var` or in addition to a type. A final variable can be set
@@ -334,7 +331,6 @@ use the `Map()` constructor to create a map, using code such as
 
 
 ### Numbers {#numbers}
-{:.no_toc}
 
 Dart numbers come in two flavors:
 
@@ -430,7 +426,6 @@ const msUntilRetry = secondsUntilRetry * msPerSecond;
 
 
 ### Strings {#strings}
-{:.no_toc}
 
 A Dart string is a sequence of UTF-16 code units. You can use either
 single or double quotes to create a string:
@@ -533,7 +528,6 @@ For more information on using strings, see
 
 
 ### Booleans {#booleans}
-{:.no_toc}
 
 To represent boolean values, Dart has a type named `bool`. Only two
 objects have type bool: the boolean literals `true` and `false`,
@@ -611,7 +605,6 @@ assert(iMeantToDoThis.isNaN);
 
 
 ### Lists {#lists}
-{:.no_toc}
 
 Perhaps the most common collection in nearly every programming language
 is the *array*, or ordered group of objects. In Dart, arrays are
@@ -656,7 +649,6 @@ information about lists, see [Generics](#generics) and
 
 
 ### Maps {#maps}
-{:.no_toc}
 
 In general, a map is an object that associates keys and values. Both
 keys and values can be any type of object. Each *key* occurs only once,
@@ -751,7 +743,6 @@ For more information about maps, see
 [Maps](library-tour#maps).
 
 ### Runes {#runes}
-{:.no_toc}
 
 In Dart, runes are the UTF-32 code points of a string.
 
@@ -813,7 +804,6 @@ For more information, see
 </div>
 
 ### Symbols {#symbols}
-{:.no_toc}
 
 A [Symbol](http://api.dartlang.org/stable/dart-core/Symbol-class.html) object
 represents an operator or identifier declared in a Dart program. You
@@ -890,12 +880,10 @@ parameters.
 
 
 ### Optional parameters {#optional-parameters}
-{:.no_toc}
 
 Optional parameters can be either positional or named, but not both.
 
 #### Optional named parameters {#optional-named-parameters}
-{:.no_toc}
 
 When calling a function, you can specify named parameters using
 <code><em>paramName</em>: <em>value</em></code>. For example:
@@ -919,7 +907,6 @@ enableFlags({bool bold, bool hidden}) {
 {% endprettify %}
 
 #### Optional positional parameters {#optional-positional-parameters}
-{:.no_toc}
 
 Wrapping a set of function parameters in `[]` marks them as optional
 positional parameters:
@@ -952,7 +939,6 @@ assert(say('Bob', 'Howdy', 'smoke signal') ==
 {% endprettify %}
 
 #### Default parameter values {#default-parameters}
-{:.no_toc}
 
 Your function can define default values for both named and positional
 parameters. The default values must be compile-time constants.
@@ -1035,7 +1021,6 @@ src="{{site.custom.dartpad.embed-dart-prefix}}?id=d988cfce0a54c6853799&horizonta
 
 
 ### The main() function {#the-main-function}
-{:.no_toc}
 
 Every app must have a top-level `main()` function, which serves as the
 entrypoint to the app. The `main()` function returns `void` and has an
@@ -1078,7 +1063,6 @@ You can use the [args library](https://pub.dartlang.org/packages/args) to
 define and parse command-line arguments.
 
 ### Functions as first-class objects {#functions-as-first-class-objects}
-{:.no_toc}
 
 You can pass a function as a parameter to another function. For example:
 
@@ -1104,7 +1088,6 @@ assert(loudify('hello') == '!!! HELLO !!!');
 
 
 ### Lexical scope {#lexical-scope}
-{:.no_toc}
 
 Dart is a lexically scoped language, which means that the scope of
 variables is determined statically, simply by the layout of the code.
@@ -1141,7 +1124,6 @@ the way up to the top level.
 
 
 ### Lexical closures {#lexical-closures}
-{:.no_toc}
 
 A *closure* is a function object that has access to variables in its
 lexical scope, even when the function is used outside of its original
@@ -1173,7 +1155,6 @@ main() {
 
 
 ### Testing functions for equality {#testing-functions-for-equality}
-{:.no_toc}
 
 Here's an example of testing top-level functions, static methods, and
 instance methods for equality:
@@ -1216,7 +1197,6 @@ main() {
 
 
 ### Return values {#return-values}
-{:.no_toc}
 
 All functions return a value. If no return value is specified, the
 statement `return null;` is implicitly appended to the function body.
@@ -1289,7 +1269,6 @@ Vector version of +.
 
 
 ### Arithmetic operators {#arithmetic-operators}
-{:.no_toc}
 
 Dart supports the usual arithmetic operators, as shown in the following table.
 
@@ -1356,7 +1335,6 @@ assert(a != b); // -1 != 0
 
 
 ### Equality and relational operators {#equality-and-relational-operators}
-{:.no_toc}
 
 The following table lists the meanings of equality and relational operators.
 
@@ -1402,7 +1380,6 @@ assert(2 <= 3);
 
 
 ### Type test operators {#type-test-operators}
-{:.no_toc}
 
 The `as`, `is`, and `is!` operators are handy for checking types at
 runtime.
@@ -1446,7 +1423,6 @@ an exception.
 
 
 ### Assignment operators {#assignment-operators}
-{:.no_toc}
 
 As you’ve already seen, you can assign values using the `=` operator.
 To assign only if the assigned-to variable is null,
@@ -1492,7 +1468,6 @@ assert(a == 6);
 
 
 ### Logical operators {#logical-operators}
-{:.no_toc}
 
 You can invert or combine boolean expressions using the logical
 operators.
@@ -1516,7 +1491,6 @@ if (!done && (col == 0 || col == 3)) {
 
 
 ### Bitwise and shift operators {#bitwise-and-shift-operators}
-{:.no_toc}
 
 You can manipulate the individual bits of numbers in Dart. Usually,
 you’d use these bitwise and shift operators with integers.
@@ -1549,7 +1523,6 @@ assert((value >> 4)       == 0x02);  // Shift right
 
 
 ### Conditional expressions {#conditional-expressions}
-{:.no_toc}
 
 Dart has two operators that let you concisely evaluate expressions
 that might otherwise require [if-else](#if-and-else) statements:
@@ -1601,7 +1574,6 @@ String toString() {
 {% endprettify %}
 
 ### Cascade notation (..) {#cascade}
-{:.no_toc}
 
 Cascades (`..`) allow you to make a sequence of operations
 on the same object. In addition to function calls,
@@ -1666,7 +1638,6 @@ It's just part of the Dart syntax.
 </div>
 
 ### Other operators {#other-operators}
-{:.no_toc}
 
 You've seen most of the remaining operators in other examples:
 
@@ -1704,7 +1675,6 @@ explained in [Exceptions](#exceptions).
 
 
 ### If and else {#if-and-else}
-{:.no_toc}
 
 Dart supports `if` statements with optional `else` statements, as the
 next sample shows. Also see [conditional expressions](#conditional-expressions).
@@ -1725,7 +1695,6 @@ Remember, unlike JavaScript, Dart treats all values other than `true` as
 
 
 ### For loops {#for-loops}
-{:.no_toc}
 
 You can iterate with the standard `for` loop. For example:
 
@@ -1775,7 +1744,6 @@ for (var x in collection) {
 
 
 ### While and do-while {#while-and-do-while}
-{:.no_toc}
 
 A `while` loop evaluates the condition before the loop:
 
@@ -1797,7 +1765,6 @@ do {
 
 
 ### Break and continue {#break-and-continue}
-{:.no_toc}
 
 Use `break` to stop looping:
 
@@ -1834,7 +1801,6 @@ candidates.where((c) => c.yearsExperience >= 5)
 
 
 ### Switch and case {#switch-and-case}
-{:.no_toc}
 
 Switch statements in Dart compare integer, string, or compile-time
 constants using `==`. The compared objects must all be instances of the
@@ -1935,7 +1901,6 @@ the scope of that clause.
 
 
 ### Assert {#assert}
-{:.no_toc}
 
 Use an `assert` statement to disrupt normal execution if a boolean
 condition is false. You can find examples of assert statements
@@ -1986,7 +1951,6 @@ define your own exceptions. However, Dart programs can throw any
 non-null object—not just Exception and Error objects—as an exception.
 
 ### Throw {#throw}
-{:.no_toc}
 
 Here’s an example of throwing, or *raising*, an exception:
 
@@ -2013,7 +1977,6 @@ distanceTo(Point other) =>
 
 
 ### Catch {#catch}
-{:.no_toc}
 
 Catching, or capturing, an exception stops the exception from
 propagating (unless you rethrow the exception).
@@ -2097,7 +2060,6 @@ void main() {
 
 
 ### Finally {#finally}
-{:.no_toc}
 
 To ensure that some code runs whether or not an exception is thrown, use
 a `finally` clause. If no `catch` clause matches the exception, the
@@ -2220,7 +2182,6 @@ The following sections discuss how to implement classes.
 
 
 ### Instance variables {#instance-variables}
-{:.no_toc}
 
 Here’s how you declare instance variables:
 
@@ -2261,7 +2222,6 @@ execute.
 
 
 ### Constructors {#constructors}
-{:.no_toc}
 
 Declare a constructor by creating a function with the same name as its
 class (plus, optionally, an additional identifier as described in
@@ -2307,21 +2267,18 @@ class Point {
 {% endprettify %}
 
 #### Default constructors {#default-constructors}
-{:.no_toc}
 
 If you don’t declare a constructor, a default constructor is provided
 for you. The default constructor has no arguments and invokes the
 no-argument constructor in the superclass.
 
 #### Constructors aren’t inherited {#constructors-arent-inherited}
-{:.no_toc}
 
 Subclasses don’t inherit constructors from their superclass. A subclass
 that declares no constructors has only the default (no argument, no
 name) constructor.
 
 #### Named constructors {#named-constructors}
-{:.no_toc}
 
 Use a named constructor to implement multiple constructors for a class
 or to provide extra clarity:
@@ -2348,7 +2305,6 @@ want a subclass to be created with a named constructor defined in the
 superclass, you must implement that constructor in the subclass.
 
 #### Invoking a non-default superclass constructor {#invoking-a-non-default-superclass-constructor}
-{:.no_toc}
 
 By default, a constructor in a subclass calls the superclass’s unnamed,
 no-argument constructor.
@@ -2429,7 +2385,6 @@ For example, arguments can call static methods but not instance methods.
 </div>
 
 #### Initializer list {#initializer-list}
-{:.no_toc}
 
 Besides invoking a superclass constructor, you can also initialize
 instance variables before the constructor body runs. Separate
@@ -2494,7 +2449,6 @@ src="{{site.custom.dartpad.embed-dart-prefix}}?id=7a9764702c0608711e08&horizonta
 </iframe>
 
 #### Redirecting constructors {#redirecting-constructors}
-{:.no_toc}
 
 Sometimes a constructor’s only purpose is to redirect to another
 constructor in the same class. A redirecting constructor’s body is
@@ -2515,7 +2469,6 @@ class Point {
 {% endprettify %}
 
 #### Constant constructors {#constant-constructors}
-{:.no_toc}
 
 If your class produces objects that never change, you can make these
 objects compile-time constants. To do this, define a `const` constructor
@@ -2533,7 +2486,6 @@ class ImmutablePoint {
 {% endprettify %}
 
 #### Factory constructors {#factory-constructors}
-{:.no_toc}
 
 Use the `factory` keyword when implementing a constructor that doesn’t
 always create a new instance of its class. For example, a factory
@@ -2589,12 +2541,10 @@ logger.log('Button clicked');
 
 
 ### Methods {#methods}
-{:.no_toc}
 
 Methods are functions that provide behavior for an object.
 
 #### Instance methods {#instance-methods}
-{:.no_toc}
 
 Instance methods on objects can access instance variables and `this`.
 The `distanceTo()` method in the following sample is an example of an
@@ -2618,7 +2568,6 @@ class Point {
 {% endprettify %}
 
 #### Getters and setters {#getters-and-setters}
-{:.no_toc}
 
 Getters and setters are special methods that provide read and write
 access to an object’s properties. Recall that each instance variable has
@@ -2663,7 +2612,6 @@ in a temporary variable.
 </div>
 
 #### Abstract methods {#abstract-methods}
-{:.no_toc}
 
 Instance, getter, and setter methods can be abstract, defining an
 interface but leaving its implementation up to other classes. To make a
@@ -2689,7 +2637,6 @@ Calling an abstract method results in a runtime error.
 Also see [Abstract classes](#abstract-classes).
 
 #### Overridable operators {#overridable-operators}
-{:.no_toc}
 
 You can override the operators shown in the following table.
 For example, if you define a
@@ -2746,7 +2693,6 @@ For more information on overriding, in general, see
 
 
 ### Abstract classes {#abstract-classes}
-{:.no_toc}
 
 Use the `abstract` modifier to define an *abstract class*—a class that
 can’t be instantiated. Abstract classes are useful for defining
@@ -2789,7 +2735,6 @@ class SpecializedContainer extends AbstractContainer {
 
 
 ### Implicit interfaces {#implicit-interfaces}
-{:.no_toc}
 
 Every class implicitly defines an interface containing all the instance
 members of the class and of any interfaces it implements. If you want to
@@ -2842,7 +2787,6 @@ class Point implements Comparable, Location {
 
 
 ### Extending a class {#extending-a-class}
-{:.no_toc}
 
 Use `extends` to create a subclass, and `super` to refer to the
 superclass:
@@ -2930,7 +2874,6 @@ For more information on annotations, see
 
 
 ### Enumerated types {#enums}
-{:.no_toc}
 
 Enumerated types, often called _enumerations_ or _enums_,
 are a special kind of class used to represent
@@ -2938,7 +2881,6 @@ a fixed number of constant values.
 
 
 #### Using enums {#using-enums}
-{:.no_toc}
 
 Declare an enumerated type using the `enum` keyword:
 
@@ -3007,7 +2949,6 @@ For more information, see the
 
 
 ### Adding features to a class: mixins {#adding-features-to-a-class-mixins}
-{:.no_toc}
 
 Mixins are a way of reusing a class's code in multiple class
 hierarchies.
@@ -3070,12 +3011,10 @@ Dart.](/articles/mixins/)
 
 
 ### Class variables and methods {#class-variables-and-methods}
-{:.no_toc}
 
 Use the `static` keyword to implement class-wide variables and methods.
 
 #### Static variables {#static-variables}
-{:.no_toc}
 
 Static variables (class variables) are useful for class-wide state and
 constants:
@@ -3104,7 +3043,6 @@ of preferring `lowerCamelCase` for constant names.
 </div>
 
 #### Static methods {#static-methods}
-{:.no_toc}
 
 Static methods (class methods) do not operate on an instance, and thus
 do not have access to `this`. For example:
@@ -3155,7 +3093,6 @@ as E, T, S, K, and V.
 
 
 ### Why use generics? {#why-use-generics}
-{:.no_toc}
 
 Because types are optional in Dart, you never *have* to use generics.
 You might *want* to, though, for the same reason you might want to use
@@ -3220,7 +3157,6 @@ think of as a type that a developer will define later.
 
 
 ### Using collection literals {#using-collection-literals}
-{:.no_toc}
 
 List and map literals can be parameterized. Parameterized literals are
 just like the literals you’ve already seen, except that you add
@@ -3242,7 +3178,6 @@ var pages = <String, String>{
 
 
 ### Using parameterized types with constructors {#using-parameterized-types-with-constructors}
-{:.no_toc}
 
 To specify one or more types when using a constructor, put the types in
 angle brackets (`<...>`) just after the class name. For example:
@@ -3264,7 +3199,6 @@ var views = new Map<int, View>();
 
 
 ### Generic collections and the types they contain {#generic-collections-and-the-types-they-contain}
-{:.no_toc}
 
 Dart generic types are *reified*, which means that they carry their type
 information around at runtime. For example, you can test the type of a
@@ -3292,7 +3226,6 @@ an object is a List, but you can’t test whether it’s a `List<String>`.
 
 
 ### Restricting the parameterized type
-{:.no_toc}
 
 When implementing a generic type,
 you might want to limit the types of its parameters.
@@ -3338,7 +3271,6 @@ pub, a package manager included in the SDK.
 
 
 ### Using libraries {#using-libraries}
-{:.no_toc}
 
 Use `import` to specify how a namespace from one library is used in the
 scope of another library.
@@ -3374,7 +3306,6 @@ import 'package:utils/utils.dart';
 
 
 #### Specifying a library prefix {#specifying-a-library-prefix}
-{:.no_toc}
 
 If you import two libraries that have conflicting identifiers, then you
 can specify a prefix for one or both libraries. For example, if library1
@@ -3392,7 +3323,6 @@ var element2 =
 {% endprettify %}
 
 #### Importing only part of a library {#importing-only-part-of-a-library}
-{:.no_toc}
 
 If you want to use only part of a library, you can selectively import
 the library. For example:
@@ -3407,7 +3337,6 @@ import 'package:lib2/lib2.dart' hide foo;
 {% endprettify %}
 
 #### Lazily loading a library {#deferred-loading}
-{:.no_toc}
 
 _Deferred loading_ (also called _lazy loading_)
 allows an application to load a library on demand,
@@ -3458,7 +3387,6 @@ Keep in mind the following when you use deferred loading:
   The `loadLibrary()` function returns a [Future](library-tour#future).
 
 ### Implementing libraries {#implementing-libraries}
-{:.no_toc}
 
 See
 [Creating Library Packages](/libraries/create-library-packages)
@@ -3529,7 +3457,6 @@ try {
 
 
 ### Declaring async functions {#async}
-{:.no_toc}
 
 An _async function_ is a function whose body is marked with
 the `async` modifier.
@@ -3569,7 +3496,6 @@ Dart creates the Future object if necessary.
 
 
 ### Using await expressions with Futures {#await}
-{:.no_toc}
 
 An await expression has the following form:
 
@@ -3608,7 +3534,6 @@ main() async {
 {% endprettify %}
 
 ### Using asynchronous for loops with Streams {#await-for}
-{:.no_toc}
 
 An asynchronous for loop has the following form:
 
@@ -3850,7 +3775,6 @@ documentation comments.
 
 
 ### Single-line comments {#single-line-comments}
-{:.no_toc}
 
 A single-line comment begins with `//`. Everything between `//` and the
 end of line is ignored by the Dart compiler.
@@ -3865,7 +3789,6 @@ main() {
 
 
 ### Multi-line comments {#multi-line-comments}
-{:.no_toc}
 
 A multi-line comment begins with `/*` and ends with `*/`. Everything
 between `/*` and `*/` is ignored by the Dart compiler (unless the
@@ -3888,7 +3811,6 @@ main() {
 
 
 ### Documentation comments {#documentation-comments}
-{:.no_toc}
 
 Documentation comments are multi-line or single-line comments that begin
 with `///` or `/**`. Using `///` on consecutive lines has the same

@@ -22,7 +22,6 @@ program.
 
 
 ### Numbers {#numbers}
-{:.no_toc}
 
 The dart:core library defines the num, int, and double classes, which
 have some basic utilities for working with numbers.
@@ -85,7 +84,6 @@ the [dart:math section](#dartmath---math-and-random).
 
 
 ### Strings and regular expressions {#strings-and-regular-expressions}
-{:.no_toc}
 
 A string in Dart is an immutable sequence of UTF-16 code units.
 The language tour has more information about
@@ -98,7 +96,6 @@ The String class defines such methods as `split()`, `contains()`,
 `startsWith()`, `endsWith()`, and more.
 
 #### Searching inside a string {#searching-inside-a-string}
-{:.no_toc}
 
 You can find particular locations within a string, as well as check
 whether a string begins with or ends with a particular pattern. For
@@ -120,7 +117,6 @@ assert('Never odd or even'.indexOf('odd') == 6);
 {% endprettify %}
 
 #### Extracting data from a string {#extracting-data-from-a-string}
-{:.no_toc}
 
 You can get the individual characters from a string as Strings or ints,
 respectively. To be precise, you actually get individual UTF-16 code
@@ -156,7 +152,6 @@ assert(codeUnitList[0] == 78);
 {% endprettify %}
 
 #### Converting to uppercase or lowercase {#converting-to-uppercase-or-lowercase}
-{:.no_toc}
 
 You can easily convert strings to their uppercase and lowercase
 variants:
@@ -180,7 +175,6 @@ alphabet's dotless *I* is converted incorrectly.
 
 
 #### Trimming and empty strings {#trimming-and-empty-strings}
-{:.no_toc}
 
 Remove all leading and trailing white space with `trim()`. To check
 whether a string is empty (length is zero), use `isEmpty`.
@@ -198,7 +192,6 @@ assert(!'  '.isEmpty);
 {% endprettify %}
 
 #### Replacing part of a string
-{:.no_toc}
 
 Strings are immutable objects, which means you can create them but you
 can’t change them. If you look closely at the [String API
@@ -218,7 +211,6 @@ assert(greeting !=
 {% endprettify %}
 
 #### Building a string {#building-a-string}
-{:.no_toc}
 
 To programmatically generate a string, you can use StringBuffer. A
 StringBuffer doesn’t generate a new String object until `toString()` is
@@ -239,7 +231,6 @@ assert(fullString ==
 {% endprettify %}
 
 #### Regular expressions {#regular-expressions}
-{:.no_toc}
 
 The RegExp class provides the same capabilities as JavaScript regular
 expressions. Use regular expressions for efficient searching and pattern
@@ -280,7 +271,6 @@ for (var match in numbers.allMatches(someDigits)) {
 {% endprettify %}
 
 #### More information {#more-information-core}
-{:.no_toc}
 
 Refer to the [String API
 docs](https://api.dartlang.org/dart_core/String.html) for a full list of
@@ -292,13 +282,11 @@ methods. Also see the API docs for
 
 
 ### Collections {#collections}
-{:.no_toc}
 
 Dart ships with a core collections API, which includes classes for
 lists, sets, and maps.
 
 #### Lists {#lists}
-{:.no_toc}
 
 As the language tour shows, you can use literals to create and
 initialize [lists](#lists). Alternatively, use one of the List
@@ -382,7 +370,6 @@ docs](https://api.dartlang.org/dart_core/List.html) for a full list of
 methods.
 
 #### Sets {#sets}
-{:.no_toc}
 
 A set in Dart is an unordered collection of unique items. Because a set
 is unordered, you can’t get a set’s items by index (position).
@@ -435,7 +422,6 @@ Refer to the [Set API docs](https://api.dartlang.org/dart_core/Set.html)
 for a full list of methods.
 
 #### Maps {#maps}
-{:.no_toc}
 
 A map, commonly known as a *dictionary* or *hash*, is an unordered
 collection of key-value pairs. Maps associate a key to some value for
@@ -535,7 +521,6 @@ Refer to the [Map API docs](https://api.dartlang.org/dart_core/Map.html)
 for a full list of methods.
 
 #### Common collection methods {#common-collection-methods}
-{:.no_toc}
 
 List, Set, and Map share common functionality found in many collections.
 Some of this common functionality is defined by the Iterable class,
@@ -643,7 +628,6 @@ for List, Set, and Map.
 
 
 ### URIs {#uris}
-{:.no_toc}
 
 The [Uri class](https://api.dartlang.org/dart_core/Uri.html) provides
 functions to encode and decode strings for use in URIs (which you might
@@ -656,7 +640,6 @@ constructors: Uri.http, Uri.https, Uri.file, per floitsch's suggestion}
 {% endcomment %}
 
 #### Encoding and decoding fully qualified URIs {#encoding-and-decoding-fully-qualified-uris}
-{:.no_toc}
 
 To encode and decode characters *except* those with special meaning in a
 URI (such as `/`, `:`, `&`, `#`), use the `encodeFull()` and
@@ -678,7 +661,6 @@ assert(uri == decoded);
 Notice how only the space between `some` and `message` was encoded.
 
 #### Encoding and decoding URI components {#encoding-and-decoding-uri-components}
-{:.no_toc}
 
 To encode and decode all of a string’s characters that have special
 meaning in a URI, including (but not limited to) `/`, `&`, and `:`, use
@@ -700,7 +682,6 @@ Notice how every special character is encoded. For example, `/` is
 encoded to `%2F`.
 
 #### Parsing URIs {#parsing-uris}
-{:.no_toc}
 
 If you have a Uri object or a URI string, you can get its parts using
 Uri fields such as `path`. To create a Uri from a string, use the
@@ -721,7 +702,6 @@ See the [Uri API docs](https://api.dartlang.org/dart_core/Uri.html) for
 more URI components that you can get.
 
 #### Building URIs {#building-uris}
-{:.no_toc}
 
 You can build up a URI from individual parts using the `Uri()`
 constructor:
@@ -736,7 +716,6 @@ assert(uri.toString() ==
 
 
 ### Dates and times {#dates-and-times}
-{:.no_toc}
 
 A DateTime object is a point in time. The time zone is either UTC or the
 local time zone.
@@ -816,13 +795,11 @@ list of methods.
 
 
 ### Utility classes {#utility-classes}
-{:.no_toc}
 
 The core library contains various utility classes, useful for sorting,
 mapping values, and iterating.
 
 #### Comparing objects {#comparing-objects}
-{:.no_toc}
 
 Implement the
 [Comparable](https://api.dartlang.org/dart_core/Comparable.html)
@@ -846,7 +823,6 @@ main() {
 {% endprettify %}
 
 #### Implementing map keys {#implementing-map-keys}
-{:.no_toc}
 
 Each object in Dart automatically provides an integer hash code, and
 thus can be used as a key in a map. However, you can override the
@@ -899,7 +875,6 @@ main() {
 {% endprettify %}
 
 #### Iteration {#iteration}
-{:.no_toc}
 
 The [Iterable](https://api.dartlang.org/dart_core/Iterable.html) and
 [Iterator](https://api.dartlang.org/dart_core/Iterator.html) classes
@@ -937,7 +912,6 @@ main() {
 
 
 ### Exceptions {#exceptions}
-{:.no_toc}
 
 The Dart core library defines many common exceptions and errors.
 Exceptions are considered conditions that you can plan ahead for and
@@ -1001,14 +975,12 @@ import 'dart:async';
 
 
 ### Future
-{:.no_toc}
 
 Future objects appear throughout the Dart libraries, often as the object
 returned by an asynchronous method. When a future *completes*, its value
 is ready to use.
 
 #### Using await {#future-async-await}
-{:.no_toc}
 
 Before you directly use the Future API,
 consider using `await` instead.
@@ -1073,7 +1045,6 @@ Dart language features, see
 
 
 #### Basic usage {#basic-usage}
-{:.no_toc}
 
 {% comment %}
 [PENDING: Delete much of the following content in favor of the tutorial coverage?]
@@ -1116,7 +1087,6 @@ from the handler registered by `then()`.
 </div>
 
 #### Chaining multiple asynchronous methods {#chaining-multiple-asynchronous-methods}
-{:.no_toc}
 
 The `then()` method returns a Future, providing a useful way to run
 multiple asynchronous functions in a certain order. If the callback
@@ -1142,7 +1112,6 @@ In the preceding example, the methods run in the following order:
 
 
 #### Waiting for multiple futures {#waiting-for-multiple-futures}
-{:.no_toc}
 
 Sometimes your algorithm needs to invoke many asynchronous functions and
 wait for them all to complete before continuing. Use the
@@ -1163,7 +1132,6 @@ Future.wait([deleteDone, copyDone, checksumDone])
 
 
 ### Stream {#stream}
-{:.no_toc}
 
 Stream objects appear throughout Dart APIs, representing sequences of
 data. For example, HTML events such as button clicks are delivered using
@@ -1171,7 +1139,6 @@ streams. You can also read a file as a stream.
 
 
 #### Using an asynchronous for loop {#stream-async-await-for}
-{:.no_toc}
 
 Sometimes you can use an asynchronous for loop (`await for`)
 instead of using the Stream API.
@@ -1243,7 +1210,6 @@ Dart language features, see
 
 
 #### Listening for stream data {#listening-for-stream-data}
-{:.no_toc}
 
 To get each value as it arrives, either use `await for` or
 subscribe to the stream using the `listen()` method:
@@ -1275,7 +1241,6 @@ If you care about a subset of events, you can use methods such as
 
 
 #### Transforming stream data {#transforming-stream-data}
-{:.no_toc}
 
 Often, you need to change the format of a stream's data before you can
 use it. Use the `transform()` method to produce a stream with a
@@ -1299,7 +1264,6 @@ separate lines. These transformers are from the dart:convert library (see the
 
 
 #### Handling errors and completion
-{:.no_toc}
 
 How you specify error and completion handling code
 depends on whether you use an asynchronous for loop (`await for`)
@@ -1353,7 +1317,6 @@ inputStream
 
 
 ### More information {#more-information-async}
-{:.no_toc}
 
 For some examples of using Future and Stream in command-line apps, see the
 [dart:io section](#dartio---io-for-command-line-apps).
@@ -1387,7 +1350,6 @@ import 'dart:math' as math;
 
 
 ### Trigonometry {#trigonometry}
-{:.no_toc}
 
 The Math library provides basic trigonometric functions:
 
@@ -1412,7 +1374,6 @@ These functions use radians, not degrees!
 
 
 ### Maximum and minimum {#maximum-and-minimum}
-{:.no_toc}
 
 The Math library provides `max()` and `min()` methods:
 
@@ -1424,7 +1385,6 @@ assert(math.min(1, -1000) == -1000);
 
 
 ### Math constants {#math-constants}
-{:.no_toc}
 
 Find your favorite constants—*pi*, *e*, and more—in the Math library:
 
@@ -1438,7 +1398,6 @@ print(math.SQRT2); // 1.4142135623730951
 
 
 ### Random numbers {#random-numbers}
-{:.no_toc}
 
 Generate random numbers with the
 [Random](https://api.dartlang.org/dart_math/Random.html) class. You can
@@ -1461,7 +1420,6 @@ random.nextBool();  // true or false
 
 
 ### More information {#more-information-math}
-{:.no_toc}
 
 Refer to the [Math API
 docs](https://api.dartlang.org/dart_math/index.html) for a full list of
@@ -1507,7 +1465,6 @@ documentation.
 
 
 ### Manipulating the DOM {#manipulating-the-dom}
-{:.no_toc}
 
 To use the DOM, you need to know about *windows*, *documents*,
 *elements*, and *nodes*.
@@ -1532,7 +1489,6 @@ types. Except for the root node, which has no parent, each node in the
 DOM has one parent and might have many children.
 
 #### Finding elements {#finding-elements}
-{:.no_toc}
 
 To manipulate an element, you first need an object that represents it.
 You can get this object using a query.
@@ -1571,7 +1527,6 @@ List<Element> elems3 = querySelectorAll('#id p.class');
 {% endprettify %}
 
 #### Manipulating elements {#manipulating-elements}
-{:.no_toc}
 
 You can use properties to change the state of an element. Node and its
 subtype Element define the properties that all elements have. For
@@ -1643,7 +1598,6 @@ elem.attributes['someAttribute'] = 'someValue';
 {% endprettify %}
 
 #### Creating elements {#creating-elements}
-{:.no_toc}
 
 You can add to existing HTML pages by creating new elements and
 attaching them to the DOM. Here’s an example of creating a paragraph
@@ -1678,7 +1632,6 @@ document.body.children.add(elem2);
 {% endprettify %}
 
 #### Adding, replacing, and removing nodes {#adding-replacing-and-removing-nodes}
-{:.no_toc}
 
 Recall that elements are just a kind of node. You can find all the
 children of a node using the `nodes` property of Node, which returns a
@@ -1712,7 +1665,6 @@ querySelector('#expendable').remove();
 {% endprettify %}
 
 #### Manipulating CSS styles {#manipulating-css-styles}
-{:.no_toc}
 
 CSS, or *cascading style sheets*, defines the presentation styles of DOM
 elements. You can change the appearance of an element by attaching ID
@@ -1760,7 +1712,6 @@ message.style
 {% endprettify %}
 
 #### Handling events {#handling-events}
-{:.no_toc}
 
 To respond to external events such as clicks, changes of focus, and
 selections, add an event listener. You can add an event listener to any
@@ -1815,7 +1766,6 @@ subclasses. Some common events include:
 
 
 ### Using HTTP resources with HttpRequest {#using-http-resources-with-httprequest}
-{:.no_toc}
 
 Formerly known as XMLHttpRequest, the
 [HttpRequest](https://api.dartlang.org/dart_html/HttpRequest.html) class
@@ -1833,7 +1783,6 @@ to either use a technique called JSONP or enable CORS headers on the
 remote resources.
 
 #### Getting data from the server {#getting-data-from-the-server}
-{:.no_toc}
 
 The HttpRequest static method `getString()` is an easy way to get data
 from a web server. Use `await` with the `getString()` call
@@ -1938,7 +1887,6 @@ var request = new HttpRequest()
 {% endprettify %}
 
 #### Sending data to the server {#sending-data-to-the-server}
-{:.no_toc}
 
 HttpRequest can send data to the server using the HTTP method POST. For
 example, you might want to dynamically submit data to a form handler.
@@ -1992,7 +1940,6 @@ main() async {
 
 
 ### Sending and receiving real-time data with WebSockets {#sending-and-receiving-real-time-data-with-websockets}
-{:.no_toc}
 
 A WebSocket allows your web app to exchange data with a server
 interactively—no polling necessary. A server creates the WebSocket and
@@ -2012,7 +1959,6 @@ var ws = new WebSocket('ws://echo.websocket.org');
 {% endprettify %}
 
 #### Sending data {#sending-data}
-{:.no_toc}
 
 To send string data on the WebSocket, use the `send()` method:
 
@@ -2022,7 +1968,6 @@ ws.send('Hello from Dart!');
 {% endprettify %}
 
 #### Receiving data {#receiving-data}
-{:.no_toc}
 
 To receive data on the WebSocket, register a listener for message
 events:
@@ -2039,7 +1984,6 @@ The message event handler receives a
 This object’s `data` field has the data from the server.
 
 #### Handling WebSocket events {#handling-websocket-events}
-{:.no_toc}
 
 Your app can handle the following WebSocket events: open, close, error,
 and (as shown earlier) message. Here’s an example of a method that
@@ -2090,7 +2034,6 @@ Code Samples.](/samples/)
 
 
 ### More information {#more-information-html}
-{:.no_toc}
 
 This section barely scratched the surface of using the dart:html
 library. For more information, see the documentation for
@@ -2126,7 +2069,6 @@ Only command-line apps can import and use `dart:io`.
 
 
 ### Files and directories {#files-and-directories}
-{:.no_toc}
 
 The I/O library enables command-line apps to read and write files and
 browse directories. You have two choices for reading the contents of a
@@ -2137,7 +2079,6 @@ Stream, as described in
 [Streaming file contents](#streaming-file-contents).
 
 #### Reading a file as text {#reading-a-file-as-text}
-{:.no_toc}
 
 When reading a text file encoded using UTF-8, you can read the entire
 file contents with `readAsString()`. When the individual lines are
@@ -2165,7 +2106,6 @@ main() async {
 
 
 #### Reading a file as binary {#reading-a-file-as-binary}
-{:.no_toc}
 
 The following code reads an entire file as bytes into a list of ints.
 The call to `readAsBytes()` returns a Future, which provides the result
@@ -2184,7 +2124,6 @@ main() async {
 {% endprettify %}
 
 #### Handling errors {#handling-errors}
-{:.no_toc}
 
 To capture errors so they don't result in uncaught exceptions, you can
 register a `catchError` handler on the Future,
@@ -2206,7 +2145,6 @@ main() async {
 {% endprettify %}
 
 #### Streaming file contents {#streaming-file-contents}
-{:.no_toc}
 
 Use a Stream to read a file, a little at a time.
 You can use either the [Stream API](#stream) or `await for`,
@@ -2237,7 +2175,6 @@ main() async {
 {% endprettify %}
 
 #### Writing file contents {#writing-file-contents}
-{:.no_toc}
 
 You can use an [IOSink](https://api.dartlang.org/dart_io/IOSink.html) to
 write data to a file. Use the File `openWrite()` method to get an IOSink
@@ -2264,7 +2201,6 @@ To write binary data, use `add(List<int> data)`.
 
 
 #### Listing files in a directory {#listing-files-in-a-directory}
-{:.no_toc}
 
 Finding all files and subdirectories for a directory is an asynchronous
 operation. The `list()` method returns a Stream that emits an object
@@ -2294,7 +2230,6 @@ main() async {
 
 
 #### Other common functionality {#other-common-functionality}
-{:.no_toc}
 
 The File and Directory classes contain other functionality, including
 but not limited to:
@@ -2313,13 +2248,11 @@ list of methods.
 
 
 ### HTTP clients and servers {#http-clients-and-servers}
-{:.no_toc}
 
 The dart:io library provides classes that command-line apps can use for
 accessing HTTP resources, as well as running HTTP servers.
 
 #### HTTP server {#http-server}
-{:.no_toc}
 
 The [HttpServer](https://api.dartlang.org/dart_io/HttpServer.html) class
 provides the low-level functionality for building web servers. You can
@@ -2357,7 +2290,6 @@ main() async {
 {% endprettify %}
 
 #### HTTP client {#http-client}
-{:.no_toc}
 
 The [HttpClient](https://api.dartlang.org/dart_io/HttpClient.html) class
 helps you connect to HTTP resources from your Dart command-line or
@@ -2389,7 +2321,6 @@ main() async {
 
 
 ### More information {#more-information-io}
-{:.no_toc}
 
 Besides the APIs discussed in this section, the dart:io library also
 provides APIs for [processes,](https://api.dartlang.org/dart_io/Process.html)
@@ -2414,7 +2345,6 @@ To use it, import dart:convert.
 
 
 ### Decoding and encoding JSON {#decoding-and-encoding-json}
-{:.no_toc}
 
 Decode a JSON-encoded string into a Dart object with `JSON.decode()`:
 
@@ -2475,7 +2405,6 @@ the object's `toJson()` method.
 
 
 ### Decoding and encoding UTF-8 characters {#decoding-and-encoding-utf-8-characters}
-{:.no_toc}
 
 Use `UTF8.decode()` to decode UTF8-encoded bytes to a Dart string:
 
@@ -2539,7 +2468,6 @@ main() {
 
 
 ### Other functionality {#other-functionality}
-{:.no_toc}
 
 The dart:convert library also has converters for ASCII and ISO-8859-1
 (Latin1). For details, see the [API docs for the dart:convert
@@ -2569,7 +2497,6 @@ dart:mirrors library is still under development.
 
 
 ### Symbols {#symbols}
-{:.no_toc}
 
 The mirror system represents the names of Dart declarations (classes,
 fields, and so on) by instances of the class
@@ -2608,7 +2535,6 @@ assert('MyClass' == MirrorSystem.getName(className));
 
 
 ### Introspection {#introspection}
-{:.no_toc}
 
 Use mirrors to introspect the running program's structure. You can
 inspect classes, libraries, instances, and more.
@@ -2636,7 +2562,6 @@ To begin, you need to *reflect* on a class or object to get its
 *mirror*.
 
 #### Class mirrors {#class-mirrors}
-{:.no_toc}
 
 Reflect on a Type to get its ClassMirror.
 
@@ -2698,7 +2623,6 @@ For a full list of methods, consult the [API docs for
 ClassMirror](https://api.dartlang.org/dart_mirrors/ClassMirror.html).
 
 #### Instance mirrors {#instance-mirrors}
-{:.no_toc}
 
 Reflect on an object to get an InstanceMirror.
 
@@ -2719,14 +2643,12 @@ assert(identical(p, person));
 
 
 ### Invocation {#invocation}
-{:.no_toc}
 
 Once you have an InstanceMirror, you can invoke methods and call getters
 and setters. For a full list of methods, consult the [API docs for
 InstanceMirror](https://api.dartlang.org/dart_mirrors/InstanceMirror.html).
 
 #### Invoke methods {#invoke-methods}
-{:.no_toc}
 
 Use InstanceMirror's `invoke()` method to invoke a method on an object.
 The first parameter specifies the method to be invoked, and the second
@@ -2742,7 +2664,6 @@ mirror.invoke(#greet, ['Shailen']);
 {% endprettify %}
 
 #### Invoke getters and setters {#invoke-getters-and-setters}
-{:.no_toc}
 
 Use InstanceMirror's `getField()` and `setField()` methods to get and
 set properties of an object.
@@ -2763,7 +2684,6 @@ assert(p.firstName == 'Mary');
 
 
 ### More information {#more-information-mirrors}
-{:.no_toc}
 
 The article [Reflection in Dart with
 Mirrors](/articles/reflection-with-mirrors/) has

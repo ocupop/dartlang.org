@@ -18,7 +18,6 @@ prevpage:
 ## Names
 
 ### DO use terms consistently.
-{:.no_toc}
 
 Use the same name for the same thing, throughout your code. If a precedent
 already exists outside your API that your API's users are likely to know, follow
@@ -51,7 +50,6 @@ productive.
 
 
 ### AVOID abbreviations.
-{:.no_toc}
 
 Unless the abbreviation is more common than the unabbreviated term, don't
 abbreviate. If you do abbreviate, [capitalize them correctly][caps].
@@ -78,7 +76,6 @@ HypertextTransferProtocolRequest
 
 
 ### PREFER putting the most descriptive noun last.
-{:.no_toc}
 
 The last word should be the most descriptive of what the thing is. You can
 prefix it with other words, such as adjectives, to further describe the thing.
@@ -102,7 +99,6 @@ RuleFontFaceCss           // Not a CSS.
 
 
 ### CONSIDER making the code read like a sentence.
-{:.no_toc}
 
 When in doubt about naming, write some code that uses your API, and try to read
 it like a sentence.
@@ -147,7 +143,6 @@ monsters.producesANewSequenceWhereEach((monster) => monster.hasClaws);
 
 
 ### PREFER a noun phrase for a non-boolean property or variable.
-{:.no_toc}
 
 The reader's focus is on *what* the property is. If the user cares more about
 *how* a property is determined, then it should probably be a method with a
@@ -169,7 +164,6 @@ list.deleteItems
 
 
 ### PREFER a non-imperative verb phrase for a boolean property or variable.
-{:.no_toc}
 
 Boolean names are often used as conditions in control flow, so you want a name
 that reads well there. Compare:
@@ -226,7 +220,6 @@ showPopup     // Sounds like it shows the popup.
 
 
 ### CONSIDER omitting the verb for a named boolean *parameter*.
-{:.no_toc}
 
 This refines the previous rule. For named parameters that are boolean, the name
 is often just as clear without the verb and it reads better at the callsite.
@@ -241,7 +234,6 @@ new RegExp(pattern, caseSensitive: false)
 
 
 ### PREFER an imperative verb phrase for a function or method whose main purpose is a side effect.
-{:.no_toc}
 
 Callable members can return a result to the caller and perform other work or
 side effects. In an imperative language like Dart, members are often called
@@ -263,7 +255,6 @@ connection.downloadData()
 This way, an invocation reads like a command to do that work.
 
 ### CONSIDER a noun phrase or non-imperative verb phrase for a function or method if returning a value is its primary purpose.
-{:.no_toc}
 
 Other callable members have few side effects but return a useful result to the
 caller. If the member needs no parameters to do that, it should generally be a
@@ -288,7 +279,6 @@ has no side effects but is still simpler to name with a verb phrase like
 
 
 ### PREFER naming a method `to___()` if it copies the object's state to a new object.
-{:.no_toc}
 
 A "conversion" method is one that returns a new object containing a copy of
 almost all of the state of the receiver but usually in some different form or
@@ -307,7 +297,6 @@ dateTime.toLocal()
 
 
 ### PREFER naming a method `as___()` if it returns a different representation backed by the original object.
-{:.no_toc}
 
 Conversion methods are "snapshots". The resulting object has its own copy of the
 original object's state. There are other conversion-like methods that return
@@ -326,7 +315,6 @@ subscription.asFuture()
 
 
 ### AVOID describing the parameters in the function's or method's name.
-{:.no_toc}
 
 The user will see the argument at the callsite, so it usually doesn't help
 readability to also refer to it in the name itself.
@@ -359,7 +347,6 @@ map.containsValue(value)
 ## Libraries
 
 ### PREFER making declarations private.
-{:.no_toc}
 
 A public declaration in a library&mdash;either top level or in a class&mdash;is
 a signal that other libraries can and should access that member. It is also a
@@ -377,7 +364,6 @@ doesn't know if any code outside of its view is using it.
 ## Types
 
 ### AVOID defining a one-member abstract class when a simple function will do.
-{:.no_toc}
 
 Unlike Java, Dart has first-class functions, closures, and a nice light syntax
 for using them. If all you need is something like a callback, just use a
@@ -401,7 +387,6 @@ abstract class Predicate {
 
 
 ### AVOID defining a class that contains only static members.
-{:.no_toc}
 
 In Java and C#, every definition *must* be inside a class, so it's common to see
 "classes" that exist only as a place to stuff static members. Other classes are
@@ -463,7 +448,6 @@ class Color {
 
 
 ### AVOID extending a class that isn't intended to be subclassed.
-{:.no_toc}
 
 If a constructor is changed from a generative constructor to a factory
 constructor, any subclass constructor calling that constructor will break.
@@ -479,7 +463,6 @@ Otherwise, later changes to it may break your code.
 
 
 ### DO document whether your class supports being extended.
-{:.no_toc}
 
 This is the corollary to the above rule. If you want to allow subclasses of your
 class, state that. Suffix the class name with `Base`, or mention it in the
@@ -487,7 +470,6 @@ class's doc comment.
 
 
 ### AVOID mixing in a class that isn't intended to be a mixin.
-{:.no_toc}
 
 If a constructor is added to a class that previously did not define any, that
 breaks any other classes that are mixing it in. This is a seemingly innocuous
@@ -502,7 +484,6 @@ mix in the class.
 
 
 ### DO document whether your class supports being used as a mixin.
-{:.no_toc}
 
 Mention in the class's doc comment whether the class can or must be used as a
 mixin. If your class is designed for use only as a mixin, then consider adding
@@ -513,7 +494,6 @@ mixin. If your class is designed for use only as a mixin, then consider adding
 
 
 ### PREFER defining constructors instead of static methods to create instances.
-{:.no_toc}
 
 Constructors are invoked using `new` or `const`, which communicates
 that the main purpose of the call is to return an instance of the class
@@ -563,7 +543,6 @@ class Point {
 
 
 ### CONSIDER making your constructor `const` if the class supports it.
-{:.no_toc}
 
 If you have a class where all the fields are final, and the constructor does
 nothing but initialize them, you can make that constructor `const`. That lets
@@ -584,7 +563,6 @@ immutable data record sorts of classes.
 
 
 ### PREFER making fields and top-level variables `final`.
-{:.no_toc}
 
 State that is not *mutable*&mdash;that does not change over time&mdash;is
 easier for programmers to reason about. Classes and libraries that minimize the
@@ -596,7 +574,6 @@ can.
 
 
 ### DO use getters for operations that conceptually access properties.
-{:.no_toc}
 
 If the name of the method starts with `get` or is a noun phrase like `length` or
 `size` that's a sign you're better off using a getter. You
@@ -630,7 +607,6 @@ or have certain complexity guarantees. Calling `length` on an Iterable may be
 
 
 ### DO use a setter for operations that conceptually change a property.
-{:.no_toc}
 
 If the name of the method starts with `set` that's often a sign that it could be
 a setter. More specifically, use a setter instead of a method when it:
@@ -655,7 +631,6 @@ button.visible = false;
 
 
 ### DON'T define a setter without a corresponding getter.
-{:.no_toc}
 
 Users think of getters and setters as visible properties of an object. A
 "dropbox" property that can be written to but not seen is confusing and
@@ -680,7 +655,6 @@ exposed in the same way, use a method instead.
 </aside>
 
 ### AVOID returning `null` from members whose return type is `bool`, `double`, `int`, or `num`.
-{:.no_toc}
 
 Even though all types are nullable in Dart, users assume those types almost
 never contain `null`, and the lowercase names encourage a "Java primitive"
@@ -695,7 +669,6 @@ clearly, including the conditions under which `null` will be returned.
 
 
 ### AVOID returning `this` from methods just to enable a fluent interface.
-{:.no_toc}
 
 Method cascades are a better solution for chaining method calls.
 
@@ -721,7 +694,6 @@ var buffer = new StringBuffer()
 ## Type annotations
 
 ### DO type annotate public APIs.
-{:.no_toc}
 
 Type annotations are important documentation for how a library should be used.
 Annotating the parameter and return types of public methods and functions helps
@@ -756,7 +728,6 @@ Future<bool> install(PackageId id, String destination) {
 With types, all of this is clarified.
 
 ### PREFER type annotating private declarations.
-{:.no_toc}
 
 Type annotations on your public API help *users* of your code. Nearly as
 important is guiding *maintainers* of your code. Adding type annotations to
@@ -778,7 +749,6 @@ class CallChainVisitor {
 
 
 ### AVOID annotating types on function expressions.
-{:.no_toc}
 
 The value of function expressions is their brevity. If a function is complex
 enough that types are needed to understand it, it should probably be a function
@@ -801,7 +771,6 @@ var names = people.map((Person person) {
 
 
 ### AVOID annotating with `dynamic` when not required.
-{:.no_toc}
 
 In most places in Dart, a type annotation can be omitted, in which case the type
 will automatically be `dynamic`. Thus, omitting the type annotation entirely is
@@ -829,7 +798,6 @@ dynamic lookUpOrDefault(String name, Map map, dynamic defaultValue) {
 
 
 ### AVOID annotating with `Function`.
-{:.no_toc}
 
 The `Function` type is barely more precise than using no annotation at all. If
 you're bothering to annotate, it's better to use a precise function type that
@@ -858,7 +826,6 @@ least a *little* more precise than that.
 
 
 ### DO annotate with `Object` instead of `dynamic` to indicate any object is accepted.
-{:.no_toc}
 
 Some operations will work with any possible object. For example, a log method
 could take any object and call `toString()` on it. Two types in Dart permit all
@@ -891,7 +858,6 @@ bool convertToBool(arg) {
 ## Parameters
 
 ### AVOID positional boolean parameters.
-{:.no_toc}
 
 Unlike other types, booleans are usually used in literal form. Things like
 numbers are usually wrapped in named constants, but we usually just pass around
@@ -930,7 +896,6 @@ button.isEnabled = false;
 </div>
 
 ### AVOID optional positional parameters if the user may want to omit earlier parameters.
-{:.no_toc}
 
 Optional positional parameters should have a logical progression such that
 earlier parameters are passed more often than later ones. Users should almost
@@ -946,7 +911,6 @@ new Duration({days: 0, hours: 0, minutes: 0, seconds: 0, milliseconds: 0})
 </div>
 
 ### AVOID mandatory parameters that permit nonce values.
-{:.no_toc}
 
 If the user is logically omitting a parameter, prefer letting them actually omit
 it by making the parameter optional instead of forcing them to pass `null`, an
@@ -970,7 +934,6 @@ string.substring(start, null)
 
 
 ### DO use inclusive start and exclusive end parameters to accept a range.
-{:.no_toc}
 
 If you are defining a method or function that lets a user select a range of
 elements or items from some integer-indexed sequence, take a start index, which
@@ -999,7 +962,6 @@ collection types like hash tables have subtle contracts that they expect
 elements to follow.
 
 ### DO override `hashCode` if you override `==`.
-{:.no_toc}
 
 The default hash code implementation provides an *identity* hash&mdash;two
 objects generally only have the same hash code if they are the exact same
@@ -1011,7 +973,6 @@ same hash code.** Otherwise, maps and other hash-based collections will fail to
 recognize that the two objects are equivalent.
 
 ### DO make your `==` operator obey the mathematical rules of equality.
-{:.no_toc}
 
 An equivalence relation should be:
 
@@ -1027,7 +988,6 @@ class can't obey these rules, then `==` isn't the right name for the operation
 you're trying to express.
 
 ### AVOID defining custom equality for mutable classes.
-{:.no_toc}
 
 When you define `==`, you also have to define `hashCode`. Both of those should
 take into account the object's fields. If those fields *change* then that
@@ -1038,7 +998,6 @@ hash code will be the same forever and may behave unpredictably if that isn't
 true.
 
 ### DON'T check for `null` in custom `==` operators.
-{:.no_toc}
 
 The language specifies that this check is done automatically and your `==`
 method is called only if the right-hand side is not `null`.
