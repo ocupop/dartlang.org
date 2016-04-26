@@ -1,6 +1,8 @@
-//= require vendor/jquery-1.11.3.min
+//= require vendor/jquery-1.12.3.min
+//= require bootstrap
+//= require vendor/code-prettify/prettify
+//= require vendor/code-prettify/lang-dart
 //= require vendor/jquery.stickit.min
-//= require vendor/prettify
 
 $(window).on('load', function (e){
   window.scrollTo(0, 0);
