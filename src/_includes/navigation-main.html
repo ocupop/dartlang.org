@@ -1,7 +1,20 @@
-<nav id="mainnav" class="mdl-navigation">
-  <a class="mdl-navigation__link" href="/guides/get-started">Get Started</a>
-  <a class="mdl-navigation__link" href="/language/">Language</a>
-  <a class="mdl-navigation__link" href="/libraries">Libraries</a>
-  <a class="mdl-navigation__link" href="/tools">Tools</a>
-  <a class="mdl-navigation__link" href="/community/">Help</a>
-</nav>
+<div id="mainnav">
+  <div class="container">
+    <nav>
+      <a href="/" class="brand" title="{{ site.title }}">
+        <img src="{% asset_path 'images/logo.svg' %}" alt="{{ site.title }}">
+      </a>
+      <ul>
+        <li><a href="/guides/get-started">Get Started</a></li>
+        <li><a href="/language/">Language</a></li>
+        <li><a href="/libraries">Libraries</a></li>
+        <li><a href="/tools">Tools</a></li>
+        <li><a href="/community/">Help</a></li>
+        <li>
+          <input id="search" type="text" placeholder="Search">
+          <!-- <i class="icon">search</i> -->
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>

@@ -1,126 +1,173 @@
-/* ***** Code ***** */
-
-aside pre {
-  background-color: transparent;
-  border: 0;
-  margin-bottom: 0;
-}
-
-aside code {
-  background-color: transparent;
-}
-
-pre.prettyprint {
-  background-color: #f8f8f8;
-}
-
-.allow-scroll {
-  word-wrap: normal;
-}
-
-.code-hldr {
-  text-align: center;
-  min-height: 450px;
-  height: 450px;
-}
-
-.lang-dart, .lang-html, .lang-js, .lang-bash, .lang-cpp, .lang-csharp,
-.lang-none, .lang-python, .lang-javascript, .lang-yaml {
-  max-width: 800px;
-  text-align: left;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 5px !important;
-}
-
-@media (max-width: 500px) {
-  .lang-dart, .lang-html {
-    font-size: 12px;
+.prettyprint {
+  background: #eee;
+  // font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace;
+  /* Put a border around prettyprinted code snippets. */
+  // pre.prettyprint { padding: 2px; border: 1px solid #888 }
+  a {
+    text-decoration: none;
+    background: rgba(255,255,255,0.8);
+    padding:2px 3px;
+    border-radius: 4px;
   }
 }
 
-.lang-dart a, .lang-html a {
-  text-decoration: none;
-  background: #2fbcb2;
-  padding:2px 3px;
+/* SPAN elements with the classes below are added by prettyprint. */
+.pln { color: #222 }  /* plain text */
+
+@media screen {
+  .str { color: $blue }  /* string content */
+  .kwd { color: $teal }  /* a keyword */
+  .com { color: #999999 }  /* a comment */
+  .typ { color: #606 }  /* a type name */
+  .lit { color: #066 }  /* a literal value */
+  /* punctuation, lisp open bracket, lisp close bracket */
+  .pun, .opn, .clo { color: #222 }
+  .tag { color: #008 }  /* a markup tag name */
+  .atn { color: #606 }  /* a markup attribute name */
+  .atv { color: #080 }  /* a markup attribute value */
+  .dec, .var { color: #606 }  /* a declaration; a variable name */
+  .fun { color: red }  /* a function name */
 }
 
-.lang-dart .com, .lang-html .com, .lang-java .com {
-  color: #757575;
+/* Use higher contrast and text-weight for printable form. */
+@media print, projection {
+  .str { color: #060 }
+  .kwd { color: #006; font-weight: bold }
+  .com { color: #600; font-style: italic }
+  .typ { color: #404; font-weight: bold }
+  .lit { color: #044 }
+  .pun, .opn, .clo { color: #440 }
+  .tag { color: #006; font-weight: bold }
+  .atn { color: #404 }
+  .atv { color: #060 }
 }
 
-.lang-none * {
-  color: #4D4D4D !important; /* color of .pln */
-}
+pre.linenums { padding: 2px; }
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums { margin-top: 0; margin-bottom: 0; color: #cccccc; } /* IE indents via margin-left */
+li.L0,
+li.L1,
+li.L2,
+li.L3,
+li.L5,
+li.L6,
+li.L7,
+li.L8 { padding-left: 1em; background-color: #fff; list-style-type: decimal; }
+/* Alternate shading for lines */
+li.L1,
+li.L3,
+li.L5,
+li.L7,
+li.L9 { background-color: #fefefe; }
 
-/* Prevent invisibility of popover-emphasized text */
-@media print {
-  .dart-popover .kwd, .dart-popover .pln, .dart-popover .str, .dart-popover .pun {
-    background: black !important;
-  }
-}
+// .pln { color: $blue; }
 
-.lang-dart a span, .lang-html a span {
-  color:#fff !important;
-}
+// /* string content */
+// .str { color: #d14 }
 
-.lang-huge {
-  display: table;
-  font-size: 17px;   /* font-size of btn-lg */
-  line-height: 24px; /* line-height of btn-lg */
-  margin: 12px auto;
-  max-width: 800px;
-  padding: 12px !important;
-  white-space: pre-wrap;
-}
+// /* keyword */
+// .kwd { color: #445588; font-weight: bold }
 
-.lang-huge span.kwd {
-  color: #4d4d4d !important /* avoid kwd colors in huge blocks */;
-}
+// /* comment */
+// .com { color: #999988; font-style: italic }
 
-.linenums li {
-  list-style-type: decimal !important;
-}
+// /* type name */
+// .typ { color: #458; }
+
+// /* literal value */
+// .lit { color: #458; }
+
+// /* punctuation */
+// .pun { font-weight: bold }
+
+// /* lisp open bracket */
+// .opn { color: #333; }
+
+// /* lisp close bracket */
+// .clo { color: #333; }
+
+// /* markup tag name */
+// .tag { color: #000080; }
+
+// /* markup attribute name */
+// .atn { color: #008080; }
+
+// /* markup attribute value */
+// .atv { color: #d14; }
+
+// /* declaration */
+// .dec { color: #333; }
+
+// /* variable name */
+// .var { color: #008080; }
+
+// /* function name */
+// .fun { color: #900; }
 
 
+
+
+
+// $codeBackgroundColor: #000000;
+// $codePrimaryColor: #f0f0f0;
+// $codePln: #f0f0f0;
+// $codeStr: #bcd42a;
+// $codeKwd: #9c7ddb;
+// $codeCom: #777777;
+// $codeTyp: #ff6a38;
+// $codeLit: #bcd42a;
+// $codePun: #f0f0f0;
+// $codeOpn: #f0f0f0;
+// $codeClo: #f0f0f0;
+// $codeTag: #9c7ddb;
+// $codeAtn: #ff6a38;
+// $codeAtv: #bcd42a;
+// $codeDec: #bcd42a;
+// $codeVar: #bcd42a;
+// $codeFun: #9c7ddb;
+
+// code,  // Code
+// kbd,   // Keyboard Input
+// pre,   // Preformatted 
+// samp { // Sample Output
+//   font-family: 'SourceCodePro', Menlo, Monaco, Consolas, "Courier New", monospace;
+// }
 
 // code {
-//   padding: 0;
+//   // Inline code
+//   padding: 2px 4px;
 //   font-size: 90%;
-//   color: #0084c5;
+//   color: $codePrimaryColor;
+//   background-color: $codeBackgroundColor;
 //   white-space: nowrap;
 //   border-radius: 4px;
 // }
 
-// /* Highlighting code annotated with [[highlight]] */
-// code.highlight {
-//   border: 1px solid yellow;
-//   color: #0084c5;
-//   background-color: lemonchiffon;
+// // User input typically entered via keyboard
+// kbd {
+//   padding: 2px 4px;
+//   font-size: 90%;
+//   color: $codePrimaryColor;
+//   background-color: $codeBackgroundColor;
+//   border-radius: 2px;
+//   box-shadow: inset 0 -1px 0 rgba(0,0,0,.25);
+// }
+
+// // Blocks of code
+// pre {
+//   display: block;
+//   word-break: break-all;
+//   word-wrap: break-word;
+//   color: $codePrimaryColor;
+//   background-color: $codeBackgroundColor;
 //   border-radius: 4px;
+//   padding: 10px;
+
+//   code {
+//     font-size: 0.7em;
+//     color: $codePrimaryColor;
+//     white-space: pre-wrap;
+//     background-color: $codeBackgroundColor;
+//     border-radius: 0;
+//   }
 // }
-
-// /* Strike through code annotated with [[strike]] */
-// code.strike {
-//   text-decoration: line-through;
-// }
-
-// /* Numbered notes code annotated with [[note]] */
-// code.note {
-//   color: Black;
-//   background-color: White;
-//   border: 2px solid LightSteelBlue;
-//   border-radius: 9px;
-//   padding-left: 7px;
-//   padding-right: 7px;
-//   font-family: "Roboto", sans-serif;
-//   font-size: 11px;
-// }
-
-// /* Red code annotated with [[red]] */
-// code.red {
-//   color: red;
-// }
-
-
-

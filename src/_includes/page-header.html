@@ -1,18 +1,8 @@
-<header id="page-header" class="mdl-layout__header mdl-layout__header--scroll">
-  <div class="container">
-    <div class="mdl-layout__header-row">
-      <div class="mdl-cell mdl-cell--4-col">
-        <a href="/" class="mdl-layout-title brand">{{ site.title }}</a>
-      </div>
-      <div class="mdl-cell mdl-cell--8-col">
-        {% include navigation-main.html %}
-        <input id="search" type="text" placeholder="Search">
-        <i id="search-icon" class="material-icons md-dark">search</i>
-      </div>
-    </div>
-  </div>
-</header>
-<div class="mdl-layout__drawer">
-  <span class="mdl-layout-title brand">{{ site.title }}</span>
+<header id="page-header">
+  <button class="menu-toggle">
+    <span class="sr">Toggle navigation</span>
+    <i class="icon-menu"></i>
+  </button>
   {% include navigation-main.html %}
-</div>
+  {% include navigation-sub.html %}
+</header>
