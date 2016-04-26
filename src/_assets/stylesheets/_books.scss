@@ -10,5 +10,12 @@
   }
   .details {
     margin-left: 20px;
+    .title {
+      margin: 0;
+    }
+    .authors {
+      margin: 0;
+      margin-bottom: 5px;
+    }
   }
 }
