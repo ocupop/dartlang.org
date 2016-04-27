@@ -360,9 +360,9 @@ img {
           transform: rotate(180deg);
           top: -3px;
           opacity: 1;
-          color: darken($blue, 15%);
+          // color: darken($blue, 15%);
         }
-        ul {
+        > ul {
           display: block;
           height: auto;
           opacity: 1;
@@ -371,13 +371,11 @@ img {
     }
   }
   ul.section-nav {
-    background: #fafafa;
-    padding: 10px 5px;
     li {
       a {
-        color: $grey-dark;
+        // color: $grey-dark;
         &:hover {
-          color: $blue;
+          // color: $blue;  
         }
       }
     }

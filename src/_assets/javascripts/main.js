@@ -7,7 +7,7 @@
 $(window).on('load', function (e){
   window.scrollTo(0, 0);
   if (window.location.hash) {
-    $('html, body').animate({ scrollTop: $(window.location.hash).offset().top-80 }, 800, function (){
+    $('html, body').animate({ scrollTop: $(window.location.hash).offset().top-70 }, 500, function (){
       // Mark as active
       $('a[href^="#"]').removeClass('active');
       $('a[href="'+window.location.hash+'"]').addClass('active');
@@ -21,7 +21,6 @@ $(document).on('ready', function(){
   $('.highlight').mouseenter(function(){
     var text = $(this).data('text');
     $('#code-display p').text(text);
-    // window.console.log(text);
   });
   $('.highlight').mouseleave(function(){
     $('#code-display p').text('Hover over code snippet on the left to learn more.');
@@ -41,6 +40,9 @@ $(document).on('ready', function(){
       if (target.length == 0) target = $('html');
       $('html, body').animate({ scrollTop: target.offset().top-80 }, 500, function (){
           location.hash = hash;
+          // Mark as active
+          $('a[href^="#"]').removeClass('active');
+          $(this).addClass('active');
       });
       return false;
   });
