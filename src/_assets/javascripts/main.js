@@ -84,8 +84,8 @@ $(window).scroll(function(){
   var currentScreenPosition  = $(document).scrollTop();
 
   if(currentScreenPosition > 50) {
-    $('body').addClass('condensed-header');
+    $('#page-header').addClass('condensed');
   } else {
-    $('body').removeClass('condensed-header');
+    $('#page-header').removeClass('condensed');
   }
 });

@@ -161,16 +161,6 @@ img {
   left: 0;
   background-color: $grey-light;
   z-index: 1030;
-  .brand {
-    display: inline-block;
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    @include transition();
-    img {
-      height: 40px;
-    }
-  }
   .menu-toggle {
     display: none;
     position: absolute;
@@ -184,6 +174,16 @@ img {
     pointer-events: all;
     i {
       font-size: 20px;
+    }
+  }
+  &.condensed {
+    #mainnav {
+      .brand {
+        img {
+          height: 35px;
+          margin-top: 5px;
+        }
+      }
     }
   }
 }
@@ -225,13 +225,20 @@ img {
 
 // Navigation
 #mainnav {
-  height: 70px;
-  line-height: 70px;
   nav {
     display: flex;
     @include transition(0.5s);
+    .brand {
+      display: inline-block;
+      img {
+        height: 50px;
+        margin-top: 10px;
+        @include transition(0.5s);
+      }
+    }
     ul {
-      margin: 0 0 0 auto;
+      margin: auto;
+      margin-right: 0;
       padding: 0;
       list-style: none;
       display: flex;
@@ -239,7 +246,7 @@ img {
       justify-content: center;
       align-items: flex-end;
       li {
-        margin: 0 15px;
+        margin: auto 15px;
         a {
           display: inline-block;
           padding: 0;
@@ -268,11 +275,15 @@ img {
   }
 }
 #subnav {
- background: $grey-dark;
- color: $white;
- ul {
-   list-style-type: none;
-   li {
+  height: 32px;
+  line-height: 32px;
+  background: $grey-dark;
+  color: $white;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    li {
      display: inline-block;
      width: 49%;
      a {
@@ -285,8 +296,8 @@ img {
      &.next {
        text-align: right;
      }
-   }
- }
+    }
+  }
 }
 #footernav {}
 
@@ -360,7 +371,7 @@ img {
     }
   }
   ul.section-nav {
-    background: #efefef;
+    background: #fafafa;
     padding: 10px 5px;
     li {
       a {
