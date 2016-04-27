@@ -324,9 +324,6 @@ img {
       font-weight: 700;
       a {
         font-weight: 700;
-        &.active {
-          color: darken($blue, 15%);
-        }
       }
       i {
         position: relative;
@@ -355,7 +352,10 @@ img {
           }
         }
       }
-      &.open {
+      &.active {
+        > a {
+          color: red;
+        }
         i {
           transform: rotate(180deg);
           top: -3px;

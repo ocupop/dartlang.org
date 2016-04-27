@@ -4,8 +4,8 @@
     {% assign path = link.permalink | remove:'/index' %}
     {% if dropdown == '0' %}
       {% if page.url == link.permalink %}
-        <li class="open">
-          <a href="{{ link.permalink }}" title="{{ link.title }}" class="active">
+        <li class="active">
+          <a href="{{ link.permalink }}" title="{{ link.title }}">
             {% if link.label %}{{ link.label }}{% else %}{{ link.title }}{% endif %}
           </a>
           <i class="icon icon-caret-up"></i>
@@ -19,15 +19,15 @@
         </li>
       {% endif %}
     {% else %}
-      <li class="{% if page.url contains path %}open{% endif %}">
-        <a href="{{ link.permalink }}" title="{{ link.title }}" class="{% if page.url contains path %}active{% endif %}">
+      <li {% if page.url contains path %}class="active"{% endif %}>
+        <a href="{{ link.permalink }}" title="{{ link.title }}">
           {% if link.label %}{{ link.label }}{% else %}{{ link.title }}{% endif %}
         </a>
         <i class="icon icon-caret-up"></i>
         <ul>
           {% for child in link.children %}
-            <li class="{% if page.url contains child.permalink %}open{% endif %}">
-              <a href="{{ child.permalink }}" title="{{ child.title }}" {% if page.url contains child.permalink %}class="active"{% endif %}>
+            <li {% if page.url contains child.permalink %}class="active"{% endif %}>
+              <a href="{{ child.permalink }}" title="{{ child.title }}">
                 {% if child.label %}{{ child.label }}{% else %}{{ child.title }}{% endif %}
               </a>
               {% if page.url == child.permalink %}
