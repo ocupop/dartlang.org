@@ -8,9 +8,11 @@ permalink: /dart-vm/downloads/windows
 
 
 js:
-- url: /js/download-info.js
+- url: archive/assets/downloads.js
   defer: true
 ---
+
+{% include breadcrumbs.html %}
 
 # {{ page.title }}
 
@@ -42,7 +44,7 @@ Optionally, you can add one more tool:
 For client-side Dart work, you might want to download *both* tools. If you're
 working on server-side Dart, all you need is the `dart-sdk`:
 
-{% prettify sh %}
+{% prettify shell %}
 choco install dart-sdk -version <version>
 choco install dartium  -version <version>
 {% endprettify %}
@@ -54,7 +56,7 @@ The current stable version is
 To choose the dev channel version,
 use `-dev<dev-version>`. For example:
 
-{% prettify sh %}
+{% prettify shell %}
 choco install -y dart-sdk -version 1.12.0-dev.2.2
 choco install -y dartium  -version 1.12.0-dev.2.2
 {% endprettify %}

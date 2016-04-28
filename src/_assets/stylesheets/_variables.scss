@@ -7,6 +7,7 @@ $black:                     #000000;
 $white:                     #ffffff;
 $grey:                      #D3D3D3;
 $grey-light:                #eeeeee;
+$grey-lighter:              #fafafa;
 $grey-dark:                 #434343;
 $teal:                      #1FBAAC;
 $blue:                      #1b87c9;
@@ -38,6 +39,11 @@ $alert-success-bg:        #dff0d8;
 $alert-info-bg:           $blue-light;
 $alert-warning-bg:        #fcf8e3;
 $alert-danger-bg:         #f2dede;
+
+// Border Radius
+$border-radius-base:        0px;
+$border-radius-large:       0px;
+$border-radius-small:       0px;
 
 
 

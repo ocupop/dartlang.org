@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: "Index of Downloads"
 description: "Download specific stable and dev channel versions of the Dart SDK, Dartium, and the Dart API documentation."
 permalink: /dart-vm/downloads/archive/
@@ -7,10 +7,10 @@ permalink: /dart-vm/downloads/archive/
 js:
 - url: out/web/download_archive.dart.js
   defer: true
-- url: /js/download-info.js
+- url: assets/downloads.js
   defer: true
 css:
-- url: out/web/download_archive.css
+- url: assets/downloads.css
 ---
 
 {% include breadcrumbs.html %}
@@ -29,7 +29,7 @@ Go to the [main Dart download page]({{site.dart_vm}}/downloads).
 
 Stable channel builds are tested and approved for production use.
 
-{% include downloads/_archives_table.html channel="stable" %}
+{% include_relative _archives_table.html channel="stable" %}
 
 ## Dev channel
 
@@ -37,7 +37,7 @@ Dev channel builds may contain bugs and can provide early access
 to new features. We do not recommended dev channel builds for
 production use.
 
-{% include downloads/_archives_table.html channel="dev" %}
+{% include_relative _archives_table.html channel="dev" %}
 
 ## Direct download URLs
 

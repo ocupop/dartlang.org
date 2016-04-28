@@ -1,4 +1,4 @@
-@import "bootstrap-sprockets";
+@import "bootstrap";
 @import '_variables';
 @import '_mixins';
 @import '_icons';
@@ -6,6 +6,7 @@
 // @import '_syntax';
 @import '_animations';
 
+@import '_dartvm';
 @import '_books';
 
 /* -----------------------------------------
@@ -69,19 +70,20 @@ form {
   position: relative;
   cursor: pointer;
   select {
-    -webkit-appearance: none;
-    color: $grey-light;
+    appearance: none;
+    min-width: 120px;
+    padding: 0 30px 0 10px;
     &:focus {
      outline: none;
     }
   }
   &:after {
-    content: "\e917";
+    font-family: 'dart' !important;
+    content: $icon-caret-up;
     display: block;
     position: absolute;
     right: 15px;
-    top: 22px;
-    font-family: 'dart' !important;
+    top: 15px;
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -89,24 +91,26 @@ form {
     text-transform: none;
     line-height: 1;
     font-size: 9px;
-    color: $grey-light;
+    color: $grey-dark;
     transform: rotate(180deg);
-    @include transition();
     pointer-events: none;
+    @include transition();
   }
 }
 input, select {
   line-height: 32px;
   height: 32px;
-  text-indent: 15px;
-  width: 100%;
+  // text-indent: 15px;
+  // width: 100%;
   margin: 4px 0;
+  padding: 0 10px;
   border: none;
   border-radius: 0;
   text-transform: uppercase;
   font-size: 13px;
   cursor: pointer;
-  background-color: #ffffff;
+  background-color: $grey-light;
+  color: $grey-dark;
   &:focus, &:active {
     outline-color: $blue;
   } 
@@ -232,7 +236,7 @@ img {
       display: inline-block;
       img {
         height: 50px;
-        margin-top: 10px;
+        margin: 10px;
         @include transition(0.5s);
       }
     }
@@ -411,6 +415,7 @@ img {
 #search {
   position: relative;
   width: 250px;
+  background-color: #ffffff;
 }
 
 #search-icon {

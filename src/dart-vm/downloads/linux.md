@@ -7,9 +7,11 @@ description: "Installing and updating the Dart SDK on Linux with apt-get, a Debi
 permalink: /dart-vm/downloads/linux
 
 js:
-- url: /js/download-info.js
+- url: archive/assets/downloads.js
   defer: true
 ---
+
+{% include breadcrumbs.html %}
 
 # {{ page.title }}
 
@@ -34,7 +36,7 @@ To install the Dart SDK with apt-get, you first need to do some setup.
 
 The following one-time commands set up the install for the stable channel.
 
-{% prettify sh %}
+{% prettify shell %}
 # Enable HTTPS for apt.
 $ sudo apt-get update
 $ sudo apt-get install apt-transport-https
@@ -51,7 +53,7 @@ $ sudo apt-get update
 The following one-time command sets up the install for the dev channel.
 Do this in addition to the [set up for stable channel](#set-up-stable-channel).
 
-{% prettify sh %}
+{% prettify shell %}
 # Before running this command, follow the instructions in
 # "Set up for the stable channel".
 $ sudo sh -c 'curl https://storage.googleapis.com/download.dartlang.org/linux/debian/dart_unstable.list > /etc/apt/sources.list.d/dart_unstable.list'
@@ -63,7 +65,7 @@ $ sudo sh -c 'curl https://storage.googleapis.com/download.dartlang.org/linux/de
 The following command installs the highest available version
 of the Dart SDK, based on your setup.
 
-{% prettify sh %}
+{% prettify shell %}
 $ sudo apt-get install dart
 {% endprettify %}
 
@@ -79,14 +81,14 @@ or to install a specific version number, see the next section.
 The dev channel has a higher version number than the stable channel.
 To force installation of the stable version, use the following command.
 
-{% prettify sh %}
+{% prettify shell %}
 $ sudo apt-get install dart/stable
 {% endprettify %}
 
 To install a particular release, specify the version.
 For example:
 
-{% prettify sh %}
+{% prettify shell %}
 $ sudo apt-get install dart=1.5.8-1
 $ sudo apt-get install dart=1.6.*
 $ sudo apt-get install dart=1.7.0-dev.0.1.*
@@ -98,7 +100,7 @@ $ sudo apt-get install dart=1.7.0-dev.0.1.*
 Use one of the following buttons to download the stable or
 dev channel release in the `.deb` package format.
 
-{% include downloads/_debian.html buttonclass="download-btn btn btn-primary btn-lg" %}
+{% include_relative _debian.html buttonclass="download-btn btn btn-primary btn-lg" %}
 
 ## Compiling from source {#compiling}
 

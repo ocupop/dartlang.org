@@ -6,9 +6,11 @@ description: "The download bundles that support the Dart language."
 permalink: /dart-vm/downloads/
 
 js:
-- url: /js/download-info.js
+- url: archive/assets/downloads.js
   defer: true
 ---
+
+{% include breadcrumbs.html %}
 
 # Download Dart
 

@@ -7,6 +7,8 @@ description: "Installing and updating the Dart SDK on your Mac with homebrew."
 permalink: /dart-vm/downloads/mac
 ---
 
+{% include breadcrumbs.html %}
+
 # {{ page.title }}
 
 Homebrew is a package manager for Mac OS.
@@ -23,7 +25,7 @@ documentation generator, package manager, and the core libraries.
 
 [Install homebrew](http://brew.sh/), and then run:
 
-{% prettify huge %}
+{% prettify shell %}
 $ brew tap dart-lang/dart
 $ brew install dart
 {% endprettify %}
@@ -31,7 +33,7 @@ $ brew install dart
 If you use Dart for web development work, we recommend that you also
 install Dartium and Content Shell:
 
-{% prettify huge %}
+{% prettify shell %}
 $ brew tap dart-lang/dart
 $ brew install dart --with-content-shell --with-dartium
 {% endprettify %}
@@ -41,7 +43,7 @@ $ brew install dart --with-content-shell --with-dartium
 To choose the dev channel version of whatever Dart software you install,
 use `--devel`:
 
-{% prettify huge %}
+{% prettify shell %}
 $ brew install dart --devel
 {% endprettify %}
 
@@ -61,7 +63,7 @@ dev channel releases are not as heavily tested as the stable release.
 
 To update Dart once you've installed it using Homebrew, run:
 
-{% prettify huge %}
+{% prettify shell %}
 $ brew update
 $ brew upgrade dart
 {% endprettify %}
@@ -98,13 +100,13 @@ as your home directory.
    For example, if you want Homebrew and Dart to live under
    `~/homebrew`, go to `~`.
 
-   {% prettify none %}
+   {% prettify shell %}
    $ cd ~    # The directory that will contain Homebrew and Dart
    {% endprettify %}
 
 2. Clone Homebrew. This creates a `homebrew` directory.
 
-   {% prettify none %}
+   {% prettify shell %}
    $ git clone https://github.com/Homebrew/homebrew.git
    {% endprettify %}
 
