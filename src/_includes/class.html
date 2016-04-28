@@ -1,0 +1,6 @@
+{% capture class %}
+{{ page.layout }}
+{% if page.toc %} show_toc{% endif %}
+{% if page.nextpage.url or page.prevpage.url %} show_subnav{% endif %}
+{% endcapture %}
+{{ class }}

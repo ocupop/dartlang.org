@@ -1,14 +1,15 @@
+---
+layout: compressed
+---
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body class="{{ page.layout }}">
-    <div class="mdl-layout mdl-js-layout">
-      {% include page-header.html %}
-      <main class="mdl-layout__content">
-        {{ content }}
-      </main>
-      {% include dartpad.html %}
-      {% include page-footer.html %}
-    </div>
+  <body class="{% include class.html %}">
+    {% include page-header.html %}
+    <main id="page-content">
+      {{ content }}
+    </main>
+    {% include dartpad.html %}
+    {% include page-footer.html %}
   </body>
 </html>

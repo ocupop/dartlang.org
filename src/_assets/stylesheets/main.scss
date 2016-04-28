@@ -1,6 +1,10 @@
-@import "bootstrap";
 @import '_variables';
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
 @import '_mixins';
+
 @import '_icons';
 @import '_code';
 // @import '_syntax';
@@ -54,6 +58,7 @@ a {
  text-decoration: none;
  &:hover, &:focus, &:active {
    outline: none;
+   text-decoration: none;
  }
 }
 
@@ -121,10 +126,8 @@ pre {
   background-color: $grey-light;
   color: $blue;
   position: relative;
-  &.prettyprint {
-    border: none;
-    // padding: 15px 5px;
-  }
+  border: none;
+  border-radius: 0;
   &.dartpad {
     &:after {
       content: 'Run';
@@ -358,13 +361,12 @@ img {
       }
       &.active {
         > a {
-          color: red;
+          // color: red;
         }
         i {
           transform: rotate(180deg);
           top: -3px;
           opacity: 1;
-          // color: darken($blue, 15%);
         }
         > ul {
           display: block;
@@ -377,9 +379,11 @@ img {
   ul.section-nav {
     li {
       a {
-        // color: $grey-dark;
-        &:hover {
-          // color: $blue;  
+        padding: 0;
+        color: $grey-dark;
+        &:hover, &:focus, &:active, &.active {
+          color: $blue;
+          background-color: transparent;
         }
       }
     }
@@ -444,12 +448,6 @@ img {
 /* -----------------------------------------
   Utility Classes
  ----------------------------------------- */
-.container {
-  position: relative;
-  max-width: 100%;
-  width: $live-content-width;
-  margin: 0 auto;
-}
 
 .content {
  position: relative;
@@ -479,54 +477,7 @@ img {
  }
 }
 
-.panel {
- background-color: $grey-dark;
- color: $white;
- padding: $content-padding;
- margin-bottom: 20px;
- h1, h2, h3, h4, h5, h6 {
-   color: $white;
-   margin: 0;
- }
- ul {
-   padding-left: 15px;
- }
-}
 
-.table {
-  width: 100%;
-  max-width: 100%;
-  margin-bottom: 20px;
-  background-color: transparent;
-  border-spacing: 0;
-  border-collapse: collapse;
-  thead {
-    tr {
-      th {
-        text-align: left;
-      }
-    }
-  }
-  tbody {
-    tr {
-      td {
-        padding: 8px;
-        line-height: 1.42857143;
-        vertical-align: top;
-        border-top: 1px solid #ddd;
-      }
-    }
-  }
-  &.table-striped {
-    tbody {
-      tr:nth-child(odd) {
-        td {
-          background-color: #f9f9f9;
-        }
-      }
-    }
-  }
-}
 
 // Columns
 .col2 {
@@ -566,6 +517,7 @@ img {
  }
 }
 
+// Color Palette
 .grey-dark {
  background-color: $grey-dark;
  color: $white;
@@ -581,107 +533,91 @@ img {
  }
 }
 
-.custom-counter {
- margin: 0;
- padding: 0;
- list-style-type: none;
+.footnote {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  li {
+    counter-increment: step-counter;
+    margin-bottom: 10px;
+    position: relative;
+    &:before {
+      content: counter(step-counter);
+      position: absolute;
+      left: -25px;
+      top: -3px;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 3px 8px;
+    }
+  }
 }
 
-.custom-counter li {
- counter-increment: step-counter;
- margin-bottom: 10px;
+/* -----------------------------------------
+  Bootstrap Overwrites
+ ----------------------------------------- */
+.container {
  position: relative;
+ max-width: 100%;
+ width: $live-content-width;
+ margin: 0 auto;
 }
 
-.custom-counter li::before {
- content: counter(step-counter);
- position: absolute;
- left: -25px;
- top: -3px;
- font-size: 20px;
- font-weight: bold;
- padding: 3px 8px;
+.panel {
+background-color: $grey-dark;
+color: $white;
+padding: $content-padding;
+margin-bottom: 20px;
+h1, h2, h3, h4, h5, h6 {
+  color: $white;
+  margin: 0;
+}
+ul {
+  padding-left: 15px;
+}
 }
 
-/* -----------------------------------------
-  Message / Notifications
- ----------------------------------------- */
-// .alert {
-//   padding: $content-padding;
-//   p {
-//     margin-bottom: 0;
-//   }
-//   &.alert-success {
-//     width: auto;
-//     background-color: $alert-success-bg;
-//   }
-//   &.alert-info {
-//     width: auto;
-//     background-color: $alert-info-bg;
-//   }
-//   &.alert-warning {
-//     width: auto;
-//     background-color: $alert-warning-bg;
-//   }
-//   &.alert-danger {
-//     width: auto;
-//     background-color: $alert-danger-bg;
-//   }
-//   &.alert-obsolete {
-//     width: auto;
-//     background-color: $grey-dark;
-//     color: $white;
-//   }
-// }
-
-
-::-webkit-input-placeholder {
-  color: $grey-dark;
-  font-family: $font-family-base;
-}
-:-moz-placeholder { /* Firefox 18- */
-  color: $grey-dark;
-  font-family: $font-family-base; 
-}
-::-moz-placeholder {  /* Firefox 19+ */
-  color: $grey-dark;
-  font-family: $font-family-base;
-}
-:-ms-input-placeholder {  
-  color: $grey-dark;
-  font-family: $font-family-base;
+.table {
+  width: 100%;
+  @extend .table-striped;
+  @extend .table-bordered;
 }
 
+.popover {
+  border-radius: 0;
+  .popover-title {
+    border-radius: 0;
+  }
+}
 
-
-/* -----------------------------------------
-  MDL Overwrites
- ----------------------------------------- */
-// .mdl-layout__drawer-button {
-//  color: $white;
-// }
-
-// .mdl-layout__header-row {
-//  padding: 0;
-// }
-
-// .mdl-layout__drawer>.mdl-layout-title {
-//  margin-left:16px;
-//  margin-top:16px;
-// }
-
-// .mdl-layout__header-row {
-//  .mdl-navigation__link {
-//    padding: 0 20px;
-//  }
-// }
-
-// .mdl-mega-footer__heading {
-//  font-weight: 300;
-//  text-transform: uppercase;
-//  letter-spacing: 2px;
-//  margin-top: 0;
-// }
+.alert {
+  padding: $content-padding;
+  border: none;
+  p {
+    margin-bottom: 0;
+  }
+  &.alert-success {
+    width: auto;
+    background-color: $alert-success-bg;
+  }
+  &.alert-info {
+    width: auto;
+    background-color: $alert-info-bg;
+  }
+  &.alert-warning {
+    width: auto;
+    background-color: $alert-warning-bg;
+  }
+  &.alert-danger {
+    width: auto;
+    background-color: $alert-danger-bg;
+  }
+  &.alert-obsolete {
+    width: auto;
+    background-color: $grey-dark;
+    color: $white;
+  }
+}
 
 
 /* -----------------------------------------
@@ -710,9 +646,14 @@ body.show_toc {
     section {
      width: calc(75% - 16px);
     }
-    aside:nth-of-type(1) {
+    >aside {
       width: calc(25% - 16px);
     }
+  }
+}
+body.show_subnav {
+  #page-content {
+    margin-top: 103px;
   }
 }
 /* -----------------------------------------

@@ -4,6 +4,8 @@
 //= require vendor/code-prettify/lang-dart
 //= require vendor/jquery.stickit.min
 
+
+// Add scroll on page load for hash
 $(window).on('load', function (e){
   window.scrollTo(0, 0);
   if (window.location.hash) {
@@ -15,8 +17,20 @@ $(window).on('load', function (e){
   }
 });
 
+// When a user scrolls to 50px add class  condensed-header to body
+$(window).scroll(function(){
+  var currentScreenPosition  = $(document).scrollTop();
+
+  if(currentScreenPosition > 50) {
+    $('#page-header').addClass('condensed');
+  } else {
+    $('#page-header').removeClass('condensed');
+  }
+});
+
 
 $(document).on('ready', function(){
+  // Initiate Syntax Highlighting
   prettyPrint();
   $('.highlight').mouseenter(function(){
     var text = $(this).data('text');
@@ -26,7 +40,7 @@ $(document).on('ready', function(){
     $('#code-display p').text('Hover over code snippet on the left to learn more.');
   });
 
-  // Table of Contents
+  // TOC: Table of Contents
   $('.toc-entry').not('.toc-h2').remove();
   $('.section-nav').addClass('nav');
   $('#toc').on('activate.bs.scrollspy', function () {
@@ -38,8 +52,8 @@ $(document).on('ready', function(){
     $(this).parent('li').toggleClass('active');
   });
 
-  // Add scroll animations
-  $('a[href^="#"]').click(function() {
+  // TOC: Add scroll animations
+  $('#toc a[href^="#"]').click(function() {
       var target = $(this.hash);
       var hash = this.hash;
       if (target.length == 0) target = $('a[name="' + this.hash.substr(1) + '"]');
@@ -53,25 +67,12 @@ $(document).on('ready', function(){
       return false;
   });
 
-  // // initiate stick behaviour
+  // Initiate sticky behaviour
   $("#toc").stickit({
     top: 70
   });
 
+  // Initiate Popovers
+  $('[data-toggle="popover"], .dart-popover').popover()
 
-  $(function () {
-    $('[data-toggle="popover"]').popover()
-  });
-
-});
-
-// When a user scrolls to 50px add class  condensed-header to body
-$(window).scroll(function(){
-  var currentScreenPosition  = $(document).scrollTop();
-
-  if(currentScreenPosition > 50) {
-    $('#page-header').addClass('condensed');
-  } else {
-    $('#page-header').removeClass('condensed');
-  }
 });
