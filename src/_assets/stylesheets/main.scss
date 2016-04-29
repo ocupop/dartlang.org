@@ -1,5 +1,4 @@
 @import '_variables';
-// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
@@ -199,27 +198,40 @@ img {
   margin-top: 80px;
 }
 #page-footer {
- color: $white;
- font-weight: 300;
- background-color: $grey-dark;
- .brand {
+  color: $white;
+  font-weight: 300;
+  background-color: $grey-dark;
+  .brand {
    height: 30px;
    width: 120px;
    margin-top: 20px;
    margin-bottom: 20px;
- }
- small {
+   img {
+    margin: 0;
+   }
+  }
+  small {
    display: block;
    padding-right: 25px;
- }
- h4, p, a {
-   font-weight: 300;
-   color: #fff;
- }
- ul {
-  list-style: none;
-  padding: 0;
- }
+  }
+  h4 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      a {
+        color: #ffffff;
+        line-height: 16px;
+        &:hover, &:focus, &:active {
+          color: $grey-lighter;
+        }
+      }
+    }
+  }
 }
 
 // Navigation
