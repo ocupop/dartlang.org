@@ -92,11 +92,11 @@ destination: publish
 # incremental: true
 bundler_args: --without production
 markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-  # syntax_highlighter_opts:
-  #   line_numbers: true
+# kramdown:
+#   input: GFM
+#   syntax_highlighter: rouge
+#   # syntax_highlighter_opts:
+#   #   line_numbers: true
 excerpt_separator: "~~~"
 # highlighter: null
 
@@ -127,10 +127,11 @@ assets:
     - "*.svg"
   digest: true
   sources:
-    - _assets/media
+    - _assets/icons
+    - _assets/images
     - _assets/javascripts
     - _assets/stylesheets
-    - _assets/pages
+    - _assets/page_assets
   features:
     liquid: true # default: false
     automatic_img_size: true # default: true

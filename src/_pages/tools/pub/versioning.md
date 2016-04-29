@@ -57,7 +57,7 @@ all works fine as long as none of those dependencies _overlap_.
 
 But consider the following example:
 
-<img src="images/PubConstraintsDiagram.png" alt="diagram showing my_app has dependencies on widgets and templates which both have a dependency on collection">
+<img src="{% asset_path 'tools/pub/PubConstraintsDiagram.png' %}" alt="diagram showing my_app has dependencies on widgets and templates which both have a dependency on collection">
 
 So your app uses `widgets` and `templates`, and _both_ of those use
 `collection`. This is called a **shared dependency**. Now what happens when

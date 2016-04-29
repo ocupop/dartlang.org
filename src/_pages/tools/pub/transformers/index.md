@@ -6,9 +6,6 @@ title: "Writing a Pub Transformer"
 description: "How to write a Pub transformer that processes a single input asset."
 permalink: /tools/pub/transformers/
 toc: true
-
-header:
-  css: ["transformers.css"]
 ---
 
 {% include breadcrumbs.html %}
@@ -154,23 +151,19 @@ do this in one of two ways:
   limits input assets to those
   files with one of three Markdown file extensions:
 
-<div class="step-details" markdown="1">
 {% prettify dart %}
 String get allowedExtensions => ".md .markdown .mdown";
 {% endprettify %}
-</div>
 
 * Override `isPrimary()`. The following code
   limits input assets to those from a top-level directory
   named `sources`:
 
-<div class="step-details" markdown="1">
 {% prettify dart %}
 Future<bool> isPrimary(AssetId id) {
   return new Future.value(id.path.startsWith('sources/');
 }
 {% endprettify %}
-</div>
 
 Note that defining `allowedExtensions` is shorthand for defining an
 `isPrimary` method that only checks the extension of the asset ID's path.

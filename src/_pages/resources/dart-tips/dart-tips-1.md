@@ -67,7 +67,7 @@ Thanks for watching. My name is Seth Ladd, and as we say here on Dart Tips, stay
 
 <hr>
 
-<a href="http://marakana.com"><img src="images/marakana-logo.png" alt="Marakana Logo"></a>
+<a href="http://marakana.com"><img src="{% asset_path 'dart-tips/marakana-logo.png' %}" alt="Marakana Logo"></a>
 
 Our thanks go out to [Marakana](http://www.marakana.com) for producing this
 video series.

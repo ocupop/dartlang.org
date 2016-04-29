@@ -17,7 +17,7 @@ if you find another book that we should add.
 <div class="book">
   <div class="cover">
     <a href="{{ book.link }}" title="{{ book.title }}">
-      <img src="{% asset_path 'images/covers/{{ book.cover }}' %}" alt="Cover: {{ book.title }}"/>
+      <img src="{% asset_path 'covers/{{ book.cover }}' %}" alt="Cover: {{ book.title }}"/>
     </a>
   </div>
   <div class="details">

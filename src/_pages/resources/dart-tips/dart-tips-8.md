@@ -245,7 +245,7 @@ I hope you enjoyed this tour of Dart's control flow statements. Thanks for watch
 
 <hr>
 
-<img src="images/marakana-logo.png" alt="Marakana Logo">
+<a href="http://marakana.com"><img src="{% asset_path 'dart-tips/marakana-logo.png' %}" alt="Marakana Logo"></a>
 
 Our thanks go out to [Marakana](http://www.marakana.com) for producing this
 video series.

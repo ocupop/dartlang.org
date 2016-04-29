@@ -4,8 +4,6 @@ reference: "https://www.dartlang.org/tools/pub/transformers/examples/"
 layout: page
 title: "Examples of Transformer Code"
 permalink: /tools/pub/transformers/examples
-
-short-title: "Examples"
 ---
 {% include breadcrumbs.html %}
 

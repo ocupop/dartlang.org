@@ -22,7 +22,7 @@ frameborder="0" allowfullscreen></iframe>
 
 Hi! My name is Seth Ladd and welcome to Dart Tips. Fun little fact, the Dart language spec doesn't mention the word 'array'. Fret not, my happy Dartisans, Dart has many ways to store and retrieve collections of objects. Out of the box, Dart supports four types of collections with full-featured APIs: lists, maps, queues, and sets. Unordered, ordered, random access, or by a key, you'll find it in the Dart core libraries. Let's get started.
 
-<img src="images/ep-5-hierarchy.png" alt="Dart's collection type hierarchy.">
+<img src="{% asset_path 'dart-tips/ep-5-hierarchy.png' %}" alt="Dart's collection type hierarchy.">
 
  First, a bit of taxonomy. The root of Dart's collection classes start at Iterable. An object that implements Iterable exposes read-only access to a group of items. The Collection class extends Iterable, adding the ability to add and remove items. The rubber hits the road with List, Set, and Queue, which implement Collection. You can see that Map doesn't extend or implement Collection, but it's an honorary member of the useful collection type classes.
 
@@ -151,7 +151,7 @@ Of particular note is putIfAbsent, which will call a function and insert its res
 
  Dart ships with four main collection types: lists, queues, sets, and maps as honorable mention. Each has their own trade-offs and optimizations. To help you keep them straight, here is a handy way to look at them.
 
- <img src="images/ep-5-flowchart.png" alt="Decision matrix for Dart collections">
+ <img src="{% asset_path 'dart-tips/ep-5-flowchart.png' %}" alt="Decision matrix for Dart collections">
 
  If you need key-value pairs, there is one option: Map. If you need to contain unique items, Set is your only option. This leaves the two ordered collections: List and Queue. Lists are great for arbitrary access to items anywhere in the collection, but changing their size can be costly. Queues are great if you only operate on the head or tail of the collection, but there's no efficient way to access a specific element in the middle of the collection.
 
@@ -161,7 +161,7 @@ Thanks for watching, my name is Seth Ladd, and as we say here on Dart Tips, stay
 
 <hr>
 
-<img src="images/marakana-logo.png" alt="Marakana Logo">
+<a href="http://marakana.com"><img src="{% asset_path 'dart-tips/marakana-logo.png' %}" alt="Marakana Logo"></a>
 
 Our thanks go out to [Marakana](http://www.marakana.com) for producing this
 video series.

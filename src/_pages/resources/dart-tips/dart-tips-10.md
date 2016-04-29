@@ -43,7 +43,7 @@ Classes can be extended to define more specialized classes. A class hierarchy is
 a tree-like relationship between high level abstract concepts like Vehicle and
 more specific concepts like Car, and then even more specific like Sports Car.
 
-<img src="images/class-hierarchy.png" alt="An example class hierarchy.">
+<img src="{% asset_path 'dart-tips/class-hierarchy.png' %}" alt="An example class hierarchy.">
 
 A more specific class inherits from, or extends, a more general class. The top
 level of the Dart class hierarchy is Object. That is, all objects are instances
@@ -185,7 +185,7 @@ here on Dart Tips, stay sharp!
 
 <hr>
 
-<img src="images/marakana-logo.png" alt="Marakana Logo">
+<a href="http://marakana.com"><img src="{% asset_path 'dart-tips/marakana-logo.png' %}" alt="Marakana Logo"></a>
 
 Our thanks go out to [Marakana](http://www.marakana.com) for producing this
 video series.

@@ -219,7 +219,7 @@ Thanks for watching, I'm Seth Ladd, and as we say here on Dart Tips: stay sharp!
 
 <hr>
 
-<img src="images/marakana-logo.png" alt="Marakana Logo">
+<a href="http://marakana.com"><img src="{% asset_path 'dart-tips/marakana-logo.png' %}" alt="Marakana Logo"></a>
 
 Our thanks go out to [Marakana](http://www.marakana.com) for producing this
 video series.

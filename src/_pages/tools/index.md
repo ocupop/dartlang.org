@@ -27,26 +27,26 @@ You can find a Dart plugin for the most commonly used IDEs.
 If you don't already have a favorite IDE,
 we recommend WebStorm, which comes with Dart Support.
 
-<img src="images/webstorm.png" alt="WebStorm logo">
+<img src="{% asset_path 'tools/webstorm.png' %}" alt="WebStorm logo">
 <a href="{{site.dart4web}}/tools/webstorm"><b>WebStorm</b></a>
 
-<img src="images/IntellIJ-IDEA.png" alt="IntelliJ logo">
+<img src="{% asset_path 'tools/IntellIJ-IDEA.png' %}" alt="IntelliJ logo">
 <a href="jetbrains-plugin"><b>IntelliJ IDEA<br>
 (and other JetBrain IDEs)</b></a>
 
 The Dart plugins for the following tools are unsupported
 and available as open source.
 
-<img src="images/sublime.png" alt="Sublime logo">
+<img src="{% asset_path 'tools/sublime.png' %}" alt="Sublime logo">
 <a href="https://github.com/dart-lang/dart-sublime-bundle#readme"><b>Sublime Text 3</b></a>
 
-<img src="images/emacs.png" alt="Emacs logo">
+<img src="{% asset_path 'tools/emacs.png' %}" alt="Emacs logo">
 <a href="https://github.com/nex3/dart-mode"><b>Emacs</b></a>
 
-<img src="images/vim.png" alt="Vim logo">
+<img src="{% asset_path 'tools/vim.png' %}" alt="Vim logo">
 <a href="https://github.com/dart-lang/dart-vim-plugin"><b>Vim</b></a>
 
-<img src="images/atom-logo.png" alt="Atom logo">
+<img src="{% asset_path 'tools/atom-logo.png' %}" alt="Atom logo">
 <a href="https://github.com/dart-atom/dartlang/"><b>Atom</b></a>
 
 ## SDK

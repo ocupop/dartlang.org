@@ -6,9 +6,6 @@ title: "Writing an Aggregate Transformer"
 description: How to write a Pub transformer to processes multiple input assets.
 permalink: /tools/pub/transformers/aggregate
 toc: true
-
-header:
-  css: ["transformers.css"]
 ---
 
 {% include breadcrumbs.html %}

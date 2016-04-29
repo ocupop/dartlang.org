@@ -6,9 +6,6 @@ title: "Writing a Lazy Transformer"
 description: "How to write a Pub transformer that runs lazily to improve your app's startup time."
 permalink: /tools/pub/transformers/lazy-transformer
 toc: true
-
-header:
-  css: ["transformers.css"]
 ---
 
 {% include breadcrumbs.html %}
