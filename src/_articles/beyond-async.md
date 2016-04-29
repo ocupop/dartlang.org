@@ -103,7 +103,6 @@ as one has to define specialized iterator and iterable classes and
 implement the complete `Iterable` API.
 
 #### The devil’s details
-{:.no_toc}
 
 You can separate the **sync** from the \*;
 they are distinct tokens. If you have existing code that used
@@ -153,7 +152,6 @@ each new value at some point. The initiative is not the consumer’s, however;
 the stream pushes the value to the listener function at its pleasure.
 
 #### Fine print
-{:.no_toc}
 
 As a variant, consider
 
@@ -244,7 +242,6 @@ Iterable naturalsDownFrom(n) [[highlight]]sync*[[/highlight]] {
 The latter version runs in linear time.
 
 #### Fine print
-{:.no_toc}
 
 In a **sync\*** function, the subsequence must be an iterable;
 in an **async\*** method, the subsequence must be a stream.

@@ -29,7 +29,6 @@ likely that you're doing too little. Try to step it up.
 ## Comments
 
 ### DO format comments like sentences.
-{:.no_toc}
 
 <div class="good">
 {% prettify dart %}
@@ -43,7 +42,6 @@ period (or "!" or "?", I suppose). This is true for all comments: doc comments,
 inline stuff, even TODOs. Even if it's a sentence fragment.
 
 ### DON'T use block comments for documentation.
-{:.no_toc}
 
 <div class="good">
 {% prettify dart %}
@@ -76,7 +74,6 @@ before a declaration and uses the special `///` syntax that dartdoc looks for.
 [docs]: https://api.dartlang.org/
 
 ### DO use `///` doc comments to document members and types.
-{:.no_toc}
 
 Using a doc comment instead of a regular comment enables [dartdoc][] to find it
 and generate documentation for it.
@@ -105,20 +102,17 @@ If you stumble onto code that still uses the JavaDoc style, consider cleaning it
 up.
 
 ### PREFER writing doc comments for public APIs.
-{:.no_toc}
 
 You don't have to document every single top-level variable, type, and member,
 but you should document most of them.
 
 ### CONSIDER writing doc comments for private APIs.
-{:.no_toc}
 
 Doc comments aren't just for external consumers of your library's public API.
 They can also be helpful for understanding private members that are called from
 other parts of the library.
 
 ### DO make the first sentence a standalone paragraph.
-{:.no_toc}
 
 The first paragraph of any doc comment is a brief, user-oriented description
 ending with a period. As you can see below, it is often not a complete sentence.
@@ -146,7 +140,6 @@ be useful to them, compared to similar-sounding APIs. Don't just repeat the API
 name&mdash;tell the reader something they don't already know.
 
 ### PREFER starting function or method comments with third-person verbs.
-{:.no_toc}
 
 The doc comment should focus on what the code *does*.
 
@@ -161,7 +154,6 @@ void start() { ... }
 </div>
 
 ### PREFER starting variable, getter, or setter comments with noun phrases.
-{:.no_toc}
 
 The doc comment should stress what the property *is*. This is true even for
 getters which may do calculation or other work. What the caller cares about is
@@ -181,7 +173,6 @@ If there's both a setter and a getter, comment only the getter. That way,
 dartdoc will treat it like a variable.
 
 ### PREFER starting library or type comments with noun phrases.
-{:.no_toc}
 
 Doc comments for classes are often the most important documentation in your
 program. They describe the type's invariants, establish the terminology it uses,
@@ -198,7 +189,6 @@ class Chunk { ... }
 </div>
 
 ### CONSIDER including code samples in doc comments.
-{:.no_toc}
 
 <div class="good">
 {% prettify dart %}
@@ -213,7 +203,6 @@ Humans are great at generalizing from examples, so even a single code sample
 makes an API easier to learn.
 
 ### DO use square brackets in doc comments to refer to in-scope identifiers.
-{:.no_toc}
 
 If you surround things like variable, method, or type names in square brackets,
 then dartdoc will look up the name and link to its docs.
@@ -235,7 +224,6 @@ To create a point, call [new Point] or use [new Point.polar] to ...
 </div>
 
 ### DO use prose to explain parameters, return values, and exceptions.
-{:.no_toc}
 
 Other languages use verbose tags and sections to describe what the parameters
 and returns of a method are.
@@ -267,7 +255,6 @@ Flag addFlag(String name, String abbr) { ... }
 </div>
 
 ### AVOID redundantly mentioning types in doc comments.
-{:.no_toc}
 
 Users reading your doc comments can also see the type, return type, parameter
 types, etc. of the construct you're documenting. Dartdoc already provides links
@@ -276,7 +263,6 @@ to them. There's no need to also state the type in the prose.
 Tell the reader something they *don't* already know.
 
 ### DO put doc comments before metadata annotations.
-{:.no_toc}
 
 <div class="good">
 {% prettify dart %}
@@ -352,13 +338,11 @@ a flavor of what's supported:
 {% endprettify %}
 
 ### AVOID using markdown excessively.
-{:.no_toc}
 
 When in doubt, format less. Formatting exists to illuminate your content, not
 replace it. Words are what matters.
 
 ### AVOID using HTML for formatting.
-{:.no_toc}
 
 It *may* be useful to use it in rare cases for things like tables, but in almost
 all cases, if it's too complex too express in Markdown, you're better off not
@@ -376,19 +360,16 @@ best practices for technical writing, in general, from articles such as
 [Technical writing style](https://en.wikiversity.org/wiki/Technical_writing_style).
 
 ### PREFER brevity.
-{:.no_toc}
 
 Be clear and precise, but also terse.
 
 ### AVOID abbreviations and acronyms unless they are obvious.
-{:.no_toc}
 
 Many people don't know what "i.e.", "e.g." and "et. al." mean. That acronym
 that you're sure everyone in your field knows may not be as widely known as you
 think.
 
 ### PREFER using "this" instead of "the" to refer to a member's instance.
-{:.no_toc}
 
 When documenting a member for a class, you often need to refer back to the
 object the member is being called on. Using "the" can be ambiguous.

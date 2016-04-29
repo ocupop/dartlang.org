@@ -13,7 +13,6 @@ toc: false
 # {{ page.title }}
 
 #### Contents
-{:.no_toc}
 
 * ToC
 {:toc}

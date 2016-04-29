@@ -37,7 +37,6 @@ Identifiers come in three flavors in Dart.
 
 
 ### DO name types using `UpperCamelCase`.
-{:.no_toc}
 
 Classes, enums, typedefs, and type parameters should capitalize the first letter of each word
 (including the first word), and use no separators.
@@ -82,7 +81,6 @@ class C { ... }
 
 
 ### DO name libraries and source files using `lowercase_with_underscores`.
-{:.no_toc}
 
 Some file systems are not case-sensitive, so many projects require filenames to
 be all lowercase. Using a separating character allows names to still be readable
@@ -113,7 +111,6 @@ name it*. It is fine to omit the library directive in a file if you want.
 
 
 ### DO name import prefixes using `lowercase_with_underscores`.
-{:.no_toc}
 
 <div class="good">
 {% prettify dart %}
@@ -135,7 +132,6 @@ import 'package:javascript_utils/javascript_utils.dart' as jsUtils;
 
 
 ### DO name other identifiers using `lowerCamelCase`.
-{:.no_toc}
 
 Class members, top-level definitions, variables, parameters, and named
 parameters should capitalize the first letter of each word *except* the first
@@ -155,7 +151,6 @@ align(clearItems) {
 
 
 ### PREFER using `lowerCamelCase` for constant names.
-{:.no_toc}
 
 In new code, use `lowerCamelCase` for constant variables, including enum values.
 In existing code that uses `SCREAMING_CAPS`, you may continue to use all caps to
@@ -203,7 +198,6 @@ changed because:
 
 
 ### DO capitalize acronyms and abbreviations longer than two letters like words.
-{:.no_toc}
 
 Capitalized acronyms can be harder to read, and are ambiguous when you have
 multiple adjacent acronyms. Given the name `HTTPSFTPConnection`, there's no way
@@ -243,7 +237,6 @@ directives should appear in. Each "section" should be separated by a blank line.
 
 
 ### DO place "dart:" imports before other imports.
-{:.no_toc}
 
 <div class="good">
 {% prettify dart %}
@@ -257,7 +250,6 @@ import 'package:foo/foo.dart'
 
 
 ### DO place "package:" imports before relative imports.
-{:.no_toc}
 
 <div class="good">
 {% prettify dart %}
@@ -270,7 +262,6 @@ import 'a.dart';
 
 
 ### PREFER placing "third-party" "package:" imports before other imports.
-{:.no_toc}
 
 If you have a number of "package:" imports for your own package along with other
 third-party packages, place yours in a separate section after the external ones.
@@ -287,7 +278,6 @@ import 'package:myapp/util.dart';
 
 
 ### DO specify exports in a separate section after all imports.
-{:.no_toc}
 
 <div class="good">
 {% prettify dart %}
@@ -308,7 +298,6 @@ import 'src/string_source.dart';
 
 
 ### DO sort sections alphabetically.
-{:.no_toc}
 
 Most tools for editing Dart code can do this automatically for you.
 
@@ -348,7 +337,6 @@ you. The official whitespace-handling rules for Dart are *whatever
 [dartfmt]: https://github.com/dart-lang/dart_style
 
 ### AVOID lines longer than 80 characters.
-{:.no_toc}
 
 Readability studies show that long lines of text are harder to read because your
 eye has to travel farther when moving to the beginning of the next line. This is
@@ -370,7 +358,6 @@ limit. This makes it easier to search source files for a given path.
 
 
 ### DO use curly braces for all flow control structures.
-{:.no_toc}
 
 Doing so avoids the [dangling else][] problem.
 
@@ -407,7 +394,6 @@ if (parameter == null) parameter = defaultValue;
 
 
 ### DO format your code using `dartfmt`.
-{:.no_toc}
 
 [dartfmt][] applies all of the following rules along with a number of other
 subtle heuristics. It is faster than you and never makes mistakes. **If you
@@ -415,7 +401,6 @@ follow this rule, you can skip reading the rest of this guide.**
 
 
 ### DON'T use tabs.
-{:.no_toc}
 
 Using spaces for formatting ensures the code looks the same in everyone's
 editor. It also makes sure it looks the same when posted to blogs, or on code
@@ -426,7 +411,6 @@ the easy editing of tabs and the consistency of spaces.
 
 
 ### DO place a newline after each statement or declaration.
-{:.no_toc}
 
 <div class="good">
 {% prettify dart %}
@@ -441,7 +425,6 @@ anotherDeclaration() { ... }
 
 
 ### DON'T place a space between the declared name of a method, operator, or setter and its parameter list.
-{:.no_toc}
 
 <div class="good">
 {% prettify dart %}
@@ -453,7 +436,6 @@ set contents(value) { ... }
 
 
 ### DO place a space after the `operator` keyword.
-{:.no_toc}
 
 <div class="good">
 {% prettify dart %}
@@ -463,7 +445,6 @@ bool operator ==(other) => ...;
 
 
 ### DO place spaces around binary and ternary operators.
-{:.no_toc}
 
 Note that `<` and `>` are considered binary operators when used as expressions,
 but not for specifying generic types. Both `is` and `is!` are considered single
@@ -481,7 +462,6 @@ optional([parameter = defaultValue]) { ... }
 
 
 ### DO place spaces after `,` and `:` when used in a map or named parameter.
-{:.no_toc}
 
 <div class="good">
 {% prettify dart %}
@@ -493,7 +473,6 @@ function(a, b, named: c);
 
 
 ### DON'T place spaces around unary operators.
-{:.no_toc}
 
 <div class="good">
 {% prettify dart %}
@@ -504,7 +483,6 @@ index++
 
 
 ### DO place spaces around `in`, and after each `;` in a loop.
-{:.no_toc}
 
 <div class="good">
 {% prettify dart %}
@@ -516,7 +494,6 @@ for (final item in collection) ...
 
 
 ### DO use a space after flow-control keywords.
-{:.no_toc}
 
 This is unlike function and method calls, which do *not* have a space between
 the name and the opening parenthesis.
@@ -535,7 +512,6 @@ try {
 
 
 ### DON'T use a space after `(`, `[`, and `{`, or before `)`, `]`, and `}`.
-{:.no_toc}
 
 Also, do not use a space when using `<` and `>` for generic types.
 
@@ -547,7 +523,6 @@ var numbers = <int>[1, 2, (3 + 4)];
 
 
 ### DO use a space before `{` in function and method bodies.
-{:.no_toc}
 
 When a `{` is used after a parameter list in a function or method, there should
 be a space between it and the `)` ending the parameters.
@@ -562,7 +537,6 @@ getEmptyFn(a) {
 
 
 ### DO place the opening curly brace (`{`) on the same line as what it follows.
-{:.no_toc}
 
 <div class="good">
 {% prettify dart %}
@@ -580,7 +554,6 @@ class Foo {
 
 
 ### DO place binary operators on the preceding line in a multi-line expression.
-{:.no_toc}
 
 There are valid arguments for both styles but most of our code seems to go this
 way, and consistency matters most.
@@ -598,7 +571,6 @@ bobLikes() =>
 
 
 ### DO place ternary operators on the next line in a multi-line expression.
-{:.no_toc}
 
 Also, if you break the line before one of the operators, break around both.
 
@@ -612,7 +584,6 @@ return someCondition
 
 
 ### DO place the `.` on the next line in a multi-line expression.
-{:.no_toc}
 
 <div class="good">
 {% prettify dart %}
@@ -623,7 +594,6 @@ someVeryLongVariable.withAVeryLongProperty
 
 
 ### DO format constructor initialization lists with each field on its own line.
-{:.no_toc}
 
 <div class="good">
 {% prettify dart %}
@@ -642,7 +612,6 @@ spaces).
 
 
 ### PREFER splitting every element in a collection literal if it does not fit on one line.
-{:.no_toc}
 
 This means after the opening bracket, before the closing one, and after the `,`
 for each element.
@@ -664,7 +633,6 @@ mapInsideList([
 
 
 ### DO indent block and collection bodies two spaces.
-{:.no_toc}
 
 <div class="good">
 {% prettify dart %}
@@ -682,7 +650,6 @@ if (condition) {
 
 
 ### DO indent switch cases two spaces and case bodies four spaces.
-{:.no_toc}
 
 <div class="good">
 {% prettify dart %}
@@ -700,7 +667,6 @@ switch (fruit) {
 
 
 ### DO indent multi-line method cascades at least two spaces.
-{:.no_toc}
 
 <div class="good">
 {% prettify dart %}
@@ -713,7 +679,6 @@ buffer
 
 
 ### PREFER indenting continued lines with at least four spaces.
-{:.no_toc}
 
 <div class="good">
 {% prettify dart %}

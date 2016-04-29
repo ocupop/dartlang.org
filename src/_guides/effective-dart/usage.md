@@ -23,7 +23,6 @@ library may not be able to tell that you've internalized the ideas here, but
 ## Strings
 
 ### DO use adjacent strings to concatenate string literals.
-{:.no_toc}
 
 If you have two string literals&mdash;not values, but the actual quoted literal
 form&mdash;you do not need to use `+` to concatenate them. Just like in C and
@@ -47,7 +46,6 @@ raiseAlarm(
 </div>
 
 ### PREFER using interpolation to compose strings and values.
-{:.no_toc}
 
 If you're coming from other languages, you're used to using long chains of `+`
 to build a string out of literals and other values. That does work in Dart, but
@@ -66,7 +64,6 @@ it's almost always cleaner and shorter to use interpolation:
 </div>
 
 ### AVOID using curly braces in interpolation when not needed.
-{:.no_toc}
 
 If you're interpolating a simple identifier not immediately followed by more
 alphanumeric text, the `{}` should be omitted.
@@ -89,7 +86,6 @@ alphanumeric text, the `{}` should be omitted.
 ## Collections
 
 ### DO use collection literals when possible.
-{:.no_toc}
 
 There are two ways to make an empty growable list: `[]` and `new List()`.
 Likewise, there are three ways to make an empty linked hash map: `{}`, `new
@@ -136,7 +132,6 @@ if you're passing a size to `new List()` to create a non-growable one, then it
 makes sense to use that.
 
 ### DON'T use `.length` to see if a collection is empty.
-{:.no_toc}
 
 The [Iterable][] contract does not require that a collection know its length or
 be able to provide it in constant time. Calling `.length` just to see if the
@@ -162,7 +157,6 @@ if (!words.isEmpty) return words.join(" ");
 </div>
 
 ### CONSIDER using higher-order methods to transform a sequence.
-{:.no_toc}
 
 If you have a collection and want to produce a new modified collection from it,
 it's often shorter and more declarative to use `.map()`, `.where()`, and the
@@ -184,7 +178,6 @@ many higher-order methods, it may be clearer to write a chunk of imperative
 code.
 
 ### AVOID using `Iterable.forEach()` with a function literal.
-{:.no_toc}
 
 `forEach()` functions are widely used in JavaScript because the built in
 `for-in` loop doesn't do what you usually want. In Dart, if you want to iterate
@@ -218,7 +211,6 @@ people.forEach(print);
 ## Functions
 
 ### DO use a function declaration to bind a function to a name.
-{:.no_toc}
 
 Modern languages have realized how useful local nested functions and closures
 are. It's common to have a function defined inside another one. In many cases,
@@ -249,7 +241,6 @@ void main() {
 </div>
 
 ### DON'T create a lambda when a tear-off will do.
-{:.no_toc}
 
 If you refer to a method on an object but omit the parentheses, Dart gives you
 a "tear-off"&mdash;a closure that takes the same parameters as the method and
@@ -275,7 +266,6 @@ names.forEach((name) {
 ## Variables
 
 ### DON'T explicitly initialize variables to `null`.
-{:.no_toc}
 
 In Dart, a variable or field that is not explicitly initialized automatically
 gets initialized to `null`. This is reliably specified by the language. There's
@@ -318,7 +308,6 @@ class LazyId {
 
 
 ### AVOID storing what you can calculate.
-{:.no_toc}
 
 When designing a class, you often want to expose multiple views into the same
 underlying state. Often you see code that calculates all of those views in the
@@ -406,7 +395,6 @@ leave a comment explaining the optimization.
 
 
 ### CONSIDER omitting the types for local variables.
-{:.no_toc}
 
 Method bodies in modern code tend to be short, and the types of local variables
 are almost always trivially inferrable from the initializing expression, so
@@ -445,7 +433,6 @@ Map<int, List<Person>> groupByZip(Iterable<Person> people) {
 ## Members
 
 ### DON'T wrap a field in a getter and setter unnecessarily.
-{:.no_toc}
 
 In Java and C#, it's common to hide all fields behind getters and setters (or
 properties in C#), even if the implementation just forwards to the field. That
@@ -480,7 +467,6 @@ class Box {
 
 
 ### PREFER using a `final` field to make a read-only property.
-{:.no_toc}
 
 If you have a field that outside code should be able to see but not assign to, a
 simple solution that works in many cases is to simply mark it `final`.
@@ -508,7 +494,6 @@ don't reach for that until you need to.
 
 
 ### CONSIDER using `=>` for short members whose body is a single expression.
-{:.no_toc}
 
 In addition to using `=>` for function expressions, Dart also lets you define
 members with them. They are a good fit for simple members that just calculate
@@ -532,7 +517,6 @@ a member that doesn't return anything, it's clearer to use `{ ... }`.
 
 
 ### DON'T use `this.` when not needed to avoid shadowing.
-{:.no_toc}
 
 JavaScript requires an explicit `this.` to refer to members on the object whose
 method is currently being executed, but Dart&mdash;like C++, Java, and
@@ -594,7 +578,6 @@ relatively rare thanks to initializing formals.
 
 
 ### DO initialize fields at their declaration when possible.
-{:.no_toc}
 
 If a field doesn't depend on any constructor parameters, it can and should be
 initialized at its declaration. It takes less code and makes sure you won't
@@ -631,7 +614,6 @@ differently by different constructors, then this guideline does not apply.
 ## Constructors
 
 ### DO use initializing formals when possible.
-{:.no_toc}
 
 Many fields are initialized directly from a constructor parameter, like:
 
@@ -665,7 +647,6 @@ should.
 
 
 ### DON'T type annotate initializing formals.
-{:.no_toc}
 
 If a constructor parameter is using `this.` to initialize a field, then the type
 of the parameter is understood to be the same type as the field.
@@ -690,7 +671,6 @@ class Point {
 
 
 ### DO use `;` instead of `{}` for empty constructor bodies.
-{:.no_toc}
 
 In Dart, a constructor with an empty body can be terminated with just a
 semicolon. (In fact, it's required for const constructors.)
@@ -715,7 +695,6 @@ class Point {
 
 
 ### DO place the `super()` call last in a constructor initialization list.
-{:.no_toc}
 
 Field initializers are evaluated in the order that they appear in the
 constructor initialization list. If you place a `super()` call in the middle of
@@ -749,7 +728,6 @@ View(Style style, List children)
 ## Error handling
 
 ### AVOID catches without `on` clauses.
-{:.no_toc}
 
 A catch clause with no `on` qualifier catches *anything* thrown by the code in
 the try block. [Pokémon exception handling][pokemon] is very likely not what you
@@ -779,7 +757,6 @@ and excludes errors that indicate *programmatic* bugs in the code.
 
 
 ### DON'T discard errors from catches without `on` clauses.
-{:.no_toc}
 
 If you really do feel you need to catch *everything* that can be thrown from a
 region of code, *do something* with what you catch. Log it, display it to the
@@ -787,7 +764,6 @@ user or rethrow it, but do not silently discard it.
 
 
 ### DO throw objects that implement `Error` only for programmatic errors.
-{:.no_toc}
 
 The [Error][] class is the base class for *programmatic* errors. When an object
 of that type or one of its subinterfaces like [ArgumentError][] is thrown, it
@@ -800,7 +776,6 @@ one of the core Exception classes or some other type.
 
 
 ### DON'T explicitly catch `Error` or types that implement it.
-{:.no_toc}
 
 This follows from the above. Since an Error indicates a bug in your code, it
 should unwind the entire callstack, halt the program, and print a stack trace so
@@ -814,7 +789,6 @@ and fix the code that is causing it to be thrown in the first place.
 
 
 ### DO use `rethrow` to rethrow a caught exception.
-{:.no_toc}
 
 If you decide to rethrow an exception, prefer using the `rethrow` statement
 instead of throwing the same exception object using `throw`.
@@ -847,7 +821,6 @@ try {
 ## Asynchrony
 
 ### PREFER async/await over using raw futures.
-{:.no_toc}
 
 Explicit asynchronous code is notoriously hard to read and debug, even when
 using a nice abstraction like futures. This is why we added `async`/`await` to
@@ -883,7 +856,6 @@ Future<bool> doAsyncComputation() {
 </div>
 
 ### DON'T use `async` when it has no useful effect.
-{:.no_toc}
 
 It's easy to get in the habit of using `async` on any function that does
 anything related to asynchrony. But in some cases, it's extraneous. If you can
@@ -935,14 +907,12 @@ Future asyncValue() async {
 </div>
 
 ### CONSIDER using higher-order methods to transform a stream.
-{:.no_toc}
 
 This parallels the above suggestion on iterables. Streams support many of the
 same methods and also handle things like transmitting errors, closing, etc.
 correctly.
 
 ### AVOID using Completer directly.
-{:.no_toc}
 
 Many people new to asynchronous programming want to write code that produces a
 future. The constructors in Future don't seem to fit their need so they
