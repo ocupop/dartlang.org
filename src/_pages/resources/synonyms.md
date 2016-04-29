@@ -48,8 +48,10 @@ snippet_img: images/dart-synonym-screenshot.png
 
 </div>
 
-<script type="application/dart" src="assets/synonyms.dart"></script>
-<script type="text/javascript" src="assets/dart.js"></script>
+{% javascript synonyms/synonyms.dart %}
+{% javascript synonyms/dart %}
+<!-- <script type="application/dart" src="assets/synonyms.dart"></script>
+<script type="text/javascript" src="assets/dart.js"></script> -->
 
 <script type="text/javascript">
   window.addEventListener('message', function(e) {
