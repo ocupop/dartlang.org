@@ -31,6 +31,9 @@ collections:
   guides:
     output: true
     permalink: /guides/:path
+  codelabs:
+    output: true
+    permalink: /codelabs/:path
 
 defaults:
 - scope:
@@ -57,7 +60,12 @@ defaults:
   values:
     layout: guide
     toc: true
-
+- scope:
+    path: ""
+    type: codelabs
+  values:
+    layout: codelab
+    toc: true
 
 custom:
   dartpad:
