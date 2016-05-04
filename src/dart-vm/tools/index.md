@@ -4,7 +4,7 @@ layout: page
 title: "Tools"
 description: "xxx."
 permalink: /dart-vm/tools/
-toc: false
+toc: true
 ---
 
 # {{ page.title }}

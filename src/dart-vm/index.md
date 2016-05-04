@@ -4,6 +4,7 @@ layout: page
 permalink: /dart-vm/
 title: Dart VM
 description:
+toc: true
 ---
 
 # {{ page.title }}

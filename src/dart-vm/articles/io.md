@@ -7,6 +7,7 @@ description: "An introduction to the Dart I/O library, which is aimed at server-
 permalink: /dart-vm/articles/io
 date: 2012-03-01
 updated: 2015-03-15
+toc: true
 ---
 
 {% include breadcrumbs.html %}

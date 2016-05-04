@@ -7,6 +7,7 @@ description: Track the performance of your Dart code using benchmarks.
 permalink: /dart-vm/articles/performance-faq
 toc: false
 date: 2014-06-15
+toc:true
 ---
 
 # {{ page.title }}

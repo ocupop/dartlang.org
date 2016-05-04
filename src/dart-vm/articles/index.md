@@ -4,7 +4,7 @@ reference: "https://www.dartlang.org/dart-vm/articles/"
 layout: page
 title: "Articles"
 description: "Read about the Dart language and tools with this collection of articles, style guides, and more."
-toc: false
+toc: true
 ---
 
 <p class="alert alert-danger">
