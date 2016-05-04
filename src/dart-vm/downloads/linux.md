@@ -9,6 +9,7 @@ permalink: /dart-vm/downloads/linux
 js:
 - url: archive/assets/downloads.js
   defer: true
+toc: true
 ---
 
 {% include breadcrumbs.html %}

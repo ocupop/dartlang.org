@@ -6,6 +6,7 @@ permalink: /resources/faq
 title: "Tools FAQ"
 short-title: "FAQ"
 description: "FAQ and other tips for using Dart Tools."
+toc: true
 ---
 
 {% comment %}
