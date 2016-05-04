@@ -480,8 +480,6 @@ img {
   }
 }
 
-
-
 // Columns
 .col2 {
  column-count: 2;
@@ -518,6 +516,18 @@ img {
  sup {
    color: $blue;
  }
+}
+
+.card {
+  background: $grey-light;
+  text-align: center;
+  min-height: 205px;
+  padding: 20px;
+  margin-bottom: 25px;
+  font-size: 17px;
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+  }
 }
 
 // Color Palette
