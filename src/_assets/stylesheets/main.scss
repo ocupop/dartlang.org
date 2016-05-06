@@ -154,21 +154,6 @@ img {
   left: 0;
   background-color: $grey-light;
   z-index: 1030;
-  .menu-toggle {
-    display: none;
-    position: absolute;
-    top: 8px;
-    left: auto;
-    right: 8px;
-    background-color: transparent;
-    border: none; 
-    color: $grey;
-    cursor: pointer;
-    pointer-events: all;
-    i {
-      font-size: 20px;
-    }
-  }
   &.condensed {
     #mainnav {
       .brand {
@@ -524,6 +509,23 @@ img {
  }
 }
 
+.menu-toggle {
+  display: none;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  right: auto;
+  background-color: transparent;
+  border: none; 
+  color: $grey-dark;
+  cursor: pointer;
+  pointer-events: all;
+  i {
+    font-size: 20px;
+  }
+}
+
+
 .card {
   background: $grey-light;
   text-align: center;
@@ -700,6 +702,61 @@ body.show_subnav {
    display: none;
  }
 }
+
+@media(max-width: 1024px) {
+  #mainnav {
+    .brand {
+      margin: 0 auto;
+      img {
+        margin: 3px 0;
+      }
+    }
+    nav {
+      ul {
+        display: none;
+      }
+    }
+  }
+  .menu-toggle {
+    display: block;
+    .sr {
+      position:absolute;
+      left: -999px;
+      top: 0;
+    }
+  }
+  #toc {
+    display: none;
+  }
+  #sidebar {
+    width:300px;
+    top: 40px;
+    left: -300px;
+    z-index: 100;
+    @include transition(left, .5s);
+  }
+  main {
+    margin: 50px auto;
+  }
+  body.open-menu {
+    &:before {
+      content: '';
+      display: block;
+      position: fixed;
+      top: 0; bottom: 0;
+      left: 0; right: 0;
+      height: 100%;
+      z-index: 1;
+      background-color: rgba(0,0,0,0.7);
+      pointer-events: none;
+      @include transition();
+    }
+    #sidebar {
+      left: 0;
+    }
+  }
+}
+
 @media(max-width: 768px) {
   article {
     section {

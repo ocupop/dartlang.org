@@ -41,17 +41,24 @@ $(document).on('ready', function(){
     $('#code-display p').text('Hover over code snippet on the left to learn more.');
   });
 
+  // Sidebar nav
+  $('#sidebar i').on('click', function(e) {
+    window.console.log("CLICKED");
+    e.preventDefault();
+    $(this).parent('li').toggleClass('active');
+  });
+
   // TOC: Table of Contents
   $('.toc-entry').not('.toc-h2').remove();
   $('.section-nav').addClass('nav');
   $('#toc').on('activate.bs.scrollspy', function () {
     // do something…
   });
-  $('#toc i').on('click', function(e) {
-    window.console.log("CLICKED");
-    e.preventDefault();
-    $(this).parent('li').toggleClass('active');
-  });
+  // $('#toc i').on('click', function(e) {
+  //   window.console.log("CLICKED");
+  //   e.preventDefault();
+  //   $(this).parent('li').toggleClass('active');
+  // });
 
   // TOC: Add scroll animations
   $('#toc a[href^="#"]').click(function() {
@@ -75,5 +82,16 @@ $(document).on('ready', function(){
 
   // Initiate Popovers
   $('[data-toggle="popover"], .dart-popover').popover()
+
+  // open - close mobile navigation
+  $('.menu-toggle').on('click', function(e) {
+    e.stopPropagation();
+    $("body").toggleClass('open-menu');
+  });
+  $("#page-content").on('click', function() {
+    if ($('body').hasClass('open-menu')) {
+      $('body').removeClass("open-menu");
+    }
+  });
 
 });
