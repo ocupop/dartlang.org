@@ -8,9 +8,12 @@ layout: compress
     class="{% include class.html %}"
     data-spy="scroll" data-target="#toc">
     {% include page-header.html %}
-    <main id="page-content" class="container">
+    {% include navigation-sidebar.html %}
+    <main id="page-content">
       {{ content }}
     </main>
+    {% include navigation-toc.html %}
+    {% include dartpad.html %}
     {% include page-footer.html %}
   </body>
 </html>

@@ -1,28 +1,5 @@
-{% if page.layout == 'page' %}
-  <h4>{{ page.title }}</h4>
-  {{ content | toc_only }}
-{% endif %}
-<h4>
-  <a href="/guides">Guides</a>
-</h4>
-{% assign linklist = site.data.guides %}
-{% include linklist.html %}
-<h4>
-  <a href="/tutorials">Tutorials</a>
-</h4>
-{% assign linklist = site.data.tutorials %}
-{% include linklist.html %}
-<h4>
-  <a href="/articles">Articles</a>
-</h4>
-{% assign linklist = site.data.articles %}
-{% include linklist.html %}
-<h4>
-  <a href="/tools">Tools</a>
-</h4>
-<h4>
-  <a href="/community">Community</a>
-</h4>
-<h4>
-  <a href="/dart-vm">Dart VM</a>
-</h4>
+<div id="toc">
+  <div class="content">
+    {{ content | toc_only }}
+  </div>
+</div>

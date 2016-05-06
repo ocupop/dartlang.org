@@ -17,20 +17,8 @@
 body {
  font-family: $font-family-base;
 }
-article {
-  display: flex;
-  flex-flow: row wrap;
-  margin: 0 auto 0 auto;
-  align-items: stretch;
- // @extend .mdl-grid;
- section {
-  margin: 8px;
-  width: calc(100% - 16px);
- }
- aside {
-  margin: 8px;
-  width: calc(100% - 16px);
- }
+main {
+  margin: 80px 320px 50px 320px;
 }
 section {
  position: relative;
@@ -192,14 +180,12 @@ img {
     }
   }
 }
-#page-content {
-  // display:none;
-  margin-top: 80px;
-}
+#page-content {}
 #page-footer {
   color: $white;
   font-weight: 300;
   background-color: $grey-dark;
+  z-index: 1;
   .brand {
    height: 30px;
    width: 120px;
@@ -241,8 +227,10 @@ img {
     .brand {
       display: inline-block;
       img {
-        height: 50px;
-        margin: 10px;
+        // height: 50px;
+        // margin: 10px;
+        height: 35px;
+        margin-top: 5px;
         @include transition(0.5s);
       }
     }
@@ -311,83 +299,101 @@ img {
 }
 #footernav {}
 
-#toc {
-  h4 {
-    margin-bottom: 0;
-    font-size: 18px;
-    text-transform: uppercase;
-    border-bottom: 1px solid #eee;
-    a {
-      display: block;
-      color: $grey-dark;
-      &:hover, &:focus, &:active {
-        color: $blue;
+#sidebar {
+  position: fixed;
+  width: 320px;
+  height: 100%;
+  top: 50px;
+  left: 0;
+  background-color: $grey-lighter;
+  z-index: 0;
+  .content {
+    z-index: 1;
+    h4 {
+      margin-bottom: 0;
+      padding-top: 15px;
+      font-size: 18px;
+      text-transform: uppercase;
+      border-top: 1px solid $grey-light;
+      &:first-child {
+        border-top: none;
       }
-    }
-  }
-  ul {
-    padding: 0;
-    margin-top: 0;
-    list-style: none;
-    li {
-      position: relative;
-      font-weight: 700;
       a {
-        font-weight: 700;
-      }
-      i {
-        position: relative;
-        display: inline-block;
-        transform: rotate(90deg);
-        font-size: 9px;
-        top: -2px;
-        line-height: inherit;
-        opacity: 0.5;
-        color: $blue;
-        cursor: pointer;
-        @include transition();
-        &:hover {
-          opacity: 1;
+        display: block;
+        color: $grey-dark;
+        &:hover, &:focus, &:active {
+          color: $blue;
         }
       }
-      ul {
-        display: none;
-        height: 0;
-        opacity: 0;
-        @include transition(0.5s);
-        li {
-          padding-left: 10px;
-          a {
-            font-weight: 300;
+    }
+    ul {
+      padding: 0;
+      margin-top: 0;
+      list-style: none;
+      li {
+        position: relative;
+        font-weight: 700;
+        a {
+          font-weight: 700;
+        }
+        i {
+          position: relative;
+          display: inline-block;
+          transform: rotate(90deg);
+          font-size: 9px;
+          top: -2px;
+          line-height: inherit;
+          opacity: 0.5;
+          color: $blue;
+          cursor: pointer;
+          @include transition();
+          &:hover {
+            opacity: 1;
+          }
+        }
+        ul {
+          display: none;
+          height: 0;
+          opacity: 0;
+          @include transition(0.5s);
+          li {
+            padding-left: 10px;
+            a {
+              font-weight: 300;
+            }
+          }
+        }
+        &.active {
+          > a {
+            // color: red;
+          }
+          i {
+            transform: rotate(180deg);
+            top: -3px;
+            opacity: 1;
+          }
+          > ul {
+            display: block;
+            height: auto;
+            opacity: 1;
           }
         }
       }
-      &.active {
-        > a {
-          // color: red;
-        }
-        i {
-          transform: rotate(180deg);
-          top: -3px;
-          opacity: 1;
-        }
-        > ul {
-          display: block;
-          height: auto;
-          opacity: 1;
-        }
-      }
     }
   }
-  ul.section-nav {
+}
+#toc {
+  position: fixed;
+  width: 320px;
+  height: 100%;
+  top: 50px;
+  right: 0;
+  background-color: $grey-lighter;
+  z-index: 0;
+  .nav {
     li {
       a {
-        padding: 0;
-        color: $grey-dark;
-        &:hover, &:focus, &:active, &.active {
-          color: $blue;
-          background-color: transparent;
-        }
+        padding: 5px 15px;
       }
     }
   }
@@ -643,6 +649,16 @@ ul {
    margin-top: 0;
    height: 185px;
    overflow: auto;
+  }
+}
+
+body.index {
+  main { margin: 80px 20px 50px 20px; }
+  #sidebar {
+    left: -300px;
+  }
+  #toc {
+    right: -300px;
   }
 }
 

@@ -69,9 +69,9 @@ $(document).on('ready', function(){
   });
 
   // Initiate sticky behaviour
-  $("#toc").stickit({
-    top: 70
-  });
+  // $("#toc").stickit({
+  //   top: 70
+  // });
 
   // Initiate Popovers
   $('[data-toggle="popover"], .dart-popover').popover()
