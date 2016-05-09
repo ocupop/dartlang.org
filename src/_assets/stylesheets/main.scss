@@ -136,6 +136,9 @@ pre {
     padding: 2px;
   }
 }
+code {
+  background-color: transparent;
+}
 img {
   max-width: 100%;
 }
@@ -281,8 +284,6 @@ img {
   height: 100%;
   top: 70px;
   left: 0;
-  padding-bottom: 300px;
-  // background-color: $grey-lighter;
   border-right: 1px solid $grey;
   overflow-y: auto;
   z-index: 1;
@@ -293,7 +294,7 @@ img {
       padding-top: 15px;
       font-size: 18px;
       text-transform: uppercase;
-      border-top: 1px solid $grey-light;
+      border-top: 1px solid $grey;
       &:first-child {
         border-top: none;
       }
@@ -301,7 +302,7 @@ img {
         display: block;
         color: $grey-dark;
         &:hover, &:focus, &:active {
-          color: $blue;
+          color: $grey-dark;
         }
       }
     }
@@ -360,6 +361,9 @@ img {
       }
     }
   }
+  #dartvm-nav {
+    padding-bottom: 400px;
+  }
 }
 #toc {
   position: fixed;
@@ -367,7 +371,6 @@ img {
   height: 100%;
   top: 70px;
   right: 0;
-  padding-bottom: 300px;
   border-left: 1px solid $grey;
   overflow-y: auto;
   z-index: 1;

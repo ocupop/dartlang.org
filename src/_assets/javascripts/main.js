@@ -94,3 +94,8 @@ $(document).on('ready', function(){
   });
 
 });
+
+$('body').scrollspy({
+   offset: 100,
+   target: '#toc'
+});

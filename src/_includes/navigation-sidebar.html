@@ -1,5 +1,4 @@
 <div id="sidebar">
-  
   <div class="content">
     <h4>
       <a href="/guides">Guides</a>
@@ -19,11 +18,19 @@
     <h4>
       <a href="/tools">Tools</a>
     </h4>
+    {% assign linklist = site.data.tools %}
+    {% include linklist.html %}
     <h4>
       <a href="/community">Community</a>
     </h4>
+    {% assign linklist = site.data.community %}
+    {% include linklist.html %}
+  </div>
+  <div id="dartvm-nav" class="content alert alert-info">
     <h4>
       <a href="/dart-vm">Dart VM</a>
     </h4>
+    {% assign linklist = site.data.dartvm %}
+    {% include linklist.html %}
   </div>
 </div>
