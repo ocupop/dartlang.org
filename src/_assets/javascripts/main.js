@@ -73,7 +73,7 @@ $(document).on('ready', function(){
       $('html, body').animate({ scrollTop: target.offset().top-offset }, 500, function (){
           location.hash = hash;
           // Mark as active
-          // $('a[href^="#"]').parent('li').removeClass('active');
+          $('a[href^="#"]').parent('li').removeClass('active');
           $(this).parent('li').addClass('active');
       });
       return false;

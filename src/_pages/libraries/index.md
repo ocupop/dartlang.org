@@ -1,10 +1,9 @@
 ---
 reference: new page
 
-layout: page
+layout: index
 permalink: /libraries/
 title: "Libraries & Packages"
-toc: true
 ---
 
 # {{ page.title }}

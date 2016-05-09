@@ -1,10 +1,9 @@
 ---
 reference: new page
 
-layout: page
+layout: index
 permalink: /language/
 title: "Language"
-toc: true
 ---
 
 # {{ page.title }}
