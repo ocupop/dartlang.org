@@ -53,6 +53,10 @@ $(document).on('ready', function(){
   // TOC: Table of Contents
   $('.toc-entry').not('.toc-h2').remove();
   $('.section-nav').addClass('nav');
+  $('body').scrollspy({
+     offset: 100,
+     target: '#toc'
+  });
   $('#toc').on('activate.bs.scrollspy', function () {
     // do something…
   });
@@ -93,9 +97,4 @@ $(document).on('ready', function(){
     }
   });
 
-});
-
-$('body').scrollspy({
-   offset: 100,
-   target: '#toc'
 });
