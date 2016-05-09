@@ -8,8 +8,6 @@ description: "Choose the kind of stream that's best for your application: single
 date: 2014-01-08
 ---
 
-{% include breadcrumbs.html %}
-
 # {{ page.title }}
 
 _Written by Florian Loitsch <br />

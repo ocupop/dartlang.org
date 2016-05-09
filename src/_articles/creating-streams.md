@@ -12,8 +12,6 @@ date: 2013-04-08
 .comment {color:red;}
 </style>
 
-{% include breadcrumbs.html %}
-
 # {{ page.title }}
 
 _Written by Lasse Nielsen <br>

@@ -1,22 +1,19 @@
-- title: Guides
-  label: 
-  permalink: /dart-vm/guides/
-- title: Tutorials
-  label: 
-  permalink: /dart-vm/tutorials/
-- title: Articles
-  label: 
-  permalink: /dart-vm/articles/
+- title: Dart VM
+  label:
+  permalink: /dart-vm/
   children:
-    - title: Benchmarking the Dart VM
-      label:
-      permalink: /dart-vm/articles/benchmarking
-    - title: The Event Loop and Dart
-      label:
-      permalink: /dart-vm/articles/event-loop
-    - title: "An Introduction to the dart:io Library"
-      label:
-      permalink: /dart-vm/articles/io
-    - title: "Native Extensions for the Standalone Dart VM"
-      label:
-      permalink: /dart-vm/articles/native-extensions
+  - title: Downloads
+    label:
+    permalink: /dart-vm/downloads/
+  - title: Articles
+    label:
+    permalink: /dart-vm/articles/
+  - title: Tutorials
+    label:
+    permalink: /dart-vm/tutorials
+- title: Flutter
+  label:
+  permalink: https://flutter.io/
+- title: Dartino
+  label:
+  permalink: https://dartino.org/

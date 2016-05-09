@@ -8,8 +8,6 @@ description: "Async and await, two language features that support asynchronous p
 date: 2014-10-24
 ---
 
-{% include breadcrumbs.html %}
-
 # {{ page.title }}
 
 _Written by Gilad Bracha <br>

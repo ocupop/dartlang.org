@@ -9,8 +9,6 @@ date: 2013-03-07
 updated: 2013-05-30
 ---
 
-{% include breadcrumbs.html %}
-
 # {{ page.title }}
 
 _Written by Shailen Tuli <br>

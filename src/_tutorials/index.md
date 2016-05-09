@@ -3,7 +3,6 @@ reference: "https://www.dartlang.org/docs/tutorials/"
 
 title: "Dart Tutorials"
 date: 2012-10-03
-toc: true
 
 description: "The Dart Tutorials&mdash;Your guide to building great apps."
 permalink: /tutorials/
@@ -12,7 +11,7 @@ header:
   css: ["/docs/tutorials/tute_main_page.css"]
 ---
 
-# {{ page.title }}
+<!-- # {{ page.title }} -->
 
 **The Dart Tutorials** teach you how to build applications
 using the Dart language, tools, and APIs.

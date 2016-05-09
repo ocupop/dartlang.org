@@ -9,8 +9,6 @@ date: 2012-01-01
 updated: 2014-02-20
 ---
 
-{% include breadcrumbs.html %}
-
 # {{ page.title }}
 
 _Written by Gilad Bracha <br>

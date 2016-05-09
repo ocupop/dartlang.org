@@ -10,8 +10,6 @@ header:
   css: ["styles.css"]
 ---
 
-{% include breadcrumbs.html %}
-
 # {{ page.title }}
 
 ### Asynchronous dynamic extents

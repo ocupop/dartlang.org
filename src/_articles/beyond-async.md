@@ -8,8 +8,6 @@ description: "Async*, sync*, yield, and yield* are now available as part of Dart
 date: 2015-03-24
 ---
 
-{% include breadcrumbs.html %}
-
 # {{ page.title }}
 
 <h2>Async\*, sync\*, and all the rest</h2>

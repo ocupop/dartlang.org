@@ -8,8 +8,6 @@ description: "Your development tools generate a bunch of files. Not all of them 
 toc: true
 ---
 
-{% include breadcrumbs.html %}
-
 # {{ page.title }}
 
 When you put Dart source code in a repository,

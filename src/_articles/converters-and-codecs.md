@@ -11,8 +11,6 @@ header:
   css: ["/articles/converters-and-codecs/styles.css"]
 ---
 
-{% include breadcrumbs.html %}
-
 # {{ page.title }}
 
 ### **_How to write efficient conversions_**
