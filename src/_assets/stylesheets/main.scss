@@ -39,8 +39,7 @@ h6, .h6 { font-size: $font-size-h6;}
 
 p {}
 
-a {
- color: $blue;
+a, button {
  text-decoration: none;
  &:hover, &:focus, &:active {
    outline: none;
@@ -154,23 +153,14 @@ img {
   left: 0;
   background-color: $grey-light;
   z-index: 1030;
-  &.condensed {
-    #mainnav {
-      .brand {
-        img {
-          height: 35px;
-          margin-top: 5px;
-        }
-      }
-    }
-  }
 }
 #page-content {}
 #page-footer {
+  position: relative;
   color: $white;
   font-weight: 300;
   background-color: $grey-dark;
-  z-index: 1;
+  z-index: 5;
   .brand {
    height: 30px;
    width: 120px;
@@ -211,11 +201,12 @@ img {
     @include transition(0.5s);
     .brand {
       display: inline-block;
+      margin-left: 20px;
       img {
-        // height: 50px;
-        // margin: 10px;
-        height: 35px;
-        margin-top: 5px;
+        height: 50px;
+        margin: 10px;
+        // height: 35px;
+        // margin-top: 5px;
         @include transition(0.5s);
       }
     }
@@ -286,14 +277,17 @@ img {
 
 #sidebar {
   position: fixed;
-  width: 320px;
+  width: 280px;
   height: 100%;
-  top: 50px;
+  top: 70px;
   left: 0;
-  background-color: $grey-lighter;
-  z-index: 0;
+  padding-bottom: 300px;
+  // background-color: $grey-lighter;
+  border-right: 1px solid $grey;
+  overflow-y: auto;
+  z-index: 1;
   .content {
-    z-index: 1;
+    padding-left: 30px;
     h4 {
       margin-bottom: 0;
       padding-top: 15px;
@@ -369,16 +363,27 @@ img {
 }
 #toc {
   position: fixed;
-  width: 320px;
+  width: 250px;
   height: 100%;
-  top: 50px;
+  top: 70px;
   right: 0;
-  background-color: $grey-lighter;
-  z-index: 0;
+  padding-bottom: 300px;
+  border-left: 1px solid $grey;
+  overflow-y: auto;
+  z-index: 1;
+  .content {
+    padding: 20px 0;
+  }
   .nav {
     li {
       a {
         padding: 5px 15px;
+        color: $grey-dark;
+      }
+      &.active {
+        a {
+          color: $blue;
+        }
       }
     }
   }
@@ -394,9 +399,11 @@ img {
  ----------------------------------------- */
 
 #run-dartpad {
- padding: 15px 0;
- background: $grey-light;
- border-top: 1px solid $grey;
+  position: relative;
+  padding: 15px 0;
+  background: $grey-light;
+  border-top: 1px solid $grey;
+  z-index: 5;
 }
 
 #embedded-dartpad {
@@ -515,6 +522,7 @@ img {
   top: 8px;
   left: 8px;
   right: auto;
+  line-height: 50px;
   background-color: transparent;
   border: none; 
   color: $grey-dark;
@@ -671,7 +679,7 @@ body.index {
   min-height: 105px;
 }
 
-// Collections
+// Page States
 body.show_toc {
   article {
     section {
@@ -686,32 +694,38 @@ body.show_subnav {
   #page-content {
     margin-top: 103px;
   }
+  #sidebar, #toc { top: 102px; }
+  &.condensed_header {
+    #sidebar, #toc { top: 82px; }
+  }
+}
+body.condensed_header {
+  .menu-toggle { line-height: 35px; }
+  #mainnav {
+    .brand {
+      img {
+        height: 35px;
+        margin-top: 5px;
+      }
+    }
+  }
+  #sidebar, #toc {
+    top: 35px;
+  }
 }
 /* -----------------------------------------
   Media Queries
  ----------------------------------------- */
-@media(min-width: 1024px) {
- .mdl-layout__drawer {
-   .mdl-navigation {
-     .mdl-navigation__link {
-       padding: 5px 16px;
-     }
-   }
- }  
- .mdl-layout__drawer-button {
-   display: none;
- }
-}
 
 @media(max-width: 1024px) {
   #mainnav {
-    .brand {
-      margin: 0 auto;
-      img {
-        margin: 3px 0;
-      }
-    }
     nav {
+      .brand {
+        margin: 0 auto;
+        img {
+          margin: 3px 0;
+        }
+      }
       ul {
         display: none;
       }

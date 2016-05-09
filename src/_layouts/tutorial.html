@@ -2,29 +2,22 @@
 layout: default
 ---
 <div class="row">
-  <div class="col-md-9">
-    <div class="content">
-      <header>
-        <h1>{{ page.title }}</h1>
-        <a href="https://github.com/dart-lang/dartlang.org/issues" target="_blank" class="hide">Send feedback</a>
-      </header>
-      {% if page.points %}
-        <div class="panel">
-          <h4>What's the point?</h4>
-          <ul>
-            {% for point in page.points %}
-            <li>{{ point }}</li>
-            {% endfor %}
-          </ul>
-        </div>
-      {% endif %}
-      {{ content | inject_anchors }}
-    </div>
-  </div>
-  <div id="toc" class="col-md-3">
-    <div class="content">
-      {{ content | toc_only }}
-    </div>
+  <div class="content">
+    <header>
+      <h1>{{ page.title }}</h1>
+      <a href="https://github.com/dart-lang/dartlang.org/issues" target="_blank" class="hide">Send feedback</a>
+    </header>
+    {% if page.points %}
+      <div class="panel">
+        <h4>What's the point?</h4>
+        <ul>
+          {% for point in page.points %}
+          <li>{{ point }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+    {{ content | inject_anchors }}
   </div>
 </div>
 
