@@ -9,7 +9,7 @@
         </a>
       </li>
     {% else %}
-      <li {% if page.url contains path %}class="active"{% endif %}>
+      <li {% if page.url contains path %}class="active"{% endif %} data-path="{{ path }}" data-url="{{ page.url }}">
         <a href="{{ link.permalink }}" title="{{ link.title }}">
           {% if link.label %}{{ link.label }}{% else %}{{ link.title }}{% endif %}
         </a>

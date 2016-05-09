@@ -315,6 +315,7 @@ img {
         font-weight: 700;
         a {
           font-weight: 700;
+          color: $grey-dark;
         }
         i {
           position: relative;
@@ -324,7 +325,7 @@ img {
           top: -2px;
           line-height: inherit;
           opacity: 0.5;
-          color: $blue;
+          color: $grey-dark;
           cursor: pointer;
           @include transition();
           &:hover {
@@ -345,7 +346,7 @@ img {
         }
         &.active {
           > a {
-            // color: red;
+            color: $blue;
           }
           i {
             transform: rotate(180deg);
