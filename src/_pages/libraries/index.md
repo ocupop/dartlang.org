@@ -1,7 +1,7 @@
 ---
 reference: new page
 
-layout: index
+layout: page
 permalink: /libraries/
 title: "Libraries & Packages"
 ---
