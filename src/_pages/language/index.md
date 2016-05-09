@@ -2,8 +2,8 @@
 reference: new page
 
 layout: index
-permalink: /language/
 title: "Language"
+permalink: /language/
 toc: true
 ---
 

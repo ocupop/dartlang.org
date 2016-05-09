@@ -3,7 +3,7 @@ reference: new page
 
 layout: index
 permalink: /libraries/
-title: "Libraries & Packages"
+title: "Libraries & APIs"
 ---
 
 # {{ page.title }}

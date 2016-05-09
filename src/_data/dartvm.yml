@@ -1,19 +1,33 @@
-- title: Dart VM
+- title: Web
+  label:
+  permalink: http://localhost:4001/
+- title: Mobile (Flutter)
+  label:
+  permalink: https://flutter.io/
+  children:
+  - title: API Reference
+    label:
+    permalink: http://docs.flutter.io/flutter/
+- title: IoT (Dartino)
+  label:
+  permalink: https://dartino.org/
+  children:
+  - title: API Reference
+    label:
+    permalink: https://dartino.github.io/api/
+- title: VM
   label:
   permalink: /dart-vm/
   children:
   - title: Downloads
     label:
     permalink: /dart-vm/downloads/
+  - title: API Reference
+    label:
+    permalink: https://api.dartlang.org
   - title: Articles
     label:
     permalink: /dart-vm/articles/
   - title: Tutorials
     label:
     permalink: /dart-vm/tutorials
-- title: Flutter
-  label:
-  permalink: https://flutter.io/
-- title: Dartino
-  label:
-  permalink: https://dartino.org/
