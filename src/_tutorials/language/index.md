@@ -3,7 +3,6 @@ reference: "https://www.dartlang.org/docs/tutorials/"
 
 layout: index
 title: "Dart Tutorials: Language"
-toc: true
 
 header:
   css: ["/docs/tutorials/tute_main_page.css"]
