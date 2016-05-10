@@ -1,7 +1,7 @@
 ---
 reference: "https://www.dartlang.org/docs/tutorials/"
 
-layout: index
+layout: page
 title: "Dart Tutorials"
 description: "The Dart Tutorials&mdash;Your guide to building great apps."
 

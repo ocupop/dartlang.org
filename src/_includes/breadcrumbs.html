@@ -1,6 +1,6 @@
+{% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+{% if crumbs.size >= 3 %}
 <div class="breadcrumbs">
-  {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
-
   {% for crumb in crumbs offset: 1 %}
     {% if forloop.last %}
       {{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}
@@ -12,3 +12,4 @@
     {% endif %}
   {% endfor %}
 </div>
+{% endif %}

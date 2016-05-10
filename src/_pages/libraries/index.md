@@ -6,8 +6,6 @@ permalink: /libraries/
 title: "Libraries & APIs"
 ---
 
-# {{ page.title }}
-
 Dart programs rely on libraries.
 Several common libraries are provided for you, such as
 `dart:core`, which supports built-in types (numbers, strings, booleans),
