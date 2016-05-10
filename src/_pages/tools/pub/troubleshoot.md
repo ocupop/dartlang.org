@@ -10,8 +10,6 @@ toc: false
 
 {% include breadcrumbs.html %}
 
-# {{ page.title }}
-
 #### Contents
 
 * ToC

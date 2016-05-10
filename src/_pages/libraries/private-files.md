@@ -8,8 +8,6 @@ description: "Your development tools generate a bunch of files. Not all of them 
 toc: true
 ---
 
-# {{ page.title }}
-
 When you put Dart source code in a repository,
 whether using the [pub](/tools/pub) tool, [GitHub](https://github.com/)
 or another source code management system,

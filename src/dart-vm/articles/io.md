@@ -12,8 +12,6 @@ toc: true
 
 {% include breadcrumbs.html %}
 
-# {{ page.title }}
-
 _Written by Mads Ager <br>
 March 2012 (updated October 2012, February 2013, January 2014, and March 2015)_
 

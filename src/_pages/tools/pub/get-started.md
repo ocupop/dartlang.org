@@ -9,8 +9,6 @@ toc: true
 
 {% include breadcrumbs.html %}
 
-# {{ page.title }}
-
 You can use [pub](/tools/pub/) to manage Dart packages.
 
 At the very minimum,

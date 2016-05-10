@@ -12,8 +12,6 @@ toc: true
 
 {% include breadcrumbs.html %}
 
-# {{ page.title }}
-
 _Written by Florian Loitsch and Bob Nystrom<br>
 November 2011_
 

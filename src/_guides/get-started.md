@@ -6,8 +6,6 @@ title: Get Started
 description: "xxx"
 ---
 
-# {{ page.title }}
-
 How do you learn Dart?
 
 This site is the place for learning the Dart language,

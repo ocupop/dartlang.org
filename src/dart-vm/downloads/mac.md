@@ -10,8 +10,6 @@ toc: true
 
 {% include breadcrumbs.html %}
 
-# {{ page.title }}
-
 Homebrew is a package manager for Mac OS.
 With [Homebrew](http://brew.sh/),
 installing and updating Dart is easy.

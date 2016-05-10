@@ -10,8 +10,6 @@ toc: true
 
 {% include breadcrumbs.html %}
 
-# {{ page.title }}
-
 If you have a transformer that runs slowly&mdash;perhaps because the algorithm
 is complex, has many steps, or the data set is large&mdash;you can improve
 your app's startup time during the development cycle by making the

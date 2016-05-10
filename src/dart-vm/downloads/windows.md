@@ -15,8 +15,6 @@ toc: true
 
 {% include breadcrumbs.html %}
 
-# {{ page.title }}
-
 Don't want to use Chocolatey or a Windows installer?
 Another option is
 [downloading Dart manually]({{site.dart_vm}}/downloads/archive/).

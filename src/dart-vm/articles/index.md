@@ -11,8 +11,6 @@ toc: true
   The plugin used to generate article lists will need to be refactored to account for new configuration.
 </p>
 
-# {{ page.title }}
-
 Read these articles for insight into Dart programming topics.
 
 * [An Introduction to the dart:io Library](io)

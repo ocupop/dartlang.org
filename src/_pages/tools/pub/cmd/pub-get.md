@@ -9,8 +9,6 @@ description: "Use pub get to retrieve the dependencies used by your Dart applica
 
 {% include breadcrumbs.html %}
 
-# {{ page.title }}
-
 _Get_ is one of the commands of the _pub_ tool.
 [Learn more about pub](/tools/pub/).
 

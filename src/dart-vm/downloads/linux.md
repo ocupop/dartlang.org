@@ -14,8 +14,6 @@ toc: true
 
 {% include breadcrumbs.html %}
 
-# {{ page.title }}
-
 If you're using Debian/Ubuntu, you can choose two options,
 both of which can update the SDK automatically
 when new versions are released.

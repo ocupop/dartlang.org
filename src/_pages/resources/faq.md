@@ -13,10 +13,6 @@ toc: true
 This needs updating...
 {% endcomment %}
 
-{% include breadcrumbs.html %}
-
-# {{ page.title }}
-
 I am having trouble running the Linux distribution of Dart on my Linux platform.
 : Some flavors of Linux require that you manually build the Dart SDK.
   This may require that you update to a more recent version of

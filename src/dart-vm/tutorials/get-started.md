@@ -19,8 +19,6 @@ points:
   - "Dart supports top-level functions."
 ---
 
-# {{ page.title }}
-
 ### Get Dart. Run an app.
 
 This tutorial gets you ready

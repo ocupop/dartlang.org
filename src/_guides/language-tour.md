@@ -6,8 +6,6 @@ title: "A Tour of the Dart Language"
 description: "A tour of all of the major Dart language features."
 ---
 
-# {{ page.title }}
-
 This chapter shows you how to use each major Dart feature, from
 variables and operators to classes and libraries, with the assumption
 that you already know how to program in another language.
