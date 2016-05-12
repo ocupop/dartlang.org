@@ -29,7 +29,7 @@ src="{{site.custom.dartpad.embed-dart-prefix}}?horizontalRatio=99&verticalRatio=
 
 Note that DartPad does not allow you to import packages,
 such as dart:io. If you want that level of control, you'll need
-to download an SDK.
+to install an SDK.
 
 ## Choose your path
 
@@ -51,19 +51,19 @@ A command line application? A server?
 An app to control a thermostat or some other device from the Internet of Things (IoT)?
 : Check out [Dartino](https://github.com/dartino).
 
-## Download
+## Install
 
-Once you're ready to go beyond DartPad, you'll need to download
+Once you're ready to go beyond DartPad, you'll need to install
 an SDK and tools for the platform where you want to code.
 
 * For Dart on the web,
-  download the [Dart SDK and Dartium]({{site.dart_vm}}/downloads/).
+  install the [Dart SDK and Dartium]({{site.dart_vm}}/downloads/).
 * For standalone applications, like servers and scripts,
-  download the [Dart SDK]({{site.dart_vm}}/downloads/).
+  install the [Dart SDK]({{site.dart_vm}}/downloads/).
 * For Dart on mobile,
-  download [Flutter](https://flutter.io/).
+  install [Flutter](https://flutter.io/).
 * For embedded Dart,
-  download [Dartino](https://github.com/dartino).
+  install [Dartino](https://github.com/dartino).
 
 ## Choose your IDE
 

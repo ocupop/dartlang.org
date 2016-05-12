@@ -19,7 +19,7 @@
   label:
   permalink: /dart-vm/
   children:
-  - title: Downloads
+  - title: Install Dart
     label:
     permalink: /dart-vm/downloads/
   - title: API Reference
