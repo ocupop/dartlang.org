@@ -10,8 +10,6 @@ toc: true
 
 {% include breadcrumbs.html %}
 
-# {{ page.title }}
-
 _Written by John Mccutchan <br>
 May 2013_
 

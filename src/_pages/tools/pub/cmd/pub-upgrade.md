@@ -9,8 +9,6 @@ description: "Use pub upgrade to get the latest versions of all dependencies use
 
 {% include breadcrumbs.html %}
 
-# {{ page.title }}
-
 _Upgrade_ is one of the commands of the _pub_ tool.
 [Learn more about pub](/tools/pub/).
 

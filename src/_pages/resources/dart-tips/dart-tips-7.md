@@ -9,8 +9,6 @@ description: "Functions are true objects in Dart. Watch this video to learn more
 snippet_img: //i.ytimg.com/vi/RJujzs2ts4s/0.jpg
 ---
 
-# {{ page.title }}
-
 <iframe class="dart-tips-video" src="//www.youtube.com/embed/RJujzs2ts4s"
 frameborder="0" allowfullscreen></iframe>
 

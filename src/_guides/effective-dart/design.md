@@ -13,8 +13,6 @@ prevpage:
   title: "Usage"
 ---
 
-# {{ page.title }}
-
 ## Names
 
 ### DO use terms consistently.
@@ -409,7 +407,7 @@ DateTime mostRecent(List<DateTime> dates) {
   return dates.reduce((a, b) => a.isAfter(b) ? a : b);
 }
 
-const _favoriteMammal = "weasel";
+const _favoriteMammal = 'weasel';
 {% endprettify %}
 </div>
 
@@ -422,7 +420,7 @@ class DateUtils {
 }
 
 class _Favorites {
-  static const mammal = "weasel";
+  static const mammal = 'weasel';
 }
 {% endprettify %}
 </div>
@@ -437,11 +435,11 @@ library instead.
 <div class="good">
 {% prettify dart %}
 class Color {
-  const red = "#f00";
-  const green = "#0f0";
-  const blue = "#00f";
-  const black = "#000";
-  const white = "#fff";
+  const red = '#f00';
+  const green = '#0f0';
+  const blue = '#00f';
+  const black = '#000';
+  const white = '#fff';
 }
 {% endprettify %}
 </div>
@@ -675,18 +673,18 @@ Method cascades are a better solution for chaining method calls.
 <div class="good">
 {% prettify dart %}
 var buffer = new StringBuffer()
-  ..write("one")
-  ..write("two")
-  ..write("three");
+  ..write('one')
+  ..write('two')
+  ..write('three');
 {% endprettify %}
 </div>
 
 <div class="bad">
 {% prettify dart %}
 var buffer = new StringBuffer()
-  .write("one")
-  .write("two")
-  .write("three");
+  .write('one')
+  .write('two')
+  .write('three');
 {% endprettify %}
 </div>
 
@@ -945,7 +943,7 @@ This is consistent with core libraries that do the same thing.
 <div class="good">
 {% prettify dart %}
 [0, 1, 2, 3].sublist(1, 3) // [1, 2].
-"abcd".substring(1, 3)     // "bc".
+'abcd'.substring(1, 3)     // "bc".
 {% endprettify %}
 </div>
 

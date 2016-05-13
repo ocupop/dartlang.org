@@ -6,4 +6,3 @@ title: Samples
 description: "xxx"
 ---
 
-# {{ page.title }}

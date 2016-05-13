@@ -11,8 +11,6 @@ toc: true
 
 {% include breadcrumbs.html %}
 
-# {{ page.title }}
-
 _Written by William Hesse <br>
 May 2012_
 

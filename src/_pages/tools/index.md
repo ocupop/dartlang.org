@@ -8,8 +8,6 @@ description: "The tools that support the Dart language."
 toc: true
 ---
 
-# {{ page.title }}
-
 A variety of tools are available for Dart development.
 This page discusses tools common to various Dart technologies.
 See the Tools page for your particular technology for detailed information.

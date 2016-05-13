@@ -7,8 +7,6 @@ permalink: /tools/pub/transformers/examples
 ---
 {% include breadcrumbs.html %}
 
-# {{ page.title }}
-
 When _pub_ serves, builds, or runs an app, it can run one or more
 transformers. ([Learn more about pub](/tools/pub/).)
 

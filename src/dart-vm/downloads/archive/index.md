@@ -16,8 +16,6 @@ css:
 
 {% include breadcrumbs.html %}
 
-# {{page.title}}
-
 Use this index to download specific versions of the
 [Dart SDK]({{site.dart_vm}}/tools/sdk),
 [Dartium]({{site.dart4web}}/tools/dartium),

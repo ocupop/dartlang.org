@@ -12,8 +12,6 @@ toc: true
 
 {% include breadcrumbs.html %}
 
-# {{ page.title }}
-
 _Written by Kathy Walrath <br>
 September 2013 (updated October 2013)_
 

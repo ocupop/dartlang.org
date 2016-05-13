@@ -10,8 +10,6 @@ date: 2014-06-15
 toc: true
 ---
 
-# {{ page.title }}
-
 Dart was founded on the belief that performance matters.
 From the start, we focused on delivering fast runtimes, compilers,
 and a programming model that helps developers stay on the fast path.

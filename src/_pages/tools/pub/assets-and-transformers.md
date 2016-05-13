@@ -10,8 +10,6 @@ toc: true
 
 {% include breadcrumbs.html %}
 
-# {{ page.title }}
-
 The [`pub serve`]({{site.dart4web}}/tools/pub/pub-serve),
 [`pub build`]({{site.dart4web}}/tools/pub/pub-build)
 and [`pub run`](cmd/pub-run) commands use [transformers][]

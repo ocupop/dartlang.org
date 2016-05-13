@@ -10,8 +10,6 @@ toc: true
 
 {% include breadcrumbs.html %}
 
-# {{ page.title }}
-
 An aggregate transformer processes multiple assets in a single
 pass&ndash;for example, collaging multiple images into a single image.
 

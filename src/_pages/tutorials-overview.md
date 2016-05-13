@@ -16,7 +16,6 @@ header:
   css: ["/docs/tutorials/tute_main_page.css"]
 ---
 
-
 <img class="scale-img-max" src="images/banner.png">
 
 **The Dart Tutorials** teach you how to build applications
