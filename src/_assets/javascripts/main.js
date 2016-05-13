@@ -1,5 +1,7 @@
 //= require vendor/jquery-1.12.3.min
 //= require bootstrap
+//= require vendor/jquery.waypoints.min
+//= require vendor/inview.min
 //= require vendor/code-prettify/prettify
 //= require vendor/code-prettify/lang-dart
 //= require vendor/code-prettify/lang-yaml
@@ -44,7 +46,26 @@ $(document).on('ready', function(){
   });
 
   // Sidebar nav
-  $('#sidebar i').on('click', function(e) {
+  // $('#sidenav').each(function() {
+  //   var inview = new Waypoint.Inview({
+  //     element: $(this)[0],
+  //     enter: function(direction) {
+  //       //window.console.log('Enter triggered with direction ' + direction);
+  //     },
+  //     entered: function(direction) {
+  //       window.console.log('Entered triggered with direction ' + direction);
+  //       $(this.element).removeClass('fixed');
+  //     },
+  //     exit: function(direction) {
+  //       //window.console.log('Exit triggered with direction ' + direction);
+  //     },
+  //     exited: function(direction) {
+  //       window.console.log('Exited triggered with direction ' + direction);
+  //       $(this.element).addClass('fixed');
+  //     }
+  //   })
+  // });
+  $('#sidenav i').on('click', function(e) {
     window.console.log("CLICKED");
     e.preventDefault();
     $(this).parent('li').toggleClass('active');

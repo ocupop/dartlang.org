@@ -157,7 +157,9 @@ img {
   background-color: $grey-light;
   z-index: 1030;
 }
-#page-content {}
+#page-content {
+  margin-top: 70px;
+}
 #page-footer {
   position: relative;
   color: $white;
@@ -280,16 +282,28 @@ img {
 }
 #footernav {}
 
-#sidebar {
-  position: fixed;
+#sidenav {
+  position: absolute;
   width: 280px;
-  height: 100%;
+  height: auto;
   top: 70px;
   left: 0;
   border-right: 1px solid $grey;
   background-color: #ffffff;
-  overflow-y: auto;
+  overflow: hidden;
   z-index: 1;
+  &.fixed {
+    display: none;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+    .content {
+      padding-bottom: 400px;
+    }
+  }
+  &.open {
+    display: block;
+  }
   .content {
     padding-left: 30px;
     h4 {
@@ -361,9 +375,6 @@ img {
       }
     }
   }
-  #dartvm-nav {
-    padding-bottom: 400px;
-  }
 }
 #toc {
   position: fixed;
@@ -391,6 +402,7 @@ img {
     }
   }
 }
+
 
 
 /* -----------------------------------------
@@ -535,7 +547,7 @@ img {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   margin-left: -15px;
   margin-right: -15px;
 }
