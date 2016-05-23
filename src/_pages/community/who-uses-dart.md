@@ -5,7 +5,7 @@ layout: default
 title: 'Who Uses Dart'
 permalink: /community/who-uses-dart
 description: 'Companies and business that use Dart.'
-toc: true
+
 snippet_img: images/who-uses-dart.png
 ---
 

@@ -4,7 +4,7 @@ reference: "https://www.dartlang.org/tools/pub/publishing.html"
 layout: default
 permalink: /tools/pub/publishing
 title: "Publishing a Package"
-toc: true
+
 ---
 
 {% include breadcrumbs.html %}

@@ -5,7 +5,7 @@ layout: default
 permalink: /tools/jetbrains-plugin
 title: "Dart Plugin from JetBrains"
 description: "Use Dart with a variety of IDEs and editors from JetBrains."
-toc: true
+
 ---
 
 The Dart plugin adds Dart support to JetBrains IDEs such as

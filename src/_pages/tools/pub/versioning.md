@@ -4,7 +4,7 @@ reference: "https://www.dartlang.org/tools/pub/versioning.html"
 layout: default
 permalink: /tools/pub/versioning
 title: "Pub Versioning Philosophy"
-toc: true
+
 ---
 
 {% include breadcrumbs.html %}

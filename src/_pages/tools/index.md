@@ -5,7 +5,7 @@ layout: default
 permalink: /tools/
 title: "Dart Tools"
 description: "The tools that support the Dart language."
-toc: true
+
 ---
 
 A variety of tools are available for Dart development.

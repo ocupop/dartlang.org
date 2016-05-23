@@ -1,7 +1,7 @@
 ---
 title: "Guides"
 description: "Read about the Dart language and tools with this collection of guides."
-toc: true
+
 ---
 
 * [Get Started](/guides/get-started)

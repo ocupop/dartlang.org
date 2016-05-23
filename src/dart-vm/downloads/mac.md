@@ -5,7 +5,7 @@ layout: default
 title: "Installing Dart on Mac"
 description: "Installing and updating the Dart SDK on your Mac with homebrew."
 permalink: /dart-vm/downloads/mac
-toc: true
+
 ---
 
 {% include breadcrumbs.html %}

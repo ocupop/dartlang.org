@@ -5,7 +5,7 @@ layout: default
 permalink: /tools/pub/
 title: "Pub Package and Asset Manager"
 short-title: "Pub"
-toc: true
+
 ---
 
 {% include breadcrumbs.html %}

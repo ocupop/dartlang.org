@@ -4,7 +4,7 @@ layout: default
 permalink: /dart-vm/
 title: Dart VM
 description:
-toc: true
+
 ---
 
 Are you writing standalone Dart scripts or server apps?

@@ -5,7 +5,7 @@ layout: default
 title: "Writing an Aggregate Transformer"
 description: How to write a Pub transformer to processes multiple input assets.
 permalink: /tools/pub/transformers/aggregate
-toc: true
+
 ---
 
 {% include breadcrumbs.html %}

@@ -5,7 +5,7 @@ layout: default
 title: "Dart VM Tutorials"
 description: "The Dart VM Tutorials&mdash;Your guide to building great apps."
 permalink: /dart-vm/tutorials/
-toc: true
+
 
 nextpage:
   url: get-started

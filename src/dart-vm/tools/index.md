@@ -4,7 +4,7 @@ layout: default
 title: "Tools"
 description: "xxx."
 permalink: /dart-vm/tools/
-toc: true
+
 ---
 
 When you [download]({{site.dart_vm}}/downloads/) the

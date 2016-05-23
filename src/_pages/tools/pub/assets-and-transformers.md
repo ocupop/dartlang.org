@@ -5,7 +5,7 @@ layout: default
 permalink: /tools/pub/assets-and-transformers
 title: "Assets and Transformers"
 description: "How pub transforms and generates assets and files during development and build time."
-toc: true
+
 ---
 
 {% include breadcrumbs.html %}

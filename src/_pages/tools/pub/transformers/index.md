@@ -5,7 +5,7 @@ layout: default
 title: "Writing a Pub Transformer"
 description: "How to write a Pub transformer that processes a single input asset."
 permalink: /tools/pub/transformers/
-toc: true
+
 ---
 
 {% include breadcrumbs.html %}

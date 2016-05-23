@@ -5,7 +5,7 @@ layout: default
 permalink: /community/faq
 title: Frequently Asked Questions (FAQ)
 description: You have questions about Dart, we have answers.
-toc: true
+
 ---
 
 _Updated April 2015_

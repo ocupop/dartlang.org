@@ -4,7 +4,7 @@ reference: "https://www.dartlang.org/tools/pub/glossary.html"
 layout: default
 permalink: /tools/pub/glossary
 title: "Glossary of Pub Terms"
-toc: true
+
 ---
 
 {% include breadcrumbs.html %}

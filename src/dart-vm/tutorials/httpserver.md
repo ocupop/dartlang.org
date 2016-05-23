@@ -4,7 +4,7 @@ layout: tutorial
 title: "Write HTTP Clients & Servers"
 description: "Communicate over the internet"
 permalink: /dart-vm/tutorials/httpserver
-toc: true
+
 
 prevpage:
   url: /dart-vm/tutorials/cmdline
