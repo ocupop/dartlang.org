@@ -131,6 +131,7 @@ assets:
     - "*.eot"
     - "*.ttf"
     - "*.woff"
+    - "*.woff2"
     - "*.svg"
   digest: true
   sources:

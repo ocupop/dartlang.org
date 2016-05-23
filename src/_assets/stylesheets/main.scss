@@ -17,9 +17,7 @@
 body {
  font-family: $font-family-base;
 }
-main {
-  margin: 80px 320px 50px 320px;
-}
+main {}
 section {
  position: relative;
 }
@@ -148,6 +146,9 @@ img {
   ----------------------------------------- */
 
 // Structure
+#page {
+  margin-top: 80px;
+}
 #page-header {
   position: fixed;
   width: 100%;
@@ -158,7 +159,7 @@ img {
   z-index: 1030;
 }
 #page-content {
-  margin-top: 70px;
+  margin: 80px 320px 50px 320px;
 }
 #page-footer {
   position: relative;
@@ -285,7 +286,7 @@ img {
 #sidenav {
   position: absolute;
   width: 280px;
-  height: auto;
+  height: 100%;
   top: 70px;
   left: 0;
   border-right: 1px solid $grey;
@@ -713,27 +714,27 @@ body.homepage {
 
 // Page States
 body.hide_toc {
-  main { margin-right: 20px; }
+  #page-content { margin-right: 20px; }
   #toc {
     display: none;
     right: -300px;
   }
 }
 body.hide_sidebar {
-  main { margin-left: 20px; }
-  #sidebar {
+  #page-content { margin-left: 20px; }
+  #sidenav {
     display: none;
     left: -300px;
   }
 }
 
 body.show_subnav {
-  #page-content {
+  #page {
     margin-top: 103px;
   }
-  #sidebar, #toc { top: 102px; }
+  #sidenav, #toc { top: 102px; }
   &.condensed_header {
-    #sidebar, #toc { top: 82px; }
+    #sidenav, #toc { top: 82px; }
   }
 }
 body.condensed_header {
