@@ -1,6 +1,6 @@
 ---
 reference: "https://www.dartlang.org/tools/dart-vm/"
-layout: page
+layout: default
 title: "dart: The Standalone VM"
 permalink: /dart-vm/tools/dart-vm
 toc: true

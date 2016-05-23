@@ -1,7 +1,7 @@
 ---
 reference: "https://www.dartlang.org/books/"
 
-layout: page
+layout: default
 permalink: /resources/books
 title: Books about Dart
 description: Read all about it! Here's a collection of books about Dart.

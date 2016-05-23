@@ -1,7 +1,7 @@
 ---
 reference: "https://www.dartlang.org/tools/pub/get-started.html"
 
-layout: page
+layout: default
 permalink: /tools/pub/get-started
 title: "Getting Started with Pub"
 toc: true

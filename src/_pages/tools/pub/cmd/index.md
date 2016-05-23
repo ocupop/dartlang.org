@@ -1,7 +1,7 @@
 ---
 reference: "https://www.dartlang.org/tools/pub/cmd/"
 
-layout: page
+layout: default
 permalink: /tools/pub/cmd/
 title: "Pub Commands"
 description: "Pub, a package and asset management tool for Dart, supports a variety of commands."

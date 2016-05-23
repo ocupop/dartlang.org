@@ -1,7 +1,7 @@
 ---
 reference: "https://www.dartlang.org/tools/pub/faq.html"
 
-layout: page
+layout: default
 permalink: /tools/pub/faq
 title: "Frequently Asked Questions about Pub"
 toc: true

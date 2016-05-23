@@ -1,7 +1,7 @@
 ---
 reference: "https://www.dartlang.org/tools/faq.html"
 
-layout: page
+layout: default
 permalink: /resources/faq
 title: "Tools FAQ"
 short-title: "FAQ"

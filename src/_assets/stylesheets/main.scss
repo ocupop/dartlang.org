@@ -388,6 +388,10 @@ img {
   .content {
     padding: 20px 0;
   }
+  .section-nav {
+    opacity: 0;
+    list-style: none;
+  }
   .nav {
     li {
       a {
@@ -403,6 +407,12 @@ img {
   }
 }
 
+#code-display {
+  padding: $content-padding;
+  border: 1px solid $grey;
+  height: 100%;
+  min-height: 105px;
+}
 
 
 /* -----------------------------------------
@@ -701,13 +711,6 @@ body.homepage {
   }
 }
 
-#code-display {
-  padding: $content-padding;
-  border: 1px solid $grey;
-  height: 100%;
-  min-height: 105px;
-}
-
 // Page States
 body.hide_toc {
   main { margin-right: 20px; }
@@ -738,12 +741,12 @@ body.condensed_header {
   #mainnav {
     .brand {
       img {
-        height: 35px;
+        height: 20px;
         margin-top: 5px;
       }
     }
   }
-  #sidebar, #toc {
+  #sidenav, #toc {
     top: 35px;
   }
 }

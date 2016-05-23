@@ -1,7 +1,7 @@
 ---
 reference: "https://www.dartlang.org/community/who-uses-dart.html"
 
-layout: page
+layout: default
 title: 'Who Uses Dart'
 permalink: /community/who-uses-dart
 description: 'Companies and business that use Dart.'

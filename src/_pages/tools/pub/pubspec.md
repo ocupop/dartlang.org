@@ -1,7 +1,7 @@
 ---
 reference: "https://www.dartlang.org/tools/pub/pubspec.html"
 
-layout: page
+layout: default
 permalink: /tools/pub/pubspec
 title: "Pubspec Format"
 toc: true

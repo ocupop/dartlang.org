@@ -1,7 +1,7 @@
 ---
 reference: "https://www.dartlang.org/tools/pub/cmd/pub-upgrade.html"
 
-layout: page
+layout: default
 permalink: /tools/pub/cmd/pub-upgrade
 title: "pub upgrade"
 description: "Use pub upgrade to get the latest versions of all dependencies used by your Dart application."

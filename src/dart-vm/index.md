@@ -1,6 +1,6 @@
 ---
 reference: new page
-layout: page
+layout: default
 permalink: /dart-vm/
 title: Dart VM
 description:

@@ -1,7 +1,7 @@
 ---
 reference: "https://www.dartlang.org/tools/pub/cmd/pub-lish.html"
 
-layout: page
+layout: default
 permalink: /tools/pub/cmd/pub-lish
 title: "pub publish"
 description: "Use pub publish to publish your Dart package to pub.dartlang.org."

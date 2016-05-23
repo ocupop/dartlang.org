@@ -1,7 +1,7 @@
 ---
 reference: "https://www.dartlang.org/tools/pub/transformers/lazy-transformer.html"
 
-layout: page
+layout: default
 title: "Writing a Lazy Transformer"
 description: "How to write a Pub transformer that runs lazily to improve your app's startup time."
 permalink: /tools/pub/transformers/lazy-transformer

@@ -1,7 +1,7 @@
 ---
 reference: "https://www.dartlang.org/tools/pub/cmd/pub-global.html"
 
-layout: page
+layout: default
 permalink: /tools/pub/cmd/pub-global
 title: "pub global"
 description: "Use pub global to run Dart scripts hosted on pub.dartlang.org from the command line."

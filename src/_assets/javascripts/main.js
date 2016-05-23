@@ -73,7 +73,7 @@ $(document).on('ready', function(){
 
   // TOC: Table of Contents
   $('.toc-entry').not('.toc-h2').remove();
-  $('.section-nav').addClass('nav');
+  $('.section-nav').addClass('nav').css({opacity: 1});
   $('body').scrollspy({
      offset: 100,
      target: '#toc'

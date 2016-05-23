@@ -1,7 +1,7 @@
 ---
 reference: "https://www.dartlang.org/docs/synonyms/"
 
-layout: page
+layout: default
 permalink: /resources/synonyms/
 title: "Synonyms - Dart, JavaScript, C#, Python"
 description: "Dart idioms and snippets translated to JavaScript, Python, and C#."

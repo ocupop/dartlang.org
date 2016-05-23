@@ -1,7 +1,7 @@
 ---
 reference: "https://www.dartlang.org/samples/"
 
-layout: page
+layout: default
 permalink: /resources/samples/
 title: "Dart Code Samples"
 description: Sample Dart code for animation, HTML5, and more.

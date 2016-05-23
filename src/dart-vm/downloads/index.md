@@ -1,6 +1,6 @@
 ---
 reference: https://www.dartlang.org/downloads/
-layout: page
+layout: default
 title: "Download Dart"
 description: "The download bundles that support the Dart language."
 permalink: /dart-vm/downloads/

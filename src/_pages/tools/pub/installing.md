@@ -1,7 +1,7 @@
 ---
 reference: "https://www.dartlang.org/tools/pub/installing.html"
 
-layout: page
+layout: default
 permalink: /tools/pub/installing
 title: "Installing and Configuring Pub"
 toc: true

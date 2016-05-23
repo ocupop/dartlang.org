@@ -1,7 +1,7 @@
 ---
 reference: "https://www.dartlang.org/tools/pub/"
 
-layout: page
+layout: default
 permalink: /tools/pub/
 title: "Pub Package and Asset Manager"
 short-title: "Pub"

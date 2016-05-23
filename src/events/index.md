@@ -1,7 +1,7 @@
 ---
 reference:
 
-layout: page
+layout: default
 permalink: /events/
 title: Dart Events
 description:

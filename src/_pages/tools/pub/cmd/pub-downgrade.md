@@ -1,7 +1,7 @@
 ---
 reference: "https://www.dartlang.org/tools/pub/cmd/pub-downgrade.html"
 
-layout: page
+layout: default
 permalink: /tools/pub/cmd/pub-downgrade
 title: "pub downgrade"
 description: "Use pub downgrade to get the lowest versions of all dependencies used by your Dart application."

@@ -1,7 +1,7 @@
 ---
 reference: "https://www.dartlang.org/tools/pub/cmd/pub-run.html"
 
-layout: page
+layout: default
 permalink: /tools/pub/cmd/pub-run
 title: "pub run"
 description: "Use pub run to run a Dart script in your package."

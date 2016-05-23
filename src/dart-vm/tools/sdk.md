@@ -1,6 +1,6 @@
 ---
 reference: "https://www.dartlang.org/tools/sdk/"
-layout: page
+layout: default
 title: "Dart SDK"
 description: "Dart libraries and command-line tools."
 permalink: /dart-vm/tools/sdk

@@ -1,7 +1,7 @@
 ---
 reference: "https://www.dartlang.org/articles/"
 
-layout: page
+layout: default
 title: "Articles: Language"
 description: "xxx"
 ---

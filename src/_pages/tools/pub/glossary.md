@@ -1,7 +1,7 @@
 ---
 reference: "https://www.dartlang.org/tools/pub/glossary.html"
 
-layout: page
+layout: default
 permalink: /tools/pub/glossary
 title: "Glossary of Pub Terms"
 toc: true

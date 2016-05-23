@@ -1,7 +1,7 @@
 ---
 reference: "https://www.dartlang.org/tools/pub/publishing.html"
 
-layout: page
+layout: default
 permalink: /tools/pub/publishing
 title: "Publishing a Package"
 toc: true
