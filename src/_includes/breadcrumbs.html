@@ -1,3 +1,5 @@
+{% unless page.breadcrumbs != true or page.layout == 'homepage' %}
+
 {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
 {% if crumbs.size >= 3 %}
 <div class="breadcrumbs">
@@ -13,3 +15,5 @@
   {% endfor %}
 </div>
 {% endif %}
+
+{% endunless %}
