@@ -4,7 +4,6 @@ reference: "https://www.dartlang.org/docs/tutorials/"
 layout: page
 title: "Dart Tutorials"
 description: "The Dart Tutorials&mdash;Your guide to building great apps."
-toc: false
 
 ---
 
