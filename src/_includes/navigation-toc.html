@@ -1,4 +1,4 @@
-{% unless page.toc != true or page.layout == 'homepage' %}
+{% unless page.toc == false or page.layout == 'homepage' %}
 <div id="toc">
   <div class="content">
     {{ content | toc_only }}

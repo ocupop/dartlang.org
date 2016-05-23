@@ -1,6 +1,6 @@
 {% capture class %}
 {{ page.layout }}
-{% unless page.toc %}hide_toc{% endunless %}
+{% if page.toc == false %}hide_toc{% endif %}
 {% if page.nextpage.url or page.prevpage.url %}show_subnav{% endif %}
 {% endcapture %}
 {{ class }}

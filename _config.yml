@@ -35,37 +35,37 @@ collections:
     output: true
     permalink: /codelabs/:path
 
-# defaults:
-# - scope:
-#     path: ""
-#     type: articles
-#   values:
-#     layout: article
-#     toc: true
-# - scope:
-#     path: ""
-#     type: tutorials
-#   values:
-#     layout: tutorial
-#     toc: true
-# - scope:
-#     path: ""
-#     type: samples
-#   values:
-#     layout: sample
-#     toc: true
-# - scope:
-#     path: ""
-#     type: guides
-#   values:
-#     layout: guide
-#     toc: true
-# - scope:
-#     path: ""
-#     type: codelabs
-#   values:
-#     layout: codelab
-#     toc: true
+defaults:
+- scope:
+    path: ""
+    type: articles
+  values:
+    layout: article
+    toc: true
+- scope:
+    path: ""
+    type: tutorials
+  values:
+    layout: tutorial
+    toc: true
+- scope:
+    path: ""
+    type: samples
+  values:
+    layout: sample
+    toc: true
+- scope:
+    path: ""
+    type: guides
+  values:
+    layout: guide
+    toc: true
+- scope:
+    path: ""
+    type: codelabs
+  values:
+    layout: codelab
+    toc: true
 
 custom:
   dartpad:
