@@ -5,9 +5,8 @@ layout: page
 permalink: /resources/books
 title: Books about Dart
 description: Read all about it! Here's a collection of books about Dart.
+toc: true
 ---
-
-# Books on Dart
 
 Here's a collection of books about Dart.
 [Let us know](https://github.com/dart-lang/www.dartlang.org/issues)

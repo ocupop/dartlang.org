@@ -3,23 +3,13 @@
     {% capture dropdown %}{{ link.children | size }}{% endcapture %}
     {% assign path = link.permalink | remove:'/index' %}
     {% if dropdown == '0' %}
-      {% if page.url == link.permalink %}
-        <li class="active">
-          <a href="{{ link.permalink }}" title="{{ link.title }}">
-            {% if link.label %}{{ link.label }}{% else %}{{ link.title }}{% endif %}
-          </a>
-          <i class="icon icon-caret-up"></i>
-          {{ page.content | toc_only  }}
-        </li>
-      {% else %}
-        <li>
-          <a href="{{ link.permalink }}" title="{{ link.title }}">
-            {% if link.label %}{{ link.label }}{% else %}{{ link.title }}{% endif %}
-          </a>
-        </li>
-      {% endif %}
+      <li {% if page.url == link.permalink %}class="active"{% endif %}>
+        <a href="{{ link.permalink }}" title="{{ link.title }}">
+          {% if link.label %}{{ link.label }}{% else %}{{ link.title }}{% endif %}
+        </a>
+      </li>
     {% else %}
-      <li {% if page.url contains path %}class="active"{% endif %}>
+      <li {% if page.url contains path %}class="active"{% endif %} data-path="{{ path }}" data-url="{{ page.url }}">
         <a href="{{ link.permalink }}" title="{{ link.title }}">
           {% if link.label %}{{ link.label }}{% else %}{{ link.title }}{% endif %}
         </a>
@@ -30,10 +20,6 @@
               <a href="{{ child.permalink }}" title="{{ child.title }}">
                 {% if child.label %}{{ child.label }}{% else %}{{ child.title }}{% endif %}
               </a>
-              {% if page.url == child.permalink %}
-                <i class="icon icon-caret-up"></i>
-                {{ content | toc_only  }}
-              {% endif %}
             </li>
           {% endfor %}
         </ul>

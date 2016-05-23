@@ -10,8 +10,6 @@ toc: true
 
 {% include breadcrumbs.html %}
 
-# {{ page.title }}
-
 Aside from managing packages, [pub](/tools/pub/) also has support for
 building web and command line apps.
 

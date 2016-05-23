@@ -12,13 +12,10 @@ header:
 
 {% include breadcrumbs.html %}
 
-# {{ page.title }}
-
 _Global_ is one of the commands of the _pub_ tool.
 [Learn more about pub](/tools/pub/).
 
 **Contents**
-{% include default_toc.html %}
 
 Pub's `global` option allows you to run Dart scripts from the
 command line when you are not currently inside a package.

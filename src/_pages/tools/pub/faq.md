@@ -9,8 +9,6 @@ toc: true
 
 {% include breadcrumbs.html %}
 
-# {{ page.title }}
-
 Here are some frequently asked questions about [pub](/tools/pub/).
 
 ### What are pub's system requirements?

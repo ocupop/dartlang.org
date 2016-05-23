@@ -9,11 +9,10 @@ permalink: /dart-vm/downloads/linux
 js:
 - url: archive/assets/downloads.js
   defer: true
+toc: true
 ---
 
 {% include breadcrumbs.html %}
-
-# {{ page.title }}
 
 If you're using Debian/Ubuntu, you can choose two options,
 both of which can update the SDK automatically

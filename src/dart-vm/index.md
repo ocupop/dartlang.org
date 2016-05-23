@@ -4,9 +4,8 @@ layout: page
 permalink: /dart-vm/
 title: Dart VM
 description:
+toc: true
 ---
-
-# {{ page.title }}
 
 Are you writing standalone Dart scripts or server apps?
 These pages have the information you need to develop

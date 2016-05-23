@@ -3,29 +3,32 @@ reference: new page
 
 layout: page
 permalink: /language/
-toc: true
+title: "Language"
+toc: false
 ---
 
-For a walk through of all of Dart's major language features, see
-[A Tour of the Dart Language](/guides/language-tour),
-also referred to as the "language tour".
-
-[Effective Dart](/guides/effective-dart/) is a set of guides
-that show you how how to write the best Dart code possible.
-There are guides on Dart style, documentation, usage, and design.
-
-For further information on asynchronous programming with Dart, see
-[Asynchronous Programming: Futures](/tutorials/futures) and
-[Asynchronous Programming: Streams](/tutorials/streams).
-
-To start with sample code, see the [samples](/samples/).
-
-If you enjoy diving into a formal language specification,
-see the [Dart spec](/language/spec).
-
-You might also check out the [articles](/articles) listed under
-"Language Details".
-
-When you are ready to leverage existing libraries or write your own,
-check out Dart's support for [libraries](/libraries).
+<div class="card-grid">
+  <div class="card">
+    <h3><a href="/guides/language-tour">A Tour of the Dart Language</a></h3>
+    <p>A walk through of all of Dart's major language features.</p>
+  </div>
+  <div class="card">
+    <h3><a href="/guides/effective-dart/">Effective Dart</a></h3>
+    <p>A set of guides that show you how how to write the best Dart code
+    possible. There are guides on Dart style, documentation, usage,
+    and design.</p>
+  </div>
+  <div class="card">
+    <h3><a href="/tutorials/futures">Asynchronous Programming: Futures</a></h3>
+    <p>How to handle asynchronous programming in Dart.</p>
+  </div>
+  <div class="card">
+    <h3><a href="/tutorials/streams">Asynchronous Programming: Streams</a></h3>
+    <p>How to handle a sequence of asynchronous events.</p>
+  </div>
+  <div class="card">
+    <h3><a href="/articles/language">Articles on Language Details</a></h3>
+    <p></p>
+  </div>
+</div>
 

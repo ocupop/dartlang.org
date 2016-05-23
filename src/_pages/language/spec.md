@@ -5,9 +5,8 @@ layout: page
 permalink: /language/spec
 title: "Dart Language Specification"
 description: "The Dart language specification and proposed changes."
+toc: true
 ---
-
-# {{page.title}}
 
 Download the _Dart Programming Language Specification_ from
 the Ecma website:

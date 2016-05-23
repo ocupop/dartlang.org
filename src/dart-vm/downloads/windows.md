@@ -10,11 +10,10 @@ permalink: /dart-vm/downloads/windows
 js:
 - url: archive/assets/downloads.js
   defer: true
+toc: true
 ---
 
 {% include breadcrumbs.html %}
-
-# {{ page.title }}
 
 Don't want to use Chocolatey or a Windows installer?
 Another option is

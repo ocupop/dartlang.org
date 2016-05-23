@@ -1,41 +1,41 @@
 - title: Language Details
   label:
-  permalink: /articles
+  permalink: /articles/language/
   children:
     - title: Mixins in Dart
       label:
-      permalink: /articles/mixins
+      permalink: /articles/language/mixins
     - title: "Dart Language Asynchrony Support: Phase 1"
       label: "Asynchrony Support: Async Await"
-      permalink: /articles/await-async
+      permalink: /articles/language/await-async
     - title: "Dart Language Asynchrony Support: Phase 2"
       label: "Asynchrony Support: Beyond Async"
-      permalink: /articles/beyond-async
+      permalink: /articles/language/beyond-async
     - title: Emulating Functions in Dart
       label: Emulating Functions
-      permalink: /articles/emulating-functions
+      permalink: /articles/language/emulating-functions
     - title: Optional Types in Dart
       label: Optional Types
-      permalink: /articles/optional-types
+      permalink: /articles/language/optional-types
 - title: Libraries and APIs
   label:
-  permalink: /articles
+  permalink: /articles/libraries/
   children:
     - title: Converters and Codecs
       label:
-      permalink: /articles/converters-and-codecs
+      permalink: /articles/libraries/converters-and-codecs
     - title: Serialization in Dart
       label: Serialization
-      permalink: /articles/serialization
+      permalink: /articles/libraries/serialization
     - title: Zones
       label:
-      permalink: /articles/zones
+      permalink: /articles/libraries/zones
     - title: Broadcast Streams
       label:
-      permalink: /articles/broadcast-streams
+      permalink: /articles/libraries/broadcast-streams
     - title: Reflection in Dart with Mirrors
       label: Reflection
-      permalink: /articles/reflection-with-mirrors
+      permalink: /articles/libraries/reflection-with-mirrors
     - title: Futures and Error Handling
       label: 
-      permalink: /articles/futures-and-error-handling
+      permalink: /articles/libraries/futures-and-error-handling
