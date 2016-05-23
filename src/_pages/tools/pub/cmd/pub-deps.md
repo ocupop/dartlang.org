@@ -7,7 +7,7 @@ title: "pub deps"
 description: "Use pub deps to print a dependency graph for a package."
 ---
 
-{% include breadcrumbs.html %}
+
 
 _Deps_ is one of the commands of the _pub_ tool.
 [Learn more about pub](/tools/pub/).

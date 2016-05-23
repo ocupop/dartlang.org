@@ -1,6 +1,4 @@
 ---
-reference: new page
-
 layout: guide
 title: Get Started
 description: "xxx"

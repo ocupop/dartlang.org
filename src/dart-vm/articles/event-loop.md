@@ -10,7 +10,7 @@ updated: 2013-10-22
 
 ---
 
-{% include breadcrumbs.html %}
+
 
 _Written by Kathy Walrath <br>
 September 2013 (updated October 2013)_

@@ -13,7 +13,7 @@ js:
 
 ---
 
-{% include breadcrumbs.html %}
+
 
 Don't want to use Chocolatey or a Windows installer?
 Another option is

@@ -10,7 +10,7 @@ date: 2011-11-01
 
 ---
 
-{% include breadcrumbs.html %}
+
 
 _Written by Florian Loitsch and Bob Nystrom<br>
 November 2011_

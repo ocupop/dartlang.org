@@ -8,7 +8,7 @@ date: 2013-02-13
 
 ---
 
-{% include breadcrumbs.html %}
+
 
 _Written by Siva Annamalai <br>
 February 2013_

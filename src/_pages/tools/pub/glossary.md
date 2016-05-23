@@ -7,7 +7,7 @@ title: "Glossary of Pub Terms"
 
 ---
 
-{% include breadcrumbs.html %}
+
 
 The following terms are used in the documentation for the [pub](/tools/pub)
 tool.

@@ -212,8 +212,8 @@ img {
       font-weight: 900;
       color: $grey-dark;
       img {
-        height: 40px;
-        margin: 15px;
+        height: 30px;
+        margin: 20px;
         @include transition(0.5s);
       }
     }

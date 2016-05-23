@@ -8,7 +8,7 @@ permalink: /tools/pub/transformers/lazy-transformer
 
 ---
 
-{% include breadcrumbs.html %}
+
 
 If you have a transformer that runs slowly&mdash;perhaps because the algorithm
 is complex, has many steps, or the data set is large&mdash;you can improve

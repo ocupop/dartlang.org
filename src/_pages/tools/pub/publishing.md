@@ -7,7 +7,7 @@ title: "Publishing a Package"
 
 ---
 
-{% include breadcrumbs.html %}
+
 
 [Pub](/tools/pub) isn't just for using other people's packages.
 It also allows you to share your packages with the world. If you have a useful

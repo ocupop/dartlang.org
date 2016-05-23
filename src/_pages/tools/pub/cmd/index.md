@@ -8,7 +8,7 @@ description: "Pub, a package and asset management tool for Dart, supports a vari
 
 ---
 
-{% include breadcrumbs.html %}
+
 
 Aside from managing packages, [pub](/tools/pub/) also has support for
 building web and command line apps.

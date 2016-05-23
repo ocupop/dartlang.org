@@ -7,7 +7,7 @@ title: "pub run"
 description: "Use pub run to run a Dart script in your package."
 ---
 
-{% include breadcrumbs.html %}
+
 
 _Run_ is one of the commands of the _pub_ tool.
 [Learn more about pub](/tools/pub/).

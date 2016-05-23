@@ -38,6 +38,12 @@ collections:
 defaults:
 - scope:
     path: ""
+    type: pages
+  values:
+    layout: default
+    toc: true
+- scope:
+    path: ""
     type: articles
   values:
     layout: article

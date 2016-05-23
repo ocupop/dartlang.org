@@ -7,7 +7,7 @@ permalink: /dart-vm/tools/dart-vm
 short-title: "dart"
 ---
 
-{% include breadcrumbs.html %}
+
 
 You can use the _dart_ tool (`bin/dart`) to run Dart command-line apps such as
 server-side scripts, programs, and servers.

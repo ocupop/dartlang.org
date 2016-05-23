@@ -8,7 +8,7 @@ description: "How pub transforms and generates assets and files during developme
 
 ---
 
-{% include breadcrumbs.html %}
+
 
 The [`pub serve`]({{site.dart4web}}/tools/pub/pub-serve),
 [`pub build`]({{site.dart4web}}/tools/pub/pub-build)

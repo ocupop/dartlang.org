@@ -7,7 +7,7 @@ title: "Frequently Asked Questions about Pub"
 
 ---
 
-{% include breadcrumbs.html %}
+
 
 Here are some frequently asked questions about [pub](/tools/pub/).
 

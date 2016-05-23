@@ -10,7 +10,7 @@ updated: 2012-11-01
 
 ---
 
-{% include breadcrumbs.html %}
+
 
 _Written by John McCutchan <br>
 October 2012 (updated November 2012)_

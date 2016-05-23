@@ -9,7 +9,7 @@ date: 2012-05-01
 
 ---
 
-{% include breadcrumbs.html %}
+
 
 _Written by William Hesse <br>
 May 2012_

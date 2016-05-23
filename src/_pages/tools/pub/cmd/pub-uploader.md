@@ -7,7 +7,7 @@ title: "pub uploader"
 description: "Use pub uploader to add or remove uploaders for your Dart package on pub.dartlang.org."
 ---
 
-{% include breadcrumbs.html %}
+
 
 _Uploader_ is one of the commands of the _pub_ tool.
 [Learn more about pub](/tools/pub/).

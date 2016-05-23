@@ -4,6 +4,7 @@ reference: new page
 layout: default
 permalink: /libraries/
 title: "Libraries & APIs"
+toc: false
 ---
 
 Dart programs rely on libraries.

@@ -7,7 +7,7 @@ permalink: /dart-vm/tools/sdk
 
 ---
 
-{% include breadcrumbs.html %}
+
 
 The Dart SDK has the libraries and command-line tools
 that you need to develop Dart applications.

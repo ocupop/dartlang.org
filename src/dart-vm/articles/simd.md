@@ -8,7 +8,7 @@ date: 2013-08-02
 
 ---
 
-{% include breadcrumbs.html %}
+
 
 _Written by John McCutchan <br>
 August 2013_
