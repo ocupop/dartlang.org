@@ -6,12 +6,14 @@ title: "Effective Dart: Usage"
 description: "Guidelines for using language features to write maintainable code."
 
 nextpage:
-  url: /guides/effective-dart/design
-  title: "Design"
-prevpage:
   url: /guides/effective-dart/documentation
   title: "Documentation"
+prevpage:
+  url: /guides/effective-dart/design
+  title: "Design"
 ---
+
+# {{ page.title }}
 
 This is the most "blue-collar" guide in Effective Dart. You'll apply the
 guidelines here every day in the bodies of your Dart code. *Users* of your
@@ -30,16 +32,16 @@ a single long string that doesn't fit on one line.
 <div class="good">
 {% prettify dart %}
 raiseAlarm(
-    'ERROR: Parts of the spaceship are on fire. Other '
-    'parts are overrun by martians. Unclear which are which.');
+    "ERROR: Parts of the spaceship are on fire. Other "
+    "parts are overrun by martians. Unclear which are which.");
 {% endprettify %}
 </div>
 
 <div class="bad">
 {% prettify dart %}
 raiseAlarm(
-    'ERROR: Parts of the spaceship are on fire. Other ' +
-    'parts are overrun by martians. Unclear which are which.');
+    "ERROR: Parts of the spaceship are on fire. Other " +
+    "parts are overrun by martians. Unclear which are which.");
 {% endprettify %}
 </div>
 
@@ -51,13 +53,13 @@ it's almost always cleaner and shorter to use interpolation:
 
 <div class="good">
 {% prettify dart %}
-'Hello, $name! You are ${year - birth} years old.';
+"Hello, $name! You are ${year - birth} years old.";
 {% endprettify %}
 </div>
 
 <div class="bad">
 {% prettify dart %}
-'Hello, ' + name + '! You are ' + (year - birth) + ' years old.';
+"Hello, " + name + "! You are " + (year - birth) + " years old.";
 {% endprettify %}
 </div>
 
@@ -142,15 +144,15 @@ Instead, there are faster and more readable getters: `.isEmpty` and
 
 <div class="good">
 {% prettify dart %}
-if (lunchBox.isEmpty) return 'so hungry...';
-if (words.isNotEmpty) return words.join(' ');
+if (lunchBox.isEmpty) return "so hungry...";
+if (words.isNotEmpty) return words.join(" ");
 {% endprettify %}
 </div>
 
 <div class="bad">
 {% prettify dart %}
-if (lunchBox.length == 0) return 'so hungry...';
-if (!words.isEmpty) return words.join(' ');
+if (lunchBox.length == 0) return "so hungry...";
+if (!words.isEmpty) return words.join(" ");
 {% endprettify %}
 </div>
 
@@ -588,7 +590,7 @@ class Folder {
   final List<Document> contents;
 
   Folder(this.name) : contents = [];
-  Folder.temp() : name = 'temporary'; // Oops! Forgot contents.
+  Folder.temp() : name = "temporary"; // Oops! Forgot contents.
 }
 {% endprettify %}
 </div>
@@ -600,7 +602,7 @@ class Folder {
   final List<Document> contents = [];
 
   Folder(this.name);
-  Folder.temp() : name = 'temporary';
+  Folder.temp() : name = "temporary";
 }
 {% endprettify %}
 </div>
@@ -895,11 +897,11 @@ Future usesAwait(Future later) async {
 }
 
 Future asyncError() async {
-  throw 'Error!';
+  throw "Error!";
 }
 
 Future asyncValue() async {
-  return 'value';
+  return "value";
 }
 {% endprettify %}
 </div>
@@ -922,7 +924,7 @@ Future<bool> fileContainsBear(String path) {
   var completer = new Completer<bool>();
 
   new File(path).readAsString().then((contents) {
-    completer.complete(contents.contains('bear'));
+    completer.complete(contents.contains("bear"));
   });
 
   return completer.future;
@@ -941,7 +943,7 @@ they're clearer and make error handling easier.
 {% prettify dart %}
 Future<bool> fileContainsBear(String path) {
   return new File(path).readAsString().then((contents) {
-    return contents.contains('bear');
+    return contents.contains("bear");
   });
 }
 {% endprettify %}
@@ -951,7 +953,7 @@ Future<bool> fileContainsBear(String path) {
 {% prettify dart %}
 Future<bool> fileContainsBear(String path) async {
   var contents = await new File(path).readAsString();
-  return contents.contains('bear');
+  return contents.contains("bear");
 }
 {% endprettify %}
 </div>

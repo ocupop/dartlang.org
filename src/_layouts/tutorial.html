@@ -1,17 +1,32 @@
 ---
-layout: page
+layout: default
 ---
-{% if page.points %}
-  <div class="panel">
-    <h4>What's the point?</h4>
-    <ul>
-      {% for point in page.points %}
-      <li>{{ point }}</li>
-      {% endfor %}
-    </ul>
-  </div>
-{% endif %}
-{{ content | inject_anchors }}
+<article>
+  {% if page.toc %}
+  <aside>
+    <div id="toc" class="content">
+      {% include navigation-toc.html %}
+    </div>
+  </aside>
+  {% endif %}
+  <section>
+    <header>
+      <h1>{{ page.title }}</h1>
+      <a href="https://github.com/dart-lang/dartlang.org/issues" target="_blank" class="hide">Send feedback</a>
+    </header>
+    {% if page.points %}
+      <div class="panel">
+        <h4>What's the point?</h4>
+        <ul>
+          {% for point in page.points %}
+          <li>{{ point }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+    {{ content | inject_anchors }}
+  </section>
+</article>
 
 {% comment %}
   {% if page.examples %}

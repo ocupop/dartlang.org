@@ -1,4 +1,15 @@
 ---
-layout: default
+layout: compressed
 ---
-{{ content }}
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body class="{% include class.html %}">
+    {% include page-header.html %}
+    <main id="page-content">
+      {{ content }}
+    </main>
+    {% include dartpad.html %}
+    {% include page-footer.html %}
+  </body>
+</html>

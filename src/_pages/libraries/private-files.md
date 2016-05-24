@@ -5,8 +5,11 @@ layout: page
 permalink: /libraries/private-files
 title: "What Not to Commit"
 description: "Your development tools generate a bunch of files. Not all of them should be committed."
-toc: true
 ---
+
+{% include breadcrumbs.html %}
+
+# {{ page.title }}
 
 When you put Dart source code in a repository,
 whether using the [pub](/tools/pub) tool, [GitHub](https://github.com/)

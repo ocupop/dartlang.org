@@ -1,14 +1,19 @@
-{% unless page.toc != true or page.layout == 'homepage' %}
-<div id="toc">
-  <div class="content">
-    {{ content | toc_only }}
-  </div>
-</div>
-{% endunless %}
-
-<script type="text/javascript">
-  var toc = "{{ page.toc }}";
-  var layout = "{{ page.layout }}";
-  window.console.log("TOC: ", toc);
-  window.console.log("Layout: ", layout);
-</script>
+{% if page.layout == 'page' %}
+  <h4>{{ page.title }}</h4>
+  {{ content | toc_only }}
+{% endif %}
+<h4>
+  <a href="/guides">Guides</a>
+</h4>
+{% assign linklist = site.data.guides %}
+{% include linklist.html %}
+<h4>
+  <a href="/tutorials">Tutorials</a>
+</h4>
+{% assign linklist = site.data.tutorials %}
+{% include linklist.html %}
+<h4>
+  <a href="/articles">Articles</a>
+</h4>
+{% assign linklist = site.data.articles %}
+{% include linklist.html %}

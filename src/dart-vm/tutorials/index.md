@@ -5,7 +5,7 @@ layout: page
 title: "Dart VM Tutorials"
 description: "The Dart VM Tutorials&mdash;Your guide to building great apps."
 permalink: /dart-vm/tutorials/
-toc: true
+toc: false
 
 nextpage:
   url: get-started

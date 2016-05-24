@@ -17,8 +17,20 @@
 body {
  font-family: $font-family-base;
 }
-main {
-  margin: 80px 320px 50px 320px;
+article {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto 0 auto;
+  align-items: stretch;
+ // @extend .mdl-grid;
+ section {
+  margin: 8px;
+  width: calc(100% - 16px);
+ }
+ aside {
+  margin: 8px;
+  width: calc(100% - 16px);
+ }
 }
 section {
  position: relative;
@@ -39,7 +51,8 @@ h6, .h6 { font-size: $font-size-h6;}
 
 p {}
 
-a, button {
+a {
+ color: $blue;
  text-decoration: none;
  &:hover, &:focus, &:active {
    outline: none;
@@ -136,9 +149,6 @@ pre {
     padding: 2px;
   }
 }
-code {
-  background-color: transparent;
-}
 img {
   max-width: 100%;
 }
@@ -156,16 +166,40 @@ img {
   left: 0;
   background-color: $grey-light;
   z-index: 1030;
+  .menu-toggle {
+    display: none;
+    position: absolute;
+    top: 8px;
+    left: auto;
+    right: 8px;
+    background-color: transparent;
+    border: none; 
+    color: $grey;
+    cursor: pointer;
+    pointer-events: all;
+    i {
+      font-size: 20px;
+    }
+  }
+  &.condensed {
+    #mainnav {
+      .brand {
+        img {
+          height: 35px;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
 }
 #page-content {
-  margin-top: 70px;
+  // display:none;
+  margin-top: 80px;
 }
 #page-footer {
-  position: relative;
   color: $white;
   font-weight: 300;
   background-color: $grey-dark;
-  z-index: 5;
   .brand {
    height: 30px;
    width: 120px;
@@ -206,14 +240,9 @@ img {
     @include transition(0.5s);
     .brand {
       display: inline-block;
-      margin-left: 20px;
-      line-height: 50px;
-      font-size: 30px;
-      font-weight: 900;
-      color: $grey-dark;
       img {
-        height: 40px;
-        margin: 15px;
+        height: 50px;
+        margin: 10px;
         @include transition(0.5s);
       }
     }
@@ -282,127 +311,91 @@ img {
 }
 #footernav {}
 
-#sidenav {
-  position: absolute;
-  width: 280px;
-  height: auto;
-  top: 70px;
-  left: 0;
-  border-right: 1px solid $grey;
-  background-color: #ffffff;
-  overflow: hidden;
-  z-index: 1;
-  &.fixed {
-    display: none;
-    position: fixed;
-    height: 100%;
-    overflow-y: auto;
-    .content {
-      padding-bottom: 400px;
-    }
-  }
-  &.open {
-    display: block;
-  }
-  .content {
-    padding-left: 30px;
-    h4 {
-      font-size: 18px;
-      line-height: 25px;
-      text-transform: uppercase;
-      border-bottom: 1px solid $grey;
-      a {
-        display: block;
-        color: $grey-dark;
-        &:hover, &:focus, &:active {
-          color: $grey-dark;
-        }
-      }
-    }
-    ul {
-      padding: 0;
-      margin-top: 0;
-      list-style: none;
-      li {
-        position: relative;
-        font-weight: 700;
-        a {
-          font-weight: 700;
-          color: $grey-dark;
-        }
-        i {
-          position: relative;
-          display: inline-block;
-          transform: rotate(90deg);
-          font-size: 9px;
-          top: -2px;
-          line-height: inherit;
-          opacity: 0.5;
-          color: $grey-dark;
-          cursor: pointer;
-          @include transition();
-          &:hover {
-            opacity: 1;
-          }
-        }
-        ul {
-          display: none;
-          height: 0;
-          opacity: 0;
-          @include transition(0.5s);
-          li {
-            padding-left: 10px;
-            a {
-              font-weight: 300;
-            }
-          }
-        }
-        &.active {
-          > a {
-            color: $blue;
-          }
-          i {
-            transform: rotate(180deg);
-            top: -3px;
-            opacity: 1;
-          }
-          > ul {
-            display: block;
-            height: auto;
-            opacity: 1;
-          }
-        }
-      }
-    }
-  }
-}
 #toc {
-  position: fixed;
-  width: 250px;
-  height: 100%;
-  top: 70px;
-  right: 0;
-  border-left: 1px solid $grey;
-  overflow-y: auto;
-  z-index: 1;
-  .content {
-    padding: 20px 0;
+  h4 {
+    margin-bottom: 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #eee;
+    a {
+      display: block;
+      color: $grey-dark;
+      &:hover, &:focus, &:active {
+        color: $blue;
+      }
+    }
   }
-  .nav {
+  ul {
+    padding: 0;
+    margin-top: 0;
+    list-style: none;
     li {
+      position: relative;
+      font-weight: 700;
       a {
-        padding: 5px 15px;
-        color: $grey-dark;
+        font-weight: 700;
+      }
+      i {
+        position: relative;
+        display: inline-block;
+        transform: rotate(90deg);
+        font-size: 9px;
+        top: -2px;
+        line-height: inherit;
+        opacity: 0.5;
+        color: $blue;
+        cursor: pointer;
+        @include transition();
+        &:hover {
+          opacity: 1;
+        }
+      }
+      ul {
+        display: none;
+        height: 0;
+        opacity: 0;
+        @include transition(0.5s);
+        li {
+          padding-left: 10px;
+          a {
+            font-weight: 300;
+          }
+        }
       }
       &.active {
-        a {
+        > a {
+          // color: red;
+        }
+        i {
+          transform: rotate(180deg);
+          top: -3px;
+          opacity: 1;
+        }
+        > ul {
+          display: block;
+          height: auto;
+          opacity: 1;
+        }
+      }
+    }
+  }
+  ul.section-nav {
+    li {
+      a {
+        padding: 0;
+        color: $grey-dark;
+        &:hover, &:focus, &:active, &.active {
           color: $blue;
+          background-color: transparent;
         }
       }
     }
   }
 }
-
+#breadcrumbs {
+ padding: 15px 0;
+}
+#copyright {}
 
 
 /* -----------------------------------------
@@ -410,11 +403,9 @@ img {
  ----------------------------------------- */
 
 #run-dartpad {
-  position: relative;
-  padding: 15px 0;
-  background: $grey-light;
-  border-top: 1px solid $grey;
-  z-index: 5;
+ padding: 15px 0;
+ background: $grey-light;
+ border-top: 1px solid $grey;
 }
 
 #embedded-dartpad {
@@ -445,13 +436,15 @@ img {
 /* -----------------------------------------
  Table of Contents
  ----------------------------------------- */
-.toc-entry.toc-h2 {}
+.toc-entry.toc-h2
+{}
 .toc-entry.toc-h1,
 .toc-entry.toc-h3,
 .toc-entry.toc-h4,
 .toc-entry.toc-h5,
 .toc-entry.toc-h6,
-.no_toc {
+.no_toc
+{
  display: none;
 }
 
@@ -486,6 +479,8 @@ img {
     }
   }
 }
+
+
 
 // Columns
 .col2 {
@@ -524,51 +519,6 @@ img {
    color: $blue;
  }
 }
-
-.menu-toggle {
-  display: none;
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  right: auto;
-  line-height: 50px;
-  background-color: transparent;
-  border: none; 
-  color: $grey-dark;
-  cursor: pointer;
-  pointer-events: all;
-  i {
-    font-size: 20px;
-  }
-}
-
-
-.card-grid {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin-left: -15px;
-  margin-right: -15px;
-}
-.card {
-  display: block;
-  position: relative;
-  width: 300px;
-  height: auto;
-  min-height: 100px;
-  padding: $content-padding;
-  margin: 15px;
-  overflow: hidden;
-  box-sizing: border-box;
-  background-color: $grey-light;
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.21);
-  text-align: center;
-  h1, h2, h3, h4, h5, h6 {
-    margin-top: 0;
-  }
-}
-
 
 // Color Palette
 .grey-dark {
@@ -615,26 +565,19 @@ img {
  width: $live-content-width;
  margin: 0 auto;
 }
-.page-header {
-  margin: 0;
-  margin-bottom: 10px;
-  padding: $content-padding;
-  h1, h2 {
-    font-size: 36px;
-  }
-}
+
 .panel {
-  background-color: $grey-dark;
+background-color: $grey-dark;
+color: $white;
+padding: $content-padding;
+margin-bottom: 20px;
+h1, h2, h3, h4, h5, h6 {
   color: $white;
-  padding: $content-padding;
-  margin-bottom: 20px;
-  h1, h2, h3, h4, h5, h6 {
-    color: $white;
-    margin: 0;
-  }
-  ul {
-    padding-left: 15px;
-  }
+  margin: 0;
+}
+ul {
+  padding-left: 15px;
+}
 }
 
 .table {
@@ -685,16 +628,8 @@ img {
  ----------------------------------------- */
 // Homepage
 
-body.homepage {
-  #sidebar {
-    display: none;
-  }
-  main {
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-  }
-  pre.prettyprint {
+.homepage {
+  pre {
    margin-top: 0;
    height: 185px;
    overflow: auto;
@@ -708,106 +643,49 @@ body.homepage {
   min-height: 105px;
 }
 
-// Page States
-body.hide_toc {
-  main { margin-right: 20px; }
-  #toc {
-    display: none;
-    right: -300px;
+// Collections
+body.show_toc {
+  article {
+    section {
+     width: calc(75% - 16px);
+    }
+    >aside {
+      width: calc(25% - 16px);
+    }
   }
 }
-body.hide_sidebar {
-  main { margin-left: 20px; }
-  #sidebar {
-    display: none;
-    left: -300px;
-  }
-}
-
 body.show_subnav {
   #page-content {
     margin-top: 103px;
-  }
-  #sidebar, #toc { top: 102px; }
-  &.condensed_header {
-    #sidebar, #toc { top: 82px; }
-  }
-}
-body.condensed_header {
-  .menu-toggle { line-height: 35px; }
-  #mainnav {
-    .brand {
-      img {
-        height: 35px;
-        margin-top: 5px;
-      }
-    }
-  }
-  #sidebar, #toc {
-    top: 35px;
   }
 }
 /* -----------------------------------------
   Media Queries
  ----------------------------------------- */
-
-@media(max-width: 1024px) {
-  #mainnav {
-    nav {
-      .brand {
-        margin: 0 auto;
-        img {
-          margin: 3px 0;
-        }
-      }
-      ul {
-        display: none;
-      }
-    }
-  }
-  .menu-toggle {
-    display: block;
-    .sr {
-      position:absolute;
-      left: -999px;
-      top: 0;
-    }
-  }
-  #toc {
-    display: none;
-  }
-  #sidebar {
-    width:300px;
-    top: 40px;
-    left: -300px;
-    z-index: 100;
-    @include transition(left, .5s);
-  }
-  main {
-    margin: 50px auto;
-  }
-  body.open-menu {
-    &:before {
-      content: '';
-      display: block;
-      position: fixed;
-      top: 0; bottom: 0;
-      left: 0; right: 0;
-      height: 100%;
-      z-index: 1;
-      background-color: rgba(0,0,0,0.7);
-      pointer-events: none;
-      @include transition();
-    }
-    #sidebar {
-      left: 0;
-    }
-  }
+@media(min-width: 1024px) {
+ .mdl-layout__drawer {
+   .mdl-navigation {
+     .mdl-navigation__link {
+       padding: 5px 16px;
+     }
+   }
+ }  
+ .mdl-layout__drawer-button {
+   display: none;
+ }
 }
-
-
-@media(max-width: 600px) {
-  .card {
-    width: 100%;
+@media(max-width: 768px) {
+  article {
+    section {
+      width: calc(100% - 16px);
+    }
+    aside:nth-of-type(1) {
+      position: fixed;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      background-color: red;
+      z-index: 9;
+    }
   }
 }

@@ -15,6 +15,8 @@ on GitHub needs to be updated.
 For example, the link to the cmdline tutorial has changed.
 {% endcomment %}
 
+# {{ page.title }}
+
 ### Dart I/O and Command Line Apps
 
 The following examples are all stand-alone apps, such as servers, that run

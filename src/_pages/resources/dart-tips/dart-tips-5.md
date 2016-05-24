@@ -9,6 +9,8 @@ description: "Dart comes with lists, queues, maps, and sets out of the box. Watc
 snippet_img: //i.ytimg.com/vi/fh1Cztaw9tI/0.jpg
 ---
 
+# {{ page.title }}
+
 <iframe class="dart-tips-video" src="//www.youtube.com/embed/fh1Cztaw9tI"
 frameborder="0" allowfullscreen></iframe>
 

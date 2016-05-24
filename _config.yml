@@ -100,7 +100,14 @@ destination: publish
 # incremental: true
 bundler_args: --without production
 markdown: kramdown
+# kramdown:
+#   input: GFM
+#   syntax_highlighter: rouge
+#   # syntax_highlighter_opts:
+#   #   line_numbers: true
 excerpt_separator: "~~~"
+# highlighter: null
+
 
 include: ["_pages"]
 exclude: ["diagrams", "appengine", "tests", "site"]

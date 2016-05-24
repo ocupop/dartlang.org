@@ -9,6 +9,8 @@ description: "Use pub cache to manage your system cache."
 
 {% include breadcrumbs.html %}
 
+# {{ page.title }}
+
 _Cache_ is one of the commands of the _pub_ tool.
 [Learn more about pub](/tools/pub/).
 

@@ -9,6 +9,8 @@ toc: true
 
 {% include breadcrumbs.html %}
 
+# {{ page.title }}
+
 The following terms are used in the documentation for the [pub](/tools/pub)
 tool.
 

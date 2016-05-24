@@ -1,0 +1,74 @@
+body {
+  line-height: inherit;
+}
+
+.toc {
+  margin: 0;
+  margin-top: 20px;
+}
+
+
+.group {
+ background: rgb(252, 252, 252);
+ padding: 5px 10px;
+ border-radius: 10px;
+
+}
+
+.group-heading {
+  text-align: left;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 0px 0;
+}
+
+.example {
+  margin: 7px auto;
+}
+
+.title, .row {
+  margin: 0;
+  padding: 0;
+}
+
+
+.link {
+  text-align: left;
+  display: inline-block;
+  width: 48%;
+  margin: 0;
+  padding: 0;
+}
+
+.screenshot {
+  width: 100%;
+}
+
+.screenshot-container {
+  text-align:center;
+}
+.group-heading {
+  border-bottom: 1px solid #eee;
+  margin: 20px auto 8px auto;
+  padding: 0;
+  line-height: inherit;
+}
+
+#samples-toc {
+  margin-top: 26px;
+  margin-left: 0px;
+  list-style: none;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.caption {
+  text-align: center;
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+  font-style: italic;
+  font-size: .9em;
+  width: 100%;
+}

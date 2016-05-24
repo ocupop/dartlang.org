@@ -1,20 +1,16 @@
 //= require vendor/jquery-1.12.3.min
 //= require bootstrap
-//= require vendor/jquery.waypoints.min
-//= require vendor/inview.min
 //= require vendor/code-prettify/prettify
 //= require vendor/code-prettify/lang-dart
 //= require vendor/code-prettify/lang-yaml
+//= require vendor/jquery.stickit.min
 
 
 // Add scroll on page load for hash
 $(window).on('load', function (e){
-  // window.scrollTo(0, 0);
+  window.scrollTo(0, 0);
   if (window.location.hash) {
-    var offset = 70;
-    if ($('body').hasClass('show_subnav')) { offset = 102; }
-
-    $('html, body').animate({ scrollTop: $(window.location.hash).offset().top-offset }, 500, function (){
+    $('html, body').animate({ scrollTop: $(window.location.hash).offset().top-70 }, 500, function (){
       // Mark as active
         $('a[href^="#"]').parent('li').removeClass('active');
         $('a[href="'+window.location.hash+'"]').parent('li').addClass('active');
@@ -27,9 +23,9 @@ $(window).scroll(function(){
   var currentScreenPosition  = $(document).scrollTop();
 
   if(currentScreenPosition > 50) {
-    $('body').addClass('condensed_header');
+    $('#page-header').addClass('condensed');
   } else {
-    $('body').removeClass('condensed_header');
+    $('#page-header').removeClass('condensed');
   }
 });
 
@@ -45,57 +41,25 @@ $(document).on('ready', function(){
     $('#code-display p').text('Hover over code snippet on the left to learn more.');
   });
 
-  // Sidebar nav
-  // $('#sidenav').each(function() {
-  //   var inview = new Waypoint.Inview({
-  //     element: $(this)[0],
-  //     enter: function(direction) {
-  //       //window.console.log('Enter triggered with direction ' + direction);
-  //     },
-  //     entered: function(direction) {
-  //       window.console.log('Entered triggered with direction ' + direction);
-  //       $(this.element).removeClass('fixed');
-  //     },
-  //     exit: function(direction) {
-  //       //window.console.log('Exit triggered with direction ' + direction);
-  //     },
-  //     exited: function(direction) {
-  //       window.console.log('Exited triggered with direction ' + direction);
-  //       $(this.element).addClass('fixed');
-  //     }
-  //   })
-  // });
-  $('#sidenav i').on('click', function(e) {
+  // TOC: Table of Contents
+  $('.toc-entry').not('.toc-h2').remove();
+  $('.section-nav').addClass('nav');
+  $('#toc').on('activate.bs.scrollspy', function () {
+    // do something…
+  });
+  $('#toc i').on('click', function(e) {
     window.console.log("CLICKED");
     e.preventDefault();
     $(this).parent('li').toggleClass('active');
   });
 
-  // TOC: Table of Contents
-  $('.toc-entry').not('.toc-h2').remove();
-  $('.section-nav').addClass('nav');
-  $('body').scrollspy({
-     offset: 100,
-     target: '#toc'
-  });
-  $('#toc').on('activate.bs.scrollspy', function () {
-    // do something…
-  });
-  // $('#toc i').on('click', function(e) {
-  //   window.console.log("CLICKED");
-  //   e.preventDefault();
-  //   $(this).parent('li').toggleClass('active');
-  // });
-
   // TOC: Add scroll animations
   $('#toc a[href^="#"]').click(function() {
-      var target = $(this.hash),
-          hash = this.hash,
-          offset = 70;
-      if ($('body').hasClass('show_subnav')) { offset = 102; }
-      if (target.length == 0) { target = $('a[name="' + this.hash.substr(1) + '"]'); }
-      if (target.length == 0) { target = $('html'); }
-      $('html, body').animate({ scrollTop: target.offset().top-offset }, 500, function (){
+      var target = $(this.hash);
+      var hash = this.hash;
+      if (target.length == 0) target = $('a[name="' + this.hash.substr(1) + '"]');
+      if (target.length == 0) target = $('html');
+      $('html, body').animate({ scrollTop: target.offset().top-70 }, 500, function (){
           location.hash = hash;
           // Mark as active
           $('a[href^="#"]').parent('li').removeClass('active');
@@ -104,18 +68,12 @@ $(document).on('ready', function(){
       return false;
   });
 
+  // Initiate sticky behaviour
+  $("#toc").stickit({
+    top: 70
+  });
+
   // Initiate Popovers
   $('[data-toggle="popover"], .dart-popover').popover()
-
-  // open - close mobile navigation
-  $('.menu-toggle').on('click', function(e) {
-    e.stopPropagation();
-    $("body").toggleClass('open-menu');
-  });
-  $("#page-content").on('click', function() {
-    if ($('body').hasClass('open-menu')) {
-      $('body').removeClass("open-menu");
-    }
-  });
 
 });

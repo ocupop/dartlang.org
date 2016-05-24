@@ -9,6 +9,8 @@ toc: true
 
 {% include breadcrumbs.html %}
 
+# {{ page.title }}
+
 Every [pub](/tools/pub/) package needs some metadata so it can specify its
 [dependencies](glossary#dependency). Pub packages that are shared with
 others also need to provide some other information so users can discover them.

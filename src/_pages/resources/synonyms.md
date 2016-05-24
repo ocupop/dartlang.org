@@ -6,7 +6,6 @@ permalink: /resources/synonyms/
 title: "Synonyms - Dart, JavaScript, C#, Python"
 description: "Dart idioms and snippets translated to JavaScript, Python, and C#."
 snippet_img: images/dart-synonym-screenshot.png
-toc: true
 ---
 
 <div class="synonym">

@@ -8,6 +8,8 @@ description: "Communities, mailing lists, and bug databases for the Dart project
 toc: true
 ---
 
+# {{ page.title }}
+
 Track the Dart project and join the conversation in a variety of ways.
 
 ## Join the conversation

@@ -25,6 +25,8 @@ tutorial:
   id: dart-io
 ---
 
+# {{page.title}}
+
 ### An introduction to standalone apps
 
 This tutorial teaches you how to build command-line apps

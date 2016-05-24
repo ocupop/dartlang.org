@@ -1,10 +1,10 @@
 ---
+layout: page
 title: "Guides"
 description: "Read about the Dart language and tools with this collection of guides."
-toc: true
+toc: false
 ---
 
-* [Get Started](/guides/get-started)
-* [Language Tour](/guides/language-tour)
-* [Library Tour](/guides/library-tour)
+# {{ page.title }}
+
 * [Effective Dart](/guides/effective-dart/)

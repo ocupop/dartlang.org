@@ -3,7 +3,6 @@ layout: page
 title: "Index of Downloads"
 description: "Download specific stable and dev channel versions of the Dart SDK, Dartium, and the Dart API documentation."
 permalink: /dart-vm/downloads/archive/
-toc: true
 
 js:
 - url: out/web/download_archive.dart.js
@@ -15,6 +14,8 @@ css:
 ---
 
 {% include breadcrumbs.html %}
+
+# {{page.title}}
 
 Use this index to download specific versions of the
 [Dart SDK]({{site.dart_vm}}/tools/sdk),
