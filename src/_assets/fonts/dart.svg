@@ -7,6 +7,6 @@
 <font-face units-per-em="1024" ascent="960" descent="-64" />
 <missing-glyph horiz-adv-x="1024" />
 <glyph unicode="&#x20;" horiz-adv-x="512" d="" />
-<glyph unicode="&#xe900;" glyph-name="caret-up" horiz-adv-x="1312" d="M1311.2 154.912l-655.584 661.472-655.584-661.472z" />
+<glyph unicode="&#xe900;" glyph-name="arrow" d="M405.2 800.8l-44-45.2 288.4-296-285.6-277.6c0-0.4-0.4-0.8-1.2-1.6v-0.4l-9.6-9.2 45.2-43.2 329.2 320.4c0.4 0.4 0.8 1.2 0.8 1.6l10.4 9.6-16 15.6-306 314.8c-0.4 0.4-1.2 1.2-2 1.6l-9.6 9.6z" />
 <glyph unicode="&#xe901;" glyph-name="menu" horiz-adv-x="1440" d="M0 519.456h1428.832v-142.88h-1428.832v142.88zM0 78.88h1428.832v-142.88h-1428.832v142.88zM0 960h1428.832v-142.88h-1428.832v142.88z" />
 </font></defs></svg>

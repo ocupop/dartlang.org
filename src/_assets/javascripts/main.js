@@ -1,9 +1,18 @@
 //= require vendor/jquery-1.12.3.min
 //= require bootstrap
+//= require _plugins
 //= require vendor/code-prettify/prettify
 //= require vendor/code-prettify/lang-dart
 //= require vendor/code-prettify/lang-yaml
 
+
+function fixNav() {
+  var t = $(document).scrollTop(),
+      f = $("#page-footer").offset().top,
+      h = window.innerHeight,
+      mh = f - t - 90;
+  $("#sidenav, #toc").css({maxHeight: mh});
+}
 
 // Add scroll on page load for hash
 $(window).on('load', function (e){
@@ -22,8 +31,8 @@ $(window).on('load', function (e){
 
 // When a user scrolls to 50px add class  condensed-header to body
 $(window).scroll(function(){
-  var currentScreenPosition  = $(document).scrollTop();
-
+  fixNav();
+  var currentScreenPosition = $(document).scrollTop();
   if(currentScreenPosition > 50) {
     $('body').addClass('condensed_header');
   } else {
@@ -43,6 +52,7 @@ $(document).on('ready', function(){
     $('#code-display p').text('Hover over code snippet on the left to learn more.');
   });
 
+  // Sidenav
   $('#sidenav i').on('click', function(e) {
     window.console.log("CLICKED");
     e.preventDefault();
@@ -52,20 +62,16 @@ $(document).on('ready', function(){
   // TOC: Table of Contents
   $('.toc-entry').not('.toc-h2').remove();
   $('.section-nav').addClass('nav').css({opacity: 1});
+
   $('body').scrollspy({
      offset: 100,
      target: '#toc'
   });
+
   $('#toc').on('activate.bs.scrollspy', function () {
     // do something…
   });
-  // $('#toc i').on('click', function(e) {
-  //   window.console.log("CLICKED");
-  //   e.preventDefault();
-  //   $(this).parent('li').toggleClass('active');
-  // });
 
-  // TOC: Add scroll animations
   $('#toc a[href^="#"]').click(function() {
       var target = $(this.hash),
           hash = this.hash,
@@ -82,7 +88,7 @@ $(document).on('ready', function(){
       return false;
   });
 
-  // Initiate Popovers
+  // Popovers
   $('[data-toggle="popover"], .dart-popover').popover()
 
   // open - close mobile navigation
@@ -96,4 +102,7 @@ $(document).on('ready', function(){
     }
   });
 
+  $(window).smartresize(fixNav());
+
 });
+

@@ -13,7 +13,7 @@
         <a href="{{ link.permalink }}" title="{{ link.title }}">
           {% if link.label %}{{ link.label }}{% else %}{{ link.title }}{% endif %}
         </a>
-        <i class="icon icon-caret-up"></i>
+        <i class="icon icon-arrow"></i>
         <ul>
           {% for child in link.children %}
             <li {% if page.url contains child.permalink %}class="active"{% endif %}>

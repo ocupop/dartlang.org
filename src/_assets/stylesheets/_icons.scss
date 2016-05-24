@@ -1,6 +1,6 @@
 $icomoon-font-path: "fonts" !default;
 
-$icon-caret-up: "\e900";
+$icon-arrow: "\e900";
 $icon-menu: "\e901";
 
 @font-face {
@@ -29,9 +29,9 @@ i {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-caret-up {
+.icon-arrow {
     &:before {
-        content: $icon-caret-up;
+        content: $icon-arrow;
     }
 }
 .icon-menu {

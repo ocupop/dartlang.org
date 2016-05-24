@@ -6,9 +6,10 @@ layout: compress
   {% include head.html %}
   <body class="{% include class.html %}">
     {% include page-header.html %}
-    <main id="page">
+    <main id="page-content">
       {% include navigation-side.html %}
-      <div id="page-content">
+      {% include navigation-toc.html %}
+      <article>
         <header class="page-header">
           {% include breadcrumbs.html %}
           <h1>{{ page.title }}</h1>
@@ -17,8 +18,7 @@ layout: compress
         <div class="content">
           {{ content | inject_anchors }}
         </div>
-      </div>
-      {% include navigation-toc.html %}
+      </article>
     </main>
     {% include page-footer.html %}
   </body>

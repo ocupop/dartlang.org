@@ -67,7 +67,7 @@ form {
   }
   &:after {
     font-family: 'dart' !important;
-    content: $icon-caret-up;
+    content: $icon-arrow;
     display: block;
     position: absolute;
     right: 15px;
@@ -146,9 +146,7 @@ img {
   ----------------------------------------- */
 
 // Structure
-#page {
-  margin-top: 80px;
-}
+
 #page-header {
   position: fixed;
   width: 100%;
@@ -159,7 +157,14 @@ img {
   z-index: 1030;
 }
 #page-content {
-  margin: 80px 320px 50px 320px;
+  position: relative;
+  margin-top: 70px;
+  padding: 20px;
+  min-height: calc(100vh - 420px);
+  > article {
+    width: calc(100vw - 590px);
+    margin-left: 300px;
+  }
 }
 #page-footer {
   position: relative;
@@ -284,36 +289,17 @@ img {
 #footernav {}
 
 #sidenav {
-  position: absolute;
+  position: relative;
   width: 280px;
-  height: 100%;
-  top: 70px;
-  left: 0;
-  border-right: 1px solid $grey;
-  background-color: #ffffff;
-  overflow: hidden;
-  z-index: 1;
-  &.fixed {
-    display: none;
-    position: fixed;
-    height: 100%;
-    overflow-y: auto;
-    .content {
-      padding-bottom: 400px;
-    }
-  }
-  &.open {
-    display: block;
-  }
+  margin-right: 20px;
+  float: left;
+  overflow-x: hidden;
+  overflow-y: auto;
   .content {
-    padding-left: 30px;
     h4 {
       font-size: 18px;
-      line-height: 25px;
       text-transform: uppercase;
-      border-bottom: 1px solid $grey;
       a {
-        display: block;
         color: $grey-dark;
         &:hover, &:focus, &:active {
           color: $grey-dark;
@@ -322,28 +308,20 @@ img {
     }
     ul {
       padding: 0;
-      margin-top: 0;
+      margin: 0;
       list-style: none;
       li {
         position: relative;
-        font-weight: 700;
-        a {
-          font-weight: 700;
-          color: $grey-dark;
-        }
+        line-height: 25px;
         i {
-          position: relative;
           display: inline-block;
-          transform: rotate(90deg);
-          font-size: 9px;
-          top: -2px;
-          line-height: inherit;
-          opacity: 0.5;
-          color: $grey-dark;
+          margin-left: 4px;
+          font-size: 10px;
           cursor: pointer;
+          transform-origin: center;
           @include transition();
           &:hover {
-            opacity: 1;
+            transform: rotate(90deg);
           }
         }
         ul {
@@ -352,7 +330,7 @@ img {
           opacity: 0;
           @include transition(0.5s);
           li {
-            padding-left: 10px;
+            padding-left: 15px;
             a {
               font-weight: 300;
             }
@@ -363,9 +341,8 @@ img {
             color: $blue;
           }
           i {
-            transform: rotate(180deg);
-            top: -3px;
-            opacity: 1;
+            cursor: pointer;
+            transform: rotate(-90deg);
           }
           > ul {
             display: block;
@@ -376,18 +353,23 @@ img {
       }
     }
   }
+  &::-webkit-scrollbar {
+    height: 4px;
+    width: 4px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.26);
+  }
 }
 #toc {
   position: fixed;
-  width: 250px;
-  height: 100%;
-  top: 70px;
-  right: 0;
-  border-left: 1px solid $grey;
+  width: 225px;
+  right: 20px;
+  overflow-x: hidden;
   overflow-y: auto;
-  z-index: 1;
+  z-index: 10000;
   .content {
-    padding: 20px 0;
+    padding: 0;
   }
   .section-nav {
     opacity: 0;
@@ -395,16 +377,25 @@ img {
   }
   .nav {
     li {
+      border-left: 3px solid $gray-lighter;
       a {
         padding: 5px 15px;
         color: $grey-dark;
       }
       &.active {
+        border-left: 3px solid $brand-primary;
         a {
           color: $blue;
         }
       }
     }
+  }
+  &::-webkit-scrollbar {
+    height: 4px;
+    width: 4px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.26);
   }
 }
 
@@ -747,8 +738,10 @@ body.condensed_header {
       }
     }
   }
-  #sidenav, #toc {
-    top: 35px;
+  #sidenav {
+    position: fixed;
+    top: 75px;
+    left: 20px;
   }
 }
 /* -----------------------------------------
