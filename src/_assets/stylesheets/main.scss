@@ -25,7 +25,7 @@ section {
 h1, h2, h3, h4, h5, h6 {
  font-family: $font-family-base;
  font-weight: 700;
- color: $grey-dark;
+ color: $gray-dark;
 }
 
 h1, .h1 { font-size: $font-size-h1;}
@@ -49,7 +49,7 @@ form {
 
   .muted {
     font-size: 75%;
-    color: $grey-light;
+    color: $gray-light;
     text-indent: 0;
     padding: 10px;
   }
@@ -79,7 +79,7 @@ form {
     text-transform: none;
     line-height: 1;
     font-size: 9px;
-    color: $grey-dark;
+    color: $gray-dark;
     transform: rotate(180deg);
     pointer-events: none;
     @include transition();
@@ -88,8 +88,6 @@ form {
 input, select {
   line-height: 32px;
   height: 32px;
-  // text-indent: 15px;
-  // width: 100%;
   margin: 4px 0;
   padding: 0 10px;
   border: none;
@@ -97,8 +95,8 @@ input, select {
   text-transform: uppercase;
   font-size: 13px;
   cursor: pointer;
-  background-color: $grey-light;
-  color: $grey-dark;
+  background-color: $gray-light;
+  color: $gray-dark;
   &:focus, &:active {
     outline-color: $blue;
   } 
@@ -106,7 +104,7 @@ input, select {
 
 pre {
   padding: $content-padding;
-  background-color: $grey-light;
+  background-color: $gray-light;
   color: $blue;
   position: relative;
   border: none;
@@ -150,17 +148,17 @@ img {
 #page-header {
   position: fixed;
   width: 100%;
-  height: auto;
   top: 0;
   left: 0;
-  background-color: $grey-light;
+  right: 0;
+  background-color: $gray-light;
   z-index: 1030;
 }
 #page-content {
   position: relative;
   margin-top: 70px;
   padding: 20px;
-  min-height: calc(100vh - 420px);
+  min-height: calc(100vh - 385px);
   > article {
     width: calc(100vw - 525px);
     margin-left: 250px;
@@ -170,20 +168,14 @@ img {
   position: relative;
   color: $white;
   font-weight: 300;
-  background-color: $grey-dark;
+  background-color: $gray-dark;
   z-index: 5;
   .brand {
-   height: 30px;
-   width: 120px;
-   margin-top: 20px;
-   margin-bottom: 20px;
-   img {
-    margin: 0;
-   }
+    width: 120px;
   }
   small {
-   display: block;
-   padding-right: 25px;
+    display: block;
+    padding-right: 25px;
   }
   h4 {
     color: #fff;
@@ -198,7 +190,7 @@ img {
         color: #ffffff;
         line-height: 16px;
         &:hover, &:focus, &:active {
-          color: $grey-lighter;
+          color: $gray-lighter;
         }
       }
     }
@@ -206,64 +198,73 @@ img {
 }
 
 // Navigation
+#menu-toggle {
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  display: none;
+  line-height: 70px;
+  margin-left: 20px;
+  padding-right: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 9999;
+  background-color: $gray-light;
+  @include transition();
+}
 #mainnav {
-  nav {
+  display: flex;
+  @include transition(0.5s);
+  ul {
+    margin: auto;
+    margin-right: 0;
+    padding: 0;
+    list-style: none;
     display: flex;
-    @include transition(0.5s);
-    .brand {
-      display: inline-block;
-      margin-left: 20px;
-      line-height: 50px;
-      font-size: 30px;
-      font-weight: 900;
-      color: $grey-dark;
-      img {
-        height: 30px;
-        margin: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    li {
+      margin: auto 15px;
+      a {
+        display: inline-block;
+        padding: 0;
+        font-size: 18px;
+        line-height: 70px;
+        color: $gray-dark;
         @include transition(0.5s);
+        &:hover {
+          color: $blue;
+        }
       }
-    }
-    ul {
-      margin: auto;
-      margin-right: 0;
-      padding: 0;
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: flex-end;
-      li {
-        margin: auto 15px;
+      &.active {
         a {
-          display: inline-block;
-          padding: 0;
-          font-size: 16px;
-          color: $grey-dark;
-          // pointer-events: all;
+          color: darken($gray-light, 15%);
+          cursor: default;
           &:hover {
-            color: $blue;
-          }
-        }
-        &.active {
-          a {
-            color: darken($grey-light, 15%);
-            cursor: default;
-            &:hover {
-              color: darken($grey-light, 15%);
-            }
+            color: darken($gray-light, 15%);
           }
         }
       }
-      &.drawer {
-        display: none;
+      &.searchfield {
+        line-height: 70px;
       }
     }
+  }
+  .brand {
+    display: block;
+    float: left;
+    width: 120px;
+    margin: 0 20px;
+    overflow: hidden;
+    line-height: 70px;
+    @include transition(0.5s);
   }
 }
 #subnav {
   height: 32px;
   line-height: 32px;
-  background: $grey-dark;
+  background: $gray-dark;
   color: $white;
   ul {
     margin: 0;
@@ -299,9 +300,9 @@ img {
       font-size: 18px;
       text-transform: uppercase;
       a {
-        color: $grey-dark;
+        color: $gray-dark;
         &:hover, &:focus, &:active {
-          color: $grey-dark;
+          color: $gray-dark;
         }
       }
     }
@@ -352,6 +353,15 @@ img {
       }
     }
   }
+  .brand {
+    display: none;
+    border-bottom: 1px solid $gray-light;
+    margin-top: -5px;
+    img {
+      width: 100px;
+      margin-bottom: 10px;
+    }
+  }
   &::-webkit-scrollbar {
     height: 4px;
     width: 4px;
@@ -379,7 +389,7 @@ img {
       border-left: 3px solid $gray-lighter;
       a {
         padding: 5px 15px;
-        color: $grey-dark;
+        color: $gray-dark;
       }
       &.active {
         border-left: 3px solid $brand-primary;
@@ -400,7 +410,7 @@ img {
 
 #code-display {
   padding: $content-padding;
-  border: 1px solid $grey;
+  border: 1px solid $gray;
   height: 100%;
   min-height: 105px;
 }
@@ -413,8 +423,8 @@ img {
 #run-dartpad {
   position: relative;
   padding: 15px 0;
-  background: $grey-light;
-  border-top: 1px solid $grey;
+  background: $gray-light;
+  border-top: 1px solid $gray;
   z-index: 5;
 }
 
@@ -439,7 +449,7 @@ img {
   position: absolute;
   right: 5px;
   top: 0;
-  color: $grey-dark;
+  color: $gray-dark;
   font-size: 14px;
 }
 
@@ -526,23 +536,6 @@ img {
  }
 }
 
-.menu-toggle {
-  display: none;
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  right: auto;
-  line-height: 50px;
-  background-color: transparent;
-  border: none; 
-  color: $grey-dark;
-  cursor: pointer;
-  pointer-events: all;
-  i {
-    font-size: 20px;
-  }
-}
-
 
 .card-grid {
   display: flex;
@@ -562,7 +555,7 @@ img {
   margin: 15px;
   overflow: hidden;
   box-sizing: border-box;
-  background-color: $grey-light;
+  background-color: $gray-light;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.21);
   text-align: center;
   h1, h2, h3, h4, h5, h6 {
@@ -572,18 +565,18 @@ img {
 
 
 // Color Palette
-.grey-dark {
- background-color: $grey-dark;
+.gray-dark {
+ background-color: $gray-dark;
  color: $white;
  h1, h2, h3, h4, h5, h6 {
    color: $white;
  }
 }
-.grey-light {
- background-color: $grey-light;
- color: $grey-dark;
+.gray-light {
+ background-color: $gray-light;
+ color: $gray-dark;
  h1, h2, h3, h4, h5, h6 {
-   color: $grey-dark;
+   color: $gray-dark;
  }
 }
 
@@ -620,12 +613,13 @@ img {
   margin: 0;
   margin-bottom: 10px;
   padding: $content-padding;
+  border-bottom: 1px solid $gray;
   h1, h2 {
     font-size: 36px;
   }
 }
 .panel {
-  background-color: $grey-dark;
+  background-color: $gray-dark;
   color: $white;
   padding: $content-padding;
   margin-bottom: 20px;
@@ -675,7 +669,7 @@ img {
   }
   &.alert-obsolete {
     width: auto;
-    background-color: $grey-dark;
+    background-color: $gray-dark;
     color: $white;
   }
 }
@@ -687,13 +681,8 @@ img {
 // Homepage
 
 body.homepage {
-  #sidebar {
-    display: none;
-  }
-  main {
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0;
+  #page-content {
+    padding: 0;
   }
   pre.prettyprint {
    margin-top: 0;
@@ -704,10 +693,14 @@ body.homepage {
 
 // Page States
 body.hide_toc {
-  #page-content { margin-right: 20px; }
+  #page-content { 
+    > article {
+      width: calc(100vw - 300px);
+    }
+  }
   #toc {
     display: none;
-    right: -300px;
+    right: -250px;
   }
 }
 body.hide_sidebar {
@@ -728,13 +721,25 @@ body.show_subnav {
   }
 }
 body.condensed_header {
-  .menu-toggle { line-height: 35px; }
+  #menu-toggle {
+    line-height: 50px;
+    padding-right: 5px;
+  }
   #mainnav {
-    .brand {
-      img {
-        height: 20px;
-        margin-top: 5px;
+    ul {
+      li {
+        a {
+          line-height: 50px;
+          font-size: 16px;
+        }
+        &.searchfield {
+          line-height: 50px;
+        }
       }
+    }
+    .brand {
+      width: 85px;
+      line-height: 50px;
     }
   }
   #sidenav {
@@ -753,42 +758,48 @@ body.condensed_header {
   }
   #page-content {
     > article {
-      width: calc(100vw - 250px);
+      width: calc(100vw - 270px);
     }
   }
 }
 
 @media(max-width: 1024px) {
   #mainnav {
-    nav {
-      .brand {
-        margin: 0 auto;
-        img {
-          margin: 3px 0;
-        }
-      }
-      ul {
-        display: none;
-      }
+    .brand {
+      // margin: -5px 10px 0 10px;
     }
   }
-  .menu-toggle {
-    display: block;
-    .sr {
-      position:absolute;
-      left: -999px;
+  #menu-toggle {
+    display: inline-block;
+  }
+  #page-content {
+    > article {
+      width: calc(100vw - 40px);
+      margin: 0 auto;
+    }
+  }
+
+  #sidenav {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: calc(100vw - 64px);
+    max-width: 290px;
+    height: 100%;
+    max-height: none !important;
+    background: #fff;
+    z-index: 9999;
+    box-shadow: 0 0 4px rgba(0,0,0,.14),0 4px 8px rgba(0,0,0,.28);
+    @include transition(left, .5s);
+    .brand {
+      display: block;
+    }
+  }
+  body.condensed_header {
+    #sidenav {
+      left: -300px;
       top: 0;
     }
-  }
-  #sidebar {
-    width:300px;
-    top: 40px;
-    left: -300px;
-    z-index: 100;
-    @include transition(left, .5s);
-  }
-  main {
-    margin: 50px auto;
   }
   body.open-menu {
     &:before {
@@ -798,20 +809,48 @@ body.condensed_header {
       top: 0; bottom: 0;
       left: 0; right: 0;
       height: 100%;
-      z-index: 1;
-      background-color: rgba(0,0,0,0.7);
+      z-index: 999;
+      background-color: rgba($gray-base,0.5);
+      cursor: pointer;
       pointer-events: none;
-      @include transition();
+      @include transition(0.5s);
     }
-    #sidebar {
+    #sidenav {
       left: 0;
     }
   }
 }
 
+@media(max-width: 960px) {
+  #mainnav {
+    ul {
+      li {
+        display: none;
+        &.searchfield {
+          display: block;
+        }
+      }
+    }
+  }
+}
 
 @media(max-width: 600px) {
   .card {
     width: 100%;
+  }
+}
+
+@media(max-width: 479px) {
+  // #search {
+  //   width: 195px;
+  // }
+  #mainnav {
+    ul {
+      li {
+        &.searchfield {
+          display: none;
+        }
+      }
+    }
   }
 }

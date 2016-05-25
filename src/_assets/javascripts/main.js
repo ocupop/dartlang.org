@@ -92,10 +92,11 @@ $(document).on('ready', function(){
   $('[data-toggle="popover"], .dart-popover').popover()
 
   // open - close mobile navigation
-  $('.menu-toggle').on('click', function(e) {
+  $('#menu-toggle').on('click', function(e) {
     e.stopPropagation();
     $("body").toggleClass('open-menu');
   });
+
   $("#page-content").on('click', function() {
     if ($('body').hasClass('open-menu')) {
       $('body').removeClass("open-menu");
