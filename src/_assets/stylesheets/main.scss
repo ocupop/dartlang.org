@@ -841,9 +841,11 @@ body.condensed_header {
 }
 
 @media(max-width: 479px) {
-  // #search {
-  //   width: 195px;
-  // }
+  #menu-toggle {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+  }
   #mainnav {
     ul {
       li {
