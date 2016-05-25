@@ -4,6 +4,8 @@ title: Get Started
 description: "xxx"
 ---
 
+# {{ page.title }}
+
 How do you learn Dart?
 
 This site is the place for learning the Dart language,
@@ -27,7 +29,7 @@ src="{{site.custom.dartpad.embed-dart-prefix}}?horizontalRatio=99&verticalRatio=
 
 Note that DartPad does not allow you to import packages,
 such as dart:io. If you want that level of control, you'll need
-to install an SDK.
+to download an SDK.
 
 ## Choose your path
 
@@ -49,19 +51,19 @@ A command line application? A server?
 An app to control a thermostat or some other device from the Internet of Things (IoT)?
 : Check out [Dartino](https://github.com/dartino).
 
-## Install
+## Download
 
-Once you're ready to go beyond DartPad, you'll need to install
+Once you're ready to go beyond DartPad, you'll need to download
 an SDK and tools for the platform where you want to code.
 
 * For Dart on the web,
-  install the [Dart SDK and Dartium]({{site.dart_vm}}/downloads/).
+  download the [Dart SDK and Dartium]({{site.dart_vm}}/downloads/).
 * For standalone applications, like servers and scripts,
-  install the [Dart SDK]({{site.dart_vm}}/downloads/).
+  download the [Dart SDK]({{site.dart_vm}}/downloads/).
 * For Dart on mobile,
-  install [Flutter](https://flutter.io/).
+  download [Flutter](https://flutter.io/).
 * For embedded Dart,
-  install [Dartino](https://github.com/dartino).
+  download [Dartino](https://github.com/dartino).
 
 ## Choose your IDE
 

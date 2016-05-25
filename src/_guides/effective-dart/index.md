@@ -10,6 +10,8 @@ nextpage:
   title: "Style"
 ---
 
+# {{ page.title }}
+
 Over the past several years, we've written a ton of Dart code and learned a lot
 about what works well and what doesn't. We're sharing this with you so you can
 write consistent, robust, fast code too.

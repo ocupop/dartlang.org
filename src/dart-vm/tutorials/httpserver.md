@@ -22,6 +22,8 @@ header:
   css: ["httpserver.css"]
 ---
 
+# {{page.title}}
+
 ### Communicate over the internet
 
 <aside class="alert alert-info" markdown="1">

@@ -8,6 +8,10 @@ description: "Use Dart with a variety of IDEs and editors from JetBrains."
 
 ---
 
+{% include breadcrumbs.html %}
+
+# {{ page.title }}
+
 The Dart plugin adds Dart support to JetBrains IDEs such as
 WebStorm and IntelliJ IDEA.
 WebStorm is an IDE for client-side development.

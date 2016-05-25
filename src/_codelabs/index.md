@@ -1,6 +1,7 @@
 ---
-reference:
+reference: 
 
+layout: page
 permalink: /codelabs/
 title:
 description:

@@ -6,6 +6,8 @@ title: "A Tour of the Dart Libraries"
 description: "Learn about the major features in Dart's libraries."
 ---
 
+# {{ page.title }}
+
 This chapter shows you how to use the major features in Dart’s
 libraries. It’s just an overview, and by no means comprehensive.
 Whenever you need more details about a class, consult the [Dart API

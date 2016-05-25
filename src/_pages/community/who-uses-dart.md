@@ -9,6 +9,8 @@ description: 'Companies and business that use Dart.'
 snippet_img: images/who-uses-dart.png
 ---
 
+# {{ page.title }}
+
 In no particular order, here are some companies and businesses that use Dart.
 If you build production software with Dart, and want
 to be included in this list, please open a

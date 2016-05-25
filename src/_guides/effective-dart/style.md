@@ -13,6 +13,8 @@ prevpage:
   title: "Overview"
 ---
 
+# {{ page.title }}
+
 A surprisingly important part of good code is good style. Consistent naming,
 ordering, and formatting helps code that *is* the same *look* the same. It takes
 advantage of the powerful pattern-matching hardware most of us have in our
@@ -90,8 +92,8 @@ symbolic imports.
 {% prettify dart %}
 library peg_parser.source_scanner;
 
-import 'slider_menu.dart';
-import 'file_system.dart';
+import 'slider_menu.dart'
+import 'file_system.dart'
 {% endprettify %}
 </div>
 
@@ -99,8 +101,8 @@ import 'file_system.dart';
 {% prettify dart %}
 library pegparser.SourceScanner;
 
-import 'SliderMenu.dart';
-import 'file-system.dart';
+import 'SliderMenu.dart'
+import 'file-system.dart'
 {% endprettify %}
 </div>
 
@@ -596,9 +598,9 @@ someVeryLongVariable.withAVeryLongProperty
 <div class="good">
 {% prettify dart %}
 MyClass()
-    : firstField = 'some value',
-      secondField = 'another',
-      thirdField = 'last' {
+    : firstField = "some value",
+      secondField = "another",
+      thirdField = "last" {
   // ...
 }
 {% endprettify %}
@@ -669,9 +671,9 @@ switch (fruit) {
 <div class="good">
 {% prettify dart %}
 buffer
-  ..write('Hello, ')
+  ..write("Hello, ")
   ..write(name)
-  ..write('!');
+  ..write("!");
 {% endprettify %}
 </div>
 
@@ -704,9 +706,9 @@ new Future.delayed(const Duration(seconds: 1), () {
 });
 
 args.addAll([
-  '--mode',
-  'release',
-  '--checked'
+  "--mode",
+  "release",
+  "--checked"
 ]);
 {% endprettify %}
 </div>

@@ -1,11 +1,11 @@
 ---
 reference: "https://www.dartlang.org/docs/tutorials/"
 
-layout: default
+layout: page
 title: "Dart VM Tutorials"
 description: "The Dart VM Tutorials&mdash;Your guide to building great apps."
 permalink: /dart-vm/tutorials/
-
+toc: false
 
 nextpage:
   url: get-started

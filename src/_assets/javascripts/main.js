@@ -4,6 +4,7 @@
 //= require vendor/code-prettify/prettify
 //= require vendor/code-prettify/lang-dart
 //= require vendor/code-prettify/lang-yaml
+//= require vendor/jquery.stickit.min
 
 
 function fixNav() {
@@ -16,12 +17,9 @@ function fixNav() {
 
 // Add scroll on page load for hash
 $(window).on('load', function (e){
-  // window.scrollTo(0, 0);
+  window.scrollTo(0, 0);
   if (window.location.hash) {
-    var offset = 70;
-    if ($('body').hasClass('show_subnav')) { offset = 102; }
-
-    $('html, body').animate({ scrollTop: $(window.location.hash).offset().top-offset }, 500, function (){
+    $('html, body').animate({ scrollTop: $(window.location.hash).offset().top-70 }, 500, function (){
       // Mark as active
         $('a[href^="#"]').parent('li').removeClass('active');
         $('a[href="'+window.location.hash+'"]').parent('li').addClass('active');
@@ -34,9 +32,9 @@ $(window).scroll(function(){
   fixNav();
   var currentScreenPosition = $(document).scrollTop();
   if(currentScreenPosition > 50) {
-    $('body').addClass('condensed_header');
+    $('#page-header').addClass('condensed');
   } else {
-    $('body').removeClass('condensed_header');
+    $('#page-header').removeClass('condensed');
   }
 });
 
@@ -73,13 +71,11 @@ $(document).on('ready', function(){
   });
 
   $('#toc a[href^="#"]').click(function() {
-      var target = $(this.hash),
-          hash = this.hash,
-          offset = 70;
-      if ($('body').hasClass('show_subnav')) { offset = 102; }
-      if (target.length == 0) { target = $('a[name="' + this.hash.substr(1) + '"]'); }
-      if (target.length == 0) { target = $('html'); }
-      $('html, body').animate({ scrollTop: target.offset().top-offset }, 500, function (){
+      var target = $(this.hash);
+      var hash = this.hash;
+      if (target.length == 0) target = $('a[name="' + this.hash.substr(1) + '"]');
+      if (target.length == 0) target = $('html');
+      $('html, body').animate({ scrollTop: target.offset().top-70 }, 500, function (){
           location.hash = hash;
       });
       // Mark as active
@@ -87,7 +83,7 @@ $(document).on('ready', function(){
       $(this).parent('li').addClass('active');
       return false;
   });
-
+  
   // Popovers
   $('[data-toggle="popover"], .dart-popover').popover()
 

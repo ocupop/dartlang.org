@@ -11,6 +11,8 @@ comfortable with reading Dart code."
 snippet_img: //i.ytimg.com/vi/g09UVKyYfIs/0.jpg
 ---
 
+# {{ page.title }}
+
 <iframe class="dart-tips-video" src="//www.youtube.com/embed/g09UVKyYfIs"
 frameborder="0" allowfullscreen></iframe>
 

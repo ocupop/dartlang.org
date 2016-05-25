@@ -6,6 +6,8 @@ title: "A Tour of the Dart Language"
 description: "A tour of all of the major Dart language features."
 ---
 
+# {{ page.title }}
+
 This chapter shows you how to use each major Dart feature, from
 variables and operators to classes and libraries, with the assumption
 that you already know how to program in another language.
@@ -981,7 +983,7 @@ The following example defines a function, `doStuff()`,
 that specifies a default list for the `list`
 parameter and a default map for the `gifts` parameter.
 The function is called three times with different values.
-Click the run button ( {% img 'run.png' %} )
+Click the run button ( {% img run.png %} )
 to see list and map default values in action.
 
 <!-- ch02/list_map_default_function_parameters.dart -->

@@ -1,15 +1,22 @@
 ---
 reference: "https://www.dartlang.org/articles/"
 
+layout: page
 title: "Articles"
 description: "Read about the Dart language and tools with this collection of articles, style guides, and more."
+toc: false
 ---
 
 <p class="alert alert-danger">
   The plugin used to generate article lists will need to be refactored to account for new configuration.
 </p>
 
+# {{ page.title }}
+
 Read these articles for insight into the Dart language.
+
+See also: <a href="/tutorials/">Dart Tutorials</a> and
+<a href="/guides/effective-dart/">Effective Dart</a>.
 
 ## Language Details
 

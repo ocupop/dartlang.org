@@ -9,6 +9,8 @@ description: "Use pub publish to publish your Dart package to pub.dartlang.org."
 
 
 
+# {{ page.title }}
+
 _Publish_ is one of the commands of the _pub_ tool.
 [Learn more about pub](/tools/pub/).
 

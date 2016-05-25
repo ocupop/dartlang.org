@@ -9,6 +9,8 @@ description: "Dart is optionally typed, so variables can have type annotations. 
 snippet_img: //i.ytimg.com/vi/_td6qXi_GmA/0.jpg
 ---
 
+# {{ page.title }}
+
 <iframe class="dart-tips-video" src="//www.youtube.com/embed/_td6qXi_GmA"
 frameborder="0" allowfullscreen></iframe>
 

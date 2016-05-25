@@ -9,6 +9,8 @@ title: "Frequently Asked Questions about Pub"
 
 
 
+# {{ page.title }}
+
 Here are some frequently asked questions about [pub](/tools/pub/).
 
 ### What are pub's system requirements?

@@ -1,32 +1,12 @@
 - title: Get Started
   label: 
   permalink: /guides/get-started
-- title: Language
+- title: Language Tour
   label: 
-  permalink: /language
-  children:
-    - title: Language Tour
-      label:
-      permalink: /guides/language-tour
-    - title: Language Spec
-      label:
-      permalink: /language/spec
-- title: Libraries
+  permalink: /guides/language-tour
+- title: Library Tour
   label: 
-  permalink: /libraries
-  children:
-    - title: Library Tour
-      label:
-      permalink: /guides/library-tour
-    - title: Install Shared Packages
-      label:
-      permalink: /tutorials/shared-pkgs
-    - title: Creating Library Packages
-      label:
-      permalink: /libraries/create-library-packages
-    - title: What Not to Commit
-      label:
-      permalink: /libraries/private-files
+  permalink: /guides/library-tour
 - title: Effective Dart
   label: 
   permalink: /guides/effective-dart/index

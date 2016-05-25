@@ -9,6 +9,8 @@ title: "Installing and Configuring Pub"
 
 
 
+# {{ page.title }}
+
 [Pub](/tools/pub/) is one of the tools in the
 [Dart SDK]({{site.dart_vm}}/tools/sdk).
 
