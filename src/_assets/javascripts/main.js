@@ -4,8 +4,6 @@
 //= require vendor/code-prettify/prettify
 //= require vendor/code-prettify/lang-dart
 //= require vendor/code-prettify/lang-yaml
-//= require vendor/jquery.stickit.min
-
 
 function fixNav() {
   var t = $(document).scrollTop(),
