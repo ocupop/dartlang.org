@@ -88,12 +88,12 @@ $(document).on('ready', function(){
   // open - close mobile navigation
   $('#menu-toggle').on('click', function(e) {
     e.stopPropagation();
-    $("body").toggleClass('open-menu');
+    $("body").toggleClass('open_menu');
   });
 
   $("#page-content").on('click', function() {
-    if ($('body').hasClass('open-menu')) {
-      $('body').removeClass("open-menu");
+    if ($('body').hasClass('open_menu')) {
+      $('body').removeClass("open_menu");
     }
   });
 
