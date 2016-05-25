@@ -32,9 +32,9 @@ $(window).scroll(function(){
   fixNav();
   var currentScreenPosition = $(document).scrollTop();
   if(currentScreenPosition > 50) {
-    $('#page-header').addClass('condensed');
+    $('body').addClass('condensed_header');
   } else {
-    $('#page-header').removeClass('condensed');
+    $('body').removeClass('condensed_header');
   }
 });
 

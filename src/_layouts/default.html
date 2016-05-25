@@ -10,12 +10,12 @@ layout: compress
       {% include navigation-side.html %}
       {% include navigation-toc.html %}
       <article>
-        <header class="page-header">
+        <div class="content">
+          {% include navigation-sub.html %}
           {% include breadcrumbs.html %}
           <h1>{{ page.title }}</h1>
           <a href="https://github.com/dart-lang/dartlang.org/issues" target="_blank" class="hide">Send feedback</a>
-        </header>
-        <div class="content">
+          <hr>
           {{ content | inject_anchors }}
         </div>
       </article>

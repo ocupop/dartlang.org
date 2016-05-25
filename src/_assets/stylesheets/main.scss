@@ -703,21 +703,17 @@ body.hide_toc {
     right: -250px;
   }
 }
-body.hide_sidebar {
-  #page-content { margin-left: 20px; }
-  #sidenav {
-    display: none;
-    left: -300px;
-  }
-}
+// body.hide_sidenav {
+//   #sidenav {
+//     display: none;
+//     left: -300px;
+//   }
+// }
 
 body.show_subnav {
-  #page {
-    margin-top: 103px;
-  }
-  #sidenav, #toc { top: 102px; }
+  // #sidenav, #toc { top: 102px; }
   &.condensed_header {
-    #sidenav, #toc { top: 82px; }
+    // #sidenav, #toc { top: 82px; }
   }
 }
 body.condensed_header {
@@ -744,7 +740,7 @@ body.condensed_header {
   }
   #sidenav {
     position: fixed;
-    top: 75px;
+    top: 40px;
     left: 20px;
   }
 }
