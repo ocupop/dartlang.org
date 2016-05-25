@@ -298,6 +298,7 @@ img {
   .content {
     h4 {
       font-size: 18px;
+      font-weight: normal;
       text-transform: uppercase;
       a {
         color: $gray-dark;
@@ -351,6 +352,9 @@ img {
           }
         }
       }
+    }
+    & > ul {
+      margin-bottom: 25px;
     }
   }
   .brand {
