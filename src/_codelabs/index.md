@@ -1,7 +1,7 @@
 ---
 reference: 
 
-layout: page
+layout: default
 permalink: /codelabs/
 title:
 description:

@@ -1,7 +1,7 @@
 ---
 reference: "https://www.dartlang.org/articles/"
 
-layout: page
+layout: default
 title: "Articles"
 description: "Read about the Dart language and tools with this collection of articles, style guides, and more."
 toc: false

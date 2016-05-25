@@ -1,7 +1,7 @@
 ---
 reference: "https://www.dartlang.org/downloads/mac.html"
 
-layout: page
+layout: default
 title: "Installing Dart on Mac"
 description: "Installing and updating the Dart SDK on your Mac with homebrew."
 permalink: /dart-vm/downloads/mac
