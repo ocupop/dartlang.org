@@ -1,6 +1,6 @@
 //= require vendor/jquery-1.12.3.min
 //= require bootstrap
-//= require _plugins
+//= require _utilities
 //= require vendor/code-prettify/prettify
 //= require vendor/code-prettify/lang-dart
 //= require vendor/code-prettify/lang-yaml
