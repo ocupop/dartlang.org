@@ -1,9 +1,9 @@
 ---
 reference: "https://www.dartlang.org/dart-by-example/"
-layout: page
+layout: default
 title: Dart by Example
 permalink: /dart-vm/dart-by-example/
-toc: true
+
 header:
   css: ["index.css"]
 ---

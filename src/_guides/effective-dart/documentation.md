@@ -13,8 +13,6 @@ prevpage:
   title: "Style"
 ---
 
-# {{ page.title }}
-
 It's easy to think your code is obvious today without realizing how much you
 rely on context already in your head. People new to your code, and
 even your forgetful future self won't have that context. A concise, accurate

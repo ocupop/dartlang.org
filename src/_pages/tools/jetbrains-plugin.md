@@ -1,11 +1,11 @@
 ---
 reference: "https://www.dartlang.org/tools/jetbrains-plugin/"
 
-layout: page
+layout: default
 permalink: /tools/jetbrains-plugin
 title: "Dart Plugin from JetBrains"
 description: "Use Dart with a variety of IDEs and editors from JetBrains."
-toc: true
+
 ---
 
 {% include breadcrumbs.html %}

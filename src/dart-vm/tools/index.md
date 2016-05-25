@@ -1,6 +1,6 @@
 ---
 reference: "https://www.dartlang.org/dart-vm/articles/"
-layout: page
+layout: default
 title: "Tools"
 description: "xxx."
 permalink: /dart-vm/tools/

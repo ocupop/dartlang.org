@@ -1,7 +1,7 @@
 ---
 reference: "https://www.dartlang.org/dart-tips/dart-tips-ep-7.html"
 
-layout: page
+layout: default
 permalink: /resources/dart-tips/dart-tips-ep-7
 title: "Functions Are Fun, Pt 2 - Dart Tips, Ep 7"
 description: "Functions are true objects in Dart. Watch this video to learn more about nested functions, functions as arguments, and lexical closures. Get ready for more FUNctional tips in Dart!"

@@ -1,11 +1,11 @@
 ---
 reference: "https://www.dartlang.org/tools/pub/transformers/examples/"
 
-layout: page
+layout: default
 title: "Examples of Transformer Code"
 permalink: /tools/pub/transformers/examples
 ---
-{% include breadcrumbs.html %}
+
 
 # {{ page.title }}
 

@@ -1,11 +1,11 @@
 ---
 reference: "https://www.dartlang.org/tools/"
 
-layout: page
+layout: default
 permalink: /tools/
 title: "Dart Tools"
 description: "The tools that support the Dart language."
-toc: true
+
 ---
 
 # {{ page.title }}

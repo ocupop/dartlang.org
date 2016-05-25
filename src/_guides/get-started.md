@@ -1,12 +1,8 @@
 ---
-reference: new page
-
 layout: guide
 title: Get Started
 description: "xxx"
 ---
-
-# {{ page.title }}
 
 How do you learn Dart?
 

@@ -1,13 +1,13 @@
 ---
 reference: "https://www.dartlang.org/tools/pub/create-library-packages.html"
 
-layout: page
+layout: default
 permalink: /libraries/create-library-packages
 title: "Creating Library Packages"
-toc: true
+
 ---
 
-{% include breadcrumbs.html %}
+
 
 # {{ page.title }}
 

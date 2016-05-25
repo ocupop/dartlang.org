@@ -1,12 +1,11 @@
 ---
 reference: new page
-layout: page
+layout: default
 permalink: /dart-vm/
 title: Dart VM
 description:
----
 
-# {{ page.title }}
+---
 
 Are you writing standalone Dart scripts or server apps?
 These pages have the information you need to develop

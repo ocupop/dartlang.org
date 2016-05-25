@@ -1,13 +1,13 @@
 ---
 reference: "https://www.dartlang.org/tools/pub/cmd/pub-cache.html"
 
-layout: page
+layout: default
 permalink: /tools/pub/cmd/pub-cache
 title: "pub cache"
 description: "Use pub cache to manage your system cache."
 ---
 
-{% include breadcrumbs.html %}
+
 
 # {{ page.title }}
 

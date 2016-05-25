@@ -1,13 +1,13 @@
 ---
 reference: "https://www.dartlang.org/tools/pub/package-layout.html"
 
-layout: page
+layout: default
 permalink: /tools/pub/package-layout
 title: "Pub Package Layout Conventions"
-toc: true
+
 ---
 
-{% include breadcrumbs.html %}
+
 
 # {{ page.title }}
 

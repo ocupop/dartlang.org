@@ -1,20 +1,17 @@
 ---
 reference: "https://www.dartlang.org/tools/faq.html"
 
-layout: page
+layout: default
 permalink: /resources/faq
 title: "Tools FAQ"
 short-title: "FAQ"
 description: "FAQ and other tips for using Dart Tools."
+
 ---
 
 {% comment %}
 This needs updating...
 {% endcomment %}
-
-{% include breadcrumbs.html %}
-
-# {{ page.title }}
 
 I am having trouble running the Linux distribution of Dart on my Linux platform.
 : Some flavors of Linux require that you manually build the Dart SDK.

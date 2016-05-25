@@ -1,13 +1,13 @@
 ---
 reference: "https://www.dartlang.org/tools/pub/cmd/pub-get.html"
 
-layout: page
+layout: default
 permalink: /tools/pub/cmd/pub-get
 title: "pub get"
 description: "Use pub get to retrieve the dependencies used by your Dart application."
 ---
 
-{% include breadcrumbs.html %}
+
 
 # {{ page.title }}
 

@@ -13,8 +13,6 @@ prevpage:
   title: "Design"
 ---
 
-# {{ page.title }}
-
 This is the most "blue-collar" guide in Effective Dart. You'll apply the
 guidelines here every day in the bodies of your Dart code. *Users* of your
 library may not be able to tell that you've internalized the ideas here, but

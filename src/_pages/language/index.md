@@ -1,7 +1,7 @@
 ---
 reference: new page
 
-layout: page
+layout: default
 permalink: /language/
 toc: true
 ---

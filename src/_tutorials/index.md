@@ -1,7 +1,7 @@
 ---
 reference: "https://www.dartlang.org/docs/tutorials/"
 
-layout: page
+layout: default
 title: "Dart Tutorials"
 date: 2012-10-03
 

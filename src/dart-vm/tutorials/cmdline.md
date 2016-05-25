@@ -4,7 +4,7 @@ layout: tutorial
 title: "Write Command-Line Apps"
 description: "Basics for command-line apps"
 permalink: /dart-vm/tutorials/cmdline
-toc: true
+
 
 nextpage:
   url: /dart-vm/tutorials/httpserver

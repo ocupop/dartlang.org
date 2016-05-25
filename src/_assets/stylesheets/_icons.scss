@@ -1,7 +1,9 @@
 $icomoon-font-path: "fonts" !default;
 
-$icon-caret-up: "\e900";
-$icon-menu: "\e901";
+$icon-arrow: "\e900";
+$icon-caret-up: "\e901";
+$icon-external: "\e902";
+$icon-menu: "\e903";
 
 @font-face {
     font-family: 'dart';
@@ -29,9 +31,19 @@ i {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow {
+    &:before {
+        content: $icon-arrow;
+    }
+}
 .icon-caret-up {
     &:before {
         content: $icon-caret-up;
+    }
+}
+.icon-external {
+    &:before {
+        content: $icon-external;
     }
 }
 .icon-menu {

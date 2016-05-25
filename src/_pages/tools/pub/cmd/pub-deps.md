@@ -1,13 +1,13 @@
 ---
 reference: "https://www.dartlang.org/tools/pub/cmd/pub-deps.html"
 
-layout: page
+layout: default
 permalink: /tools/pub/cmd/pub-deps
 title: "pub deps"
 description: "Use pub deps to print a dependency graph for a package."
 ---
 
-{% include breadcrumbs.html %}
+
 
 # {{ page.title }}
 

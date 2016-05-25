@@ -1,13 +1,13 @@
 ---
 reference: "https://www.dartlang.org/tools/pub/cmd/pub-uploader.html"
 
-layout: page
+layout: default
 permalink: /tools/pub/cmd/pub-uploader
 title: "pub uploader"
 description: "Use pub uploader to add or remove uploaders for your Dart package on pub.dartlang.org."
 ---
 
-{% include breadcrumbs.html %}
+
 
 # {{ page.title }}
 

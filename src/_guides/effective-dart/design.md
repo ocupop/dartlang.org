@@ -13,8 +13,6 @@ prevpage:
   title: "Usage"
 ---
 
-# {{ page.title }}
-
 ## Names
 
 ### DO use terms consistently.

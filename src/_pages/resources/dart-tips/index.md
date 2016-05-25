@@ -1,7 +1,7 @@
 ---
 reference: "https://www.dartlang.org/dart-tips/"
 
-layout: page
+layout: default
 permalink: /resources/dart-tips/
 title: "Dart Tips: Short Video Tutorials about Dart"
 description: "Super short video intros to Dart language and library features."

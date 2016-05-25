@@ -1,7 +1,7 @@
 ---
 reference: "https://www.dartlang.org/downloads/windows.html"
 
-layout: page
+layout: default
 title: "Installing Dart on Windows"
 description: "Installing and updating the Dart SDK on Windows with Chocolatey or an installer."
 permalink: /dart-vm/downloads/windows
