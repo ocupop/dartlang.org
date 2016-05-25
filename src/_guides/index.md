@@ -6,6 +6,4 @@ description: "Read about the Dart language and tools with this collection of gui
 toc: false
 ---
 
-# {{ page.title }}
-
 * [Effective Dart](/guides/effective-dart/)
