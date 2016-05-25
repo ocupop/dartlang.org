@@ -4,7 +4,7 @@ layout: compress
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body class="{% include class.html %}">
+  <body class="{{ page.layout }}{% if page.toc == false %} hide_toc{% endif %}">
     {% include page-header.html %}
     <main id="page-content">
       {% include navigation-side.html %}
