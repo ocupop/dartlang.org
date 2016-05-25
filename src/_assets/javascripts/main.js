@@ -9,7 +9,8 @@ function fixNav() {
   var t = $(document).scrollTop(),
       f = $("#page-footer").offset().top,
       h = window.innerHeight,
-      mh = f - t - 90;
+      whenAtBottom = f - t,
+      mh = Math.min(h, whenAtBottom) - 90;
   $("#sidenav, #toc").css({maxHeight: mh});
 }
 
