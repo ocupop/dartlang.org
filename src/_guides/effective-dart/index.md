@@ -1,6 +1,4 @@
 ---
-reference: "https://www.dartlang.org/effective-dart/"
-
 layout: guide
 title: "Effective Dart"
 description: "Best practices for building consistent, maintainable, efficient Dart libraries."

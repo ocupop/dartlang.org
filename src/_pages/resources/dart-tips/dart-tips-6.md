@@ -1,6 +1,4 @@
 ---
-reference: "https://www.dartlang.org/dart-tips/dart-tips-ep-6.html"
-
 layout: default
 permalink: /resources/dart-tips/dart-tips-ep-6
 title: "Functions Are Fun, Pt 1 - Dart Tips, Ep 6"

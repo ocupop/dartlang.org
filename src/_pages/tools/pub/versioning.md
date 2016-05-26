@@ -1,13 +1,8 @@
 ---
-reference: "https://www.dartlang.org/tools/pub/versioning.html"
-
 layout: default
 permalink: /tools/pub/versioning
 title: "Pub Versioning Philosophy"
-
 ---
-
-
 
 One of [pub](/tools/pub/)'s main jobs is helping you work with versioning.
 This document explains a bit about the history of versioning and pub's

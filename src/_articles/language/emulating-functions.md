@@ -1,6 +1,4 @@
 ---
-reference: "https://www.dartlang.org/articles/emulating-functions/"
-
 layout: article
 title: "Emulating Functions in Dart"
 description: "Learn how to define Dart classes that behave like functions."

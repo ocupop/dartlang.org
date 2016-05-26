@@ -1,6 +1,4 @@
 ---
-reference: "https://www.dartlang.org/dart-tips/dart-tips-ep-1.html"
-
 layout: default
 permalink: /resources/dart-tips/dart-tips-ep-1
 title: "A Simple Dart Script - Dart Tips, Ep 1"

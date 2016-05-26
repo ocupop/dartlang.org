@@ -1,13 +1,8 @@
 ---
-reference: "https://www.dartlang.org/tools/pub/create-library-packages.html"
-
 layout: default
 permalink: /libraries/create-library-packages
 title: "Creating Library Packages"
-
 ---
-
-
 
 Libraries are a great way to create modular code that can
 be easily shared. In the Dart ecosystem,

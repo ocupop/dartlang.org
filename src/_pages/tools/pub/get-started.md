@@ -1,13 +1,8 @@
 ---
-reference: "https://www.dartlang.org/tools/pub/get-started.html"
-
 layout: default
 permalink: /tools/pub/get-started
 title: "Getting Started with Pub"
-
 ---
-
-
 
 You can use [pub](/tools/pub/) to manage Dart packages.
 

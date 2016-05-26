@@ -1,11 +1,8 @@
 ---
-reference: "https://www.dartlang.org/docs/spec/"
-
 layout: default
 permalink: /language/spec
 title: "Dart Language Specification"
 description: "The Dart language specification and proposed changes."
-
 ---
 
 Download the _Dart Programming Language Specification_ from

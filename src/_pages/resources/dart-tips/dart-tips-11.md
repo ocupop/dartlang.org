@@ -1,6 +1,4 @@
 ---
-reference: "https://www.dartlang.org/dart-tips/dart-tips-ep-11.html"
-
 layout: default
 permalink: /resources/dart-tips/dart-tips-ep-11
 title: "Classes: Constructors - Dart Tips, Ep 11"

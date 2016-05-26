@@ -1,13 +1,8 @@
 ---
-reference: "https://www.dartlang.org/tools/pub/glossary.html"
-
 layout: default
 permalink: /tools/pub/glossary
 title: "Glossary of Pub Terms"
-
 ---
-
-
 
 The following terms are used in the documentation for the [pub](/tools/pub)
 tool.

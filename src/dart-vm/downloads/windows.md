@@ -1,19 +1,13 @@
 ---
-reference: "https://www.dartlang.org/downloads/windows.html"
-
 layout: default
 title: "Installing Dart on Windows"
 description: "Installing and updating the Dart SDK on Windows with Chocolatey or an installer."
 permalink: /dart-vm/downloads/windows
 
-
 js:
 - url: archive/assets/downloads.js
   defer: true
-toc: true
 ---
-
-{% include breadcrumbs.html %}
 
 Don't want to use Chocolatey or a Windows installer?
 Another option is

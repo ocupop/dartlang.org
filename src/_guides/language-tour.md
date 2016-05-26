@@ -1,6 +1,4 @@
 ---
-reference: "https://www.dartlang.org/docs/dart-up-and-running/ch02.html"
-
 layout: guide
 title: "A Tour of the Dart Language"
 description: "A tour of all of the major Dart language features."

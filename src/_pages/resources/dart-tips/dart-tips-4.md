@@ -1,6 +1,4 @@
 ---
-reference: "https://www.dartlang.org/dart-tips/dart-tips-ep-4.html"
-
 layout: default
 permalink: /resources/dart-tips/dart-tips-ep-4
 title: "Strings, Numbers, Booleans, Oh My! - Dart Tips, Ep 4"

@@ -1,6 +1,4 @@
 ---
-reference: "https://www.dartlang.org/dart-tips/dart-tips-ep-10.html"
-
 layout: default
 permalink: /resources/dart-tips/dart-tips-ep-10
 title: "Classes: Setters & Getters - Dart Tips, Ep 10"

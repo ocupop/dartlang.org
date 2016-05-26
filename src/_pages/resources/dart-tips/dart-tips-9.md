@@ -1,6 +1,4 @@
 ---
-reference: "https://www.dartlang.org/dart-tips/dart-tips-ep-9.html"
-
 layout: default
 permalink: /resources/dart-tips/dart-tips-ep-9
 title: "Exceptions - Dart Tips, Ep 9"

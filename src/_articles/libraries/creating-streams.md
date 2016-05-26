@@ -1,6 +1,4 @@
 ---
-reference: /articles/creating-streams/
-
 layout: article
 title: "Creating Streams in Dart"
 description: "A stream is a sequence of results; learn how to create your own."

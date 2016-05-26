@@ -1,6 +1,4 @@
 ---
-reference: /articles/mixins/
-
 layout: article
 title: "Mixins in Dart"
 description: "Mixins let you implement functionality once and use it in multiple classes."

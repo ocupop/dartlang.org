@@ -1,13 +1,8 @@
 ---
-reference: "https://www.dartlang.org/tools/pub/faq.html"
-
 layout: default
 permalink: /tools/pub/faq
 title: "Frequently Asked Questions about Pub"
-
 ---
-
-
 
 Here are some frequently asked questions about [pub](/tools/pub/).
 

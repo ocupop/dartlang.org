@@ -1,11 +1,8 @@
 ---
-reference: new page
-
 layout: default
 permalink: /tools/dartpad
 title: "DartPad"
 description: "The tool that lets you interactively play with Dart in a browser."
-
 ---
 
 DartPad, an open-source tool,

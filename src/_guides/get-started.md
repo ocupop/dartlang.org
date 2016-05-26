@@ -1,7 +1,6 @@
 ---
 layout: guide
 title: Get Started
-description: "xxx"
 ---
 
 How do you learn Dart?

@@ -1,14 +1,9 @@
 ---
-reference: "https://www.dartlang.org/tools/pub/troubleshoot.html"
-
 layout: default
 permalink: /tools/pub/troubleshoot
 title: "Troubleshooting Pub"
 description: "Common gotchas you might run into when using Pub."
-toc: false
 ---
-
-
 
 #### Contents
 

@@ -1,10 +1,7 @@
 ---
-reference: new page
 layout: default
 permalink: /dart-vm/
 title: Dart VM
-description:
-
 ---
 
 Are you writing standalone Dart scripts or server apps?

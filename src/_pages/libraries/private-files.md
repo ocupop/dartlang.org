@@ -1,11 +1,8 @@
 ---
-reference: "https://www.dartlang.org/tools/private-files.html"
-
 layout: default
 permalink: /libraries/private-files
 title: "What Not to Commit"
 description: "Your development tools generate a bunch of files. Not all of them should be committed."
-
 ---
 
 When you put Dart source code in a repository,

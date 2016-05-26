@@ -1,6 +1,4 @@
 ---
-reference: "https://www.dartlang.org/tools/pub/cmd/pub-global.html"
-
 layout: default
 permalink: /tools/pub/cmd/pub-global
 title: "pub global"

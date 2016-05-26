@@ -1,10 +1,8 @@
 ---
-reference: "https://www.dartlang.org/docs/tutorials/cmdline/"
 layout: tutorial
 title: "Write Command-Line Apps"
 description: "Basics for command-line apps"
 permalink: /dart-vm/tutorials/cmdline
-
 
 nextpage:
   url: /dart-vm/tutorials/httpserver
@@ -20,9 +18,6 @@ points:
   - "Most input and output requires the use of Streams."
   - "Streams provide a series of asynchronous data events."
   - "To handle asynchronous data, you need to use Futures."
-
-tutorial:
-  id: dart-io
 ---
 
 ### An introduction to standalone apps

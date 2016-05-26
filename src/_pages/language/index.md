@@ -1,10 +1,7 @@
 ---
-reference: new page
-
 layout: default
 permalink: /language/
 title: "Language"
-toc: false
 ---
 
 <div class="card-grid">

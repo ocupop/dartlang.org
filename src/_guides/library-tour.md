@@ -1,6 +1,4 @@
 ---
-reference: "https://www.dartlang.org/docs/dart-up-and-running/ch03.html"
-
 layout: guide
 title: "A Tour of the Dart Libraries"
 description: "Learn about the major features in Dart's libraries."

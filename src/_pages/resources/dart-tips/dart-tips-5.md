@@ -1,6 +1,4 @@
 ---
-reference: "https://www.dartlang.org/dart-tips/dart-tips-ep-5.html"
-
 layout: default
 permalink: /resources/dart-tips/dart-tips-ep-5
 title: "Collections In Dart - Dart Tips, Ep 5"

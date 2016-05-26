@@ -1,6 +1,4 @@
 ---
-reference: /articles/beyond-async/
-
 layout: article
 title: "Dart Language Asynchrony Support: Phase 2"
 description: "Async*, sync*, yield, and yield* are now available as part of Dart's asynchrony support."

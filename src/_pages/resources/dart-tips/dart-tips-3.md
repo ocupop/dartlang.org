@@ -1,6 +1,4 @@
 ---
-reference: "https://www.dartlang.org/dart-tips/dart-tips-ep-3.html"
-
 layout: default
 permalink: /resources/dart-tips/dart-tips-ep-3
 title: "Variables - Dart Tips, Ep 3"

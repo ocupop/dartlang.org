@@ -1,6 +1,4 @@
 ---
-reference: 
-
 layout: default
 permalink: /codelabs/
 title:
