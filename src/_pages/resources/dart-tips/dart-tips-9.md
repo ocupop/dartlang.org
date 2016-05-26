@@ -9,8 +9,6 @@ description: "Learn how to gracefully handle exceptions and errors in Dart. Don'
 snippet_img: //i.ytimg.com/vi/J94I70uqr6w/0.jpg
 ---
 
-# {{ page.title }}
-
 <iframe class="dart-tips-video" src="//www.youtube.com/embed/J94I70uqr6w"
 frameborder="0" allowfullscreen></iframe>
 

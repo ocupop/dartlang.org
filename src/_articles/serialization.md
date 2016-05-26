@@ -2,15 +2,10 @@
 reference: /articles/serialization/
 
 layout: article
-type: libraries
 title: "Serialization in Dart"
 description: "Choose the serialization strategy that's right for your project."
 date: 2015-02-09
 ---
-
-{% include breadcrumbs.html %}
-
-# {{ page.title }}
 
 _Written by Nicolas Garnier<br>
 February 2015_

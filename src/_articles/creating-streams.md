@@ -2,7 +2,6 @@
 reference: /articles/creating-streams/
 
 layout: article
-type: libraries
 title: "Creating Streams in Dart"
 description: "A stream is a sequence of results; learn how to create your own."
 date: 2013-04-08
@@ -11,10 +10,6 @@ date: 2013-04-08
 <style>
 .comment {color:red;}
 </style>
-
-{% include breadcrumbs.html %}
-
-# {{ page.title }}
 
 _Written by Lasse Nielsen <br>
 April 2013_

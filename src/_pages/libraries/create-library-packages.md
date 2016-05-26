@@ -9,8 +9,6 @@ title: "Creating Library Packages"
 
 
 
-# {{ page.title }}
-
 Libraries are a great way to create modular code that can
 be easily shared. In the Dart ecosystem,
 libraries are created and distributed as packages.

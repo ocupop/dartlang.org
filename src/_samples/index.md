@@ -21,8 +21,6 @@ xxx: This next line breaks the server for now.
 {% injectdata samples resources/samples/samples.yaml %}
 {% endcomment %}
 
-# {{ page.title }}
-
 Check out many other [Dart code examples](/dart-by-example/).
 
 <div class="row">

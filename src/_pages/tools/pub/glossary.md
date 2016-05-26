@@ -9,8 +9,6 @@ title: "Glossary of Pub Terms"
 
 
 
-# {{ page.title }}
-
 The following terms are used in the documentation for the [pub](/tools/pub)
 tool.
 

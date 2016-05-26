@@ -2,17 +2,12 @@
 reference: /articles/zones/
 
 layout: article
-type: libraries
 title: "Zones"
 description: "Manage your asynchronous code: handle uncaught errors, override behavior (such as printing and scheduling tasks), and more."
 date: 2014-03-03
 header:
-  css: ["styles.css"]
+  css: ["/articles/styles.css"]
 ---
-
-{% include breadcrumbs.html %}
-
-# {{ page.title }}
 
 ### Asynchronous dynamic extents
 
@@ -119,7 +114,7 @@ qux(x) => <em><span class="zone1">...qux-body...</span></em>
 The following figure shows the code's execution order,
 as well as which zone the code executes in.
 
-![illustration of program execution](images/trace.png)
+![illustration of program execution](../images/trace.png)
 
 Each call to `runZoned()` creates a new zone
 and executes code in that zone.

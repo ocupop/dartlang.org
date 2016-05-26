@@ -9,8 +9,6 @@ description: "Take back control and learn more about Dart's control flow stateme
 snippet_img: //i.ytimg.com/vi/XdqZdsdzD2A/0.jpg
 ---
 
-# {{ page.title }}
-
 <iframe class="dart-tips-video" src="//www.youtube.com/embed/XdqZdsdzD2A"
 frameborder="0" allowfullscreen></iframe>
 

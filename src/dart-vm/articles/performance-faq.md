@@ -7,9 +7,8 @@ description: Track the performance of your Dart code using benchmarks.
 permalink: /dart-vm/articles/performance-faq
 toc: false
 date: 2014-06-15
+toc: true
 ---
-
-# {{ page.title }}
 
 Dart was founded on the belief that performance matters.
 From the start, we focused on delivering fast runtimes, compilers,

@@ -19,8 +19,6 @@ points:
   - "Dart supports top-level functions."
 ---
 
-# {{ page.title }}
-
 ### Get Dart. Run an app.
 
 This tutorial gets you ready
@@ -250,9 +248,7 @@ are automatically available to all Dart applications.
 
 In WebStorm, you can run the app in any of the following ways:
 
-* Click the Run button
-<img class="scale-img-max" src="images/run.png" width="16" height="16"
-     alt="Run button"> in the upper right corner.
+* Click the Run button ( {% img 'green-run.png' %} ) in the upper right corner.
 * Click the Run button to the left of the messages pane.
 * Right-click main.dart in the files pane and select **Run 'main.dart'**
   from the pop-up menu.

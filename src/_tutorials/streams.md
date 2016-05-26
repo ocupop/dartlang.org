@@ -3,11 +3,13 @@ reference: "https://www.dartlang.org/docs/tutorials/streams/"
 
 title: "Asynchronous Programming: Streams"
 description: "Learn how to consume single-subscriber and broadcast streams."
-permalink: /tutorials/streams
 
 prevpage:
-  url: /tutorials/futures
+  url: /tutorials/language/futures
   title: "Asynchronous Programming: Futures"
+nextpage:
+  url: /tutorials/libraries/shared-pkgs
+  title: Install Shared Packages
 
 points:
   - "Streams provide an asynchronous sequence of data."
@@ -16,8 +18,6 @@ points:
   - "Streams provide a way to respond to errors."
   - "There are two kinds of streams: single subscription or broadcast."
 ---
-
-# {{page.title}}
 
 Asynchronous programming in Dart is characterized by the
 Future and Stream classes.
@@ -96,7 +96,7 @@ src="{{site.custom.dartpad.embed-dart-prefix}}?id=15d5ef986238c97dbc14&horizonta
 
 <aside class="alert alert-info" markdown="1">
 **Note:**
-Click run ( <img src="/images/run.png"/> )
+Click run ( {% img 'run.png' %} )
 to see the result in the **Console output**.
 </aside>
 
@@ -167,7 +167,7 @@ src="{{site.custom.dartpad.embed-dart-prefix}}?id=38feef09be9b1e7b5136&horizonta
 
 <aside class="alert alert-info" markdown="1">
 **Note:**
-Click run ( <img src="/images/run.png"/> )
+Click run ( {% img 'run.png' %} )
 to see the result in the **Console output**.
 </aside>
 
@@ -210,7 +210,7 @@ src="{{site.custom.dartpad.embed-dart-prefix}}?id=da80b1e7eed75db53ef3&horizonta
 
 <aside class="alert alert-info" markdown="1">
 **Note:**
-Click run ( <img src="/images/run.png"/> )
+Click run ( {% img 'run.png' %} )
 to see the result in the **Console output**.
 </aside>
 
@@ -447,11 +447,11 @@ error event, and when the stream is closed.
 Read the following documentation for more details on using streams
 and asynchronous programming in Dart.
 
-* [Single-Subscription vs Broadcast Streams](/articles/broadcast-streams/),
+* [Single-Subscription vs Broadcast Streams](/articles/libraries/broadcast-streams/),
   an article about the two different types of streams
-* [Creating Streams in Dart](/articles/creating-streams/),
+* [Creating Streams in Dart](/articles/language/creating-streams/),
   an article about creating your own streams
-* [Futures and Error Handling](/articles/futures-and-error-handling/),
+* [Futures and Error Handling](/articles/libraries/futures-and-error-handling/),
   an article that explains how to handle errors using the Future API
 * [Asynchrony support](/guides/language-tour#asynchrony),
   a section in the [language tour](/guides/language-tour)

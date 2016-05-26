@@ -8,8 +8,6 @@ description: "The tool that lets you interactively play with Dart in a browser."
 
 ---
 
-# {{ page.title }}
-
 DartPad, an open-source tool,
 allows you to play with the Dart language features in any modern browser.
 

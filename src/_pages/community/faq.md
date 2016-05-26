@@ -8,8 +8,6 @@ description: You have questions about Dart, we have answers.
 
 ---
 
-# {{ page.title }}
-
 _Updated April 2015_
 
 This page collects some of the top questions we've heard from the community

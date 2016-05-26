@@ -10,8 +10,6 @@ permalink: /tools/pub/transformers/
 
 
 
-# {{ page.title }}
-
 Every time you prepare a Dart app for testing or deployment,
 you are using transformers behind the scenes. The [`pub`](/tools/pub/)
 tool uses the [`dart2js`]({{site.dart4web}}/tools/dart2js/)

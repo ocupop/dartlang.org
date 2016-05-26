@@ -2,17 +2,12 @@
 reference: /articles/beyond-async/
 
 layout: article
-type: language
 title: "Dart Language Asynchrony Support: Phase 2"
 description: "Async*, sync*, yield, and yield* are now available as part of Dart's asynchrony support."
 date: 2015-03-24
 ---
 
-{% include breadcrumbs.html %}
-
-# {{ page.title }}
-
-<h2>Async\*, sync\*, and all the rest</h2>
+<h2>Async*, sync*, and all the rest</h2>
 
 _Written by Gilad Bracha <br>
 March 2015_
@@ -34,7 +29,7 @@ change slightly.
 
 ## Generators
 
-Dart 1.9 introduces <em>generator functions</em>. These are functions that
+Dart 1.9 introduced <em>generator functions</em>. These are functions that
 lazily compute a sequence of results.  There are two
 kinds of generators&mdash;synchronous and asynchronous. A synchronous generator
 produces values on demand&mdash;consumers pull the values from the generator. An

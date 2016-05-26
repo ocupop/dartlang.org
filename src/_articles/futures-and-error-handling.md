@@ -2,16 +2,11 @@
 reference: /articles/futures-and-error-handling/
 
 layout: article
-type: libraries
 title: "Futures and Error Handling"
 description: "Everything you wanted to know about handling errors and exceptions when working with Futures (but were afraid to ask)."
 date: 2013-03-07
 updated: 2013-05-30
 ---
-
-{% include breadcrumbs.html %}
-
-# {{ page.title }}
 
 _Written by Shailen Tuli <br>
 March 2013 (updated May 2013)_
@@ -43,7 +38,7 @@ In the example above, if `myFunc()`'s Future completes with a value,
 completes with an error, `then()`'s callback does not fire, and
 `catchError()`'s callback does.
 
-![then() and catchError() callbacks](images/then_and_catcherror.png)
+![then() and catchError() callbacks](../images/then_and_catcherror.png)
 
 ## Examples of using then() with catchError()
 

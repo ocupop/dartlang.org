@@ -3,11 +3,10 @@ reference: "https://www.dartlang.org/docs/tutorials/shared-pkgs/"
 
 title: "Install Shared Packages"
 description: "Packages are bundles of source code, tools, and resources that help you to organize and share code"
-permalink: /tutorials/shared-pkgs
 
-nextpage:
-  url: /tutorials/futures
-  title: "Asynchronous Programming: Futures"
+prevpage:
+  url: /tutorials/language/streams
+  title: "Asynchronous Programming: Streams"
 
 points:
   - "Following a few conventions, such as having a valid pubspec.yaml file, makes your app a package."
@@ -15,9 +14,6 @@ points:
   - "Use `pub get` to download packages."
   - "pub.dartlang.org is the primary public repository for Dart packages."
 ---
-
-
-# {{page.title}}
 
 ### Borrow and share code.
 
@@ -223,7 +219,7 @@ only one, `lib`, was installed when you ran pub get.
   <hr>
   <div class="row">
     <div class="col-md-3">
-    <img class="scale-img-max" src="images/libraries-folder.png"
+    <img class="scale-img-max" src="../images/libraries-folder.png"
          alt="Dart libraries directory"/>
     </div>
     <div class="col-md-7">
@@ -235,7 +231,7 @@ only one, `lib`, was installed when you ran pub get.
   <hr>
   <div class="row">
     <div class="col-md-3">
-    <img class="scale-img-max" src="images/housekeeping-files.png"
+    <img class="scale-img-max" src="../images/housekeeping-files.png"
          alt="Housekeeping files"/>
     </div>
     <div class="col-md-7">
@@ -252,7 +248,7 @@ only one, `lib`, was installed when you ran pub get.
   <hr>
   <div class="row">
     <div class="col-md-3">
-    <img class="scale-img-max" src="images/other-folders.png"
+    <img class="scale-img-max" src="../images/other-folders.png"
          alt="Document, scripts, tests, and other resources"/>
     </div>
     <div class="col-md-7">

@@ -4,14 +4,12 @@ reference: "https://www.dartlang.org/dart-vm/articles/"
 layout: default
 title: "Articles"
 description: "Read about the Dart language and tools with this collection of articles, style guides, and more."
-toc: false
+toc: true
 ---
 
 <p class="alert alert-danger">
   The plugin used to generate article lists will need to be refactored to account for new configuration.
 </p>
-
-# {{ page.title }}
 
 Read these articles for insight into Dart programming topics.
 

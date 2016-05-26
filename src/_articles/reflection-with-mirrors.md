@@ -2,16 +2,11 @@
 reference: /articles/reflection-with-mirrors/
 
 layout: article
-type: libraries
 title: "Reflection in Dart with Mirrors: An Introduction"
 description: "Use the dart:mirrors library for introspection: discovering and using your program's structure."
 date: 2012-11-30
 updated: 2013-11-07
 ---
-
-{% include breadcrumbs.html %}
-
-# {{ page.title }}
 
 _Written by Gilad Bracha <br />
 November 2012 (updated November 2013)_

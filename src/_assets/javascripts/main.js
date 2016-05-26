@@ -16,7 +16,7 @@ function fixNav() {
 
 // Add scroll on page load for hash
 $(window).on('load', function (e){
-  window.scrollTo(0, 0);
+  // window.scrollTo(0, 0);
   if (window.location.hash) {
     $('html, body').animate({ scrollTop: $(window.location.hash).offset().top-70 }, 500, function (){
       // Mark as active

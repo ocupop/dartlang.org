@@ -2,18 +2,13 @@
 reference: /articles/converters-and-codecs/
 
 layout: article
-type: libraries
 title: "Converters and Codecs"
 description: "Learn how to write efficient conversions."
 date: 2014-02-06
 updated: 2015-03-17
 header:
-  css: ["/articles/converters-and-codecs/styles.css"]
+  css: ["/articles/styles.css"]
 ---
-
-{% include breadcrumbs.html %}
-
-# {{ page.title }}
 
 ### **_How to write efficient conversions_**
 
@@ -143,7 +138,7 @@ method is invoked with an output-
 sink as argument. The method then returns an input sink into which the caller
 puts data.
 
-![Chunked converstion](images/chunked-conversion.png)
+![Chunked converstion](../images/chunked-conversion.png)
 
 **Note**: An asterisk (`*`) in the diagram represents optional multiple calls.
 

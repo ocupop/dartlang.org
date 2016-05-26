@@ -19,8 +19,6 @@ particularly all web samples. But, for now, I'm leaving them.
 {% injectdata samples resources/samples/samples.yaml %}
 {% endcomment %}
 
-# {{ page.title }}
-
 Check out many other [Dart code examples](/dart-by-example/).
 
 <div class="row">

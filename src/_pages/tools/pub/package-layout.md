@@ -9,8 +9,6 @@ title: "Pub Package Layout Conventions"
 
 
 
-# {{ page.title }}
-
 Part of a healthy code ecosystem is consistent conventions. When we all do the
 same thing the same way, it makes it easier for us to learn our way around
 each other's work. It also makes it easier to write tools that can

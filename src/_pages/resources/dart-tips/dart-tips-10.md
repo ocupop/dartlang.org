@@ -9,8 +9,6 @@ description: "Dart is a pure class-based object oriented language. In this first
 snippet_img: //i.ytimg.com/vi/2woBWdBQ4Ro/0.jpg
 ---
 
-# {{ page.title }}
-
 <iframe class="dart-tips-video" src="//www.youtube.com/embed/2woBWdBQ4Ro"
 frameborder="0" allowfullscreen></iframe>
 

@@ -8,8 +8,6 @@ description: "The tools that support the Dart language."
 
 ---
 
-# {{ page.title }}
-
 A variety of tools are available for Dart development.
 This page discusses tools common to various Dart technologies.
 See the Tools page for your particular technology for detailed information.
@@ -69,7 +67,7 @@ the Dart technology you are using, or they might not use the full
 functionality described in these docs.
 Consult the tools page for your technology for further details.
 
-* `pub`
+* [pub](/tools/pub/)
 : Every Dart app is also a package and the `pub` tool manages
   Dart packages. Pub provides a number of commands for creating,
   installing, updating, and publishing Dart packages.
@@ -78,7 +76,7 @@ Consult the tools page for your technology for further details.
   all of the pub commands.
   See the [pub](pub) documentation to learn how pub works.
 
-* `dart`
+* [dart]({{site.dart_vm}}/tools/dart-vm)
 : To manually run the Dart VM, you'll want to use the
   [dart]({{site.dart_vm}}/tools/dart-vm) command.
   IDEs that support Dart,

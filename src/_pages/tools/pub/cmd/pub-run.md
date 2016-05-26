@@ -9,8 +9,6 @@ description: "Use pub run to run a Dart script in your package."
 
 
 
-# {{ page.title }}
-
 _Run_ is one of the commands of the _pub_ tool.
 [Learn more about pub](/tools/pub/).
 
