@@ -1,11 +1,8 @@
 ---
-reference: "https://www.dartlang.org/tools/pub/transformers/examples/"
-
 layout: default
 title: "Examples of Transformer Code"
 permalink: /tools/pub/transformers/examples
 ---
-
 
 When _pub_ serves, builds, or runs an app, it can run one or more
 transformers. ([Learn more about pub](/tools/pub/).)

@@ -1,14 +1,9 @@
 ---
-reference: "https://www.dartlang.org/tools/pub/transformers/aggregate.html"
-
 layout: default
 title: "Writing an Aggregate Transformer"
 description: How to write a Pub transformer to processes multiple input assets.
 permalink: /tools/pub/transformers/aggregate
-
 ---
-
-
 
 An aggregate transformer processes multiple assets in a single
 pass&ndash;for example, collaging multiple images into a single image.

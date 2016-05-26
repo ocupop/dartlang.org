@@ -1,16 +1,10 @@
 ---
-reference: "https://www.dartlang.org/articles/io/"
-
 layout: article
 title: "An Introduction to the dart:io Library"
 description: "An introduction to the Dart I/O library, which is aimed at server-side code that runs on the standalone Dart VM."
-permalink: /dart-vm/articles/io
 date: 2012-03-01
 updated: 2015-03-15
-toc: true
 ---
-
-{% include breadcrumbs.html %}
 
 _Written by Mads Ager <br>
 March 2012 (updated October 2012, February 2013, January 2014, and March 2015)_

@@ -1,10 +1,7 @@
 ---
-reference: "https://www.dartlang.org/dart-vm/articles/"
-
 layout: default
 title: "Articles"
 description: "Read about the Dart language and tools with this collection of articles, style guides, and more."
-toc: true
 ---
 
 <p class="alert alert-danger">
