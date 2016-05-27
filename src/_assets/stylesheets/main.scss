@@ -381,7 +381,8 @@ img {
         }
         &.active {
           > a {
-            color: $blue;
+            color: $gray-dark;
+            font-weight: bold;
           }
           i {
             cursor: pointer;
