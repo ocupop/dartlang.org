@@ -1,6 +1,5 @@
 ---
 layout: default
-permalink: /libraries/
 title: "Libraries & APIs"
 ---
 

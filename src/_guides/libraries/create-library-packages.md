@@ -1,6 +1,5 @@
 ---
 layout: default
-permalink: /libraries/create-library-packages
 title: "Creating Library Packages"
 ---
 
