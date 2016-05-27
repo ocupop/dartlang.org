@@ -9,8 +9,6 @@ js:
   defer: true
 ---
 
-# Download Dart
-
 <p>Current stable version of Dart:
 <span class="editor-build-rev-stable">[calculating]</span></p>
 
