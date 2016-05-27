@@ -1,0 +1,70 @@
+- title: Get Started
+  permalink: /guides/get-started
+
+- title: Language
+  permalink: /guides/language/
+  children:
+    - title: Language Tour
+      permalink: /guides/language-tour
+    - title: Effective Dart
+      permalink: /guides/effective-dart/index
+      children:
+        - title: Style
+          permalink: /guides/effective-dart/style
+        - title: Documentation
+          permalink: /guides/effective-dart/documentation
+        - title: Usage
+          permalink: /guides/effective-dart/usage
+        - title: Design
+          permalink: /guides/effective-dart/design
+    - title: Language Tutorials
+      permalink: /tutorials/language/
+    - title: Language Articles
+      permalink: /articles/language/
+    - title: Specification
+      permalink: /language/spec
+
+- title: Libraries
+  permalink: /guides/libraries/
+  children:
+    - title: Library Tour
+      permalink: /guides/libraries/library-tour
+    - title: Install Shared Packages
+      permalink: /tutorials/libraries/shared-pkgs
+    - title: Create Library Packages
+      permalink: /guides/libraries/create-library-pakages
+    - title: What Not to Commit
+      permalink: /guides/libraries/private-files
+
+- title: Tools Links
+  permalink: /tools/
+
+- title: Community Links
+  permalink: /community/
+
+- title: Targets
+  permalink: /dart-vm/
+  children:
+    - title: Web
+      permalink: http://localhost:4001/
+    - title: Mobile (Flutter)
+      permalink: https://flutter.io/
+      children:
+      - title: API Reference
+        permalink: http://docs.flutter.io/flutter/
+    - title: IoT (Dartino)
+      permalink: https://dartino.org/
+      children:
+      - title: API Reference
+        permalink: https://dartino.github.io/api/
+    - title: VM
+      permalink: /dart-vm/
+      children:
+      - title: Install Dart
+        permalink: /dart-vm/downloads/
+      - title: API Reference
+        permalink: https://api.dartlang.org
+      - title: Articles
+        permalink: /dart-vm/articles/
+      - title: Tutorials
+        permalink: /dart-vm/tutorials
