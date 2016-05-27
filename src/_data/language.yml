@@ -1,6 +1,6 @@
-- title: Get Started
+- title: Language Tour
   label: 
-  permalink: /guides/get-started
+  permalink: /guides/language-tour
 - title: Effective Dart
   label: 
   permalink: /guides/effective-dart/index
@@ -17,3 +17,9 @@
     - title: Design
       label:
       permalink: /guides/effective-dart/design
+- title: Language Tutorials
+  label:
+  permalink: /tutorials/language/
+- title: Specification
+  label: 
+  permalink: /language/spec

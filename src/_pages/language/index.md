@@ -2,6 +2,7 @@
 layout: default
 permalink: /language/
 title: "Language"
+toc: false
 ---
 
 <div class="card-grid">

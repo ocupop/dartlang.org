@@ -4,11 +4,11 @@ title: "Effective Dart: Usage"
 description: "Guidelines for using language features to write maintainable code."
 
 nextpage:
-  url: /guides/effective-dart/documentation
-  title: "Documentation"
-prevpage:
   url: /guides/effective-dart/design
   title: "Design"
+prevpage:
+  url: /guides/effective-dart/documentation
+  title: "Documentation"
 ---
 
 This is the most "blue-collar" guide in Effective Dart. You'll apply the

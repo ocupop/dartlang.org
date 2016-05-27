@@ -1,6 +1,12 @@
 - title: Get Started
   label: 
   permalink: /guides/get-started
+- title: Language Tour
+  label: 
+  permalink: /guides/language-tour
+- title: Library Tour
+  label: 
+  permalink: /guides/library-tour
 - title: Effective Dart
   label: 
   permalink: /guides/effective-dart/index

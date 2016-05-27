@@ -4,6 +4,38 @@
       <img src="{% asset_path 'logo.svg' %}" alt="{{ site.title }}">
     </a>
     <h4>
+      <a href="/guides/get-started">Get Started</a>
+    </h4>
+    {% assign linklist = site.data.getstarted %}
+    {% include linklist.html %}
+    <h4>
+      <a href="/language">Language</a>
+    </h4>
+    {% assign linklist = site.data.language %}
+    {% include linklist.html %}
+    <h4>
+      <a href="/libraries/">Libraries</a>
+    </h4>
+    {% assign linklist = site.data.libraries %}
+    {% include linklist.html %}
+    <h4>
+      <a href="/tools">Tools</a>
+    </h4>
+    {% assign linklist = site.data.tools %}
+    {% include linklist.html %}
+    <h4>
+      <a href="/community">Community</a>
+    </h4>
+    {% assign linklist = site.data.community %}
+    {% include linklist.html %}
+    <h4>
+      <a href="/dart-vm">Targets</a>
+    </h4>
+    {% assign linklist = site.data.dartvm %}
+    {% include linklist.html %}
+  </div>
+</div>
+    <h4>
       <a href="/guides">Guides</a>
     </h4>
     {% assign linklist = site.data.guides %}
