@@ -6,6 +6,6 @@ toc: false
 ---
 
 * [Get Started](/guides/get-started)
-* [Language Tour](/guides/language-tour)
-* [Library Tour](/guides/library-tour)
-* [Effective Dart](/guides/effective-dart/)
+* [Language Tour](/guides/language/language-tour)
+* [Library Tour](/guides/libraries/library-tour)
+* [Effective Dart](/guides/language/effective-dart/)

@@ -20,6 +20,9 @@
 - title: Language Tutorials
   label:
   permalink: /tutorials/language/
+- title: Language Articles
+  label:
+  permalink: /articles/language/
 - title: Specification
   label: 
   permalink: /language/spec
