@@ -1,12 +1,9 @@
 ---
-reference: "https://www.dartlang.org/tools/faq.html"
-
 layout: default
 permalink: /resources/faq
 title: "Tools FAQ"
 short-title: "FAQ"
 description: "FAQ and other tips for using Dart Tools."
-
 ---
 
 {% comment %}

@@ -1,13 +1,8 @@
 ---
-reference: "https://www.dartlang.org/tools/pub/publishing.html"
-
 layout: default
 permalink: /tools/pub/publishing
 title: "Publishing a Package"
-
 ---
-
-
 
 [Pub](/tools/pub) isn't just for using other people's packages.
 It also allows you to share your packages with the world. If you have a useful

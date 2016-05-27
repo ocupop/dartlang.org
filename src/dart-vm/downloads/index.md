@@ -1,5 +1,4 @@
 ---
-reference: https://www.dartlang.org/downloads/
 layout: default
 title: "Download Dart"
 description: "The download bundles that support the Dart language."
@@ -8,10 +7,7 @@ permalink: /dart-vm/downloads/
 js:
 - url: archive/assets/downloads.js
   defer: true
-toc: true
 ---
-
-{% include breadcrumbs.html %}
 
 # Download Dart
 

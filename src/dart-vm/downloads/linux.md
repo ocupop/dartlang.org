@@ -1,6 +1,4 @@
 ---
-reference: "https://www.dartlang.org/downloads/linux.html"
-
 layout: default
 title: "Installing Dart on Linux"
 description: "Installing and updating the Dart SDK on Linux with apt-get, a Debian package, and compiling from source."
@@ -9,10 +7,7 @@ permalink: /dart-vm/downloads/linux
 js:
 - url: archive/assets/downloads.js
   defer: true
-toc: true
 ---
-
-{% include breadcrumbs.html %}
 
 If you're using Debian/Ubuntu, you can choose two options,
 both of which can update the SDK automatically

@@ -1,14 +1,9 @@
 ---
-reference: "https://www.dartlang.org/tools/pub/assets-and-transformers.html"
-
 layout: default
 permalink: /tools/pub/assets-and-transformers
 title: "Assets and Transformers"
 description: "How pub transforms and generates assets and files during development and build time."
-
 ---
-
-
 
 The [`pub serve`]({{site.dart4web}}/tools/pub/pub-serve),
 [`pub build`]({{site.dart4web}}/tools/pub/pub-build)

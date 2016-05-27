@@ -1,6 +1,4 @@
 ---
-reference: "https://www.dartlang.org/effective-dart/usage/"
-
 layout: guide
 title: "Effective Dart: Usage"
 description: "Guidelines for using language features to write maintainable code."

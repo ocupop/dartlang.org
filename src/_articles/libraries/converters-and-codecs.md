@@ -1,6 +1,4 @@
 ---
-reference: /articles/converters-and-codecs/
-
 layout: article
 title: "Converters and Codecs"
 description: "Learn how to write efficient conversions."

@@ -1,11 +1,8 @@
 ---
-reference: "https://www.dartlang.org/src/site/support/"
-
 layout: default
 permalink: /community/
 title: "Support and Community"
 description: "Communities, mailing lists, and bug databases for the Dart project."
-
 ---
 
 Track the Dart project and join the conversation in a variety of ways.

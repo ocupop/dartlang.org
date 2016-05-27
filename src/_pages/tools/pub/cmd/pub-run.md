@@ -1,13 +1,9 @@
 ---
-reference: "https://www.dartlang.org/tools/pub/cmd/pub-run.html"
-
 layout: default
 permalink: /tools/pub/cmd/pub-run
 title: "pub run"
 description: "Use pub run to run a Dart script in your package."
 ---
-
-
 
 _Run_ is one of the commands of the _pub_ tool.
 [Learn more about pub](/tools/pub/).

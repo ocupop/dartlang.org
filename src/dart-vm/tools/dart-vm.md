@@ -1,9 +1,7 @@
 ---
-reference: "https://www.dartlang.org/tools/dart-vm/"
 layout: default
 title: "dart: The Standalone VM"
 permalink: /dart-vm/tools/dart-vm
-
 short-title: "dart"
 ---
 

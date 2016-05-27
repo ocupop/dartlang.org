@@ -1,6 +1,4 @@
 ---
-reference: "https://www.dartlang.org/community/who-uses-dart.html"
-
 layout: default
 title: 'Who Uses Dart'
 permalink: /community/who-uses-dart

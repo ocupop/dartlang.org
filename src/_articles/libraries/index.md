@@ -1,6 +1,4 @@
 ---
-reference: "https://www.dartlang.org/articles/"
-
 layout: default
 title: "Articles: Libraries"
 description: "Read about the Dart language and tools with this collection of articles, style guides, and more."

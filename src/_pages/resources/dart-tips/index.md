@@ -1,6 +1,4 @@
 ---
-reference: "https://www.dartlang.org/dart-tips/"
-
 layout: default
 permalink: /resources/dart-tips/
 title: "Dart Tips: Short Video Tutorials about Dart"

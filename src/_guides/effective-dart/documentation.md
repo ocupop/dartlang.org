@@ -1,6 +1,4 @@
 ---
-reference: "https://www.dartlang.org/effective-dart/documentation/"
-
 layout: guide
 title: "Effective Dart: Documentation"
 description: "Clear, helpful comments and documentation."

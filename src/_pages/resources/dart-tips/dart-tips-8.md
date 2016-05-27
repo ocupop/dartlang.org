@@ -1,6 +1,4 @@
 ---
-reference: "https://www.dartlang.org/dart-tips/dart-tips-ep-8.html"
-
 layout: default
 permalink: /resources/dart-tips/dart-tips-ep-8
 title: "Control Flow Statements - Dart Tips, Ep 8"

@@ -1,6 +1,4 @@
 ---
-reference: "https://www.dartlang.org/tools/pub/cmd/pub-global.html"
-
 layout: default
 permalink: /tools/pub/cmd/pub-global
 title: "pub global"
@@ -9,10 +7,6 @@ description: "Use pub global to run Dart scripts hosted on pub.dartlang.org from
 header:
   css: ["../transformers/transformers.css"]
 ---
-
-
-
-# {{ page.title }}
 
 _Global_ is one of the commands of the _pub_ tool.
 [Learn more about pub](/tools/pub/).

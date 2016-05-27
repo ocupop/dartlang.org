@@ -1,16 +1,10 @@
 ---
-reference: /articles/why-not-bytecode/
-
 layout: article
-type: language
 title: "Why Not a Bytecode VM?"
 description: "This article discusses the trade-offs VMs have to make,
        and explains why we think that a language VM makes more sense for Dart."
 date: 2011-11-01
-toc: true
 ---
-
-{% include breadcrumbs.html %}
 
 _Written by Florian Loitsch and Bob Nystrom<br>
 November 2011_

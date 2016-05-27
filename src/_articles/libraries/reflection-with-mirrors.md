@@ -1,6 +1,4 @@
 ---
-reference: /articles/reflection-with-mirrors/
-
 layout: article
 title: "Reflection in Dart with Mirrors: An Introduction"
 description: "Use the dart:mirrors library for introspection: discovering and using your program's structure."

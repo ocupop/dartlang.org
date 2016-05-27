@@ -1,11 +1,8 @@
 ---
-reference: "https://www.dartlang.org/tools/"
-
 layout: default
 permalink: /tools/
 title: "Dart Tools"
 description: "The tools that support the Dart language."
-
 ---
 
 A variety of tools are available for Dart development.

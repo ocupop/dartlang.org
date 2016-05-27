@@ -1,13 +1,9 @@
 ---
-reference: "https://www.dartlang.org/tools/pub/cmd/pub-uploader.html"
-
 layout: default
 permalink: /tools/pub/cmd/pub-uploader
 title: "pub uploader"
 description: "Use pub uploader to add or remove uploaders for your Dart package on pub.dartlang.org."
 ---
-
-
 
 _Uploader_ is one of the commands of the _pub_ tool.
 [Learn more about pub](/tools/pub/).

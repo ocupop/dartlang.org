@@ -1,14 +1,9 @@
 ---
-reference: "https://www.dartlang.org/tools/pub/dependencies.html"
-
 layout: default
 permalink: /tools/pub/dependencies
 title: "Pub Dependencies"
 description: "Add other packages to your app. Specify package locations, version constraints, and more."
-
 ---
-
-
 
 Dependencies are one of [pub](/tools/pub)'s core concepts.
 A dependency is another package that your package needs in order to work.

@@ -1,14 +1,9 @@
 ---
-reference: "https://www.dartlang.org/tools/pub/transformers/"
-
 layout: default
 title: "Writing a Pub Transformer"
 description: "How to write a Pub transformer that processes a single input asset."
 permalink: /tools/pub/transformers/
-
 ---
-
-
 
 Every time you prepare a Dart app for testing or deployment,
 you are using transformers behind the scenes. The [`pub`](/tools/pub/)

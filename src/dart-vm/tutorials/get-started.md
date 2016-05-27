@@ -1,9 +1,7 @@
 ---
-reference: "https://www.dartlang.org/docs/tutorials/get-started"
 layout: tutorial
 title: "Get Started"
 description: "Get Dart and run a Dart application"
-
 
 nextpage:
   url: /dart-vm/tutorials/cmdline

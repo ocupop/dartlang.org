@@ -1,13 +1,8 @@
 ---
-reference: "https://www.dartlang.org/tools/pub/installing.html"
-
 layout: default
 permalink: /tools/pub/installing
 title: "Installing and Configuring Pub"
-
 ---
-
-
 
 [Pub](/tools/pub/) is one of the tools in the
 [Dart SDK]({{site.dart_vm}}/tools/sdk).

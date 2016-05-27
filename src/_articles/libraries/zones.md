@@ -1,6 +1,4 @@
 ---
-reference: /articles/zones/
-
 layout: article
 title: "Zones"
 description: "Manage your asynchronous code: handle uncaught errors, override behavior (such as printing and scheduling tasks), and more."

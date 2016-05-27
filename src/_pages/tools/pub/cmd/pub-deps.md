@@ -1,13 +1,9 @@
 ---
-reference: "https://www.dartlang.org/tools/pub/cmd/pub-deps.html"
-
 layout: default
 permalink: /tools/pub/cmd/pub-deps
 title: "pub deps"
 description: "Use pub deps to print a dependency graph for a package."
 ---
-
-
 
 _Deps_ is one of the commands of the _pub_ tool.
 [Learn more about pub](/tools/pub/).

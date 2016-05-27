@@ -1,10 +1,7 @@
 ---
-reference: "https://www.dartlang.org/docs/tutorials/"
-
 layout: default
 title: "Dart Tutorials"
 description: "The Dart Tutorials&mdash;Your guide to building great apps."
-
 ---
 
 **The Dart Tutorials** teach you how to build applications

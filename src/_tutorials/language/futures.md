@@ -1,6 +1,4 @@
 ---
-reference: "https://www.dartlang.org/docs/tutorials/futures"
-
 title: "Asynchronous Programming: Futures"
 description: "A first look at Futures and how to use them to make your asynchronous code better."
 

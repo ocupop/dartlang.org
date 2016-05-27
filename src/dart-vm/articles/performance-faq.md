@@ -1,13 +1,8 @@
 ---
-reference: "https://www.dartlang.org/performance/"
-
 layout: article
 title: Performance FAQ
 description: Track the performance of your Dart code using benchmarks.
-permalink: /dart-vm/articles/performance-faq
-toc: false
 date: 2014-06-15
-toc: true
 ---
 
 Dart was founded on the belief that performance matters.

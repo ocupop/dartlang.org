@@ -1,14 +1,9 @@
 ---
-reference: "https://www.dartlang.org/tools/pub/"
-
 layout: default
 permalink: /tools/pub/
 title: "Pub Package and Asset Manager"
 short-title: "Pub"
-
 ---
-
-
 
 You can use the `pub` tool to manage Dart packages and assets.
 Pub also includes commands for creating, developing, and deploying Dart

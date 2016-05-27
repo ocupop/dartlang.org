@@ -1,11 +1,8 @@
 ---
-reference: "https://www.dartlang.org/tools/jetbrains-plugin/"
-
 layout: default
 permalink: /tools/jetbrains-plugin
 title: "Dart Plugin from JetBrains"
 description: "Use Dart with a variety of IDEs and editors from JetBrains."
-
 ---
 
 The Dart plugin adds Dart support to JetBrains IDEs such as
