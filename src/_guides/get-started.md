@@ -8,14 +8,13 @@ How do you learn Dart?
 This site is the place for learning the Dart language,
 APIs, and core libraries.
 
-## DartPad
+## Try simple scripts in DartPad
 
-Use DartPad to play with Dart and to
-experience the language and core APIs.
+Use DartPad to play with Dart and to experience the language and core APIs.
 It's a quick and easy way to become familiar with the language features.
 
 You can use the embedded DartPad below, or you can open
-[DartPad](/tools/dartpad) in a new window in any modern browser.
+[DartPad](/tools/dartpad) in a new window.
 
 <iframe
 src="{{site.custom.dartpad.embed-dart-prefix}}?horizontalRatio=99&verticalRatio=65"
@@ -28,7 +27,7 @@ Note that DartPad does not allow you to import packages,
 such as dart:io. If you want that level of control, you'll need
 to install an SDK.
 
-## Choose your path
+## Choose your target
 
 What kind of application do you want to write?
 
