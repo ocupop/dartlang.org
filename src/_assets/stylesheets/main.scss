@@ -176,7 +176,7 @@ img {
   position: relative;
   margin-top: 70px;
   padding: 20px;
-  min-height: calc(100vh - 385px);
+  min-height: calc(100vh);
   > article {
     width: calc(100vw - 525px);
     margin-left: 250px;
@@ -310,8 +310,6 @@ img {
 #subnav {
   height: 32px;
   line-height: 32px;
-  background: $gray-dark;
-  color: $white;
   ul {
     margin: 0;
     padding: 0;
@@ -321,10 +319,8 @@ img {
      width: 49%;
      a {
       display: block;
-      color: $white;
       padding-left: 5px;
       padding-right: 5px;
-      font-weight: 700;
      }
      &.next {
        text-align: right;
@@ -359,7 +355,8 @@ img {
       list-style: none;
       li {
         position: relative;
-        line-height: 25px;
+        margin-top: 10px;
+        line-height: 110%;
         i {
           display: inline-block;
           margin-left: 4px;
@@ -385,7 +382,8 @@ img {
         }
         &.active {
           > a {
-            color: $blue;
+            color: $gray-dark;
+            font-weight: bold;
           }
           i {
             cursor: pointer;
@@ -481,7 +479,7 @@ img {
   position: relative;
   margin-top: 70px;
   padding: 20px;
-  min-height: calc(100vh - 385px);
+  min-height: calc(100vh);
   ul {
     list-style: none;
     padding: 0;
