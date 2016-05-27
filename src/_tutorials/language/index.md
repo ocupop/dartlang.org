@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Dart Tutorials: Language"
+toc: false
 
 header:
   css: ["/docs/tutorials/tute_main_page.css"]

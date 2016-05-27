@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Articles: Language"
+toc: false
 ---
 
 Read these articles for insight into the Dart language.
