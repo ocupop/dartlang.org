@@ -1,29 +1,26 @@
-<ul>
-  {% for link in linklist  %}
-    {% capture dropdown %}{{ link.children | size }}{% endcapture %}
-    {% assign path = link.permalink | remove:'/index' %}
-    {% if dropdown == '0' %}
-      <li {% if page.url == link.permalink %}class="active"{% endif %}>
-        <a href="{{ link.permalink }}" title="{{ link.title }}">
-          {% if link.label %}{{ link.label }}{% else %}{{ link.title }}{% endif %}
-        </a>
-      </li>
-    {% else %}
-      <li {% if page.url contains path %}class="active"{% endif %} data-path="{{ path }}" data-url="{{ page.url }}">
-        <a href="{{ link.permalink }}" title="{{ link.title }}">
-          {% if link.label %}{{ link.label }}{% else %}{{ link.title }}{% endif %}
-        </a>
-        <i class="icon icon-arrow"></i>
-        <ul>
-          {% for child in link.children %}
-            <li {% if page.url contains child.permalink %}class="active"{% endif %}>
-              <a href="{{ child.permalink }}" title="{{ child.title }}">
-                {% if child.label %}{{ child.label }}{% else %}{{ child.title }}{% endif %}
-              </a>
-            </li>
-          {% endfor %}
-        </ul>
-      </li>
-    {% endif %}
-  {% endfor %}
-</ul>
+{% for link in linklist  %}
+  <h4 {% if page.url contains link.permalink %}class="active"{% endif %}>
+    <a href="{{ link.permalink }}" title="{{ link.title }}">{{ link.title }}</a>
+  </h4>
+  <ul>
+    {% for child in link.children %}
+      {% capture dropdown %}{{ child.children | size }}{% endcapture %}
+      {% if dropdown == '0' %}
+        <li {% if page.url contains child.permalink %}class="active"{% endif %}>
+          <a href="{{ child.permalink }}" title="{{ child.title }}">{{ child.title }}</a>
+        </li>
+      {% else %}
+        <li {% if page.url contains child.permalink %}class="active"{% endif %}>
+          <a href="{{ child.permalink }}" title="{{ child.title }}">{{ child.title }}</a>
+          <i class="icon icon-arrow"></i>
+          <ul>
+            {% for c in child.children %}
+              <li {% if page.url contains c.permalink %}class="active"{% endif %}>
+                <a href="{{ c.permalink }}" title="{{ c.title }}">{{ c.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+      {% endif %}
+    {% endfor %}
+  </ul>
+{% endfor %}
