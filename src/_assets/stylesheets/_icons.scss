@@ -1,5 +1,5 @@
-$icomoon-font-path: "fonts" !default;
 
+$icon-search: "\e904";
 $icon-arrow: "\e900";
 $icon-caret-up: "\e901";
 $icon-external: "\e902";
@@ -31,6 +31,11 @@ i {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-search {
+    &:before {
+        content: $icon-search;
+    }
+}
 .icon-arrow {
     &:before {
         content: $icon-arrow;

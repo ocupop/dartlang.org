@@ -1,6 +1,8 @@
 //= require vendor/jquery-1.12.3.min
 //= require bootstrap
 //= require _utilities
+//= require _search
+//= require vendor/lunr.min.js
 //= require vendor/code-prettify/prettify
 //= require vendor/code-prettify/lang-dart
 //= require vendor/code-prettify/lang-yaml
@@ -103,5 +105,6 @@ $(document).on('ready', function(){
   // Add external link indicators
   $('a[target="_blank"]').addClass('external');
   $('a[href^="http"]').addClass('external');
+
 });
 
