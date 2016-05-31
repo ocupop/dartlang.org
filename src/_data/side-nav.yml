@@ -5,24 +5,24 @@
   permalink: /guides/language/
   children:
     - title: Language Tour
-      permalink: /guides/language-tour
+      permalink: /guides/language/language-tour
     - title: Effective Dart
-      permalink: /guides/effective-dart/index
+      permalink: /guides/language/effective-dart/
       children:
         - title: Style
-          permalink: /guides/effective-dart/style
+          permalink: /guides/language/effective-dart/style
         - title: Documentation
-          permalink: /guides/effective-dart/documentation
+          permalink: /guides/language/effective-dart/documentation
         - title: Usage
-          permalink: /guides/effective-dart/usage
+          permalink: /guides/language/effective-dart/usage
         - title: Design
-          permalink: /guides/effective-dart/design
+          permalink: /guides/language/effective-dart/design
     - title: Language Tutorials
       permalink: /tutorials/language/
     - title: Language Articles
       permalink: /articles/language/
     - title: Specification
-      permalink: /language/spec
+      permalink: /guides/language/spec
 
 - title: Libraries
   permalink: /guides/libraries/
@@ -32,7 +32,7 @@
     - title: Install Shared Packages
       permalink: /tutorials/libraries/shared-pkgs
     - title: Create Library Packages
-      permalink: /guides/libraries/create-library-pakages
+      permalink: /guides/libraries/create-library-packages
     - title: What Not to Commit
       permalink: /guides/libraries/private-files
 

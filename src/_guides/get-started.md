@@ -27,9 +27,10 @@ Note that DartPad does not allow you to import packages,
 such as dart:io. If you want that level of control, you'll need
 to install an SDK.
 
-## Choose your target
+## What kind of application do you want to write?
 
-What kind of application do you want to write?
+(feedback: maybe make this more visual. What kind of app then leads to the
+relevant "Install" page.)
 
 This website includes information common to most Dart technologies,
 but you'll also want to check out the site that contains information
