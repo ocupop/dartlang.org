@@ -69,7 +69,7 @@ The apply() function allows functions to be called in generic fashion. The
 last argument is positional, and is only needed if the function we mean to
 call takes named arguments.  These are provided via map from argument names to
 their values. One thing to pay attention to is that names are described
-via instances of class [Symbol](http://api.dartlang.org/docs/releases/latest/dart_core/Symbol.html).
+via instances of class [Symbol]({{site.dart_api}}/dart-core/Symbol-class.html).
 
 
 ## Symbols
@@ -126,7 +126,7 @@ then that code can instead be
 to the standard implementation of the noSuchMethod(), a common pattern.
 
 The only argument to noSuchMethod() is an
-[Invocation](http://api.dartlang.org/dart_core/Invocation.html).
+[Invocation]({{site.dart_api}}/dart-core/Invocation-class.html).
 The boolean properties of Invocation identify the syntactic form of the
 method invocation, as the following table shows.
 

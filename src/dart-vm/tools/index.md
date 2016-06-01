@@ -32,7 +32,7 @@ need to write Dart scripts.
 
 * [`dartfmt`](https://github.com/dart-lang/dart_style#readme)
 : Format your code according to the
-  [Dart Style Guide]({{site.dartlang}}/guides/effective-dart/style).
+  [Dart Style Guide]({{site.dartlang}}/guides/language/effective-dart/style).
   An IDE that supports Dart should allow you to format the code within
   the IDE. Or you can run `dartfmt` from the command line.
 

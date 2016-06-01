@@ -332,6 +332,6 @@ when you import a library.
 
 ## What next? {#what-next}
 
-The next tutorial, [Asynchronous Programming: Futures](futures),
+The next tutorial, [Asynchronous Programming: Futures](/tutorials/language/futures),
 shows you how to write non-blocking code using Dart's async/await
 mechanism, or using the Future API.

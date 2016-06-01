@@ -35,7 +35,7 @@ application package.
 ### How to
 
 * [Getting Started with Pub](get-started)
-* [Creating Library Packages](/libraries/create-library-packages)
+* [Creating Library Packages](/guides/libraries/create-library-packages)
 * [Installing and Configuring Pub](installing)
 * [Publishing a Package](publishing)
 

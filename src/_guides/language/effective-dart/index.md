@@ -4,7 +4,7 @@ title: "Effective Dart"
 description: "Best practices for building consistent, maintainable, efficient Dart libraries."
 
 nextpage:
-  url: /guides/effective-dart/style
+  url: /guides/language/effective-dart/style
   title: "Style"
 ---
 
@@ -58,10 +58,10 @@ We split the guidelines into a few separate pages for easy digestion:
     declaration, this goes over it.
 
 [dartfmt]: https://github.com/dart-lang/dart_style#readme
-[style guide]: /guides/effective-dart/style
-[documentation guide]: /guides/effective-dart/documentation
-[usage guide]: /guides/effective-dart/usage
-[design guide]: /guides/effective-dart/design
+[style guide]: /guides/language/effective-dart/style
+[documentation guide]: /guides/language/effective-dart/documentation
+[usage guide]: /guides/language/effective-dart/usage
+[design guide]: /guides/language/effective-dart/design
 
 ## How to read the guides
 

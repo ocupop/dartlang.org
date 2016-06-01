@@ -15,7 +15,7 @@ and provides recommendations on when to use which.
 
 If you aren't already familiar with Dart streams,
 you can learn the basics from the tutorial
-[Asynchronous Programming: Streams](/tutorials/streams/).
+[Asynchronous Programming: Streams](/tutorials/language/streams/).
 
 ## Introduction
 
@@ -468,9 +468,9 @@ listener swapping and StreamIterators.
 
 For more information, see the API documentation:
 
-* [Stream](http://api.dartlang.org/dart_async/Stream.html)
-* [StreamSubscription](http://api.dartlang.org/dart_async/StreamSubscription.html)
-* [StreamIterator](http://api.dartlang.org/dart_async/StreamIterator.html)
+* [Stream]({{site.dart_api}}/dart-async/Stream-class.html)
+* [StreamSubscription]({{site.dart_api}}/dart-async/StreamSubscription-class.html)
+* [StreamIterator]({{site.dart_api}}/dart-async/StreamIterator-class.html)
 
 _Thanks to Lasse Reichstein Holst Nielsen, Anders Johnsen,
 and Kathy Walrath for their suggestions and help to improve this article._

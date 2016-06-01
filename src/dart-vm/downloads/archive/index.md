@@ -18,7 +18,7 @@ css:
 Use this index to download specific versions of the
 [Dart SDK]({{site.dart_vm}}/tools/sdk),
 [Dartium]({{site.dart4web}}/tools/dartium),
-and the [Dart API documentation](https://api.dartlang.org).
+and the [Dart API documentation]({{site.dart_api}}).
 
 Want to install Dart with your OS's package manager?
 Go to the [main Dart download page]({{site.dart_vm}}/downloads).

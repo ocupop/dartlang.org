@@ -14,9 +14,9 @@ which may include local libraries, and
 This document explains how to create a library package
 and points you to further resources.
 For information on _using_ libraries, see
-[Install Shared Packages](/tutorials/shared-pkgs) or the
+[Install Shared Packages](/tutorials/libraries/shared-pkgs) or the
 language tour's
-[Libraries and visibility](/guides/language-tour#libraries-and-visibility)
+[Libraries and visibility](/guides/language/language-tour#libraries-and-visibility)
 section.
 
 ## What makes a library package
@@ -174,7 +174,7 @@ structure.
 You can generate API docs for your library using
 the [dartdoc](https://github.com/dart-lang/dartdoc#dartdoc) tool.
 Dartdoc parses the source looking for
-[documentation comments](/guides/effective-dart/documentation/#doc-comments),
+[documentation comments](/guides/language/effective-dart/documentation/#doc-comments),
 which use the `///` syntax:
 
 {% prettify dart %}
@@ -227,8 +227,8 @@ dartdocs.org. For example:
 
 Use the following resources to learn more about library packages:
 
-* [Libraries and visibility](/guides/language-tour#libraries-and-visibility)
-  in the [language tour](/guides/language-tour) covers
+* [Libraries and visibility](/guides/language/language-tour#libraries-and-visibility)
+  in the [language tour](/guides/language/language-tour) covers
   using library files.
 * The [pub](/tools/pub) documentation is useful, particularly
   [Pub Package Layout Conventions](/tools/pub/package-layout).

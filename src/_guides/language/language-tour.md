@@ -15,7 +15,7 @@ You can play with most of these features using
 </div>
 
 Consult the
-[Dart Language Specification](/language/spec) whenever you want
+[Dart Language Specification](/guides/language/spec) whenever you want
 more details about a language feature.
 
 
@@ -81,7 +81,7 @@ apps:
 <div class="alert alert-info" markdown="1">
 **Note:**
 Our code follows the conventions in the
-[Dart Style Guide.](/guides/effective-dart/style).
+[Dart Style Guide.](/guides/language/effective-dart/style).
 For example, we use two-space indentation.
 </div>
 
@@ -94,7 +94,7 @@ mind:
 -   Everything you can place in a variable is an *object*, and every
     object is an instance of a *class*. Even numbers, functions, and
     `null` are objects. All objects inherit from the
-    [Object](https://api.dartlang.org/stable/dart-core/Object-class.html) class.
+    [Object]({{site.dart_api}}/dart-core/Object-class.html) class.
 
 -   Specifying static types (such as `num` in the preceding example)
     clarifies your intent and enables static checking by tools, but it’s
@@ -239,7 +239,7 @@ completion and early warnings for bugs and code completion.
 <div class="alert alert-info" markdown="1">
 **Note:**
 This chapter follows the
-[style guide recommendation](/guides/effective-dart/style#type-annotations)
+[style guide recommendation](/guides/language/effective-dart/style#type-annotations)
 of using `var`, rather than type annotations, for local variables.
 </div>
 
@@ -330,23 +330,23 @@ use the `Map()` constructor to create a map, using code such as
 
 Dart numbers come in two flavors:
 
-[`int`](https://api.dartlang.org/stable/dart-core/int-class.html)
+[`int`]({{site.dart_api}}/dart-core/int-class.html)
 
 :   Integer values, which generally should be in the range
     -2<sup>53</sup> to 2<sup>53</sup>
 
-[`double`](https://api.dartlang.org/stable/dart-core/double-class.html)
+[`double`]({{site.dart_api}}/dart-core/double-class.html)
 
 :   64-bit (double-precision) floating-point numbers, as specified by
     the IEEE 754 standard
 
 Both `int` and `double` are subtypes of
-[`num`.](https://api.dartlang.org/stable/dart-core/num-class.html) The num type
+[`num`.]({{site.dart_api}}/dart-core/num-class.html) The num type
 includes basic operators such as +, -, /, and \*, as well as bitwise
 operators such as \>\>. The num type is also where you’ll find
 `abs()`,` ceil()`, and `floor()`, among other methods. If num and its
 subtypes don’t have what you’re looking for, the
-[dart:math](https://api.dartlang.org/stable/dart-math/dart-math-library.html) library might.
+[dart:math]({{site.dart_api}}/dart-math/dart-math-library.html) library might.
 
 <div class="alert alert-warning" markdown="1">
 **Warning:**
@@ -520,7 +520,7 @@ const validConstString = '$aConstNum $aConstBool $aConstString';
 {% endprettify %}
 
 For more information on using strings, see
-[Strings and regular expressions](library-tour#strings-and-regular-expressions).
+[Strings and regular expressions](/guides/libraries/library-tour#strings-and-regular-expressions).
 
 
 ### Booleans {#booleans}
@@ -604,7 +604,7 @@ assert(iMeantToDoThis.isNaN);
 
 Perhaps the most common collection in nearly every programming language
 is the *array*, or ordered group of objects. In Dart, arrays are
-[List](https://api.dartlang.org/stable/dart-core/List-class.html) objects, so we
+[List]({{site.dart_api}}/dart-core/List-class.html) objects, so we
 usually just call them *lists*.
 
 Dart list literals look like JavaScript array literals. Here’s a simple
@@ -641,7 +641,7 @@ var constantList = const [1, 2, 3];
 
 The List type has many handy methods for manipulating lists. For more
 information about lists, see [Generics](#generics) and
-[Collections](library-tour#collections).
+[Collections](/guides/libraries/library-tour#collections).
 
 
 ### Maps {#maps}
@@ -650,7 +650,7 @@ In general, a map is an object that associates keys and values. Both
 keys and values can be any type of object. Each *key* occurs only once,
 but you can use the same *value* multiple times. Dart support for maps
 is provided by map literals and the
-[Map](https://api.dartlang.org/stable/dart-core/Map-class.html) type.
+[Map]({{site.dart_api}}/dart-core/Map-class.html) type.
 
 Here are a couple of simple Dart maps, created using map literals:
 
@@ -736,7 +736,7 @@ final constantMap = const {
 
 For more information about maps, see
 [Generics](#generics) and
-[Maps](library-tour#maps).
+[Maps](/guides/libraries/library-tour#maps).
 
 ### Runes {#runes}
 
@@ -755,7 +755,7 @@ To specify more or less than 4 hex digits,
 place the value in curly brackets.
 For example, the laughing emoji (😆) is `\u{1f600}`.
 
-The [String](https://api.dartlang.org/latest/dart-core/String-class.html)
+The [String]({{site.dart_api}}/dart-core/String-class.html)
 class has several properties you can use to extract rune information.
 The `codeUnitAt` and `codeUnit` properties return 16-bit code
 units. Use the `runes` property to get the runes of a string.
@@ -801,7 +801,7 @@ For more information, see
 
 ### Symbols {#symbols}
 
-A [Symbol](http://api.dartlang.org/stable/dart-core/Symbol-class.html) object
+A [Symbol]({{site.dart_api}}/dart-core/Symbol-class.html) object
 represents an operator or identifier declared in a Dart program. You
 might never need to use symbols, but they're invaluable for APIs that
 refer to identifiers by name, because minification changes identifier
@@ -819,14 +819,14 @@ To get the symbol for an identifier, use a symbol literal, which is just
 Symbol literals are compile-time constants.
 
 For more information on symbols, see
-[dart:mirrors - reflection](library-tour#dartmirrors---reflection).
+[dart:mirrors - reflection](/guides/libraries/library-tour#dartmirrors---reflection).
 
 
 ## Functions {#functions}
 
 Dart is a true object-oriented language, so even functions are objects
 and have a type,
-[`Function`](https://api.dartlang.org/1.12.0/dart-core/Function-class.html).
+[`Function`]({{site.dart_api}}/dart-core/Function-class.html).
 This means that functions can be assigned to variables or passed as arguments
 to other functions. You can also call an instance of a Dart class as if
 it were a function. For details, see [Callable classes](#callable-classes).
@@ -841,7 +841,7 @@ bool isNoble(int atomicNumber) {
 {% endprettify %}
 
 Although Effective Dart recommends
-[type annotations for public APIs](/guides/effective-dart/design#do-type-annotate-public-apis),
+[type annotations for public APIs](/guides/language/effective-dart/design#do-type-annotate-public-apis),
 the function still works if you omit the types:
 
 <!-- ch02/function_omitting_types.dart -->
@@ -1348,7 +1348,7 @@ The following table lists the meanings of equality and relational operators.
 To test whether two objects x and y represent the same thing, use the
 `==` operator. (In the rare case where you need to know whether two
 objects are the exact same object, use the
-[`identical()`](https://api.dartlang.org/stable/dart-core/identical.html)
+[`identical()`]({{site.dart_api}}/dart-core/identical.html)
 function instead.) Here’s how the `==` operator works:
 
 1.  If *x* or *y* is null, return true if both are null, and false if only
@@ -1718,7 +1718,7 @@ The output is `0` and then `1`, as expected. In contrast, the example
 would print `2` and then `2` in JavaScript.
 
 If the object that you are iterating over is an Iterable, you can use the
-[`forEach()`](https://api.dartlang.org/stable/dart-core/Iterable/forEach.html)
+[`forEach()`]({{site.dart_api}}/dart-core/Iterable/forEach.html)
 method. Using `forEach()` is a good option if you don’t need to
 know the current iteration counter:
 
@@ -1728,7 +1728,7 @@ candidates.forEach((candidate) => candidate.interview());
 {% endprettify %}
 
 Iterable classes such as List and Set also support the `for-in` form of
-[iteration](library-tour#iteration):
+[iteration](/guides/libraries/library-tour#iteration):
 
 <!-- ch02/flow_for_loops.dart -->
 {% prettify dart %}
@@ -1786,7 +1786,7 @@ for (int i = 0; i < candidates.length; i++) {
 {% endprettify %}
 
 You might write that example differently if you’re using an
-[Iterable](https://api.dartlang.org/stable/dart-core/Iterable-class.html)
+[Iterable]({{site.dart_api}}/dart-core/Iterable-class.html)
 such as a list or set:
 
 <!-- ch02/flow_break_continue.dart -->
@@ -1924,7 +1924,7 @@ Inside the parentheses after `assert`, you can put any expression that
 resolves to a boolean value or to a function. If the expression’s value
 or function’s return value is true, the assertion succeeds and execution
 continues. If it's false, the assertion fails and an exception (an
-[AssertionError](https://api.dartlang.org/stable/dart-core/AssertionError-class.html))
+[AssertionError]({{site.dart_api}}/dart-core/AssertionError-class.html))
 is thrown.
 
 
@@ -1940,8 +1940,8 @@ Methods do not declare which exceptions they might throw, and you are
 not required to catch any exceptions.
 
 Dart provides
-[Exception](https://api.dartlang.org/stable/dart-core/Exception-class.html) and
-[Error](https://api.dartlang.org/stable/dart-core/Error-class.html)
+[Exception]({{site.dart_api}}/dart-core/Exception-class.html) and
+[Error]({{site.dart_api}}/dart-core/Error-class.html)
 types, as well as numerous predefined subtypes. You can, of course,
 define your own exceptions. However, Dart programs can throw any
 non-null object—not just Exception and Error objects—as an exception.
@@ -2015,7 +2015,7 @@ your exception handler needs the exception object.
 You can specify one or two parameters to `catch()`.
 The first is the exception that was thrown,
 and the second is the stack trace
-(a [StackTrace](https://api.dartlang.org/stable/dart-core/StackTrace-class.html) object).
+(a [StackTrace]({{site.dart_api}}/dart-core/StackTrace-class.html) object).
 
 <!-- ch02/flow_exceptions.dart -->
 {% prettify dart %}
@@ -2084,14 +2084,14 @@ try {
 }
 {% endprettify %}
 
-Learn more by reading the [Exceptions](library-tour#exceptions) section.
+Learn more by reading the [Exceptions](/guides/libraries/library-tour#exceptions) section.
 
 
 ## Classes {#classes}
 
 Dart is an object-oriented language with classes and mixin-based
 inheritance. Every object is an instance of a class, and all classes
-descend from [Object.](https://api.dartlang.org/stable/dart-core/Object-class.html)
+descend from [Object.]({{site.dart_api}}/dart-core/Object-class.html)
 *Mixin-based inheritance* means that although every class (except for
 Object) has exactly one superclass, a class body can be reused in
 multiple class hierarchies.
@@ -2167,7 +2167,7 @@ assert(identical(a, b)); // They are the same instance!
 To get an object's type at runtime,
 you can use Object's `runtimeType` property,
 which returns a
-[Type](https://api.dartlang.org/stable/dart-core/dart-core/Type-class.html) object.
+[Type]({{site.dart_api}}/dart-core/Type-class.html) object.
 
 <!-- ch02/object_classes.dart -->
 {% prettify dart %}
@@ -2371,7 +2371,7 @@ class Employee extends Person {
 **Note:**
 When using `super()` in a constructor's initialization list, put it last.
 For more information, see the
-[Dart usage guide](/guides/effective-dart/usage#do-place-the-super-call-last-in-a-constructor-initialization-list).
+[Dart usage guide](/guides/language/effective-dart/usage#do-place-the-super-call-last-in-a-constructor-initialization-list).
 </div>
 
 <div class="alert alert-warning" markdown="1">
@@ -2682,7 +2682,7 @@ main() {
 
 If you override `==`, you should also override Object's `hashCode` getter.
 For an example of overriding `==` and `hashCode`, see
-[Implementing map keys](library-tour#implementing-map-keys).
+[Implementing map keys](/guides/libraries/library-tour#implementing-map-keys).
 
 For more information on overriding, in general, see
 [Extending a class](#extending-a-class).
@@ -2941,7 +2941,7 @@ Enumerated types have the following limits:
 * You can't explicitly instantiate an enum.
 
 For more information, see the
-[Dart Language Specification](/language/spec).
+[Dart Language Specification](/guides/language/spec).
 
 
 ### Adding features to a class: mixins {#adding-features-to-a-class-mixins}
@@ -3003,7 +3003,7 @@ and require the `--supermixin` flag in dartanalyzer.
 </div>
 
 For more information, see the article [Mixins in
-Dart.](/articles/mixins/)
+Dart.](/articles/language/mixins)
 
 
 ### Class variables and methods {#class-variables-and-methods}
@@ -3034,7 +3034,7 @@ Static variables aren’t initialized until they’re used.
 <div class="alert alert-info" markdown="1">
 **Note:**
 This chapter follows the [style guide
-recommendation](/guides/effective-dart#prefer-using-lowercamelcase-for-constant-names)
+recommendation](/guides/language/effective-dart#prefer-using-lowercamelcase-for-constant-names)
 of preferring `lowerCamelCase` for constant names.
 </div>
 
@@ -3080,7 +3080,7 @@ can pass a static method as a parameter to a constant constructor.
 ## Generics {#generics}
 
 If you look at the API documentation for the basic array type,
-[List,](https://api.dartlang.org/stable/dart-core/List-class.html)
+[List,]({{site.dart_api}}/dart-core/List-class.html)
 you’ll see that the
 type is actually `List<E>`. The \<...\> notation marks List as a
 *generic* (or *parameterized*) type—a type that has formal type
@@ -3249,7 +3249,7 @@ void main() {
 {% endprettify %}
 
 For more information about generics, see [Optional Types in
-Dart.](/articles/optional-types/)
+Dart.](/articles/language/optional-types)
 
 
 ## Libraries and visibility {#libraries-and-visibility}
@@ -3272,7 +3272,7 @@ Use `import` to specify how a namespace from one library is used in the
 scope of another library.
 
 For example, Dart web apps generally use the
-[dart:html](https://api.dartlang.org/stable/dart-html/dart-html-library.html)
+[dart:html]({{site.dart_api}}/dart-html/dart-html-library.html)
 library, which they can import like this:
 
 <!-- ch02/libraries/using_libraries.dart -->
@@ -3380,12 +3380,12 @@ Keep in mind the following when you use deferred loading:
   both the deferred library and the importing file.
 * Dart implicitly inserts `loadLibrary()` into the namespace that you define
   using <code>deferred as <em>namespace</em></code>.
-  The `loadLibrary()` function returns a [Future](library-tour#future).
+  The `loadLibrary()` function returns a [Future](/guides/libraries/library-tour#future).
 
 ### Implementing libraries {#implementing-libraries}
 
 See
-[Creating Library Packages](/libraries/create-library-packages)
+[Creating Library Packages](/guides/libraries/create-library-packages)
 for advice on how to implement a library package.
 
 ## Asynchrony support {#asynchrony}
@@ -3407,13 +3407,13 @@ When you need to use a value represented by a Future,
 you have two options:
 
 * Use `async` and `await`
-* Use the [Future API](library-tour#future)
+* Use the [Future API](/guides/libraries/library-tour#future)
 
 Similarly, when you need to get values from a Stream,
 you have two options:
 
 * Use `async` and an _asynchronous for loop_ (`await for`)
-* Use the [Stream API](library-tour#stream)
+* Use the [Stream API](/guides/libraries/library-tour#stream)
 
 Code that uses `async` and `await` is asynchronous,
 but it looks a lot like synchronous code.
@@ -3569,12 +3569,12 @@ main() async {
 {% endprettify %}
 
 For more information about asynchronous programming, see the
-[dart:async](library-tour#dartasync---asynchronous-programming)
+[dart:async](/guides/libraries/library-tour#dartasync---asynchronous-programming)
 section of the library tour.
 Also see the articles
-[Dart Language Asynchrony Support: Phase 1](/articles/await-async/) and
-[Dart Language Asynchrony Support: Phase 2](/articles/beyond-async/),
-and the [Dart language specification](/language/spec).
+[Dart Language Asynchrony Support: Phase 1](/articles/language/await-async/) and
+[Dart Language Asynchrony Support: Phase 2](/articles/language/beyond-async/),
+and the [Dart language specification](/guides/language/spec).
 
 ## Callable classes {#callable-classes}
 
@@ -3610,7 +3610,7 @@ src="{{site.custom.dartpad.embed-dart-prefix}}?id=405379bacf30335f3aed&horizonta
 </iframe>
 
 For more information on treating classes like functions, see
-[Emulating Functions in Dart](/articles/emulating-functions/).
+[Emulating Functions in Dart](/articles/language/emulating-functions).
 
 ## Isolates {#isolates}
 
@@ -3851,9 +3851,9 @@ for the Food class.
 To parse Dart code and generate HTML documentation, you can use the SDK’s
 [documentation generation tool.](https://github.com/dart-lang/dartdoc#dartdoc)
 For an example of generated documentation, see the [Dart API
-documentation.](http://api.dartlang.org) For advice on how to structure
+documentation.]({{site.dart_api}}) For advice on how to structure
 your comments, see
-[Guidelines for Dart Doc Comments.](/guides/effective-dart/documentation)
+[Guidelines for Dart Doc Comments.](/guides/language/effective-dart/documentation)
 
 
 ## Summary {#summary}
@@ -3861,6 +3861,6 @@ your comments, see
 This chapter summarized the commonly used features in the Dart language.
 More features are being implemented, but we expect that they won’t break
 existing code. For more information, see the [Dart Language
-Specification](/language/spec) and
-[Effective Dart](/guides/effective-dart/).
+Specification](/guides/language/spec) and
+[Effective Dart](/guides/language/effective-dart/).
 

@@ -12,7 +12,7 @@ March 2013 (updated May 2013)_
 This article covers the subject of error handling when dealing with Futures.
 If you are unfamiliar with the general concepts behind Futures, we
 recommend you first read
-[Asynchronous Programming: Futures](/tutorials/futures).
+[Asynchronous Programming: Futures](/tutorials/language/futures).
 
 ## Introduction
 
@@ -382,7 +382,7 @@ Read the following documentation for more details on using Futures:
 
 * [The Event Loop and Dart]({{site.dart_vm}}/articles/event-loop/),
   an article that describes how to schedule tasks using Futures
-* [Future API reference](http://api.dartlang.org/dart_async/Future.html)
+* [Future API reference]({{site.dart_api}}/dart-async/Future-class.html)
 
 {% comment %}
 The tests for this article are at /src/tests/site/articles/futures-and-error-handling.

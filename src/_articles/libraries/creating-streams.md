@@ -14,8 +14,8 @@ April 2013_
 
 The dart:async library contains two types
 that are important for many Dart APIs:
-[Stream](http://api.dartlang.org/dart_async/Stream.html) and
-[Future](http://api.dartlang.org/dart_async/Future.html).
+[Stream]({{site.dart_api}}/dart-async/Stream-class.html) and
+[Future]({{site.dart_api}}/dart-async/Future-class.html).
 Where a Future represents the result of a single computation,
 a stream is a _sequence_ of results.
 You listen on a stream to get notified of the results
@@ -41,7 +41,7 @@ For details on how stream transformers have changed, see the
 </aside>
 
 For help on using streams, see
-[Asynchronous Programming: Streams](/tutorials/streams).
+[Asynchronous Programming: Streams](/tutorials/language/streams).
 
 ## Transforming an existing stream
 
@@ -85,7 +85,7 @@ Instead of `map()`, you could use any transforming method, such as:
 Often, a transforming method is all you need.
 However, if you need more control over the transformation,
 you can specify a
-[StreamTransformer](http://api.dartlang.org/dart_async/StreamTransformer.html)
+[StreamTransformer]({{site.dart_api}}/dart-async/StreamTransformer-class.html)
 with Stream's `transform()` method.
 
 {% comment %}
@@ -93,7 +93,7 @@ For example, the following code
 (from [transformer.dart](code/transformer.dart))
 combines data from multiple events
 into a single event, using transform() with a
-[StreamEventTransformer](http://api.dartlang.org/dart_async/StreamEventTransformer.html) subclass:
+[StreamEventTransformer]({{site.dart_api}}/dart-async/StreamEventTransformer-class.html) subclass:
 
 {% prettify dart %}
 /// Combines strings, breaking them at 80 characters.
@@ -138,7 +138,7 @@ inherited from StreamEventTransformer.
 ## Using a StreamController
 
 When you need to implement a stream, consider using
-[StreamController](http://api.dartlang.org/dart_async/StreamController.html).
+[StreamController]({{site.dart_api}}/dart-async/StreamController-class.html).
 Creating a StreamController gives you a new stream
 and allows you to add events to the stream.
 The stream has all the logic necessary to handle listeners and pausing.
@@ -327,7 +327,7 @@ only the onListen or onCancel callback is called.
 If you need to implement a stream
 but are really just transforming events from another stream,
 you can extend
-[EventTransformStream](http://api.dartlang.org/dart_async/EventTransformStream.html).
+[EventTransformStream]({{site.dart_api}}/dart-async/EventTransformStream-class.html).
 Here's an example
 from [event_transform_stream.dart](code/event_transform_stream.dart):
 
@@ -468,7 +468,7 @@ keep these tips in mind:
   one created using `new StreamController(sync: true)`.
   When you send an event on an unpaused synchronous controller
   (for example, using the add(), addError(), or close() methods
-  defined by [EventSink](http://api.dartlang.org/dart_async/EventSink.html)),
+  defined by [EventSink]({{site.dart_api}}/dart-async/EventSink-class.html)),
   the event is sent immediately to all listeners on the stream.
   Make sure your stream's public methods
   are ready for event listeners to call them immediately.
@@ -480,7 +480,7 @@ keep these tips in mind:
   an onListen event fires
   (and `handler` is called)
   before the `subscription` variable (a
-  [StreamSubscription](http://api.dartlang.org/dart_async/StreamSubscription.html))
+  [StreamSubscription]({{site.dart_api}}/dart-async/StreamSubscription-class.html))
   has a valid value.
 
   {% prettify dart %}

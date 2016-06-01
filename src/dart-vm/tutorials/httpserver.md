@@ -26,15 +26,14 @@ header:
 <strong>Prerequisite:</strong>
 
 * HTTP servers and clients rely heavily on
-<a href="https://api.dartlang.org/dart_async/Future.html"
-   target="_blank">Future</a>s
+<a href="{{site.dart_api}}/dart-async/Future-class.html" target="_blank">Future</a>s
 and
-<a href="https://api.dartlang.org/dart_async/Stream.html"
+<a href="{{site.dart_api}}/dart-async/Stream-class.html"
    target="_blank">Stream</a>s,
 which are not explained in this tutorial.
-Refer to [Asynchronous Programming: Futures](/tutorials/futures/)
+Refer to [Asynchronous Programming: Futures](/tutorials/language/futures)
 and
-[Asynchronous Programming: Streams](/tutorials/streams/)
+[Asynchronous Programming: Streams](/tutorials/language/streams/)
 for information about using these classes.
 </aside>
 
@@ -62,8 +61,7 @@ as follows:
 * Server finally ends (closes) the response(s).
 
 In Dart, the
-<a href="https://api.dartlang.org/dart_io.html"
-   target="_blank">dart:io</a>
+<a href="{{site.dart_api}}/dart-io/dart-io-library.html" target="_blank">dart:io</a>
 library contains
 the classes and functions you need to write HTTP
 clients and servers.
@@ -82,7 +80,7 @@ work _only_ with standalone, command-line programs.
 They do not work in the browser.
 To make HTTP requests from a browser-based client
 refer to the
-<a href="https://api.dartlang.org/dart_html/HttpRequest.html"
+<a href="{{site.dart_api}}/dart_html/HttpRequest.html"
    target="_blank">dart:html HttpRequest</a> class.
 </aside>
 
@@ -182,8 +180,7 @@ _Example for this section: hello_world_server.dart._
 
 The first line of code in `main()`
 uses `HttpServer.bind()` to create an
-<a href="https://api.dartlang.org/dart_io/HttpServer.html"
-   target="_blank">HttpServer</a>
+<a href="{{site.dart_api}}/dart-io/HttpServer-class.html" target="_blank">HttpServer</a>
 object and bind it to a host and port.
 
 {% prettify dart %}
@@ -202,7 +199,7 @@ The first parameter of `bind()` specifies the hostname.
 You can specify a particular hostname or IP address as a String.
 Alternatively, you can specify the host using these predefined values
 provided by the
-<a href="https://api.dartlang.org/dart_io/InternetAddress.html"
+<a href="{{site.dart_api}}.dart-io/InternetAddress-class.html"
    target="_blank">InternetAddress</a> class:
 
 | Value | Use case |
@@ -231,7 +228,7 @@ the connection for your server will be refused.
 
 The server begins listening for HTTP requests using `await for`.
 For each request received, the highlighted code is executed for that
-<a href="https://api.dartlang.org/dart_io/HttpRequest.html"
+<a href="{{site.dart_api}}/dart-io/HttpServer-class.html"
    target="_blank">HttpRequest</a>
 object.
 
@@ -376,7 +373,7 @@ starting with `main()`.
 Once again the server binds to a host and port.
 Here, the top-level `handleRequest()` method is called for each
 request received. Because HttpServer implements
-<a href="https://api.dartlang.org/dart_async/Stream.html"
+<a href="{{site.dart_api}}/dart_async/Stream.html"
    target="_blank">Stream</a>,
 you can use `await for` to process the requests.
 
@@ -425,9 +422,9 @@ The following table lists some useful properties:
 | Property | Information |
 |---|---|
 | `method` | A String: 'GET', 'POST', 'PUT', and so on. |
-| `uri` | A  <a href="https://api.dartlang.org/dart_core/Uri.html" target="_blank">Uri</a> object: scheme, host, port, query string, and other information about the requested resource. |
-| `response` | An <a href="https://api.dartlang.org/dart_io/HttpResponse.html" target="_blank">HttpResponse</a> object: where the server writes its response. |
-| `headers` | An <a href="https://api.dartlang.org/dart_io/HttpHeaders.html" target="_blank">HttpHeaders</a> object: the headers for the request, including <a href="https://api.dartlang.org/dart_io/ContentType.html" target="_blank">ContentType</a>, content length, date, and so on. |
+| `uri` | A  <a href="{{site.dart_api}}/dart_core/Uri-class.html" target="_blank">Uri</a> object: scheme, host, port, query string, and other information about the requested resource. |
+| `response` | An <a href="{{site.dart_api}}/dart-io/HttpServer-class.html" target="_blank">HttpResponse</a> object: where the server writes its response. |
+| `headers` | An <a href="{{site.dart_api}}/dart-io/HttpHeaders-class.html" target="_blank">HttpHeaders</a> object: the headers for the request, including <a href="{{site.dart_api}}/dart-io/ContentType-class.html" target="_blank">ContentType</a>, content length, date, and so on. |
 {: .table}
 
 ### Using the method property
@@ -463,8 +460,7 @@ void handleGet(HttpRequest request) {
 <div class="prettify-filename">number_thinker.dart</div><br>
 
 Use the `uri` property from the HttpRequest object to get a
-<a href="https://api.dartlang.org/dart_core/Uri.html"
-   target="_blank">Uri</a> object
+<a href="{{site.dart_api}}/dart_core/Uri-class.html" target="_blank">Uri</a> object
 that contains the information about the URL typed by the user.
 The `queryParameters` property of the Uri object is a Map containing
 the components of the query string.
@@ -491,7 +487,7 @@ void handleGet(HttpRequest request) {
 
 `HttpStatus.OK` and `HttpStatus.METHOD_NOT_ALLOWED` are
 two of many predefined status codes in the
-<a href="https://api.dartlang.org/dart_io/HttpStatus.html"
+<a href="{{site.dart_api}}/dart-io/HttpStatus-class.html"
    target="_blank">HttpStatus</a> class.
 Another useful predefined status code is
 `HttpStatus.NOT_FOUND` (your classic 404).
@@ -502,9 +498,9 @@ the HttpResponse object has other useful properties:
 | Property | Information |
 |---|---|
 | `contentLength` | The length of the response. -1 means the length is not known in advance. |
-| `cookies` | A List of <a href="https://api.dartlang.org/dart_io/Cookie.html" target="_blank">Cookie</a>s to set in the client. |
-| `encoding` | The <a href="https://api.dartlang.org/dart_convert/Encoding.html" target="_blank">Encoding</a> used when writing strings, like JSON and UTF-8. |
-| `headers` | The response headers, an <a href="https://api.dartlang.org/dart_io/HttpHeaders.html" target="_blank">HttpHeaders</a> object. |
+| `cookies` | A List of <a href="{{site.dart_api}}/dart-io/Cookie-class.html" target="_blank">Cookie</a>s to set in the client. |
+| `encoding` | The <a href="{{site.dart_api}}/dart_convert/Encoding-class.html" target="_blank">Encoding</a> used when writing strings, like JSON and UTF-8. |
+| `headers` | The response headers, an <a href="{{site.dart_api}}/dart-io/HttpHeaders-class.html" target="_blank">HttpHeaders</a> object. |
 {: .table}
 
 ### Writing the response to the HttpResponse object
@@ -550,12 +546,11 @@ as POST, PUT, or DELETE,
 you need to write a client program, of which there are two kinds:
 
 * A standalone client program, which uses the
-  <a href="https://api.dartlang.org/dart_io/HttpClient.html" target="_blank">HttpClient</a>
+  <a href="{{site.dart_api}}/dart-io/HttpClient-class.html" target="_blank">HttpClient</a>
   class from `dart:io`.
 
 * A browser-based client, which uses API from
-  <a href="https://api.dartlang.org/dart_html.html"
-     target="_blank">dart:html</a>.
+  <a href="{{site.dart_api}}/dart_html.html" target="_blank">dart:html</a>.
   This tutorial does not cover browser-based clients.
   To look at code for a browser-based client and
   related server, see
@@ -646,8 +641,7 @@ an HttpClientResponse object.
 <span class="code-note">1</span>
 When the `post()` connection succeeds (and execution resumes after
 the await expression), the returned
-<a href="https://api.dartlang.org/dart_io/HttpClientRequest.html"
-   target="_blank">HttpClientRequest</a>
+<a href="{{site.dart_api}}/dart-io/HttpClientRequest-class.html" target="_blank">HttpClientRequest</a>
 object is assigned to the `request` variable.
 
 <span class="code-note">2</span>
@@ -674,7 +668,7 @@ matches the type specified in the ContentType header.
 <span class="code-note">5</span>
 The `close()` method sends the request to the server and, when complete,
 returns an
-<a href="https://api.dartlang.org/dart_io/HttpClientResponse.html"
+<a href="{{site.dart_api}}/dart-io/HttpClientResponse-class.html"
    target="_blank">HttpClientResponse</a> object
 that's assigned to the `reponse` variable.
 
@@ -781,7 +775,7 @@ from the URI: `file.txt`.
 <span class="code-note">4</span>
 The data sent by the client is JSON formatted.
 The server decodes it using the JSON codec available in the
-<a href="https://api.dartlang.org/dart_convert.html" target="_blank">dart:convert</a>
+<a href="{{site.dart_api}}/dart_convert.html" target="_blank">dart:convert</a>
 library.
 
 #### A note about CORS headers
@@ -924,7 +918,7 @@ The server displays the same index.html file as the previous:
 
 In this server, the code for handling the request is much shorter,
 because the
-<a href="https://api.dartlang.org/apidocs/channels/stable/#http_server/http_server.VirtualDirectory"
+<a href="https://www.dartdocs.org/documentation/http_server/latest/http_server/VirtualDirectory-class.html"
    target="_blank">VirtualDirectory</a>
 class handles the details of serving the file.
 
@@ -1062,16 +1056,16 @@ for further details about the classes and libraries discussed in this tutorial.
 
 | Dart class | Purpose |
 |---|---|
-| <a href="https://api.dartlang.org/dart_io/HttpServer.html" target="_blank">HttpServer</a> | An HTTP server |
-| <a href="https://api.dartlang.org/dart_io/HttpClient.html" target="_blank">HttpClient</a> | An HTTP client|
-| <a href="https://api.dartlang.org/dart_io/HttpRequest.html" target="_blank">HttpRequest</a> | A server-side request object |
-| <a href="https://api.dartlang.org/dart_io/HttpResponse.html" target="_blank">HttpResponse</a> | A server-side response object |
-| <a href="https://api.dartlang.org/dart_io/HttpClientRequest.html" target="_blank">HttpClientRequest</a> | A client-side request object |
-| <a href="https://api.dartlang.org/dart_io/HttpClientResponse.html" target="_blank">HttpClientResponse</a> | A client-side response object |
-| <a href="https://api.dartlang.org/dart_io/HttpHeaders.html" target="_blank">HttpHeaders</a> | The headers for a request |
-| <a href="https://api.dartlang.org/dart_io/HttpStatus.html" target="_blank">HttpStatus</a> | The status of the response |
-| <a href="https://api.dartlang.org/dart_io/InternetAddress.html" target="_blank">InternetAddress</a> | An internet address |
-| <a href="https://api.dartlang.org/dart_io/SecurityContext.html" target="_blank">SecurityContext</a> | Contains certificates, keys, and trust information for a secure connection |
+| <a href="{{site.dart_api}}/dart-io/HttpServer-class.html" target="_blank">HttpServer</a> | An HTTP server |
+| <a href="{{site.dart_api}}/dart-io/HttpClient-class.html" target="_blank">HttpClient</a> | An HTTP client|
+| <a href="{{site.dart_api}}/dart-io/HttpRequest-class.html" target="_blank">HttpRequest</a> | A server-side request object |
+| <a href="{{site.dart_api}}/dart-io/HttpResponse-class.html" target="_blank">HttpResponse</a> | A server-side response object |
+| <a href="{{site.dart_api}}/dart-io/HttpClientRequest-class.html" target="_blank">HttpClientRequest</a> | A client-side request object |
+| <a href="{{site.dart_api}}/dart-io/HttpClientResponse-class.html" target="_blank">HttpClientResponse</a> | A client-side response object |
+| <a href="{{site.dart_api}}/dart-io/HttpHeaders-class.html" target="_blank">HttpHeaders</a> | The headers for a request |
+| <a href="{{site.dart_api}}/dart-io/HttpStatus-class.html" target="_blank">HttpStatus</a> | The status of the response |
+| <a href="{{site.dart_api}}/dart-io/InternetAddress-class.html" target="_blank">InternetAddress</a> | An internet address |
+| <a href="{{site.dart_api}}/dart-io/SecurityContext-class.html" target="_blank">SecurityContext</a> | Contains certificates, keys, and trust information for a secure connection |
 | <a href="https://pub.dartlang.org/packages/http_server" target="_blank">http_server</a> package | A package with higher-level HTTP classes |
 {: .table}
 

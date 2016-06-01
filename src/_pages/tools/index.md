@@ -93,7 +93,7 @@ Consult the tools page for your technology for further details.
 
 * code formatter
 : Format your code according to the
-  [Dart Style Guide](/guides/effective-dart/style).
+  [Dart Style Guide](/guides/language/effective-dart/style).
   An IDE that supports Dart should allow you to format the code within
   the IDE. Or you can run the formatter from the command line.
   See [dartfmt](https://github.com/dart-lang/dart_style#readme)

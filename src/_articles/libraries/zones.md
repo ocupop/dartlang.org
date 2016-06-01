@@ -445,7 +445,7 @@ that works in asynchronous contexts.
 Use the `zoneSpecification` argument to `runZoned()`
 to override functionality that is managed by zones.
 The argument's value is a
-[ZoneSpecification](https://api.dartlang.org/apidocs/channels/stable/#dart-async.ZoneSpecification) object,
+[ZoneSpecification]({{site.dart_api}}/dart-async/ZoneSpecification-class.html) object,
 with which you can override any of the following functionality:
 
 * Forking child zones
@@ -746,14 +746,14 @@ that you can use for functionality such as profiling.
 
 Zone-related API documentation
 : Read the docs for
-  [runZoned()](https://api.dartlang.org/apidocs/channels/stable/#dart-async@id_runZoned),
-  [Zone](https://api.dartlang.org/apidocs/channels/stable/#dart-async.Zone),
-  [ZoneDelegate](https://api.dartlang.org/apidocs/channels/stable/#dart-async.ZoneDelegate), and
-  [ZoneSpecification](https://api.dartlang.org/apidocs/channels/stable/#dart-async.ZoneSpecification).
+  [runZoned()]({{site.dart_api}}/dart-async/runZoned.html),
+  [Zone]({{site.dart_api}}/dart-async/Zone-class.html),
+  [ZoneDelegate]({{site.dart_api}}/dart-async/ZoneDelegate-class.html), and
+  [ZoneSpecification]({{site.dart_api}}/dart-async/ZoneSpecification-class.html).
 
 stack_trace
 : With the stack_trace library's
-  [Chain class](https://api.dartlang.org/apidocs/channels/stable/#stack_trace/stack_trace.Chain)
+  [Chain class](https://www.dartdocs.org/documentation/stack_trace/1.6.5/stack_trace/Chain-class.html)
   you can get better stack traces for asynchronously executed code.
   See the [stack_trace package](https://pub.dartlang.org/packages/stack_trace)
   at pub.dartlang.org for more information.

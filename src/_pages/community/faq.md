@@ -646,11 +646,11 @@ See [Who Uses Dart] for more.
 [perf]: /performance/
 [chrome.dart]: https://github.com/dart-gde/chrome.dart
 [announcement]: http://blog.chromium.org/2013/11/dart-10-stable-sdk-for-structured-web.html
-[lang]: /guides/language-tour
-[libs]: /guides/library-tour
+[lang]: /guides/language/language-tour
+[libs]: /guides/libraries/library-tour
 [Oilpan]: https://docs.google.com/a/google.com/document/d/1y7_0ni0E_kxvrah-QtnreMlzCDKN3QP4BN1Aw7eSLfY
 [Dartium]: /tools/dartium/
-[JSON]: http://api.dartlang.org/docs/channels/stable/latest/dart_convert.html#JSON
+[JSON]: {{site.dart_api}}/dart-convert/JsonCodec-class.html
 [tc52]: http://news.dartlang.org/2013/12/ecma-forms-tc52-for-dart-standardization.html
 [Dart on the Server]: https://dart-lang.github.io/server/
 [Dart Tools]: /tools/

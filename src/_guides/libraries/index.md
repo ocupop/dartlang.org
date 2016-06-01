@@ -40,7 +40,7 @@ at the following links:
        shared with other developers and published on pub.dartlang.org.</p>
   </div>
   <div class="card">
-    <h3><a href="https://api.dartlang.org">api.dartlang.org</a></h3>
+    <h3><a href="{{site.dart_api}}">api.dartlang.org</a></h3>
     <p>API reference docs for Dart for the Web, and the standalone
        Dart VM.</p>
   </div>
