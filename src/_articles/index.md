@@ -7,7 +7,7 @@ description: "Read about the Dart language and tools with this collection of art
 <div class="break-80">
   <h2>Language Details</h2>
   {% assign articles = site.articles | filter: 'language' | order: 'date' | reverse %}
-  <ul class="nav nav-list">
+  <ul class="nav-list">
     {% for article in articles %}
       <li>{% include article_summary.html %}</li>
     {% endfor %}
@@ -16,7 +16,7 @@ description: "Read about the Dart language and tools with this collection of art
 <div class="break-80">
   <h2>Libraries and APIs</h2>
   {% assign articles = site.articles | filter: 'libraries' | order: 'date' | reverse %}
-  <ul class="nav nav-list">
+  <ul class="nav-list">
     {% for article in articles %}
       <li>{% include article_summary.html %}</li>
     {% endfor %}
