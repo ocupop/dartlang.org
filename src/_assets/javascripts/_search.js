@@ -22,7 +22,6 @@ jQuery(function() {
   });
 
   $('#search').on('keyup', function(){
-    window.console.log($(this).val());
     if($(this).val().length !=0) {
       $(this).parent().addClass('active');
     } else {
@@ -32,7 +31,6 @@ jQuery(function() {
 
   // Event when the form is submitted
   $(".searchfield button").on('click', function(){
-    window.console.log('HELLO');
     event.preventDefault();
     var query = $("#search").val(); // Get the value for the text field
     var results = window.idx.search(query); // Get lunr to perform a search
