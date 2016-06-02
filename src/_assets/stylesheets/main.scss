@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 h1, .h1 { font-size: $font-size-h1; margin-bottom: 0.67em; }
 h2, .h2 { font-size: $font-size-h2;}
 h3, .h3 { font-size: $font-size-h3;}
-h4, .h4 { font-size: $font-size-h4;}
+h4, .h4 { font-size: $font-size-h4; margin-bottom: 0; }
 h5, .h5 { font-size: $font-size-h5;}
 h6, .h6 { font-size: $font-size-h6;}
 
@@ -64,7 +64,6 @@ a, button {
 }
 
 form {
-
   .muted {
     font-size: 75%;
     color: $gray-light;
@@ -563,8 +562,8 @@ img {
  ----------------------------------------- */
 
 .content {
- position: relative;
- padding: $content-padding;
+  position: relative;
+  padding: $content-padding;
 }
 
 .button {
@@ -604,6 +603,22 @@ img {
  li {
    page-break-inside: avoid;
  }
+}
+
+.break-50 {
+  width: 50% !important;
+}
+.break-60 {
+  width: 60% !important;
+}
+.break-70 {
+  width: 70% !important;
+}
+.break-80 {
+  width: 80% !important;
+}
+.break-90 {
+  width: 90% !important;
 }
 
 .banner {
@@ -670,6 +685,10 @@ img {
  h1, h2, h3, h4, h5, h6 {
    color: $gray-dark;
  }
+}
+
+.muted {
+  color: $gray;
 }
 
 .footnote {
@@ -766,6 +785,11 @@ img {
   }
 }
 
+.nav-list {
+  li {
+    margin-bottom: 30px;
+  }
+}
 
 /* -----------------------------------------
   Templates
@@ -921,6 +945,13 @@ body.condensed_header {
 @media(max-width: 600px) {
   .card {
     width: 100%;
+  }
+  .break-50,
+  .break-60,
+  .break-70,
+  .break-80,
+  .break-90, {
+    width: 100% !important;
   }
 }
 
