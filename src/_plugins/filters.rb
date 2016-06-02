@@ -8,7 +8,7 @@ module Jekyll
       end
       return ary
     end
-    
+
     def order(input, property = nil)
       ary = InputIterator.new(input)
       if property.nil?
@@ -18,16 +18,8 @@ module Jekyll
       elsif ary.first.respond_to?(:[]) && !ary.first[property].nil?
         ary.sort { |a,b|
           if property == 'date'
-            # a[property] = a['updated'] || a['date'].strftime("%Y-%m-%d")
-            # b[property] = b['updated'] || b['date'].strftime("%Y-%m-%d")
-
-            # puts "TEST: #{a['date'].strftime("%Y-%m-%d")}"
-
             a[property] = a['updated'] || a['written']
             b[property] = b['updated'] || b['written']
-
-            # puts "Title: #{a['title']} Date: #{a[property]}"
-            # puts "Title: #{b['title']} Date: #{b[property]}"
           end
           a[property] <=> b[property]
         }

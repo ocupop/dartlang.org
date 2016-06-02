@@ -1,19 +1,24 @@
-{% if page.breadcrumbs == true %}
+{% if page.show_breadcrumbs == true %}
 
-{% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
-{% if crumbs.size >= 3 %}
-<div class="breadcrumbs">
-  {% for crumb in crumbs offset: 1 %}
-    {% if forloop.last %}
-      {{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}
-    {% else %}
-      {% unless crumb == 'index.html' %}
-      <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}</a>
-      {% endunless %}
-      &nbsp;/&nbsp;
+{% capture url %}{% if page.language%}{{ page.url | remove: "/" | remove: page.language }}{% else %}{{ page.url | remove: "/" }}{% endif %}{% endcapture %}
+{% if url.size > 0 %}
+  <ol class="breadcrumb list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
+  {% assign position = 0 %}
+  {% for crumb in breadcrumbs %}
+    {% if crumb.url == "/" %}
+      {% continue %}
     {% endif %}
+
+    {% assign caption = crumb.title %}
+    {% assign position = position  | plus: 1 %}
+    <li class="breadcrumb-item{% if crumb.url == page.url %} active{% endif %}" property="itemListElement" typeof="ListItem">
+      {% if crumb.url != page.url %}<a property="item" typeof="WebPage" href="{{ crumb.url | prepend: site.baseurl | prepend: site.url }}">{% endif %}
+      <span property="name">{{ caption }}</span>
+      {% if crumb.url != page.url %}</a>{% endif %}
+      <meta property="position" content="{{ position }}" />
+    </li>
   {% endfor %}
-</div>
+  </ol>
 {% endif %}
 
 {% endif %}

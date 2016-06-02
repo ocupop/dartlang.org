@@ -774,6 +774,23 @@ img {
   }
 }
 
+.breadcrumb {
+  background-color: transparent;
+  > .active {
+    color: $gray;
+  }
+  > li {
+    + li {
+
+      &:before {
+        content: "/ ";
+        padding: 0 5px;
+        color: $gray;
+      }
+    }
+  }
+}
+
 ul.nav-list {
   list-style: none;
   padding: 0;
