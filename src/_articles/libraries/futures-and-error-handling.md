@@ -2,8 +2,9 @@
 layout: article
 title: "Futures and Error Handling"
 description: "Everything you wanted to know about handling errors and exceptions when working with Futures (but were afraid to ask)."
-date: 2013-03-07
+written: 2013-03-07
 updated: 2013-05-30
+category: libraries
 ---
 
 _Written by Shailen Tuli <br>
