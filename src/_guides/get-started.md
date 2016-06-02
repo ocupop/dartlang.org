@@ -27,40 +27,45 @@ Note that DartPad does not allow you to import packages,
 such as dart:io. If you want that level of control, you'll need
 to install an SDK.
 
-## What kind of application do you want to write?
+## What kind of app do you want to write?
 
-(feedback: maybe make this more visual. What kind of app then leads to the
-relevant "Install" page.)
+This website ( www.dartlang.org ) contains information common to most
+Dart technologies: the language and the core libraries. Where can you
+go to learn specific information about your chosen technology?
 
-This website includes information common to most Dart technologies,
-but you'll also want to check out the site that contains information
-specific to your chosen technology.
+<table border="1">
+<tr>
+  <th>&nbsp;</th>
+  <th>WEB</th>
+  <th>MOBILE</th>
+  <th>EMBEDDED</th>
+  <th>SERVER</th>
+</tr>
 
-A web app that runs in any modern browser?
-: Check out [Dart for the Web]({{site.dart4web}}).
+<tr>
+  <td><strong>Use</strong></td>
+  <td>Run your app in any modern browser</td>
+  <td>Run on <strong>both</strong> iOS and Android from a single codebase</td>
+  <td>Control a thermostat (or other device) from the Internet of Things (IoT)</td>
+  <td>Create a command-line app or server</td>
+</tr>
 
-A mobile app that runs on **both** iOS and Android from a single codebase?
-: Check out [Flutter](https://flutter.io/).
+<tr>
+  <td><strong>Learn more</strong></td>
+  <td><a href="{{site.dart4web}}">Dart for the Web</a></td>
+  <td><a href="{{site.flutter}}">Flutter</a></td>
+  <td><a href="{{site.dartino}}">Dartino</a></td>
+  <td><a href="{{site.dart_vm}}">Dart VM</a></td>
+</tr>
 
-A command line application? A server?
-: Check out the [standalone Dart VM]({{site.dart_vm}}).
-
-An app to control a thermostat or some other device from the Internet of Things (IoT)?
-: Check out [Dartino](https://github.com/dartino).
-
-## Install
-
-Once you're ready to go beyond DartPad, you'll need to install
-an SDK and tools for the platform where you want to code.
-
-* For Dart on the web,
-  install the [Dart SDK and Dartium]({{site.dart_vm}}/downloads/).
-* For standalone applications, like servers and scripts,
-  install the [Dart SDK]({{site.dart_vm}}/downloads/).
-* For Dart on mobile,
-  install [Flutter](https://flutter.io/).
-* For embedded Dart,
-  install [Dartino](https://github.com/dartino).
+<tr>
+  <td><strong>Install</strong></td>
+  <td><a href="{{site.dart_vm}}/downloads/">Dart SDK and Dartium</a></td>
+  <td><a href="{{site.flutter}}/setup/">Flutter Setup</a> (in beta)</td>
+  <td><a href="{{site.dartino}}/getting-started/">Get Started with Dartino</a> (in alpha)</td>
+  <td><a href="{{site.dart_vm}}/downloads/">Dart SDK</a></td>
+</tr>
+</table>
 
 ## Choose your IDE
 
