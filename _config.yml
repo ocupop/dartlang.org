@@ -106,7 +106,7 @@ custom:
 safe: false
 source: src
 destination: publish
-# incremental: true
+incremental: true
 bundler_args: --without production
 markdown: kramdown
 excerpt_separator: "~~~"
