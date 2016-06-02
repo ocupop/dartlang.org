@@ -50,7 +50,7 @@ Dart is an open source project, and we look forward to hearing from you.
 
 #### Communities
 
-* [Reddit](http://www.reddit.com/r/dartlang/)
+* [Reddit](https://www.reddit.com/r/dartlang)
 * [Slack](https://dartlang.slack.com/) ([register](https://dartlang-slack.herokuapp.com/))
 * [Hacker News](https://hn.algolia.com/?q=Dart#!/story/forever/0/Dart)
 * [Dartisans on Google+](http://g.co/dartisans)

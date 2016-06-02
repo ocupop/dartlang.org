@@ -447,7 +447,7 @@ and asynchronous programming in Dart.
 
 * [Single-Subscription vs Broadcast Streams](/articles/libraries/broadcast-streams/),
   an article about the two different types of streams
-* [Creating Streams in Dart](/articles/language/creating-streams/),
+* [Creating Streams in Dart](/articles/libraries/creating-streams/),
   an article about creating your own streams
 * [Futures and Error Handling](/articles/libraries/futures-and-error-handling/),
   an article that explains how to handle errors using the Future API

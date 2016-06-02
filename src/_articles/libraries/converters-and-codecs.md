@@ -216,9 +216,9 @@ are used to add new data to a
 converter or as output from converters. The basic ChunkedConversionSink comes
 with two methods: `add()` and `close()`. These have the same functionality as in
 all other sinks of the system such as
-[StringSinks]({{site.dart_api}}/dart-convert/StringSink-class.html)
+[StringSinks]({{site.dart_api}}/dart-core/StringSink-class.html)
 or
-[StreamSinks]({{site.dart_api}}/dart-convert/StreamSink-class.html).
+[StreamSinks]({{site.dart_api}}/dart-async/StreamSink-class.html).
 
 The ChunkedConversionSinks semantics are similar to that of
 [IOSinks]({{site.dart_api}}/dart-io/IOSink-class.html):

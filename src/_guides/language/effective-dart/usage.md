@@ -744,12 +744,12 @@ from causing problems. Even here, it is usually better to catch [Exception][]
 than to catch all types. Exception is the base class for all *runtime* errors
 and excludes errors that indicate *programmatic* bugs in the code.
 
-[pokemon]: http://blog.codinghorror.com/new-programming-jargon/
-[StackOverflowError]: {{site.dart_api}}/StackOverflowError-class.html
-[OutOfMemoryError]: {{site.dart_api}}/OutOfMemoryError-class.html
-[ArgumentError]: {{site.dart_api}}/ArgumentError-class.html
-[AssertionError]: {{site.dart_api}}/AssertionError-class.html
-[Exception]: {{site.dart_api}}/Exception-class.html
+[pokemon]: https://blog.codinghorror.com/new-programming-jargon/
+[StackOverflowError]: {{site.dart_api}}/dart-core/StackOverflowError-class.html
+[OutOfMemoryError]: {{site.dart_api}}/dart-core/OutOfMemoryError-class.html
+[ArgumentError]: {{site.dart_api}}/dart-core/ArgumentError-class.html
+[AssertionError]: {{site.dart_api}}/dart-core/AssertionError-class.html
+[Exception]: {{site.dart_api}}/dart-core/Exception-class.html
 
 
 ### DON'T discard errors from catches without `on` clauses.
