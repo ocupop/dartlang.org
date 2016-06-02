@@ -25,7 +25,7 @@ you need the Dart SDK.
 ## What's in the SDK
 
 The SDK directory includes a `lib` directory for the
-[Dart libraries](/guides/library-tour)
+[Dart libraries](/guides/libraries/library-tour)
 and a `bin` directory that has these command-line tools:
 
 <div class="row"> <div class="col-md-6" markdown="1">

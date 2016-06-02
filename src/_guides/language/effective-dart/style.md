@@ -4,10 +4,10 @@ title: "Effective Dart: Style"
 description: "Formatting and naming rules for consistent, readable code."
 
 nextpage:
-  url: /guides/effective-dart/documentation
+  url: /guides/language/effective-dart/documentation
   title: "Documentation"
 prevpage:
-  url: /guides/effective-dart/
+  url: /guides/language/effective-dart/
   title: "Overview"
 ---
 

@@ -103,7 +103,7 @@ Object complexity:
   All of the objects to be serialized are
   [data transfer objects](http://en.wikipedia.org/wiki/Data_transfer_object)
   (DTOs)
-  with a [default constructor](/guides/language-tour#default-constructors).
+  with a [default constructor](/guides/language/language-tour#default-constructors).
 * Complex:
   Some or all of the objects to be serialized have cycles,
   can't be created with no-argument constructors,

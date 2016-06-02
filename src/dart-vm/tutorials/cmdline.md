@@ -159,8 +159,8 @@ The args library contains two classes:
 
 | Library | Description |
 |---|---|
-| <a href="https://api.dartlang.org/args/ArgParser" target="_blank">ArgParser</a> | A class that parses command-line arguments |
-| <a href="https://api.dartlang.org/args/ArgResults" target="_blank">ArgResults</a> | The result of parsing command-line arguments using ArgParser. |
+| <a href="https://www.dartdocs.org/documentation/args/latest/args/ArgParser-class.html" target="_blank">ArgParser</a> | A class that parses command-line arguments |
+| <a href="https://www.dartdocs.org/documentation/args/latest/args/ArgResults-class.html" target="_blank">ArgResults</a> | The result of parsing command-line arguments using ArgParser. |
 {: .table }
 
 Let's take a look at the `dcat` sample,
@@ -217,7 +217,7 @@ void main(<a href="#" class="dart-popover" data-toggle="popover" title="Command-
 </pre>
 
 The
-<a href="https://api.dartlang.org/args.html" target="_blank">API docs</a>
+<a href="https://www.dartdocs.org/documentation/args/latest/index.html" target="_blank">API docs</a>
 for the args library
 provide detailed information
 to help you use ArgsParser and ArgResults classes.
@@ -230,9 +230,9 @@ The standard I/O streams are defined at the top level of the dart:io library,
 
 | Stream | Description |
 |---|---|
-| <a href="https://api.dartlang.org/dart_io.html#stdout" target="_blank">stdout</a> | The standard output |
-| <a href="https://api.dartlang.org/dart_io.html#stderr" target="_blank">stderr</a> | The standard error |
-| <a href="https://api.dartlang.org/dart_io.html#stdin" target="_blank">stdin</a> | The standard input |
+| <a href="{{site.dart_api}}/dart-io/stdout.html" target="_blank">stdout</a> | The standard output |
+| <a href="{{site.dart_api}}/dart-io/stderr.html" target="_blank">stderr</a> | The standard error |
+| <a href="{{site.dart_api}}/dart-io/stdin.html" target="_blank">stdin</a> | The standard input |
 {: .table }
 
 Import the dart:io library as follows:
@@ -339,7 +339,7 @@ The quick brown fox jumped over the lazy dog.
 ## Getting info about a file {#filesystementity}
 
 The
-<a href="https://api.dartlang.org/dart_io/FileSystemEntity.html" target="_blank">FileSystemEntity</a>
+<a href="{{site.dart_api}}/dart-io/FileSystemEntity-class.html" target="_blank">FileSystemEntity</a>
 class in the dart:io library provides
 properties and static methods that help you inspect and manipulate the file system.
 
@@ -435,7 +435,7 @@ import 'dart:convert';
 
 The easiest way to write text to a file is to
 create a
-<a href="https://api.dartlang.org/dart_io/File.html" target="_blank">File</a>
+<a href="{{site.dart_api}}/dart-io/File-class.html" target="_blank">File</a>
 object and use the `writeAsString()` method:
 
 {% prettify dart %}
@@ -471,7 +471,7 @@ quotes.close().then((_) { print('done'); } );
 ## Getting environment information {#env-var}
 
 Use the
-<a href="https://api.dartlang.org/dart_io/Platform.html" target="_blank">Platform</a>
+<a href="{{site.dart_api}}/dart-io/Platform-class.html" target="_blank">Platform</a>
 class
 to get information about the machine and OS that the program is running on.
 Note: Use the Platform class from the dart:io library,
@@ -556,24 +556,24 @@ This tutorial described some basic API found in these classes from the dart:io l
 
 | API | Description |
 |---|---|
-| <a href="https://api.dartlang.org/dart_io/IOSink.html" target="_blank">IOSink</a> | Helper class for objects that consume data from streams. |
-| <a href="https://api.dartlang.org/dart_io/File.html" target="_blank">File</a> | Represents a file on the native file system |
-| <a href="https://api.dartlang.org/dart_io/Directory.html" target="_blank">Directory</a> | Represents a directory on the native file system |
-| <a href="https://api.dartlang.org/dart_io/FileSystemEntity.html" target="_blank">FileSystemEntity</a> | Superclass for File and Directory |
-| <a href="https://api.dartlang.org/dart_io/Platform.html" target="_blank">Platform</a> | Provides information about the machine and operating system |
-| <a href="https://api.dartlang.org/dart_io.html#stdout" target="_blank">stdout</a> | The standard output |
-| <a href="https://api.dartlang.org/dart_io.html#stderr" target="_blank">stderr</a> | The standard error |
-| <a href="https://api.dartlang.org/dart_io.html#stdin" target="_blank">stdin</a> | The standard input |
-| <a href="https://api.dartlang.org/dart_io.html#exitCode" target="_blank">exitCode</a> | Sets the exit code |
-| <a href="https://api.dartlang.org/dart_io.html#exit" target="_blank">exit()</a> | Sets the exit code and quits |
+| <a href="{{site.dart_api}}/dart-io/IOSink-class.html" target="_blank">IOSink</a> | Helper class for objects that consume data from streams. |
+| <a href="{{site.dart_api}}/dart-io/File-class.html" target="_blank">File</a> | Represents a file on the native file system |
+| <a href="{{site.dart_api}}/dart-io/Directory-class.html" target="_blank">Directory</a> | Represents a directory on the native file system |
+| <a href="{{site.dart_api}}/dart-io/FileSystemEntity-class.html" target="_blank">FileSystemEntity</a> | Superclass for File and Directory |
+| <a href="{{site.dart_api}}/dart-io/Platform-class.html" target="_blank">Platform</a> | Provides information about the machine and operating system |
+| <a href="{{site.dart_api}}/dart-io/stdout.html" target="_blank">stdout</a> | The standard output |
+| <a href="{{site.dart_api}}/dart-io/stderr.html" target="_blank">stderr</a> | The standard error |
+| <a href="{{site.dart_api}}/dart-io/stdin.html" target="_blank">stdin</a> | The standard input |
+| <a href="{{site.dart_api}}/dart-io/exitCode.html" target="_blank">exitCode</a> | Sets the exit code |
+| <a href="{{site.dart_api}}/dart-io/exit.html" target="_blank">exit()</a> | Sets the exit code and quits |
 {: .table }
 
 In addition, this tutorial covers two classes that help with command-line arguments:
 
 | Class | Description |
 |---|---|
-| <a href="https://api.dartlang.org/args/ArgParser" target="_blank">ArgParser</a> | A class that transforms a list of raw arguments and into a set of options, flags, and remaining values. |
-| <a href="https://api.dartlang.org/args/ArgResults" target="_blank">ArgResults</a> | The result of parsing raw command line arguments using ArgParser. |
+| <a href="https://www.dartdocs.org/documentation/args/latest/args/ArgParser-class.html" target="_blank">ArgParser</a> | A class that transforms a list of raw arguments and into a set of options, flags, and remaining values. |
+| <a href="https://www.dartdocs.org/documentation/args/latest/args/ArgResults-class.html" target="_blank">ArgResults</a> | The result of parsing raw command line arguments using ArgParser. |
 {: .table }
 
 ## Other resources {#other-resources}
@@ -581,11 +581,12 @@ In addition, this tutorial covers two classes that help with command-line argume
 Check out the [Servers with Dart](https://dart-lang.github.io/server/)
 to find more resources related to writing command-line apps.
 
-Refer to the API docs for <a href="https://api.dartlang.org/dart_io.html" target="_blank">dart:io</a>,
-<a href="https://api.dartlang.org/dart_async.html" target="_blank">dart:async</a>,
-<a href="https://api.dartlang.org/dart_convert.html" target="_blank">dart:convert</a>,
+Refer to the API docs for
+<a href="{{site.dart_api}}/dart-io/dart-io-library.html" target="_blank">dart:io</a>,
+<a href="{{site.dart_api}}/dart-async/dart-async-library.html" target="_blank">dart:async</a>,
+<a href="{{site.dart_api}}/dart-convert/dart-convert-library.html" target="_blank">dart:convert</a>,
 and the
-<a href="https://api.dartlang.org/dart_args.html" target="_blank">args</a>
+<a href="https://www.dartdocs.org/documentation/args/latest/index.html" target="_blank">args</a>
 package for more classes, functions, and properties.
 
 ## What next? {#what-next}

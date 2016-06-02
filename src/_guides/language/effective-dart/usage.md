@@ -4,10 +4,10 @@ title: "Effective Dart: Usage"
 description: "Guidelines for using language features to write maintainable code."
 
 nextpage:
-  url: /guides/effective-dart/design
+  url: /guides/language/effective-dart/design
   title: "Design"
 prevpage:
-  url: /guides/effective-dart/documentation
+  url: /guides/language/effective-dart/documentation
   title: "Documentation"
 ---
 
@@ -133,7 +133,7 @@ The [Iterable][] contract does not require that a collection know its length or
 be able to provide it in constant time. Calling `.length` just to see if the
 collection contains *anything* can be painfully slow.
 
-[iterable]: https://api.dartlang.org/1.12.1/dart-core/Iterable-class.html
+[iterable]: {{site.dart_api}}/dart-core/Iterable-class.html
 
 Instead, there are faster and more readable getters: `.isEmpty` and
 `.isNotEmpty`. Use the one that doesn't require you to negate the result.
@@ -744,12 +744,12 @@ from causing problems. Even here, it is usually better to catch [Exception][]
 than to catch all types. Exception is the base class for all *runtime* errors
 and excludes errors that indicate *programmatic* bugs in the code.
 
-[pokemon]: http://blog.codinghorror.com/new-programming-jargon/
-[StackOverflowError]: https://api.dartlang.org/stable/dart-core/StackOverflowError-class.html
-[OutOfMemoryError]: https://api.dartlang.org/stable/dart-core/OutOfMemoryError-class.html
-[ArgumentError]: https://api.dartlang.org/stable/dart-core/ArgumentError-class.html
-[AssertionError]: https://api.dartlang.org/stable/dart-core/AssertionError-class.html
-[Exception]: https://api.dartlang.org/stable/dart-core/Exception-class.html
+[pokemon]: https://blog.codinghorror.com/new-programming-jargon/
+[StackOverflowError]: {{site.dart_api}}/dart-core/StackOverflowError-class.html
+[OutOfMemoryError]: {{site.dart_api}}/dart-core/OutOfMemoryError-class.html
+[ArgumentError]: {{site.dart_api}}/dart-core/ArgumentError-class.html
+[AssertionError]: {{site.dart_api}}/dart-core/AssertionError-class.html
+[Exception]: {{site.dart_api}}/dart-core/Exception-class.html
 
 
 ### DON'T discard errors from catches without `on` clauses.
@@ -777,7 +777,7 @@ This follows from the above. Since an Error indicates a bug in your code, it
 should unwind the entire callstack, halt the program, and print a stack trace so
 you can locate and fix the bug.
 
-[error]: https://api.dartlang.org/stable/dart-core/Error-class.html
+[error]: {{site.dart_api}}/Error-class.html
 
 Catching errors of these types breaks that process and masks the bug. Instead of
 *adding* error-handling code to deal with this exception after the fact, go back
@@ -933,7 +933,7 @@ primitives, and interfacing with asynchronous code that doesn't use futures.
 Most other code should use async/await or [`Future.then()`][then], because
 they're clearer and make error handling easier.
 
-[then]: https://api.dartlang.org/stable/dart-async/Future/then.html
+[then]: {{site.dart_api}}/dart-async/Future/then.html
 
 <div class="good">
 {% prettify dart %}

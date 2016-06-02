@@ -11,7 +11,7 @@ the Ecma website:
    target="_blank">Dart Programming Language Specification, 3<sup>rd</sup> Edition</a>
 
 For a gentler introduction to the Dart language, see the
-[Dart language tour](/guides/language-tour).
+[Dart language tour](/guides/language/language-tour).
 
 You can find previous editions of the specification at
 [Standard ECMA-408](http://www.ecma-international.org/publications/standards/Ecma-408-arch.htm).
@@ -35,16 +35,16 @@ the following new language features:
 
 * Enumerations (`enum`)<br>
   Implemented in 1.8. For details, see the language tour:
-  [Enumerated types](/guides/language-tour#enums).
+  [Enumerated types](/guides/language/language-tour#enums).
 
 * Asynchrony support (`async`, `await`, and more)<br>
   Partially implemented in 1.8.
   For details, see the language tour:
-  [Asynchrony support](/guides/language-tour#asynchrony).
+  [Asynchrony support](/guides/language/language-tour#asynchrony).
 
 * Deferred loading (`import ... deferred as`)<br>
   Implemented in 1.6. For details, see the language tour:
-  [Lazily loading a library](/guides/language-tour#deferred-loading).
+  [Lazily loading a library](/guides/language/language-tour#deferred-loading).
 {% endcomment %}
 
 {% comment %}

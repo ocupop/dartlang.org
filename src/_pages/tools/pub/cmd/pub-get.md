@@ -86,7 +86,7 @@ get the latest versions of all dependencies.
 **Note:** Do not check the generated `packages` directories,
 `.package` file, or `.pub` directory (when present) into your repo;
 add them to your repo's `.gitignore` file.
-[What Not to Commit](/libraries/private-files) has a complete list
+[What Not to Commit](/guides/libraries/private-files) has a complete list
 of files that should not be checked into the repo.
 </aside>
 

@@ -22,7 +22,7 @@ through [Examples of Transformer Code](examples/).
 An aggregate transformer extends the Dart class, [AggregateTransform][],
 from the [barback][] package.
 
-[AggregateTransform]: https://api.dartlang.org/apidocs/channels/stable/dartdoc-viewer/barback/barback.AggregateTransform
+[AggregateTransform]: https://www.dartdocs.org/documentation/barback/0.15.2%2B8/barback/AggregateTransform-class.html
 [barback]: https://pub.dartlang.org/packages/barback
 
 ### Extend `AggregateTransformer` {#extend-transformer}
@@ -120,7 +120,7 @@ If you wish to request a specific secondary input, you can use the
 : How to write a Pub transformer that accepts a single primary input.
 * [Examples of Transformer Code](examples/)
 : Examples to get you started.
-* [barback library](https://api.dartlang.org/apidocs/channels/stable/dartdoc-viewer/barback)
+* [barback library](https://pub.dartlang.org/packages/barback)
 : API docs for the barback package.
 * [Barback - Can We Build It? Yes, We Can!](https://docs.google.com/a/google.com/document/d/1juHkCRg-1YH6LvwhGPHgF2ihX-UQtR1fv-8aknO7t_4/edit?pli=1#)
 : A description of the barback asset system, written by a

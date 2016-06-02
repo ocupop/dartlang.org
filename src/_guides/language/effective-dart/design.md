@@ -7,7 +7,7 @@ nextpage:
   url:
   title:
 prevpage:
-  url: /guides/effective-dart/usage
+  url: /guides/language/effective-dart/usage
   title: "Usage"
 ---
 
@@ -50,7 +50,7 @@ productive.
 Unless the abbreviation is more common than the unabbreviated term, don't
 abbreviate. If you do abbreviate, [capitalize them correctly][caps].
 
-[caps]: /guides/effective-dart/style/#do-capitalize-acronyms-and-abbreviations-longer-than-two-letters-like-words
+[caps]: /guides/language/effective-dart/style/#do-capitalize-acronyms-and-abbreviations-longer-than-two-letters-like-words
 
 <div class="good">
 {% prettify dart %}
@@ -505,7 +505,7 @@ Still, some methods that technically create a new object don't feel
 even though it creates a new URI from the given arguments. Likewise, classes
 implementing the [Builder pattern][] may read better using static methods.
 
-[uri.parse]: https://api.dartlang.org/apidocs/channels/stable/dartdoc-viewer/dart-core.Uri#id_parse
+[uri.parse]: {{site.dart_api}}/dart-core/Uri/parse.html
 [builder pattern]: http://en.wikipedia.org/wiki/Builder_pattern
 
 But, in most cases, you should use a constructor even though it's more verbose.

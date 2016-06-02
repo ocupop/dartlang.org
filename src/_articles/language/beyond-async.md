@@ -11,7 +11,7 @@ category: language
 _Written by Gilad Bracha <br>
 March 2015_
 
-In a [previous article](/articles/await-async),
+In a [previous article](/articles/language/await-async),
 we discussed asynchronous methods and await expressions.
 These features are part of a complete initiative to support asynchronous
 programming and generators in Dart.
@@ -170,7 +170,7 @@ and its stream has been canceled, control transfers to the nearest enclosing
 finally clause. If the stream has been paused,
 execution suspends before the **yield**,
 until the stream is resumed.
-Refer to the [Dart language spec](/language/spec) for all the gory details.
+Refer to the [Dart language spec](/guides/language/spec) for all the gory details.
 
 ## await-for
 

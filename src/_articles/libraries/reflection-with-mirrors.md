@@ -66,7 +66,7 @@ class MyClass {
 
 
 The easiest way to get a mirror is to call the top-level function
-[reflect()](http://api.dartlang.org/dart_mirrors.html#reflect).
+[reflect()]({{site.dart_api}}/dart-mirrors/reflect.html).
 
 <aside class="alert alert-warning" markdown="1">
 <strong>Caveat 2:</strong>
@@ -77,7 +77,7 @@ across isolates.
 </aside>
 
 The reflect() method takes an object and returns an
-[InstanceMirror](http://api.dartlang.org/dart_mirrors/InstanceMirror.html)
+[InstanceMirror]({{site.dart_api}}/dart-mirrors/InstanceMirror-class.html)
 on it.
 
 {% prettify dart %}
@@ -85,7 +85,7 @@ InstanceMirror myClassInstanceMirror = reflect(new MyClass(3, 4));
 {% endprettify %}
 
 InstanceMirror is a subclass of
-[Mirror](http://api.dartlang.org/dart_mirrors/Mirror.html),
+[Mirror]({{site.dart_api}}/dart-mirrors/Mirror-class.html),
 the root of the mirror hierarchy.
 An InstanceMirror allows one to invoke dynamically chosen code on an object.
 
@@ -116,7 +116,7 @@ print out names of declarations as we'll see below.
 
 Suppose you want to print out all the declarations in a class.
 You’ll need a
-[ClassMirror](http://api.dartlang.org/dart_mirrors/ClassMirror.html),
+[ClassMirror]({{site.dart_api}}/dart-mirrors/ClassMirror-class.html),
 which as you’d expect reflects a class.
 One way to get a class mirror is from an instance mirror.
 
@@ -125,7 +125,7 @@ ClassMirror MyClassMirror = myClassInstanceMirror.type; // Reflects MyClass
 {% endprettify %}
 
 Another way is to use the top-level function
-[reflectClass()](http://api.dartlang.org/dart_mirrors.html#reflectClass).
+[reflectClass()]({{site.dart_api}}/dart-mirrors/reflectClass.html).
 
 {% prettify dart %}
 ClassMirror cm = reflectClass(MyClass); // Reflects MyClass
@@ -140,7 +140,7 @@ for (var m in cm.declarations.values) print(MirrorSystem.getName(m.simpleName));
 {% endprettify %}
 
 ClassMirror has a getter
-[declarations](http://api.dartlang.org/dart_mirrors/ClassMirror.html#declarations)
+[declarations]({{site.dart_api}}/dart-mirrors/ClassMirror/declarations.html)
 that returns a map from the names of the reflected class’ declarations
 to mirrors on those declarations.
 The map contains all declarations listed
@@ -158,7 +158,7 @@ the name of the declaration.
 The returned name is a Symbol,
 so we must convert it to a string in order to print it.
 The static method
-[MirrorSystem.getName](http://api.dartlang.org/dart_mirrors/MirrorSystem.html#getName)
+[MirrorSystem.getName]({{site.dart_api}}/dart-mirrors/MirrorSystem/getName.html)
 does that for us.
 
 Obviously, we know what the declarations in MyClass are in this case;
@@ -191,7 +191,7 @@ cm.invoke(#noise, []); // Returns an InstanceMirror on 42
 {% endprettify %}
 
 In fact, invoke() is defined in class
-[ObjectMirror](http://api.dartlang.org/dart_mirrors/ObjectMirror.html),
+[ObjectMirror]({{site.dart_api}}/dart-mirrors/ObjectMirror-class.html),
 a common superclass for mirror classes
 that reflect Dart entities that have state and executable code
 such as regular instances, classes, libraries, and so on.
@@ -303,7 +303,7 @@ For example, one may attempt to reflectively invoke a method
 that exists in the source code,
 but has been optimized away because no non-reflective invocations exist.
 Such an invocation will result in a call to
-[noSuchMethod()](http://api.dartlang.org/dart_core/Object.html#noSuchMethod).
+[noSuchMethod()]({{site.dart_api}}/dart-core/Object/noSuchMethod.html).
 Tree shaking has implications for structural introspection as well.
 Again, what members a library or type has at runtime
 may be at variance with what the source code states.
@@ -319,7 +319,7 @@ We are experimenting with mechanisms
 for programmers to specify that certain code
 may not be eliminated by tree shaking.
 Currently, you may use the
-[MirrorsUsed](http://api.dartlang.org/dart_mirrors/MirrorsUsed.html)
+[MirrorsUsed]({{site.dart_api}}/dart-mirrors/MirrorsUsed-class.html)
 annotation for this purpose
 but we expect the details to change significantly over time.
 
@@ -332,7 +332,7 @@ If you use it, be prepared for breaking changes.
 The above should be enough to get you started using mirrors.
 There is a good deal more to the introspection API;
 you can
-[explore the API](http://api.dartlang.org/dart_mirrors.html)
+[explore the API]({{site.dart_api}}/dart-mirrors/dart-mirrors-library.html)
 to see what else is there.
 
 We’d like to support more powerful reflective features in the future.

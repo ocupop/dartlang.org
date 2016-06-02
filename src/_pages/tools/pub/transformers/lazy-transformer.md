@@ -78,7 +78,7 @@ That's all that you need to do!
 : How to write a Pub transformer that accepts a single primary input.
 * [Examples of Transformer Code](examples/)
 : Examples to get you started.
-* [barback library](https://api.dartlang.org/apidocs/channels/stable/dartdoc-viewer/barback)
+* [barback library](https://pub.dartlang.org/packages/barback)
 : API docs for the barback package.
 * [Barback - Can We Build It? Yes, We Can!](https://docs.google.com/a/google.com/document/d/1juHkCRg-1YH6LvwhGPHgF2ihX-UQtR1fv-8aknO7t_4/edit?pli=1#)
 : A description of the barback asset system, written by a

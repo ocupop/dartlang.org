@@ -63,8 +63,7 @@ will be like, and who won today's game. Not good.
 To help keep the application responsive, Dart library authors use an
 asynchronous model when defining functions that do potentially expensive work.
 Such functions return their value using a
-<a href="https://api.dartlang.org/dart_async/Future.html"
-   target="_blank">Future</a>.
+<a href="{{site.dart_api}}/dart-async/Future-class.html" target="_blank">Future</a>.
 
 ## What is a Future? {#what-is-a-future}
 
@@ -84,7 +83,7 @@ To get the value that the Future represents, you have two options:
 ## Async and await {#async-await}
 
 The `async` and `await` keywords are part of the Dart language's
-[asynchrony support](/guides/language-tour#asynchrony).
+[asynchrony support](/guides/language/language-tour#asynchrony).
 They allow you to write asynchronous code that looks like synchronous
 code and doesn't use the Future API.
 
@@ -366,7 +365,7 @@ Like `then()`, `catchError()` returns a new Future that completes with
 the return value of its callback.
 
 For more details and examples, read
-[Futures and Error Handling](/articles/futures-and-error-handling/).
+[Futures and Error Handling](/articles/libraries/futures-and-error-handling/).
 
 ### Calling multiple functions that return Futures {#calling-multiple-funcs}
 
@@ -415,13 +414,13 @@ the error.
 Read the following documentation for more details on using Futures
 and asynchronous programming in Dart:
 
-* [Futures and Error Handling](/articles/futures-and-error-handling),
+* [Futures and Error Handling](/articles/libraries/futures-and-error-handling),
   an article that starts where this tutorial ends
 * [The Event Loop and Dart]({{site.dart_vm}}/articles/event-loop),
   an article that describes how to schedule tasks using Futures
-* [Asynchrony support](/guides/language-tour#asynchrony),
-  a section in the [language tour](/guides/language-tour)
-* [Future API reference](http://api.dartlang.org/dart_async/Future.html)
+* [Asynchrony support](/guides/language/language-tour#asynchrony),
+  a section in the [language tour](/guides/language/language-tour)
+* [Future API reference]({{site.dart_api}}/dart-async/Future-class.html)
 
 ## What next? {#what-next}
 

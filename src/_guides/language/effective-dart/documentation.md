@@ -4,10 +4,10 @@ title: "Effective Dart: Documentation"
 description: "Clear, helpful comments and documentation."
 
 nextpage:
-  url: /guides/effective-dart/usage
+  url: /guides/language/effective-dart/usage
   title: "Usage"
 prevpage:
-  url: /guides/effective-dart/style
+  url: /guides/language/effective-dart/style
   title: "Style"
 ---
 
@@ -67,7 +67,7 @@ Doc comments are especially handy because [dartdoc][] parses them and generates
 before a declaration and uses the special `///` syntax that dartdoc looks for.
 
 [dartdoc]: https://github.com/dart-lang/dartdoc
-[docs]: https://api.dartlang.org/
+[docs]: {{site.dart_api}}
 
 ### DO use `///` doc comments to document members and types.
 
