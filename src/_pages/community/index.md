@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /community/
-title: "Support and Community"
+title: "Community and Support"
 description: "Communities, mailing lists, and bug databases for the Dart project."
 ---
 
@@ -15,9 +15,11 @@ Dart is an open source project, and we look forward to hearing from you.
 
 * [StackOverflow](http://stackoverflow.com/tags/dart)
 
-#### Angular Dart, Polymer.dart, dart:html
+#### Angular Dart, Polymer Dart, dart:html
 
 * [Discussion](https://groups.google.com/a/dartlang.org/forum/#!forum/web)
+* [Angular Dart Slack channel](https://dartlang.slack.com/messages/angular2/)
+* [Polymer Dart Slack channel](https://dartlang.slack.com/messages/polymer/)
 * [How-to questions](http://stackoverflow.com/tags/dart-polymer)
 
 #### Server-side Dart
@@ -27,6 +29,10 @@ Dart is an open source project, and we look forward to hearing from you.
 #### Dart plugin for JetBrains (WebStorm, IntelliJ)
 
 * [Questions](https://groups.google.com/a/dartlang.org/forum/#!forum/jetbrains-dart-plugin-discuss)
+
+#### Dart plugin for Atom
+
+* [Gitter chat](https://gitter.im/dart-atom/dartlang?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 #### Dart VM
 

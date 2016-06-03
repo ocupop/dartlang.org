@@ -1,8 +1,9 @@
 ---
 layout: default
-title: "Download Dart"
-description: "The download bundles that support the Dart language."
+title: "Install Dart"
+description: "The bundles that support the Dart language."
 permalink: /dart-vm/downloads/
+toc: false
 
 js:
 - url: archive/assets/downloads.js
@@ -12,11 +13,11 @@ js:
 <p>Current stable version of Dart:
 <span class="editor-build-rev-stable">[calculating]</span></p>
 
-Download the Dart SDK to get everything you need to write and run Dart code:
+Install the Dart SDK to get everything you need to write and run Dart code:
 VM, libraries, analyzer, package manager, doc generator,
 formatter, debugger, and more.
 
-## Automated downloads and updates
+## Automated installation and updates
 
 A package manager can help you easily install and update the Dart SDK.
 
@@ -25,7 +26,7 @@ A package manager can help you easily install and update the Dart SDK.
 * [Installing Dart on Mac](mac) with homebrew
 * [Installing Dart on Linux](linux) with our Debian package
 
-## Manual downloads and updates
+## Manual downloads
 
 Not using a package manager for your OS? No problem!
 

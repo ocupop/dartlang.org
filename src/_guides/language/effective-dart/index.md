@@ -2,6 +2,7 @@
 layout: guide
 title: "Effective Dart"
 description: "Best practices for building consistent, maintainable, efficient Dart libraries."
+toc: false
 
 nextpage:
   url: /guides/language/effective-dart/style

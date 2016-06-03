@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Articles: Libraries"
+title: "Articles: Libraries and APIs"
 description: "Read about the Dart language and tools with this collection of articles, style guides, and more."
 toc: false
 ---

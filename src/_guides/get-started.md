@@ -29,53 +29,19 @@ to install an SDK.
 
 ## What kind of app do you want to write?
 
-This website ( www.dartlang.org ) contains information common to most
+This website ( [dartlang.org]({{site.dartlang}}) ) contains information common to most
 Dart technologies: the language and core libraries. Where can you
 go to learn specific information about your chosen technology?
 
-<table border="1">
-<tr>
-  <th>&nbsp;</th>
-  <th>Web/th>
-  <th>Mobile</th>
-  <th>Embedded</th>
-  <th>Server</th>
-</tr>
+| | **Web** | **Mobile** | **Embedded** | **Server** |
+| **Use case** | Create an app that runs in any modern browser | Create an app from a single codebase that runs on <strong>both</strong> iOS and Android | Control a device from the Internet of Things (IoT) | Create a command-line app or server |
+| **Learn more** | [Dart for the Web]({{site.dart4web}}) | [Flutter]({{site.flutter}}) | [Dartino]({{site.dartino}}) | [Dart VM]({{site.dart_vm}}) |
+| **Install SDK** | [Dart SDK and Dartium]({{site.dart_vm}}/downloads/) | [Flutter Setup]({{site.flutter}}/setup/) (in beta) | [Get Started with Dartino]({{site.dartino}}/getting-started/) (in alpha) | [Dart SDK]({{site.dart_vm}}/downloads/) |
+| **Recommended IDE**<sup>*</sup> | [WebStorm]({{site.dart4web}}/tools/webstorm) | [Atom]({{site.flutter}}/setup/#configure-atom-for-flutter-development) | [Atom](https://atom.io/packages/dartino) | [JetBrains?](/tools/jetbrains-plugin) |
+{:.table .table-striped}
 
-<tr>
-  <td><strong>Use case</strong></td>
-  <td>Create an app that runs in any modern browser</td>
-  <td>Create an app from a single codebase that runs on <strong>both</strong> iOS and Android.</td>
-  <td>Control a thermostat (or other device) from the Internet of Things (IoT)</td>
-  <td>Create a command-line app or server</td>
-</tr>
-
-<tr>
-  <td><strong>Learn more</strong></td>
-  <td><a href="{{site.dart4web}}">Dart for the Web</a></td>
-  <td><a href="{{site.flutter}}">Flutter</a></td>
-  <td><a href="{{site.dartino}}">Dartino</a></td>
-  <td><a href="{{site.dart_vm}}">Dart VM</a></td>
-</tr>
-
-<tr>
-  <td><strong>Install</strong></td>
-  <td><a href="{{site.dart_vm}}/downloads/">Dart SDK and Dartium</a></td>
-  <td><a href="{{site.flutter}}/setup/">Flutter Setup</a> (in beta)</td>
-  <td><a href="{{site.dartino}}/getting-started/">Get Started with Dartino</a> (in alpha)</td>
-  <td><a href="{{site.dart_vm}}/downloads/">Dart SDK</a></td>
-</tr>
-</table>
-
-## Choose your IDE
-
-If you have a favorite IDE, there is probably a Dart plugin for that.
-See the tools page for your chosen technology to see what
-IDE they recommend, and for tips on how to configure it.
-For example, Dart for the Web recommends
-[WebStorm]({{site.dart4web}}/tools/webstorm),
-and Flutter recommends Atom.
-
+<sup>*</sup>If you have a favorite IDE, there is probably a Dart plugin for that.
+See the link for tips on how to configure the recommended IDE.
 For general IDE advice, see [Tools](/tools).
 
 ## Meet your tools

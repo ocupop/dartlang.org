@@ -4,7 +4,7 @@ title: "A Tour of the Dart Language"
 description: "A tour of all of the major Dart language features."
 ---
 
-This chapter shows you how to use each major Dart feature, from
+This page shows you how to use each major Dart feature, from
 variables and operators to classes and libraries, with the assumption
 that you already know how to program in another language.
 
@@ -238,7 +238,7 @@ completion and early warnings for bugs and code completion.
 
 <div class="alert alert-info" markdown="1">
 **Note:**
-This chapter follows the
+This page follows the
 [style guide recommendation](/guides/language/effective-dart/style#type-annotations)
 of using `var`, rather than type annotations, for local variables.
 </div>
@@ -3033,7 +3033,7 @@ Static variables aren’t initialized until they’re used.
 
 <div class="alert alert-info" markdown="1">
 **Note:**
-This chapter follows the [style guide
+This page follows the [style guide
 recommendation](/guides/language/effective-dart#prefer-using-lowercamelcase-for-constant-names)
 of preferring `lowerCamelCase` for constant names.
 </div>
@@ -3858,7 +3858,7 @@ your comments, see
 
 ## Summary {#summary}
 
-This chapter summarized the commonly used features in the Dart language.
+This page summarized the commonly used features in the Dart language.
 More features are being implemented, but we expect that they won’t break
 existing code. For more information, see the [Dart Language
 Specification](/guides/language/spec) and

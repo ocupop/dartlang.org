@@ -49,7 +49,7 @@ Thanks!
 : Application hosting platform built and optimized for Dart.
 
 Google internal sales tool
-: Built with AngularDart.
+: Built with Angular 2 for Dart.
 
 [drone.io](http://drone.io)
 : Continuous integration with support for testing Dart apps.
@@ -105,7 +105,7 @@ Google internal sales tool
 : Time tracking app.
 
 [Angular](https://github.com/angular/angular.dart)
-: AngularDart is a port of the popular framework to Dart.
+: Angular 2 for Dart is a port of the popular framework to Dart.
 
 [Google Elections](http://news.dartlang.org/2013/09/googles-german-election-map-powered-by.html)
 : Elections results maps built with Dart.
@@ -139,14 +139,14 @@ Google internal customer support tool
 : IOT Application Platform, DGLux5, provides a visual drag and drop rapid
   application development environment.
 
-Adwords for video
+AdWords for video
 : The application that advertisers use to promote video ads on YouTube
   and other sites. Advertisers create accounts, setup campaigns, create ads,
   target them to users, and see how users are finding their ads useful, etc.
-  Built with AngularDart.
+  Built with Angular 2 for Dart.
 
 Google internal tool for marketing
-: Built with AngularDart.
+: Built with Angular 2 for Dart.
 
 [Prime APPcatalog](http://www.primeapp.it/en)
 : An interactive product catalog for tablets and smartphones. Built with Dart,

@@ -2,6 +2,7 @@
 layout: default
 title: "Dart Language Specification"
 description: "The Dart language specification and proposed changes."
+toc: false
 ---
 
 Download the _Dart Programming Language Specification_ from

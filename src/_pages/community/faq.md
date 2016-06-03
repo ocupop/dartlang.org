@@ -573,11 +573,11 @@ to pub.dartlang.org.
 
 ### Q. Can I use Angular with Dart?
 
-Yes! [AngularDart][] is a port of Angular to Dart.
+Yes! [Angular 2 for Dart][] is a port of Angular to Dart.
 
 ### Q. Can I use web components with Dart?
 
-Yes! [Polymer.dart] is a port of polymer to Dart. Polymer is a set of
+Yes! [Polymer Dart] is a port of polymer to Dart. Polymer is a set of
 polyfills and usability enhancements for web components.
 
 ### Q. Should I use Angular or polymer?
@@ -640,8 +640,8 @@ See [Who Uses Dart] for more.
 [sourcemaps]: http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/
 [io]: /articles/io/
 [pub]: https://pub.dartlang.org
-[AngularDart]: https://angulardart.org
-[Polymer.dart]: /polymer/
+[Angular 2 for Dart]: https://angulardart.org
+[Polymer Dart]: /polymer/
 [ppwsize]: http://work.j832.com/2012/11/excited-to-see-dart2js-minified-output.html
 [perf]: /performance/
 [chrome.dart]: https://github.com/dart-gde/chrome.dart

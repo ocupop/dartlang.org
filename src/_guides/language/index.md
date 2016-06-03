@@ -4,6 +4,8 @@ title: "Language"
 toc: false
 ---
 
+## Learn Dart
+
 <div class="card-grid">
   <div class="card">
     <h3><a href="/guides/language/language-tour">A Tour of the Dart Language</a></h3>
@@ -15,21 +17,16 @@ toc: false
     possible. There are guides on Dart style, documentation, usage,
     and design.</p>
   </div>
-  <div class="card">
-    <h3><a href="/tutorials/language/futures">Asynchronous Programming: Futures</a></h3>
-    <p>How to handle asynchronous programming in Dart.</p>
-  </div>
-  <div class="card">
-    <h3><a href="/tutorials/language/streams">Asynchronous Programming: Streams</a></h3>
-    <p>How to handle a sequence of asynchronous events.</p>
-  </div>
-  <div class="card">
-    <h3><a href="/articles/language">Articles on Language Details</a></h3>
-    <p></p>
-  </div>
-  <div class="card">
-    <h3><a href="/guides/language/spec">Dart Specification</a></h3>
-    <p></p>
-  </div>
 </div>
 
+## Other language resources:
+
+* <a href="/tutorials/language/futures">Asynchronous Programming: Futures</a><br>
+How to handle asynchronous programming in Dart.
+
+* <a href="/tutorials/language/streams">Asynchronous Programming: Streams</a><br>
+How to handle a sequence of asynchronous events.
+
+* <a href="/articles/language">Language Articles</a>
+
+* <a href="/guides/language/spec">Dart Specification</a>

@@ -4,7 +4,7 @@ title: "A Tour of the Dart Libraries"
 description: "Learn about the major features in Dart's libraries."
 ---
 
-This chapter shows you how to use the major features in Dart’s
+This page shows you how to use the major features in Dart’s
 libraries. It’s just an overview, and by no means comprehensive.
 Whenever you need more details about a class, consult the [Dart API
 reference.]({{site.dart_api}})
@@ -1441,8 +1441,8 @@ dart:html, not command-line apps.
 <div class="alert alert-info" markdown="1">
 **Note:**
 For higher level approaches to web app UIs, see
-[Polymer.dart](https://github.com/dart-lang/polymer-dart/wiki) and
-[AngularDart](https://angular.io/dart).
+[Polymer Dart](https://github.com/dart-lang/polymer-dart/wiki) and
+[Angular 2 for Dart](https://angular.io/dart).
 </div>
 
 To use the HTML library in your web app, import dart:html:
@@ -2681,14 +2681,14 @@ and
 
 ## Summary {#summary}
 
-This chapter introduced you to the most commonly used functionality in
+This page introduced you to the most commonly used functionality in
 many of Dart’s built-in libraries. It didn’t cover all the built-in
 libraries, however. Others that you might want to look into include
 [dart:collection,]({{site.dart_api}}/dart-collection/dart-collection-library.html)
 [dart:isolate,]({{site.dart_api}}/dart-isolate/dart-isolate-library.html) and
 [dart:typed\_data.]({{site.dart_api}}/dart-typed_data/dart-typed_data-library.html) You
 can get yet more libraries by using the pub tool, discussed in the next
-chapter. The [args,](https://pub.dartlang.org/packages/args)
+page. The [args,](https://pub.dartlang.org/packages/args)
 [logging,](https://pub.dartlang.org/packages/logging)
 [polymer,](https://pub.dartlang.org/packages/polymer) and
 [test](https://pub.dartlang.org/packages/test) libraries are just a
