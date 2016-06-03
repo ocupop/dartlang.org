@@ -7,9 +7,9 @@
 - title: Language
   permalink: /guides/language/
   children:
-    - title: Language Tour
+    - title: "Language Tour"
       permalink: /guides/language/language-tour
-    - title: Effective Dart
+    - title: "Effective Dart"
       permalink: /guides/language/effective-dart/
       children:
         - title: Style
@@ -22,8 +22,24 @@
           permalink: /guides/language/effective-dart/design
     - title: Language Tutorials
       permalink: /tutorials/language/
+      children:
+        - title: "Async Programming: Futures"
+          permalink: /tutorials/language/futures
+        - title: "Async Programming: Streams"
+          permalink: /tutorials/language/streams
     - title: Language Articles
       permalink: /articles/language/
+      children:
+        - title: Mixins in Dart
+          permalink: /articles/language/mixins
+        - title: "Async Support: Phase 1"
+          permalink: /articles/language/await-async
+        - title: "Async Support: Phase 2"
+          permalink: /articles/language/beyond-async
+        - title: Emulating Functions
+          permalink: /articles/language/emulating-functions
+        - title: Optional Types
+          permalink: /articles/language/optional-types
     - title: Specification
       permalink: /guides/language/spec
 
@@ -34,10 +50,28 @@
       permalink: /guides/libraries/library-tour
     - title: Create Library Packages
       permalink: /guides/libraries/create-library-packages
-    - title: Libraries and APIs Tutorials
+    - title: Libraries Tutorials
       permalink: /tutorials/libraries/
-    - title: Libraries and APIs Articles
+      children:
+        - title: Install Shared Packages
+          permalink: /tutorials/libraries/shared-pkgs
+    - title: Libraries Articles
       permalink: /articles/libraries/
+      children:
+        - title: Converters and Codecs
+          permalink: /articles/libraries/converters-and-codecs
+        - title: Serialization
+          permalink: /articles/libraries/serialization
+        - title: Zones
+          permalink: /articles/libraries/zones
+        - title: Single-Subscription vs Broadcast Streams
+          permalink: /articles/libraries/broadcast-streams
+        - title: Reflection with Mirrors
+          permalink: /articles/libraries/reflection-with-mirrors
+        - title: Futures and Error Handling
+          permalink: /articles/libraries/futures-and-error-handling
+        - title: Creating Streams
+          permalink: /articles/libraries/creating-streams
 
 - title: Tools
   permalink: /tools/

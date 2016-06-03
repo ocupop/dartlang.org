@@ -24,8 +24,8 @@ src="{{site.custom.dartpad.embed-dart-prefix}}?horizontalRatio=99&verticalRatio=
 </iframe>
 
 Note that DartPad does not allow you to import packages,
-such as dart:io. If you want that level of control, you'll need
-to install an SDK.
+such as dart:io. If you want functionality from a library,
+you'll need to install an SDK.
 
 ## What kind of app do you want to write?
 
