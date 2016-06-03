@@ -33,17 +33,15 @@
       permalink: /tutorials/libraries/shared-pkgs
     - title: Create Library Packages
       permalink: /guides/libraries/create-library-packages
-    - title: What Not to Commit
-      permalink: /guides/libraries/private-files
 
-- title: Tools Links
+- title: Tools
   permalink: /tools/
 
-- title: Community Links
+- title: Community
   permalink: /community/
 
-- title: Targets
-  permalink: /dart-vm/
+- title: Platform
+  permalink: /guides/platform
   children:
     - title: Web
       permalink: http://localhost:4001/

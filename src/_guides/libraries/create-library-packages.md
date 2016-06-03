@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Creating Library Packages"
+title: "Create Library Packages"
 ---
 
 Libraries are a great way to create modular code that can

@@ -30,22 +30,22 @@ to install an SDK.
 ## What kind of app do you want to write?
 
 This website ( www.dartlang.org ) contains information common to most
-Dart technologies: the language and the core libraries. Where can you
+Dart technologies: the language and core libraries. Where can you
 go to learn specific information about your chosen technology?
 
 <table border="1">
 <tr>
   <th>&nbsp;</th>
-  <th>WEB</th>
-  <th>MOBILE</th>
-  <th>EMBEDDED</th>
-  <th>SERVER</th>
+  <th>Web/th>
+  <th>Mobile</th>
+  <th>Embedded</th>
+  <th>Server</th>
 </tr>
 
 <tr>
-  <td><strong>Use</strong></td>
-  <td>Run your app in any modern browser</td>
-  <td>Run on <strong>both</strong> iOS and Android from a single codebase</td>
+  <td><strong>Use case</strong></td>
+  <td>Create an app that runs in any modern browser</td>
+  <td>Create an app from a single codebase that runs on <strong>both</strong> iOS and Android.</td>
   <td>Control a thermostat (or other device) from the Internet of Things (IoT)</td>
   <td>Create a command-line app or server</td>
 </tr>
