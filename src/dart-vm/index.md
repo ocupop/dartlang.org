@@ -11,7 +11,7 @@ for the standalone Dart VM.
 
 Once you've gone beyond
 [DartPad]({{site.dartlang}}/tools/dartpad),
-you will want to [install the SDK](/dart-vm/downloads/).
+you'll want to [install the SDK](/dart-vm/downloads/).
 
 You'll also want to [meet your tools](tools/).
 

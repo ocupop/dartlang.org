@@ -4,8 +4,6 @@ title: "Language"
 toc: false
 ---
 
-## Learn Dart
-
 <div class="card-grid">
   <div class="card">
     <h3><a href="/guides/language/language-tour">A Tour of the Dart Language</a></h3>

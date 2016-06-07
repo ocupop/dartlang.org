@@ -49,4 +49,4 @@ at the following links:
 * <a href="https://dartino.github.io/api/">Dartino APIs</a><br>
   API reference docs for Dartino.
 
-* <a href="/articles/libraries">Libraries and APIs Articles</a>
+* <a href="/articles/libraries">Libraries Articles</a>

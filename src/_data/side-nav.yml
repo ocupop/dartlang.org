@@ -94,7 +94,7 @@
       children:
       - title: API Reference
         permalink: https://dartino.github.io/api/
-    - title: VM
+    - title: Dart VM
       permalink: /dart-vm/
       children:
       - title: Install Dart

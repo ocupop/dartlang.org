@@ -34,7 +34,7 @@ Dart technologies: the language and core libraries. Where can you
 go to learn specific information about your chosen technology?
 
 | | **Web** | **Mobile** | **Embedded** | **Server** |
-| **Use case** | Create an app that runs in any modern browser | Create an app from a single codebase that runs on <strong>both</strong> iOS and Android | Control a device from the Internet of Things (IoT) | Create a command-line app or server |
+| **Use case** | Create an app that runs in any modern browser | Create an app from a single codebase that runs on both iOS and Android | Control a device from the Internet of Things (IoT) | Create a command-line app or server |
 | **Learn more** | [Dart for the Web]({{site.dart4web}}) | [Flutter]({{site.flutter}}) | [Dartino]({{site.dartino}}) | [Dart VM]({{site.dart_vm}}) |
 | **Install SDK** | [Dart SDK and Dartium]({{site.dart_vm}}/downloads/) | [Flutter Setup]({{site.flutter}}/setup/) (in beta) | [Get Started with Dartino]({{site.dartino}}/getting-started/) (in alpha) | [Dart SDK]({{site.dart_vm}}/downloads/) |
 | **Recommended IDE**<sup>*</sup> | [WebStorm]({{site.dart4web}}/tools/webstorm) | [Atom]({{site.flutter}}/setup/#configure-atom-for-flutter-development) | [Atom](https://atom.io/packages/dartino) | [JetBrains?](/tools/jetbrains-plugin) |
