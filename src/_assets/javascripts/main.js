@@ -7,13 +7,18 @@
 //= require vendor/code-prettify/lang-dart
 //= require vendor/code-prettify/lang-yaml
 
+var condensedHeaderHeight = 50;
+var tocToSidenavDiff = 50;
+
 function fixNav() {
   var t = $(document).scrollTop(),
       f = $("#page-footer").offset().top,
       h = window.innerHeight,
+      // space between scroll position and top of the footer
       whenAtBottom = f - t,
-      mh = Math.min(h, whenAtBottom) - 90;
-  $("#sidenav, #toc").css({maxHeight: mh});
+      mh = Math.min(h, whenAtBottom) - condensedHeaderHeight;
+  $("#sidenav").css({maxHeight: mh});
+  $("#toc").css({maxHeight: mh - tocToSidenavDiff});
 }
 
 // Add scroll on page load for hash
