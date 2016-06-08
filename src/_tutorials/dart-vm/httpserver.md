@@ -4,7 +4,7 @@ title: "Write HTTP Clients & Servers"
 description: "Communicate over the internet"
 
 prevpage:
-  url: /dart-vm/tutorials/cmdline
+  url: /tutorials/dart-vm/cmdline
   title: "Dart-VM: Write Command-Line Apps"
 
 points:
@@ -32,7 +32,7 @@ and
 which are not explained in this tutorial.
 Refer to [Asynchronous Programming: Futures](/tutorials/language/futures)
 and
-[Asynchronous Programming: Streams](/tutorials/language/streams/)
+[Asynchronous Programming: Streams](/tutorials/language/streams)
 for information about using these classes.
 </aside>
 

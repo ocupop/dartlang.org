@@ -174,7 +174,7 @@ structure.
 You can generate API docs for your library using
 the [dartdoc](https://github.com/dart-lang/dartdoc#dartdoc) tool.
 Dartdoc parses the source looking for
-[documentation comments](/guides/language/effective-dart/documentation/#doc-comments),
+[documentation comments](/guides/language/effective-dart/documentation#doc-comments),
 which use the `///` syntax:
 
 {% prettify dart %}

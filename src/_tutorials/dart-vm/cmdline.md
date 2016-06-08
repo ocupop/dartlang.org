@@ -4,10 +4,10 @@ title: "Write Command-Line Apps"
 description: "Basics for command-line apps"
 
 nextpage:
-  url: /dart-vm/tutorials/httpserver
+  url: /tutorials/dart-vm/httpserver
   title: "Dart-VM: Write HTTP Clients & Servers"
 prevpage:
-  url: /dart-vm/tutorials/get-started
+  url: /tutorials/dart-vm/get-started
   title: "Get Started"
 
 points:
@@ -592,4 +592,4 @@ package for more classes, functions, and properties.
 
 * If you are interested in server-side programming,
 check out the next tutorial,
-[Write HTTP Clients & Servers](/dart-vm/tutorials/httpserver).
+[Write HTTP Clients & Servers](/tutorials/dart-vm/httpserver).

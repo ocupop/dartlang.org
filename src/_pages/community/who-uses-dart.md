@@ -82,7 +82,7 @@ Google internal sales tool
 [Codeship](https://www.codeship.io/)
 : Continuous integration with support for Dart.
 
-[Adobe](http://blogs.adobe.com/flashpro/2013/05/16/toolkit-for-dart-flash-pro/)
+[Adobe](http://blogs.adobe.com/animate/2013/05/16/toolkit-for-dart-flash-pro/)
 : Flash Pro can export to Dart/HTML5/CSS.
 
 [Health Dynamics](http://www.healthdynamics.com/)
@@ -122,7 +122,7 @@ Google internal sales tool
 : Specialized in the design and implementation of online campaigns. Uses
   Dart for interactive experiences.
 
-[Anionu](https://anionu.com)
+[Anionu](http://sourcey.com/anionu/)
 : Cloud surveillance and security platform using Dart and native WebRTC.
 
 [dartdocs.org](http://www.dartdocs.org)

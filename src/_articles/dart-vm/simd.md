@@ -183,8 +183,6 @@ Int32x4.bool(bool x, bool y, bool z, bool w);
 This constructor creates a new Int32x4 instance
 with 0xFFFFFFFF in lanes where the boolean parameter is true
 and 0x0 in lanes where the boolean parameter is false.
-For an example of using this constructor, see the
-[Lane masking](#lane-masking) section.
 
 The [Int32x4 API reference]({{site.dart_api}}/dart-typed_data/Int32x4-class.html)
 has a complete list of methods and constructors.

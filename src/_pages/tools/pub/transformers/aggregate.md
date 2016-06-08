@@ -15,7 +15,7 @@ If you aren't familiar with how to write a normal Pub tranformer, see
 [Writing a Pub Transformer](/tools/pub/transformers).
 
 This page uses the aggregate_transformer example which you can find
-through [Examples of Transformer Code](examples/).
+through [Examples of Transformer Code](examples).
 
 ## Implementing an aggregate transformer {#implementing-transformer}
 
@@ -118,7 +118,7 @@ If you wish to request a specific secondary input, you can use the
 
 * [Writing a Pub Transformer](/tools/pub/transformers/)
 : How to write a Pub transformer that accepts a single primary input.
-* [Examples of Transformer Code](examples/)
+* [Examples of Transformer Code](examples)
 : Examples to get you started.
 * [barback library](https://pub.dartlang.org/packages/barback)
 : API docs for the barback package.

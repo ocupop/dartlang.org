@@ -741,7 +741,7 @@ that you can use for functionality such as profiling.
 
 ### More resources
 
-[The Event Loop and Dart]({{site.dart_vm}}/articles/event-loop)
+[The Event Loop and Dart](/articles/dart-vm/event-loop)
 : Learn more about scheduling tasks
   using Future, Timer, and `scheduleMicrotask()`.
 

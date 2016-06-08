@@ -10,7 +10,7 @@ snippet_img: //i.ytimg.com/vi/XdqZdsdzD2A/0.jpg
 <iframe class="dart-tips-video" src="//www.youtube.com/embed/XdqZdsdzD2A"
 frameborder="0" allowfullscreen></iframe>
 
-[Back to all Dart Tips episodes](/dart-tips/).
+[Back to all Dart Tips episodes](/resources/dart-tips/).
 
 <hr>
 
@@ -246,4 +246,4 @@ I hope you enjoyed this tour of Dart's control flow statements. Thanks for watch
 Our thanks go out to [Marakana](http://www.marakana.com) for producing this
 video series.
 
-[Back to all Dart Tips episodes](/dart-tips/).
+[Back to all Dart Tips episodes](/resources/dart-tips/).

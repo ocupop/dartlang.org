@@ -133,7 +133,8 @@ streamlines the VM, enables faster execution, and makes it easier to do code
 completion and refactoring.  And Dart adds some goodies.  To name a few:
 
 * User-defined operator methods.  We like the lightweight, readable code
-these give for <a href="/articles/improving-the-dom/">our DOM interface</a>.
+these give for
+<a href="{{site.dart4web}}/articles/low-level-html/improving-the-dom">our DOM interface</a>.
 
 * Lightweight syntax for anonymous functions.  You use them a lot in
 web programming; now they look great.  And they come with correct
@@ -298,7 +299,7 @@ need from runtime dynamism.
 ### Q. Does Dart have reflection capabilities?
 
 We have reflection support from
-the <a href="/articles/reflection-with-mirrors/">mirrors API</a>.
+the <a href="/articles/libraries/reflection-with-mirrors">mirrors API</a>.
 
 ### Q. Can Dart add tuples, pattern matching, non-nullable types, partial evaluation, optional semicolons, ...?
 
@@ -536,8 +537,9 @@ core libraries are considered stable for production use.
 ### Q. How does Dart code interoperate with JavaScript libraries?
 
 Although Dart and JavaScript are completely separate languages with
-separate VMs, they can interoperate. For more information, read the
-[article on Dart-JavaScript][jsinterop].
+separate VMs, they can interoperate. For more information, see
+[package:js](https://pub.dartlang.org/packages/js) and
+the [chartjs](https://github.com/google/chartjs.dart/) example.
 
 ### Q. I have a large JavaScript codebase.  How can I migrate it to Dart?
 
@@ -580,9 +582,9 @@ Yes! [Angular 2 for Dart][] is a port of Angular to Dart.
 Yes! [Polymer Dart] is a port of polymer to Dart. Polymer is a set of
 polyfills and usability enhancements for web components.
 
-### Q. Should I use Angular or polymer?
+### Q. Should I use Angular or Polymer?
 
-Both. Or either. It's really up to you. We envision a world where polymer
+Both. Or either. It's really up to you. We envision a world where Polymer
 lets you create and use custom elements. You should be able to use custom
 elements in any web app.
 
@@ -631,17 +633,17 @@ See [Who Uses Dart] for more.
 
 [dartisnotjava]: http://programming.oreilly.com/2013/05/dart-is-not-the-language-you-think-it-is.html
 [fixallthethings]: http://hyperboleandahalf.blogspot.com/2010/06/this-is-why-ill-never-be-adult.html
-[improvethedom]: /articles/improving-the-dom/
+[improvethedom]: {{site.dart4web}}/articles/low-level-html/improving-the-dom
 [pnacl]: https://developers.google.com/native-client/overview#distributing-an-application
-[whynotbytecode]: /articles/why-not-bytecode/
+[whynotbytecode]: /articles/dart-vm/why-not-bytecode
 [typescript]: http://news.dartlang.org/2012/10/the-dart-team-welcomes-typescript.html
 [issues]: http://dartbug.com/
-[jsinterop]: /articles/js-dart-interop/
+[jsinterop]: https://pub.dartlang.org/packages/js
 [sourcemaps]: http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/
 [io]: /articles/io/
 [pub]: https://pub.dartlang.org
 [Angular 2 for Dart]: https://angulardart.org
-[Polymer Dart]: /polymer/
+[Polymer Dart]: https://github.com/dart-lang/polymer-dart/wiki
 [ppwsize]: http://work.j832.com/2012/11/excited-to-see-dart2js-minified-output.html
 [perf]: /articles/dart-vm/performance-faq
 [chrome.dart]: https://github.com/dart-gde/chrome.dart
@@ -649,7 +651,7 @@ See [Who Uses Dart] for more.
 [lang]: /guides/language/language-tour
 [libs]: /guides/libraries/library-tour
 [Oilpan]: https://docs.google.com/a/google.com/document/d/1y7_0ni0E_kxvrah-QtnreMlzCDKN3QP4BN1Aw7eSLfY
-[Dartium]: /tools/dartium/
+[Dartium]: {{site.dart4web}}/tools/dartium/
 [JSON]: {{site.dart_api}}/dart-convert/JsonCodec-class.html
 [tc52]: http://news.dartlang.org/2013/12/ecma-forms-tc52-for-dart-standardization.html
 [Dart on the Server]: https://dart-lang.github.io/server/

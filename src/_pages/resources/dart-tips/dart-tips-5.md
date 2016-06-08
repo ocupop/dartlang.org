@@ -10,7 +10,7 @@ snippet_img: //i.ytimg.com/vi/fh1Cztaw9tI/0.jpg
 <iframe class="dart-tips-video" src="//www.youtube.com/embed/fh1Cztaw9tI"
 frameborder="0" allowfullscreen></iframe>
 
-[Back to all Dart Tips episodes](/dart-tips/).
+[Back to all Dart Tips episodes](/resources/dart-tips/).
 
 <hr>
 
@@ -162,4 +162,4 @@ Thanks for watching, my name is Seth Ladd, and as we say here on Dart Tips, stay
 Our thanks go out to [Marakana](http://www.marakana.com) for producing this
 video series.
 
-[Back to all Dart Tips episodes](/dart-tips/).
+[Back to all Dart Tips episodes](/resources/dart-tips/).

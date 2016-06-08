@@ -239,7 +239,7 @@ completion and early warnings for bugs and code completion.
 <div class="alert alert-info" markdown="1">
 **Note:**
 This page follows the
-[style guide recommendation](/guides/language/effective-dart/style#type-annotations)
+[style guide recommendation](/guides/language/effective-dart/design#type-annotations)
 of using `var`, rather than type annotations, for local variables.
 </div>
 
@@ -3034,7 +3034,7 @@ Static variables aren’t initialized until they’re used.
 <div class="alert alert-info" markdown="1">
 **Note:**
 This page follows the [style guide
-recommendation](/guides/language/effective-dart#prefer-using-lowercamelcase-for-constant-names)
+recommendation](/guides/language/effective-dart/style#identifiers)
 of preferring `lowerCamelCase` for constant names.
 </div>
 
@@ -3385,7 +3385,7 @@ Keep in mind the following when you use deferred loading:
 ### Implementing libraries {#implementing-libraries}
 
 See
-[Creating Library Packages](/guides/libraries/create-library-packages)
+[Create Library Packages](/guides/libraries/create-library-packages)
 for advice on how to implement a library package.
 
 ## Asynchrony support {#asynchrony}
@@ -3572,8 +3572,8 @@ For more information about asynchronous programming, see the
 [dart:async](/guides/libraries/library-tour#dartasync---asynchronous-programming)
 section of the library tour.
 Also see the articles
-[Dart Language Asynchrony Support: Phase 1](/articles/language/await-async/) and
-[Dart Language Asynchrony Support: Phase 2](/articles/language/beyond-async/),
+[Dart Language Asynchrony Support: Phase 1](/articles/language/await-async) and
+[Dart Language Asynchrony Support: Phase 2](/articles/language/beyond-async),
 and the [Dart language specification](/guides/language/spec).
 
 ## Callable classes {#callable-classes}

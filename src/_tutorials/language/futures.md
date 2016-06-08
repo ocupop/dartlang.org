@@ -365,7 +365,7 @@ Like `then()`, `catchError()` returns a new Future that completes with
 the return value of its callback.
 
 For more details and examples, read
-[Futures and Error Handling](/articles/libraries/futures-and-error-handling/).
+[Futures and Error Handling](/articles/libraries/futures-and-error-handling).
 
 ### Calling multiple functions that return Futures {#calling-multiple-funcs}
 
@@ -416,7 +416,7 @@ and asynchronous programming in Dart:
 
 * [Futures and Error Handling](/articles/libraries/futures-and-error-handling),
   an article that starts where this tutorial ends
-* [The Event Loop and Dart]({{site.dart_vm}}/articles/event-loop),
+* [The Event Loop and Dart](/articles/dart-vm/event-loop),
   an article that describes how to schedule tasks using Futures
 * [Asynchrony support](/guides/language/language-tour#asynchrony),
   a section in the [language tour](/guides/language/language-tour)

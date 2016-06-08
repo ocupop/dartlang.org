@@ -20,7 +20,7 @@ at the following links:
   </div>
 
   <div class="card">
-    <h3><a href="/guides/libraries/create-library-packages">Creating Library Packages</a></h3>
+    <h3><a href="/guides/libraries/create-library-packages">Create Library Packages</a></h3>
     <p>How how to create your own library packages.</p>
   </div>
 </div>

@@ -10,7 +10,7 @@ snippet_img: //i.ytimg.com/vi/2woBWdBQ4Ro/0.jpg
 <iframe class="dart-tips-video" src="//www.youtube.com/embed/2woBWdBQ4Ro"
 frameborder="0" allowfullscreen></iframe>
 
-[Back to all Dart Tips episodes](/dart-tips/).
+[Back to all Dart Tips episodes](/resources/dart-tips/).
 
 <hr>
 
@@ -186,4 +186,4 @@ here on Dart Tips, stay sharp!
 Our thanks go out to [Marakana](http://www.marakana.com) for producing this
 video series.
 
-[Back to all Dart Tips episodes](/dart-tips/).
+[Back to all Dart Tips episodes](/resources/dart-tips/).

@@ -593,7 +593,8 @@ create additional isolates or workers.
 As you write asynchronous code, you might find these resources helpful:
 
 * [Futures and Error Handling]({{site.dartlang}}/articles/libraries/futures-and-error-handling)
-* [dart:async - Asynchronous Programming](/guides/language/language-tour#dartasync---asynchronous-programming) section of the library tour
+* [dart:async - Asynchronous Programming](/guides/language/language-tour#asynchrony-support)
+  section of the library tour
 * [dart:async API reference]({{site.dart_api}}/dart-async/dart-async-library.html)
 
 {% comment %}

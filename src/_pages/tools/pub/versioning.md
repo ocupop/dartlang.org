@@ -50,7 +50,7 @@ all works fine as long as none of those dependencies _overlap_.
 
 But consider the following example:
 
-<img src="{% asset_path 'tools/pub/PubConstraintsDiagram.png' %}" alt="diagram showing my_app has dependencies on widgets and templates which both have a dependency on collection">
+{% img 'tools/pub/PubConstraintsDiagram.png' %}
 
 So your app uses `widgets` and `templates`, and _both_ of those use
 `collection`. This is called a **shared dependency**. Now what happens when
@@ -274,8 +274,7 @@ Consider the following scenario:
 <img src="images/PubExportedConstraints.png" alt="diagram showing bookshelf package has a dependency on widges which has a dependency on collection">
 
 The `bookshelf` package depends on `widgets`.
-The `widgets` package, currently at 1.2.0,
-[exports](/guides/language/language-tour#re-exporting-libraries)
+The `widgets` package, currently at 1.2.0, exports
 `collection` via `export 'package:collection/collection.dart'`, and is
 at 2.4.0. The pubspec files are as follows:
 

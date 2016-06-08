@@ -212,7 +212,7 @@ resolve. Instead, your entrypoints should go in the appropriate
 [entrypoint directory](glossary#entrypoint-directory).
 
 For more information on library packages, see
-[Creating Library Packages](/guides/libraries/create-library-packages).
+[Create Library Packages](/guides/libraries/create-library-packages).
 
 ### Public tools {#public-tools}
 

@@ -24,7 +24,7 @@ If you aren't familiar with how to write a normal Pub tranformer, see
 [Writing a Pub Transformer](/tools/pub/transformers).
 
 This page uses the lazy_transformer example which you can find
-through [Examples of Transformer Code](examples/).
+through [Examples of Transformer Code](examples).
 
 Note that this transformer example does not run slowly, but is used
 for purposes of illustration. If the transformer were passed an
@@ -76,7 +76,7 @@ That's all that you need to do!
 
 * [Writing a Pub Transformer](/tools/pub/transformers/)
 : How to write a Pub transformer that accepts a single primary input.
-* [Examples of Transformer Code](examples/)
+* [Examples of Transformer Code](examples)
 : Examples to get you started.
 * [barback library](https://pub.dartlang.org/packages/barback)
 : API docs for the barback package.

@@ -1321,7 +1321,7 @@ Also see these articles and tutorials:
 
 -   [Futures and Error Handling](/articles/libraries/futures-and-error-handling)
 
--   [The Event Loop and Dart]({{site.dart_vm}}/articles/event-loop)
+-   [The Event Loop and Dart](/articles/dart-vm/event-loop)
 
 -   [Asynchronous Programming: Streams](/tutorials/language/streams)
 
@@ -2670,7 +2670,7 @@ assert(p.firstName == 'Mary');
 ### More information {#more-information-mirrors}
 
 The article [Reflection in Dart with
-Mirrors](/articles/libraries/reflection-with-mirrors/) has
+Mirrors](/articles/libraries/reflection-with-mirrors) has
 more information and examples. Also see the API docs for
 [dart:mirror,]({{site.dart_api}}/dart-mirrors/dart-mirrors-library.html) especially
 [MirrorsUsed]({{site.dart_api}}/dart-mirrors/MirrorsUsed-class.html),

@@ -36,7 +36,7 @@ See the
 [source on Github](https://github.com/dart-lang/dart-samples/tree/master/dart_io_mini_samples).
 
 After looking at the following code examples, refer to
-[Writing Command-line Apps]({{site.dart_vm}}/tutorials/cmdline)
+[Writing Command-line Apps](/tutorials/dart-vm/cmdline)
 for additional information about I/O, command-line apps, and servers.
 
 

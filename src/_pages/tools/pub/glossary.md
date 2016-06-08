@@ -55,7 +55,7 @@ For more information, see
 Another package that your package relies on. If your package wants to import
 code from some other package, that package must be a dependency. Dependencies
 are specified in your package's [pubspec](pubspec.html) and described in
-[Pub Dependencies](dependencies.html).
+[Pub Dependencies](dependencies).
 
 To see the dependencies used by a package, use [`pub deps`](cmd/pub-deps.html).
 
@@ -102,7 +102,7 @@ opposite of a library package is an [application package](#application-package).
 Library packages should not check their [lockfile](#lockfile) into source
 control, since they should support a range of dependency versions. Their
 [immediate dependencies](#immediate-dependency)' [version
-constraints](#version-constraints) should be as wide as possible while still
+constraints](#version-constraint) should be as wide as possible while still
 ensuring that the dependencies will be compatible with the versions that were
 tested against.
 
@@ -112,7 +112,7 @@ incompatible changes, library packages will usually require their dependencies'
 versions to be greater than or equal to the versions that were tested and less
 than the next major version. So if your library depended on the (fictional)
 `transmogrify` package and you tested it at version 1.2.1, your version
-constraint would be [`^1.2.1`](dependencies.html#caret-syntax).
+constraint would be [`^1.2.1`](dependencies#caret-syntax).
 
 ### Lockfile {#lockfile}
 
@@ -144,7 +144,7 @@ A kind of place that pub can get packages from. A source isn't a specific place
 like pub.dartlang.org or some specific Git URL. Each source describes a general
 procedure for accessing a package in some way. For example, _git_ is one source.
 The git source knows how to download packages given a Git URL. Several
-different [supported sources](dependencies.html#sources) are available.
+different [supported sources](dependencies#sources) are available.
 
 ### System cache {#system-cache}
 
@@ -207,7 +207,7 @@ with. This can be a single version (`0.3.0`) or a range of versions (`^1.2.1`).
 While `any` is also allowed, for performance reasons we don't recommend it.
 
 For more information, see
-[Version constraints](dependencies.html#version-constraints).
+[Version constraints](dependencies#version-constraints).
 
 [Library packages](#library-package) should always specify version constraints
 for all of their dependencies, but [application packages](#application-package)

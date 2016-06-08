@@ -4,10 +4,10 @@ title: "Get Started"
 description: "Get Dart and run a Dart application"
 
 nextpage:
-  url: /dart-vm/tutorials/cmdline
+  url: /tutorials/dart-vm/cmdline
   title: "Write Command-Line Apps"
 prevpage:
-  url: /dart-vm/tutorials/
+  url: /tutorials/dart-vm/
   title: Tutorials Overview
 
 points:

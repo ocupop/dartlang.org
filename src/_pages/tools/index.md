@@ -102,5 +102,5 @@ Consult the tools page for your technology for further details.
 Also see the tools documentation for your Dart technology:
 [Dart for the Web]({{site.dart4web}}/tools/) |
 [Flutter]({{site.flutter}}/setup/) |
-[Dartino]({{site.dartino}}/get-started/) |
+[Dartino]({{site.dartino}}/getting-started/) |
 [Dart VM]({{site.dart_vm}}/tools/)

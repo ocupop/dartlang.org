@@ -50,7 +50,7 @@ productive.
 Unless the abbreviation is more common than the unabbreviated term, don't
 abbreviate. If you do abbreviate, [capitalize them correctly][caps].
 
-[caps]: /guides/language/effective-dart/style/#do-capitalize-acronyms-and-abbreviations-longer-than-two-letters-like-words
+[caps]: /guides/language/effective-dart/style#identifiers
 
 <div class="good">
 {% prettify dart %}
