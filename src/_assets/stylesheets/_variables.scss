@@ -8,10 +8,14 @@ $white:                     #ffffff;
 $gray:                      #D3D3D3;
 $gray-light:                #eeeeee;
 $gray-lighter:              #f0f0f0;
-$gray-dark:                 #434343;
+$gray-dark:                 #111111;
 $teal:                      #1FBAAC;
 $blue:                      #1b87c9;
 $blue-light:                #e2f4fd;
+
+// From: https://www.w3.org/TR/html5/rendering.html#phrasing-content-0
+$default-link:              #0000EE;
+$default-link-visited:      #0000EE; /*#551A8B;*/
 
 // Typeography
 $font-family-base:          'Source Sans Pro', sans-serif;
@@ -26,12 +30,12 @@ $font-size-base:          16px;
 // $line-height-base:        1.428571429 !default;
 
 // Headings
-$font-size-h1:            44px;
-$font-size-h2:            37px;
-$font-size-h3:            30px;
+$font-size-h1:            37px;
+$font-size-h2:            28px;
+$font-size-h3:            24px;
 $font-size-h4:            21px;
-$font-size-h5:            16px;
-$font-size-h6:            14px;
+$font-size-h5:            18px;
+$font-size-h6:            16px;
 
 // Spacing
 $live-content-width:      1280px;

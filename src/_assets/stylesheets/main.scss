@@ -25,11 +25,12 @@ section {
 
 h1, h2, h3, h4, h5, h6 {
  font-family: $font-family-base;
- font-weight: 700;
+ font-weight: 400;
+ margin-top: 1.5em;
  color: $gray-dark;
 }
 
-h1, .h1 { font-size: $font-size-h1; margin-bottom: 0.67em; }
+h1, .h1 { font-size: $font-size-h1; margin-top: 0; margin-bottom: 0.67em;}
 h2, .h2 { font-size: $font-size-h2;}
 h3, .h3 { font-size: $font-size-h3;}
 h4, .h4 { font-size: $font-size-h4; margin-bottom: 0; }
@@ -40,7 +41,12 @@ p {}
 
 a, button {
  text-decoration: none;
+ color: $default-link;
+ &:visited {
+   color: $default-link-visited;
+ }
  &:hover, &:focus, &:active {
+   color: lighten($default-link, 25%);
    outline: none;
    text-decoration: none;
  }
@@ -151,8 +157,9 @@ pre {
   }
 }
 code {
-  background-color: transparent;
+  background-color: $gray-lighter;
   padding: 0;
+  color: darken($default-link, 20%);
 }
 img {
   max-width: 100%;
@@ -253,7 +260,7 @@ img {
         color: $gray-dark;
         @include transition(0.5s);
         &:hover {
-          color: $blue;
+          color: $default-link;
         }
       }
       &.active {
@@ -312,6 +319,7 @@ img {
 #subnav {
   height: 32px;
   line-height: 32px;
+  margin-bottom: 10px;
   ul {
     margin: 0;
     padding: 0;
@@ -342,6 +350,7 @@ img {
   overflow-y: auto;
   .content {
     h4 {
+      margin-top: 0;
       font-size: 18px;
       font-weight: normal;
       text-transform: uppercase;
@@ -360,6 +369,9 @@ img {
         position: relative;
         margin-top: 10px;
         line-height: 110%;
+        a:visited {
+          color: $default-link;
+        }
         i {
           display: inline-block;
           margin-left: 4px;
@@ -451,10 +463,10 @@ img {
       border-left: 3px solid $gray-lighter;
       a {
         padding: 3px 15px;
-        color: $blue;
+        color: $default-link;
       }
       &.active {
-        border-left: 3px solid $brand-primary;
+        border-left: 3px solid $gray-dark;
         a {
           color: $gray-dark;
         }
@@ -720,13 +732,12 @@ img {
   }
 }
 .panel {
-  background-color: $gray-dark;
-  color: $white;
+  background-color: $gray-light;
   padding: $content-padding;
   margin-bottom: 20px;
   h1, h2, h3, h4, h5, h6 {
-    color: $white;
     margin: 0;
+    margin-bottom: 5px;
   }
   ul {
     padding-left: 15px;
@@ -879,8 +890,8 @@ body.condensed_header {
     }
   }
   #sidenav {
-    position: fixed;
     top: 40px;
+    position: fixed;
     left: 20px;
   }
 }
