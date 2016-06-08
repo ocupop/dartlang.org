@@ -13,6 +13,12 @@
   <link href="{% asset_path 'touch-icon-iphone-retina.png' %}" rel="apple-touch-icon" sizes="120x120">
   <link href="{% asset_path 'touch-icon-ipad-retina.png' %}" rel="apple-touch-icon" sizes="152x152">
 
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@dart_lang" />
+  <meta name="twitter:title" content="{{ page.title }}" />
+  <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700' rel='stylesheet' type='text/css'>
   {% stylesheet style %}
