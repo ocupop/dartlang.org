@@ -2,7 +2,6 @@
 layout: tutorial
 title: "Write HTTP Clients & Servers"
 description: "Communicate over the internet"
-permalink: /dart-vm/tutorials/httpserver
 
 prevpage:
   url: /dart-vm/tutorials/cmdline

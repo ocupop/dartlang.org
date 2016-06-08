@@ -1,0 +1,42 @@
+favicons missing on dart4webo
+
+
+twitter cards: logic in the layout template, if it's an article, include this info, etc
+
+Tom can swap out the icon
+
+bundle exec htmlproofer ./publish --disable-external
+bundle exec htmlproofer ./publish --assume-extension --directory-index-file
+  check for valid HTML - they run it as part of the deployment process
+    run this before pushing a commit
+    find a way to ignore extensions "pretty URLs", "clean URLs" (Firebase),
+    "extensionless URLs".
+    configuration that allows it: he will set it up as a configuration within the repo
+
+
+collections
+  makes a faster build time,
+  less logic to maintain
+  standard jekyll optimization
+
+
+Tom:
+- he's pretty much done with dartlang
+- he's not doing anything until he gets the word, loud and clear, of Firebase or whatever
+- he's not fixing any of the styling that Filip did
+
+
+Kevin:
+  - Firebase can handle redirects, but do we need a plugin? Tom?
+  - create a spreadsheet -
+    they can Filip creates a tool to parse the csv (google spreadsheets)
+  - Does firebase support staging???  (Tom? Filip?)
+    1) Confirm we have a path for a google-managed firebase host
+    2) Confirm that we can stage and play with it
+
+- Ask Tom to merge dartlang style changes to dart4web.
+- Filip is willing to move jquery and javascript to Dart.
+  - Would make a good content article and good code to share
+  - he wants to use the make file
+- FRONT PAGE
+  Filip has asked Tom to implement the top of the home page

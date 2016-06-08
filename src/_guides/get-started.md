@@ -57,4 +57,4 @@ The [Tools](/tools) page has more information.
 
 There are a number of communities and platforms where you can ask,
 or answer, Dart related questions. For a list, see
-[community](/community/).
+[Community and Support](/community/).

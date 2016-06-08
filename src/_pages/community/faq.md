@@ -643,7 +643,7 @@ See [Who Uses Dart] for more.
 [Angular 2 for Dart]: https://angulardart.org
 [Polymer Dart]: /polymer/
 [ppwsize]: http://work.j832.com/2012/11/excited-to-see-dart2js-minified-output.html
-[perf]: /performance/
+[perf]: /articles/dart-vm/performance-faq
 [chrome.dart]: https://github.com/dart-gde/chrome.dart
 [announcement]: http://blog.chromium.org/2013/11/dart-10-stable-sdk-for-structured-web.html
 [lang]: /guides/language/language-tour

@@ -7,10 +7,11 @@ toc: false
 
 Read these articles for insight into the Dart libraries.
 
-* [Converters and Codecs](converters-and-codecs)
-* [Serialization in Dart](serialization)
-* [Zones](zones)
-* [Single-Subscription vs. Broadcast Streams](broadcast-streams)
-* [Reflection in Dart with Mirrors](reflection-with-mirrors)
-* [Futures and Error Handling](futures-and-error-handling)
-* [Creating Streams in Dart](creating-streams)
+<div class="break-80">
+  {% assign articles = site.articles | filter: 'libraries' | order: 'date' | reverse %}
+  <ul class="nav-list">
+    {% for article in articles %}
+      <li>{% include article_summary.html %}</li>
+    {% endfor %}
+  </ul>
+</div>

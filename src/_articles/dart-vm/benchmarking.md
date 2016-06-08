@@ -1,10 +1,10 @@
 ---
 layout: article
-permalink: /dart-vm/articles/benchmarking
 title: "Benchmarking the Dart VM"
 description: "Learn how to benchmark your applications"
 date: 2012-10-01
 updated: 2012-11-01
+category: dart-vm
 ---
 
 _Written by John McCutchan <br>

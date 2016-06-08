@@ -2,15 +2,12 @@
 layout: default
 title: "Dart VM Tutorials"
 description: "The Dart VM Tutorials&mdash;Your guide to building great apps."
-permalink: /dart-vm/tutorials/
 toc: false
 
 nextpage:
   url: get-started
   title: Get Started
 
-tutorial:
-  id: tut-home
 header:
   css: ["/docs/tutorials/tute_main_page.css"]
 ---

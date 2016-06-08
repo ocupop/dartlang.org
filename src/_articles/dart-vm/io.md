@@ -4,6 +4,7 @@ title: "An Introduction to the dart:io Library"
 description: "An introduction to the Dart I/O library, which is aimed at server-side code that runs on the standalone Dart VM."
 date: 2012-03-01
 updated: 2015-03-15
+category: dart-vm
 ---
 
 _Written by Mads Ager <br>

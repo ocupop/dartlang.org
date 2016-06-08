@@ -102,6 +102,6 @@
       - title: API Reference
         permalink: https://api.dartlang.org
       - title: Tutorials
-        permalink: /dart-vm/tutorials
+        permalink: /tutorials/dart-vm
       - title: Articles
-        permalink: /dart-vm/articles/
+        permalink: /articles/dart-vm
