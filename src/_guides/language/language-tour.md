@@ -2020,9 +2020,9 @@ and the second is the stack trace
 <!-- ch02/flow_exceptions.dart -->
 {% prettify dart %}
   ...
-} on Exception catch [[prettify]](e)[[/prettify]] {
+} on Exception catch [[highlight]](e)[[/highlight]] {
   print('Exception details:\n $e');
-} catch [[prettify]](e, s)[[/prettify]] {
+} catch [[highlight]](e, s)[[/highlight]] {
   print('Exception details:\n $e');
   print('Stack trace:\n $s');
 }
@@ -2041,7 +2041,7 @@ void misbehave() {
     foo = "You can't change a final variable's value.";
   } catch (e) {
     print('misbehave() partially handled ${e.runtimeType}.');
-    [[prettify]]rethrow;[[/prettify]] // Allow callers to see the exception.
+    [[highlight]]rethrow;[[/highlight]] // Allow callers to see the exception.
   }
 }
 
@@ -3230,7 +3230,7 @@ You can do this using `extends`.
 <!-- ch02/generics_base_class.dart -->
 {% prettify dart %}
 // T must be SomeBaseClass or one of its descendants.
-class Foo<T [[prettify]]extends SomeBaseClass[[/prettify]]> {...}
+class Foo<T [[highlight]]extends SomeBaseClass[[/highlight]]> {...}
 
 class Extender extends SomeBaseClass {...}
 
