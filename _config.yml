@@ -117,6 +117,7 @@ exclude: ["diagrams", "appengine", "tests", "site"]
 gems:
 - jekyll-assets
 - jekyll-toc
+- jekyll-sitemap
 
 
 assets:

@@ -11,8 +11,4 @@ gem 'sass'
 gem 'uglifier'
 gem 'autoprefixer-rails'
 
-group :old_plugins do
-  # gem "yui-compressor", "0.12.0"
-  # gem "selenium-webdriver", "~> 2"
-  gem "jekyll-sitemap"
-end
+gem "jekyll-sitemap"
