@@ -178,6 +178,7 @@ img {
   left: 0;
   right: 0;
   background-color: $gray-light;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.1);
   z-index: 1030;
 }
 #page-content {
@@ -825,10 +826,18 @@ body.homepage {
   #page-content {
     padding: 0;
   }
+  section {
+    padding: 30px 0;
+  }
   pre.prettyprint {
    margin-top: 0;
    height: 185px;
    overflow: auto;
+  }
+  .card-grid {
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 
