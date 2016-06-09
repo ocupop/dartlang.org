@@ -3,56 +3,78 @@ layout: homepage
 title: Home of Dart
 description: Here is a short description for the homepage
 ---
+<section id="code-sample">
 <div class="container">
   <div class="row">
     <div class="col-sm-6">
       <div class="content">
-<pre class="prettyprint dartpad">
-<span class="highlight" data-text="Message">import</span> 'dart:<span class="highlight" data-text="New Message">async'</span>;
-import 'dart:math' show Random, pow;
-<span class="highlight" data-text="Another Message">main()</span> async {
-var count = 10000000;
-print('Compute π using the Monte Carlo method 
-with ' '$count samples.');
-var pi = await computePi(count);
-print("π ≅ $pi");
+<pre class="prettyprint">
+  <span class="highlight" data-text="there's one canonical way to import packages, and one canonical, automatic way to install them (pub)
+">import</span> 'dart:<span class="highlight" data-text="great core lib
+">async</span>';
+  import 'dart:math' show <span class="highlight" data-text="no need to do this (treeshaking)
+">Random</span>;
 
+  <span class="highlight" data-text="main function as the single point of entry
+">main</span>() async {
+    print('Compute <span class="highlight" data-text="unicode baked in
+">π</span> using the Monte Carlo method.');
+    <span class="highlight" data-text="language-level asynchrony support
+">await</span> for (var estimate in computePi()) {
+      print('π ≅ <span class="highlight" data-text="easy string interpolation
+">$estimate</span>');
+    }
+  }
 
-import 'dart:async';
-import 'dart:math' show Random, pow;
+  Stream<double> computePi(<span class="highlight" data-text="readable default parameters
+">{int batch: 1000000}</span>) async* {
+    <span class="highlight" data-text="type inference
+">var</span> total = 0;
+    var inside = 0;
+    while (true) {
+      var points = generateRandomPoints().<span class="highlight" data-text="lazy iterables - this only takes `batch` samples from an infinite list of random points (and obviously we're not generating them all)
+">take</span>(batch);
+      var pointsInside = points.<span class="highlight" data-text="well-defined functional methods in std lib
+">where</span>((p) <span class='highlight' data-text="lambda functions
+">=></span> p.isInsideUnitCircle);
+      total += batch;
+      inside += pointsInside.<span class="highlight" data-text="lazy iterable means we're not actually creating a huge array of points or anything like that
+">length</span>;
+      var ratio = inside / total;
+      // Area of a circle is A = π⋅r², therefore π = A/r².
+      // So, when given random points with x ∈ <0,1>, y ∈ <0,1>, 
+      // the ratio of those inside a unit circle should approach
+      // π / 4. Therefore:
+      <span class="highlight" data-text="yield">yield</span> ratio * 4;
+    }
+  }
 
-main() async {
- var count = 10000000;
- print('Compute π using the Monte Carlo method with '
-       '$count samples.');
- var pi = await computePi(count);
- print("π ≅ $pi");
-}
+  Iterable<Point> generateRandomPoints(<span class="highlight" data-text="optional arguments
+">[int seed]</span>) sync* {
+    final random = new <span class="highlight" data-text="there's also Random.secure() for cryptographic purposes. We told you the standard lib is pretty amazing.
+">Random</span>(seed);
+    while (<span class="highlight" data-text="yes, we can do this because generator
+">true</span>) {
+      <span class="highlight" data-text="generator support
+">yield</span> new Point(random.nextDouble(), random.nextDouble());
+    }
+  }
 
-Future<double> computePi(int samples, {int seed}) async {
- var points = generateRandomPoints(seed).take(samples);
- var pointsInside = points.where((p) => p.isInsideUnitCircle);
- return pointsInside.length / samples * 4;
-}
-
-Iterable<Point> generateRandomPoints([int seed]) sync* {
- var random = new Random(seed);
- while (true) {
-   yield new Point(random.nextDouble(), random.nextDouble());
- }
-}
-
-class Point {
- final double x, y;
- Point(this.x, this.y);
- bool get isInsideUnitCircle => pow(x, 2) + pow(y, 2) <= 1;
-}
+  class <span class="highlight" data-text="class (multiple per file ok)
+">Point</span> {
+    final <span class="highlight" data-text="Dart Style Guide encourages explicit types on APIs (inside functions they're not required)
+">double</span> x, y;
+    Point(<span class="highlight" data-text="initializers: simple syntactic sugar like this makes your life easier
+">this</span>.x, this.y);
+    bool <span class="highlight" data-text="getters, setters
+">get</span> isInsideUnitCircle => x * x + y * y <= 1;
+  }
 </pre>
       </div>
     </div>
     <div class="col-sm-6">
       <div class="content">
-        <h4>Dart is a scalable scripting language with robust libraries. Here are some examples.</h4>
+        <h3>Dart is a scalable scripting language with robust libraries. Here are some examples.</h3>
         <div id="code-display">
           <p>Hover over code snippet on the left to learn more.</p>
         </div>
@@ -60,6 +82,7 @@ class Point {
     </div>
   </div>
 </div>
+</section>
 <section class="banner gray-dark">
   <div class="container">
     <div class="content">
