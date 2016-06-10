@@ -691,6 +691,23 @@ img {
  }
 }
 
+.good {
+  padding:10px;
+  margin-bottom: 11px;
+  @extend .alert-success;
+  pre {
+    margin-bottom: 0;
+  }
+}
+.bad {
+  padding:10px;
+  margin-bottom: 11px;
+  @extend .alert-danger;
+  pre {
+    margin-bottom: 0;
+  }
+}
+
 .muted {
   color: $gray;
 }
