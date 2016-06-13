@@ -48,7 +48,7 @@ with valid pubspec.yaml files and directory structures.
 Stagehand works either at the command line or (behind the scenes) in an IDE,
 such as WebStorm.
 
-Install Stagehand using [pub global activate](/tools/pub/cmd/pub-global.html):
+Install Stagehand using [pub global activate](/tools/pub/cmd/pub-global):
 
 {% prettify huge %}
 $ pub global activate stagehand
@@ -74,7 +74,7 @@ $ stagehand web-simple
 {% endprettify %}
 
 The pubspec.yaml file contains the package specification written in YAML.
-(Visit <a href="/tools/pub/pubspec.html">Pubspec Format</a>
+(Visit <a href="/tools/pub/pubspec">Pubspec Format</a>
 for in-depth coverage.)
 The contents of your pubspec.yaml file should look something like this:
 
@@ -146,7 +146,7 @@ dependencies:
   [[highlight]]vector_math: "^1.4.3"[[/highlight]]
    {% endprettify %}
 
-See [Pub Versioning Philosophy](/tools/pub/versioning.html)
+See [Pub Versioning Philosophy](/tools/pub/versioning)
 for details of what version numbers mean,
 and how you can format them.
 
@@ -164,7 +164,7 @@ If you're using an IDE or Dart-savvy editor to edit `pubspec.yaml`,
 it might automatically install the packages your app depends on.
 
 If not, do it yourself by running
-[pub get](/tools/pub/cmd/pub-get.html):
+[pub get](/tools/pub/cmd/pub-get):
 
 {% prettify none %}
 $ [[highlight]]pub get[[/highlight]]
@@ -256,7 +256,7 @@ only one, `lib`, was installed when you ran pub get.
       such as example code, tests, scripts, and documentation.
       If a package contains these resources,
       they should be in the directories as specified in the pub
-<a href="/tools/pub/package-layout.html">conventions</a>.
+<a href="/tools/pub/package-layout">conventions</a>.
     </div>
   </div>
   <hr>

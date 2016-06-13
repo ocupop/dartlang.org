@@ -3,8 +3,6 @@ layout: default
 permalink: /resources/dart-tips/dart-tips-ep-8
 title: "Control Flow Statements - Dart Tips, Ep 8"
 description: "Take back control and learn more about Dart's control flow statements. All the greatest hits are here: if, while, for, and switch. Plus, this video shows you a helpful tweak that should make web developers quite happy."
-
-snippet_img: //i.ytimg.com/vi/XdqZdsdzD2A/0.jpg
 ---
 
 <iframe class="dart-tips-video" src="//www.youtube.com/embed/XdqZdsdzD2A"
@@ -241,9 +239,8 @@ I hope you enjoyed this tour of Dart's control flow statements. Thanks for watch
 
 <hr>
 
-<a href="http://marakana.com"><img src="{% asset_path 'dart-tips/marakana-logo.png' %}" alt="Marakana Logo"></a>
+<img src="{% asset_path 'dart-tips/marakana-logo.png' %}" alt="Marakana Logo">
 
-Our thanks go out to [Marakana](http://www.marakana.com) for producing this
-video series.
+Our thanks go out to Marakana for producing this video series.
 
 [Back to all Dart Tips episodes](/resources/dart-tips/).

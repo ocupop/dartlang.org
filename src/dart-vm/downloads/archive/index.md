@@ -9,8 +9,6 @@ js:
   defer: true
 - url: assets/downloads.js
   defer: true
-css:
-- url: assets/downloads.css
 ---
 
 {% include breadcrumbs.html %}

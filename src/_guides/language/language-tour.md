@@ -355,7 +355,7 @@ Integers outside of the
 differently in JavaScript produced from Dart code than they do when
 the same Dart code runs in the Dart VM. The reason is that Dart is
 specified to have arbitrary-precision integers, but JavaScript isn't.
-See [issue 1533](http://dartbug.com/1533) for details.
+See [issue 1533](https://github.com/dart-lang/sdk/issues/1533) for details.
 </div>
 
 Integers are numbers without a decimal point. Here are some examples of

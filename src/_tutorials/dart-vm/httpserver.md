@@ -131,7 +131,7 @@ listening on localhost, port 4040
   </li>
 
   <li markdown="1">
-Then, in any browser, enter [localhost:4040](http://localhost:4040/).
+Then, in any browser, enter localhost:4040.
 The browser displays `Hello, world!`
 
 ![The response from the hello world server.](images/hello_world_response.png)
@@ -286,8 +286,7 @@ I'm thinking of a number: 6
   <li markdown="1">
   **Open the HTML page**
 
-  In a browser, go to
-  [localhost:8080/make_a_guess.html](http://localhost:8080/make_a_guess.html).
+  In a browser, go to localhost:8080/make_a_guess.html.
 
   </li>
   <li markdown="1">
@@ -839,8 +838,7 @@ $ dart mini_file_server.dart
   </li>
 
   <li markdown="1">
-Type [localhost:4044](http://localhost:4044/) into the browser.
-The server displays an HTML file:
+Type localhost:4044 into the browser. The server displays an HTML file:
 
 ![The index.html file served by mini_file_server.dart.](images/index_file.png)
 
@@ -907,7 +905,7 @@ $ dart basic_file_server.dart
   </li>
 
   <li markdown="1">
-Type [localhost:4046](http://localhost:4046/) into the browser.
+Type localhost:4046 into the browser.
 The server displays the same index.html file as the previous:
 
 ![The index.html file served by basic_file_server.dart.](images/index_file_4046.png)
@@ -948,8 +946,7 @@ This server serves any file from the server's directory
 or subdirectory.
 
 Run `static_file_server.dart`,
-and test it with the URL
-[localhost:4048/file.txt](http://localhost:4048/file.txt).
+and test it with the URL localhost:4048/file.txt.
 Change `file.txt` to other filenames within the directory.
 
 Here is the code for `static_file_server.dart`.

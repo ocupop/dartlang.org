@@ -5,8 +5,6 @@ title: "A Simple Dart Script - Dart Tips, Ep 1"
 description: "Welcome to Dart Tips, the video series that teaches you all
 about Dart. In our first episode, we show you a simple Dart script and get you
 comfortable with reading Dart code."
-
-snippet_img: //i.ytimg.com/vi/g09UVKyYfIs/0.jpg
 ---
 
 <iframe class="dart-tips-video" src="//www.youtube.com/embed/g09UVKyYfIs"
@@ -63,9 +61,8 @@ Thanks for watching. My name is Seth Ladd, and as we say here on Dart Tips, stay
 
 <hr>
 
-<a href="http://marakana.com"><img src="{% asset_path 'dart-tips/marakana-logo.png' %}" alt="Marakana Logo"></a>
+<img src="{% asset_path 'dart-tips/marakana-logo.png' %}" alt="Marakana Logo">
 
-Our thanks go out to [Marakana](http://www.marakana.com) for producing this
-video series.
+Our thanks go out to Marakana for producing this video series.
 
 [Back to all Dart Tips episodes](/resources/dart-tips/).

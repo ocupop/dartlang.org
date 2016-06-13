@@ -144,7 +144,7 @@ A kind of place that pub can get packages from. A source isn't a specific place
 like pub.dartlang.org or some specific Git URL. Each source describes a general
 procedure for accessing a package in some way. For example, _git_ is one source.
 The git source knows how to download packages given a Git URL. Several
-different [supported sources](dependencies#sources) are available.
+different [supported sources](dependencies#dependency-sources) are available.
 
 ### System cache {#system-cache}
 

@@ -13,20 +13,19 @@ If you're using Debian/Ubuntu, you can choose two options,
 both of which can update the SDK automatically
 when new versions are released.
 
-* [Installing using apt-get](#install-with-apt-get)
-* [Downloading the Debian package](#download-debian-package)
+* [Installing using apt-get](#using-apt-get)
+* [Downloading the Debian package](#downloading-as-a-debian-package)
 
 Other options are:
 
 * [Downloading Dart manually]({{site.dart_vm}}/downloads/archive/)
-* [Compiling Dart from source](#compiling)
+* [Compiling Dart from source](#compiling-from-source)
 
-
-## Using apt-get {#install-with-apt-get}
+## Using apt-get
 
 To install the Dart SDK with apt-get, you first need to do some setup.
 
-### Setting up for the stable channel {#set-up-stable-channel}
+### Setting up for the stable channel
 
 The following one-time commands set up the install for the stable channel.
 
@@ -42,10 +41,10 @@ $ sudo apt-get update
 {% endprettify %}
 
 
-### Setting up for the dev channel {#set-up-dev-channel}
+### Setting up for the dev channel
 
 The following one-time command sets up the install for the dev channel.
-Do this in addition to the [set up for stable channel](#set-up-stable-channel).
+Do this in addition to the [set up for stable channel](#setting-up-for-the-stable-channel).
 
 {% prettify shell %}
 # Before running this command, follow the instructions in
@@ -54,10 +53,10 @@ $ sudo sh -c 'curl https://storage.googleapis.com/download.dartlang.org/linux/de
 {% endprettify %}
 
 
-### Installing the SDK {#install-dart-sdk}
+### Installing the SDK
 
-The following command installs the highest available version
-of the Dart SDK, based on your setup.
+The following command installs the highest available version of the Dart SDK,
+based on your setup.
 
 {% prettify shell %}
 $ sudo apt-get install dart
@@ -70,7 +69,7 @@ If you want to install the stable channel instead of the dev channel,
 or to install a specific version number, see the next section.
 
 
-### Installing a specific version {#install-specific-version}
+### Installing a specific version
 
 The dev channel has a higher version number than the stable channel.
 To force installation of the stable version, use the following command.
@@ -89,13 +88,13 @@ $ sudo apt-get install dart=1.7.0-dev.0.1.*
 {% endprettify %}
 
 
-## Downloading as a Debian package {#download-debian-package}
+## Downloading as a Debian package
 
 Use one of the following buttons to download the stable or
 dev channel release in the `.deb` package format.
 
 {% include_relative _debian.html buttonclass="download-btn btn btn-primary btn-lg" %}
 
-## Compiling from source {#compiling}
+## Compiling from source
 
 You can [build the SDK](https://github.com/dart-lang/sdk/wiki/Building) yourself.
