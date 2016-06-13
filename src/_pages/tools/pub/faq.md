@@ -87,7 +87,7 @@ to an external `pub serve` instance.
 We use the main [Dart bug tracker][]. Feel free to file a ticket. When you do,
 please include:
 
-[Dart bug tracker]: http://dartbug.com
+[Dart bug tracker]: https://github.com/dart-lang/sdk/issues/new
 
 * Your platform (Windows, Mac, Linux, etc.).
 * The version you are running. (Run `pub version`.)

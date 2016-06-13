@@ -3,8 +3,6 @@ layout: default
 permalink: /resources/dart-tips/dart-tips-ep-2
 title: "Runtime Modes - Dart Tips, Ep 2"
 description: "Dart runs fast in production mode, and runs with type assertions in checked mode. Learn about Dart's two runtime modes and when to use each of them for maximum developer feedback and speed."
-
-snippet_img: //i.ytimg.com/vi/CfRFixQTJWA/0.jpg
 ---
 
 <iframe class="dart-tips-video" src="//www.youtube.com/embed/CfRFixQTJWA"
@@ -90,9 +88,8 @@ Thanks for watching. My name is Seth Ladd, and as we say here on Dart Tips, stay
 
 <hr>
 
-<a href="http://marakana.com"><img src="{% asset_path 'dart-tips/marakana-logo.png' %}" alt="Marakana Logo"></a>
+<img src="{% asset_path 'dart-tips/marakana-logo.png' %}" alt="Marakana Logo">
 
-Our thanks go out to [Marakana](http://www.marakana.com) for producing this
-video series.
+Our thanks go out to Marakana for producing this video series.
 
 [Back to all Dart Tips episodes](/resources/dart-tips/).

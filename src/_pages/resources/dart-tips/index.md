@@ -14,7 +14,8 @@ Dart language and library topics.
   <div class="col-sm-2">
     <div class="content">
       <a href="{{ link }}">
-        <img style="margin-top:25px; box-shadow: 5px 5px 10px #CCC;" src="{{episode.thumbnail}}">
+        <img style="margin-top:25px; box-shadow: 5px 5px 10px #CCC;"
+             src="{{episode.thumbnail}}" alt="{{episode.title}}">
       </a>
     </div>
   </div>
@@ -28,6 +29,6 @@ Dart language and library topics.
 </div>
 {% endfor %}
 
-<a href="http://marakana.com"><img src="{% asset_path 'dart-tips/marakana-logo.png' %}" alt="Marakana Logo"></a>
-Our thanks go out to [Marakana](http://www.marakana.com) for producing this
-video series.
+<img src="{% asset_path 'dart-tips/marakana-logo.png' %}" alt="Marakana Logo">
+
+Our thanks go out to Marakana for producing this video series.

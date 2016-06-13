@@ -74,7 +74,7 @@ and become generated assets. Or a source asset can be transformed, such as a
 `.dart` file (along with the `.dart` files that it refers to) that is
 compiled to `.js`.
 
-![a figure showing source assets and generated assets; the .html, .css, and .png files pass through, untransformed; the .dart file is transformed into a .js file (and, for pub serve only, the .dart file is passed through, as well)]({% img 'tools/assets-and-transformers.png' %})
+{% img 'tools/assets-and-transformers.png' %}
 
 Dart files are a special case. The `pub build` command doesn't produce `.dart`
 files because browsers in the wild don't support Dart natively. The `pub

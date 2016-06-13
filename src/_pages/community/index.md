@@ -52,7 +52,7 @@ Dart is an open source project, and we look forward to hearing from you.
 * [Google+ page](https://plus.google.com/+dartlang)
 * [Twitter](https://twitter.com/dart_lang)
 * [IRC](http://webchat.freenode.net/?channels=dart)
-* [Bugs and feature requests](http://dartbug.com/new)
+* [Bugs and feature requests](https://github.com/dart-lang/sdk/issues/new)
 
 #### Communities
 

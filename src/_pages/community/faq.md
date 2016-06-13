@@ -637,7 +637,7 @@ See [Who Uses Dart] for more.
 [pnacl]: https://developers.google.com/native-client/overview#distributing-an-application
 [whynotbytecode]: /articles/dart-vm/why-not-bytecode
 [typescript]: http://news.dartlang.org/2012/10/the-dart-team-welcomes-typescript.html
-[issues]: http://dartbug.com/
+[issues]: https://github.com/dart-lang/sdk/issues/
 [jsinterop]: https://pub.dartlang.org/packages/js
 [sourcemaps]: http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/
 [io]: /articles/io/

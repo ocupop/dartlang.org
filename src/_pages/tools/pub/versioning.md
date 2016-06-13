@@ -271,7 +271,7 @@ containing app.
 Package authors must define package contraints with care.
 Consider the following scenario:
 
-<img src="images/PubExportedConstraints.png" alt="diagram showing bookshelf package has a dependency on widges which has a dependency on collection">
+{% img 'tools/pub/PubExportedConstraints.png' %}
 
 The `bookshelf` package depends on `widgets`.
 The `widgets` package, currently at 1.2.0, exports

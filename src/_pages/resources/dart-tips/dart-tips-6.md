@@ -3,8 +3,6 @@ layout: default
 permalink: /resources/dart-tips/dart-tips-ep-6
 title: "Functions Are Fun, Pt 1 - Dart Tips, Ep 6"
 description: "Functions are the basic building blocks for any app. Dart supports top-level functions, optional parameters, default parameter values, and more. Watch this episode to learn about the basics of functions in Dart."
-
-snippet_img: //i.ytimg.com/vi/DWtvhdJkiRE/0.jpg
 ---
 
 *Note:* This video mentions the `?` operator, which is deprecated. Ignore
@@ -267,9 +265,8 @@ Thanks for watching, my name is Seth Ladd, and as we say here on Dart Tips, stay
 
 <hr>
 
-<a href="http://marakana.com"><img src="{% asset_path 'dart-tips/marakana-logo.png' %}" alt="Marakana Logo"></a>
+<img src="{% asset_path 'dart-tips/marakana-logo.png' %}" alt="Marakana Logo">
 
-Our thanks go out to [Marakana](http://www.marakana.com) for producing this
-video series.
+Our thanks go out to Marakana for producing this video series.
 
 [Back to all Dart Tips episodes](/resources/dart-tips/).
