@@ -76,7 +76,7 @@ $(document).on('ready', function(){
     // do something…
   });
 
-  $('#toc a[href^="#"]').click(function() {
+  $('a[href^="#"]').click(function() {
       var target = $(this.hash);
       var hash = this.hash;
       if (target.length == 0) target = $('a[name="' + this.hash.substr(1) + '"]');
@@ -89,6 +89,8 @@ $(document).on('ready', function(){
       $(this).parent('li').addClass('active');
       return false;
   });
+
+
   
   // Popovers
   $('[data-toggle="popover"], .dart-popover').popover()
