@@ -1,5 +1,36 @@
 # Dart Website (dartlang.org)
 
+## Building the site
+
+One-time setup:
+
+```
+bundle install
+```
+
+Then:
+
+```
+jekyll serve --watch
+```
+
+Navigate to localhost:4000. (dart4web is 4001)
+
+
+## Checking the site's HTML
+
+To check for valid HTML, good images, and broken links,
+run this from the top of the repo:
+
+```
+bundle exec htmlproofer ./publish --assume-extension --directory-index-file
+```
+
+PENDING: Where do you get htmlproofer?
+
+# OLD STUFF FOLLOWS
+
+
 [![Join the chat at https://gitter.im/dart-lang/www.dartlang.org](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/dart-lang/www.dartlang.org?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 [![Build Status](https://drone.io/github.com/dart-lang/dartlang.org/status.png)](https://drone.io/github.com/dart-lang/dartlang.org/latest)
