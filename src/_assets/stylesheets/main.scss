@@ -158,7 +158,7 @@ pre {
   }
 }
 code {
-  background-color: $gray-lighter;
+  // background-color: $gray-lighter;
   padding: 0;
   color: darken($default-link, 20%);
 }
@@ -698,6 +698,7 @@ img {
   @extend .alert-success;
   pre {
     margin-bottom: 0;
+    background-color: transparent;
   }
 }
 .bad {
@@ -706,6 +707,7 @@ img {
   @extend .alert-danger;
   pre {
     margin-bottom: 0;
+    background-color: transparent;
   }
 }
 
