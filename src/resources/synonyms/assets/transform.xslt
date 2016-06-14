@@ -11,26 +11,21 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
 <xsl:template match="theme">
   <section class="theme group" id="{@id}">
-    <div class="row"><div class="col-md-16">
-      <h1>
-        <span class="title"><xsl:value-of select="title" /></span>
-        
-        <xsl:if test="learn-more">
-          <small class="learn-more">
-            (<a href="{learn-more}" target="_blank">Learn more</a>)
-          </small>
-        </xsl:if>
-      </h1>
-    </div></div>
+    <h1>
+      <span class="title"><xsl:value-of select="title" /></span>
+      <xsl:if test="learn-more">
+        <small class="learn-more">
+          <a href="{learn-more}" target="_blank">(Learn more)</a>
+        </small>
+      </xsl:if>
+    </h1>
     <xsl:apply-templates select="synonym" />
   </section>
 </xsl:template>
 
 <xsl:template match="synonym">
   <section class="synonym" id="{@id}">
-    <div class="row">
-      <div class="col-md-16"><h2 class="section"><xsl:value-of select="title"/></h2></div>
-    </div>
+    <h4 class="section"><xsl:value-of select="title"/></h4>
     <div class="row codes">
       <xsl:apply-templates select="code"/>
     </div>
