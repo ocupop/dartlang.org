@@ -76,7 +76,8 @@ $(document).on('ready', function(){
     // do something…
   });
 
-  $('a[href^="#"]').click(function() {
+  $('a[href^="#"]').on('click', function(e) {
+      e.preventDefault();
       var target = $(this.hash);
       var hash = this.hash;
       if (target.length == 0) target = $('a[name="' + this.hash.substr(1) + '"]');
@@ -87,7 +88,6 @@ $(document).on('ready', function(){
       // Mark as active
       // $('a[href^="#"]').parent('li').removeClass('active');
       $(this).parent('li').addClass('active');
-      return false;
   });
 
 

@@ -1,12 +1,8 @@
----
-layout: compress
----
 <!DOCTYPE html>
 <html>
   {% include head.html %}
   <body class="{{ page.layout }}{% if page.toc == false %} hide_toc{% endif %}">
     {% include page-header.html %}
-    {% include search-results.html %}
     <main id="page-content">
       {% include navigation-side.html %}
       {% include navigation-toc.html %}
