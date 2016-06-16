@@ -2,7 +2,6 @@
 //= require bootstrap
 //= require _utilities
 //= require _search
-//= require vendor/lunr.min.js
 //= require vendor/code-prettify/prettify
 //= require vendor/code-prettify/lang-dart
 //= require vendor/code-prettify/lang-yaml

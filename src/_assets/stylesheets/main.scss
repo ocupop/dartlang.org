@@ -158,7 +158,7 @@ pre {
   }
 }
 code {
-  // background-color: $gray-lighter;
+  background-color: transparent;
   padding: 0;
   color: darken($default-link, 20%);
 }
@@ -189,7 +189,7 @@ img {
   min-height: calc(100vh);
   > article {
     width: calc(100vw - 525px);
-    float: right;
+    margin-left: 250px;
   }
 }
 #page-footer {
