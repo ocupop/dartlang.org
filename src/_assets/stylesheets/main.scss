@@ -933,6 +933,19 @@ body.condensed_header {
     left: 20px;
   }
 }
+body.obsolete {
+  #page-header {
+    .alert {
+      position: relative;
+      top: 5px;
+      margin: 0;
+    }
+  }
+  #page-content {
+    margin-top: 120px;
+    border: 10px solid $alert-danger-bg;
+  }
+}
 /* -----------------------------------------
   Media Queries
  ----------------------------------------- */
