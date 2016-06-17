@@ -5,102 +5,104 @@ title: "Dart Tools"
 description: "The tools that support the Dart language."
 ---
 
-A variety of tools are available for Dart development.
-This page discusses tools common to various Dart technologies.
-See the Tools page for your particular technology for detailed information.
+This page discusses tools that are useful with multiple Dart technologies.
 
 ## DartPad
 
-When first learning the language, [DartPad](dartpad) is
-a great way to learn Dart syntax or experiment with Dart language features.
-Once you are ready to write code that imports other packages,
-you'll need to download an SDK.
+[DartPad](dartpad) is
+a great way to learn Dart syntax and to experiment with Dart language features
+and core libraries (_except_ for dart:io and libraries that depend on dart:io).
+
+To write code that uses other libraries and features,
+you need an [SDK](#sdks).
+We also recommend using an IDE.
+
 
 ## IDEs
 
-You can find a Dart plugin for the most commonly used IDEs.
+Dart plugins exist for many commonly used IDEs.
 If you don't already have a favorite IDE,
-we recommend WebStorm, which comes with Dart Support.
+try WebStorm, which comes with Dart support.
 
-<img src="{% asset_path 'tools/webstorm.png' %}" alt="WebStorm logo">
-<a href="{{site.dart4web}}/tools/webstorm"><b>WebStorm</b></a>
-
+<div class="row">
+<div class="col-md-6" markdown="1">
 <img src="{% asset_path 'tools/IntellIJ-IDEA.png' %}" alt="IntelliJ logo">
 <a href="jetbrains-plugin"><b>IntelliJ IDEA<br>
 (and other JetBrain IDEs)</b></a>
+</div>
 
-The Dart plugins for the following tools are unsupported
-and available as open source.
+<div class="col-md-6" markdown="1">
+<img src="{% asset_path 'tools/webstorm.png' %}" alt="WebStorm logo">
+<a href="{{site.dart4web}}/tools/webstorm"><b>WebStorm</b></a>
+</div>
+</div>
 
-<img src="{% asset_path 'tools/sublime.png' %}" alt="Sublime logo">
-<a href="https://github.com/dart-lang/dart-sublime-bundle#readme"><b>Sublime Text 3</b></a>
+The following Dart plugins are unsupported
+and available as open source:
+
+<div class="row">
+<div class="col-md-6" markdown="1">
+<img src="{% asset_path 'tools/atom-logo.png' %}" alt="Atom logo">
+<a href="https://github.com/dart-atom/dartlang/"><b>Atom</b></a>
 
 <img src="{% asset_path 'tools/emacs.png' %}" alt="Emacs logo">
 <a href="https://github.com/nex3/dart-mode"><b>Emacs</b></a>
+</div>
+
+<div class="col-md-6" markdown="1">
+<img src="{% asset_path 'tools/sublime.png' %}" alt="Sublime logo">
+<a href="https://github.com/dart-lang/dart-sublime-bundle#readme"><b>Sublime Text 3</b></a>
 
 <img src="{% asset_path 'tools/vim.png' %}" alt="Vim logo">
 <a href="https://github.com/dart-lang/dart-vim-plugin"><b>Vim</b></a>
 
-<img src="{% asset_path 'tools/atom-logo.png' %}" alt="Atom logo">
-<a href="https://github.com/dart-atom/dartlang/"><b>Atom</b></a>
+</div>
+</div>
 
-## SDK
+## SDKs
 
-Each Dart technology has its own SDK.
-If you are developing for the web, or writing Dart scripts or servers,
-you'll want to download the [standalone Dart VM]({{site.dart_vm}}/downloads/).
-If you are developing for mobile, see
-[Flutter Setup]({{site.flutter}}/setup).
+Which SDK you need depends on what type of app you're developing.
 
-The SDK includes various tools you'll need, such as a static
-analyzer, and a code formatter.  Refer to the site for your Dart
-technology for information on what tools are included and how to use them.
+|------------------------+----------+-------------------------------------|
+| App type | SDK | Download instructions | More information |
+|--------------------------|------------------------------------------------|
+| Web app | Dart | [Install Dart]({{site.dart_vm}}/downloads/) | [Dart SDK](/dart-vm/tools/sdk), [Dart Tools for the Web]({{site.dart4web}}/tools/) |
+| Script or server | Dart | [Install Dart]({{site.dart_vm}}/downloads/) | [Dart SDK](/dart-vm/tools/sdk), [Dart VM Tools](/dart-vm/tools/) |
+| Embedded app | Dartino | [Getting started]({{site.dartino}}/getting-started) | [dartino.org]({{site.dartino}}) |
+| Mobile app | Flutter | [Flutter Setup]({{site.flutter}}/setup) | [flutter.io]({{site.flutter}}) |
+{:.table .table-striped}
+
+
 
 ## Command-line tools
 
-This is a brief introduction to the most common Dart tools you might see.
-Some of these tools might have slightly different names depending on
-the Dart technology you are using, or they might not use the full
-functionality described in these docs.
-Consult the tools page for your technology for further details.
+Most Dart-related SDKs include the following tools.
 
-* [pub](/tools/pub/)
-: Every Dart app is also a package and the `pub` tool manages
-  Dart packages. Pub provides a number of commands for creating,
-  installing, updating, and publishing Dart packages.
-  Most IDEs that support Dart allow you to run the pub commands through
-  the IDE. Some Dart technologies, such as Flutter, may not support
+[Pub package manager](/tools/pub/)
+: Manages Dart packages,
+  making it easy for you to install, use, and share Dart libraries,
+  command-line tools, and other assets.
+  Some Dart technologies, such as Flutter, may not support
   all of the pub commands.
-  See the [pub](pub) documentation to learn how pub works.
+  IDEs that support Dart generally have special support for pub,
+  but you can also use it from the command line (`pub`).
 
-* [dart]({{site.dart_vm}}/tools/dart-vm)
-: To manually run the Dart VM, you'll want to use the
-  [dart]({{site.dart_vm}}/tools/dart-vm) command.
-  IDEs that support Dart,
-  and some of the `pub` commands, use this
-  command behind-the-scenes to execute Dart scripts.
-  Note that you must configure your IDE with the location of
-  the `dart` binary.
-
-* static analyzer
-: Dart's static analyzer evaluates and reports any errors or warnings
-  in your code.
+[Static analyzer](https://github.com/dart-lang/sdk/tree/master/pkg/analyzer_cli#dartanalyzer)
+: Evaluates and reports any errors or warnings in your code.
   The Dart plugin for your IDE should make use of Dart's analysis engine,
-  but you can also run it from the command line. See the
-  [dartanalyzer](https://github.com/dart-lang/sdk/tree/master/pkg/analyzer_cli#dartanalyzer)
-  docs for information on how to manually run the static analyzer for
-  the Dart VM.
+  but you can also run the analyzer from the command line (`dartanalyzer`).
 
-* code formatter
-: Format your code according to the
+[Code formatter](https://github.com/dart-lang/dart_style#readme)
+: Formats your code, following the recommendations of the
   [Dart Style Guide](/guides/language/effective-dart/style).
-  An IDE that supports Dart should allow you to format the code within
-  the IDE. Or you can run the formatter from the command line.
-  See [dartfmt](https://github.com/dart-lang/dart_style#readme)
-  to learn how to manually run the code formatter for the Dart VM.
+  IDEs that support Dart generally allow you to format the code within
+  the IDE. Or you can run the formatter from the command line (`dartfmt`).
 
-Also see the tools documentation for your Dart technology:
-[Dart for the Web]({{site.dart4web}}/tools/) |
-[Flutter]({{site.flutter}}/setup/) |
-[Dartino]({{site.dartino}}/getting-started/) |
-[Dart VM]({{site.dart_vm}}/tools/)
+For details about these and many other tools,
+see the tools documentation for the SDK you're using:
+
+* [Dart SDK]({{site.dart_vm}}/tools/sdk) and specialized tools:
+  * [Dart Tools for the Web]({{site.dart4web}}/tools/)
+  * [Dart VM Tools]({{site.dart_vm}}/tools/)
+* [Dartino]({{site.dartino}}/tool.html)
+* [Flutter]({{site.flutter}}/setup/)
