@@ -1,1 +1,16 @@
 // Make all css changes here. These change will get added into the current SCSS structure where applicable.
+
+/* Add space between definitions. */
+dd {
+	margin-bottom: 15px;
+}
+
+/* Make code font more noticeable (without being obnoxious). */
+code {
+	color: #008f83
+}
+
+/* Make code-font links look like links. Should also change the hover color. */
+a code {
+    color: #0000EE;
+}

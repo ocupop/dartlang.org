@@ -2,28 +2,51 @@
 layout: default
 permalink: /dart-vm/
 title: Dart VM
-toc: false
 ---
 
-Are you writing standalone Dart scripts or server apps?
-These pages have the information you need to develop
+This page points to tools and documentation
+that can help you develop scripts and server apps
 for the standalone Dart VM.
 
-Once you've gone beyond
-[DartPad]({{site.dartlang}}/tools/dartpad),
-you'll want to [install the SDK](/dart-vm/downloads/).
+## Tools
 
-You'll also want to [meet your tools](tools/).
+[DartPad]({{site.dartlang}}/tools/dartpad)
+: Handy for both beginners and experts,
+  DartPad lets you try out language features and dart:* APIs.
 
-We have several tutorials you may find helpful.
-[Get Started](/tutorials/dart-vm/get-started) shows you how
-to write a basic Dart script. You may then want to
-try out [Write Command-Line Apps](/tutorials/dart-vm/cmdline)
-tutorial or [Write HTTP Clients & Servers](/tutorials/dart-vm/httpserver).
+  <aside class="alert alert-info" markdown="1">
+    **Note:** DartPad does **not** support using dart:io APIs or
+    importing libraries from packages.
+  </aside>
 
-We also have a number of
-[articles pertaining to the Dart VM](/articles/dart-vm/).
+[Dart SDK](/dart-vm/tools/sdk/)
+: [Download the Dart SDK](/dart-vm/downloads/) to get the core Dart
+  libraries and [Dart VM Tools](/dart-vm/tools/).
 
-Finally, check out our code snippets, also known as
-[Dart by Example](/dart-vm/dart-by-example/).
+More tools
+: The Dart [Tools](/tools/) page links to generally useful tools,
+  such as Dart plugins for your favorite IDE or editor.
+
+## Tutorials
+
+You might find the following tutorials helpful.
+
+[Get Started](/tutorials/dart-vm/get-started)
+: Shows how to write a basic Dart script.
+
+[Write Command-Line Apps](/tutorials/dart-vm/cmdline)
+: Introduces dart:io and the args package.
+
+[Write HTTP Clients & Servers](/tutorials/dart-vm/httpserver)
+: Features dart:io and the http_server package.
+
+## More resources
+
+[Articles: Dart VM](/articles/dart-vm/)
+: A collection of articles covering topics such as benchmarking,
+  numeric computation, SIMD, and snapshots.
+
+[Dart by Example](/dart-vm/dart-by-example/)
+: Code snippets that perform common I/O tasks, featuring APIs from
+  dart:io, dart:convert, the path package, and more. 
 
