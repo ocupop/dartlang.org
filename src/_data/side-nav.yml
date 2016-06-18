@@ -1,6 +1,8 @@
 - title: Get Started
   permalink: /guides/get-started
   children:
+    - title: Sample code
+      permalink: /samples/
     - title: Try DartPad
       permalink: https://dartpad.dartlang.org/
 
