@@ -26,6 +26,13 @@
     <link href="{{ css.url }}" rel="stylesheet" type="text/css">
   {% endfor %}
 
+  <!--
+      Why don't we use Dart here?
+
+      The only scripting we use here is stuff like the on-hover footnotes on the
+      front page or resizing of the left nav. These happen to be use cases where
+      JavaScript and jQuery are doing just fine.
+   -->
   {% javascript main %}
   {% for js in page.js %}
   <script {% if js.defer %}defer{% endif %} src="{{ js.url }}"></script>
