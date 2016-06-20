@@ -80,7 +80,12 @@ int fibonacci(int n) {
 }
 
 var result = fibonacci(20);
+
+void report(String object) => print("Voyager flew by $object."));
+
+flybyObjects.forEach(report);
 {% endprettify %}
+
 
 ## Comments
 
@@ -131,23 +136,31 @@ class Spacecraft {
 }
 {% endprettify %}
 
+XXX START HERE = https://www.dartlang.org/docs/synonyms/
+
+## Collections
+
+## Strings
 
 
+...
 
-
-
-## Getters, setters
-
-
-## Syntactic sugar
-
-Dart makes your life easier by little syntax features like the following:
-
-{% prettify dart %}
 // String interpolation.
 print("The spacecraft ${name.toUpperCase()} left Earth in the year $year.");
 
-// 'Fat arrow' function syntax.
-flybyObjects.forEach((object) => print("It flew by $object."));
-{% endprettify %}
+## Numbers (math)
 
+## Exceptions
+
+## async/await
+
+## Advanced
+
+
+### Getters, setters
+
+### toString
+
+### Inheritance, mixins
+
+### Operator overloading
