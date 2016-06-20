@@ -52,7 +52,7 @@ $(document).on('ready', function(){
     $('#code-display p').text(text);
   });
   $('.highlight').mouseleave(function(){
-    $('#code-display p').text('Hover over code snippet on the left to learn more.');
+    $('#code-display p').text('(Hover over code snippet on the left to learn more.)');
   });
 
   // Sidenav
