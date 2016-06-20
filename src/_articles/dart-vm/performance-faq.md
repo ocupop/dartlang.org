@@ -22,43 +22,41 @@ and can inline code and tree-shake (eliminate) unused code.
 The Dart language is designed to be fast. The static structure of
 Dart code helps make it easier for runtimes to generate optimized code.
 
-## FAQ
-
 The following are answers to commonly asked questions.
 
-### How do I benchmark Dart?
+## How do I benchmark Dart?
 
 Check out the article on
 [benchmarking best practices](benchmarking).
 
-### What benchmarks are the Dart team tracking?
+## What benchmarks are the Dart team tracking?
 
 Check out the [ton80 benchmark suite](https://github.com/dart-lang/ton80).
 It contains benchmarks that help
 measure real-world properties of object-oriented languages,
 runtimes, and compilers.
 
-### Do type annotations affect runtime performance?
+## Do type annotations affect runtime performance?
 
 Dart is an optionally typed language, and the type annotations are
 ignored at runtime (modulo _checked mode_, a developer mode).
 It turns out that looking at the actual types of live objects as they
 flow through a running app is more useful than static types in the code.
 
-### Are there public benchmarks for server-side Dart?
+## Are there public benchmarks for server-side Dart?
 
 Yes. Check out
 [TechEmpower benchmarks](https://www.techempower.com/benchmarks),
 which look at performance in a variety of server-side scenarios.
 
-### What happened to the charts that were previously on this page?
+## What happened to the charts that were previously on this page?
 
 The Dart VM and dart2js tools reached and exceeded
 their original performance goals. The Dart team continues to
 track performance across numerous benchmarks,
 but the charts served their original purpose.
 
-### I found a case where I think Dart is slower than expected. What do I do?
+## I found a case where I think Dart is slower than expected. What do I do?
 
 Please read the [benchmark article](benchmarking),
 and then write a simple benchmark using the
@@ -68,7 +66,7 @@ you can then file an issue with your benchmark.
 Please ensure all the necessary files are attached to the issue
 so that we can easily run the benchmark.
 
-### How can I write Dart code that compiles to performant JavaScript?
+## How can I write Dart code that compiles to performant JavaScript?
 
 See [Helping dart2js generate better code]({{site.dart4web}}/tools/dart2js#helping-dart2js-generate-efficient-code).
 Just be aware that this information might change as the implementation of
