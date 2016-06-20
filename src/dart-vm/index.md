@@ -19,7 +19,7 @@ for the standalone Dart VM.
     importing libraries from packages.
   </aside>
 
-[Dart SDK](/dart-vm/tools/sdk/)
+[Dart SDK](/dart-vm/tools/sdk)
 : [Download the Dart SDK](/dart-vm/downloads/) to get the core Dart
   libraries and [Dart VM Tools](/dart-vm/tools/).
 
@@ -48,5 +48,5 @@ You might find the following tutorials helpful.
 
 [Dart by Example](/dart-vm/dart-by-example/)
 : Code snippets that perform common I/O tasks, featuring APIs from
-  dart:io, dart:convert, the path package, and more. 
+  dart:io, dart:convert, the path package, and more.
 
