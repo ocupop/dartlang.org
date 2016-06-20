@@ -6,10 +6,6 @@ short-title: "FAQ"
 description: "FAQ and other tips for using Dart Tools."
 ---
 
-{% comment %}
-This needs updating...
-{% endcomment %}
-
 I am having trouble running the Linux distribution of Dart on my Linux platform.
 : Some flavors of Linux require that you manually build the Dart SDK.
   This may require that you update to a more recent version of
