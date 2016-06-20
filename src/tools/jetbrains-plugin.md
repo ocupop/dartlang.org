@@ -31,12 +31,12 @@ you need to tell it where to find the Dart SDK and
 
 ### Downloading the IDE
 
-Download a JetBrains IDE if you don't already have one.
+Install a JetBrains IDE if you don't already have one.
 
 * <a href="https://www.jetbrains.com/idea/download/"
   target="_blank">Download IntelliJ IDEA</a> or,
   to try out the latest Dart language features,
-  [download IntelliJ IDEA EAP](https://confluence.jetbrains.com/display/IDEADEV/EAP)
+  [install IntelliJ IDEA EAP](https://confluence.jetbrains.com/display/IDEADEV/EAP)
 * <a href="https://www.jetbrains.com/products.html"
   target="_blank">Find another JetBrains product</a>
 
@@ -52,11 +52,11 @@ Download a JetBrains IDE if you don't already have one.
 ### Downloading the Dart SDK
 
 If you don't already have the Dart SDK,
-you need to download it.
+you need to install it.
 If you're using Dart to develop web apps,
-we recommend downloading Dartium, as well.
+we recommend install Dartium, as well.
 
-* [Download the Dart SDK]({{site.dart_vm}}/downloads/)
+* [Download the Dart SDK](/install/)
 * [Download Dartium]({{site.dart4web}}/tools/dartium) (optional)
 
 

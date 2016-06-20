@@ -2,7 +2,7 @@
 layout: default
 title: "Installing Dart on Mac"
 description: "Installing and updating the Dart SDK on your Mac with homebrew."
-permalink: /dart-vm/downloads/mac
+permalink: /install/mac
 ---
 
 Homebrew is a package manager for Mac OS.
@@ -83,7 +83,7 @@ the homebrew installation directory
 
 ### Specifying a custom installation location {#homebrew-custom-location}
 
-By default, Homebrew downloads to `/usr/local`.
+By default, Homebrew installs to `/usr/local`.
 If your Mac is set up so that installing to `/usr/local` requires
 using `sudo`, we recommend
 downloading to another location where you have write permissions, such

@@ -2,10 +2,10 @@
 layout: default
 title: "Installing Dart on Linux"
 description: "Installing and updating the Dart SDK on Linux with apt-get, a Debian package, and compiling from source."
-permalink: /dart-vm/downloads/linux
+permalink: /install/linux
 
 js:
-- url: archive/assets/downloads.js
+- url: archive/assets/install.js
   defer: true
 ---
 
@@ -14,11 +14,11 @@ both of which can update the SDK automatically
 when new versions are released.
 
 * [Installing using apt-get](#using-apt-get)
-* [Downloading the Debian package](#downloading-as-a-debian-package)
+* [Downloading the Debian package](#installing-a-debian-package)
 
 Other options are:
 
-* [Downloading Dart manually]({{site.dart_vm}}/downloads/archive/)
+* [Downloading Dart manually](/install/archive/)
 * [Compiling Dart from source](#compiling-from-source)
 
 ## Using apt-get
@@ -88,9 +88,9 @@ $ sudo apt-get install dart=1.7.0-dev.0.1.*
 {% endprettify %}
 
 
-## Downloading as a Debian package
+## Installing a Debian package
 
-Use one of the following buttons to download the stable or
+Use one of the following buttons to install the stable or
 dev channel release in the `.deb` package format.
 
 {% include_relative _debian.html buttonclass="download-btn btn btn-primary btn-lg" %}

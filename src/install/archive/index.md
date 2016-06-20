@@ -2,24 +2,24 @@
 layout: default
 title: "Index of Downloads"
 description: "Download specific stable and dev channel versions of the Dart SDK, Dartium, and the Dart API documentation."
-permalink: /dart-vm/downloads/archive/
+permalink: /install/archive/
 
 js:
 - url: out/web/download_archive.dart.js
   defer: true
-- url: assets/downloads.js
+- url: assets/install.js
   defer: true
 ---
 
 {% include breadcrumbs.html %}
 
-Use this index to download specific versions of the
-[Dart SDK]({{site.dart_vm}}/tools/sdk),
+Use this index to install specific versions of the
+[Dart SDK](/tools/sdk),
 [Dartium]({{site.dart4web}}/tools/dartium),
 and the [Dart API documentation]({{site.dart_api}}).
 
 Want to install Dart with your OS's package manager?
-Go to the [main Dart download page]({{site.dart_vm}}/downloads).
+Go to the [main Dart installation page](/install).
 
 ## Stable channel
 
@@ -37,7 +37,7 @@ production use.
 
 ## Direct download URLs
 
-You can find the downloads at predictable URLs using the
+You can find the zip files at predictable URLs using the
 following pattern:
 
 {% prettify none %}

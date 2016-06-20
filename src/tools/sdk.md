@@ -2,7 +2,7 @@
 layout: default
 title: "Dart SDK"
 description: "Dart libraries and command-line tools."
-permalink: /dart-vm/tools/sdk
+permalink: /tools/sdk
 ---
 
 
@@ -20,7 +20,7 @@ is a great way to learn how to write a simple app in the Dart
 language, once you are ready to start doing real-world development,
 you need the Dart SDK.
 
-[Download the Dart SDK]({{site.dart_vm}}/downloads/).
+[Download the Dart SDK](/install/).
 
 ## What's in the SDK
 
@@ -30,7 +30,7 @@ and a `bin` directory that has these command-line tools:
 
 <div class="row"> <div class="col-md-6" markdown="1">
 
-[dart](dart-vm)
+[dart](/dart-vm/)
 : The standalone VM
 
 [dart2js]({{site.dart4web}}/tools/dart2js)
@@ -57,7 +57,7 @@ For more information about the SDK, see its
 
 ## Installing the SDK
 
-{% include download-dart-configure-path.html %}
+{% include configure-path.html %}
 
 If you are using an IDE, such as WebStorm, you
 must also set the location to the SDK. In WebStorm,

@@ -66,8 +66,8 @@ Which SDK you need depends on what type of app you're developing.
 |------------------------+----------+-------------------------------------|
 | App type | SDK | Download instructions | More information |
 |--------------------------|------------------------------------------------|
-| Web app | Dart | [Install Dart]({{site.dart_vm}}/downloads/) | [Dart SDK](/dart-vm/tools/sdk), [Dart Tools for the Web]({{site.dart4web}}/tools/) |
-| Script or server | Dart | [Install Dart]({{site.dart_vm}}/downloads/) | [Dart SDK](/dart-vm/tools/sdk), [Dart VM Tools](/dart-vm/tools/) |
+| Web app | Dart | [Install Dart](/install/) | [Dart SDK](/tools/sdk), [Dart Tools for the Web]({{site.dart4web}}/tools/) |
+| Script or server | Dart | [Install Dart](/install/) | [Dart SDK](/tools/sdk), [Dart VM Tools](/dart-vm/tools/) |
 | Embedded app | Dartino | [Getting started]({{site.dartino}}/getting-started) | [dartino.org]({{site.dartino}}) |
 | Mobile app | Flutter | [Flutter Setup]({{site.flutter}}/setup) | [flutter.io]({{site.flutter}}) |
 {:.table .table-striped}
@@ -101,7 +101,7 @@ Most Dart-related SDKs include the following tools.
 For details about these and many other tools,
 see the tools documentation for the SDK you're using:
 
-* [Dart SDK]({{site.dart_vm}}/tools/sdk) and specialized tools:
+* [Dart SDK](/tools/sdk) and specialized tools:
   * [Dart Tools for the Web]({{site.dart4web}}/tools/)
   * [Dart VM Tools]({{site.dart_vm}}/tools/)
 * [Dartino]({{site.dartino}}/tool.html)

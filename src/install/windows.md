@@ -2,16 +2,16 @@
 layout: default
 title: "Installing Dart on Windows"
 description: "Installing and updating the Dart SDK on Windows with Chocolatey or an installer."
-permalink: /dart-vm/downloads/windows
+permalink: /install/windows
 
 js:
-- url: archive/assets/downloads.js
+- url: archive/assets/install.js
   defer: true
 ---
 
 Don't want to use Chocolatey or a Windows installer?
 Another option is
-[downloading Dart manually]({{site.dart_vm}}/downloads/archive/).
+[installing Dart manually](/install/archive/).
 
 * [Installing using Chocolatey](#chocolatey)
 * [Using a third-party installer](#installer)
@@ -21,7 +21,7 @@ Another option is
 With [Chocolatey](https://chocolatey.org/),
 installing Dart is easy.
 
-The **dart** package contains the [Dart SDK]({{site.dart_vm}}/tools/sdk),
+The **dart** package contains the [Dart SDK](/tools/sdk),
 which includes the Dart VM, libraries, and command-line Dart tools such as
 [dart]({{site.dart_vm}}/tools/dart-vm),
 [dartanalyzer](https://github.com/dart-lang/sdk/tree/master/pkg/analyzer_cli),
@@ -34,7 +34,7 @@ Optionally, you can add one more tool:
   Use it to interactively test and debug Dart web apps
   without first compiling them to JavaScript.
 
-For client-side Dart work, you might want to download *both* tools. If you're
+For client-side Dart work, you might want to install *both* tools. If you're
 working on server-side Dart, all you need is the `dart-sdk`:
 
 {% prettify shell %}

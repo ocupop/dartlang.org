@@ -2,11 +2,11 @@
 layout: default
 title: "Install Dart"
 description: "The bundles that support the Dart language."
-permalink: /dart-vm/downloads/
+permalink: /install/
 toc: false
 
 js:
-- url: archive/assets/downloads.js
+- url: archive/assets/install.js
   defer: true
 ---
 
@@ -26,7 +26,7 @@ A package manager can help you easily install and update the Dart SDK.
 * [Installing Dart on Mac](mac) with homebrew
 * [Installing Dart on Linux](linux) with our Debian package
 
-## Manual downloads
+## Manual install
 
 Not using a package manager for your OS? No problem!
 
@@ -35,5 +35,5 @@ zip files of the Dart SDK, Dartium, and docs.
 
 ## Looking for an older version?
 
-Check out our [download archive](archive/) for
+Check out our [zip file archive](archive/) for
 previous versions of the Dart SDK.

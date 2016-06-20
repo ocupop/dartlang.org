@@ -5,14 +5,14 @@ title: "Installing and Configuring Pub"
 ---
 
 [Pub](/tools/pub/) is one of the tools in the
-[Dart SDK]({{site.dart_vm}}/tools/sdk).
+[Dart SDK](/tools/sdk).
 
 You can use pub through an IDE, such as WebStorm, or through the
 `pub` command-line app, which lives inside the `bin` directory of the Dart SDK.
 
 ## Get pub
 
-{% include download-dart-configure-path.html %}
+{% include configure-path.html %}
 
 ## Optional environment variables
 

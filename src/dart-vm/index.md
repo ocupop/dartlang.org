@@ -19,8 +19,8 @@ for the standalone Dart VM.
     importing libraries from packages.
   </aside>
 
-[Dart SDK](/dart-vm/tools/sdk)
-: [Download the Dart SDK](/dart-vm/downloads/) to get the core Dart
+[Dart SDK](/tools/sdk)
+: [Download the Dart SDK](/install/) to get the core Dart
   libraries and [Dart VM Tools](/dart-vm/tools/).
 
 More tools
