@@ -21,6 +21,19 @@ points:
 
 ### An introduction to standalone apps
 
+<aside class="alert alert-info" markdown="1">
+<strong>Prerequisite:</strong>
+
+* This tutorial uses the
+<a href="{{site.dart_api}}/dart-async/Future-class.html" target="_blank">Future</a>
+and
+<a href="{{site.dart_api}}/dart-async/Stream-class.html"
+   target="_blank">Stream</a> classes to implement asynchronous functionality.
+Refer to [Asynchronous Programming: Futures](/tutorials/language/futures)
+and [Asynchronous Programming: Streams](/tutorials/language/streams)
+for information about using these classes.
+</aside>
+
 This tutorial teaches you how to build command-line apps
 and shows you a few small command-line applications.
 These programs use resources that most command-line applications need,
