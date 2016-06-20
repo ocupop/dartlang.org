@@ -14,3 +14,8 @@ code {
 a code {
     color: $default-link
 }
+
+/* Make links in page footer white, not blue. */
+#page-footer h4 a {
+	color: #fff;
+}
