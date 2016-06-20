@@ -100,7 +100,7 @@
       permalink: /dart-vm/
       children:
       - title: Install Dart
-        permalink: /dart-vm/downloads/
+        permalink: /install/
       - title: API Reference
         permalink: https://api.dartlang.org
       - title: Tutorials

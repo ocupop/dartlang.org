@@ -1,14 +1,10 @@
 ---
 layout: default
-permalink: /resources/faq
+permalink: /tools/faq
 title: "Tools FAQ"
 short-title: "FAQ"
 description: "FAQ and other tips for using Dart Tools."
 ---
-
-{% comment %}
-This needs updating...
-{% endcomment %}
 
 I am having trouble running the Linux distribution of Dart on my Linux platform.
 : Some flavors of Linux require that you manually build the Dart SDK.
@@ -25,11 +21,4 @@ Can all Dart files be put into a source code repository?
   The [What Not to Commit](/guides/libraries/private-files) page
   has some advice on what not to put into your source repo.
 
-
-How do you debug an app once it has been compiled to JavaScript?
-: Dart web apps are easiest to debug with an IDE, like WebStorm,
-  and Dartium. However,
-  the [debugging]({{site.dart4web}}/tools/dart2js/#debugging)
-  section of the dart2js documentation
-  has some tips for specific browsers.
 
