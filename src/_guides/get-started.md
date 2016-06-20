@@ -17,7 +17,7 @@ You can use the embedded DartPad below, or you can open
 [DartPad](/tools/dartpad) in a new window.
 
 <iframe
-src="{{site.custom.dartpad.embed-dart-prefix}}?horizontalRatio=99&verticalRatio=65"
+src="{{site.custom.dartpad.embed-dart-prefix}}?horizontalRatio=70&verticalRatio=65"
     width="100%"
     height="310px"
     style="border: 1px solid #ccc;">
