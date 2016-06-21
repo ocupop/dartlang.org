@@ -422,6 +422,7 @@ img {
     display: none;
     border-bottom: 1px solid $gray-light;
     margin-top: -5px;
+    margin-bottom: 20px;
     img {
       width: 100px;
       margin-bottom: 10px;
@@ -849,6 +850,9 @@ ul.nav-list {
 // Homepage
 
 body.homepage {
+  #sidenav {
+    display: none;
+  }
   #page-content {
     padding: 0;
   }
@@ -897,6 +901,7 @@ body.open_menu {
     @include transition(0.5s);
   }
   #sidenav {
+    display: block;
     left: 0;
   }
 }

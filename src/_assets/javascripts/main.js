@@ -57,8 +57,7 @@ $(document).on('ready', function(){
 
   // Sidenav
   $('#sidenav i').on('click', function(e) {
-    window.console.log("CLICKED");
-    e.preventDefault();
+    e.stopPropagation();
     $(this).parent('li').toggleClass('active');
   });
 
