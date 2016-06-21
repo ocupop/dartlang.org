@@ -242,7 +242,6 @@ img {
 }
 #mainnav {
   display: flex;
-  @include transition(0.5s);
   ul {
     margin: auto;
     margin-right: 0;
@@ -257,10 +256,9 @@ img {
       a {
         display: inline-block;
         padding: 0;
-        font-size: 18px;
-        line-height: 70px;
+        font-size: 16px;
+        line-height: 50px;
         color: $gray-dark;
-        @include transition(0.5s);
         &:hover {
           color: $default-link;
         }
@@ -275,17 +273,16 @@ img {
         }
       }
       &.searchfield {
-        line-height: 70px;
+        line-height: 50px;
         button {
           position: absolute;
           top: 1px;
           right: 16px;
-          line-height: 70px;
-          height: 70px;
+          line-height: 50px;
+          height: 50px;
           padding: 0;
           border: none;
           background: transparent;
-          @include transition(0.5s);
           i {
             display: block;
             height: 32px;
@@ -311,11 +308,10 @@ img {
   .brand {
     display: block;
     float: left;
-    width: 120px;
+    width: 85px;
     margin: 0 20px;
     overflow: hidden;
-    line-height: 70px;
-    @include transition(0.5s);
+    line-height: 50px;
   }
 }
 #subnav {
@@ -913,32 +909,7 @@ body.open_menu {
   }
 }
 
-body.condensed_header {
-  #menu-toggle {
-    line-height: 50px;
-    padding-right: 5px;
-  }
-  #mainnav {
-    ul {
-      li {
-        a {
-          line-height: 50px;
-          font-size: 16px;
-        }
-        &.searchfield {
-          line-height: 50px;
-          button {
-            line-height: 50px;
-            height: 50px;
-          }
-        }
-      }
-    }
-    .brand {
-      width: 85px;
-      line-height: 50px;
-    }
-  }
+body.fixed_nav {
   #sidenav {
     top: 40px;
     position: fixed;

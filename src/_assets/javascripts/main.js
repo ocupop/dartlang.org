@@ -37,9 +37,9 @@ $(window).scroll(function(){
   fixNav();
   var currentScreenPosition = $(document).scrollTop();
   if(currentScreenPosition > 50) {
-    $('body').addClass('condensed_header');
+    $('body').addClass('fixed_nav');
   } else {
-    $('body').removeClass('condensed_header');
+    $('body').removeClass('fixed_nav');
   }
 });
 
