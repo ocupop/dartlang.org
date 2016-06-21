@@ -9,10 +9,10 @@ description: Dart is an application programming language that’s easy to learn,
     <div class="col-sm-7">
       <div class="content">
 <pre class="prettyprint">
-import &#x27;dart:async&#x27;;
-import &#x27;dart:math&#x27; show Random;
+<span class="highlight" data-text="There's one canonical way to import packages, and one canonical, automatic way to install them (pub).">import</span> &#x27;dart:async&#x27;;
+import &#x27;dart:math&#x27; <span class="highlight" data-text="No need to do this (treeshaking is on by default). Used to keep the scope clean.">show</span> Random;
 
-main() async {
+<span class="highlight" data-text="The main() function is the single point of entry.">main()</span> async {
   print(&#x27;Compute &#x3C0; using the Monte Carlo method.&#x27;);
   await for (var estimate in computePi()) {
     print(&#x27;&#x3C0; &#x2245; $estimate&#x27;);

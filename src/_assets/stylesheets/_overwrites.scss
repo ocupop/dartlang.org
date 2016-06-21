@@ -30,6 +30,12 @@ body.homepage {
 			font-size: $font-size-base * 0.8;
 			height: 230px;
 			overflow: auto;
+			.highlight {
+				background: #fffde7;
+				padding: 2px;
+				margin: -2px;
+			}
+		;
 		}
 	}
 }
@@ -80,10 +86,8 @@ body.homepage .chip-grid-section {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: flex-end;
+	justify-content: flex-start;
 	margin: 0;
-	margin-left: -15px;
-	margin-right: -15px;
 }
 .chip {
 	display: block;
