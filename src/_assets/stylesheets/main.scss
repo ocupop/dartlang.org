@@ -874,6 +874,13 @@ body.homepage {
   }
 }
 
+// Error Page
+body.error {
+  #sidenav {
+    display: none;
+  }
+}
+
 // Page States
 body.hide_toc {
   #page-content { 
