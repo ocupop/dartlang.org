@@ -3,7 +3,17 @@ layout: default
 title: "Articles"
 description: "Read about the Dart language and tools with this collection of articles, style guides, and more."
 ---
-<p class="lead">Read these articles for insight into the Dart language.</p>
+
+Read these articles for insight into
+the Dart language and libraries.
+
+Also see:
+
+* [Effective Dart](/guides/language/effective-dart/)
+* [Tutorials](/tutorials/)
+* [Articles about the Dart VM](/articles/dart-vm/)
+* [Articles about Dart for the web]({{site.dart4web}}/articles/)
+
 <div class="break-80">
   <h2>Language Details</h2>
   {% assign articles = site.articles | filter: 'language' | order: 'date' | reverse %}
