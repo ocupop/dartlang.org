@@ -142,7 +142,7 @@ pre {
     //   right: 10px;
     //   display: block;
     //   z-index: 10;
-    //   background-color: $white;
+    //   background-color: $white-base;
     //   background-image: url('{% asset_path "logo-no-wordmark.svg" %}');
     //   background-size: 18px;
     //   background-position: 7px center;
@@ -194,9 +194,9 @@ img {
 }
 #page-footer {
   position: relative;
-  color: $white;
+  color: $white-base;
   font-weight: 300;
-  background-color: $gray-dark;
+  background-color: $gray-base;
   z-index: 5;
   .brand {
     width: 120px;
@@ -578,7 +578,7 @@ input.gsc-search-button {
   color: $blue;
   border-radius: 8px;
   &.dart-button {
-    background-color: $white;
+    background-color: $white-base;
     padding: 5px 10px 5px 30px;
     &:after {
       content: '';
@@ -681,9 +681,9 @@ input.gsc-search-button {
 // Color Palette
 .gray-dark {
  background-color: $gray-dark;
- color: $white;
+ color: $white-base;
  h1, h2, h3, h4, h5, h6 {
-   color: $white;
+   color: $white-base;
  }
 }
 .gray-light {
@@ -806,7 +806,7 @@ input.gsc-search-button {
   &.alert-obsolete {
     width: auto;
     background-color: $gray-dark;
-    color: $white;
+    color: $white-base;
   }
 }
 
