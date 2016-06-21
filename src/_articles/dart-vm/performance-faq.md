@@ -49,13 +49,6 @@ Yes. Check out
 [TechEmpower benchmarks](https://www.techempower.com/benchmarks),
 which look at performance in a variety of server-side scenarios.
 
-## What happened to the charts that were previously on this page?
-
-The Dart VM and dart2js tools reached and exceeded
-their original performance goals. The Dart team continues to
-track performance across numerous benchmarks,
-but the charts served their original purpose.
-
 ## I found a case where I think Dart is slower than expected. What do I do?
 
 Please read the [benchmark article](benchmarking),
@@ -66,8 +59,3 @@ you can then file an issue with your benchmark.
 Please ensure all the necessary files are attached to the issue
 so that we can easily run the benchmark.
 
-## How can I write Dart code that compiles to performant JavaScript?
-
-See [Helping dart2js generate better code]({{site.dart4web}}/tools/dart2js#helping-dart2js-generate-efficient-code).
-Just be aware that this information might change as the implementation of
-dart2js changes.

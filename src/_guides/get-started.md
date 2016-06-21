@@ -35,7 +35,7 @@ go to learn specific information about your chosen technology?
 
 | | **Web** | **Mobile** | **Embedded** | **Server** |
 | **Use case** | Create an app that runs in any modern browser | Create an app from a single codebase that runs on both iOS and Android | Control a device from the Internet of Things (IoT) | Create a command-line app or server |
-| **Go here to begin** | [Dart SDK and Dartium](/install/) | [Flutter Setup]({{site.flutter}}/setup/) (in beta) | [Get Started with Dartino]({{site.dartino}}/getting-started/) (in alpha) | [Dart SDK](/install/) |
+| **Start here!** | [Install Dart SDK and Dartium](/install/) | [Flutter Setup]({{site.flutter}}/setup/) (in beta) | [Get Started with Dartino]({{site.dartino}}/getting-started/) (in alpha) | [Install Dart SDK](/install/) |
 {:.table .table-striped}
 
 <sup>*</sup>If you have a favorite IDE, there is probably a Dart plugin for that.
@@ -43,6 +43,10 @@ See the link for tips on how to configure the recommended IDE.
 For general IDE advice, see [Tools](/tools).
 
 The [Tools](/tools) page has more information.
+
+## Samples
+
+Check out the Dart [samples](/samples/).
 
 ## Get help
 

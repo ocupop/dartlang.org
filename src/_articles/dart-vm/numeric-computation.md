@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "Numeric Computation"
-description: "How you store and use numbers can have a big impact on your app's performance. This article focuses on the Dart VM, with additional tips for apps that are compiled to JavaScript."
+description: "How you store and use numbers can have a big impact on your app's performance. This article focuses on the Dart VM."
 written: 2013-05-22
 category: dart-vm
 ---
@@ -20,8 +20,8 @@ how integer and floating-point numerical computation occurs,
 and how to pick the best container for your data.
 
 This article focuses on the Dart VM.
-If your primary compile target is JavaScript, see the section
-[Considerations when Dart is compiled to JavaScript](#considerations-when-dart-is-compiled-to-javascript).
+If your primary compile target is JavaScript, see
+the [Web Tools FAQ]({{site.dart4web}}/tools/faq).
 
 <aside class="alert alert-info" markdown="1">
 **Note:**
@@ -537,40 +537,3 @@ Flatten multiple-dimension lists into a single list,
 and compute the flattened index at runtime.
 This way you avoid the expense of dealing with a list of lists.
 
-
-## Considerations when Dart is compiled to JavaScript
-
-JavaScript has only one number representation:
-an IEEE-754 double-precision floating-point number.
-This means that any number—integer or floating point—is
-represented as a double.
-JavaScript has typed data arrays,
-and the mapping from native Dart typed lists
-to JavaScript typed arrays is trivial.
-
-### Integer precision
-
-Because all numbers are stored as doubles,
-integers are restricted to a 53-bit precision.
-Integer values in the range of -2<sup>53</sup> to 2<sup>53</sup> can be stored
-without loss of accuracy.
-Because JavaScript VMs play tricks
-with the internal representation of numbers
-(similar to those described above),
-staying within smi range is still good practice.
-
-{% comment %}
-{TODO: Mention the upcoming VM flag
-that will detect when integer overflow happens.}
-{% endcomment %}
-
-### Typed lists
-
-JavaScript offers typed arrays
-that are compatible with Dart’s typed lists.
-The mapping is trivial—for example,
-Float32List becomes a Float32Array.
-The one exception today is that dart2js does not support 64-bit integers
-and thus does not support Int64List or Uint64List.
-Dart code compiled via dart2js results in a runtime exception
-if either of those lists is used.

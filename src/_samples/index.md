@@ -2,7 +2,7 @@
 title: Sample code
 ---
 
-This collection is non-exhaustive. It's just a quick
+This collection is not exhaustive&mdash;it's just a quick
 introduction to the language for people who like to learn by example. You may
 also want to check out the following pages.
 
@@ -136,7 +136,7 @@ class Spacecraft {
 }
 {% endprettify %}
 
-XXX START HERE = https://www.dartlang.org/docs/synonyms/
+XXX START HERE = [synonyms](/resources/synonyms/)
 
 ## Collections
 
