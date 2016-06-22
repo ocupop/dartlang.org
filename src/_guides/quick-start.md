@@ -1,6 +1,7 @@
 ---
 layout: guide
-title: Get Started
+title: Dart QuickStart
+description: ""
 ---
 
 How do you learn Dart?
