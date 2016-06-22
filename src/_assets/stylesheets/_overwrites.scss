@@ -89,13 +89,14 @@ body.homepage {
 /* Create craigslist-like small cards for the front page */
 body.homepage .chip-grid-section {
 	padding-top: 0;
+	padding-bottom: 0;
 }
 
 .chip-grid {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: flex-start;
+	justify-content: space-between;
 	margin: 0;
 }
 .chip {

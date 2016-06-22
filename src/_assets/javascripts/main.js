@@ -49,7 +49,7 @@ $(document).on('ready', function(){
   prettyPrint();
 
   // Frontpage footnotes
-  var defaultText = "(Hover over code snippet on the left to learn more.)";
+  var defaultText = "(Click underlined text to learn more.)";
   $('.frontpage-highlight').mouseenter(function(){
     var text = $(this).data('text');
     $('#code-display p').text(text);
