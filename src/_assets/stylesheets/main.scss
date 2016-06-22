@@ -12,6 +12,7 @@
 @import '_books';
 @import '_synonyms';
 
+
 /* -----------------------------------------
   Global
   ----------------------------------------- */
@@ -42,12 +43,12 @@ p {}
 
 a, button {
  text-decoration: none;
- color: $default-link;
+ color: $brand-primary;
  &:visited {
-   color: $default-link-visited;
+   color: $brand-primary;
  }
  &:hover, &:focus, &:active {
-   color: lighten($default-link, 25%);
+   color: lighten($brand-primary, 25%);
    outline: none;
    text-decoration: none;
  }
@@ -160,7 +161,7 @@ pre {
 code {
   background-color: transparent;
   padding: 0;
-  color: darken($default-link, 20%);
+  color: darken($brand-primary, 20%);
 }
 img {
   max-width: 100%;
@@ -209,6 +210,12 @@ img {
     color: #fff;
     text-transform: uppercase;
     font-size: 15px;
+    a {
+      color: $white-base;
+      &:hover, &:focus, &:active {
+        color: $gray-lighter;
+      }
+    }
   }
   ul {
     list-style: none;
@@ -227,21 +234,17 @@ img {
 
 // Navigation
 #menu-toggle {
-  // position: absolute;
-  // top: 0;
-  // left: 0;
   display: none;
-  line-height: 70px;
+  line-height: 50px;
   margin-left: 20px;
   padding-right: 10px;
   font-size: 16px;
   cursor: pointer;
   z-index: 9999;
-  background-color: $gray-light;
-  @include transition();
 }
 #mainnav {
   display: flex;
+  color: $gray-base;
   ul {
     margin: auto;
     margin-right: 0;
@@ -260,7 +263,7 @@ img {
         line-height: 50px;
         color: $gray-dark;
         &:hover {
-          color: $default-link;
+          color: $brand-primary;
         }
       }
       &.active {
@@ -368,7 +371,7 @@ img {
         margin-top: 10px;
         line-height: 110%;
         a:visited {
-          color: $default-link;
+          color: $brand-primary;
         }
         i {
           display: inline-block;
@@ -462,7 +465,7 @@ img {
       border-left: 3px solid $gray-lighter;
       a {
         padding: 3px 15px;
-        color: $default-link;
+        color: $brand-primary;
       }
       &.active {
         border-left: 3px solid $gray-dark;
@@ -945,11 +948,7 @@ body.obsolete {
 }
 
 @media(max-width: 1024px) {
-  #mainnav {
-    .brand {
-      // margin: -5px 10px 0 10px;
-    }
-  }
+
   #menu-toggle {
     display: inline-block;
   }
@@ -984,7 +983,7 @@ body.obsolete {
       }
     }
   }
-  body.condensed_header {
+  body.fixed_nav {
     #sidenav {
       left: -300px;
       top: 0;
