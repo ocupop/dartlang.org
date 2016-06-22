@@ -5,7 +5,7 @@ description: "Read about the Dart language and tools with this collection of gui
 toc: false
 ---
 
-* [Get Started](/guides/get-started)
+* [QuickStart](/guides/quick-start)
 * [Language Tour](/guides/language/language-tour)
 * [Library Tour](/guides/libraries/library-tour)
 * [Effective Dart](/guides/language/effective-dart/)
