@@ -2,11 +2,17 @@
 title: Sample code
 ---
 
-This collection is not exhaustive&mdash;it's just a quick
+This collection is not exhaustive&mdash;it's just a brief
 introduction to the language for people who like to learn by example. You may
 also want to check out the following pages.
 
 <div class="card-grid">
+  <div class="card">
+    <h3><a href="/guides/language/language-tour">Language Tour</a></h3>
+    <p>
+      Higher text-to-code ratio than here.
+    </p>
+  </div>
   <div class="card">
 
     <!-- XXXXX TODO: XXXXX -->
@@ -32,9 +38,6 @@ void main() {
   print('Hello, World!');
 }
 {% endprettify %}
-
-Note: This can be made [shorter](https://gist.github.com/filiph/8a5e3e845acdafe2ea928fd257a46859)
-thanks to the 'fat arrow' syntax.
 
 ## Variables
 
@@ -67,6 +70,10 @@ for (var month = 1; month <= 12; month++) {
 while (year < 2016) {
   year += 1;
 }
+
+do {
+  year -= 1;
+} while (year > 0);
 {% endprettify %}
 
 ## Functions
@@ -76,16 +83,17 @@ As a best practice, we're specifying the type of the function's argument and ret
 {% prettify dart %}
 int fibonacci(int n) {
   if (n == 0 || n == 1) return n;
-  return fib(n - 1) + fib(n - 2);
+  return fibonacci(n - 1) + fibonacci(n - 2);
 }
 
 var result = fibonacci(20);
-
-void report(String object) => print("Voyager flew by $object."));
-
-flybyObjects.forEach(report);
 {% endprettify %}
 
+There is a shorthand ('fat arrow') syntax for functions that contain a single statement. This means 'Hello World' can be made [shorter](https://gist.github.com/filiph/8a5e3e845acdafe2ea928fd257a46859) but it's most useful when functions are passed as arguments.
+
+{% prettify dart %}
+flybyObjects.where((name) => name.contains("anus")).forEach(print);
+{% endprettify %}
 
 ## Comments
 
@@ -93,7 +101,7 @@ flybyObjects.forEach(report);
 // A normal, one-line comment.
 
 /// A dartdoc comment. These are used to document libraries, classes and their
-/// members.
+/// members. IDEs and tools use these.
 
 /* Comments like these are also supported. */
 {% endprettify %}

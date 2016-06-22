@@ -49,7 +49,7 @@ application package.
 ### Reference
 
 * [Pubspec Format](pubspec)
-* [FAQ](faq)
+* [FAQ](/tools/faq#pub)
 * [Glossary](glossary)
 
 ## Pub commands
