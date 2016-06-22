@@ -165,6 +165,7 @@ code {
 }
 img {
   max-width: 100%;
+  height: auto;
 }
 
 /* -----------------------------------------
@@ -176,6 +177,7 @@ img {
 #page-header {
   position: fixed;
   width: 100%;
+  height: 50px;
   top: 0;
   left: 0;
   right: 0;
@@ -185,7 +187,7 @@ img {
 }
 #page-content {
   position: relative;
-  margin-top: 70px;
+  margin-top: 50px;
   padding: 20px;
   min-height: calc(100vh);
   > article {
@@ -682,6 +684,13 @@ input.gsc-search-button {
 
 
 // Color Palette
+.slogan {
+  background-color: $brand-primary;
+  text-align: center;
+  h1, h2, h3 {
+    margin: 0;
+  }
+}
 .gray-dark {
  background-color: $gray-dark;
  color: $white-base;
