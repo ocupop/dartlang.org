@@ -1,9 +1,8 @@
 ---
-layout: article
-title: Performance FAQ
+layout: default
+title: Performance
 description: Track the performance of your Dart code using benchmarks.
-written: 2014-06-15
-category: dart-vm
+permalink: /performance
 ---
 
 Dart was founded on the belief that performance matters.
@@ -27,7 +26,7 @@ The following are answers to commonly asked questions.
 ## How do I benchmark Dart?
 
 Check out the article on
-[benchmarking best practices](benchmarking).
+[benchmarking best practices](/articles/dart-vm/benchmarking).
 
 ## What benchmarks are the Dart team tracking?
 
@@ -51,7 +50,7 @@ which look at performance in a variety of server-side scenarios.
 
 ## I found a case where I think Dart is slower than expected. What do I do?
 
-Please read the [benchmark article](benchmarking),
+Please read the [benchmark article](/articles/dart-vm/benchmarking),
 and then write a simple benchmark using the
 [benchmark](https://github.com/dart-lang/ton80) package.
 If you continue to see a performance delta from expectations,

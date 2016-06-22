@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Libraries & APIs"
+title: "Libraries"
 toc: false
 ---
 

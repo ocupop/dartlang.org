@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Dart Tutorials"
-description: "The Dart Tutorials&mdash;Your guide to building great apps."
+title: "Web Tutorials"
+description: "Dart Tutorials for the Web."
 ---
 
 **The Dart Tutorials** teach you how to build applications
