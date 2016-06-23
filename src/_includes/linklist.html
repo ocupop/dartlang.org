@@ -1,12 +1,13 @@
 {% for link in linklist  %}
   <h4 {% if page.url contains link.permalink %}class="active"{% endif %}>
-    <a href="{{ link.permalink }}" title="{{ link.title }}">{{ link.title }}</a>
+    {{ link.title }}
   </h4>
   <ul>
     {% for child in link.children %}
       {% capture dropdown %}{{ child.children | size }}{% endcapture %}
       {% if dropdown == '0' %}
-        <li {% if page.url contains child.permalink %}class="active"{% endif %}>
+        {% capture page_without_index %}{{ page.url | remove: '/index' }}{% endcapture %}
+        <li {% if page_without_index == child.permalink %}class="active"{% endif %}>
           <a href="{{ child.permalink }}" title="{{ child.title }}">{{ child.title }}</a>
         </li>
       {% else %}

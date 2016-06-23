@@ -3,14 +3,14 @@
     - title: QuickStart
       permalink: /guides/quick-start
     - title: Sample code
-      permalink: /samples/
+      permalink: /samples
     - title: Try DartPad
       permalink: https://dartpad.dartlang.org/
 
 - title: Language
   children:
     - title: "Language Overview"
-      permalink: /guides/language/overview
+      permalink: /guides/language
     - title: "Language Tour"
       permalink: /guides/language/language-tour
     - title: "Effective Dart"
