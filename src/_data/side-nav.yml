@@ -1,6 +1,6 @@
 - title: Get Started
   children:
-    - title: Dart QuickStart
+    - title: QuickStart
       permalink: /guides/quick-start
     - title: Sample code
       permalink: /samples/
@@ -80,13 +80,15 @@
 
 - title: "Tools"
   children:
-  - title: "Tools Overview"
+  - title: "Dart Tools"
     permalink: /tools/
 
 - title: "Community"
   children:
-  - title: "Community Overview"
+  - title: "Community and Support"
     permalink: /community/
+  - title: "Books about Dart"
+    permalink: /resources/books
 
 - title: "Platform"
   children:

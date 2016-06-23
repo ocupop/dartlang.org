@@ -3,6 +3,7 @@ layout: default
 permalink: /resources/books
 title: Books about Dart
 description: Read all about it! Here's a collection of books about Dart.
+toc: false
 ---
 
 Here's a collection of books about Dart.
