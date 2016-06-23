@@ -45,6 +45,11 @@ For general IDE advice, see [Tools](/tools).
 
 The [Tools](/tools) page has more information.
 
+## Books
+
+If you're looking for a more guided approach to learning Dart, we recommend you
+pick up one of the many [books about Dart](/resources/books).
+
 ## Samples
 
 Check out the Dart [samples](/samples/).
