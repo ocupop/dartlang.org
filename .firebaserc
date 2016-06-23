@@ -1,5 +1,5 @@
 {
   "projects": {
-    "default": "dartlang-new-web.firebaseio.com"
+    "default": "dartlang-new-web"
   }
 }
