@@ -155,7 +155,7 @@ can. Iteration time matters.
 
 ## Compiling to source
 
-Of course, Scala and <a href='http://research.microsoft.com/en-us/um/cambridge/projects/fsharp/'>F#</a> show that a new language can be
+Of course, Scala and F# show that a new language can be
 developed for an existing VM, but it's possible to do that without bytecode: you
 can compile to source. Right now, if you want a new language that runs in the
 browser, compiling to JavaScript is your only option. <a

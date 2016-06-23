@@ -82,7 +82,7 @@ Google internal sales tool
 [Codeship](https://www.codeship.io/)
 : Continuous integration with support for Dart.
 
-[Adobe](http://blogs.adobe.com/animate/2013/05/16/toolkit-for-dart-flash-pro/)
+[Adobe](https://toolkitfordart.github.io/)
 : Flash Pro can export to Dart/HTML5/CSS.
 
 [Health Dynamics](http://www.healthdynamics.com/)
@@ -199,6 +199,6 @@ Google internal tool for marketing
 [Ven Chat](https://www.ven.chat)
 : A chat app for Android powered by a Dart backend.
 
-[Top Tactic](https://www.top-tactic.com)
+[Top Tactic](https://top-tactic.com)
 : A game in which you train neural networks to play soccer against other
 players' teams. Build with polymer.dart and StageXL.
