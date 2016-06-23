@@ -10,7 +10,7 @@
 - title: Language
   children:
     - title: "Language Overview"
-      permalink: /guides/language/
+      permalink: /guides/language/overview
     - title: "Language Tour"
       permalink: /guides/language/language-tour
     - title: "Effective Dart"
@@ -50,7 +50,7 @@
 - title: Libraries
   children:
     - title: Libraries Overview
-      permalink: /guides/libraries/
+      permalink: /guides/libraries/overview
     - title: Library Tour
       permalink: /guides/libraries/library-tour
     - title: Create Library Packages
