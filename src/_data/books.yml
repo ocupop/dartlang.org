@@ -56,13 +56,6 @@
   cover: aprende-dart.jpg
   link: "http://librodart.com/"
   desc: "Aprende Dart is the first Spanish-language book about Dart. Aprende Dart es el primer libro en Español para programadores y diseñadores web que quieran conocer el lenguaje, aprender a manejar las herramientas y trabajar con las principales funciones y librerías. Conocerás la historia que hay tras el lenguaje y cómo surge, crearemos animaciones para interfaces gráficas web y trabajaremos con servicios web, veremos el potencial que nos brinda Dart en el lado servidor y comenzaremos a trabajar con Polymer.dart."
-- title: The Dart Programming Language
-  authors:
-    - Gilad Bracha
-  publisher: Addison-Wesley Professional
-  cover: the-dart-programming-language.jpg
-  link: "http://www.amazon.com/Dart-Programming-Language-Gilad-Bracha/dp/0321927702"
-  desc: "Dart makes it easier for programmers to build structured modern web apps that scale from simple scripts to the largest systems. The Dart Programming Language is an authoritative and rigorous description of the Dart language. Written by Dart spec lead Gilad Bracha, it is designed for computer scientists, advanced students, and experienced software professionals. It is intended to be a readable textbook that introduces the language, its rationale and its philosophy."
 - title: Dart for Absolute Beginners
   authors:
     - David Kopec

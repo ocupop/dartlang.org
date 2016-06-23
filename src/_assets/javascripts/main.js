@@ -47,12 +47,20 @@ $(window).scroll(function(){
 $(document).on('ready', function(){
   // Initiate Syntax Highlighting
   prettyPrint();
-  $('.highlight').mouseenter(function(){
+
+  // Frontpage footnotes
+  var defaultText = "(Click underlined text to learn more.)";
+  $('.frontpage-highlight').mouseenter(function(){
     var text = $(this).data('text');
     $('#code-display p').text(text);
   });
-  $('.highlight').mouseleave(function(){
-    $('#code-display p').text('(Hover over code snippet on the left to learn more.)');
+  $('.frontpage-highlight').mouseleave(function(){
+    $('#code-display p').text(defaultText);
+  });
+  $('.frontpage-highlight').click(function(){
+    defaultText = $(this).data('text');
+    $('.frontpage-highlight').removeClass('selected')
+    $(this).addClass('selected');
   });
 
   // Sidenav

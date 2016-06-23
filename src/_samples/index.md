@@ -54,27 +54,34 @@ var image = {
 };
 {% endprettify %}
 
-## Loops
+[Read more](/guides/language/language-tour#variables) about variables in Dart, including default values, `final` and `const` keywords, and more.
+
+## Control flow statements
 
 No surprises here.
 
 {% prettify dart %}
+if (year >= 2001) {
+  print("21st century");
+} else if (year >= 1901) {
+  print("20th century");
+}
+
 for (var object in flybyObjects) {
   print(object);
 }
 
-for (var month = 1; month <= 12; month++) {
+for (int month = 1; month <= 12; month++) {
   print(month);
 }
 
 while (year < 2016) {
   year += 1;
 }
-
-do {
-  year -= 1;
-} while (year > 0);
 {% endprettify %}
+
+[Read more](/guides/language/language-tour#control-flow-statements) about control flow statements in Dart, 
+including `break` and `continue`, `switch` and `case`, and `assert`.  
 
 ## Functions
 
@@ -89,22 +96,31 @@ int fibonacci(int n) {
 var result = fibonacci(20);
 {% endprettify %}
 
-There is a shorthand ('fat arrow') syntax for functions that contain a single statement. This means 'Hello World' can be made [shorter](https://gist.github.com/filiph/8a5e3e845acdafe2ea928fd257a46859) but it's most useful when functions are passed as arguments.
+There is a shorthand ('fat arrow') syntax for functions that contain a single statement. 
+It's most useful when functions are passed as arguments (but it also means 'Hello World' can be made even [shorter](https://gist.github.com/filiph/8a5e3e845acdafe2ea928fd257a46859) than it already is).
 
 {% prettify dart %}
 flybyObjects.where((name) => name.contains("anus")).forEach(print);
 {% endprettify %}
+
+Also note that in the example above, the top-level function `print` is provided as an argument. 
+
+[Read more](/guides/language/language-tour#functions) about functions in Dart,
+including optional parameters, default parameter values, lexical scope, and more.
 
 ## Comments
 
 {% prettify dart %}
 // A normal, one-line comment.
 
-/// A dartdoc comment. These are used to document libraries, classes and their
-/// members. IDEs and tools use these.
+/// A documentation comment. These are used to document libraries, classes and 
+/// their members. IDEs and tools use these.
 
 /* Comments like these are also supported. */
 {% endprettify %}
+
+[Read more](/guides/language/language-tour#comments) about comments in Dart,
+including how the documentation tooling works.
 
 ## Imports
 
@@ -120,6 +136,9 @@ import 'package:angular2/angular2.dart';
 import 'path/to/my_other_file.dart';
 {% endprettify %}
 
+[Read more](/guides/language/language-tour#libraries-and-visibility) about libraries and visibility in Dart,
+including library prefixes, `show` and `hide`, and lazy loading through the `deferred` keyword.
+
 ## Classes
 
 {% prettify dart %}
@@ -131,20 +150,53 @@ class Spacecraft {
   Spacecraft(this.name, this.year);
 
   // Named constructor.
-  Spacecraft.fromJson(Map json) {
-    name = json['name'];
-    year = json['year'];
+  Spacecraft.unlaunched(this.name) {
+    flybyObjects = const [];
   }
 
   // Method.
-  String describe() {
-    int age = new DateTime.now().year - year;
-    return "The spacecraft $name launched in $year, which is $age years ago.";
+  void describe() {
+    print("Spacecraft: $name");
+    if (year != null) {
+      int age = new DateTime.now().year - year;
+      print("Launched: $year ($age years ago)");
+    } else {
+      print("Unlaunched");
+    }
   }
 }
 {% endprettify %}
 
-XXX START HERE = [synonyms](/resources/synonyms/)
+You would use the class defined above like so:
+
+{% prettify dart %}
+var voyager = new Spacecraft("Voyager I", 1977);
+voyager.describe();
+
+var voyager3 = new Spacecraft.unlaunched("Voyager III");
+voyager3.describe();
+{% endprettify %}
+
+[Read more](/guides/language/language-tour#classes) about classes in Dart,
+including initializer lists, redirecting constructors, constant constructors, `factory` constructors, getters, setters, and much more. 
+
+## Inheritance
+
+Dart has single-inheritance.
+
+{% prettify dart %}
+class InterstellarSpacecraft extends Spacecraft
+{% endprettify %}
+
+Mixins
+
+# Interfaces
+
+There is no `interface` keyword in Dart. All classes implicitly define an interface.
+
+-- CODE
+
+You can create an abstract method
 
 ## Collections
 
@@ -172,3 +224,6 @@ print("The spacecraft ${name.toUpperCase()} left Earth in the year $year.");
 ### Inheritance, mixins
 
 ### Operator overloading
+
+
+XXX START HERE = [synonyms](/resources/synonyms/)

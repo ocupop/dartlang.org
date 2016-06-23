@@ -1,14 +1,16 @@
 - title: Get Started
-  permalink: /guides/get-started
   children:
+    - title: QuickStart
+      permalink: /guides/quick-start
     - title: Sample code
       permalink: /samples/
     - title: Try DartPad
       permalink: https://dartpad.dartlang.org/
 
 - title: Language
-  permalink: /guides/language/
   children:
+    - title: "Language Overview"
+      permalink: /guides/language/overview
     - title: "Language Tour"
       permalink: /guides/language/language-tour
     - title: "Effective Dart"
@@ -46,8 +48,9 @@
       permalink: /guides/language/spec
 
 - title: Libraries
-  permalink: /guides/libraries/
   children:
+    - title: Libraries Overview
+      permalink: /guides/libraries/overview
     - title: Library Tour
       permalink: /guides/libraries/library-tour
     - title: Create Library Packages
@@ -55,55 +58,62 @@
     - title: Libraries Tutorials
       permalink: /tutorials/libraries/
       children:
-        - title: Install Shared Packages
+        - title: "Install Shared Packages"
           permalink: /tutorials/libraries/shared-pkgs
-    - title: Libraries Articles
+    - title: "Libraries Articles"
       permalink: /articles/libraries/
       children:
-        - title: Converters and Codecs
+        - title: "Converters and Codecs"
           permalink: /articles/libraries/converters-and-codecs
-        - title: Serialization
+        - title: "Serialization"
           permalink: /articles/libraries/serialization
-        - title: Zones
+        - title: "Zones"
           permalink: /articles/libraries/zones
-        - title: Single-Subscription vs Broadcast Streams
+        - title: "Single-Subscription vs Broadcast Streams"
           permalink: /articles/libraries/broadcast-streams
-        - title: Reflection with Mirrors
+        - title: "Reflection with Mirrors"
           permalink: /articles/libraries/reflection-with-mirrors
-        - title: Futures and Error Handling
+        - title: "Futures and Error Handling"
           permalink: /articles/libraries/futures-and-error-handling
-        - title: Creating Streams
+        - title: "Creating Streams"
           permalink: /articles/libraries/creating-streams
 
-- title: Tools
-  permalink: /tools/
-
-- title: Community
-  permalink: /community/
-
-- title: Platform
-  permalink: /guides/platform
+- title: "Tools"
   children:
-    - title: Web
+  - title: "Dart Tools"
+    permalink: /tools/
+
+- title: "Community"
+  children:
+  - title: "Community and Support"
+    permalink: /community/
+  - title: "Books about Dart"
+    permalink: /resources/books
+
+- title: "Platform"
+  children:
+    - title: "Platform Overview"
+      permalink: /guides/platform
+    - title: "Web"
       permalink: http://localhost:4001/
-    - title: Mobile (Flutter)
+    - title: "Mobile (Flutter)"
       permalink: https://flutter.io/
       children:
-      - title: API Reference
+      - title: "API Reference"
         permalink: http://docs.flutter.io/flutter/
-    - title: IoT (Dartino)
+    - title: "IoT (Dartino)"
       permalink: https://dartino.org/
       children:
-      - title: API Reference
+      - title: "API Reference"
         permalink: https://dartino.github.io/api/
-    - title: Dart VM
+    - title: "Dart VM"
       permalink: /dart-vm/
       children:
-      - title: Install Dart
+      - title: "Install Dart"
         permalink: /install/
-      - title: API Reference
+      - title: "API Reference"
         permalink: https://api.dartlang.org
-      - title: Tutorials
+      - title: "Tutorials"
         permalink: /tutorials/dart-vm
-      - title: Articles
+      - title: "Articles"
         permalink: /articles/dart-vm
