@@ -1,5 +1,5 @@
 # Site settings
-title: Dartlang.org
+title: Dart
 description: ""
 url: https://www.dartlang.org
 baseurl: "" # the subpath of your site, e.g. /blog/
