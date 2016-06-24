@@ -1,7 +1,8 @@
 ---
 layout: default
-permalink: /resources/authors/
 title: "Authors"
+description: "Information about some of the more visible authors who have contributed to dartlang.org."
+permalink: /resources/authors/
 toc: false
 ---
 

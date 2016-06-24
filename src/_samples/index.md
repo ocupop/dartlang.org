@@ -1,5 +1,6 @@
 ---
-title: Sample code
+title: "Sample code"
+description: "Examples of idiomatic Dart with links to larger examples."
 ---
 
 This collection is not exhaustive&mdash;it's just a brief
@@ -80,8 +81,8 @@ while (year < 2016) {
 }
 {% endprettify %}
 
-[Read more](/guides/language/language-tour#control-flow-statements) about control flow statements in Dart, 
-including `break` and `continue`, `switch` and `case`, and `assert`.  
+[Read more](/guides/language/language-tour#control-flow-statements) about control flow statements in Dart,
+including `break` and `continue`, `switch` and `case`, and `assert`.
 
 ## Functions
 
@@ -96,14 +97,14 @@ int fibonacci(int n) {
 var result = fibonacci(20);
 {% endprettify %}
 
-There is a shorthand ('fat arrow') syntax for functions that contain a single statement. 
+There is a shorthand ('fat arrow') syntax for functions that contain a single statement.
 It's most useful when functions are passed as arguments (but it also means 'Hello World' can be made even [shorter](https://gist.github.com/filiph/8a5e3e845acdafe2ea928fd257a46859) than it already is).
 
 {% prettify dart %}
 flybyObjects.where((name) => name.contains("anus")).forEach(print);
 {% endprettify %}
 
-Also note that in the example above, the top-level function `print` is provided as an argument. 
+Also note that in the example above, the top-level function `print` is provided as an argument.
 
 [Read more](/guides/language/language-tour#functions) about functions in Dart,
 including optional parameters, default parameter values, lexical scope, and more.
@@ -113,7 +114,7 @@ including optional parameters, default parameter values, lexical scope, and more
 {% prettify dart %}
 // A normal, one-line comment.
 
-/// A documentation comment. These are used to document libraries, classes and 
+/// A documentation comment. These are used to document libraries, classes and
 /// their members. IDEs and tools use these.
 
 /* Comments like these are also supported. */
@@ -178,7 +179,7 @@ voyager3.describe();
 {% endprettify %}
 
 [Read more](/guides/language/language-tour#classes) about classes in Dart,
-including initializer lists, redirecting constructors, constant constructors, `factory` constructors, getters, setters, and much more. 
+including initializer lists, redirecting constructors, constant constructors, `factory` constructors, getters, setters, and much more.
 
 ## Inheritance
 

@@ -1,7 +1,8 @@
 ---
 layout: default
-permalink: /resources/
 title: "Resources"
+description: "Landing page for dartlang's resources."
+permalink: /resources/
 ---
 
 ## Placeholder: Resources Index

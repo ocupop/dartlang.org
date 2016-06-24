@@ -1,7 +1,9 @@
 ---
 layout: default
+title: "Dart VM"
+description: "The landing page for all things relating to the Dart virtual machine (Dart VM)"
+toc: false
 permalink: /dart-vm/
-title: Dart VM
 ---
 
 This page points to tools and documentation

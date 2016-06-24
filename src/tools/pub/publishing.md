@@ -1,7 +1,8 @@
 ---
 layout: default
-permalink: /tools/pub/publishing
 title: "Publishing a Package"
+description: "Learn how to publish a Dart package to pub.dartlang.org."
+permalink: /tools/pub/publishing
 ---
 
 [Pub](/tools/pub) isn't just for using other people's packages.

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Create Library Packages"
+description: "Learn how to create library packages in Dart."
 ---
 
 Libraries are a great way to create modular code that can

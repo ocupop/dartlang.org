@@ -1,8 +1,9 @@
 ---
 layout: default
-permalink: /tools/pub/
 title: "Pub Package and Asset Manager"
+description: "Use the pub tool to manage Dart's packages and assets."
 short-title: "Pub"
+permalink: /tools/pub/
 ---
 
 You can use the `pub` tool to manage Dart packages and assets.

@@ -2,6 +2,7 @@
 layout: default
 title: Dart by Example
 permalink: /dart-vm/dart-by-example/
+description: "A cookbook, or set of examples, showing idiomatic Dart code."
 
 header:
   css: ["index.css"]

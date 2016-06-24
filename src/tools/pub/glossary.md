@@ -1,7 +1,8 @@
 ---
 layout: default
-permalink: /tools/pub/glossary
 title: "Glossary of Pub Terms"
+description: "A glossary of terms relating to Dart's package management tool, pub."
+permalink: /tools/pub/glossary
 ---
 
 The following terms are used in the documentation for the [pub](/tools/pub)

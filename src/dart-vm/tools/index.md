@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Dart VM Tools"
+description: "The tools that you get when you download the Dart SDK."
 permalink: /dart-vm/tools/
 ---
 

@@ -1,7 +1,8 @@
 ---
 layout: default
-permalink: /tools/pub/installing
 title: "Installing and Configuring Pub"
+description: "How to install and configure your environment for Dart's package management tool, pub."
+permalink: /tools/pub/installing
 ---
 
 [Pub](/tools/pub/) is one of the tools in the

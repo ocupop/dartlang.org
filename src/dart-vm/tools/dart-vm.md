@@ -1,11 +1,10 @@
 ---
 layout: default
 title: "dart: The Standalone VM"
+description: "The reference page for 'dart' at the command line."
 permalink: /dart-vm/tools/dart-vm
 short-title: "dart"
 ---
-
-
 
 You can use the _dart_ tool (`bin/dart`) to run Dart command-line apps such as
 server-side scripts, programs, and servers.

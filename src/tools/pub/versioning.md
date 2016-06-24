@@ -1,7 +1,8 @@
 ---
 layout: default
-permalink: /tools/pub/versioning
 title: "Pub Versioning Philosophy"
+description: "How Dart's package management tool, pub, handles versioning of packages."
+permalink: /tools/pub/versioning
 ---
 
 One of [pub](/tools/pub/)'s main jobs is helping you work with versioning.

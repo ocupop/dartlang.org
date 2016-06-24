@@ -1,7 +1,8 @@
 ---
 layout: default
-permalink: /tools/pub/package-layout
 title: "Pub Package Layout Conventions"
+description: "Learn more about the directory structure used by Dart's package management tool, pub."
+permalink: /tools/pub/package-layout
 ---
 
 Part of a healthy code ecosystem is consistent conventions. When we all do the

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Dart Tutorials: Libraries"
+description: "Tutorials relating to Dart's core libraries and APIs."
 toc: false
 
 header:

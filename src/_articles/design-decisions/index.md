@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Articles: Design Decisions"
+description: "Articles related to the reasoning behind some of Dart's design decisions."
 toc: false
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: guide
 title: Dart QuickStart
-description: ""
+description: "A guide for getting started with Dart."
 ---
 
 How do you learn Dart?

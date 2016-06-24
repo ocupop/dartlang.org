@@ -1,7 +1,8 @@
 ---
 layout: default
-permalink: /tools/pub/get-started
 title: "Getting Started with Pub"
+description: "Learn more about Dart's tool for managing packages and assets, the pub tool."
+permalink: /tools/pub/get-started
 ---
 
 You can use [pub](/tools/pub/) to manage Dart packages.
