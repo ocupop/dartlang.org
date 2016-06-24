@@ -16,7 +16,7 @@ $icon-menu: "\e903";
     font-style: normal;
 }
 
-i {
+i.icon {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'dart' !important;
     speak: none;
