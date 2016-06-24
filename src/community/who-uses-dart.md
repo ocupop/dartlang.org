@@ -14,8 +14,7 @@ to be included in this list, please open a
 Thanks!
 
 [Google AdWords](http://adwords.blogspot.com/2016/03/redesigning-adwords-for-the-mobile-first-marketer.html)
-: xxx.  (Text, Filip?)
-  For more information,
+: The next generation of AdWords runs on Dart. For more information,
   see an interview with the lead developer on
   [news.dartlang.org](http://news.dartlang.org/2016/03/the-new-adwords-ui-uses-dart-we-asked.html).
 
