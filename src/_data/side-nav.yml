@@ -39,8 +39,6 @@
   children:
   - title: "Community and Support"
     permalink: /community/
-  - title: "Books about Dart"
-    permalink: /resources/books
 
 - title: "Platforms"
   children:
