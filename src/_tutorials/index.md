@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Web Tutorials"
-description: "Dart Tutorials for the Web."
+title: "Dart Tutorials"
+description: "Tutorials for writing Dart apps."
 ---
 
 **The Dart Tutorials** teach you how to build applications
@@ -46,4 +46,10 @@ Organize and share code at
        <a href="https://pub.dartlang.org/">pub.dartlang.org</a>.</p>
   </div>
 </div>
+
+## More tutorials
+
+* [Dart VM Tutorials](/tutorials/dart-vm/)
+* [Web Tutorials]({{site.dart4web}}/tutorials/)
+* [Dart Academy](https://dart.academy)
 

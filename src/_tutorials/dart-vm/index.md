@@ -16,7 +16,7 @@ header:
   <div class="col-md-6">
     <div class="card">
       <h3><a href="/tutorials/dart-vm/get-started">Get Started</a></h3>
-      <p>Get Dart. Create a simple, standalone, app.</p>
+      <p>Get Dart. Create a simple standalone app.</p>
     </div>
   </div>
 
@@ -34,3 +34,5 @@ header:
     </div>
   </div>
 </div>
+
+For more tutorials, see [Dart Tutorials]({{site.dartlang}}/tutorials/).
