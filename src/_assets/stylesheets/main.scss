@@ -901,26 +901,6 @@ body.hide_toc {
     right: -250px;
   }
 }
-body.open_menu {
-  &:before {
-    content: '';
-    display: block;
-    position: fixed;
-    top: 0; bottom: 0;
-    left: 0; right: 0;
-    height: 100%;
-    z-index: 999;
-    background-color: rgba($gray-base,0.5);
-    cursor: pointer;
-    pointer-events: none;
-    @include transition(0.5s);
-  }
-  #sidenav {
-    display: block;
-    left: 0;
-  }
-}
-
 body.fixed_nav {
   #sidenav {
     top: 40px;
@@ -928,6 +908,7 @@ body.fixed_nav {
     left: 20px;
   }
 }
+
 body.obsolete {
   #page-header {
     .alert {
@@ -996,6 +977,25 @@ body.obsolete {
     #sidenav {
       left: -300px;
       top: 0;
+    }
+  }
+  body.open_menu {
+    &:before {
+      content: '';
+      display: block;
+      position: fixed;
+      top: 0; bottom: 0;
+      left: 0; right: 0;
+      height: 100%;
+      z-index: 999;
+      background-color: rgba($gray-base,0.5);
+      cursor: pointer;
+      pointer-events: none;
+      @include transition(0.5s);
+    }
+    #sidenav {
+      display: block;
+      left: 0 !important;
     }
   }
 }
