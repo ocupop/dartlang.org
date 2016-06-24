@@ -4,8 +4,6 @@
       permalink: /guides/quick-start
     - title: Sample code
       permalink: /samples
-    - title: Try DartPad
-      permalink: https://dartpad.dartlang.org/
 
 - title: Language
   children:
@@ -13,28 +11,6 @@
       permalink: /guides/language
     - title: "Tour"
       permalink: /guides/language/language-tour
-    - title: Tutorials
-      permalink: /tutorials/language/
-      children:
-        - title: "Async Programming: Futures"
-          permalink: /tutorials/language/futures
-        - title: "Async Programming: Streams"
-          permalink: /tutorials/language/streams
-    - title: Articles
-      permalink: /articles/language/
-      children:
-        - title: "Async Support: Phase 1"
-          permalink: /articles/language/await-async
-        - title: "Async Support: Phase 2"
-          permalink: /articles/language/beyond-async
-        - title: Emulating Functions
-          permalink: /articles/language/emulating-functions
-        - title: Mixins
-          permalink: /articles/language/mixins
-        - title: Optional Types
-          permalink: /articles/language/optional-types
-    - title: Specification
-      permalink: /guides/language/spec
     - title: "Effective Dart"
       permalink: /guides/language/effective-dart/
       children:
@@ -53,30 +29,6 @@
       permalink: /guides/libraries
     - title: Tour
       permalink: /guides/libraries/library-tour
-    - title: Tutorials
-      permalink: /tutorials/libraries/
-      children:
-        - title: "Install Shared Packages"
-          permalink: /tutorials/libraries/shared-pkgs
-    - title: "Articles"
-      permalink: /articles/libraries/
-      children:
-        - title: "Converters and Codecs"
-          permalink: /articles/libraries/converters-and-codecs
-        - title: "Creating Streams"
-          permalink: /articles/libraries/creating-streams
-        - title: "Futures and Error Handling"
-          permalink: /articles/libraries/futures-and-error-handling
-        - title: "Reflection with Mirrors"
-          permalink: /articles/libraries/reflection-with-mirrors
-        - title: "Serialization"
-          permalink: /articles/libraries/serialization
-        - title: "Single-Subscription vs Broadcast Streams"
-          permalink: /articles/libraries/broadcast-streams
-        - title: "Zones"
-          permalink: /articles/libraries/zones
-    - title: Create Library Packages
-      permalink: /guides/libraries/create-library-packages
 
 - title: "Tools"
   children:
@@ -113,7 +65,3 @@
         permalink: /install/
       - title: "API Reference"
         permalink: https://api.dartlang.org
-      - title: "Tutorials"
-        permalink: /tutorials/dart-vm
-      - title: "Articles"
-        permalink: /articles/dart-vm
