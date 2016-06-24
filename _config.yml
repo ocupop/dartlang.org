@@ -1,7 +1,7 @@
 # Site settings
 title: Dartlang.org
 description: ""
-url: https://stage.dartlang.org
+url: https://www.dartlang.org
 baseurl: "" # the subpath of your site, e.g. /blog/
 # permalink: /:path/:basename
 
