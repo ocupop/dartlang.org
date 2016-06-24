@@ -95,7 +95,7 @@
     - title: "Overview"
       permalink: /guides/platform
     - title: "Web"
-      permalink: {{site.dart4web}}
+      permalink: http://localhost:4001/
     - title: "Mobile (Flutter)"
       permalink: https://flutter.io/
       children:
