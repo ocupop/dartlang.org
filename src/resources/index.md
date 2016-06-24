@@ -3,6 +3,7 @@ layout: default
 title: "Resources"
 description: "Landing page for dartlang's resources."
 permalink: /resources/
+toc: false
 ---
 
 Check out the following Dart language resources:
