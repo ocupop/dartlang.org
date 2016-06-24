@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Platform Overview"
+title: "Overview: Platforms"
 toc: false
 ---
 

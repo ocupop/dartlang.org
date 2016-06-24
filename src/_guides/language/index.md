@@ -1,13 +1,15 @@
 ---
 layout: default
-title: "Language Overview"
+title: "Overview: The Dart Language"
 toc: false
 ---
+
+These two resources are popular with both beginning Dartisans and experts.
 
 <div class="card-grid">
   <div class="card">
     <h3><a href="/guides/language/language-tour">A Tour of the Dart Language</a></h3>
-    <p>A walk through of all of Dart's major language features.</p>
+    <p>A walk through all of Dart's major language features.</p>
   </div>
   <div class="card">
     <h3><a href="/guides/language/effective-dart/">Effective Dart</a></h3>
@@ -17,14 +19,16 @@ toc: false
   </div>
 </div>
 
-## Other language resources:
+## Other resources
 
-* <a href="/tutorials/language/futures">Asynchronous Programming: Futures</a><br>
-How to handle asynchronous programming in Dart.
+[Asynchronous Programming: Futures](/tutorials/language/futures)
+: A beginner's guide to handling asynchronous programming in Dart.
 
-* <a href="/tutorials/language/streams">Asynchronous Programming: Streams</a><br>
-How to handle a sequence of asynchronous events.
+[Asynchronous Programming: Streams](/tutorials/language/streams)
+: A beginner's guide to handling sequences of asynchronous events.
 
-* <a href="/articles/language">Language Articles</a>
+[Language articles](/articles/language)
+: Articles about language features such as mixins and asynchrony support.
 
-* <a href="/guides/language/spec">Dart Specification</a>
+[Specification](/guides/language/spec)
+: A definitive, highly technical description of the Dart language.
