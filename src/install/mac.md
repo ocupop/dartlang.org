@@ -24,8 +24,7 @@ $ brew tap dart-lang/dart
 $ brew install dart
 {% endprettify %}
 
-If you use Dart for web development work, we recommend that you also
-install Dartium and Content Shell:
+If you use Dart for web development work, you should also install Dartium and Content Shell:
 
 {% prettify shell %}
 $ brew tap dart-lang/dart

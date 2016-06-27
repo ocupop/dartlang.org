@@ -48,11 +48,11 @@ at the following links.
 
 API reference documentation
 :
-  * [api.dartlang.org]({{site.dart_api}}):
-    Generated docs for dart:* libraries
-  * [docs.flutter.io](http://docs.flutter.io/):
-    Generated docs for Flutter libraries
-  * [dartino.github.io/api](https://dartino.github.io/api/):
-    Generated docs for Dartino libraries
-  * [dartdocs.org](https://www.dartdocs.org/):
-    Generated docs for packages published on pub.dartlang.org
+* [api.dartlang.org]({{site.dart_api}}):
+  Generated docs for dart:* libraries
+* [docs.flutter.io](http://docs.flutter.io/):
+  Generated docs for Flutter libraries
+* [dartino.github.io/api](https://dartino.github.io/api/):
+  Generated docs for Dartino libraries
+* [dartdocs.org](https://www.dartdocs.org/):
+  Generated docs for packages published on pub.dartlang.org
