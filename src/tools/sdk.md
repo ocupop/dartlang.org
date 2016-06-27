@@ -5,8 +5,6 @@ description: "Dart libraries and command-line tools."
 permalink: /tools/sdk
 ---
 
-
-
 The Dart SDK has the libraries and command-line tools
 that you need to develop Dart applications.
 To learn about other tools you can use for Dart development,
@@ -20,7 +18,7 @@ is a great way to learn how to write a simple app in the Dart
 language, once you are ready to start doing real-world development,
 you need the Dart SDK.
 
-[Download the Dart SDK](/install/).
+[Install the Dart SDK](/install/).
 
 ## What's in the SDK
 
@@ -34,7 +32,7 @@ and a `bin` directory that has these command-line tools:
 : The standalone VM
 
 [dart2js]({{site.dart4web}}/tools/dart2js)
-: The Dart-to-JavaScript compiler
+: The Dart-to-JavaScript compiler<br>(used only for web development)
 
 [dartanalyzer](https://github.com/dart-lang/analyzer_cli#dartanalyzer)
 : The static analyzer
@@ -45,10 +43,21 @@ and a `bin` directory that has these command-line tools:
 : The API documentation generator
 
 [pub](/tools/pub/)
-: The Dart package and asset manager
+: The Dart package manager
 
 [dartfmt](https://github.com/dart-lang/dart_style#readme)
 : The Dart code formatter
+
+
+{% comment %}
+We aren't yet ready to add info on dartdevc...
+
+</div> <div class="col-md-6" markdown="1">
+
+[dartdevc](xxx)
+: xxx
+
+{% endcomment %}
 
 </div> </div>
 
