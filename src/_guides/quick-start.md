@@ -40,9 +40,11 @@ Where do you start? It depends on what kind of app you are writing.
 | **Dive in!** | webdev's [Quick Start]({{site.dart4web}}/guides/quick-start) | [Get Started](/tutorials/dart-vm/get-started) with the Dart VM | [Getting started]({{site.dartino}}/getting-started) with Dartino | [Getting Started with Flutter]({{site.flutter}}/getting-started/) |
 {:.table .table-striped}
 
+{% comment %}
 <sup>*</sup>If you have a favorite IDE, there is probably a Dart plugin for that.
 See the link for tips on how to configure the recommended IDE.
 For general IDE advice, see [Tools](/tools).
+{% endcomment %}
 
 ## Books
 
