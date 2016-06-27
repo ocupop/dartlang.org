@@ -2,6 +2,7 @@
 layout: default
 title: "Overview: Libraries"
 description: "Learn about Dart's core libraries and APIs."
+permalink: /guides/libraries/
 toc: false
 ---
 

@@ -2,6 +2,7 @@
 layout: default
 title: "Dart Tutorials"
 description: "Tutorials for writing Dart apps."
+permalink: /tutorials/
 ---
 
 **The Dart Tutorials** teach you how to build applications

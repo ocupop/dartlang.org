@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Overview: The Dart Language"
+permalink: /guides/language/
 toc: false
 ---
 

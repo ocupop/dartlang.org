@@ -2,6 +2,7 @@
 layout: default
 title: "Guides"
 description: "Read about the Dart language and tools with this collection of guides."
+permalink: /guides/
 toc: false
 ---
 
