@@ -1,6 +1,6 @@
 ---
 layout: guide
-title: Dart QuickStart
+title: Dart Quick Start
 description: "A guide for getting started with Dart."
 ---
 
