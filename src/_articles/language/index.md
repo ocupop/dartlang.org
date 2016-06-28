@@ -2,6 +2,7 @@
 layout: default
 title: "Articles: Language"
 description: "Articles that clarify aspects of the Dart language."
+permalink: /articles/language/
 toc: false
 ---
 

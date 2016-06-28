@@ -2,6 +2,7 @@
 layout: default
 title: "Dart VM Tutorials"
 description: "The Dart VM Tutorials&mdash;Your guide to building great apps."
+permalink: /tutorials/dart-vm/
 toc: false
 
 nextpage:

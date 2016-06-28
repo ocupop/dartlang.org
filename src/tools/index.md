@@ -66,7 +66,7 @@ Which SDK you need depends on what type of app you're developing.
 |------------------------+----------+-------------------------------------|
 | App type | SDK | Download instructions | More information |
 |--------------------------|------------------------------------------------|
-| Web app | Dart | [Install Dart](/install/) | [Dart SDK](/tools/sdk), [Dart Tools for the Web]({{site.dart4web}}/tools/) |
+| Web app | Dart | [Install Dart and Dartium](/install/) | [Dart SDK](/tools/sdk), [Dart Tools for the Web]({{site.dart4web}}/tools/) |
 | Script or server | Dart | [Install Dart](/install/) | [Dart SDK](/tools/sdk), [Dart VM Tools](/dart-vm/tools/) |
 | Embedded app | Dartino | [Getting started]({{site.dartino}}/getting-started) | [dartino.org]({{site.dartino}}) |
 | Mobile app | Flutter | [Flutter Setup]({{site.flutter}}/setup) | [flutter.io]({{site.flutter}}) |

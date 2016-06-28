@@ -45,7 +45,7 @@
     - title: "Overview"
       permalink: /guides/platform
     - title: "Web"
-      permalink: http://localhost:4001/
+      permalink: https://webdev-dartlang-org.firebaseapp.com/
     - title: "Mobile (Flutter)"
       permalink: https://flutter.io/
       children:

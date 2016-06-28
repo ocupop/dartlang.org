@@ -27,15 +27,14 @@ which includes the Dart VM, libraries, and command-line Dart tools such as
 [dartanalyzer](https://github.com/dart-lang/sdk/tree/master/pkg/analyzer_cli),
 [pub](/tools/pub/),
 and [dartdoc](https://github.com/dart-lang/dartdoc#dartdoc).
-Optionally, you can add one more tool:
+If you are doing web development, you should also add one more tool:
 
 * [Dartium]({{site.dart4web}}/tools/dartium):
   A special build of Chromium that includes a Dart VM.
   Use it to interactively test and debug Dart web apps
   without first compiling them to JavaScript.
 
-For client-side Dart work, you might want to install *both* tools. If you're
-working on server-side Dart, all you need is the `dart-sdk`:
+If you're working on server-side Dart, all you need is the `dart-sdk`:
 
 {% prettify shell %}
 choco install dart-sdk -version <version>

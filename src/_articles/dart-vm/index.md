@@ -2,6 +2,7 @@
 layout: default
 title: "Articles: Dart VM"
 description: "Articles pertaining to the Dart Virtual Machine (VM), such as benchmarking, native extensions, and numeric computation"
+permalink: /articles/dart-vm/
 toc: false
 ---
 

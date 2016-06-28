@@ -31,19 +31,20 @@ you'll need to install an SDK.
 ## What kind of app do you want to write?
 
 This website ( [dartlang.org]({{site.dartlang}}) ) contains information common to most
-Dart technologies: the language and core libraries. Where can you
-go to learn specific information about your chosen technology?
+Dart technologies: the language and core libraries.
+
+Where do you start? It depends on what kind of app you are writing.
 
 | | **Web** | **Mobile** | **Embedded** | **Server** |
 | **Use case** | Create an app that runs in any modern browser | Create an app from a single codebase that runs on both iOS and Android | Control a device from the Internet of Things (IoT) | Create a command-line app or server |
-| **Start here!** | [Install Dart SDK and Dartium](/install/) | [Flutter Setup]({{site.flutter}}/setup/) (in beta) | [Get Started with Dartino]({{site.dartino}}/getting-started/) (in alpha) | [Install Dart SDK](/install/) |
+| **Dive in!** | webdev's [Quick Start]({{site.dart4web}}/guides/quick-start) | [Get Started](/tutorials/dart-vm/get-started) with the Dart VM | [Getting started]({{site.dartino}}/getting-started) with Dartino | [Getting Started with Flutter]({{site.flutter}}/getting-started/) |
 {:.table .table-striped}
 
+{% comment %}
 <sup>*</sup>If you have a favorite IDE, there is probably a Dart plugin for that.
 See the link for tips on how to configure the recommended IDE.
 For general IDE advice, see [Tools](/tools).
-
-The [Tools](/tools) page has more information.
+{% endcomment %}
 
 ## Books
 

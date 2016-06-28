@@ -14,7 +14,7 @@ Then:
 jekyll serve --watch
 ```
 
-Navigate to localhost:4000. (dart4web is 4001)
+Navigate to localhost:4000. (webdev is 4001)
 
 
 ## Checking the site's HTML
@@ -23,10 +23,15 @@ To check for valid HTML, good images, and broken links,
 run this from the top of the repo:
 
 ```
-bundle exec htmlproofer ./publish --assume-extension --directory-index-file
+bundle exec htmlproofer ./publish --assume-extension --directory-index-file --allow-hash-href
 ```
 
-PENDING: Where do you get htmlproofer?
+You get htmlproofer when you install the Ruby Gems.
+
+## Misc notes
+
+* If you want italics, use &lt;em&gt;. The i-tag is used for icon fonts, such as
+  font-awesome.
 
 # OLD STUFF FOLLOWS
 

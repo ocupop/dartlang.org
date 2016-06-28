@@ -2,6 +2,7 @@
 layout: default
 title: "Articles"
 description: "Read about the Dart language and tools with this collection of articles, style guides, and more."
+permalink: /articles/
 ---
 <p class="lead">Read these articles for insight into the Dart language and its libraries.</p>
 

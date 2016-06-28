@@ -2,6 +2,7 @@
 layout: default
 title: "Dart Tutorials: Libraries"
 description: "Tutorials relating to Dart's core libraries and APIs."
+permalink: /tutorials/libraries/
 toc: false
 
 header:
