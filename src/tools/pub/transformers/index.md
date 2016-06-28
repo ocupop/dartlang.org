@@ -7,7 +7,7 @@ permalink: /tools/pub/transformers/
 
 Every time you prepare a Dart app for testing or deployment,
 you are using transformers behind the scenes. The [`pub`](/tools/pub/)
-tool uses the [`dart2js`]({{site.dart4web}}/tools/dart2js/)
+tool uses the [`dart2js`]({{site.webdev}}/tools/dart2js/)
 compiler to "transform" (compile) Dart files to JavaScript.
 
 While you are _using_ at least one transformer every time you run a
@@ -130,8 +130,8 @@ class InsertCopyright extends Transformer {
 {% endprettify %}
 
 For more information on the mode option, see
-[pub serve]({{site.dart4web}}/tools/pub/pub-serve#options) and
-[pub build]({{site.dart4web}}/tools/pub/pub-build#options).
+[pub serve]({{site.webdev}}/tools/pub/pub-serve#options) and
+[pub build]({{site.webdev}}/tools/pub/pub-build#options).
 
 ### Claim input assets {#claim-input-assets}
 

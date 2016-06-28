@@ -9,7 +9,7 @@ _Updated April 2015_
 
 This page collects some of the top questions we've heard from the community
 since Dart was open sourced. For other questions and answers, see the
-[WebDev FAQ]({{site.dart4web}}/faq).
+[WebDev FAQ]({{site.webdev}}/faq).
 
 ## General
 

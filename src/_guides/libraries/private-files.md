@@ -118,4 +118,4 @@ which provide source maps from JavaScript to Dart
 that make debugging easier.
 For more information on generating and debugging
 JavaScript source for Dart apps, see the
-[dart2js documentation]({{site.dart4web}}/tools/dart2js).
+[dart2js documentation]({{site.webdev}}/tools/dart2js).

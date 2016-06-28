@@ -39,7 +39,7 @@ the tools and libraries that you need for basic Dart development.
 You may also want an IDE or code editor; this tutorial uses WebStorm.
 
 * [Get the Dart SDK](/install/)
-* Recommended: [Get WebStorm]({{site.dart4web}}/tools/webstorm)
+* Recommended: [Get WebStorm]({{site.webdev}}/tools/webstorm)
 
 ## What did you get? {#what-did-you-get}
 
@@ -158,7 +158,7 @@ Launch WebStorm. This brings up a "Welcome to Webstorm" dialog.
 If this is the first time you have run WebStorm, you will
 need to set the path to the SDK.
 You can find the instructions at
-[Configuring Dart support]({{site.dart4web}}/tools/webstorm#configuring-dart-support).
+[Configuring Dart support]({{site.webdev}}/tools/webstorm#configuring-dart-support).
 </li>
 
 <li markdown="1">
@@ -312,7 +312,7 @@ with words separated by underscores (`_`).
 
 <ul>
   <li>
-    The <a href="{{site.dart4web}}/tools/webstorm">WebStorm</a> page
+    The <a href="{{site.webdev}}/tools/webstorm">WebStorm</a> page
     provides more information about this tool.
   </li>
   <li>

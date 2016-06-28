@@ -294,8 +294,8 @@ styles. In an HTML file in your package, you can add:
 <link href="packages/enchilada/guacamole.css" rel="stylesheet">
 {% endprettify %}
 
-When you run your application using [`pub serve`]({{site.dart4web}}/tools/pub/pub-serve), or build
-it to something deployable using [`pub build`]({{site.dart4web}}/tools/pub/pub-build), pub
+When you run your application using [`pub serve`]({{site.webdev}}/tools/pub/pub-serve), or build
+it to something deployable using [`pub build`]({{site.webdev}}/tools/pub/pub-build), pub
 copies over any referenced assets that your package depends on.
 
 For more information about using assets, see

@@ -43,7 +43,7 @@
 - title: "Platforms"
   children:
     - title: "Overview"
-      permalink: /guides/platform
+      permalink: /guides/platforms
     - title: "Web"
       permalink: https://webdev-dartlang-org.firebaseapp.com/
     - title: "Mobile (Flutter)"

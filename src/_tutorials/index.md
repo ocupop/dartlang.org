@@ -51,6 +51,6 @@ Organize and share code at
 ## More tutorials
 
 * [Dart VM Tutorials](/tutorials/dart-vm/)
-* [Web Tutorials]({{site.dart4web}}/tutorials/)
+* [Web Tutorials]({{site.webdev}}/tutorials/)
 * [Dart Academy](https://dart.academy)
 

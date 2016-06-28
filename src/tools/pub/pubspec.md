@@ -55,7 +55,7 @@ At the top level are a series of fields. The currently supported ones are:
 : Optional. Used to configure dart2js or other transformers.
 For more information, see
 [Pub Assets and Transformers](assets-and-transformers.html) and
-[Configuring the Built-in dart2js Compiler]({{site.dart4web}}/tools/pub/dart2js-transformer.html).
+[Configuring the Built-in dart2js Compiler]({{site.webdev}}/tools/pub/dart2js-transformer.html).
 
 All other fields are ignored. A simple but complete pubspec looks something
 like the following:

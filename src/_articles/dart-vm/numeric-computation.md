@@ -21,7 +21,7 @@ and how to pick the best container for your data.
 
 This article focuses on the Dart VM.
 If your primary compile target is JavaScript, see
-the [webdev FAQ]({{site.dart4web}}/faq).
+the [webdev FAQ]({{site.webdev}}/faq).
 
 <aside class="alert alert-info" markdown="1">
 **Note:**

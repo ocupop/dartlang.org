@@ -29,7 +29,7 @@ which includes the Dart VM, libraries, and command-line Dart tools such as
 and [dartdoc](https://github.com/dart-lang/dartdoc#dartdoc).
 If you are doing web development, you should also add one more tool:
 
-* [Dartium]({{site.dart4web}}/tools/dartium):
+* [Dartium]({{site.webdev}}/tools/dartium):
   A special build of Chromium that includes a Dart VM.
   Use it to interactively test and debug Dart web apps
   without first compiling them to JavaScript.
