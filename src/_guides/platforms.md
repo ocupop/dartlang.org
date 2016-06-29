@@ -11,7 +11,7 @@ there's a Dart solution for that.
 
 <div class="card-grid">
   <div class="card">
-    <h3><a href="{{site.dart4web}}">Dart for the Web</a></h3>
+    <h3><a href="{{site.webdev}}">Dart for the Web</a></h3>
     <p>Write an app that runs in any modern web browser</p>
   </div>
 

@@ -5,8 +5,8 @@ title: "Assets and Transformers"
 description: "How pub transforms and generates assets and files during development and build time."
 ---
 
-The [`pub serve`]({{site.dart4web}}/tools/pub/pub-serve),
-[`pub build`]({{site.dart4web}}/tools/pub/pub-build)
+The [`pub serve`]({{site.webdev}}/tools/pub/pub-serve),
+[`pub build`]({{site.webdev}}/tools/pub/pub-build)
 and [`pub run`](cmd/pub-run) commands use [transformers][]
 to prepare a package's [assets][] before serving the app,
 building the app for deployment, or executing the command-line app,
@@ -99,9 +99,9 @@ dependencies:
 {% endprettify %}
 
 The following example configures the
-[dart2js]({{site.dart4web}}/tools/dart2js) transformer,
-which is used by [`pub serve`]({{site.dart4web}}/tools/pub/pub-serve),
-[`pub build`]({{site.dart4web}}/tools/pub/pub-build),
+[dart2js]({{site.webdev}}/tools/dart2js) transformer,
+which is used by [`pub serve`]({{site.webdev}}/tools/pub/pub-serve),
+[`pub build`]({{site.webdev}}/tools/pub/pub-build),
 and [`pub run`](cmd/pub-run), to analyze the code:
 
 {% prettify yaml %}
@@ -112,7 +112,7 @@ transformers:
 
 For more information, see
 [Configuring the Built-in dart2js
-Transformer]({{site.dart4web}}/tools/pub/dart2js-transformer).
+Transformer]({{site.webdev}}/tools/pub/dart2js-transformer).
 
 We expect more transformers to be available in the future. You can specify
 multiple transformers, to run either in parallel (if they're independent of
@@ -190,7 +190,7 @@ include a `web` directory, pub produces an error.
 
 You can build a command-line app (where the source files are in `bin`),
 for example, by specifying `pub build bin`.
-For more information, see [pub build]({{site.dart4web}}/tools/pub/pub-build).
+For more information, see [pub build]({{site.webdev}}/tools/pub/pub-build).
 </aside>
 
 The following is an example of a build command for a more complex package

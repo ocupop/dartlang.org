@@ -381,7 +381,7 @@ also prevents errors from *accidentally* leaking out of your function.
 
 Read the following documentation for more details on using Futures:
 
-* [The Event Loop and Dart]({{site.dart4web}}/articles/performance/event-loop),
+* [The Event Loop and Dart]({{site.webdev}}/articles/performance/event-loop),
   an article that describes how to schedule tasks using Futures
 * [Future API reference]({{site.dart_api}}/dart-async/Future-class.html)
 

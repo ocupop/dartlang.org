@@ -1,8 +1,8 @@
 ---
 layout: default
-permalink: /tools/
 title: "Dart Tools"
 description: "The tools that support the Dart language."
+permalink: /tools/
 ---
 
 This page discusses tools that are useful with multiple Dart technologies.
@@ -33,7 +33,7 @@ try WebStorm, which comes with Dart support.
 
 <div class="col-md-6" markdown="1">
 <img src="{% asset_path 'tools/webstorm.png' %}" alt="WebStorm logo">
-<a href="{{site.dart4web}}/tools/webstorm"><b>WebStorm</b></a>
+<a href="{{site.webdev}}/tools/webstorm"><b>WebStorm</b></a>
 </div>
 </div>
 
@@ -66,7 +66,7 @@ Which SDK you need depends on what type of app you're developing.
 |------------------------+----------+-------------------------------------|
 | App type | SDK | Download instructions | More information |
 |--------------------------|------------------------------------------------|
-| Web app | Dart | [Install Dart and Dartium](/install/) | [Dart SDK](/tools/sdk), [Dart Tools for the Web]({{site.dart4web}}/tools/) |
+| Web app | Dart | [Install Dart and Dartium](/install/) | [Dart SDK](/tools/sdk), [Dart Tools for the Web]({{site.webdev}}/tools/) |
 | Script or server | Dart | [Install Dart](/install/) | [Dart SDK](/tools/sdk), [Dart VM Tools](/dart-vm/tools/) |
 | Embedded app | Dartino | [Getting started]({{site.dartino}}/getting-started) | [dartino.org]({{site.dartino}}) |
 | Mobile app | Flutter | [Flutter Setup]({{site.flutter}}/setup) | [flutter.io]({{site.flutter}}) |
@@ -102,7 +102,7 @@ For details about these and many other tools,
 see the tools documentation for the SDK you're using:
 
 * [Dart SDK](/tools/sdk) and specialized tools:
-  * [Dart Tools for the Web]({{site.dart4web}}/tools/)
+  * [Dart Tools for the Web]({{site.webdev}}/tools/)
   * [Dart VM Tools]({{site.dart_vm}}/tools/)
 * [Dartino]({{site.dartino}}/tool.html)
 * [Flutter]({{site.flutter}}/setup/)
