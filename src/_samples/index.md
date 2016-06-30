@@ -46,7 +46,7 @@ void main() {
 We're not explicitly typing the variables here. We could, but type inference works for us.
 
 {% prettify dart %}
-var name = "Voyager";
+var name = "Voyager I";
 var year = 1977;
 var antennaDiameter = 3.7;
 var flybyObjects = ["Jupiter", "Saturn", "Uranus", "Neptune"];
@@ -146,22 +146,25 @@ including library prefixes, `show` and `hide`, and lazy loading through the `def
 {% prettify dart %}
 class Spacecraft {
   String name;
-  int year;
+  DateTime launchDate;
+  int launchYear;
 
   // Constructor, including syntactic sugar for assignment to members.
-  Spacecraft(this.name, this.year);
-
-  // Named constructor.
-  Spacecraft.unlaunched(this.name) {
-    flybyObjects = const [];
+  Spacecraft(this.name, this.launchDate) {
+    // Pretend the following is something you'd actually want to run in
+    // a constructor.
+    launchYear = launchDate?.year;
   }
+
+  // Named constructor that forwards to the default one.
+  Spacecraft.unlaunched(String name) : this(name, null);
 
   // Method.
   void describe() {
     print("Spacecraft: $name");
-    if (year != null) {
-      int age = new DateTime.now().year - year;
-      print("Launched: $year ($age years ago)");
+    if (launchDate != null) {
+      int years = new DateTime.now().difference(launchDate).inDays ~/ 365;
+      print("Launched: $launchYear ($years years ago)");
     } else {
       print("Unlaunched");
     }
@@ -172,7 +175,7 @@ class Spacecraft {
 You would use the class defined above like so:
 
 {% prettify dart %}
-var voyager = new Spacecraft("Voyager I", 1977);
+var voyager = new Spacecraft("Voyager I", new DateTime(1977, 9, 5));
 voyager.describe();
 
 var voyager3 = new Spacecraft.unlaunched("Voyager III");
@@ -187,45 +190,172 @@ including initializer lists, redirecting constructors, constant constructors, `f
 Dart has single-inheritance.
 
 {% prettify dart %}
-class InterstellarSpacecraft extends Spacecraft
+class Orbiter extends Spacecraft {
+  num altitude;
+  Orbiter(String name, DateTime launchDate, this.altitude)
+      : super(name, launchDate);
+}
 {% endprettify %}
 
-Mixins
+[Read more](/guides/language/language-tour#extending-a-class) about extending classes, the optional `@override` annotation, and more.
 
-# Interfaces
+## Mixins
 
-There is no `interface` keyword in Dart. All classes implicitly define an interface.
+Mixins are a way of reusing code in multiple class hierarchies. The following class can act as a mixin.
 
--- CODE
+{% prettify dart %}
+class Manned {
+  int astronauts;
+  void describeCrew() {
+    print("Number of astronauts: $astronauts");
+  }
+}
+{% endprettify %}
 
-You can create an abstract method
+Just extend a class with this mixin to give it its capabilities.
+
+{% prettify dart %}
+class Orbiter extends Spacecraft with Manned {
+  // ...
+}
+{% endprettify %}
+
+`Orbiter` now has the `astronauts` field as well as the `describeCrew()` method.
+
+[Read more](/articles/language/mixins) about mixins.
+
+## Interfaces
+
+There is no `interface` keyword in Dart. All classes implicitly define an interface. Therefore, you can `implement` any class.
+
+{% prettify dart %}
+class MockSpaceship implements Spacecraft {
+  // ...
+}
+{% endprettify %}
+
+[Read more](/guides/language/language-tour#implicit-interfaces) about implicit interfaces. 
+
+You can create an abstract class which is supposed to be extended (or implemented) by a concrete one. Abstract classes can contain abstract methods (with empty body).
+
+{% prettify dart %}
+abstract class Describable {
+  void describe();
+
+  void describeWithEmphasis() {
+    print("=========");
+    describe();
+    print("=========");
+  }
+}
+{% endprettify %}
+
+Now, we can make `Spacecraft` extend `Describable` and any spacecraft will have the `describeWithEmphasis()` method.
+ 
+[Read more](/guides/language/language-tour#abstract-classes) about abstract classes and methods.
+
+## Async
+
+You can avoid callback hell and make your code much more readable by using `async` and `await`.
+
+{% prettify dart %}
+Future<Null> printWithDelay(String message) async {
+  await new Future.delayed(const Duration(seconds: 1));
+  print(message);
+}
+{% endprettify %}
+
+The code above is equivalent to:
+
+{% prettify dart %}
+Future<Null> printWithDelay(String message) {
+  return new Future.delayed(const Duration(seconds: 1)).then((_) {
+    print(message);
+  });
+}
+{% endprettify %}
+
+From the example above, `async` may not seem that useful. Until you realize you can do things like the following.
+
+{% prettify dart %}
+Future<Null> createDescriptions(Iterable<String> objects) async {
+  for (var object in objects) {
+    try {
+      var file = new File("$object.txt");
+      if (await file.exists()) {
+        var modified = await file.lastModified();
+        print("File for $object already exists. It was modified on $modified");
+        continue;
+      }
+      await file.create();
+      await file.writeAsString("Start describing $object in this file.");
+    } on IOException catch (e) {
+      print("Cannot create description for $object: $e");
+    }
+  }
+}
+{% endprettify %}
+
+You can also use `async*`, which gives you a nice, readable way to build steams.
+
+{% prettify dart %}
+Stream<String> report(Spacecraft craft, Iterable<String> objects) async* {
+  for (var object in objects) {
+    await new Future.delayed(const Duration(seconds: 1));
+    yield "${craft.name} flies by $object";
+  }
+}
+{% endprettify %}
+
+[Read more](/guides/language/language-tour#asynchrony-support) about asynchrony support, including async functions, `Future`, `Stream`, the asynchronous loop (`await for`), and much more.
+
+## Exceptions
+
+{% prettify dart %}
+void describe() {
+  if (name == null) {
+    throw new StateError("Cannot call describe() on an unnamed object.");
+  }
+}
+{% endprettify %}
+
+Exceptions can be caught. And this works even with asynchronous code.
+
+{% prettify dart %}
+try {
+  for (var object in flybyObjects) {
+    var description = await new File("$object.txt").readAsString();
+    print(description);
+  }
+} on IOException catch (e) {
+  print('Could not describe object: $e');
+} finally {
+  flybyObjects.clear();
+}
+{% endprettify %}
+
+[Read more](/guides/language/language-tour#exceptions) about exceptions, including information about the distinction between Error and Exception, stack traces, `rethrow`, and more.
+
+### Getters, setters
+
+TBD
+
+### Operator overloading
+
+TBD
 
 ## Collections
 
+TBD? lazy
+
 ## Strings
 
-
-...
+TBD?
 
 // String interpolation.
 print("The spacecraft ${name.toUpperCase()} left Earth in the year $year.");
 
-## Numbers (math)
+## Other topics
 
-## Exceptions
-
-## async/await
-
-## Advanced
-
-
-### Getters, setters
-
-### toString
-
-### Inheritance, mixins
-
-### Operator overloading
-
-
-XXX START HERE = [synonyms](/resources/synonyms/)
+There are many more code samples in the [Language Tour](/guides/language/language-tour) and the [Library Tour](/guides/libraries/library-tour).
+Libraries provide examples of use in their [API documentation.](https://api.dartlang.org/)
