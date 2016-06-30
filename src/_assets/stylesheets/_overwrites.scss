@@ -26,7 +26,7 @@ a code {
 
 .frontpage-highlight {
 	background: none;
-	border-bottom: 2px dotted $gray-dark;
+	border-bottom: 2px dotted $gray;
 	padding: 0;
 	cursor: pointer;
 
@@ -44,7 +44,10 @@ body.homepage {
 			font-size: $font-size-base * 0.8;
 			height: 230px;
 			overflow: auto;
-		;
+
+			.frontpage-highlight {
+				border-bottom: 2px dotted $gray-dark;
+			}
 		}
 	}
 }
@@ -67,15 +70,19 @@ body.homepage {
 	}
 }
 
+// TODO: responsive - make smaller to make room for footnotes
+
+$footnotes-padding: 5px;
+
 /* Footnotes */
 #code-display {
 	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
+	bottom: -$footnotes-padding;
+	left: -$footnotes-padding;
+	right: -$footnotes-padding;
 
 	height: auto;
-	padding: 0;
+	padding: $footnotes-padding;
 	border: none;
 	min-height: 0;
 	margin-top: 0;
@@ -85,6 +92,29 @@ body.homepage {
 		margin: 0;
 	}
 }
+
+/* Blink highlight for footnotes */
+
+.blink {
+	-webkit-animation: highlight 1s;
+	-moz-animation: highlight 1s;
+	-ms-animation: highlight 1s;
+	-o-animation: highlight 1s;
+	animation: highlight 1s;
+}
+
+@keyframes highlight {
+	0% {
+		background: initial;
+	}
+	10% {
+		background: $blue-light;
+	}
+	100% {
+		background: initial;
+	}
+}
+
 
 /* Create craigslist-like small cards for the front page */
 body.homepage .chip-grid-section {

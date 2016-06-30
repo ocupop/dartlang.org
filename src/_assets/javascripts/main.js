@@ -49,18 +49,24 @@ $(document).on('ready', function(){
   prettyPrint();
 
   // Frontpage footnotes
-  var defaultText = "(Click underlined text to learn more.)";
-  $('.frontpage-highlight').mouseenter(function(){
+  function highlightFootnote() {
+    var footnote = $('#code-display');
+    footnote.removeClass('blink');
+    footnote.addClass('blink');
+    window.setTimeout(function() {
+      footnote.removeClass('blink');
+    }, 1000);
+  }
+
+  var footnotesParagraph = $('#code-display p');
+  var allFrontpageHighlights = $('.frontpage-highlight');
+
+  allFrontpageHighlights.click(function(){
     var text = $(this).data('text');
-    $('#code-display p').text(text);
-  });
-  $('.frontpage-highlight').mouseleave(function(){
-    $('#code-display p').text(defaultText);
-  });
-  $('.frontpage-highlight').click(function(){
-    defaultText = $(this).data('text');
-    $('.frontpage-highlight').removeClass('selected')
+    footnotesParagraph.text(text);
+    allFrontpageHighlights.removeClass('selected')
     $(this).addClass('selected');
+    highlightFootnote();
   });
 
   // Sidenav
