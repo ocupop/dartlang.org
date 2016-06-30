@@ -22,6 +22,10 @@ a code {
 
 // FRONT-PAGE RELATED
 
+$screen-lg-min: 1200px;
+$screen-md-min: 992px;
+$screen-sm-min: 768px;
+
 /* Code sample */
 
 .frontpage-highlight {
@@ -38,11 +42,39 @@ a code {
 	}
 }
 
+@mixin front-page-first-section-height {
+	height: 230px;
+	@media (min-width: $screen-sm-min) {
+		height: 300px;
+	}
+	@media (min-width: $screen-lg-min) {
+		height: 250px;
+	}
+}
+
+@mixin front-page-first-section-min-height {
+	min-height: 230px;
+	@media (min-width: $screen-sm-min) {
+		min-height: 300px;
+	}
+	@media (min-width: $screen-lg-min) {
+		min-height: 250px;
+	}
+}
+
 body.homepage {
 	#code-sample {
 		pre {
 			font-size: $font-size-base * 0.8;
-			height: 230px;
+			@media (min-width: $screen-sm-min) {
+				font-size: $font-size-base * 0.7;
+			}
+			@media (min-width: $screen-md-min) {
+				font-size: $font-size-base * 0.8;
+			}
+
+			@include front-page-first-section-height;
+
 			overflow: auto;
 
 			.frontpage-highlight {
@@ -53,43 +85,58 @@ body.homepage {
 }
 
 /* Slogan */
-.slogan-with-footnotes {
-	height: 230px;
+.frontpage-slogan-with-footnotes {
+	@include front-page-first-section-min-height;
 	position: relative;
 }
 
-.slogan {
-	text-align: left;
-	background: none;
-	font-size: $font-size-h4;
-	line-height: 150%;
-	height: 130px;
-	margin-bottom: 0;
+.frontpage-slogan {
+	h3 {
+		text-align: left;
+		background: none;
+		font-size: $font-size-h4;
+
+		@media (min-width: $screen-sm-min) {
+			font-size: $font-size-h4 * 0.9;
+		}
+
+		@media (min-width: $screen-lg-min) {
+			font-size: $font-size-h3;
+		}
+
+		font-weight: 300;
+		line-height: 150%;
+		margin-bottom: 1em;
+	}
+
 	.frontpage-highlight {
 		padding: 0 2px;
 	}
 }
 
-// TODO: responsive - make smaller to make room for footnotes
-
 $footnotes-padding: 5px;
 
 /* Footnotes */
 #code-display {
-	position: absolute;
-	bottom: -$footnotes-padding;
-	left: -$footnotes-padding;
-	right: -$footnotes-padding;
+	padding: 0;
+	margin-top: 50px;
+
+	@media (min-width: $screen-sm-min) {
+		position: absolute;
+		bottom: -$footnotes-padding;
+		left: -$footnotes-padding;
+		right: -$footnotes-padding;
+		padding: $footnotes-padding;
+	}
 
 	height: auto;
-	padding: $footnotes-padding;
 	border: none;
+	//font-style: italic;
 	min-height: 0;
-	margin-top: 0;
-	font-style: italic;
 
 	p {
 		margin: 0;
+		font-weight: 700;
 	}
 }
 
@@ -105,9 +152,6 @@ $footnotes-padding: 5px;
 
 @keyframes highlight {
 	0% {
-		background: initial;
-	}
-	10% {
 		background: $blue-light;
 	}
 	100% {
