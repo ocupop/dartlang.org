@@ -125,8 +125,7 @@ $(document).on('ready', function(){
   $(window).smartresize(fixNav());
 
   // Add external link indicators
-  $('a[target="_blank"]').addClass('external');
-  $('a[href^="http"]').addClass('external');
+  $('a[href^="http"], a[target="_blank"]').not('.run-in-dartpad').addClass('external');
 
 });
 

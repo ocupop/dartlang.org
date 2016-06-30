@@ -36,6 +36,7 @@ main() {
   printNumber(number); // Call a function.
 }
 {% endprettify %}
+<a href="{{ site.custom.dartpad.direct-link }}" class='run-in-dartpad' target="_blank">Open Dartpad</a>
 
 Here’s what this program uses that applies to all (or almost all) Dart
 apps:
