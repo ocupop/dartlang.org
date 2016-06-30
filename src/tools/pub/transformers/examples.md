@@ -3,6 +3,7 @@ layout: default
 title: "Examples of Transformer Code"
 description: "A list of examples that illustrate how to write transformers for the pub tool."
 permalink: /tools/pub/transformers/examples
+toc: false
 ---
 
 When _pub_ serves, builds, or runs an app, it can run one or more

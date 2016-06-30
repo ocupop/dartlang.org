@@ -6,7 +6,7 @@ description: "How pub transforms and generates assets and files during developme
 ---
 
 The [`pub serve`]({{site.webdev}}/tools/pub/pub-serve),
-[`pub build`]({{site.webdev}}/tools/pub/pub-build)
+[`pub build`]({{site.webdev}}/tools/pub/pub-build),
 and [`pub run`](cmd/pub-run) commands use [transformers][]
 to prepare a package's [assets][] before serving the app,
 building the app for deployment, or executing the command-line app,
