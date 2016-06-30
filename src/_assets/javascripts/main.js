@@ -45,6 +45,8 @@ $(window).scroll(function(){
 
 
 $(document).on('ready', function(){
+  // set heights for navigation elements
+  fixNav();
   // Initiate Syntax Highlighting
   prettyPrint();
 
