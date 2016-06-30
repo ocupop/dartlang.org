@@ -9,20 +9,21 @@ description: "Dart is an application programming language that’s easy to learn
     <div class="col-sm-7 col-lg-6">
       <div class="content">
 <pre class="prettyprint">
-<span class="frontpage-highlight" data-text="There's one canonical way to import packages, and one canonical, automatic way to install them (pub).">import</span> &#x27;dart:async&#x27;;
-import &#x27;dart:math&#x27; <span class="frontpage-highlight" data-text="No need to do this (treeshaking is on by default). Used to keep the scope clean.">show</span> Random;
+<span class="frontpage-highlight" data-text="There's one canonical way to import packages, and one canonical, automatic way to install them.">import</span> &#x27;dart:async&#x27;;
+import &#x27;<span class="frontpage-highlight" data-text="Dart's standard libraries get a lot of attention. They have been called well-crafted by Erik Meijer.">dart:math</span>&#x27; show Random;
 
 <span class="frontpage-highlight" data-text="The main() function is the single point of entry.">main()</span> async {
-  print(&#x27;Compute &#x3C0; using the Monte Carlo method.&#x27;);
-  await for (var estimate in computePi()) {
-    print(&#x27;&#x3C0; &#x2245; $estimate&#x27;);
+  print(&#x27;Compute <span class="frontpage-highlight" data-text="Unicode support is baked in.">&#x3C0;</span> using the Monte Carlo method.&#x27;);
+  <span class="frontpage-highlight" data-text="Language-level asynchrony support makes you more productive when dealing with deeply asynchronous code (like most UI code, for example).">await</span> for (var estimate in computePi()) {
+    print(&#x27;&#x3C0; &#x2245; <span class="frontpage-highlight" data-text="String interpolation is made easy. All string literals accept variable interpolations by default.">$estimate</span>&#x27;);
   }
 }
 
-Stream&#x3C;double&#x3E; computePi({int batch: 1000000}) async* {
-  var total = 0;
+<span class="frontpage-highlight" data-text="The SDK includes dartdoc, a tool that auto-generates documentation from your code, including comments like these.">///</span> Generates a stream of increasingly accurate estimates of &#x3C0;.
+Stream<span class="frontpage-highlight" data-text="Generics are optional but extremely useful in large codebases.">&#x3C;double&#x3E;</span> computePi({int batch: 1000000}) <span class="frontpage-highlight" data-text="Dart has language-level support for asynchronous generators.">async*</span> {
+  <span class="frontpage-highlight" data-text="Type is inferred in variable declarations. Note: no JavaScript-style hoisting.">var</span> total = 0;
   var count = 0;
-  while (true) {
+  <span class="frontpage-highlight" data-text="Because generators are lazy, we can safely do this.">while (true)</span> {
     var points = generateRandom().take(batch);
     var inside = points.where((p) =&#x3E; p.isInsideUnitCircle);
     total += batch;
