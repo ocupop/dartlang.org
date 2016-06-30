@@ -354,7 +354,7 @@ may break your application.
 ---
 
 
-<aside id="fn:semver" class="footnote">
+<aside id="fn:semver" class="footnote" markdown="1">
 
 [1] Pub follows version `2.0.0-rc.1` of the semantic versioning spec,
 because that version allows packages to use build identifiers (`+12345`)

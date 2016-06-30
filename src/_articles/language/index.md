@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Articles: Language"
+title: "Articles: Language Details"
 description: "Articles that clarify aspects of the Dart language."
 permalink: /articles/language/
 toc: false

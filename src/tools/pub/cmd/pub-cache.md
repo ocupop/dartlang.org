@@ -3,6 +3,7 @@ layout: default
 permalink: /tools/pub/cmd/pub-cache
 title: "pub cache"
 description: "Use pub cache to manage your system cache."
+toc: false
 ---
 
 _Cache_ is one of the commands of the _pub_ tool.

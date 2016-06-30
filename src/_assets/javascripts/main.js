@@ -45,6 +45,8 @@ $(window).scroll(function(){
 
 
 $(document).on('ready', function(){
+  // set heights for navigation elements
+  fixNav();
   // Initiate Syntax Highlighting
   prettyPrint();
 
@@ -125,8 +127,7 @@ $(document).on('ready', function(){
   $(window).smartresize(fixNav());
 
   // Add external link indicators
-  $('a[target="_blank"]').addClass('external');
-  $('a[href^="http"]').addClass('external');
+  $('a[href^="http"], a[target="_blank"]').not('.run-in-dartpad').addClass('external');
 
 });
 

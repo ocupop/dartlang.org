@@ -2,14 +2,10 @@
 title: "Install Shared Packages"
 description: "Packages are bundles of source code, tools, and resources that help you to organize and share code"
 
-prevpage:
-  url: /tutorials/language/streams
-  title: "Asynchronous Programming: Streams"
-
 points:
   - "Following a few conventions, such as having a valid pubspec.yaml file, makes your app a package."
   - "Use Stagehand to generate starting files for your app."
-  - "Use `pub get` to download packages."
+  - "Use <code>pub get</code> to download packages."
   - "pub.dartlang.org is the primary public repository for Dart packages."
 ---
 
@@ -329,9 +325,3 @@ when you import a library.
 * See the [pub documentation](/tools/pub/)
   for more information on using and sharing packages.
 
-
-## What next? {#what-next}
-
-The next tutorial, [Asynchronous Programming: Futures](/tutorials/language/futures),
-shows you how to write non-blocking code using Dart's async/await
-mechanism, or using the Future API.

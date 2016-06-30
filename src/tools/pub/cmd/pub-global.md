@@ -3,6 +3,7 @@ layout: default
 permalink: /tools/pub/cmd/pub-global
 title: "pub global"
 description: "Use pub global to run Dart scripts hosted on pub.dartlang.org from the command line."
+toc: false
 
 header:
   css: ["../transformers/transformers.css"]
