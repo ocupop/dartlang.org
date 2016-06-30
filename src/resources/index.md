@@ -23,4 +23,9 @@ Check out the following Dart language resources:
     <h3><a href="/resources/dart-tips">Dart-Tips</a></h3>
     <p>Short video tutorials about Dart.</p>
   </div>
+
+  <div class="card">
+    <h3><a href="/resources/authors/">Dart-Tips</a></h3>
+    <p>Short video tutorials about Dart.</p>
+  </div>
 </div>

@@ -43,7 +43,7 @@ at the following links.
 [pub.dartlang.org](https://pub.dartlang.org/)
 : Packages contributed by the Dart community.
 
-[Articles About Libraries](/articles/libraries)
+[Articles about libraries](/articles/libraries)
 : API topics ranging from zones to streams to converters.
 
 API reference documentation
