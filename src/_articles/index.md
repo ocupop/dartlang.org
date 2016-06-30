@@ -4,10 +4,8 @@ title: "Articles"
 description: "Read about the Dart language and tools with this collection of articles, style guides, and more."
 permalink: /articles/
 ---
-<p class="lead">Read these articles for insight into the Dart language and its libraries.</p>
 
-Read these articles for insight into
-the Dart language and libraries.
+Read these articles for insight into the Dart language and its libraries.
 
 Also see:
 
@@ -17,7 +15,7 @@ Also see:
 * [Articles about Dart for the web]({{site.webdev}}/articles/)
 
 <div class="break-80">
-  <h2>Language Details</h2>
+  <h2>Language details</h2>
   {% assign articles = site.articles | filter: 'language' | order: 'date' | reverse %}
   <ul class="nav-list">
     {% for article in articles %}
@@ -37,7 +35,7 @@ Also see:
 </div>
 
 <div class="break-80">
-  <h2>Design Decisions</h2>
+  <h2>Design decisions</h2>
   {% assign articles = site.articles | filter: 'design-decisions' | order: 'date' | reverse %}
   <ul class="nav-list">
     {% for article in articles %}

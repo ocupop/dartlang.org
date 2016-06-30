@@ -3,6 +3,7 @@ layout: default
 permalink: /tools/pub/cmd/pub-deps
 title: "pub deps"
 description: "Use pub deps to print a dependency graph for a package."
+toc: false
 ---
 
 _Deps_ is one of the commands of the _pub_ tool.

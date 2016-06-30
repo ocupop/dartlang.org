@@ -3,6 +3,7 @@ layout: default
 permalink: /tools/pub/cmd/pub-lish
 title: "pub publish"
 description: "Use pub publish to publish your Dart package to pub.dartlang.org."
+toc: false
 ---
 
 _Publish_ is one of the commands of the _pub_ tool.

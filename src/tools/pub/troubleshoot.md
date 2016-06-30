@@ -5,12 +5,7 @@ title: "Troubleshooting Pub"
 description: "Common gotchas you might run into when using Pub."
 ---
 
-#### Contents
-
-* ToC
-{:toc}
-
-### Getting a "403" error when publishing a package {#pub-publish-403}
+## Getting a "403" error when publishing a package {#pub-publish-403}
 
 You receive the following error when running `pub publish`:
 
@@ -29,7 +24,7 @@ You can reset pub's authentication process by removing the credentials file:
 rm ~/.pub-cache/credentials.json
 {% endprettify %}
 
-### Pub build fails with HttpException error {#pub-get-fails}
+## Pub build fails with HttpException error {#pub-get-fails}
 
 You receive an HttpException error similar to the following when
 running `pub build`:
@@ -47,7 +42,7 @@ suite to see how to temporarily
 disable this feature. For example, see
 [Disabling AVG temporarily](http://www.avg.com/ww-en/faq.num-3857).
 
-### Pub get fails from behind a corporate firewall
+## Pub get fails from behind a corporate firewall
 
 From the command line, pub honors the `http_proxy` and `https_proxy`
 environment variables.

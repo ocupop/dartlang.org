@@ -7,7 +7,6 @@ snippet_img: images/dart-synonym-screenshot.png
 toc: false
 ---
 
-<a href="#theme-getting-started">Test</a>
 <div class="synonym">
   <p class="language-choice">
     Dart idioms and snippets translated to JavaScript, Python, and C#&nbsp;

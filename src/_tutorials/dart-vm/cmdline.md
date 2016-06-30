@@ -19,8 +19,6 @@ points:
   - "To handle asynchronous data, you need to use Futures."
 ---
 
-### An introduction to standalone apps
-
 <aside class="alert alert-info" markdown="1">
 <strong>Prerequisite:</strong>
 
@@ -33,6 +31,8 @@ Refer to [Asynchronous Programming: Futures](/tutorials/language/futures)
 and [Asynchronous Programming: Streams](/tutorials/language/streams)
 for information about using these classes.
 </aside>
+
+### An introduction to standalone apps
 
 This tutorial teaches you how to build command-line apps
 and shows you a few small command-line applications.
