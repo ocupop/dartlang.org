@@ -13,7 +13,7 @@ prevpage:
 
 * Streams provide an asynchronous sequence of data.
 * Data sequences include user-generated events and data read from files.
-* You can process a stream using either <strong>await for</strong> or listen() from the Stream API.
+* You can process a stream using either **await for** or listen() from the Stream API.
 * Streams provide a way to respond to errors.
 * There are two kinds of streams: single subscription or broadcast.
 
