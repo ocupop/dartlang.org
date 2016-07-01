@@ -110,7 +110,7 @@
       },
       {
         "source":"/support/",
-        "destination":"/community/",
+        "destination":"/community",
         "type":301
       },
       {
@@ -120,12 +120,12 @@
       },
       {
         "source":"/dart-by-example/",
-        "destination":"/dart-vm/dart-by-example/",
+        "destination":"/dart-vm/dart-by-example",
         "type":301
       },
       {
         "source":"/docs/",
-        "destination":"/guides/",
+        "destination":"/guides",
         "type":301
       },
       {
@@ -145,7 +145,7 @@
       },
       {
         "source":"/effective-dart/",
-        "destination":"/guides/language/effective-dart/",
+        "destination":"/guides/language/effective-dart",
         "type":301
       },
       {
@@ -185,12 +185,67 @@
       },
       {
         "source":"/dart-tips/",
-        "destination":"/resources/dart-tips/",
+        "destination":"/resources/dart-tips",
+        "type":301
+      },
+      {
+        "source":"/dart-tips/dart-tips-ep-1.html",
+        "destination":"/resources/dart-tips/dart-tips-ep-1",
+        "type":301
+      },
+      {
+        "source":"/dart-tips/dart-tips-ep-2.html",
+        "destination":"/resources/dart-tips/dart-tips-ep-2",
+        "type":301
+      },
+      {
+        "source":"/dart-tips/dart-tips-ep-3.html",
+        "destination":"/resources/dart-tips/dart-tips-ep-3",
+        "type":301
+      },
+      {
+        "source":"/dart-tips/dart-tips-ep-4.html",
+        "destination":"/resources/dart-tips/dart-tips-ep-4",
+        "type":301
+      },
+      {
+        "source":"/dart-tips/dart-tips-ep-5.html",
+        "destination":"/resources/dart-tips/dart-tips-ep-5",
+        "type":301
+      },
+      {
+        "source":"/dart-tips/dart-tips-ep-6.html",
+        "destination":"/resources/dart-tips/dart-tips-ep-6",
+        "type":301
+      },
+      {
+        "source":"/dart-tips/dart-tips-ep-7.html",
+        "destination":"/resources/dart-tips/dart-tips-ep-7",
+        "type":301
+      },
+      {
+        "source":"/dart-tips/dart-tips-ep-8.html",
+        "destination":"/resources/dart-tips/dart-tips-ep-8",
+        "type":301
+      },
+      {
+        "source":"/dart-tips/dart-tips-ep-9.html",
+        "destination":"/resources/dart-tips/dart-tips-ep-9",
+        "type":301
+      },
+      {
+        "source":"/dart-tips/dart-tips-ep-10.html",
+        "destination":"/resources/dart-tips/dart-tips-ep-10",
+        "type":301
+      },
+      {
+        "source":"/dart-tips/dart-tips-ep-11.html",
+        "destination":"/resources/dart-tips/dart-tips-ep-11",
         "type":301
       },
       {
         "source":"/docs/synonyms/",
-        "destination":"/resources/synonyms/",
+        "destination":"/resources/synonyms",
         "type":301
       },
       {
@@ -209,13 +264,8 @@
         "type":301
       },
       {
-        "source":"/authors/",
-        "destination":"/resources/authors/",
-        "type":301
-      },
-      {
         "source":"/authors/**",
-        "destination":"/resources/authors/",
+        "destination":"/resources/authors",
         "type":301
       },
       {
@@ -229,13 +279,158 @@
         "type":301
       },
       {
+        "source":"/tools/pub/assets-and-transformers.html",
+        "destination":"/tools/pub/assets-and-transformers",
+        "type":301
+      },
+      {
+        "source":"/tools/pub/create-library-packages.html",
+        "destination":"/tools/pub/create-library-packages",
+        "type":301
+      },
+      {
+        "source":"/tools/pub/dart2js-transformer.html",
+        "destination":"/tools/pub/dart2js-transformer",
+        "type":301
+      },
+      {
+        "source":"/tools/pub/dependencies.html",
+        "destination":"/tools/pub/dependencies",
+        "type":301
+      },
+      {
+        "source":"/tools/pub/faq.html",
+        "destination":"/tools/pub/faq",
+        "type":301
+      },
+      {
+        "source":"/tools/pub/get-started.html",
+        "destination":"/tools/pub/get-started",
+        "type":301
+      },
+      {
+        "source":"/tools/pub/glossary.html",
+        "destination":"/tools/pub/glossary",
+        "type":301
+      },
+      {
+        "source":"/tools/pub/installing.html",
+        "destination":"/tools/pub/installing",
+        "type":301
+      },
+      {
+        "source":"/tools/pub/package-layout.html",
+        "destination":"/tools/pub/package-layout",
+        "type":301
+      },
+      {
+        "source":"/tools/pub/publishing.html",
+        "destination":"/tools/pub/publishing",
+        "type":301
+      },
+      {
+        "source":"/tools/pub/pubspec.html",
+        "destination":"/tools/pub/pubspec",
+        "type":301
+      },
+      {
+        "source":"/tools/pub/troubleshoot.html",
+        "destination":"/tools/pub/troubleshoot",
+        "type":301
+      },
+      {
+        "source":"/tools/pub/versioning.html",
+        "destination":"/tools/pub/versioning",
+        "type":301
+      },
+      {
         "source":"/tools/pub/faq.html",
         "destination":"/tools/faq#pub",
         "type":301
       },
       {
+        "source":"tools/pub/cmd/pub-build.html",
+        "destination":"tools/pub/cmd/pub-build",
+        "type":301
+      },
+      {
+        "source":"tools/pub/cmd/pub-cache.html",
+        "destination":"tools/pub/cmd/pub-cache",
+        "type":301
+      },
+      {
+        "source":"tools/pub/cmd/pub-deps.html",
+        "destination":"tools/pub/cmd/pub-deps",
+        "type":301
+      },
+      {
+        "source":"tools/pub/cmd/pub-downgrade.html",
+        "destination":"tools/pub/cmd/pub-downgrade",
+        "type":301
+      },
+      {
+        "source":"tools/pub/cmd/pub-get.html",
+        "destination":"tools/pub/cmd/pub-get",
+        "type":301
+      },
+      {
+        "source":"tools/pub/cmd/pub-global.html",
+        "destination":"tools/pub/cmd/pub-global",
+        "type":301
+      },
+      {
+        "source":"tools/pub/cmd/pub-lish.html",
+        "destination":"tools/pub/cmd/pub-lish",
+        "type":301
+      },
+      {
+        "source":"tools/pub/cmd/pub-run.html",
+        "destination":"tools/pub/cmd/pub-run",
+        "type":301
+      },
+      {
+        "source":"tools/pub/cmd/pub-serve.html",
+        "destination":"tools/pub/cmd/pub-serve",
+        "type":301
+      },
+      {
+        "source":"tools/pub/cmd/pub-upgrade.html",
+        "destination":"tools/pub/cmd/pub-upgrade",
+        "type":301
+      },
+      {
+        "source":"tools/pub/cmd/pub-uploader.html",
+        "destination":"tools/pub/cmd/pub-uploader",
+        "type":301
+      },
+      {
+        "source":"tools/pub/cmd/**",
+        "destination":"tools/pub/cmd",
+        "type":301
+      },
+      {
+        "source":"tools/pub/transformers/aggregate.html",
+        "destination":"tools/pub/transformers/aggregate",
+        "type":301
+      },
+      {
+        "source":"tools/pub/transformers/lazy-transformer.html",
+        "destination":"tools/pub/transformers/lazy-transformer",
+        "type":301
+      },
+      {
+        "source":"tools/pub/transformers/**",
+        "destination":"tools/pub/transformers",
+        "type":301
+      },
+      {
+        "source":"/tools/pub/**",
+        "destination":"/tools/pub",
+        "type":301
+      },
+      {
         "source":"/docs/tutorials/",
-        "destination":"/tutorials/",
+        "destination":"/tutorials",
         "type":301
       },
       {
@@ -270,12 +465,12 @@
       },
       {
         "source":"/downloads/",
-        "destination":"/install/",
+        "destination":"/install",
         "type":301
       },
       {
         "source":"/downloads/archive/",
-        "destination":"/install/archive/",
+        "destination":"/install/archive",
         "type":301
       },
       {
@@ -310,12 +505,12 @@
       },
       {
         "source":"/devices/",
-        "destination":"/guides/platform/",
+        "destination":"/guides/platform",
         "type":301
       },
       {
         "source":"/mobile/",
-        "destination":"/guides/platform/",
+        "destination":"/guides/platform",
         "type":301
       },
       {
@@ -325,17 +520,17 @@
       },
       {
         "source":"/+pub",
-        "destination":"/tools/pub/",
+        "destination":"/tools/pub",
         "type":301
       },
       {
         "source":"/redirects/sdk-download-stable",
-        "destination":"/install/",
+        "destination":"/install",
         "type":301
       },
       {
         "source":"/redirects/sdk-download-dev",
-        "destination":"/install/",
+        "destination":"/install",
         "type":301
       },
       {
@@ -350,7 +545,7 @@
       },
       {
         "source":"/codelabs/darrrt/",
-        "destination":"https://webdev.dartlang.org/codelabs/darrrt/",
+        "destination":"https://webdev.dartlang.org/codelabs/darrrt",
         "type":301
       },
       {
@@ -430,7 +625,7 @@
       },
       {
         "source":"/+dart2js",
-        "destination":"https://webdev.dartlang.org/tools/dart2js/",
+        "destination":"https://webdev.dartlang.org/tools/dart2js",
         "type":301
       },
       {
@@ -521,6 +716,26 @@
       {
         "source":"/samples/websockets/**",
         "destination":"https://github.com/dart-lang/dart-samples/tree/master/html5/web/websockets/basics",
+        "type":301
+      },
+      {
+        "source":"/server/tls-ssl.html",
+        "destination":"https://dart-lang.github.io/server/tls-ssl.html",
+        "type":301
+      },
+      {
+        "source":"/server/app-engine**",
+        "destination":"https://dart-lang.github.io/server/google-cloud-platform/app-engine/",
+        "type":301
+      },
+      {
+        "source":"/server/google-cloud-platform**",
+        "destination":"https://dart-lang.github.io/server/google-cloud-platform/",
+        "type":301
+      },
+      {
+        "source":"/server/**",
+        "destination":"https://dart-lang.github.io/server/",
         "type":301
       },
       {
