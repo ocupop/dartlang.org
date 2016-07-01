@@ -15,13 +15,12 @@ also want to check out the following pages.
       Higher text-to-code ratio than here.
     </p>
   </div>
+  <!-- XXXXX TODO: XXXXX
   <div class="card">
-
-    <!-- XXXXX TODO: XXXXX -->
-
     <h3><a href="/DOES_NOT_EXIST_YET">End-to-end repositories</a></h3>
     <p>For those who like to see projects in their entirety.</p>
   </div>
+  -->
   <div class="card">
     <h3><a href="/dart-vm/dart-by-example">Cookbook</a></h3>
     <p>
@@ -236,6 +235,8 @@ class MockSpaceship implements Spacecraft {
 
 [Read more](/guides/language/language-tour#implicit-interfaces) about implicit interfaces.
 
+## Abstract classes
+
 You can create an abstract class which is supposed to be extended (or implemented) by a concrete one. Abstract classes can contain abstract methods (with empty body).
 
 {% prettify dart %}
@@ -250,7 +251,7 @@ abstract class Describable {
 }
 {% endprettify %}
 
-Now, we can make `Spacecraft` extend `Describable` and any spacecraft will have the `describeWithEmphasis()` method.
+Any class extending `Describable` will now have the `describeWithEmphasis()` method. It will call the implementation of `describe()` of that class.
 
 [Read more](/guides/language/language-tour#abstract-classes) about abstract classes and methods.
 
@@ -275,7 +276,7 @@ Future<Null> printWithDelay(String message) {
 }
 {% endprettify %}
 
-From the example above, `async` may not seem that useful. Until you realize you can do things like the following.
+From the example above, `async` may not seem all that useful. Until you realize you can do things like the following.
 
 {% prettify dart %}
 Future<Null> createDescriptions(Iterable<String> objects) async {
@@ -312,10 +313,8 @@ Stream<String> report(Spacecraft craft, Iterable<String> objects) async* {
 ## Exceptions
 
 {% prettify dart %}
-void describe() {
-  if (name == null) {
-    throw new StateError("Cannot call describe() on an unnamed object.");
-  }
+if (astronauts == 0) {
+  throw new StateError("No astronauts.");
 }
 {% endprettify %}
 
@@ -336,24 +335,22 @@ try {
 
 [Read more](/guides/language/language-tour#exceptions) about exceptions, including information about the distinction between Error and Exception, stack traces, `rethrow`, and more.
 
-### Getters, setters
+### Getters and setters
 
-TBD
+Getters and setters are special methods that appear like properties. We could rewrite the `launchYear` property of the `Spacecraft` class like so:
 
-### Operator overloading
+{% prettify dart %}
+class Spacecraft {
+  // ...
+  DateTime launchDate;
+  int get launchYear => launchDate?.year;
+  // ...
+}
+{% endprettify %}
 
-TBD
+Users of the class access the property like they normally would (`spacecraft.launchYear`). The fact that it's a method is transparent to them.
 
-## Collections
-
-TBD? lazy
-
-## Strings
-
-TBD?
-
-// String interpolation.
-print("The spacecraft ${name.toUpperCase()} left Earth in the year $year.");
+[Read more](/guides/language/language-tour#getters-and-setters) about getters and their counterpart, setters.
 
 ## Other topics
 
