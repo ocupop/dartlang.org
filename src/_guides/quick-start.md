@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Dart Quick Start
+short-title: Quick Start
 description: "A guide for getting started with Dart."
 ---
 
@@ -24,7 +25,7 @@ src="{{site.custom.dartpad.embed-dart-prefix}}?horizontalRatio=70&verticalRatio=
     style="border: 1px solid #ccc;">
 </iframe>
 
-Note that DartPad does not allow you to import packages,
+Note that DartPad does not allow you to import libraries,
 such as dart:io. If you want functionality from a library,
 you'll need to install an SDK.
 

@@ -2,7 +2,7 @@
   children:
     - title: Quick Start
       permalink: /guides/quick-start
-    - title: Sample code
+    - title: Sample Code
       permalink: /samples
 
 - title: Language

@@ -1,5 +1,5 @@
 ---
-title: "Sample code"
+title: "Sample Code"
 description: "Examples of idiomatic Dart with links to larger examples."
 permalink: /samples/
 ---
@@ -234,7 +234,7 @@ class MockSpaceship implements Spacecraft {
 }
 {% endprettify %}
 
-[Read more](/guides/language/language-tour#implicit-interfaces) about implicit interfaces. 
+[Read more](/guides/language/language-tour#implicit-interfaces) about implicit interfaces.
 
 You can create an abstract class which is supposed to be extended (or implemented) by a concrete one. Abstract classes can contain abstract methods (with empty body).
 
@@ -251,7 +251,7 @@ abstract class Describable {
 {% endprettify %}
 
 Now, we can make `Spacecraft` extend `Describable` and any spacecraft will have the `describeWithEmphasis()` method.
- 
+
 [Read more](/guides/language/language-tour#abstract-classes) about abstract classes and methods.
 
 ## Async

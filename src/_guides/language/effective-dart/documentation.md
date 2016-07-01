@@ -24,6 +24,9 @@ likely that you're doing too little. Try to step it up.
 
 ## Comments
 
+The following tips apply to comments that you don't want included in the
+generated documentation.
+
 ### DO format comments like sentences.
 
 <div class="good">
