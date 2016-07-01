@@ -190,11 +190,6 @@
       "type":301
     },
     {
-      "source":"/dart-tips/dart-tips-ep-*.html",
-      "destination":"/resources/dart-tips/dart-tips-ep-*",
-      "type":301
-    },
-    {
       "source":"/docs/synonyms/",
       "destination":"/resources/synonyms/",
       "type":301
@@ -220,7 +215,7 @@
       "type":301
     },
     {
-      "source":"/authors/*",
+      "source":"/authors/**",
       "destination":"/resources/authors/",
       "type":301
     },
@@ -235,18 +230,8 @@
       "type":301
     },
     {
-      "source":"/tools/pub/*.html",
-      "destination":"/tools/pub/*",
-      "type":301
-    },
-    {
       "source":"/tools/pub/faq.html",
       "destination":"/tools/faq#pub",
-      "type":301
-    },
-    {
-      "source":"/tools/pub/*/*.html",
-      "destination":"/tools/pub/*/*",
       "type":301
     },
     {
@@ -537,11 +522,6 @@
     {
       "source":"/samples/websockets/**",
       "destination":"https://github.com/dart-lang/dart-samples/tree/master/html5/web/websockets/basics",
-      "type":301
-    },
-    {
-      "source":"/server/**",
-      "destination":"https://dart-lang.github.io/server/***",
       "type":301
     },
     {
