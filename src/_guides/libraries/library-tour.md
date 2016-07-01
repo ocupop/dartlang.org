@@ -10,6 +10,8 @@ libraries. It’s just an overview, and by no means comprehensive.
 Whenever you need more details about a class, consult the [Dart API
 reference.]({{site.dart_api}})
 
+To learn more about the Dart language, see
+[A Tour of the Dart Language](/guides/language/language-tour).
 
 ## dart:core - numbers, collections, strings, and more {#dartcore---numbers-collections-strings-and-more}
 
@@ -2695,3 +2697,5 @@ page. The [args,](https://pub.dartlang.org/packages/args)
 [test](https://pub.dartlang.org/packages/test) libraries are just a
 sampling of what you can install using pub.
 
+To learn more about the Dart language, see
+[A Tour of the Dart Language](/guides/language/language-tour).

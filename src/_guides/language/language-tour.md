@@ -9,6 +9,9 @@ This page shows you how to use each major Dart feature, from
 variables and operators to classes and libraries, with the assumption
 that you already know how to program in another language.
 
+To learn more about Dart's core libraries, see
+[A Tour of the Dart Libraries](/guides/libraries/library-tour).
+
 <div class="alert alert-info" markdown="1">
 **Note:**
 You can play with most of these features using
@@ -3866,3 +3869,5 @@ existing code. For more information, see the [Dart Language
 Specification](/guides/language/spec) and
 [Effective Dart](/guides/language/effective-dart/).
 
+To learn more about Dart's core libraries, see
+[A Tour of the Dart Libraries](/guides/libraries/library-tour).
