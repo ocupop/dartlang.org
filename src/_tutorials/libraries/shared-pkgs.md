@@ -1,15 +1,20 @@
 ---
 title: "Install Shared Packages"
 description: "Packages are bundles of source code, tools, and resources that help you to organize and share code"
-
-points:
-  - "Following a few conventions, such as having a valid pubspec.yaml file, makes your app a package."
-  - "Use Stagehand to generate starting files for your app."
-  - "Use <code>pub get</code> to download packages."
-  - "pub.dartlang.org is the primary public repository for Dart packages."
 ---
 
 ### Borrow and share code.
+
+<div class="panel" markdown="1">
+
+#### <a id="whats-the-point" class="anchor" href="#whats-the-point" aria-hidden="true"><span class="octicon octicon-link"></span></a>What's the point?
+
+* Following a few conventions, such as having a valid pubspec.yaml file, makes your app a package.
+* Use Stagehand to generate starting files for your app.
+* Use <code>pub get</code> to download packages.
+* pub.dartlang.org is the primary public repository for Dart packages.
+
+</div>
 
 Now that you're able to create and run a Dart application
 and have a basic understanding of DOM programming,

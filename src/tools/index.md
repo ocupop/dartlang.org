@@ -3,6 +3,7 @@ layout: default
 title: "Dart Tools"
 description: "The tools that support the Dart language."
 permalink: /tools/
+toc: false
 ---
 
 This page discusses tools that are useful with multiple Dart technologies.

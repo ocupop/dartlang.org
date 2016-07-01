@@ -135,7 +135,7 @@ the stream doesn't need to know anything about the listener anymore.
 
 The following diagram explains the `listen` call:
 
-![Before listen, Stream points to Event Source; after listen, StreamSubscription and Event Source point to each other](../images/listen.png)
+![Before listen, Stream points to Event Source; after listen, StreamSubscription and Event Source point to each other](images/listen.png)
 
 Note that a single-subscription stream
 does not need to keep a reference to the event source,
@@ -201,7 +201,7 @@ StreamControllers provide an easy abstraction for implementers of streams,
 but fundamentally the concept explained in the Subscription section is
 still valid, as the following figure shows.
 
-![Before listen, Stream points to StreamController (and vice versa); after listen, StreamController and StreamSubscription point to each other](../images/listen-with-controller.png)
+![Before listen, Stream points to StreamController (and vice versa); after listen, StreamController and StreamSubscription point to each other](images/listen-with-controller.png)
 
 Because controllers exist before a user listens to its stream,
 the event source can add data to the controller
@@ -262,7 +262,7 @@ Typically all DOM event sources are broadcast streams.
 We can extend our subscription diagram for broadcast streams after
 multiple listen calls:
 
-![Before listen, Stream points to Event Source; after listen, Event Source and multiple StreamSubscriptions point to each other](../images/broadcast-listen.png)
+![Before listen, Stream points to Event Source; after listen, Event Source and multiple StreamSubscriptions point to each other](images/broadcast-listen.png)
 
 The StreamSubscription instances have, again,
 the responsibility to ensure that pause requests are respected.

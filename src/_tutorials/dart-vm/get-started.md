@@ -9,15 +9,20 @@ nextpage:
 prevpage:
   url: /tutorials/dart-vm/
   title: Tutorials Overview
-
-points:
-  - "The Dart SDK has development tools and libraries."
-  - "Use an IDE (such as WebStorm) or code editor to create your app."
-  - "All Dart apps have a main() function."
-  - "Dart supports top-level functions."
 ---
 
 ### Get Dart. Run an app.
+
+<div class="panel" markdown="1">
+
+#### <a id="whats-the-point" class="anchor" href="#whats-the-point" aria-hidden="true"><span class="octicon octicon-link"></span></a>What's the point?
+
+* The Dart SDK has development tools and libraries.
+* Use an IDE (such as WebStorm) or code editor to create your app.
+* All Dart apps have a main() function.
+* Dart supports top-level functions.
+
+</div>
 
 This tutorial gets you ready
 to begin writing Dart apps in an editor or IDE.

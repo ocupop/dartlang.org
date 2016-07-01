@@ -2,6 +2,7 @@
 layout: guide
 title: "A Tour of the Dart Language"
 description: "A tour of all of the major Dart language features."
+short-title: Language Tour
 ---
 
 This page shows you how to use each major Dart feature, from

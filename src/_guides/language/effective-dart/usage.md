@@ -489,7 +489,7 @@ constructor, you may need to do the "private field, public getter" pattern, but
 don't reach for that until you need to.
 
 
-### CONSIDER using `=>` for short members whose body is a single expression.
+### CONSIDER using `=>` for short members whose body is a single return statement.
 
 In addition to using `=>` for function expressions, Dart also lets you define
 members with them. They are a good fit for simple members that just calculate

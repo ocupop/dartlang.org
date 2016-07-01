@@ -15,8 +15,8 @@ Thanks!
 
 [Google AdWords](http://adwords.blogspot.com/2016/03/redesigning-adwords-for-the-mobile-first-marketer.html)
 : The next generation of AdWords runs on Dart. For more information,
-  see an interview with the lead developer on
-  [news.dartlang.org](http://news.dartlang.org/2016/03/the-new-adwords-ui-uses-dart-we-asked.html).
+  see [an interview with the lead developer](http://news.dartlang.org/2016/03/the-new-adwords-ui-uses-dart-we-asked.html)
+  on [news.dartlang.org](http://news.dartlang.org/).
 
 [Wrike](https://www.wrike.com/)
 : Outcollaborate. Wrike combines real-time collaboration with easy-to-use
@@ -44,8 +44,13 @@ Thanks!
   insurance agents, see their ratings and specialities, rate the agents,
   and get instant insurance quotes online.
 
-[DartVoid](http://www.dartvoid.com)
+[Sourcevoid](https://www.sourcevoid.com/)
 : Application hosting platform built and optimized for Dart.
+  Cloud portal and homepage built with Dart, the homepage is server side
+  rendered and the portal app is a single page Dart app backed by a Dart API.
+
+[Schweitzer Engineering Laboratories](https://selinc.com/products/5035/)
+: RTAC HMI browser-based SCADA system.
 
 Google internal sales tool
 : Built with Angular 2 for Dart.

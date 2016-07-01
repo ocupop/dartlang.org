@@ -37,7 +37,7 @@ In the example above, if `myFunc()`'s Future completes with a value,
 completes with an error, `then()`'s callback does not fire, and
 `catchError()`'s callback does.
 
-![then() and catchError() callbacks](../images/then_and_catcherror.png)
+![then() and catchError() callbacks](images/then_and_catcherror.png)
 
 ## Examples of using then() with catchError()
 

@@ -2,6 +2,7 @@
 layout: guide
 title: "A Tour of the Dart Libraries"
 description: "Learn about the major features in Dart's libraries."
+short-title: Library Tour
 ---
 
 This page shows you how to use the major features in Dart’s
