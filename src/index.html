@@ -25,6 +25,7 @@ Stream<span class="frontpage-highlight" data-text="Generics are optional but ext
   <span class="frontpage-highlight" data-text="Type is inferred in variable declarations. Note: no JavaScript-style hoisting.">var</span> total = 0;
   var count = 0;
   <span class="frontpage-highlight" data-text="Because generators are lazy, we can safely do this.">while (true)</span> {
+    // TODO(filiph): add highlights below
     var points = generateRandom().take(batch);
     var inside = points.where((p) =&#x3E; p.isInsideUnitCircle);
     total += batch;
@@ -202,6 +203,22 @@ class Point {
             <dt>No gotchas</dt>
             <dd>There should be a direct correspondence between what you type and what's going to happen. 'Magic' doesn't mix well with large apps.</dd>
           </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="get-started-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-5 col-lg-4">
+        <div class="content">
+
+        </div>
+      </div>
+      <div class="col-sm-7 col-lg-8">
+        <div class="content">
+          <a href="/guides/quick-start" class="btn btn-default btn-lg">Get started</a>
         </div>
       </div>
     </div>

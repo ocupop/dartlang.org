@@ -191,3 +191,9 @@ body.homepage .chip-grid-section {
 		font-size: $font-size-base * 0.8;
 	}
 }
+
+/* Get started section in the bottom */
+body.homepage .get-started-section {
+	padding-top: 0;
+	padding-bottom: 60px;
+}
