@@ -195,11 +195,6 @@ img {
   > article {
     width: calc(100vw - 525px);
     margin-left: 250px;
-    .row {
-      &:before, &:after {
-        display: none;
-      }
-    }
   }
 }
 #page-footer {
