@@ -729,18 +729,36 @@ input.gsc-search-button {
 }
 
 .good {
+  position: relative;
   padding:10px;
   margin-bottom: 11px;
   @extend .alert-success;
+  &:after {
+    content: 'good';
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: darken($alert-success-bg, 25%);
+  }
   pre {
     margin-bottom: 0;
     background-color: transparent;
   }
 }
 .bad {
+  position: relative;
   padding:10px;
   margin-bottom: 11px;
   @extend .alert-danger;
+  &:after {
+    content: 'bad';
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: darken($alert-danger-bg, 25%);
+  }
   pre {
     margin-bottom: 0;
     background-color: transparent;
