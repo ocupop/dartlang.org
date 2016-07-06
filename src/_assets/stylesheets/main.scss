@@ -838,6 +838,9 @@ input.gsc-search-button {
 .alert {
   padding: $content-padding;
   border: none;
+  pre, code {
+    background-color: transparent;
+  }
   p {
     margin-bottom: 0;
   }
