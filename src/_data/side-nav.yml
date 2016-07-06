@@ -1,14 +1,14 @@
-- title: Get Started
+- title: Quick Start
   children:
-    - title: Quick Start
-      permalink: /guides/quick-start
+    - title: Get Started
+      permalink: /guides/get-started
     - title: Sample Code
-      permalink: /samples
+      permalink: /samples/
 
 - title: Language
   children:
     - title: "Overview"
-      permalink: /guides/language
+      permalink: /guides/language/
     - title: "Tour"
       permalink: /guides/language/language-tour
     - title: "Effective Dart"
@@ -26,7 +26,7 @@
 - title: Libraries
   children:
     - title: Overview
-      permalink: /guides/libraries
+      permalink: /guides/libraries/
     - title: Tour
       permalink: /guides/libraries/library-tour
 
@@ -45,8 +45,8 @@
     - title: "Overview"
       permalink: /guides/platforms
     - title: "Web"
-#     permalink: https://webdev-dartlang-org.firebaseapp.com/
-      permalink: http://localhost:4001/
+      permalink: https://webdev-dartlang-org.firebaseapp.com/
+#     permalink: http://localhost:4001/
     - title: "Mobile (Flutter)"
       permalink: https://flutter.io/
       children:
