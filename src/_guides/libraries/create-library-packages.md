@@ -29,21 +29,21 @@ library package:
 
 The minimal requirements for a library are:
 
-<dl>
+<dl markdown="1">
 
-<dt>
+<dt markdown="1">
 pubspec file
 </dt>
-<dd>
+<dd markdown="1">
 The `pubspec.yaml` file for a library is the same
 as for an application package&mdash;there is no special
 designation to indicate that the package is a library.
 </dd>
 
-<dt>
+<dt markdown="1">
 lib directory
 </dt>
-<dd>
+<dd markdown="1">
 As you might expect, the library code lives under the _lib_
 directory and is public to other packages.
 You can create any hierarchy under lib, as needed.

@@ -10,8 +10,8 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 #   {{site.webdev}}/downloads
 
 dartlang: ""
-# webdev: "http://localhost:4001" # PENDING: change to the following on ship.
 # webdev: "https://webdev.dartlang.org"
+# webdev: "http://localhost:4001"
 webdev: "https://webdev-dartlang-org.firebaseapp.com" 
 dart_vm:  "/dart-vm"
 flutter:  "https://flutter.io"

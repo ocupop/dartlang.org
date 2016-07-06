@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Dart by Example
+title: "Cookbook: Dart by Example"
+short-title: "Cookbook"
 permalink: /dart-vm/dart-by-example/
 description: "A cookbook, or set of examples, showing idiomatic Dart code."
 
@@ -37,7 +38,7 @@ See the
 [source on Github](https://github.com/dart-lang/dart-samples/tree/master/dart_io_mini_samples).
 
 After looking at the following code examples, refer to
-[Writing Command-line Apps](/tutorials/dart-vm/cmdline)
+[Write Command-line Apps](/tutorials/dart-vm/cmdline)
 for additional information about I/O, command-line apps, and servers.
 
 
@@ -1059,7 +1060,7 @@ Read the [dart:io library API docs]({{site.dart_api}}/dart-io/dart-io-library.ht
 Here are links to the commonly used classes and packages in these
 examples:
 
-* Files, Directories, and Symlinks
+* Files, directories, and symlinks
 
   * [FileSystemEntity class]({{site.dart_api}}/dart-io/FileSystemEntity-class.html)
   * [File class]({{site.dart_api}}/dart-io/File-class.html)

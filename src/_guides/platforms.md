@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Overview: Platforms"
+short-title: "Platforms"
 description: "You can use Dart when writing web apps, standalone apps, servers, mobile apps, and embedded apps."
 toc: false
 ---
@@ -11,8 +12,8 @@ there's a Dart solution for that.
 
 <div class="card-grid">
   <div class="card">
-    <h3><a href="{{site.webdev}}">Dart for the Web</a></h3>
-    <p>Write an app that runs in any modern web browser</p>
+    <h3><a href="{{site.webdev}}">Web</a></h3>
+    <p>Write a Dart app that runs in any modern web browser</p>
   </div>
 
   <div class="card">
@@ -22,7 +23,7 @@ there's a Dart solution for that.
 
   <div class="card">
     <h3><a href="{{site.dartino}}">Dartino</a></h3>
-    <p>Control a device from the Internet of Things (IoT)</p>
+    <p>Create an app for an embedded device from the Internet of Things (IoT)</p>
   </div>
 
   <div class="card">

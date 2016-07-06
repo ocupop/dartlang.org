@@ -1,6 +1,7 @@
 ---
 layout: guide
 title: Dart Quick Start
+short-title: Quick Start
 description: "A guide for getting started with Dart."
 ---
 
@@ -24,7 +25,7 @@ src="{{site.custom.dartpad.embed-dart-prefix}}?horizontalRatio=70&verticalRatio=
     style="border: 1px solid #ccc;">
 </iframe>
 
-Note that DartPad does not allow you to import packages,
+Note that DartPad does not allow you to import libraries,
 such as dart:io. If you want functionality from a library,
 you'll need to install an SDK.
 
@@ -35,9 +36,9 @@ Dart technologies: the language and core libraries.
 
 Where do you start? It depends on what kind of app you are writing.
 
-| | **Web** | **Mobile** | **Embedded** | **Server** |
-| **Use case** | Create an app that runs in any modern browser | Create an app from a single codebase that runs on both iOS and Android | Control a device from the Internet of Things (IoT) | Create a command-line app or server |
-| **Dive in!** | webdev's [Quick Start]({{site.webdev}}/guides/quick-start) | [Get Started](/tutorials/dart-vm/get-started) with the Dart VM | [Getting started]({{site.dartino}}/getting-started) with Dartino | [Getting Started with Flutter]({{site.flutter}}/getting-started/) |
+| | **Web** | **Mobile** | **IoT** | **Server** |
+| **Use case** | Create an app that runs in any modern browser | Create an app from a single codebase that runs on both iOS and Android | Create an app for an embedded device | Create a command-line app or server |
+| **Dive in!** | webdev's [Quick Start]({{site.webdev}}/guides/quick-start) | [Getting Started with Flutter]({{site.flutter}}/getting-started/) | [Getting started]({{site.dartino}}/getting-started) with Dartino | [Get Started](/tutorials/dart-vm/get-started) with the Dart VM |
 {:.table .table-striped}
 
 {% comment %}

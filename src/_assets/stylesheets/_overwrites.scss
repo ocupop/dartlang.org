@@ -81,6 +81,7 @@ body.homepage {
 				border-bottom: 1px dotted $gray-dark;
 			}
 		}
+
 	}
 }
 
@@ -189,4 +190,10 @@ body.homepage .chip-grid-section {
 	p {
 		font-size: $font-size-base * 0.8;
 	}
+}
+
+/* Get started section in the bottom */
+body.homepage .get-started-section {
+	padding-top: 0;
+	padding-bottom: 60px;
 }

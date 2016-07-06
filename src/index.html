@@ -8,10 +8,10 @@ description: "Dart is an application programming language that’s easy to learn
   <div class="row">
     <div class="col-sm-7 col-lg-6">
       <div class="content">
-        <a href="{{ site.custom.dartpad.direct-link }}" class='run-in-dartpad top'>Open Dartpad</a>
+        <a href="https://dartpad.dartlang.org/d48de9ce716393de1b3ddb923397b501" class='codesample__open-in-dartpad' target='_blank'>Open in DartPad</a>
 <pre class="prettyprint">
 <span class="frontpage-highlight" data-text="There's one canonical way to import packages, and one canonical, automatic way to install them.">import</span> &#x27;dart:async&#x27;;
-import &#x27;<span class="frontpage-highlight" data-text="The whole standard library is meticulously maintained. It has been called 'well-crafted' by none other than Erik Meijer.">dart:math</span>&#x27; show Random;
+import &#x27;<span class="frontpage-highlight" data-text="The whole standard library is being meticulously maintained. It has been called 'well-crafted' by none other than Erik Meijer.">dart:math</span>&#x27; show Random;
 
 <span class="frontpage-highlight" data-text="The main() function is the single point of entry.">main()</span> async {
   print(&#x27;Compute <span class="frontpage-highlight" data-text="Unicode support is baked in.">&#x3C0;</span> using the Monte Carlo method.&#x27;);
@@ -25,6 +25,7 @@ Stream<span class="frontpage-highlight" data-text="Generics are optional but ext
   <span class="frontpage-highlight" data-text="Type is inferred in variable declarations. Note: no JavaScript-style hoisting.">var</span> total = 0;
   var count = 0;
   <span class="frontpage-highlight" data-text="Because generators are lazy, we can safely do this.">while (true)</span> {
+    // TODO(filiph): add highlights below
     var points = generateRandom().take(batch);
     var inside = points.where((p) =&#x3E; p.isInsideUnitCircle);
     total += batch;
@@ -133,6 +134,7 @@ class Point {
     </div>
   </div>
 </div>
+  </div>
 </section>
 
 <section class="chip-grid-section gray-light">
@@ -149,7 +151,7 @@ class Point {
         <div class="content">
           <div class="chip-grid">
             <div class="chip">
-              <h3><a href="{{site.dart4web}}">Dart webdev</a></h3>
+              <h3><a href="{{site.webdev}}">Dart webdev</a></h3>
               <p>Build browser apps.</p>
             </div>
             <div class="chip">
@@ -201,6 +203,22 @@ class Point {
             <dt>No gotchas</dt>
             <dd>There should be a direct correspondence between what you type and what's going to happen. 'Magic' doesn't mix well with large apps.</dd>
           </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="get-started-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-5 col-lg-4">
+        <div class="content">
+
+        </div>
+      </div>
+      <div class="col-sm-7 col-lg-8">
+        <div class="content">
+          <a href="/guides/quick-start" class="btn btn-default btn-lg">Get started</a>
         </div>
       </div>
     </div>

@@ -3,6 +3,7 @@ layout: default
 title: "Overview: Libraries"
 description: "Learn about Dart's core libraries and APIs."
 permalink: /guides/libraries/
+short-title: "Libraries"
 toc: false
 ---
 
@@ -43,7 +44,7 @@ at the following links.
 [pub.dartlang.org](https://pub.dartlang.org/)
 : Packages contributed by the Dart community.
 
-[Articles About Libraries](/articles/libraries)
+[Articles about libraries](/articles/libraries)
 : API topics ranging from zones to streams to converters.
 
 API reference documentation

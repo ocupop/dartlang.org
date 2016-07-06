@@ -11,7 +11,12 @@ prevpage:
   title: "Usage"
 ---
 
+Here are some guidelines for writing consistent, usable APIs for libraries.
+
 ## Names
+
+Naming is an important part of writing readable, maintainable code.
+The following best practices can help you achieve that goal.
 
 ### DO use terms consistently.
 
@@ -342,6 +347,9 @@ map.containsValue(value)
 
 ## Libraries
 
+The underscore character ( `_` ) to indicates that a member is private to its library.
+This distinction is enforced by the Dart tools.
+
 ### PREFER making declarations private.
 
 A public declaration in a library&mdash;either top level or in a class&mdash;is
@@ -358,6 +366,9 @@ doesn't know if any code outside of its view is using it.
 
 
 ## Types
+
+Dart supports a variety of built-in types and you can define your own types.
+Or, you can choose not to use types at all.
 
 ### AVOID defining a one-member abstract class when a simple function will do.
 
@@ -488,6 +499,9 @@ mixin. If your class is designed for use only as a mixin, then consider adding
 
 ## Constructors
 
+Dart constructors are created by declaring a function with the same name
+as the class and, optionally, an additional identifier. These are called
+_named constructors_.
 
 ### PREFER defining constructors instead of static methods to create instances.
 
@@ -557,6 +571,7 @@ immutable data record sorts of classes.
 
 ## Members
 
+A member belongs to an object and can be either methods or instance variables.
 
 ### PREFER making fields and top-level variables `final`.
 
@@ -688,6 +703,8 @@ var buffer = new StringBuffer()
 
 
 ## Type annotations
+
+In Dart, adding static types to your variables is optional.
 
 ### DO type annotate public APIs.
 
@@ -850,8 +867,9 @@ bool convertToBool(arg) {
 {% endprettify %}
 </div>
 
-
 ## Parameters
+
+In Dart, optional parameters can be either positional or named, but not both.
 
 ### AVOID positional boolean parameters.
 

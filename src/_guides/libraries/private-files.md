@@ -18,13 +18,6 @@ Some files that you wouldn't normally put in a repository
 are useful or essential when you deploy an app.
 </aside>
 
-1. [The rules](#the-rules)
-1. [Details](#details)
-   1. [.packages and packages/](#packages)
-   1. [pubspec.lock](#pubspeclock)
-   1. [*.dart.js and *.js.map](#dartjs)
-{:.toc}
-
 ## The rules
 
 **Don't commit** the following files and directories

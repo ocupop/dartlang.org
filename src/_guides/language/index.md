@@ -2,6 +2,7 @@
 layout: default
 title: "Overview: The Dart Language"
 permalink: /guides/language/
+short-title: "Dart Language"
 toc: false
 ---
 

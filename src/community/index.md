@@ -7,6 +7,10 @@ description: "Communities, mailing lists, and bug databases for the Dart project
 
 Track the Dart project and join the conversation in a variety of ways.
 
+Also see:
+
+* [Community]({{site.webdev}}/community) on webdev
+
 ## Join the conversation
 
 Dart is an open source project, and we look forward to hearing from you.
@@ -14,13 +18,6 @@ Dart is an open source project, and we look forward to hearing from you.
 #### General how-to questions
 
 * [StackOverflow](http://stackoverflow.com/tags/dart)
-
-#### Angular Dart, Polymer Dart, dart:html
-
-* [Discussion](https://groups.google.com/a/dartlang.org/forum/#!forum/web)
-* [Angular Dart Slack channel](https://dartlang.slack.com/messages/angular2/)
-* [Polymer Dart Slack channel](https://dartlang.slack.com/messages/polymer/)
-* [How-to questions](http://stackoverflow.com/tags/dart-polymer)
 
 #### Server-side Dart
 
@@ -37,10 +34,6 @@ Dart is an open source project, and we look forward to hearing from you.
 #### Dart VM
 
 * [Development](https://groups.google.com/a/dartlang.org/forum/#!forum/vm-dev)
-
-#### dart2js
-
-* [Development](https://groups.google.com/a/dartlang.org/forum/#!forum/compiler-dev)
 
 #### Dart Analyzer
 

@@ -5,14 +5,19 @@ description: "Learn how to consume single-subscriber and broadcast streams."
 prevpage:
   url: /tutorials/language/futures
   title: "Asynchronous Programming: Futures"
-
-points:
-  - "Streams provide an asynchronous sequence of data."
-  - "Data sequences include user-generated events and data read from files."
-  - "You can process a stream using either <strong>await for</strong> or listen() from the Stream API."
-  - "Streams provide a way to respond to errors."
-  - "There are two kinds of streams: single subscription or broadcast."
 ---
+
+<div class="panel" markdown="1">
+
+#### <a id="whats-the-point" class="anchor" href="#whats-the-point" aria-hidden="true"><span class="octicon octicon-link"></span></a>What's the point?
+
+* Streams provide an asynchronous sequence of data.
+* Data sequences include user-generated events and data read from files.
+* You can process a stream using either **await for** or listen() from the Stream API.
+* Streams provide a way to respond to errors.
+* There are two kinds of streams: single subscription or broadcast.
+
+</div>
 
 Asynchronous programming in Dart is characterized by the
 Future and Stream classes.

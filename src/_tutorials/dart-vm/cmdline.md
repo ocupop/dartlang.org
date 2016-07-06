@@ -9,15 +9,20 @@ nextpage:
 prevpage:
   url: /tutorials/dart-vm/get-started
   title: "Get Started"
-
-points:
-  - "Command-line applications need to do input and output."
-  - "The dart:io library provides I/O functionality."
-  - "The args package helps define and parse command-line arguments."
-  - "Most input and output requires the use of Streams."
-  - "Streams provide a series of asynchronous data events."
-  - "To handle asynchronous data, you need to use Futures."
 ---
+
+<div class="panel" markdown="1">
+
+#### <a id="whats-the-point" class="anchor" href="#whats-the-point" aria-hidden="true"><span class="octicon octicon-link"></span></a>What's the point?
+
+* Command-line applications need to do input and output.
+* The dart:io library provides I/O functionality.
+* The args package helps define and parse command-line arguments.
+* Most input and output requires the use of Streams.
+* Streams provide a series of asynchronous data events.
+* To handle asynchronous data, you need to use Futures.
+
+</div>
 
 <aside class="alert alert-info" markdown="1">
 <strong>Prerequisite:</strong>

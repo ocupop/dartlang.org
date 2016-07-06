@@ -7,19 +7,24 @@ prevpage:
   url: /tutorials/dart-vm/cmdline
   title: "Dart-VM: Write Command-Line Apps"
 
-points:
-  - "Knowledge of Futures and Streams is a prerequisite."
-  - "The HTTP protocol allows clients and servers to communicate."
-  - "The dart:io package has classes for writing HTTP programs."
-  - "Servers listen for requests on a host and port."
-  - "Clients send requests using an HTTP method request."
-  - "The http_server package provides higher-level building blocks."
-
 header:
   css: ["httpserver.css"]
 ---
 
 ### Communicate over the internet
+
+<div class="panel" markdown="1">
+
+#### <a id="whats-the-point" class="anchor" href="#whats-the-point" aria-hidden="true"><span class="octicon octicon-link"></span></a>What's the point?
+
+* Knowledge of Futures and Streams is a prerequisite.
+* The HTTP protocol allows clients and servers to communicate.
+* The dart:io package has classes for writing HTTP programs.
+* Servers listen for requests on a host and port.
+* Clients send requests using an HTTP method request.
+* The http_server package provides higher-level building blocks.
+
+</div>
 
 <aside class="alert alert-info" markdown="1">
 <strong>Prerequisite:</strong>

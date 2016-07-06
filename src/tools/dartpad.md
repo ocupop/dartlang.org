@@ -8,6 +8,11 @@ description: "The tool that lets you interactively play with Dart in a browser."
 DartPad, an open-source tool,
 allows you to play with the Dart language features in any modern browser.
 
+As you can see in the following screenshot, DartPad launches with a simple counting
+function it's been pre-loaded with a different example:
+
+<img src="images/DartPadWindow.png" alt="a screenshot showing what DartPad looks like" />
+
 It's easy to get started!
 
 ## Open DartPad, and run some samples {#step-1-open-and-run}
@@ -16,7 +21,7 @@ It's easy to get started!
   <li markdown="1">
   Go to <a href="{{site.custom.dartpad.direct-link}}" target="_blank">dartpad.dartlang.org</a>.
 
-  A sample appears on the left, with its output on the right.
+  A sample appears on the left and the output appears on the right.
   If you've played with DartPad before,
   you can click **New Pad** to get back to the original sample.
 
@@ -46,7 +51,7 @@ It's easy to get started!
   </li>
 
   <li markdown="1">
-  Click the **HTML** tab to view the sample's HTML markup.
+  On the left, click the **HTML** tab to view the sample's HTML markup.
   </li>
 </ol>
 

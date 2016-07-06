@@ -5,17 +5,22 @@ description: "A first look at Futures and how to use them to make your asynchron
 nextpage:
   url: /tutorials/language/streams
   title: "Asynchronous Programming: Streams"
-
-points:
-  - "Dart is single-threaded."
-  - "Synchronous code can make your program freeze."
-  - "Use Futures to perform asynchronous operations."
-  - "Use `await` in an async function to pause execution until a Future completes."
-  - "Or use Future's `then()` method."
-  - "Use try-catch expressions in async functions to catch errors."
-  - "Or use Future's `catchError()` method."
-  - "You can chain Futures to run asynchronous functions in order."
 ---
+
+<div class="panel" markdown="1">
+
+#### <a id="whats-the-point" class="anchor" href="#whats-the-point" aria-hidden="true"><span class="octicon octicon-link"></span></a>What's the point?
+
+* Dart is single-threaded.
+* Synchronous code can make your program freeze.
+* Use Futures to perform asynchronous operations.
+* Use `await` in an async function to pause execution until a Future completes.
+* Or use Future's `then()` method.
+* Use try-catch expressions in async functions to catch errors.
+* Or use Future's `catchError()` method.
+* You can chain Futures to run asynchronous functions in order.
+
+</div>
 
 Dart is a single-threaded programming language.
 If any code blocks the thread of execution

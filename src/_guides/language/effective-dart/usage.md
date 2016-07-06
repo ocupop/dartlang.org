@@ -18,6 +18,8 @@ library may not be able to tell that you've internalized the ideas here, but
 
 ## Strings
 
+Here are some best practices to keep in mind when composing strings in Dart.
+
 ### DO use adjacent strings to concatenate string literals.
 
 If you have two string literals&mdash;not values, but the actual quoted literal
@@ -80,6 +82,9 @@ alphanumeric text, the `{}` should be omitted.
 </div>
 
 ## Collections
+
+Out of the box, Dart supports four collection types: lists, maps, queues, and sets.
+The following best practices apply to collections.
 
 ### DO use collection literals when possible.
 
@@ -206,6 +211,9 @@ people.forEach(print);
 
 ## Functions
 
+In Dart, even functions are objects. Here are some best practices
+involving functions.
+
 ### DO use a function declaration to bind a function to a name.
 
 Modern languages have realized how useful local nested functions and closures
@@ -260,6 +268,8 @@ names.forEach((name) {
 </div>
 
 ## Variables
+
+The following best practices describe how to best use variables in Dart.
 
 ### DON'T explicitly initialize variables to `null`.
 
@@ -428,6 +438,9 @@ Map<int, List<Person>> groupByZip(Iterable<Person> people) {
 
 ## Members
 
+In Dart, objects have members which can be functions (methods) or data (instance
+variables). The following best practices apply to an object's members.
+
 ### DON'T wrap a field in a getter and setter unnecessarily.
 
 In Java and C#, it's common to hide all fields behind getters and setters (or
@@ -489,7 +502,7 @@ constructor, you may need to do the "private field, public getter" pattern, but
 don't reach for that until you need to.
 
 
-### CONSIDER using `=>` for short members whose body is a single expression.
+### CONSIDER using `=>` for short members whose body is a single return statement.
 
 In addition to using `=>` for function expressions, Dart also lets you define
 members with them. They are a good fit for simple members that just calculate
@@ -609,6 +622,8 @@ differently by different constructors, then this guideline does not apply.
 
 ## Constructors
 
+The following best practices apply to declaring constructors for a class.
+
 ### DO use initializing formals when possible.
 
 Many fields are initialized directly from a constructor parameter, like:
@@ -723,6 +738,9 @@ View(Style style, List children)
 
 ## Error handling
 
+Dart uses exceptions when an error occurs in your program. The following
+best practices apply to catching and throwing exceptions.
+
 ### AVOID catches without `on` clauses.
 
 A catch clause with no `on` qualifier catches *anything* thrown by the code in
@@ -815,6 +833,9 @@ try {
 
 
 ## Asynchrony
+
+Dart has several language features to support asynchronous programming.
+The following best practices apply to asynchronous coding.
 
 ### PREFER async/await over using raw futures.
 

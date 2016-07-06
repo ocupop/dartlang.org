@@ -48,7 +48,7 @@ You might find the following tutorials helpful.
 : A collection of articles covering topics such as benchmarking,
   numeric computation, SIMD, and snapshots.
 
-[Dart by Example](/dart-vm/dart-by-example/)
+[Cookbook: Dart by Example](/dart-vm/dart-by-example/)
 : Code snippets that perform common I/O tasks, featuring APIs from
   dart:io, dart:convert, the path package, and more.
 
