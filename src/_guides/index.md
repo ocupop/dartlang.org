@@ -17,7 +17,7 @@ Also see:
 
 The quick start guide helps you get up and running with Dart as quickly as possible.
 
-* [Quick Start](/guides/quick-start)
+* [Get Started](/guides/get-started)
 
 The following guides teach you about the Dart language.
 
