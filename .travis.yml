@@ -45,5 +45,4 @@ deploy:
       branch: master
 
 after_deploy:
-  - provider: script
-    script: ./deploy/check_old_site_urls.rb
+  - ./deploy/check_old_site_urls.rb
