@@ -15,9 +15,9 @@ If you aren't familiar with how to write a normal Pub tranformer, see
 [Writing a Pub Transformer](/tools/pub/transformers).
 
 This page uses the aggregate_transformer example which you can find
-through [Examples of Transformer Code](examples).
+through [Examples of Transformer Code](/tools/pub/transformers/examples).
 
-## Implementing an aggregate transformer {#implementing-transformer}
+## Implementing an aggregate transformer
 
 An aggregate transformer extends the Dart class, [AggregateTransform][],
 from the [barback][] package.
@@ -25,7 +25,7 @@ from the [barback][] package.
 [AggregateTransform]: https://www.dartdocs.org/documentation/barback/0.15.2%2B8/barback/AggregateTransform-class.html
 [barback]: https://pub.dartlang.org/packages/barback
 
-### Extend `AggregateTransformer` {#extend-transformer}
+### Extend `AggregateTransformer`
 
 In the Dart file with your transformer subclass,
 extend the `AggregateTransformer` class from the barback package:
@@ -34,7 +34,7 @@ extend the `AggregateTransformer` class from the barback package:
 class MyTransformer extends AggregateTransformer { ... }
 {% endprettify %}
 
-### Claim input assets {#claim-input-assets}
+### Claim input assets
 
 An aggregate transformer claims its input assets by implementing
 the `classifyPrimary` method. For an asset that you want to process,
@@ -66,7 +66,7 @@ classifyPrimary(AssetId id) {
 }
 {% endprettify %}
 
-### Process input assets {#process-input-assets}
+### Process input assets
 
 To process assets, implement the `apply()` method.
 In this method, you access all of the relevant assets
@@ -114,11 +114,11 @@ Future apply(AggregateTransform transform) async {
 If you wish to request a specific secondary input, you can use the
 `getInput` or `readInput` methods.
 
-## More information {#more-info}
+## More information
 
 * [Writing a Pub Transformer](/tools/pub/transformers/)
 : How to write a Pub transformer that accepts a single primary input.
-* [Examples of Transformer Code](examples)
+* [Examples of Transformer Code](/tools/pub/transformers/examples)
 : Examples to get you started.
 * [barback library](https://pub.dartlang.org/packages/barback)
 : API docs for the barback package.
