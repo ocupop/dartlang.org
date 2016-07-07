@@ -45,4 +45,6 @@ deploy:
       branch: master
 
 after_deploy:
-  - ./deploy/check_old_site_urls.rb
+  # Check old site's sitemap and forces build to fail if it fails.
+  # (By default, Travis doesn't fail builds after deployment.)
+  - "./deploy/check_old_site_urls.rb || travis_terminate 1"
