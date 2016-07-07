@@ -18,9 +18,10 @@ sleep 5
 
 begin
   puts "Checking contents"
-  $LOCALHOST_URLS.each do |url|
+  errors = 0
+  $LOCALHOST_NEW_URLS.each do |url|
     uri = URI(url)
-    puts "- #{uri}"
+    puts "- #{url.sub(":#{$PORT}", ":4000")}"
     source = Net::HTTP.get(uri)
     file = Tempfile.new([uri.path.gsub(/\//, '___') + '_____', '.html'])
     begin
@@ -43,9 +44,16 @@ begin
         },
         :log_level => :warn
       }).run
+    rescue RuntimeError => e
+      errors += 1
     ensure
-       file.unlink   # deletes the temp file
+       file.unlink  # deletes the temp file
     end
+  end
+  if errors > 0 then
+    raise "There were #{errors} URLs with errors"
+  else
+    puts "No errors!"
   end
 ensure
   puts "Killing firebase server on localhost"
