@@ -25,8 +25,24 @@ run this from the top of the repo:
 ```
 bundle exec htmlproofer ./publish --assume-extension --directory-index-file --allow-hash-href
 ```
-
 You get htmlproofer when you install the Ruby Gems.
+
+---
+
+OR, you can also check links and validate the HTML using the
+following Ruby script. Note that this approach requires npm
+and Firebase:
+
+From the top-level directory, run:
+
+deploy/check_sitemap.rb
+
+To get `npm`, install [Node.js](https://nodejs.org/en/).
+(As of this writing, the current version is 6.3.0.)
+
+To install Firebase: (You may have to use the `sudo` command.)
+
+npm install -g firebase-tools
 
 ## Misc notes
 
