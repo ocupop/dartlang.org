@@ -17,6 +17,7 @@ before_script:
   # - chmod +x ./deploy/runtests.sh
   - chmod +x ./deploy/cibuild
   - chmod +x ./deploy/deploy-firebase.sh
+  - chmod +x ./deploy/check_old_site_urls.rb
 
 script:
   # - ./deploy/runtests.sh
@@ -42,3 +43,7 @@ deploy:
     skip_cleanup: true
     on:
       branch: master
+
+after_deploy:
+  - provider: script
+    script: ./deploy/check_old_site_urls.rb
