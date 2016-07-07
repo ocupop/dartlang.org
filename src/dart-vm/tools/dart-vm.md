@@ -9,7 +9,7 @@ short-title: "dart"
 You can use the _dart_ tool (`bin/dart`) to run Dart command-line apps such as
 server-side scripts, programs, and servers.
 
-## Basic usage {#basic-usage}
+## Basic usage
 
 Here’s an example of running a Dart file on the command line:
 
@@ -24,7 +24,7 @@ that use the browser environment. For more information, see
 [About Dart applications](/tutorials/dart-vm/get-started#about-dart-applications).
 </aside>
 
-### Options {#options}
+### Options
 
 Common command-line options for dart include:
 
@@ -43,7 +43,7 @@ Common command-line options for dart include:
 
 `--old_gen_heap_size=<num>`
 : Sets the upper limit of
-  [old space](https://dart-lang.github.io/observatory/glossary#old-space) to `<num>` MB.
+  [old space](https://dart-lang.github.io/observatory/glossary#old-generation) to `<num>` MB.
 
 `--version`
 : Displays VM version information.
@@ -51,7 +51,7 @@ Common command-line options for dart include:
 `-h` or `--help`
 : Displays help. (Add `-v` for information about all options.)
 
-### Observatory options {#observatory}
+### Observatory options
 
 Observatory is a tool for profiling and debugging your apps.
 You can use the following flags to enable Observatory and to
@@ -97,7 +97,7 @@ $ dart --observe <script>.dart
 
 For more information, see [Observatory](https://dart-lang.github.io/observatory/).
 
-### Snapshot option {#snapshots}
+### Snapshot option
 
 You can also generate snapshots:
 
@@ -106,7 +106,7 @@ You can also generate snapshots:
   on generating and running snapshots, see the article
   [Snapshots in Dart](/articles/dart-vm/snapshots).
 
-## Enabling checked mode {#enabling-checked-mode}
+## Enabling checked mode
 
 Dart programs run in one of two modes: checked or production. By default, the
 Dart VM runs in production mode. We recommend that you enable checked mode for

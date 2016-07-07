@@ -117,5 +117,6 @@ When benchmarking your application be sure to follow these three rules:
 
 If you follow these rules you will be able to accurately measure how fast your
 code runs. Once you've sped up your application, share your secrets on the
-[mailing list](https://groups.google.com/a/dartlang.org/forum/?fromgroups#!forum/misc).
+<a href="https://groups.google.com/a/dartlang.org/forum/?fromgroups#!forum/misc"
+  data-proofer-ignore>mailing list</a>.
 Happy benchmarking!
