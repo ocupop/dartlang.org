@@ -16,7 +16,15 @@ sleep 5
 
 begin
   puts "Checking links"
-  HTMLProofer.check_links(localhost_urls).run
+  HTMLProofer.check_links(localhost_urls, {
+    :check_external_hash => true,
+    :check_favicon => true,
+    :check_html => true,
+    :validation => {
+      :report_invalid_tags => true,
+      :report_missing_names => true
+    }
+  }).run
 ensure
   puts "Killing firebase server on localhost"
   Process.kill(:SIGINT, pid)
