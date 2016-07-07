@@ -12,6 +12,7 @@ urls = sitemap.xpath("//xmlns:loc").map { |node| node.content }
 
 puts "Adding old site's sitemap URLs"
 $URLS = urls | $OLD_SITE_URLS  # does not add URLs that already exist
+$URLS.sort!
 
 # Change dartlang.org to localhost:4000
-$LOCALHOST_URLS = urls.map { |url| url.sub($DOMAIN, $LOCALHOST) }
+$LOCALHOST_URLS = $URLS.map { |url| url.sub($DOMAIN, $LOCALHOST) }
