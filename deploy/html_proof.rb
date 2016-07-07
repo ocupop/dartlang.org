@@ -1,14 +1,25 @@
 #!/usr/bin/env ruby
 
 require 'html-proofer'
+require 'nokogiri'
+
 require_relative 'old_site_urls'
 
 DOMAIN = 'https://www.dartlang.org/'
 LOCALHOST = 'http://localhost:4000/'
 
-localhost_urls = $OLD_SITE_URLS.map { |url| url.sub(DOMAIN, LOCALHOST) }
+puts "===== Checking links, redirects and HTML through HTMLProofer ====="
 
-puts "===== Checking all links from old site's sitemap.xml ====="
+puts "Parsing current sitemap.xml for all current URLs"
+sitemap = File.open("publish/sitemap.xml") { |f| Nokogiri::XML(f) }
+urls = sitemap.xpath("//xmlns:loc").map { |node| node.content }
+
+puts "Adding old site's sitemap URLs"
+urls = urls | $OLD_SITE_URLS  # does not add URLs that already exist
+
+# Change dartlang.org to localhost:4000
+localhost_urls = urls.map { |url| url.sub(DOMAIN, LOCALHOST) }
+
 puts "Spawning firebase server on localhost"
 pid = spawn("firebase serve --port 4000", :out => "/dev/null")
 puts "..."
@@ -23,7 +34,8 @@ begin
     :validation => {
       :report_invalid_tags => true,
       :report_missing_names => true
-    }
+    },
+    :log_level => :warn
   }).run
 ensure
   puts "Killing firebase server on localhost"

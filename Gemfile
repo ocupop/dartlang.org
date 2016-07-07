@@ -10,3 +10,4 @@ gem 'sass'
 gem 'uglifier'
 gem 'autoprefixer-rails'
 gem "jekyll-sitemap"
+gem 'nokogiri'

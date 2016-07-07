@@ -17,7 +17,7 @@ before_script:
   # - chmod +x ./deploy/runtests.sh
   - chmod +x ./deploy/cibuild
   - chmod +x ./deploy/deploy-firebase.sh
-  - chmod +x ./deploy/check_old_site_urls.rb
+  - chmod +x ./deploy/html_proof.rb
 
 script:
   # - ./deploy/runtests.sh
@@ -45,6 +45,6 @@ deploy:
       branch: master
 
 after_deploy:
-  # Check old site's sitemap and forces build to fail if it fails.
+  # Checks for bad HTML, broken links, and forces build to fail if it fails.
   # (By default, Travis doesn't fail builds after deployment.)
-  - "./deploy/check_old_site_urls.rb || travis_terminate 1"
+  - "./deploy/html_proof.rb || travis_terminate 1"
