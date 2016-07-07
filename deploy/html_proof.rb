@@ -20,6 +20,9 @@ urls = urls | $OLD_SITE_URLS  # does not add URLs that already exist
 # Change dartlang.org to localhost:4000
 localhost_urls = urls.map { |url| url.sub(DOMAIN, LOCALHOST) }
 
+# TODO(filiph) remove when not needed
+localhost_urls.delete("http://localhost:4000/events/2016/summit/index.html")
+
 puts "Spawning firebase server on localhost"
 pid = spawn("firebase serve --port 4000", :out => "/dev/null")
 puts "..."

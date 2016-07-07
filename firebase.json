@@ -115,7 +115,7 @@
       },
       {
         "source": "/support/faq.html",
-        "destination": "/community/faq",
+        "destination": "/faq",
         "type": 301
       },
       {
@@ -500,17 +500,22 @@
       },
       {
         "source": "/performance/",
-        "destination": "/articles/dart-vm/performance-faq",
+        "destination": "/performance",
         "type": 301
       },
       {
         "source": "/devices/",
-        "destination": "/guides/platform",
+        "destination": "/guides/platforms",
+        "type": 301
+      },
+      {
+        "source": "docs/spec/examples/lazyloader/index.html",
+        "destination": "/guides/language/spec",
         "type": 301
       },
       {
         "source": "/mobile/",
-        "destination": "/guides/platform",
+        "destination": "/guides/platforms",
         "type": 301
       },
       {
@@ -604,6 +609,11 @@
         "type": 301
       },
       {
+        "source": "/articles/event-loop/",
+        "destination": "https://webdev-dartlang-org.firebaseapp.com/articles/performance/event-loop",
+        "type": 301
+      },
+      {
         "source": "/articles/improving-the-dom/",
         "destination": "https://webdev-dartlang-org.firebaseapp.com/articles/low-level-html/improving-the-dom",
         "type": 301
@@ -634,8 +644,13 @@
         "type": 301
       },
       {
-        "source": "/polymer-old/",
+        "source": "/polymer-old/**",
         "destination": "https://webdev-dartlang-org.firebaseapp.com/guides/polymer",
+        "type": 301
+      },
+      {
+        "source": "/events/2016/**",
+        "destination": "https://events-dartlang-org.firebaseapp.com/2016",
         "type": 301
       },
       {
@@ -761,6 +776,21 @@
       {
         "source": "/atom.xml",
         "destination": "http://news.dartlang.org/feeds/posts/default",
+        "type": 301
+      },
+      {
+        "source": "/slides/**",
+        "destination": "https://web.archive.org/web/20160702194905//https://www.dartlang.org/slides/",
+        "type": 301
+      },
+      {
+        "source": "/tools/jetbrains-plugin/",
+        "destination": "/tools/jetbrains-plugin",
+        "type": 301
+      },
+      {
+        "source": "/tools/sdk/",
+        "destination": "/tools/sdk",
         "type": 301
       }
     ]
