@@ -167,11 +167,24 @@ body.homepage .chip-grid-section {
 	padding-bottom: 0;
 }
 
+.chip-grid-section__header {
+	width: 50px;
+	float: left;
+	h3 {
+		transform: rotate(-90deg);
+		transform-origin: center bottom;
+		width: 100px;
+		float: left;
+		font-size: $font-size-base;
+	}
+
+}
+
 .chip-grid {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: flex-start;
 	margin: 0;
 }
 .chip {
@@ -181,7 +194,11 @@ body.homepage .chip-grid-section {
 	height: auto;
 	padding: 10px;
 	overflow: hidden;
+	margin-right: 20px;
+	margin-bottom: 20px;
 	box-sizing: border-box;
+	background-color: $gray-light;
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.21);
 	h1, h2, h3, h4, h5, h6 {
 		margin-top: 0;
 		margin-bottom: $font-size-base / 2;
@@ -189,11 +206,16 @@ body.homepage .chip-grid-section {
 	}
 	p {
 		font-size: $font-size-base * 0.8;
+		margin-bottom: 0;
 	}
 }
 
 /* Get started section in the bottom */
 body.homepage .get-started-section {
 	padding-top: 0;
-	padding-bottom: 60px;
+	padding-bottom: 90px;
+
+	.btn-primary {
+		color: white;
+	}
 }
