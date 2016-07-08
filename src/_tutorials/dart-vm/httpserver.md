@@ -274,7 +274,7 @@ that you can use to guess the number.
   At the command line, run the `number_thinker.dart` server.
   You should see something similar to the following:
 
-{% prettify none %}
+{% prettify dart %}
 $ cd httpserver/bin
 $ dart number_thinker.dart
 I'm thinking of a number: 6
