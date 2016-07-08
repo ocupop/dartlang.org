@@ -69,4 +69,3 @@ Interested in learning about new features that may be added to Dart?
 You can track all Dart Enhancement Proposals (DEPs) in the
 [dart_enhancement_proposals](https://github.com/dart-lang/dart_enhancement_proposals)
 repo on GitHub.
-reference: https://www.dartlang.org/docs/spec/

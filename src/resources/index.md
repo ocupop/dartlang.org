@@ -20,7 +20,7 @@ Check out the following Dart language resources:
   </div>
 
   <div class="card">
-    <h3><a href="/resources/dart-tips">Dart-Tips</a></h3>
+    <h3><a href="/resources/dart-tips">Dart Tips</a></h3>
     <p>Short video tutorials about Dart.</p>
   </div>
 

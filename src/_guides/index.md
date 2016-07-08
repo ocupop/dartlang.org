@@ -11,7 +11,7 @@ Read these guides to learn about the Dart language and its libraries.
 Also see:
 
 * [webdev guides]({{site.webdev}}/guides/)
-* [Flutter's Developer Guides]({{site.flutter}})
+* [Flutter's developer guides]({{site.flutter}})
 * [Dartino's Getting Started guide]({{site.dartino}}/getting-started/)
 * [Dart VM's Get Started tutorial](/tutorials/dart-vm/get-started)
 
