@@ -16,6 +16,8 @@ on GitHub needs to be updated.
 For example, the link to the cmdline tutorial has changed.
 {% endcomment %}
 
+## Writing code for the Dart VM
+
 ### Dart I/O and Command Line Apps
 
 The following examples are all stand-alone apps, such as servers, that run
@@ -38,7 +40,7 @@ See the
 [source on Github](https://github.com/dart-lang/dart-samples/tree/master/dart_io_mini_samples).
 
 After looking at the following code examples, refer to
-[Write Command-line Apps](/tutorials/dart-vm/cmdline)
+[Write Command-Line Apps](/tutorials/dart-vm/cmdline)
 for additional information about I/O, command-line apps, and servers.
 
 
@@ -1060,8 +1062,7 @@ Read the [dart:io library API docs]({{site.dart_api}}/dart-io/dart-io-library.ht
 Here are links to the commonly used classes and packages in these
 examples:
 
-* Files, directories, and symlinks
-
+* Using files, directories, and symlinks
   * [FileSystemEntity class]({{site.dart_api}}/dart-io/FileSystemEntity-class.html)
   * [File class]({{site.dart_api}}/dart-io/File-class.html)
   * [Directory class]({{site.dart_api}}/dart-io/Directory-class.html)

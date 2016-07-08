@@ -9,7 +9,7 @@ Track the Dart project and join the conversation in a variety of ways.
 
 Also see:
 
-* [Community]({{site.webdev}}/community) on webdev
+* [Community and Support]({{site.webdev}}/community) on webdev
 
 ## Join the conversation
 
@@ -80,7 +80,7 @@ These lists are read only.
 ## Contribute
 
 Dart is open source. Learn how to
-[contribute to the core SDK](https://github.com/dart-lang/sdk/wiki/Contributing)
+[contribute to the core SDK](https://github.com/dart-lang/sdk/wiki/Contributing).
 
 ## Additional community resources
 

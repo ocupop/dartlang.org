@@ -11,6 +11,8 @@ prevpage:
   title: "Get Started"
 ---
 
+### An introduction to standalone apps
+
 <div class="panel" markdown="1">
 
 #### <a id="whats-the-point" class="anchor" href="#whats-the-point" aria-hidden="true"><span class="octicon octicon-link"></span></a>What's the point?
@@ -36,8 +38,6 @@ Refer to [Asynchronous Programming: Futures](/tutorials/language/futures)
 and [Asynchronous Programming: Streams](/tutorials/language/streams)
 for information about using these classes.
 </aside>
-
-### An introduction to standalone apps
 
 This tutorial teaches you how to build command-line apps
 and shows you a few small command-line applications.

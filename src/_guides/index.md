@@ -15,7 +15,7 @@ Also see:
 * [Dartino's Getting Started guide]({{site.dartino}}/getting-started/)
 * [Dart VM's Get Started tutorial](/tutorials/dart-vm/get-started)
 
-The quick start guide helps you get up and running with Dart as quickly as possible.
+The getting started guide helps you get up and running with Dart as quickly as possible.
 
 * [Get Started](/guides/get-started)
 
