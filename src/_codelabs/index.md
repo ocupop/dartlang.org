@@ -25,5 +25,5 @@ You may find the following code labs useful:
   using Dart's HTML support.</p>
 
 * [Beware the Nest o' Pirates: Write a Server App](https://dart-lang.github.io/server/codelab/)
-  <p>Learn how to use the RPC package to write a RESTful server that you can message
-  from the command-line or from a client app.</p>
+  <p>Learn how to use the RPC package to write a RESTful server that you
+  can message from the command-line or from a client app.</p>
