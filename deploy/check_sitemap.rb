@@ -7,7 +7,7 @@ require_relative 'urls/get_all'
 puts "===== Checking inbound links and redirects through HTMLProofer ====="
 
 # TODO(filiph) remove when not needed
-$LOCALHOST_URLS.delete("http://localhost:4000/events/2016/summit/index.html")
+$LOCALHOST_URLS.delete("#{$LOCALHOST}events/2016/summit/index.html")
 
 puts "Spawning firebase server on localhost"
 pid = spawn("firebase serve --port #{$PORT}", :out => "/dev/null")
