@@ -2,6 +2,7 @@
 build
 *.swp
 _site/
+node_modules/
 .sass-cache/
 _cache/
 _bookhtml

@@ -10,19 +10,19 @@ description: "Dart is an application programming language that’s easy to learn
       <div class="content">
         <a href="https://dartpad.dartlang.org/d48de9ce716393de1b3ddb923397b501" class='codesample__open-in-dartpad' target='_blank'>Open in DartPad</a>
 <pre class="prettyprint">
-<span class="frontpage-highlight" data-text="There's one canonical way to import packages, and one canonical, automatic way to install them.">import</span> &#x27;dart:async&#x27;;
-import &#x27;<span class="frontpage-highlight" data-text="The whole standard library is being meticulously maintained. It has been called 'well-crafted' by none other than Erik Meijer.">dart:math</span>&#x27; show Random;
+<span class="frontpage-highlight" data-text="Dart has one canonical way to import libraries, and one canonical (and easy) way to install library packages.">import</span> &#x27;dart:async&#x27;;
+import &#x27;<span class="frontpage-highlight" data-text='The whole standard library is meticulously maintained. It has been called “well-crafted” by none other than Erik Meijer.'>dart:math</span>&#x27; show Random;
 
 <span class="frontpage-highlight" data-text="The main() function is the single point of entry.">main()</span> async {
   print(&#x27;Compute <span class="frontpage-highlight" data-text="Unicode support is baked in.">&#x3C0;</span> using the Monte Carlo method.&#x27;);
   <span class="frontpage-highlight" data-text="Language-level asynchrony support makes you more productive when dealing with deeply asynchronous code (like most UI code, for example).">await</span> for (var estimate in computePi()) {
-    print(&#x27;&#x3C0; &#x2245; <span class="frontpage-highlight" data-text="String interpolation is made easy. All string literals accept variable interpolations by default.">$estimate</span>&#x27;);
+    print(&#x27;&#x3C0; &#x2245; <span class="frontpage-highlight" data-text="String interpolation is easy. Just put ${expression} or $variable in your string literal.">$estimate</span>&#x27;);
   }
 }
 
-<span class="frontpage-highlight" data-text="The SDK includes dartdoc, a tool that auto-generates documentation from your code, including comments like these.">///</span> Generates a stream of increasingly accurate estimates of &#x3C0;.
+<span class="frontpage-highlight" data-text="Add doc comments like this to flesh out the API reference docs that the SDK’s dartdoc tool generates.">///</span> Generates a stream of increasingly accurate estimates of &#x3C0;.
 Stream<span class="frontpage-highlight" data-text="Generics are optional but extremely useful in large codebases.">&#x3C;double&#x3E;</span> computePi({int batch: 1000000}) <span class="frontpage-highlight" data-text="Dart has language-level support for asynchronous generators.">async*</span> {
-  <span class="frontpage-highlight" data-text="Type is inferred in variable declarations. Note: no JavaScript-style hoisting.">var</span> total = 0;
+  <span class="frontpage-highlight" data-text="The type is inferred in this variable declaration. Note: no JavaScript-style hoisting.">var</span> total = 0;
   var count = 0;
   <span class="frontpage-highlight" data-text="Because generators are lazy, we can safely do this.">while (true)</span> {
     // TODO(filiph): add highlights below
@@ -90,7 +90,7 @@ class Point {
 
         <!--Iterable<Point> generateRandomPoints(<span class="frontpage-highlight" data-text="optional arguments-->
         <!--">[int seed]</span>) sync* {-->
-        <!--final random = new <span class="frontpage-highlight" data-text="there's also Random.secure() for cryptographic purposes. We told you the standard lib is pretty amazing.-->
+        <!--final random = new <span class="frontpage-highlight" data-text="there’s also Random.secure() for cryptographic purposes. We told you the standard lib is pretty amazing.-->
         <!--">Random</span>(seed);-->
         <!--while (<span class="frontpage-highlight" data-text="yes, we can do this because generator-->
         <!--">true</span>) {-->
@@ -117,14 +117,14 @@ class Point {
             <h3>
               Dart is an
               <span class="frontpage-highlight" data-text="Dart is focused on client-side programming, be it in the browser, on mobile, or on embedded devices.">application</span> programming
-              <span class="frontpage-highlight" data-text="It’s not just the language, though. Dart comes with well-crafted core libraries, a package manager, static analysis tools, and so on.">language</span> that’s
-              <span class="frontpage-highlight" data-text="The syntax feels familiar and the semantics are clean and consistent. No nasty surprises.">easy to learn</span>,
-              <span class="frontpage-highlight" data-text="There are over 2 million lines of production Dart code at Google alone. Apps are in hundreds of thousands of lines of code.">easy to scale</span>, and deployable
+              <span class="frontpage-highlight" data-text="But it’s not just a language. Dart comes with well-crafted core libraries, a package manager, static analysis tools, and more.">language</span> that’s
+              <span class="frontpage-highlight" data-text="The syntax feels familiar, and the semantics are clean and consistent. No nasty surprises.">easy to learn</span>,
+              <span class="frontpage-highlight" data-text="Google alone has over 2 million lines of production Dart code. Apps can reach hundreds of thousands of lines of code.">easy to scale</span>, and deployable
               <span class="frontpage-highlight" data-text="Dart runs fast in every modern browser, on the command line, on servers, on mobile, and on embedded devices.">everywhere</span>.
             </h3>
             <h3>
               Google depends on Dart to make
-              <span class="frontpage-highlight" data-text="For example, the next generation of AdWords (Google's foremost money-making app) runs on Dart.">very large apps</span>.
+              <span class="frontpage-highlight" data-text="For example, the next generation of AdWords (Google’s foremost money-making app) runs on Dart.">very large apps</span>.
             </h3>
           <div id="code-display">
             <p>[&nbsp;Click underlined text or code to learn more.&nbsp;]</p>
@@ -151,6 +151,14 @@ class Point {
               <p>Follow the latest.</p>
             </div>
             <div class="chip">
+              <h3><a href="https://api.dartlang.org/">API</a></h3>
+              <p>Browse core libraries.</p>
+            </div>
+            <div class="chip">
+              <h3><a href="https://pub.dartlang.org/">Pub</a></h3>
+              <p>Find packages.</p>
+            </div>
+            <div class="chip">
               <h3><a href="{{site.webdev}}">Dart webdev</a></h3>
               <p>Build browser apps.</p>
             </div>
@@ -164,15 +172,7 @@ class Point {
             </div>
             <div class="chip">
               <h3><a href="/dart-vm/">Dart VM</a></h3>
-              <p>Write scripts, servers.</p>
-            </div>
-            <div class="chip">
-              <h3><a href="https://api.dartlang.org/">API</a></h3>
-              <p>Browse core libraries.</p>
-            </div>
-            <div class="chip">
-              <h3><a href="https://pub.dartlang.org/">Pub</a></h3>
-              <p>Find packages.</p>
+              <p>Build scripts, servers.</p>
             </div>
           </div>
         </div>
@@ -187,7 +187,7 @@ class Point {
         <div class="content">
           <h1>Core goals</h1>
           <p class="lead">
-            Dart is an ambitious, long-term project but it can’t be the answer to all world’s problems. These are the core goals that drive our design decisions.
+            Dart is an ambitious, long-term project, but it can’t solve all the world’s problems. These are the core goals that drive our design decisions.
           </p>
         </div>
       </div>
@@ -199,9 +199,9 @@ class Point {
             <dt>Provide a solid foundation of libraries and tools</dt>
             <dd>A programming language is nothing without its core libraries and tools. Dart’s have been powering very large apps for years now.</dd>
             <dt>Be the stable, pragmatic solution for real apps</dt>
-            <dd>Dart may seem ‘boring’ to some. We prefer the terms ‘productive’ and ‘stable’.</dd>
+            <dd>Dart might seem boring to some. We prefer the terms <em>productive</em> and <em>stable</em>.</dd>
             <dt>No gotchas</dt>
-            <dd>There should be a direct correspondence between what you type and what's going to happen. 'Magic' doesn't mix well with large apps.</dd>
+            <dd>There should be a direct correspondence between what you type and what’s going to happen. Magic doesn’t mix well with large apps.</dd>
           </dl>
         </div>
       </div>
@@ -215,7 +215,7 @@ class Point {
       </div>
       <div class="col-sm-7 col-lg-8">
         <div class="content">
-           <a href="/guides/get-started" class="btn btn-primary btn-lg">Get started</a>
+           <a href="/guides/get-started" class="btn btn-primary btn-lg">Get Started</a>
         </div>
       </div>
     </div>
